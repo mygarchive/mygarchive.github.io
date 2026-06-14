@@ -1,147 +1,69 @@
-'use client';
+import { NextRequest, NextResponse } from 'next/server';
 
-import { useState } from 'react';
-import Link from 'next/link';
+const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
-interface Game {
-  id: any;
-  name: string;
-  background_image: string;
-  rating: number;
-  released: string;
-  playtime: number;
-  genres: { name: string }[];
-  platforms?: { platform: { name: string }; requirements_en?: { minimum?: string; recommended?: string } | null }[];
-  short_screenshots?: { id: number; image: string }[];
-}
+// ۱. هندل کردن درخواست‌های دریافت لیست بازی‌ها و جستجوی هوشمند از RAWG
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const search = searchParams.get('search');
 
-export default function AdminPage() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<Game[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [savingId, setSavingId] = useState<any>(null);
-
-  const searchGames = async () => {
-    if (!searchQuery.trim()) return;
-    setLoading(true);
-    setSearchResults([]);
-    
-    try {
-      const res = await fetch(`/api/games?search=${encodeURIComponent(searchQuery.trim())}`);
+    // سناریوی اول: درخواست جستجوی هوشمند بازی از سمت پنل ادمین
+    if (search) {
+      const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(search)}`;
       
-      if (!res.ok) {
-        const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.error || `خطای سرور با کد ${res.status}`);
-      }
-      
-      const data = await res.json();
-      
-      if (Array.isArray(data)) {
-        setSearchResults(data);
-        if (data.length === 0) {
-          alert('❌ هیچ بازی با این نام پیدا نشد. نام را به انگلیسی بررسی کنید.');
-        }
-      } else {
-        throw new Error('فرمت دیتای دریافتی از سرور معتبر نیست.');
-      }
-      
-    } catch (err: any) {
-      alert(`❌ خطا در جستجو: ${err.message || 'ارور ناشناخته در ارتباط با سرور'}`);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const addGameToSite = async (game: Game) => {
-    setSavingId(game.id);
-    try {
-      const optimizedGame = {
-        id: game.id.toString(),
-        name: game.name,
-        background_image: game.background_image || 'https://placehold.co/600x400?text=No+Image',
-        rating: game.rating || 0,
-        released: game.released || '---',
-        playtime: game.playtime || 0,
-        genres: game.genres ? game.genres.map(g => ({ name: g.name })) : [],
-        platforms: game.platforms ? game.platforms.map(p => ({
-          platform: { name: p.platform.name },
-          requirements_en: p.requirements_en ? {
-            minimum: p.requirements_en.minimum || '',
-            recommended: p.requirements_en.recommended || ''
-          } : null
-        })) : [],
-        short_screenshots: game.short_screenshots ? game.short_screenshots.map(s => ({ id: s.id, image: s.image })) : []
-      };
-
-      const res = await fetch('/api/games', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(optimizedGame)
+      const rawgRes = await fetch(url, {
+        headers: { 'User-Agent': 'TVTime-GameList-App' }
       });
       
-      const result = await res.json();
-      
-      if (res.ok) {
-        alert(`✅ بازی "${game.name}" با موفقیت به سرور اصلی اضافه شد!`);
-      } else {
-        alert(`❌ خطا در ذخیره: ${result.error || 'خطای ناشناخته'}`);
+      if (!rawgRes.ok) {
+        return NextResponse.json({ error: `خطا از سمت سرور مرجع: ${rawgRes.status}` }, { status: rawgRes.status });
       }
-    } catch (err) {
-      alert('❌ خطا در برقراری ارتباط با دیتابیس کلودفلر');
-    } finally {
-      setSavingId(null);
+
+      const rawgData = await rawgRes.json();
+      return NextResponse.json(rawgData.results || []);
     }
-  };
 
-  return (
-    <div className="min-h-screen bg-gray-950 text-white p-4 md:p-8" dir="rtl">
-      <div className="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-800">
-        <div className="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
-          <h1 className="text-xl font-bold text-blue-500">🛠️ مدیریت ابری مخفی بازی‌ها</h1>
-          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs transition border border-gray-700">
-            مشاهده سایت اصلی
-          </Link>
-        </div>
+    // سناریوی دوم: لود کردن بازی‌های ذخیره شده در دیتابیس خودت (صفحه اصلی)
+    const myKv = (process.env as any).GAME_KV;
+    if (!myKv) {
+      // برای اینکه فرانت‌اند کرش نکند، اگر دیتابیس هنوز وصل نیست آرایه خالی برمی‌گردانیم
+      return NextResponse.json([]);
+    }
 
-        <div className="flex gap-2 mb-6">
-          <input 
-            type="text" 
-            placeholder="نام بازی را انگلیسی بنویسید (مثلا: Cyberpunk 2077)" 
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && searchGames()}
-            className="flex-1 bg-gray-950 text-white px-4 py-3 rounded-xl border border-gray-800 focus:outline-none focus:border-blue-500 text-left text-sm"
-            dir="ltr"
-          />
-          <button 
-            onClick={searchGames} 
-            disabled={loading} 
-            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 px-6 py-3 rounded-xl font-bold transition text-sm"
-          >
-            {loading ? 'در حال سرچ...' : 'جستجوی هوشمند'}
-          </button>
-        </div>
+    const gamesData = await myKv.get("games_list");
+    const games = gamesData ? JSON.parse(gamesData) : [];
+    return NextResponse.json(games);
 
-        {searchResults.length > 0 && (
-          <div className="grid grid-cols-1 gap-3 bg-gray-950 p-3 rounded-xl max-h-96 overflow-y-auto border border-gray-800">
-            {searchResults.map(game => (
-              <div key={game.id} className="flex items-center justify-between bg-gray-900 p-3 rounded-lg border border-gray-800">
-                <div className="flex items-center gap-3">
-                  <img src={game.background_image} alt={game.name} className="w-12 h-12 object-cover rounded-lg" />
-                  <span className="text-sm font-semibold text-gray-200">{game.name}</span>
-                </div>
-                <button 
-                  disabled={savingId !== null}
-                  onClick={() => addGameToSite(game)} 
-                  className="bg-green-600 hover:bg-green-700 text-xs px-3 py-1.5 rounded-lg font-medium transition disabled:bg-gray-600"
-                >
-                  {savingId === game.id ? 'در حال ذخیره روی ابر...' : '➕ اضافه به دیتابیس اصلی'}
-                </button>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
+  } catch (error: any) {
+    return NextResponse.json({ error: `خطای داخلی سرور: ${error.message || 'ناشناخته'}` }, { status: 500 });
+  }
+}
+
+// ۲. هندل کردن درخواست ذخیره بازی جدید در دیتابیس ابری
+export async function POST(request: Request) {
+  try {
+    const myKv = (process.env as any).GAME_KV;
+    if (!myKv) {
+      return NextResponse.json({ error: "اتصال به دیتابیس KV برقرار نیست. لطفاً بایندینگ کلودفلر را چک کنید." }, { status: 500 });
+    }
+
+    const gameData = await request.json();
+    
+    const gamesData = await myKv.get("games_list");
+    const games = gamesData ? JSON.parse(gamesData) : [];
+    
+    // جلوگیری از ثبت بازی تکراری
+    const exists = games.some((g: any) => g.id.toString() === gameData.id.toString());
+    if (exists) {
+      return NextResponse.json({ error: 'این بازی قبلاً در لیست دیتابیس شما ذخیره شده است.' }, { status: 400 });
+    }
+    
+    games.push(gameData);
+    await myKv.put("games_list", JSON.stringify(games));
+    
+    return NextResponse.json({ success: true });
+  } catch (error: any) {
+    return NextResponse.json({ error: `خطا در ثبت اطلاعات: ${error.message}` }, { status: 500 });
+  }
 }
