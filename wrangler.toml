@@ -1,0 +1,20 @@
+name = "game-list"
+main = ".open-next/worker.js"
+compatibility_date = "2026-06-14"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[kv_namespaces]]
+binding = "GAME_KV"
+id = "a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1"
+
+[[kv_namespaces]]
+binding = "NEXT_CACHE_WORKERS_KV"
+preview_binding = "NEXT_CACHE_WORKERS_KV_PREVIEW"
+id = "NEXT_CACHE_WORKERS_KV"
+
+[vars]
+NEXT_ANALYTICS_ID = ""
