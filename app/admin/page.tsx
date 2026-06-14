@@ -15,8 +15,8 @@ export default function AdminPage() {
     setMsg('⏳ در حال ارسال درخواست به سرور خودتان برای سرچ...');
     
     try {
-      // 🚀 اتصال به مسیر جدید و مستقل سرچ
-      const res = await fetch(`/store-api?search=${encodeURIComponent(query.trim())}`);
+      // 🚀 اتصال به مسیر استاندارد و جدید سرچ در کلودفلر
+      const res = await fetch(`/api-store?search=${encodeURIComponent(query.trim())}`);
       
       if (!res.ok) {
         const errorData = await res.json();
@@ -45,8 +45,8 @@ export default function AdminPage() {
   const saveGame = async (game: any) => {
     setMsg(`⏳ در حال ذخیره بازی "${game.name}"...`);
     try {
-      // 🚀 اتصال متد POST به مسیر جدید دیتابیس بدون تداخل فرانت‌آند
-      const res = await fetch('/store-api', {
+      // 🚀 اتصال متد POST به دیتابیس بدون تداخل با فرانت‌آند
+      const res = await fetch('/api-store', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -80,4 +80,12 @@ export default function AdminPage() {
         
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', alignItems: 'center' }}>
           <h2 style={{ color: '#3b82f6', margin: 0 }}>🛠️ منوی کنترل ابری بازی‌ها</h2>
-          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px
+          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px 10px', borderRadius: '8px' }}>
+            مشاهده سایت اصلی
+          </Link>
+        </div>
+
+        <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
+          <input 
+            type="text" 
+            placeholder="نام بازی را انگلیسی
