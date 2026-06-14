@@ -1,33 +1,52 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// خواندن دیتابیس برای صفحه اصلی
+const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
+
+// ۱. مدیریت هماهنگ سرچ و دریافت لیست بازی‌ها
 export async function GET(request: NextRequest) {
   try {
+    const { searchParams } = new URL(request.url);
+    const search = searchParams.get('search');
+
+    // اگر پارامتر سرچ وجود داشت، سرور کلودفلر خودش مستقیماً به RAWG وصل می‌شود
+    if (search) {
+      const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(search)}`;
+      const rawgRes = await fetch(url);
+      
+      if (!rawgRes.ok) {
+        return NextResponse.json({ error: `خطای سرور مرجع: ${rawgRes.status}` }, { status: rawgRes.status });
+      }
+
+      const rawgData = await rawgRes.json();
+      return NextResponse.json(rawgData.results || []);
+    }
+
+    // اگر سرچ نبود، لیست بازی‌های دیتابیس خودت را برای صفحه اصلی می‌خواند
     const myKv = (process.env as any).GAME_KV;
     if (!myKv) return NextResponse.json([]);
 
     const gamesData = await myKv.get("games_list");
     return NextResponse.json(gamesData ? JSON.parse(gamesData) : []);
-  } catch (error) {
-    return NextResponse.json([]);
+
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message || 'خطای ناشناخته' }, { status: 500 });
   }
 }
 
-// ذخیره کردن بازی جدید در دیتابیس
+// ۲. ذخیره بازی جدید در دیتابیس
 export async function POST(request: Request) {
   try {
     const myKv = (process.env as any).GAME_KV;
     if (!myKv) {
-      return NextResponse.json({ error: "دیتابیس KV کلودفلر متصل نیست!" }, { status: 500 });
+      return NextResponse.json({ error: "اتصال به دیتابیس برقرار نیست." }, { status: 500 });
     }
 
     const gameData = await request.json();
     const gamesData = await myKv.get("games_list");
     const games = gamesData ? JSON.parse(gamesData) : [];
     
-    // جلوگیری از تکراری شدن
     if (games.some((g: any) => g.id.toString() === gameData.id.toString())) {
-      return NextResponse.json({ error: 'این بازی قبلاً در لیست شما موجود است.' }, { status: 400 });
+      return NextResponse.json({ error: 'این بازی قبلاً اضافه شده است.' }, { status: 400 });
     }
     
     games.push(gameData);
