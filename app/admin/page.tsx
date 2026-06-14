@@ -3,164 +3,134 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-interface Game {
-  id: any;
-  name: string;
-  background_image: string;
-  rating: number;
-  released: string;
-  playtime: number;
-  genres: { name: string }[];
-  platforms?: { platform: { name: string }; requirements_en?: { minimum?: string; recommended?: string } | null }[];
-  short_screenshots?: { id: number; image: string }[];
-}
-
-const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
-
 export default function AdminPage() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<Game[]>([]);
+  const [searchResults, setSearchResults] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
-  const [savingId, setSavingId] = useState<any>(null);
-  const [debugMessage, setDebugMessage] = useState<string>(''); // نمایش خطاها روی صفحه
+  const [statusText, setStatusText] = useState('🟢 سیستم آماده جستجو است.');
 
-  const searchGames = async () => {
+  const handleSearch = async () => {
     if (!searchQuery.trim()) {
-      setDebugMessage('⚠️ لطفاً ابتدا نام بازی را وارد کنید.');
+      setStatusText('⚠️ لطفا نام بازی را بنویسید.');
       return;
     }
-    
+
     setLoading(true);
     setSearchResults([]);
-    setDebugMessage('🔍 در حال ارسال درخواست مستقیم به سرور مرجع (RAWG)...');
-    
+    setStatusText('🔍 در حال ارتباط مستقیم با بانک اطلاعاتی RAWG...');
+
     try {
-      const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(searchQuery.trim())}`;
+      const apiKey = '8ceb3ebba03c4ddca51106af23868263';
+      const response = await fetch(`https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(searchQuery.trim())}`);
       
-      const res = await fetch(url);
-      
-      if (!res.ok) {
-        throw new Error(`پاسخ ناموفق سرور RAWG با کد خطا: ${res.status}`);
+      if (!response.ok) {
+        throw new Error(`خطای سایت مرجع: ${response.status}`);
       }
+
+      const data = await response.json();
       
-      const data = await res.json();
-      
-      if (data && Array.isArray(data.results)) {
+      if (data && data.results) {
         setSearchResults(data.results);
-        if (data.results.length === 0) {
-          setDebugMessage('❌ جستجو موفق بود اما هیچ بازی‌ای با این نام پیدا نشد.');
-        } else {
-          setDebugMessage(`✅ تعداد ${data.results.length} بازی با موفقیت یافت شد.`);
-        }
+        setStatusText(`✅ یافت شد! تعداد ${data.results.length} بازی لود شد.`);
       } else {
-        throw new Error('فرمت دیتای دریافتی از RAWG ساختار آرایه‌ای ندارد.');
+        setStatusText('❌ دیتایی یافت نشد یا فرمت پاسخ تغییر کرده است.');
       }
-      
-    } catch (err: any) {
-      // چاپ مستقیم خطا روی صفحه برای ادمین
-      setDebugMessage(`❌ خطای جاوااسکریپت: ${err.message || 'ارور ناشناخته'}`);
-      console.error(err);
+    } catch (error: any) {
+      setStatusText(`❌ خطا در اتصال: ${error.message || 'مشکل شبکه یا مسدود بودن دسترسی'}`);
     } finally {
       setLoading(false);
     }
   };
 
-  const addGameToSite = async (game: Game) => {
-    setSavingId(game.id);
+  const handleAddGame = async (game: any) => {
+    setStatusText(`⏳ در حال ارسال بازی "${game.name}" به دیتابیس اصلی سایت...`);
     try {
-      const optimizedGame = {
-        id: game.id.toString(),
-        name: game.name,
-        background_image: game.background_image || 'https://placehold.co/600x400?text=No+Image',
-        rating: game.rating || 0,
-        released: game.released || '---',
-        playtime: game.playtime || 0,
-        genres: game.genres ? game.genres.map(g => ({ name: g.name })) : [],
-        platforms: game.platforms ? game.platforms.map(p => ({
-          platform: { name: p.platform.name },
-          requirements_en: p.requirements_en ? {
-            minimum: p.requirements_en.minimum || '',
-            recommended: p.requirements_en.recommended || ''
-          } : null
-        })) : [],
-        short_screenshots: game.short_screenshots ? game.short_screenshots.map(s => ({ id: s.id, image: s.image })) : []
-      };
-
-      const res = await fetch('/api/games', {
+      const response = await fetch('/api/games', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(optimizedGame)
+        body: JSON.stringify({
+          id: game.id.toString(),
+          name: game.name,
+          background_image: game.background_image || '',
+          rating: game.rating || 0,
+          released: game.released || '---',
+          playtime: game.playtime || 0,
+          genres: game.genres || [],
+          platforms: game.platforms || [],
+          short_screenshots: game.short_screenshots || []
+        })
       });
-      
-      const result = await res.json();
-      
-      if (res.ok) {
-        alert(`✅ بازی "${game.name}" با موفقیت به سرور اصلی اضافه شد!`);
+
+      const result = await response.json();
+      if (response.ok) {
+        alert(`✅ بازی "${game.name}" با موفقیت ذخیره شد و به صفحه اصلی رفت!`);
+        setStatusText('✅ ذخیره‌سازی موفقیت‌آمیز بود.');
       } else {
-        alert(`❌ خطا در ذخیره دیتابیس: ${result.error || 'خطای ناشناخته'}`);
+        alert(`❌ خطا: ${result.error}`);
+        setStatusText(`❌ خطا در ذخیره: ${result.error}`);
       }
     } catch (err) {
-      alert('❌ خطا در برقراری ارتباط با دیتابیس کلودفلر');
-    } finally {
-      setSavingId(null);
+      alert('❌ خطا در شبکه یا دیتابیس کلودفلر');
+      setStatusText('❌ خطا در برقراری ارتباط با سرور سایت خودتان.');
     }
   };
 
   return (
     <div className="min-h-screen bg-gray-950 text-white p-4 md:p-8" dir="rtl">
-      <div className="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-800">
+      <div className="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-6 border border-gray-800 shadow-2xl">
+        
         <div className="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
-          <h1 className="text-xl font-bold text-blue-500">🛠️ مدیریت ابری مخفی بازی‌ها</h1>
-          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs transition border border-gray-700">
-            مشاهده سایت اصلی
+          <h1 className="text-lg font-bold text-blue-500">🛠️ منوی مدیریت و کنترل بازی‌ها</h1>
+          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs border border-gray-700 transition">
+            بازگشت به سایت اصلی
           </Link>
         </div>
 
         <div className="flex gap-2 mb-4">
           <input 
             type="text" 
-            placeholder="نام بازی را انگلیسی بنویسید (مثلا: Cyberpunk 2077)" 
+            placeholder="نام بازی را انگلیسی بنویسید (مثال: GTA V)" 
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && searchGames()}
+            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
             className="flex-1 bg-gray-950 text-white px-4 py-3 rounded-xl border border-gray-800 focus:outline-none focus:border-blue-500 text-left text-sm"
             dir="ltr"
           />
           <button 
-            onClick={searchGames} 
-            disabled={loading} 
-            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 px-6 py-3 rounded-xl font-bold transition text-sm"
+            onClick={handleSearch} 
+            disabled={loading}
+            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 px-6 py-3 rounded-xl font-bold text-sm transition"
           >
-            {loading ? 'در حال سرچ...' : 'جستجوی مستقیم'}
+            {loading ? 'صبر کنید...' : 'جستجوی هوشمند'}
           </button>
         </div>
 
-        {/* بخش نمایش گزارش زنده وضعیت سرچ */}
-        {debugMessage && (
-          <div className="mb-4 p-3 rounded-xl bg-gray-950 border border-gray-800 text-xs text-gray-300 text-right font-mono">
-            {debugMessage}
-          </div>
-        )}
+        {/* جعبه گزارش زنده وضعیت */}
+        <div className="mb-6 p-3 rounded-xl bg-gray-950 border border-gray-800 text-xs text-gray-400 font-mono text-right">
+          {statusText}
+        </div>
 
         {searchResults.length > 0 && (
-          <div className="grid grid-cols-1 gap-3 bg-gray-950 p-3 rounded-xl max-h-96 overflow-y-auto border border-gray-800">
-            {searchResults.map(game => (
+          <div className="space-y-2 max-h-96 overflow-y-auto bg-gray-950 p-2 rounded-xl border border-gray-800">
+            {searchResults.map((game) => (
               <div key={game.id} className="flex items-center justify-between bg-gray-900 p-3 rounded-lg border border-gray-800">
                 <div className="flex items-center gap-3">
-                  <img src={game.background_image} alt={game.name} className="w-12 h-12 object-cover rounded-lg" />
-                  <span className="text-sm font-semibold text-gray-200">{game.name}</span>
+                  {game.background_image && (
+                    <img src={game.background_image} alt="" className="w-10 h-10 object-cover rounded" />
+                  )}
+                  <span className="text-sm font-medium text-gray-200">{game.name}</span>
                 </div>
                 <button 
-                  disabled={savingId !== null}
-                  onClick={() => addGameToSite(game)} 
-                  className="bg-green-600 hover:bg-green-700 text-xs px-3 py-1.5 rounded-lg font-medium transition disabled:bg-gray-600"
+                  onClick={() => handleAddGame(game)}
+                  className="bg-green-600 hover:bg-green-700 text-xs px-3 py-2 rounded-lg transition"
                 >
-                  {savingId === game.id ? 'در حال ذخیره روی ابر...' : '➕ اضافه به دیتابیس اصلی'}
+                  ➕ اضافه کردن به سایت
                 </button>
               </div>
             ))}
           </div>
         )}
+
       </div>
     </div>
   );
