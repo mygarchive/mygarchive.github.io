@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Link from 'next/link';
 
 export default function AdminPage() {
   const [query, setQuery] = useState('');
@@ -8,7 +9,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState('سیستم آماده کار است.');
 
-  // اتصال دکمه سرچ مستقیم به RAWG به سبک کد اولمان
+  // اتصال دکمه سرچ مستقیم به RAWG
   const startSearch = async () => {
     if (!query.trim()) return;
     setLoading(true);
@@ -27,12 +28,12 @@ export default function AdminPage() {
       }
     } catch (e: any) {
       setMsg('خطا در اتصال مستقیم: ' + e.message);
-    } {
+    } finally {
       setLoading(false);
     }
   };
 
-  // ذخیره بازی در دیتابیس کلودفلر شما
+  // ذخیره بازی در دیتابیس کلودفلر
   const saveGame = async (game: any) => {
     setMsg(`در حال ذخیره ${game.name}...`);
     try {
@@ -70,7 +71,9 @@ export default function AdminPage() {
         
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', alignItems: 'center' }}>
           <h2 style={{ color: '#3b82f6', margin: 0 }}>🛠️ پنل مدیریت مخفی بازی‌ها</h2>
-          <a href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px 10px', borderRadius: '8px' }}>مشاهده سایت اصلی</a>
+          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px 10px', borderRadius: '8px' }}>
+            مشاهده سایت اصلی
+          </Link>
         </div>
 
         <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
@@ -79,6 +82,7 @@ export default function AdminPage() {
             placeholder="نام بازی به انگلیسی..." 
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && startSearch()}
             style={{ flex: 1, padding: '12px', borderRadius: '10px', border: '1px solid #374151', backgroundColor: '#030712', color: '#fff', direction: 'ltr' }}
           />
           <button 
@@ -97,7 +101,13 @@ export default function AdminPage() {
           {results.map((game) => (
             <div key={game.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', backgroundColor: '#1f2937', borderRadius: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                {game.background_image && <img src={game.background_image} style={{ width: '40px', height: '40px', objectCover: 'cover', borderRadius: '5px' }} />}
+                {game.background_image && (
+                  <img 
+                    src={game.background_image} 
+                    alt="" 
+                    style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '5px' }} 
+                  />
+                )}
                 <span style={{ fontSize: '14px' }}>{game.name}</span>
               </div>
               <button 
