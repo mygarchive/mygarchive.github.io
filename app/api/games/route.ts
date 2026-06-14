@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getRequestContext } from '@opennextjs/cloudflare';
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
@@ -21,8 +22,10 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || []);
     }
 
-    // اگر سرچ نبود، لیست بازی‌های دیتابیس خودت را برای صفحه اصلی می‌خواند
-    const myKv = (process.env as any).GAME_KV;
+    // خواندن صحیح دیتابیس از محیط کلودفلر
+    const env = getRequestContext().env as any;
+    const myKv = env?.GAME_KV;
+    
     if (!myKv) return NextResponse.json([]);
 
     const gamesData = await myKv.get("games_list");
@@ -36,7 +39,10 @@ export async function GET(request: NextRequest) {
 // ۲. ذخیره بازی جدید در دیتابیس
 export async function POST(request: Request) {
   try {
-    const myKv = (process.env as any).GAME_KV;
+    // خواندن صحیح دیتابیس از محیط کلودفلر
+    const env = getRequestContext().env as any;
+    const myKv = env?.GAME_KV;
+
     if (!myKv) {
       return NextResponse.json({ error: "اتصال به دیتابیس برقرار نیست." }, { status: 500 });
     }
@@ -55,4 +61,4 @@ export async function POST(request: Request) {
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
-} 
+}
