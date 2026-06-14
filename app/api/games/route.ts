@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
-// تنظیم هدرها برای دور زدن هرگونه کش در کلودفلر
+// هدرهای استاندارد برای دور زدن کش
 const corsHeaders = {
   'Cache-Control': 'no-cache, no-transform, max-age=0',
   'Content-Type': 'application/json',
@@ -29,7 +29,10 @@ export async function GET(request: NextRequest) {
       const rawgRes = await fetch(url);
       
       if (!rawgRes.ok) {
-        return NextResponse.json({ error: `خطای سرور مرجع: ${rawgRes.status}` }, { status: rawgRes.status }, { headers: corsHeaders });
+        return NextResponse.json(
+          { error: `خطای سرور مرجع: ${rawgRes.status}` }, 
+          { status: rawgRes.status, headers: corsHeaders } // 👈 اصلاح شد: ادغام در آرگومان دوم
+        );
       }
 
       const rawgData = await rawgRes.json();
@@ -43,7 +46,10 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(gamesData ? JSON.parse(gamesData) : [], { headers: corsHeaders });
 
   } catch (error: any) {
-    return NextResponse.json({ error: error.message || 'خطای ناشناخته' }, { status: 500 }, { headers: corsHeaders });
+    return NextResponse.json(
+      { error: error.message || 'خطای ناشناخته' }, 
+      { status: 500, headers: corsHeaders }
+    );
   }
 }
 
@@ -53,9 +59,10 @@ export async function POST(request: NextRequest) {
     const myKv = getCloudflareKV(request);
 
     if (!myKv) {
-      return NextResponse.json({ 
-        error: "اتصال به دیتابیس برقرار نیست. لطفا با ادمین تماس بگیرید." 
-      }, { status: 500 }, { headers: corsHeaders });
+      return NextResponse.json(
+        { error: "اتصال به دیتابیس برقرار نیست. لطفا با ادمین تماس بگیرید." }, 
+        { status: 500, headers: corsHeaders }
+      );
     }
 
     const gameData = await request.json();
@@ -63,13 +70,19 @@ export async function POST(request: NextRequest) {
     const games = gamesData ? JSON.parse(gamesData) : [];
     
     if (games.some((g: any) => g.id.toString() === gameData.id.toString())) {
-      return NextResponse.json({ error: 'این بازی قبلاً اضافه شده است.' }, { status: 400 }, { headers: corsHeaders });
+      return NextResponse.json(
+        { error: 'این بازی قبلاً اضافه شده است.' }, 
+        { status: 400, headers: corsHeaders }
+      );
     }
     
     games.push(gameData);
     await myKv.put("games_list", JSON.stringify(games));
     return NextResponse.json({ success: true }, { headers: corsHeaders });
   } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 }, { headers: corsHeaders });
+    return NextResponse.json(
+      { error: error.message }, 
+      { status: 500, headers: corsHeaders }
+    );
   }
 }
