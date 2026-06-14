@@ -9,7 +9,7 @@ binding = "ASSETS"
 
 [[kv_namespaces]]
 binding = "GAME_KV"
-id = "a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1"
+id = "738198ef9ce548f3a22e30310da8ea85"
 
 [vars]
 NEXT_ANALYTICS_ID = ""
