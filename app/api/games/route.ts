@@ -2,6 +2,16 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
+// تابع کمکی برای پیدا کردن دیتابیس از تمام لایه‌های ممکن کلودفلر
+function getCloudflareKV(request: any) {
+  return (
+    request.context?.env?.GAME_KV || 
+    (process.env as any).GAME_KV || 
+    (globalThis as any).GAME_KV ||
+    (globalThis as any).__cloudflare_env__?.GAME_KV
+  );
+}
+
 // ۱. مدیریت هماهنگ سرچ و دریافت لیست بازی‌ها
 export async function GET(request: NextRequest) {
   try {
@@ -20,8 +30,12 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || []);
     }
 
-    const myKv = (process.env as any).GAME_KV || (globalThis as any).GAME_KV || (request as any).context?.env?.GAME_KV;
-    if (!myKv) return NextResponse.json([]);
+    const myKv = getCloudflareKV(request);
+    if (!myKv) {
+      // برای اینکه متوجه شویم دیتابیس کجاست، لیست کلیدها را برمی‌گردانیم
+      const availableKeys = Object.keys(process.env || {});
+      return NextResponse.json({ error: "KV یافت نشد", debug: availableKeys }, { status: 200 });
+    }
 
     const gamesData = await myKv.get("games_list");
     return NextResponse.json(gamesData ? JSON.parse(gamesData) : []);
@@ -32,12 +46,14 @@ export async function GET(request: NextRequest) {
 }
 
 // ۲. ذخیره بازی جدید در دیتابیس
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
-    const myKv = (process.env as any).GAME_KV || (globalThis as any).GAME_KV || (request as any).context?.env?.GAME_KV;
+    const myKv = getCloudflareKV(request);
 
     if (!myKv) {
-      return NextResponse.json({ error: "اتصال به دیتابیس برقرار نیست." }, { status: 500 });
+      return NextResponse.json({ 
+        error: "اتصال به دیتابیس برقرار نیست. لطفا با ادمین تماس بگیرید." 
+      }, { status: 500 });
     }
 
     const gameData = await request.json();
