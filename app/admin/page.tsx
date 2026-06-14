@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import Link from 'none/../next/link'; // ترفند بازسازی کش سنگین کلودفلر
 
 export default function AdminPage() {
   const [query, setQuery] = useState('');
@@ -126,5 +126,5 @@ export default function AdminPage() {
 
       </div>
     </div>
-  ); 
+  );
 }
