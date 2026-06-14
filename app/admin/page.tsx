@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -23,7 +24,7 @@ export default function AdminPage() {
   const searchGames = async () => {
     if (!searchQuery.trim()) return;
     setLoading(true);
-    setSearchResults([]); // خالی کردن نتایج قبلی
+    setSearchResults([]);
     
     try {
       const res = await fetch(`/api/games?search=${encodeURIComponent(searchQuery.trim())}`);
@@ -45,7 +46,6 @@ export default function AdminPage() {
       }
       
     } catch (err: any) {
-      // نمایش دقیق علت کار نکردن دکمه به ادمین
       alert(`❌ خطا در جستجو: ${err.message || 'ارور ناشناخته در ارتباط با سرور'}`);
     } finally {
       setLoading(false);
@@ -98,3 +98,50 @@ export default function AdminPage() {
       <div className="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-800">
         <div className="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
           <h1 className="text-xl font-bold text-blue-500">🛠️ مدیریت ابری مخفی بازی‌ها</h1>
+          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs transition border border-gray-700">
+            مشاهده سایت اصلی
+          </Link>
+        </div>
+
+        <div className="flex gap-2 mb-6">
+          <input 
+            type="text" 
+            placeholder="نام بازی را انگلیسی بنویسید (مثلا: Cyberpunk 2077)" 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && searchGames()}
+            className="flex-1 bg-gray-950 text-white px-4 py-3 rounded-xl border border-gray-800 focus:outline-none focus:border-blue-500 text-left text-sm"
+            dir="ltr"
+          />
+          <button 
+            onClick={searchGames} 
+            disabled={loading} 
+            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 px-6 py-3 rounded-xl font-bold transition text-sm"
+          >
+            {loading ? 'در حال سرچ...' : 'جستجوی هوشمند'}
+          </button>
+        </div>
+
+        {searchResults.length > 0 && (
+          <div className="grid grid-cols-1 gap-3 bg-gray-950 p-3 rounded-xl max-h-96 overflow-y-auto border border-gray-800">
+            {searchResults.map(game => (
+              <div key={game.id} className="flex items-center justify-between bg-gray-900 p-3 rounded-lg border border-gray-800">
+                <div className="flex items-center gap-3">
+                  <img src={game.background_image} alt={game.name} className="w-12 h-12 object-cover rounded-lg" />
+                  <span className="text-sm font-semibold text-gray-200">{game.name}</span>
+                </div>
+                <button 
+                  disabled={savingId !== null}
+                  onClick={() => addGameToSite(game)} 
+                  className="bg-green-600 hover:bg-green-700 text-xs px-3 py-1.5 rounded-lg font-medium transition disabled:bg-gray-600"
+                >
+                  {savingId === game.id ? 'در حال ذخیره روی ابر...' : '➕ اضافه به دیتابیس اصلی'}
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
