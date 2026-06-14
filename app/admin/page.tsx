@@ -14,8 +14,6 @@ interface Game {
   short_screenshots?: { id: number; image: string }[];
 }
 
-const API_KEY = '8ceb3ebba03c4ddca51106af23868263'; 
-
 export default function AdminPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<Game[]>([]);
@@ -26,11 +24,13 @@ export default function AdminPage() {
     if (!searchQuery) return;
     setLoading(true);
     try {
-      const res = await fetch(`https://api.rawg.io/api/games?key=${API_KEY}&search=${searchQuery}`);
+      // سرچ هوشمند از طریق API داخلی سایت خودت برای دور زدن محدودیت‌ها
+      const res = await fetch(`/api/games?search=${encodeURIComponent(searchQuery)}`);
+      if (!res.ok) throw new Error();
       const data = await res.json();
-      setSearchResults(data.results || []);
+      setSearchResults(data || []);
     } catch (err) {
-      alert('خطا در دریافت اطلاعات بازی‌ها از سرور مرجع');
+      alert('خطا در دریافت اطلاعات. لطفا نام بازی را درست وارد کنید.');
     } finally {
       setLoading(false);
     }
@@ -39,7 +39,6 @@ export default function AdminPage() {
   const addGameToSite = async (game: Game) => {
     setSavingId(game.id);
     try {
-      // بهینه‌سازی دیتای فوق‌العاده حجیم سرور برای ذخیره‌سازی تمیز در کلودفلر
       const optimizedGame = {
         id: game.id.toString(),
         name: game.name,
@@ -67,12 +66,12 @@ export default function AdminPage() {
       const result = await res.json();
       
       if (res.ok) {
-        alert(`✅ بازی "${game.name}" با موفقیت به سرور اصلی اضافه شد و در صفحه اصلی قرار گرفت!`);
+        alert(`✅ بازی "${game.name}" با موفقیت به سرور اصلی اضافه شد!`);
       } else {
         alert(`❌ خطا: ${result.error}`);
       }
     } catch (err) {
-      alert('خطا در برقراری ارتباط با دیتابیس کلودفلر');
+      alert('خطا در برقراری ارتباط با دیتابیس');
     } finally {
       setSavingId(null);
     }
@@ -82,25 +81,23 @@ export default function AdminPage() {
     <div className="min-h-screen bg-gray-950 text-white p-4 md:p-8" dir="rtl">
       <div className="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-800">
         <div className="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
-          <h1 className="text-xl font-bold text-blue-500">🛠️ دیتاسنتر و مدیریت مخفی بازی‌ها</h1>
-          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs transition border border-gray-700---">
+          <h1 className="text-xl font-bold text-blue-500">🛠️ مدیریت ابری مخفی بازی‌ها</h1>
+          <Link href="/" className="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-xl text-xs transition border border-gray-700">
             مشاهده سایت اصلی
           </Link>
         </div>
 
-        <p className="text-xs text-gray-400 mb-4 font-semibold">اسم بازی مورد نظر را انگلیسی سرچ کنید تا تمام اطلاعات آن از سرور جهانی استخراج و آماده ذخیره شود.</p>
-
         <div className="flex gap-2 mb-6">
           <input 
             type="text" 
-            placeholder="مثلا: Cyberpunk 2077" 
+            placeholder="نام بازی را انگلیسی بنویسید (مثلا: Cyberpunk 2077)" 
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="flex-1 bg-gray-950 text-white px-4 py-3 rounded-xl border border-gray-800 focus:outline-none focus:border-blue-500 text-left text-sm"
             dir="ltr"
           />
           <button onClick={searchGames} disabled={loading} className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 px-6 py-3 rounded-xl font-bold transition text-sm">
-            {loading ? 'در حال جستجو...' : 'جستجوی هوشمند'}
+            {loading ? 'در حال سرچ...' : 'جستجوی هوشمند'}
           </button>
         </div>
 
