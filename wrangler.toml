@@ -7,7 +7,14 @@ compatibility_flags = ["nodejs_compat"]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
+# 🌍 اتصال دیتابیس برای نسخه اصلی (Production)
 [[kv_namespaces]]
+binding = "GAME_KV"
+id = "738198ef9ce548f3a22e30310da8ea85"
+
+# 🧪 اتصال دیتابیس برای نسخه‌های پیش‌نمایش (Preview)
+[env.preview]
+[[env.preview.kv_namespaces]]
 binding = "GAME_KV"
 id = "738198ef9ce548f3a22e30310da8ea85"
 
