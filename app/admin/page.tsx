@@ -15,8 +15,8 @@ export default function AdminPage() {
     setMsg('⏳ در حال ارسال درخواست به سرور خودتان برای سرچ...');
     
     try {
-      // 🚀 تغییر آدرس به مسیر جدید بدون کش /api/store
-      const res = await fetch(`/api/store?search=${encodeURIComponent(query.trim())}`);
+      // 🚀 اتصال به مسیر جدید و مستقل سرچ
+      const res = await fetch(`/store-api?search=${encodeURIComponent(query.trim())}`);
       
       if (!res.ok) {
         const errorData = await res.json();
@@ -45,8 +45,8 @@ export default function AdminPage() {
   const saveGame = async (game: any) => {
     setMsg(`⏳ در حال ذخیره بازی "${game.name}"...`);
     try {
-      // 🚀 تغییر آدرس متد POST به مسیر جدید دیتابیس /api/store
-      const res = await fetch('/api/store', {
+      // 🚀 اتصال متد POST به مسیر جدید دیتابیس بدون تداخل فرانت‌آند
+      const res = await fetch('/store-api', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -80,53 +80,4 @@ export default function AdminPage() {
         
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px', alignItems: 'center' }}>
           <h2 style={{ color: '#3b82f6', margin: 0 }}>🛠️ منوی کنترل ابری بازی‌ها</h2>
-          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px 10px', borderRadius: '8px' }}>
-            مشاهده سایت اصلی
-          </Link>
-        </div>
-
-        <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
-          <input 
-            type="text" 
-            placeholder="نام بازی را انگلیسی بنویسید (مثلا: GTA V)..." 
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && startSearch()}
-            style={{ flex: 1, padding: '12px', borderRadius: '10px', border: '1px solid #374151', backgroundColor: '#030712', color: '#fff', direction: 'ltr' }}
-          />
-          <button 
-            onClick={startSearch}
-            disabled={loading}
-            style={{ padding: '12px 20px', borderRadius: '10px', border: 'none', backgroundColor: '#2563eb', color: '#fff', cursor: 'pointer', fontWeight: 'bold' }}
-          >
-            {loading ? 'صبر کنید...' : 'جستجو'}
-          </button>
-        </div>
-
-        <div style={{ padding: '10px', backgroundColor: '#030712', borderRadius: '8px', fontSize: '13px', color: '#9ca3af', marginBottom: '15px' }}>
-          وضعیت: {msg}
-        </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          {results.map((game) => (
-            <div key={game.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', backgroundColor: '#1f2937', borderRadius: '8px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                {game.background_image && (
-                  <img src={game.background_image} alt="" style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '5px' }} />
-                )}
-                <span style={{ fontSize: '14px' }}>{game.name}</span>
-              </div>
-              <button 
-                onClick={() => saveGame(game)}
-                style={{ backgroundColor: '#16a34a', color: '#fff', border: 'none', padding: '6px 12px', borderRadius: '6px', cursor: 'pointer', fontSize: '12px' }}
-              >
-                ➕ اضافه به سایت
-              </button>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </div>
-  );
-}
+          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '14px', border: '1px solid #374151', padding: '5px
