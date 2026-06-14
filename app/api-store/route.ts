@@ -2,23 +2,35 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
-// هدرهای ضد کش برای مجبور کردن کلودفلر به خواندن دیتای زنده
 const corsHeaders = {
   'Cache-Control': 'no-cache, no-transform, max-age=0, must-revalidate',
   'Content-Type': 'application/json',
 };
 
+// تابع پیشرفته برای استخراج دسترسی KV در محیط OpenNext
 function getCloudflareKV(request: any) {
-  return (
-    (request as any).context?.runtime?.env?.GAME_KV ||
-    (request as any).context?.env?.GAME_KV ||
-    (globalThis as any).__cloudflare_env__?.GAME_KV ||
-    (process.env as any).GAME_KV ||
-    (globalThis as any).GAME_KV
-  );
+  try {
+    if (request.context?.runtime?.env?.GAME_KV) return request.context.runtime.env.GAME_KV;
+    if (request.context?.env?.GAME_KV) return request.context.env.GAME_KV;
+    
+    const processEnv = process.env as any;
+    if (processEnv.GAME_KV) return processEnv.GAME_KV;
+    
+    const globalThisAny = globalThis as any;
+    if (globalThisAny.__cloudflare_env__?.GAME_KV) return globalThisAny.__cloudflare_env__.GAME_KV;
+    if (globalThisAny.GAME_KV) return globalThisAny.GAME_KV;
+    
+    if (typeof request === 'object' && request !== null) {
+      for (const key of Object.keys(request)) {
+        if (request[key]?.env?.GAME_KV) return request[key].env.GAME_KV;
+      }
+    }
+  } catch (e) {
+    console.error("Error finding KV:", e);
+  }
+  return null;
 }
 
-// ۱. دریافت لیست بازی‌ها یا سرچ مستقیم
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
@@ -53,14 +65,13 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// ۲. ذخیره بازی جدید در KV کلودفلر
 export async function POST(request: NextRequest) {
   try {
     const myKv = getCloudflareKV(request);
 
     if (!myKv) {
       return NextResponse.json(
-        { error: "اتصال به دیتابیس (KV) برقرار نیست. لطفاً متغیر GAME_KV را در پنل چک کنید." }, 
+        { error: "اتصال به دیتابیس (KV) برقرار نیست. لطفاً فایل wrangler.toml را در پروژه چک کنید." }, 
         { status: 500, headers: corsHeaders }
       );
     }
