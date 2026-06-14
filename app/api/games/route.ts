@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getRequestContext } from '@opennextjs/cloudflare';
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
@@ -22,9 +21,8 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || []);
     }
 
-    // خواندن صحیح دیتابیس از محیط کلودفلر
-    const env = getRequestContext().env as any;
-    const myKv = env?.GAME_KV;
+    // گرفتن دیتابیس مستقیماً از شیء گلوبال کلودفلر در کل فریم‌ورک‌ها
+    const myKv = (process.env as any).GAME_KV || (globalThis as any).GAME_KV || (request as any).context?.env?.GAME_KV;
     
     if (!myKv) return NextResponse.json([]);
 
@@ -39,9 +37,8 @@ export async function GET(request: NextRequest) {
 // ۲. ذخیره بازی جدید در دیتابیس
 export async function POST(request: Request) {
   try {
-    // خواندن صحیح دیتابیس از محیط کلودفلر
-    const env = getRequestContext().env as any;
-    const myKv = env?.GAME_KV;
+    // بررسی تمام راه‌های ممکن دسترسی به متغیرهای بایند شده در کلودفلر
+    const myKv = (process.env as any).GAME_KV || (globalThis as any).GAME_KV || (request as any).context?.env?.GAME_KV;
 
     if (!myKv) {
       return NextResponse.json({ error: "اتصال به دیتابیس برقرار نیست." }, { status: 500 });
