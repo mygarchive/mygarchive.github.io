@@ -22,19 +22,25 @@ export default function AdminPage() {
   const [searchResults, setSearchResults] = useState<Game[]>([]);
   const [loading, setLoading] = useState(false);
   const [savingId, setSavingId] = useState<any>(null);
+  const [debugMessage, setDebugMessage] = useState<string>(''); // نمایش خطاها روی صفحه
 
   const searchGames = async () => {
-    if (!searchQuery.trim()) return;
+    if (!searchQuery.trim()) {
+      setDebugMessage('⚠️ لطفاً ابتدا نام بازی را وارد کنید.');
+      return;
+    }
+    
     setLoading(true);
     setSearchResults([]);
+    setDebugMessage('🔍 در حال ارسال درخواست مستقیم به سرور مرجع (RAWG)...');
     
     try {
-      // اتصال کاملاً مستقیم به سرور RAWG بدون واسطه API داخلی
       const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(searchQuery.trim())}`;
+      
       const res = await fetch(url);
       
       if (!res.ok) {
-        throw new Error(`خطای سرور مرجع با کد ${res.status}`);
+        throw new Error(`پاسخ ناموفق سرور RAWG با کد خطا: ${res.status}`);
       }
       
       const data = await res.json();
@@ -42,14 +48,18 @@ export default function AdminPage() {
       if (data && Array.isArray(data.results)) {
         setSearchResults(data.results);
         if (data.results.length === 0) {
-          alert('❌ هیچ بازی با این نام پیدا نشد. نام را به انگلیسی بررسی کنید.');
+          setDebugMessage('❌ جستجو موفق بود اما هیچ بازی‌ای با این نام پیدا نشد.');
+        } else {
+          setDebugMessage(`✅ تعداد ${data.results.length} بازی با موفقیت یافت شد.`);
         }
       } else {
-        throw new Error('فرمت دیتای دریافتی معتبر نیست.');
+        throw new Error('فرمت دیتای دریافتی از RAWG ساختار آرایه‌ای ندارد.');
       }
       
     } catch (err: any) {
-      alert(`❌ خطا در جستجوی مستقیم: ${err.message || 'ارور ناشناخته'}`);
+      // چاپ مستقیم خطا روی صفحه برای ادمین
+      setDebugMessage(`❌ خطای جاوااسکریپت: ${err.message || 'ارور ناشناخته'}`);
+      console.error(err);
     } finally {
       setLoading(false);
     }
@@ -87,7 +97,7 @@ export default function AdminPage() {
       if (res.ok) {
         alert(`✅ بازی "${game.name}" با موفقیت به سرور اصلی اضافه شد!`);
       } else {
-        alert(`❌ خطا در ذخیره: ${result.error || 'خطای ناشناخته'}`);
+        alert(`❌ خطا در ذخیره دیتابیس: ${result.error || 'خطای ناشناخته'}`);
       }
     } catch (err) {
       alert('❌ خطا در برقراری ارتباط با دیتابیس کلودفلر');
@@ -106,7 +116,7 @@ export default function AdminPage() {
           </Link>
         </div>
 
-        <div className="flex gap-2 mb-6">
+        <div className="flex gap-2 mb-4">
           <input 
             type="text" 
             placeholder="نام بازی را انگلیسی بنویسید (مثلا: Cyberpunk 2077)" 
@@ -124,6 +134,13 @@ export default function AdminPage() {
             {loading ? 'در حال سرچ...' : 'جستجوی مستقیم'}
           </button>
         </div>
+
+        {/* بخش نمایش گزارش زنده وضعیت سرچ */}
+        {debugMessage && (
+          <div className="mb-4 p-3 rounded-xl bg-gray-950 border border-gray-800 text-xs text-gray-300 text-right font-mono">
+            {debugMessage}
+          </div>
+        )}
 
         {searchResults.length > 0 && (
           <div className="grid grid-cols-1 gap-3 bg-gray-950 p-3 rounded-xl max-h-96 overflow-y-auto border border-gray-800">
