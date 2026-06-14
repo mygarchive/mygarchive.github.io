@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// ⚠️ این خط فوق‌العاده حیاتی است تا کلودفلر دیتابیس را به این روت متصل کند
-export const runtime = 'edge';
-
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
 // ۱. مدیریت هماهنگ سرچ و دریافت لیست بازی‌ها
@@ -24,7 +21,6 @@ export async function GET(request: NextRequest) {
     }
 
     const myKv = (process.env as any).GAME_KV || (globalThis as any).GAME_KV || (request as any).context?.env?.GAME_KV;
-    
     if (!myKv) return NextResponse.json([]);
 
     const gamesData = await myKv.get("games_list");
