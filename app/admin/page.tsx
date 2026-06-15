@@ -18,7 +18,7 @@ export default function AdminPanel() {
   const [message, setMessage] = useState({ text: '', isError: false });
 
   // 🔴 رمز عبور خودت را اینجا تغییر بده:
-  const YOUR_USERNAME = 'HF273';
+  const YOUR_USERNAME = 'admin';
   const YOUR_PASSWORD = '123456';
 
   const handleLogin = (e: React.FormEvent) => {
@@ -114,7 +114,19 @@ export default function AdminPanel() {
     }
   };
 
-  // 🌟 حالت اول: کاربر هنوز وارد نشده است (فرم ورود)
+  // ⚡ ترفند جادویی: تبدیل خودکار عکس‌های سنگین به نسخه بهینه و فشرده ۴۲۰ پیکسلی RAWG
+  const getOptimizedImage = (url: string) => {
+    if (!url) return '';
+    if (url.includes('media/games/')) {
+      return url.replace('media/games/', 'media/resize/420/-/games/');
+    }
+    if (url.includes('media/screenshots/')) {
+      return url.replace('media/screenshots/', 'media/resize/420/-/screenshots/');
+    }
+    return url;
+  };
+
+  // حالت اول: فرم ورود
   if (!isLoggedIn) {
     return (
       <div className="min-h-screen bg-slate-900 flex flex-col justify-center items-center p-4" dir="rtl">
@@ -156,7 +168,7 @@ export default function AdminPanel() {
     );
   }
 
-  // 🌟 حالت دوم: کاربر با موفقیت وارد شده است (محتوای اصلی پنل)
+  // حالت دوم: محتوای اصلی پنل ادمین
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 p-6" dir="rtl">
       <div className="max-w-6xl mx-auto">
@@ -210,7 +222,24 @@ export default function AdminPanel() {
           )}
         </section>
 
-        {searchResults.length > 0 && (
+        {/* ⏳ لودینگ کارت‌ها به صورت اسکلتون متحرک و شیک */}
+        {loading && (
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-slate-600 mb-4 animate-pulse">در حال دریافت نتایج...</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {[1, 2, 3, 4].map((n) => (
+                <div key={n} className="bg-slate-800/50 border border-slate-700/50 rounded-2xl overflow-hidden h-64 animate-pulse flex flex-col justify-between p-4">
+                  <div className="w-full h-32 bg-slate-700 rounded-xl mb-4"></div>
+                  <div className="h-4 bg-slate-700 rounded w-3/4 mb-2"></div>
+                  <div className="h-3 bg-slate-700 rounded w-1/2 mb-4"></div>
+                  <div className="h-10 bg-slate-700 rounded-xl w-full"></div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {!loading && searchResults.length > 0 && (
           <section className="mb-12">
             <h2 className="text-xl font-bold text-slate-300 mb-4 border-r-4 border-purple-500 pr-2">نتایج یافت شده:</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -219,10 +248,12 @@ export default function AdminPanel() {
                 
                 return (
                   <div key={game.id} className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between group hover:border-slate-500 transition duration-300">
+                    
+                    {/* بخش کاور بازی با لودینگ پیش‌فرض بک‌گراند */}
                     <div className="relative aspect-video w-full bg-slate-900 overflow-hidden">
                       {game.background_image ? (
                         <img
-                          src={game.background_image}
+                          src={getOptimizedImage(game.background_image)} // 🌟 اعمال فشرده‌ساز آنلاین
                           alt={game.name}
                           className="object-cover w-full h-full group-hover:scale-105 transition duration-500"
                           loading="lazy"
