@@ -104,3 +104,4 @@ export async function DELETE(request: Request) {
     return NextResponse.json({ error: 'خطا در حذف' }, { status: 400 });
   }
 }
+ 
