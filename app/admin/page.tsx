@@ -18,8 +18,8 @@ export default function AdminPanel() {
   const [message, setMessage] = useState({ text: '', isError: false });
 
   // 🔴 نام کاربری و رمز عبور پنل ادمین شما
-  const YOUR_USERNAME = 'admin';
-  const YOUR_PASSWORD = '123456';
+  const YOUR_USERNAME = 'HF273';
+  const YOUR_PASSWORD = 'HF1to1';
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
