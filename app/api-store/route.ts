@@ -1,16 +1,15 @@
 import { NextResponse } from 'next/server';
 
-// گرفتن متغیرهای محیطی آپستاش
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL || '';
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || '';
 
-// تابع کمکی استاندارد برای ارسال دستورات REST به آپستاش
+// تابع ارتباطی کاملاً استاندارد با آپستاش
 async function runRedisCommand(command: string[]) {
   if (!UPSTASH_URL || !UPSTASH_TOKEN) {
-    console.error('Upstash credentials are missing!');
+    console.error('تنظیمات آپستاش در متغیرهای محیطی ست نشده است!');
     return null;
   }
-  
+
   try {
     const res = await fetch(`${UPSTASH_URL}`, {
       method: 'POST',
@@ -20,16 +19,12 @@ async function runRedisCommand(command: string[]) {
       },
       body: JSON.stringify(command),
     });
-    
-    if (!res.ok) {
-      console.error('Upstash response error status:', res.status);
-      return null;
-    }
-    
+
+    if (!res.ok) return null;
     const data = await res.json();
     return data.result;
   } catch (err) {
-    console.error('Upstash Fetch Exception:', err);
+    console.error('Upstash Fetch Error:', err);
     return null;
   }
 }
@@ -39,57 +34,48 @@ export async function GET(request: Request) {
   const search = searchParams.get('search');
   const id = searchParams.get('id');
 
-  // ۱. اگر ادمین در حال سرچ بازی جدید است (کاملاً مجزا شده تا ارور دیتابیس خرابش نکند)
+  // ۱. بخش جستجوی بازی از API اصلی RAWG برای ادمین
   if (search) {
     try {
       const apiKey = '68b92b6794614ffcb7d091e0a9d80fc4';
-      const apiUrl = `https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(search)}&page_size=12`;
-      
-      const res = await fetch(apiUrl);
-      if (!res.ok) throw new Error('RAWG API Bad Response');
-      
+      const res = await fetch(`https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(search)}&page_size=12`);
+      if (!res.ok) throw new Error('RAWG API Error');
       const data = await res.json();
       return NextResponse.json(data.results || []);
     } catch (err) {
-      console.error('Error searching game from RAWG:', err);
-      return NextResponse.json({ error: 'خطا در دریافت اطلاعات از سرور اصلی بازی‌ها' }, { status: 500 });
+      return NextResponse.json({ error: 'خطا در ارتباط با سرور اصلی بازی‌ها' }, { status: 500 });
     }
   }
 
-  // ۲. حذف بازی خاص از دیتابیس
+  // ۲. بخش حذف بازی از دیتابیس
   if (id) {
     try {
       await runRedisCommand(['HDEL', 'my_games_dict', id.toString()]);
       return NextResponse.json({ success: true });
     } catch (err) {
-      return NextResponse.json({ error: 'خطا در حذف از دیتابیس' }, { status: 500 });
+      return NextResponse.json({ error: 'خطا در حذف' }, { status: 500 });
     }
   }
 
-  // ۳. در حالت عادی: دریافت لیست بازی‌های ذخیره شده روی سایت
+  // ۳. لود کردن بازی‌های ذخیره‌شده در صفحه اصلی سایت (استفاده از HVALS به جای HGETALL برای سرعت و راحتی بیشتر)
   try {
-    const rawResult = await runRedisCommand(['HGETALL', 'my_games_dict']);
+    // دستور HVALS مستقیماً فقط مقادیر (دیتای جیسون بازی‌ها) را به صورت یک آرایه تمیز برمی‌گرداند
+    const rawValues = await runRedisCommand(['HVALS', 'my_games_dict']);
     
-    // اگر دیتابیس کلاً خالی بود یا خطایی رخ داد، آرایه خالی برگردان تا سایت کرش نکند
-    if (!rawResult || !Array.isArray(rawResult) || rawResult.length === 0) {
+    if (!rawValues || !Array.isArray(rawValues) || rawValues.length === 0) {
       return NextResponse.json([]);
     }
-    
-    const gamesList: any[] = [];
-    // پردازش امن پاسخ به صورت جفت‌های کلید و مقدار
-    for (let i = 1; i < rawResult.length; i += 2) {
+
+    const gamesList = rawValues.map((item: any) => {
       try {
-        const item = rawResult[i];
-        if (item) {
-          gamesList.push(typeof item === 'string' ? JSON.parse(item) : item);
-        }
+        return typeof item === 'string' ? JSON.parse(item) : item;
       } catch (e) {
-        console.error('Error parsing individual game json:', e);
+        return null;
       }
-    }
+    }).filter(Boolean);
+
     return NextResponse.json(gamesList);
   } catch (err) {
-    console.error('Error fetching all games:', err);
     return NextResponse.json([]);
   }
 }
@@ -97,18 +83,12 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    if (!body.id) {
-      return NextResponse.json({ error: 'شناسه بازی معتبر نیست' }, { status: 400 });
-    }
+    if (!body.id) return NextResponse.json({ error: 'شناسه بازی معتبر نیست' }, { status: 400 });
 
-    const result = await runRedisCommand(['HSET', 'my_games_dict', body.id.toString(), JSON.stringify(body)]);
-    if (result === null) {
-      throw new Error('Failed to write to Upstash');
-    }
-
+    await runRedisCommand(['HSET', 'my_games_dict', body.id.toString(), JSON.stringify(body)]);
     return NextResponse.json({ success: true });
   } catch (err: any) {
-    return NextResponse.json({ error: err.message || 'خطا در ذخیره‌سازی دیتابیس' }, { status: 500 });
+    return NextResponse.json({ error: 'خطا در ذخیره‌سازی دیتابیس' }, { status: 500 });
   }
 }
 
