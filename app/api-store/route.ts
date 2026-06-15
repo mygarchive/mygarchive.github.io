@@ -3,7 +3,6 @@ import { NextResponse } from 'next/server';
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL || '';
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || '';
 
-// تابع ارتباط با آپستاش با مدیریت خطای کامل
 async function runRedisCommand(command: string[]) {
   if (!UPSTASH_URL || !UPSTASH_TOKEN) {
     console.error('Upstash credentials are missing!');
@@ -35,7 +34,7 @@ export async function GET(request: Request) {
     const search = searchParams.get('search');
     const id = searchParams.get('id');
 
-    // ۱. بخش جستجوی بازی از API اصلی RAWG (کاملاً مستقل و بدون درگیری با دیتابیس)
+    // ۱. بخش جستجوی بازی از API اصلی RAWG
     if (search) {
       const apiKey = '68b92b6794614ffcb7d091e0a9d80fc4';
       const apiUrl = `https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(search)}&page_size=12`;
@@ -49,13 +48,7 @@ export async function GET(request: Request) {
       return NextResponse.json(data.results || []);
     }
 
-    // ۲. بخش حذف بازی از دیتابیس
-    if (id) {
-      await runRedisCommand(['HDEL', 'my_games_dict', id.toString()]);
-      return NextResponse.json({ success: true });
-    }
-
-    // ۳. لود کردن بازی‌ها در صفحه اصلی با دستور امن HVALS
+    // ۲. دریافت اطلاعات کل بازی‌ها از دیتابیس آپستاش
     const rawValues = await runRedisCommand(['HVALS', 'my_games_dict']);
     
     if (!rawValues || !Array.isArray(rawValues) || rawValues.length === 0) {
@@ -71,6 +64,12 @@ export async function GET(request: Request) {
         }
       })
       .filter(Boolean);
+
+    // اگر آیدی خاصی فرستاده شده بود، فقط همان بازی را فیلتر کن و برگردان
+    if (id) {
+      const singleGame = gamesList.find((g: any) => g.id.toString() === id.toString());
+      return NextResponse.json(singleGame || null);
+    }
 
     return NextResponse.json(gamesList);
 
