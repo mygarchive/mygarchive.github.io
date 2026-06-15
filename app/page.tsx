@@ -32,18 +32,36 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 relative overflow-hidden" dir="rtl">
       
+      {/* هاله نور پس‌زمینه برای زیبایی و ظاهر مدرن */}
+      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-pink-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+
       <div className="max-w-6xl mx-auto relative z-10">
         
-        {/* هدر سایت - کاملاً عمومی و بدون دکمه ادمین */}
-        <header className="flex flex-col md:flex-row justify-between items-center gap-4 mb-12 border-b border-slate-900 pb-6">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-black text-white mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
+        {/* هدر اصلی سایت با متن‌های اختصاصی و برندینگ AI */}
+        <header className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12 border-b border-slate-900 pb-8">
+          <div className="text-center md:text-right">
+            <h1 className="text-3xl md:text-5xl font-black text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
               لیست بازی‌ها
             </h1>
-            <p className="text-slate-400 text-sm md:text-base font-medium">آرشیو جامع مشخصات، تریلرها و گالری تصاویر بازی‌ها</p>
+            <p className="text-slate-400 text-sm md:text-base font-medium">
+              آرشیو جامع مشخصات، تریلرها و گالری تصاویر بازی‌ها
+            </p>
+          </div>
+
+          {/* بخش اختصاصی Power by AI که در ادیت قبلی حذف شده بود */}
+          <div className="flex items-center gap-2.5 bg-slate-900/50 border border-purple-500/30 px-4 py-2 rounded-2xl backdrop-blur-md shadow-lg shadow-purple-950/20">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            </span>
+            <span className="text-xs font-bold text-purple-300 tracking-wide uppercase select-none">
+              Powered by AI Technology
+            </span>
           </div>
         </header>
 
+        {/* لودینگ اسکلتونی پیش‌فرض سایت */}
         {loading && (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[1, 2, 3, 4, 5, 6].map((n) => (
@@ -56,13 +74,14 @@ export default function Home() {
           </div>
         )}
 
-        {/* متن کاملاً خنثی و شیک در صورت خالی بودن دیتابیس بدون نام بردن از ادمین */}
+        {/* وضعیت خالی بودن دیتابیس با لحن شیک و خنثی */}
         {!loading && games.length === 0 && (
           <div className="text-center py-20 bg-slate-900/20 border border-slate-900/60 rounded-3xl backdrop-blur-md">
             <p className="text-slate-400 font-medium text-lg">در حال حاضر بازی خاصی در این بخش ثبت نشده است.</p>
           </div>
         )}
 
+        {/* رندر کردن لیست بازی‌ها پس از لود موفق از آپستاش */}
         {!loading && games.length > 0 && (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {games.map((game) => (
