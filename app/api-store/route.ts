@@ -1,8 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Redis } from '@upstash/redis';
-
-// اتصال خودکار به دیتابیس آپستاش از طریق متغیرهای نتلیفای
-const kv = Redis.fromEnv();
 
 const API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 const corsHeaders = {
@@ -10,11 +6,34 @@ const corsHeaders = {
   'Content-Type': 'application/json',
 };
 
+// تابع کمکی برای ارتباط مستقیم با دیتابیس بدون نیاز به هیچ پکیج خارجی
+async function upstashFetch(command: string, ...args: any[]) {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+
+  const response = await fetch(`${url}/${command}`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(args),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Upstash Error: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  return data.result;
+}
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const search = searchParams.get('search');
 
+    // ۱. سرچ بازی از API خارجی
     if (search) {
       const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(search)}`;
       const rawgRes = await fetch(url);
@@ -23,7 +42,8 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || [], { headers: corsHeaders });
     }
 
-    const gamesData = await kv.get("games_list");
+    // ۲. خواندن لیست بازی‌ها از دیتابیس آپستاش با دستور GET
+    const gamesData = await upstashFetch('get', 'games_list');
     return NextResponse.json(gamesData || [], { headers: corsHeaders });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500, headers: corsHeaders });
@@ -33,14 +53,19 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const gameData = await request.json();
-    const games: any[] = (await kv.get("games_list")) || [];
     
+    // خواندن لیست فعلی بازی‌ها
+    const games: any[] = (await upstashFetch('get', 'games_list')) || [];
+    
+    // جلوگیری از ثبت بازی تکراری
     if (games.some((g: any) => g.id.toString() === gameData.id.toString())) {
       return NextResponse.json({ error: 'این بازی قبلاً اضافه شده است.' }, { status: 400, headers: corsHeaders });
     }
     
+    // اضافه کردن بازی جدید و ذخیره نهایی با دستور SET
     games.push(gameData);
-    await kv.set("games_list", games);
+    await upstashFetch('set', 'games_list', games);
+    
     return NextResponse.json({ success: true }, { headers: corsHeaders });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500, headers: corsHeaders });
