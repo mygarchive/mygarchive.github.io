@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -22,15 +22,13 @@ export default function Home() {
       }
     }
     fetchGames();
-  }, []); // 🌟 اینجا کاملاً اصلاح شد
+  }, []);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between" dir="rtl">
       
-      {/* بخش اصلی محتوای سایت */}
       <main className="max-w-6xl w-full mx-auto p-6 flex-1">
         
-        {/* هدر مینیمال جدید سایت */}
         <header className="text-center my-12">
           <h1 className="text-4xl font-black text-white tracking-tight sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
             لیست بازی‌های من
@@ -40,18 +38,19 @@ export default function Home() {
           </p>
         </header>
 
-        {/* وضعیت لودینگ */}
-        {loading ? (
+        {loading && (
           <div className="flex justify-center items-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
           </div>
-        ) : games.length === 0 ? (
+        )}
+
+        {!loading && games.length === 0 && (
           <div className="text-center text-slate-500 my-20">
             <p className="text-lg">هنوز هیچ بازی به لیست اضافه نشده است.</p>
           </div>
-        ) : (
-          
-          {/* شبکه نمایش بازی‌ها بر اساس حروف الفبا */}
+        )}
+
+        {!loading && games.length > 0 && (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {games.map((game) => (
               <Link 
@@ -59,7 +58,6 @@ export default function Home() {
                 key={game.id}
                 className="bg-slate-900 border border-slate-800/80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-slate-700/50 flex flex-col justify-between group transition duration-300 transform hover:-translate-y-1"
               >
-                {/* کاور بهینه شده بازی */}
                 <div className="relative aspect-[4/3] w-full bg-slate-950 overflow-hidden">
                   {game.background_image ? (
                     <img
@@ -73,7 +71,6 @@ export default function Home() {
                   )}
                 </div>
                 
-                {/* اطلاعات زیر کاور بازی */}
                 <div className="p-4 flex-1 flex flex-col justify-between bg-slate-900/60">
                   <h2 className="font-bold text-white text-sm sm:text-base line-clamp-1 group-hover:text-purple-400 transition mb-2" title={game.name}>
                     {game.name}
@@ -91,9 +88,9 @@ export default function Home() {
             ))}
           </div>
         )}
+
       </main>
 
-      {/* فوتر اختصاصی سایت در انتهای صفحه */}
       <footer className="w-full border-t border-slate-900 bg-slate-950/80 py-6 text-center text-xs text-slate-500 tracking-wide">
         <p>
           Powered by{' '}
