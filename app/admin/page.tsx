@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link'; // 🌟 ایمپورت لینک برای رفتن به صفحه اصلی
 
 export default function AdminPanel() {
   // --- بخش امنیت و ورود ---
@@ -17,7 +18,7 @@ export default function AdminPanel() {
   const [message, setMessage] = useState({ text: '', isError: false });
 
   // 🔴 رمز عبور خودت را اینجا تغییر بده:
-  const YOUR_USERNAME = 'HF273';
+  const YOUR_USERNAME = 'admin';
   const YOUR_PASSWORD = '123456';
 
   const handleLogin = (e: React.FormEvent) => {
@@ -25,13 +26,12 @@ export default function AdminPanel() {
     if (username === YOUR_USERNAME && password === YOUR_PASSWORD) {
       setIsLoggedIn(true);
       setLoginError('');
-      fetchMyGames(); // لود کردن لیست بازی‌ها بعد از ورود موفق
+      fetchMyGames();
     } else {
       setLoginError('نام کاربری یا رمز عبور اشتباه است!');
     }
   };
 
-  // دریافت لیست بازی‌های موجود در دیتابیس برای چک کردن تکراری‌ها و حذف
   const fetchMyGames = async () => {
     try {
       const res = await fetch('/api-store');
@@ -44,7 +44,6 @@ export default function AdminPanel() {
     }
   };
 
-  // سرچ بازی از API
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
@@ -63,11 +62,9 @@ export default function AdminPanel() {
     }
   };
 
-  // اضافه کردن بازی
   const handleAddGame = async (game: any) => {
     setMessage({ text: '', isError: false });
     
-    // چک کردن مجدد در فرانت‌آند برای اطمینان از عدم ثبت تکراری
     if (myGames.some((g) => g.id.toString() === game.id.toString())) {
       setMessage({ text: `بازی "${game.name}" از قبل در لیست شما موجود است!`, isError: true });
       return;
@@ -83,48 +80,45 @@ export default function AdminPanel() {
           released: game.released,
           rating: game.rating,
           background_image: game.background_image,
+          short_screenshots: game.short_screenshots,
+          platforms: game.platforms,
+          genres: game.genres,
+          playtime: game.playtime,
+          esrb_rating: game.esrb_rating
         }),
       });
 
       const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'خطا در ذخیره‌سازی');
 
-      if (!res.ok) {
-        throw new Error(data.error || 'خطا در ذخیره‌سازی');
-      }
-
-      setMessage({ text: `بازی "${game.name}" با موفقیت به دیتابیس اضافه شد وبدون VPN قابل مشاهده است.`, isError: false });
-      fetchMyGames(); // بروزرسانی لیست
+      setMessage({ text: `بازی "${game.name}" با موفقیت به دیتابیس اضافه شد و بدون VPN قابل مشاهده است.`, isError: false });
+      fetchMyGames();
     } catch (err: any) {
       setMessage({ text: err.message, isError: true });
     }
   };
 
-  // حذف بازی
   const handleDeleteGame = async (gameId: number, gameName: string) => {
     if (!confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     setMessage({ text: '', isError: false });
 
     try {
-      const res = await fetch(`/api-store?id=${gameId}`, {
-        method: 'DELETE',
-      });
+      const res = await fetch(`/api-store?id=${gameId}`, { method: 'DELETE' });
       const data = await res.json();
-
       if (!res.ok) throw new Error(data.error || 'خطا در حذف بازی');
 
       setMessage({ text: `بازی "${gameName}" با موفقیت از دیتابیس پاک شد.`, isError: false });
-      fetchMyGames(); // بروزرسانی لیست
+      fetchMyGames();
     } catch (err: any) {
       setMessage({ text: err.message, isError: true });
     }
   };
 
-  // فرم ورود (اگر کاربر لاگین نکرده باشد)
   if (!isLoggedIn) {
     return (
       <div className="min-h-screen bg-slate-900 flex flex-col justify-center items-center p-4" dir="rtl">
         <div className="bg-slate-800 p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-700">
-          <h1 className="text-2xl font-bold text-white text-center mb-6">ورود به پنل مدیریت اوریجینال</h1>
+          <h1 className="text-2xl font-bold text-white text-center mb-6">ورود به پنل مدیریت</h1>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-slate-300 text-sm mb-2">نام کاربری:</label>
@@ -161,23 +155,33 @@ export default function AdminPanel() {
     );
   }
 
-  // پنل مدیریت اصلی (بعد از لاگین)
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 p-6" dir="rtl">
       <div className="max-w-6xl mx-auto">
-        <header className="flex justify-between items-center mb-8 border-b border-slate-800 pb-4">
+        <header className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 border-b border-slate-800 pb-4">
           <h1 className="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
             پنل مدیریت و آرشیو بازی‌ها
           </h1>
-          <button
-            onClick={() => setIsLoggedIn(false)}
-            className="px-4 py-2 bg-slate-800 hover:bg-red-900/40 text-red-400 border border-slate-700 hover:border-red-500 rounded-xl transition text-sm"
-          >
-            خروج از پنل
-          </button>
+          
+          {/* دکمه‌های ناوبری هدر */}
+          <div className="flex items-center gap-3">
+            {/* 🔗 دکمه جدید برای برگشتن به سایت اصلی */}
+            <Link
+              href="/"
+              className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl transition text-sm font-medium flex items-center gap-1"
+            >
+              🌐 مشاهده سایت اصلی
+            </Link>
+            
+            <button
+              onClick={() => setIsLoggedIn(false)}
+              className="px-4 py-2 bg-slate-800 hover:bg-red-900/40 text-red-400 border border-slate-700 hover:border-red-500 rounded-xl transition text-sm font-medium"
+            >
+              خروج از پنل
+            </button>
+          </div>
         </header>
 
-        {/* بخش جستجوی بازی جدید */}
         <section className="bg-slate-800 p-6 rounded-2xl border border-slate-700 mb-8 shadow-xl">
           <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-4">
             <input
@@ -205,58 +209,9 @@ export default function AdminPanel() {
           )}
         </section>
 
-        {/* نتایج جستجو به صورت افقی و کارت‌های بزرگ کنار هم */}
         {searchResults.length > 0 && (
           <section className="mb-12">
             <h2 className="text-xl font-bold text-slate-300 mb-4 border-r-4 border-purple-500 pr-2">نتایج یافت شده:</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {searchResults.map((game) => {
-                const isAlreadyAdded = myGames.some((g) => g.id.toString() === game.id.toString());
-                
-                return (
-                  <div key={game.id} className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between group hover:border-slate-500 transition duration-300">
-                    <div className="relative aspect-video w-full bg-slate-900 overflow-hidden">
-                      {game.background_image ? (
-                        <img
-                          src={game.background_image}
-                          alt={game.name}
-                          className="object-cover w-full h-full group-hover:scale-105 transition duration-500"
-                          loading="lazy"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center text-slate-500 text-xs">بدون تصویر</div>
-                      )}
-                    </div>
-                    
-                    <div className="p-4 flex-1 flex flex-col justify-between">
-                      <div className="mb-4">
-                        <h3 className="font-bold text-white text-base line-clamp-1 mb-1" title={game.name}>{game.name}</h3>
-                        <p className="text-xs text-slate-400">انتشار: {game.released || 'نامشخص'}</p>
-                      </div>
-
-                      {isAlreadyAdded ? (
-                        <button
-                          onClick={() => handleDeleteGame(game.id, game.name)}
-                          className="w-full py-2.5 bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white font-semibold rounded-xl border border-red-500/40 hover:border-red-600 transition text-sm flex items-center justify-center gap-1"
-                        >
-                          ❌ حذف از سایت
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => handleAddGame(game)}
-                          className="w-full py-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition text-sm flex items-center justify-center gap-1 shadow-lg shadow-green-900/20"
-                        >
-                          ➕ اضافه به سایت
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        )}
-      </div>
-    </div>
-  );
-}
+                const isAlreadyAdded = myGames.some((
