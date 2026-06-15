@@ -53,12 +53,18 @@ export default function GameDetails() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [activeImgIndex, nextImg, prevImg]);
 
-  // 🛡️ ترفند دور زدن فیلترینگ تصاویر RAWG با استفاده از پرکسی معکوس و امن Weserv
+  // 🛡️ پرکسی تصاویر ضد فیلتر برای گالری و کاورها (کیفیت استاندارد برای سرعت لود بالا)
   const getBypassUrl = (url: string) => {
     if (!url) return '';
-    // تبدیل آدرس به لینک بدون فیلتر و بهینه شده
     const cleanUrl = url.replace(/^https?:\/\//i, '');
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=800&q=85`;
+  };
+
+  // 🌟 پرکسی اختصاصی برای لایت‌باکس بزرگنمایی با کیفیت فوق‌العاده بالا و اصلی (HD)
+  const getHighQualityBypassUrl = (url: string) => {
+    if (!url) return '';
+    const cleanUrl = url.replace(/^https?:\/\//i, '');
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=1920&q=95`; // رزولوشن بالا و بدون افت کیفیت
   };
 
   const formatAgeRating = (esrb: any) => {
@@ -88,8 +94,6 @@ export default function GameDetails() {
   const pcPlatform = game.platforms?.find((p: any) => p.platform?.name?.toLowerCase() === 'pc' || p.platform?.slug === 'pc');
   const reqs = pcPlatform?.requirements_en || pcPlatform?.requirements_ru || null;
   const galleryImages = game.short_screenshots?.slice(1) || [];
-  
-  // پیدا کردن تریلر بازی در صورت وجود در دیتا
   const gameVideo = game.clip?.clips?.medium || game.clip?.clip || null;
 
   return (
@@ -108,10 +112,8 @@ export default function GameDetails() {
           ➔ بازگشت به لیست اصلی
         </Link>
         
-        {/* کارت اصلی با کاور افقی و بدون تغییر کات جزییات */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8 bg-slate-900/40 border border-slate-900/60 p-5 md:p-8 rounded-3xl backdrop-blur-md shadow-2xl">
           
-          {/* بخش کاور بازی: حالا کاملاً افقی، عریض و بدون کات عمودی اجباری است */}
           <div className="lg:col-span-3 w-full overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-950/40">
             {game.background_image ? (
               <img 
@@ -152,7 +154,6 @@ export default function GameDetails() {
           </div>
         </div>
 
-        {/* 🎬 بخش جدید: پلیر ویدیو تریلر رسمی بازی */}
         {gameVideo && (
           <section className="mb-8 bg-slate-900/30 border border-slate-900 p-6 rounded-3xl backdrop-blur-sm">
             <h3 className="text-lg font-bold mb-4 text-slate-300 border-r-4 border-purple-500 pr-2">🎬 تریلر رسمی بازی</h3>
@@ -162,7 +163,6 @@ export default function GameDetails() {
           </section>
         )}
 
-        {/* گالری تصاویر بازی با پرکسی ضد فیلتر */}
         {galleryImages.length > 0 && (
           <section className="mb-8 bg-slate-900/30 border border-slate-900 p-6 rounded-3xl backdrop-blur-sm">
             <h3 className="text-lg font-bold mb-4 text-slate-300 border-r-4 border-purple-500 pr-2">📸 گالری تصاویر بازی</h3>
@@ -180,7 +180,6 @@ export default function GameDetails() {
           </section>
         )}
 
-        {/* سیستم مورد نیاز (PC) */}
         <section className="bg-slate-900/30 border border-slate-900 p-6 rounded-3xl backdrop-blur-sm">
           <h3 className="text-lg font-bold mb-4 text-slate-300 border-r-4 border-purple-500 pr-2">🖥️ سیستم مورد نیاز (PC)</h3>
           {reqs && (reqs.minimum || reqs.recommended) ? (
@@ -207,7 +206,7 @@ export default function GameDetails() {
               )}
             </div>
           ) : (
-            <p className="text-sm text-slate-500 text-center py-4">اطلاعات مشخصات سخت‌افزاری دقیقی از سرور بازی برای این پلتفرم دریافت نشد. (اگر بازی قدیمی است یک‌بار آن را در ادمین حذف و مجدداً اضافه کنید)</p>
+            <p className="text-sm text-slate-500 text-center py-4">اطلاعات مشخصات سخت‌افزاری دقیقی از سرور بازی برای این پلتفرم دریافت نشد.</p>
           )}
         </section>
 
@@ -219,7 +218,8 @@ export default function GameDetails() {
           <button onClick={prevImg} className="absolute right-4 text-white text-4xl p-2 hover:text-purple-400 transition select-none z-50">❯</button>
           <button onClick={nextImg} className="absolute left-4 text-white text-4xl p-2 hover:text-purple-400 transition select-none z-50">❮</button>
           <div className="max-w-4xl max-h-[85vh] overflow-hidden rounded-xl shadow-2xl border border-slate-900">
-            <img src={getBypassUrl(galleryImages[activeImgIndex].image)} alt="High Quality Screenshot" className="object-contain w-full h-full" />
+            {/* 🌟 استفاده از پروکسی کیفیت بالا مخصوص لایت‌باکس بزرگنمایی */}
+            <img src={getHighQualityBypassUrl(galleryImages[activeImgIndex].image)} alt="High Quality Screenshot" className="object-contain w-full h-full" />
           </div>
           <div className="absolute bottom-6 text-slate-500 text-sm select-none">
             {activeImgIndex + 1} از {galleryImages.length} (کلید ESC برای خروج)
