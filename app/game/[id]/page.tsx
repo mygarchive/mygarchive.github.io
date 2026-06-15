@@ -10,10 +10,11 @@ export default function GameDetails() {
   const [loading, setLoading] = useState(true);
   const [activeImgIndex, setActiveImgIndex] = useState<number | null>(null);
 
+  // لود سریع اطلاعات بازی با تغییر اولویت درخواست شبکه
   useEffect(() => {
     if (!id) return;
 
-    fetch('/api-store/')
+    fetch('/api-store/', { priority: 'high' } as any)
       .then((res) => res.json())
       .then((data) => {
         const found = Array.isArray(data) ? data.find((g: any) => g.id.toString() === id.toString()) : null;
@@ -21,7 +22,7 @@ export default function GameDetails() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error('Error fetching game details:', err);
+        console.error('Error:', err);
         setLoading(false);
       });
   }, [id]);
@@ -53,18 +54,16 @@ export default function GameDetails() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [activeImgIndex, nextImg, prevImg]);
 
-  // 🛡️ پرکسی تصاویر ضد فیلتر برای گالری و کاورها (کیفیت استاندارد برای سرعت لود بالا)
   const getBypassUrl = (url: string) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=800&q=85`;
   };
 
-  // 🌟 پرکسی اختصاصی برای لایت‌باکس بزرگنمایی با کیفیت فوق‌العاده بالا و اصلی (HD)
   const getHighQualityBypassUrl = (url: string) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
-    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=1920&q=95`; // رزولوشن بالا و بدون افت کیفیت
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=1920&q=95`;
   };
 
   const formatAgeRating = (esrb: any) => {
@@ -88,7 +87,18 @@ export default function GameDetails() {
       .filter(line => line.length > 0);
   };
 
-  if (loading) return <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">در حال دریافت مشخصات بازی...</div>;
+  // ⏳ لودینگ اسکلتونی فوق‌العاده مدرن و پرسرعت به جای متن قدیمی
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-950 p-6 md:p-12 max-w-5xl mx-auto animate-pulse" dir="rtl">
+        <div className="h-10 bg-slate-900 rounded-xl w-40 mb-8"></div>
+        <div className="bg-slate-900/50 h-96 rounded-3xl border border-slate-900 mb-8"></div>
+        <div className="h-6 bg-slate-900 rounded w-1/4 mb-4"></div>
+        <div className="grid grid-cols-3 gap-4 mb-8"><div className="h-24 bg-slate-900 rounded-xl"></div><div className="h-24 bg-slate-900 rounded-xl"></div><div className="h-24 bg-slate-900 rounded-xl"></div></div>
+      </div>
+    );
+  }
+
   if (!game) return <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">بازی مورد نظر یافت نشد. <Link href="/" className="text-purple-400 mr-2 hover:underline">بازگشت به خانه</Link></div>;
 
   const pcPlatform = game.platforms?.find((p: any) => p.platform?.name?.toLowerCase() === 'pc' || p.platform?.slug === 'pc');
@@ -218,7 +228,6 @@ export default function GameDetails() {
           <button onClick={prevImg} className="absolute right-4 text-white text-4xl p-2 hover:text-purple-400 transition select-none z-50">❯</button>
           <button onClick={nextImg} className="absolute left-4 text-white text-4xl p-2 hover:text-purple-400 transition select-none z-50">❮</button>
           <div className="max-w-4xl max-h-[85vh] overflow-hidden rounded-xl shadow-2xl border border-slate-900">
-            {/* 🌟 استفاده از پروکسی کیفیت بالا مخصوص لایت‌باکس بزرگنمایی */}
             <img src={getHighQualityBypassUrl(galleryImages[activeImgIndex].image)} alt="High Quality Screenshot" className="object-contain w-full h-full" />
           </div>
           <div className="absolute bottom-6 text-slate-500 text-sm select-none">
@@ -229,4 +238,4 @@ export default function GameDetails() {
 
     </div>
   );
-} 
+}
