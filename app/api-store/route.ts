@@ -47,7 +47,6 @@ export async function GET(request: Request) {
     // تست وضعیت دیتابیس قبل از هر کاری
     const redisTest = await runRedisCommand(['EXISTS', 'my_games_dict']);
     
-    // اگر دیتابیس ارور داد، جزئیات توکن را به مرورگر برگردان تا ببینیم مشکل چیست
     if (redisTest.error) {
       return NextResponse.json({ 
         error: 'Authentication or Connection Error with Database', 
@@ -55,15 +54,27 @@ export async function GET(request: Request) {
       }, { status: 401 });
     }
 
+    // ۱. بخش جستجوی بازی از API اصلی RAWG با کلید اختصاصی جدید حسین
     if (search) {
-      const apiKey = '68b92b6794614ffcb7d091e0a9d80fc4';
+      const apiKey = '8ceb3ebba03c4ddca51106af23868263'; // 🔑 کلید جدید و پرامتیاز شما جایگزین شد
       const apiUrl = `https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(search)}&page_size=12`;
+      
       const res = await fetch(apiUrl);
-      if (!res.ok) return NextResponse.json({ error: 'RAWG Error' }, { status: res.status });
+      
+      if (!res.ok) {
+        const rawgErrorText = await res.text();
+        return NextResponse.json({ 
+          error: 'RAWG Error', 
+          statusCode: res.status,
+          rawgMessage: rawgErrorText 
+        }, { status: res.status });
+      }
+      
       const data = await res.json();
       return NextResponse.json(data.results || []);
     }
 
+    // ۲. دریافت اطلاعات کل بازی‌ها از دیتابیس آپستاش
     const rawValues = redisTest.result;
     if (!rawValues || !Array.isArray(rawValues) || rawValues.length === 0) {
       return NextResponse.json([]);
@@ -87,7 +98,6 @@ export async function GET(request: Request) {
   }
 }
 
-// متدهای POST و DELETE دست‌نخورده باقی می‌مانند
 export async function POST(request: Request) {
   try {
     const body = await request.json();
