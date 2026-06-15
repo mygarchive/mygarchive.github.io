@@ -14,7 +14,6 @@ export default function GameDetails() {
   useEffect(() => {
     if (!id) return;
 
-    // ۱. دریافت دیتای محلی از دیتابیس
     fetch(`/api-store?id=${id}`)
       .then((res) => res.json())
       .then(async (localData) => {
@@ -22,7 +21,6 @@ export default function GameDetails() {
           try {
             const apiKey = '8ceb3ebba03c4ddca51106af23868263';
             
-            // ۲. درخواست زنده به RAWG برای دریافت جزئیات ناشر و سازنده
             const rawgRes = await fetch(`https://api.rawg.io/api/games/${localData.id}?key=${apiKey}`);
             let currentGameData = { ...localData };
 
@@ -37,11 +35,9 @@ export default function GameDetails() {
               };
             }
 
-            // ۳. 🌟 درخواست مجزا به API فروشگاه‌های RAWG برای پیدا کردن لینک مستقیم استیم
             const storesRes = await fetch(`https://api.rawg.io/api/games/${localData.id}/stores?key=${apiKey}`);
             if (storesRes.ok) {
               const storesData = await storesRes.json();
-              // پیدا کردن فروشگاهی که آیدی آن ۱ (استیم) است یا نام استیم دارد
               const steamStore = storesData.results?.find(
                 (s: any) => s.store_id === 1 || s.url?.includes('store.steampowered.com')
               );
@@ -56,7 +52,7 @@ export default function GameDetails() {
             setGame(localData);
           }
         }
-        setLoading(false);
+        loading && setLoading(false);
       })
       .catch((err) => {
         console.error('Error:', err);
@@ -203,6 +199,7 @@ export default function GameDetails() {
                 <p className="text-slate-400">💻 توسعه‌دهنده: <span className="text-teal-400 font-bold">{game.developers?.map((d: any) => d.name).join(' ، ') || 'ثبت نشده'}</span></p>
                 <p className="text-slate-400">🏢 ناشر بازی: <span className="text-blue-400 font-bold">{game.publishers?.map((p: any) => p.name).join(' ، ') || 'ثبت نشده'}</span></p>
                 
+                {/* 🎮 دکمه استیم با نام درخواستی شما */}
                 {steamUrl && (
                   <div className="sm:col-span-2 mt-2">
                     <a 
@@ -211,7 +208,7 @@ export default function GameDetails() {
                       rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-5 py-3 rounded-2xl font-bold text-center transition shadow-lg shadow-blue-950/40 text-xs md:text-sm"
                     >
-                      🎮 مشاهده و دریافت بازی از Steam
+                      🎮 مشاهده اطلاعات بیشتر در Steam
                     </a>
                   </div>
                 )}
