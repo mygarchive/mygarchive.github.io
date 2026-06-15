@@ -22,7 +22,7 @@ export default function Home() {
       }
     }
     fetchGames();
-  } Uncle, []);
+  }, []); // 🌟 اینجا کاملاً اصلاح شد
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between" dir="rtl">
