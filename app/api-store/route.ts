@@ -1,12 +1,23 @@
 import { NextResponse } from 'next/server';
-import { Redis } from '@upstash/redis';
 
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL || '',
-  token: process.env.UPSTASH_REDIS_REST_TOKEN || '',
-});
+const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL || '';
+const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN || '';
 
-// دریافت لیست بازی‌ها از دیتابیس یا سرچ مستقیم از RAWG در ادمین
+// تابع کمکی برای فرستادن مستقیم دستورات به آپستاش بدون نیاز به پکیج اضافی
+async function runRedisCommand(command: string[]) {
+  const res = await fetch(`${UPSTASH_URL}`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${UPSTASH_TOKEN}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(command),
+  });
+  if (!res.ok) throw new Error('Upstash Redis Error');
+  const data = await res.json();
+  return data.result;
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const search = searchParams.get('search');
@@ -15,65 +26,66 @@ export async function GET(request: Request) {
   // اگر ادمین در حال سرچ بازی جدید است
   if (search) {
     try {
-      const apiKey = '68b92b6794614ffcb7d091e0a9d80fc4'; // کلید API شما
-      // درخواست مستقیم با تمام جزئیات به RAWG
+      const apiKey = '68b92b6794614ffcb7d091e0a9d80fc4';
       const res = await fetch(`https://api.rawg.io/api/games?key=${apiKey}&search=${encodeURIComponent(search)}&page_size=12`);
       if (!res.ok) throw new Error('RAWG API Error');
       const data = await res.json();
       return NextResponse.json(data.results || []);
     } catch (err) {
-      return NextResponse.json({ error: 'خطا در ارتباط با سرور اصلی بازی‌ها' }, { status: 500 });
+      return NextResponse.json({ error: 'خطا در ارتباط با سرور اصلی' }, { status: 500 });
     }
   }
 
-  // حذف بازی خاص (در صورت پاس دادن دلیور تک)
+  // حذف بازی خاص
   if (id) {
     try {
-      await redis.hdel('my_games_dict', id.toString());
+      await runRedisCommand(['HDEL', 'my_games_dict', id.toString()]);
       return NextResponse.json({ success: true });
     } catch (err) {
-      return NextResponse.json({ error: 'خطا در حذف از دیتابیس' }, { status: 500 });
+      return NextResponse.json({ error: 'خطا در حذف' }, { status: 500 });
     }
   }
 
-  // در حالت عادی: برگشت دادن کل بازی‌های ذخیره شده در دیتابیس
+  // دریافت تمام بازی‌های ذخیره شده
   try {
-    const allGamesMap = await redis.hgetall('my_games_dict');
-    if (!allGamesMap) return NextResponse.json([]);
-    const gamesList = Object.values(allGamesMap).map((item: any) => typeof item === 'string' ? JSON.parse(item) : item);
+    const rawResult = await runRedisCommand(['HGETALL', 'my_games_dict']);
+    if (!rawResult || rawResult.length === 0) return NextResponse.json([]);
+    
+    // لایه پردازش خروجی HGETALL در حالت عادی (آرایه‌ای از کلید-مقدار متناوب)
+    const gamesList: any[] = [];
+    for (let i = 1; i < rawResult.length; i += 2) {
+      try {
+        const item = rawResult[i];
+        gamesList.push(typeof item === 'string' ? JSON.parse(item) : item);
+      } catch (e) {}
+    }
     return NextResponse.json(gamesList);
   } catch (err) {
-    return NextResponse.json([], { status: 500 });
+    return NextResponse.json([]);
   }
 }
 
-// ذخیره بازی با تمام متادیتاها و فیلدهای کامل بدون هیچ محدودیتی
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    if (!body.id) return NextResponse.json({ error: 'شناسه بازی معتبر نیست' }, { status: 400 });
+    if (!body.id) return NextResponse.json({ error: 'شناسه معتبر نیست' }, { status: 400 });
 
-    // ذخیره مستقیم کل آبجکت ارسالی ادمین در هش‌مپ آپستاش
-    await redis.hset('my_games_dict', {
-      [body.id.toString()]: JSON.stringify(body)
-    });
-
+    await runRedisCommand(['HSET', 'my_games_dict', body.id.toString(), JSON.stringify(body)]);
     return NextResponse.json({ success: true });
   } catch (err: any) {
-    return NextResponse.json({ error: err.message || 'خطا در ذخیره‌سازی دیتابیس' }, { status: 500 });
+    return NextResponse.json({ error: err.message || 'خطا در ذخیره‌سازی' }, { status: 500 });
   }
 }
 
-// متد حذف جایگزین برای کلاینت‌های قدیمی
 export async function DELETE(request: Request) {
   const { searchParams } = new URL(request.url);
   const id = searchParams.get('id');
   if (!id) return NextResponse.json({ error: 'شناسه الزامی است' }, { status: 400 });
 
   try {
-    await redis.hdel('my_games_dict', id.toString());
+    await runRedisCommand(['HDEL', 'my_games_dict', id.toString()]);
     return NextResponse.json({ success: true });
   } catch (err) {
-    return NextResponse.json({ error: 'خطا در حذف' }, { status: 500 });
+    return NextResponse.json({ error: 'خطا در حذف' }, { status: 400 });
   }
 }
