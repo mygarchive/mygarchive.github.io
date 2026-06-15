@@ -6,13 +6,13 @@ const corsHeaders = {
   'Content-Type': 'application/json',
 };
 
-// تابع کمکی اصلاح‌شده با حروف بزرگ برای سازگاری کامل با Upstash REST API
+// تابع اصلاح‌شده با حروف بزرگ برای سازگاری کامل با Upstash REST API
 async function upstashFetch(command: string, ...args: any[]) {
   const url = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
 
   if (!url || !token) {
-    throw new Error("تنظیمات دیتابیس (Environment Variables) در نتلیفای ست نشده است.");
+    throw new Error("تنظیمات دیتابیس در نتلیفای پیدا نشد.");
   }
 
   const response = await fetch(`${url}/${command}`, {
@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || [], { headers: corsHeaders });
     }
 
-    // ۲. خواندن لیست بازی‌ها از دیتابیس آپستاش با دستور GET (حروف بزرگ)
+    // ۲. خواندن لیست بازی‌ها با دستور GET (حروف بزرگ)
     const gamesData = await upstashFetch('GET', 'games_list');
     return NextResponse.json(gamesData || [], { headers: corsHeaders });
   } catch (error: any) {
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
   try {
     const gameData = await request.json();
     
-    // خواندن لیست فعلی بازی‌ها با دستور GET
+    // خواندن لیست فعلی بازی‌ها با دستور GET (حروف بزرگ)
     const games: any[] = (await upstashFetch('GET', 'games_list')) || [];
     
     // جلوگیری از ثبت بازی تکراری
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'این بازی قبلاً اضافه شده است.' }, { status: 400, headers: corsHeaders });
     }
     
-    // اضافه کردن بازی جدید و ذخیره نهایی با دستور SET (حروف بزرگ)
+    // اضافه کردن بازی جدید و ذخیره با دستور SET (حروف بزرگ)
     games.push(gameData);
     await upstashFetch('SET', 'games_list', games);
     
