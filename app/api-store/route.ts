@@ -6,25 +6,17 @@ const corsHeaders = {
   'Content-Type': 'application/json',
 };
 
-// تابع اصلاح‌شده برای ارسال درخواست استاندارد به Upstash Rest API
 async function upstashFetch(command: string, key: string, value?: any) {
-  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const baseUrl = process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.UPSTASH_REDIS_REST_TOKEN;
 
-  if (!url || !token) {
-    throw new Error("تنظیمات دیتابیس در نتلیفای پیدا نشد.");
-  }
+  if (!baseUrl || !token) throw new Error("تنظیمات دیتابیس ست نشده است.");
 
-  // در آرکیتکچر REST آپستاش، بدنه درخواست برای دستورات مختلف باید یک آرایه شامل [دستور، کلید، مقدار] باشد
-  const bodyData = value !== undefined ? [command, key, JSON.stringify(value)] : [command, key];
-
+  const url = `${baseUrl}/${command}/${key}`;
   const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(bodyData),
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: value !== undefined ? JSON.stringify(value) : undefined,
   });
 
   if (!response.ok) {
@@ -33,25 +25,37 @@ async function upstashFetch(command: string, key: string, value?: any) {
   }
 
   const data = await response.json();
-  
-  // اگر دستور GET بود، دیتای ذخیره شده را پارس میکنیم، در غیر این صورت خود پرپرتی را برمیگردانیم
   if (command === 'GET' && data.result) {
-    try {
-      return JSON.parse(data.result);
-    } catch {
-      return data.result;
-    }
+    try { return JSON.parse(data.result); } catch { return data.result; }
   }
-  
   return data.result;
+}
+
+// تابع کمکی برای مرتب‌سازی حروف الفبا (اعداد اول می‌آیند)
+function sortGamesAlphabetically(games: any[]) {
+  return games.sort((a, b) => {
+    const nameA = (a.name || '').toLowerCase();
+    const nameB = (b.name || '').toLowerCase();
+    return nameA.localeCompare(nameB, 'en', { numeric: true, sensitivity: 'base' });
+  });
 }
 
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const search = searchParams.get('search');
+    const id = searchParams.get('id');
 
-    // ۱. سرچ بازی از API خارجی
+    // ۱. دریافت اطلاعات کامل یک بازی خاص بر اساس ID از RAWG (برای فاز ۳)
+    if (id) {
+      const url = `https://api.rawg.io/api/games/${id}?key=${API_KEY}`;
+      const res = await fetch(url);
+      if (!res.ok) return NextResponse.json({ error: 'بازی پیدا نشد' }, { status: 404, headers: corsHeaders });
+      const data = await res.json();
+      return NextResponse.json(data, { headers: corsHeaders });
+    }
+
+    // ۲. سرچ بازی از API خارجی
     if (search) {
       const url = `https://api.rawg.io/api/games?key=${API_KEY}&search=${encodeURIComponent(search)}`;
       const rawgRes = await fetch(url);
@@ -60,9 +64,10 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(rawgData.results || [], { headers: corsHeaders });
     }
 
-    // ۲. خواندن لیست بازی‌ها
+    // ۳. خواندن لیست بازی‌ها و مرتب‌سازی الفبایی
     const gamesData = await upstashFetch('GET', 'games_list');
-    return NextResponse.json(gamesData || [], { headers: corsHeaders });
+    const sortedGames = sortGamesAlphabetically(gamesData || []);
+    return NextResponse.json(sortedGames, { headers: corsHeaders });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500, headers: corsHeaders });
   }
@@ -71,20 +76,46 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const gameData = await request.json();
+    let games: any[] = (await upstashFetch('GET', 'games_list')) || [];
     
-    // خواندن لیست فعلی بازی‌ها
-    const games: any[] = (await upstashFetch('GET', 'games_list')) || [];
-    
-    // جلوگیری از ثبت بازی تکراری
     if (games.some((g: any) => g.id.toString() === gameData.id.toString())) {
-      return NextResponse.json({ error: 'این بازی قبلاً اضافه شده است.' }, { status: 400, headers: corsHeaders });
+      return NextResponse.json({ error: 'این بازی قبلاً در لیست شما موجود است!' }, { status: 400, headers: corsHeaders });
     }
     
-    // اضافه کردن بازی جدید و ذخیره با متد اصلاح شده
     games.push(gameData);
+    games = sortGamesAlphabetically(games);
     await upstashFetch('SET', 'games_list', games);
     
     return NextResponse.json({ success: true }, { headers: corsHeaders });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500, headers: corsHeaders });
+  }
+}
+
+// متد جدید برای حذف بازی از لیست دیتابیس
+export async function DELETE(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const idToDelete = searchParams.get('id');
+
+    if (!idToDelete) {
+      return NextResponse.json({ error: 'شناسه بازی ارسال نشده است' }, { status: 400, headers: corsHeaders });
+    }
+
+    let games: any[] = (await upstashFetch('GET', 'games_list')) || [];
+    const initialLength = games.length;
+    
+    // فیلتر کردن و حذف بازی مورد نظر
+    games = games.filter((g: any) => g.id.toString() !== idToDelete.toString());
+
+    if (games.length === initialLength) {
+      return NextResponse.json({ error: 'بازی جهت حذف پیدا نشد' }, { status: 404, headers: corsHeaders });
+    }
+
+    games = sortGamesAlphabetically(games);
+    await upstashFetch('SET', 'games_list', games);
+
+    return NextResponse.json({ success: true, message: 'بازی با موفقیت حذف شد' }, { headers: corsHeaders });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500, headers: corsHeaders });
   }
