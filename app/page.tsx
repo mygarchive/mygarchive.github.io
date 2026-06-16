@@ -6,22 +6,16 @@ import Link from 'next/link';
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     fetch('/api-store')
       .then((res) => res.json())
       .then((data) => {
-        if (Array.isArray(data)) {
-          const sortedGames = data.sort((a, b) => 
-            a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
-          );
-          setGames(sortedGames);
-        }
+        setGames(Array.isArray(data) ? data : []);
         setLoading(false);
       })
       .catch((err) => {
-        console.error('Error fetching games:', err);
+        console.error('خطا در بارگذاری بازی‌های صفحه اصلی:', err);
         setLoading(false);
       });
   }, []);
@@ -29,102 +23,94 @@ export default function Home() {
   const getBypassUrl = (url: string) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
-    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=500&q=80`;
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=500&q=80&output=jpg`;
   };
-
-  const filteredGames = games.filter(game =>
-    game.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-950 p-6 md:p-12 text-center text-slate-400" dir="rtl">
-        <div className="max-w-6xl mx-auto animate-pulse">
-          <div className="h-12 bg-slate-900 rounded-2xl w-64 mx-auto mb-12"></div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="bg-slate-900/50 h-80 rounded-2xl border border-slate-900"></div>
-            ))}
-          </div>
+      <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 max-w-6xl mx-auto animate-pulse" dir="rtl">
+        <div className="h-12 bg-slate-900 rounded-2xl w-64 mb-12"></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {[1, 2, 3, 4, 5, 6].map((n) => (
+            <div key={n} className="bg-slate-900/40 h-72 rounded-3xl border border-slate-900"></div>
+          ))}
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between" dir="rtl">
-      
-      <div className="max-w-6xl mx-auto p-6 md:p-12 w-full flex-grow">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
-            آرشیو بازی‌های پیشرفته
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 font-sans" dir="rtl">
+      <div className="max-w-6xl mx-auto flex flex-col min-h-[calc(100vh-6rem)]">
+        
+        <header className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-12 border-b border-slate-900 pb-6">
+          <h1 className="text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+            آرشیو و کاتالوگ بازی‌های من
           </h1>
-          <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mb-6 leading-relaxed">
-            مجموعه کامل مشخصات، تریلرها و سیستم مورد نیاز بازی‌های ویدیویی به ترتیب حروف الفبا
-          </p>
-          
-          <div className="inline-flex items-center gap-2 bg-purple-950/30 border border-purple-900/40 text-purple-300 px-4 py-1.5 rounded-full text-xs font-semibold backdrop-blur">
-            <span>🎮</span>
-            <span>تعداد بازی‌های موجود:</span>
-            <span className="bg-purple-500 text-white px-2 py-0.5 rounded-md font-bold text-sm">
-              {searchTerm ? filteredGames.length : games.length}
-            </span>
-          </div>
-          
-          <div className="max-w-md mx-auto mt-6">
-            <input 
-              type="text" 
-              placeholder="🔍 جستجو در بین بازی‌ها..." 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 px-5 py-3 rounded-2xl focus:outline-none focus:border-purple-500 transition text-sm text-center font-medium"
-            />
-          </div>
         </header>
 
-        {filteredGames.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {filteredGames.map((game) => (
-              <Link 
-                href={`/game/${game.id}`} 
-                key={game.id}
-                className="group bg-slate-900/30 border border-slate-900 hover:border-purple-500/40 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col justify-between backdrop-blur-sm hover:shadow-xl hover:shadow-purple-950/10"
-              >
-                <div className="relative aspect-[16/10] bg-slate-950 overflow-hidden">
-                  {game.background_image ? (
-                    <img src={getBypassUrl(game.background_image)} alt={game.name} className="w-full h-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-slate-700 text-xs">بدون تصویر</div>
-                  )}
-                  <div className="absolute top-3 left-3 bg-slate-950/80 text-amber-400 text-xs px-2.5 py-1 rounded-lg font-bold border border-slate-800 backdrop-blur">
-                    ★ {game.rating ? game.rating.toFixed(1) : '0'}
+        <main className="flex-1">
+          {games.length === 0 ? (
+            <div className="text-center py-24 bg-slate-900/20 rounded-3xl border border-slate-900 border-dashed">
+              <p className="text-slate-500 mb-2">هنوز هیچ بازی به آرشیو اضافه نشده است.</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {games.map((game) => (
+                <Link 
+                  href={`/game/${game.id}`} 
+                  key={game.id}
+                  className="bg-slate-900/30 border border-slate-900 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between group hover:border-purple-500/40 hover:shadow-purple-950/10 transition duration-300 backdrop-blur-sm"
+                >
+                  <div className="relative aspect-video w-full bg-slate-950 overflow-hidden">
+                    {game.background_image ? (
+                      <img 
+                        src={getBypassUrl(game.background_image)} 
+                        alt={game.name} 
+                        className="object-cover w-full h-full group-hover:scale-105 transition duration-500" 
+                        referrerPolicy="no-referrer"
+                        loading="lazy" 
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-slate-600 text-xs">بدون تصویر</div>
+                    )}
                   </div>
-                </div>
+                  <div className="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-bold text-white text-base line-clamp-1 mb-2 group-hover:text-purple-400 transition" title={game.name}>
+                        {game.name}
+                      </h3>
+                      <div className="flex justify-between items-center text-xs text-slate-500 mb-3">
+                        <span>📅 {game.released ? game.released.split('-')[0] : '---'}</span>
+                        <span className="text-amber-400 font-bold">★ {game.rating ? game.rating.toFixed(1) : '0'}</span>
+                      </div>
+                    </div>
+                    <div className="w-full py-2 bg-slate-950/50 group-hover:bg-purple-600 text-slate-400 group-hover:text-white font-bold rounded-xl border border-slate-800 group-hover:border-purple-500 text-center transition text-xs">
+                      🎮 مشاهده جزئیات بیشتر
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </main>
 
-                <div className="p-4 flex-grow flex flex-col justify-between">
-                  <h3 className="font-bold text-slate-200 group-hover:text-white transition duration-200 text-sm line-clamp-1 mb-2 text-right">
-                    {game.name}
-                  </h3>
-                  <div className="flex justify-between items-center text-[11px] text-slate-500 mt-2 border-t border-slate-900 pt-2" dir="ltr">
-                    <span>{game.released ? game.released.split('-')[0] : '---'}</span>
-                    <span className="text-purple-400 font-medium">مشاهده جزئیات ➔</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-12 text-slate-500 text-sm">بازی مورد نظری یافت نشد.</div>
-        )}
+        <footer className="mt-20 pt-6 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+          <p>تمامی حقوق برای آرشیو بازی‌ها محفوظ است © ۲۰۲۶</p>
+          <p className="flex items-center gap-1">
+            قدرت‌گرفته و توسعه‌یافته با 💜 توسط 
+            <a 
+              href="https://gemini.google.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-purple-400 hover:text-purple-300 font-bold underline decoration-purple-500/30 underline-offset-4 transition mr-1"
+            >
+              Gemini
+            </a>
+          </p>
+        </footer>
+
       </div>
-
-      <footer className="w-full border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500 mt-12 z-10 relative">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-2">
-          <span>توسعه داده شده توسط</span>
-          <a href="https://t.me/HF273" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 font-semibold transition hover:underline">Hossein</a>
-        </div>
-      </footer>
-
     </div>
   );
 }
