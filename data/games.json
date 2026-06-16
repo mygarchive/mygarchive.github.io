@@ -357,5 +357,38 @@
     },
     "description_en": "From one of gaming’s most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera – herself.\n*Xbox Live account required. Visit www.gears5.com for additional information.",
     "description_fa": "از یکی از تحسین‌شده‌ترین حماسه‌های بازی، Gears بزرگ‌تر از همیشه است، با پنج حالت هیجان‌انگیز و عمیق‌ترین کمپین تاکنون. با شروع جنگ همه جانبه، کیت دیاز جدا می شود تا ارتباط خود را با دشمن آشکار کند و خطر واقعی سرا - خودش را کشف می کند.\n*حساب Xbox Live مورد نیاز است. برای اطلاعات بیشتر به www.gears5.com مراجعه کنید."
+  },
+  {
+    "id": 494384,
+    "name": "God of War: Ragnarök",
+    "background_image": "https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg",
+    "rating": 4.43,
+    "released": "2022-11-09",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "SCE Santa Monica Studio",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/55f/55fe715e129d5365b48b35b5fc8052be.jpg",
+      "https://media.rawg.io/media/screenshots/c3e/c3e2f128960ffdac8d91f097ebf213e4.jpg",
+      "https://media.rawg.io/media/screenshots/ab5/ab5dce69619658d010c7342523c63d69_fmTr8dx.jpg",
+      "https://media.rawg.io/media/screenshots/d19/d193a94e600261aa6a35883ae7258687.jpg",
+      "https://media.rawg.io/media/screenshots/87d/87d0502ad973a922615bb585ead18661.jpg",
+      "https://media.rawg.io/media/screenshots/001/00156acba9a5a3316893c22f4bd15edf.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.\r\n \r\nAlong the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...",
+    "description_fa": "کریتوس و آترئوس باید در جستجوی پاسخ به هر یک از نه قلمرو سفر کنند و برای نبرد پیشگویی شده ای که جهان را به پایان خواهد رساند آماده می شوند. کریتوس و آترئوس با هم به اعماق نه قلمرو می‌روند و در جستجوی پاسخ‌هایی هستند که نیروهای آسگاردی برای جنگ آماده می‌شوند.\r\n \r\nدر طول مسیر، آنها مناظر افسانه ای و خیره کننده را کاوش می کنند، متحدانی را از سراسر قلمروها جمع می کنند و با دشمنان ترسناکی به شکل خدایان و هیولاهای نورس روبرو می شوند. با نزدیک‌تر شدن تهدید راگناروک، کریتوس و آترئوس متوجه می‌شوند که بین امنیت خانواده‌شان و امنیت قلمروها انتخاب می‌کنند..."
   }
 ]
