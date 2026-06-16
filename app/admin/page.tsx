@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const GITHUB_OWNER = 'mygarchive'; 
-const GITHUB_REPO = 'mygarchive';
+const GITHUB_REPO = 'mygarchive.github.io'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
 async function hashPassword(string: string) {
@@ -41,21 +41,24 @@ export default function AdminPanel() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    const hashedInputPassword = await hashPassword(password);
+    // تبدیل خودکار پسورد ورودی به حروف کوچک برای حذف حساسیت به حروف بزرگ/کوچک
+    const cleanPassword = password.trim().toLowerCase();
+    const hashedInputPassword = await hashPassword(cleanPassword);
     
-    // 🔐 هش اختصاصی و امن کلمه‌ی عبور شما
+    // 🔐 هش امن شده و غیرقابل حدس
     const targetHash = 'c094ff54fddbc8fbff809b4009fbd6c66cf6ccfdf1e15fa52787c805ba2a95f7';
 
-    if (username === 'HF273' && hashedInputPassword === targetHash) {
-      if (!githubToken.startsWith('ghp_')) {
+    // حذف حساسیت به حروف بزرگ و کوچک در نام کاربری
+    if (username.trim().toLowerCase() === 'hf273' && hashedInputPassword === targetHash) {
+      if (!githubToken.trim().startsWith('ghp_')) {
         setLoginError('لطفاً توکن کلاسیک گیت‌هاب که با ghp_ شروع می‌شود را درست وارد کنید.');
         return;
       }
       localStorage.setItem('isAdmin', 'true');
-      localStorage.setItem('gh_token', githubToken);
+      localStorage.setItem('gh_token', githubToken.trim());
       setIsLoggedIn(true);
       setLoginError('');
-      fetchMyGames(githubToken);
+      fetchMyGames(githubToken.trim());
     } else {
       setLoginError('نام کاربری یا رمز عبور اشتباه است!');
     }
