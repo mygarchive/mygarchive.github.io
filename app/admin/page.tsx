@@ -120,7 +120,6 @@ export default function AdminPanel() {
       const rawDescriptionEn = gameDetails.description_raw || "No description available.";
       const descriptionFa = await translateToPersian(rawDescriptionEn.substring(0, 1000));
 
-      // تفکیک هوشمند سیستم مورد نیاز به حداقل و پیشنهادی
       const pcPlatforms = gameDetails.platforms?.find((p: any) => p.platform.slug === 'pc');
       
       const cleanRequirements = (reqText: string) => {
@@ -137,12 +136,10 @@ export default function AdminPanel() {
         recommended: pcPlatforms?.requirements_recommended ? cleanRequirements(pcPlatforms.requirements_recommended) : 'مشخصات سیستم پیشنهادی ثبت نشده است.'
       };
 
-      // استخراج عدد رده سنی
       const esrbAge = gameDetails.esrb_rating?.id 
         ? `${gameDetails.esrb_rating.name.replace(/[^0-9]/g, '') || gameDetails.esrb_rating.name}+` 
         : '---';
 
-      // استخراج نام کامل سازندگان و لینک استیم
       const developersList = gameDetails.developers?.map((d: any) => d.name).join(', ') || '---';
       const steamStore = gameDetails.stores?.find((s: any) => s.store.slug === 'steam');
       const steamUrl = steamStore?.url || (steamStore?.store?.id ? `https://store.steampowered.com/app/${game.id}` : '');
@@ -249,7 +246,7 @@ export default function AdminPanel() {
             <input type="password" value={githubToken} onChange={(e) => setGithubToken(e.target.value)} className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" dir="ltr" placeholder="ghp_..." />
           </div>
 
-          <button type="submit" className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition pt-4">ورود به سیستم ادمین</button>
+          <button type="submit" className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition mt-4">ورود به سیستم ادمین</button>
         </form>
       </div>
     );
@@ -260,4 +257,36 @@ export default function AdminPanel() {
       <div className="max-w-5xl mx-auto">
         <header className="flex justify-between items-center mb-8 border-b border-slate-900 pb-4">
           <h1 className="text-lg font-black text-white">🎮 کنترل پنل هوشمند آرشیو</h1>
-          <Link href="/" className="text-xs
+          <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2 rounded-xl">➔ نمایش صفحه اصلی سایت</Link>
+        </header>
+
+        <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
+          <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی (مثال: Cyberpunk)..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
+          <button onClick={handleSearch} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold">جستجو</button>
+        </div>
+
+        {message.text && <div className={`p-3 rounded-lg text-xs font-bold mb-6 text-center ${message.isError ? 'bg-red-500/10 text-red-400' : 'bg-green-500/10 text-green-400'}`}>{message.text}</div>}
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {searchResults.map((game) => {
+            const isAlreadyAdded = myGames.some((g) => g.id === game.id);
+            return (
+              <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={getOptimizedUrl(game.background_image, 400)} alt={game.name} className="w-full h-40 object-cover" />
+                <div className="p-4 flex flex-col justify-between flex-1 space-y-4">
+                  <h3 className="font-bold text-sm text-white text-left truncate" dir="ltr">{game.name}</h3>
+                  {isAlreadyAdded ? (
+                    <button onClick={() => handleRemoveGame(game.id, game.name)} className="w-full py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف از آرشیو</button>
+                  ) : (
+                    <button onClick={() => handleAddGame(game)} disabled={loading} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold disabled:opacity-50">＋ افزودن به آرشیو</button>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
