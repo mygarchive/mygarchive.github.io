@@ -18,8 +18,6 @@ const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
 export default function AdminPanel() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginError, setLoginError] = useState('');
   const [githubToken, setGithubToken] = useState('');
@@ -40,15 +38,35 @@ export default function AdminPanel() {
     }
   }, []);
 
+  // متد ورود هوشمند و امن بدون نیاز به نام کاربری و پسورد ثابت
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (username.trim().toLowerCase() === 'hf273' && password.trim().toLowerCase() === 'hf1to1') {
-      if (!githubToken.trim().startsWith('ghp_')) return setLoginError('لطفاً توکن کلاسیک گیت‌هاب معتبر وارد کنید.');
-      localStorage.setItem('isAdmin', 'true');
-      localStorage.setItem('gh_token', githubToken.trim());
-      setLoginError('');
-      await fetchMyGames(githubToken.trim());
-    } else { setLoginError('نام کاربری یا رمز عبور اشتباه است!'); }
+    setLoginError('');
+    
+    const trimmedToken = githubToken.trim();
+    if (!trimmedToken.startsWith('ghp_')) {
+      return setLoginError('لطفاً یک توکن کلاسیک گیت‌هاب معتبر (که با ghp_ شروع می‌شود) وارد کنید.');
+    }
+
+    setLoading(true);
+    try {
+      // تست اعتبار توکن مستقیماً از سرورهای گیت‌هاب
+      const checkRes = await fetch('https://api.github.com/user', {
+        headers: { 'Authorization': `Bearer ${trimmedToken}` }
+      });
+
+      if (checkRes.status === 200) {
+        // توکن معتبر است؛ حالا دیتای آرشیو بازی‌ها لود می‌شود
+        localStorage.setItem('isAdmin', 'true');
+        localStorage.setItem('gh_token', trimmedToken);
+        await fetchMyGames(trimmedToken);
+      } else {
+        setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
+      }
+    } catch {
+      setLoginError('خطا در برقراری ارتباط با سرور گیت‌هاب.');
+    }
+    setLoading(false);
   };
 
   const handleLogout = () => {
@@ -93,7 +111,6 @@ export default function AdminPanel() {
       
       const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1000));
       
-      // موتور استخراج هوشمند و پیشرفته سیستم مورد نیاز بازی‌ها از تمامی لایه‌های آبجکت PC
       let minReq = '';
       let recReq = '';
       
@@ -103,7 +120,6 @@ export default function AdminPanel() {
         if (pcPlatformData.requirements.recommended) recReq = pcPlatformData.requirements.recommended;
       }
 
-      // اگر در ساختار استاندارد نبود، متون خام را بر اساس ساختار متنی اسکن کند
       if (!minReq && pcPlatformData?.requirements_minimum) minReq = pcPlatformData.requirements_minimum;
       if (!recReq && pcPlatformData?.requirements_recommended) recReq = pcPlatformData.requirements_recommended;
 
@@ -117,7 +133,6 @@ export default function AdminPanel() {
           .trim();
       };
 
-      // تبدیل دقیق رده سنی به فرمت عددی تمیز
       let finalAge = '---';
       const rawEsrb = details.esrb_rating?.slug || '';
       if (rawEsrb === 'mature') finalAge = '+17';
@@ -126,7 +141,6 @@ export default function AdminPanel() {
       else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
       else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
-      // موتور استخراج لینک مستقیم بازی در فروشگاه استیم
       let steamUrl = '';
       if (details.stores && details.stores.length > 0) {
         const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
@@ -165,7 +179,6 @@ export default function AdminPanel() {
         description_fa: descriptionFa 
       };
 
-      // جلوگیری از ایجاد بازی تکراری در فایل جی‌سان
       const updatedGames = myGames.filter((g) => g.id !== game.id);
       updatedGames.push(newGameObj);
 
@@ -206,22 +219,34 @@ export default function AdminPanel() {
   if (!isLoggedIn) {
     return (
       <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center p-6" dir="rtl">
-        <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 p-8 rounded-2xl w-full max-w-md space-y-4">
-          <h2 className="text-xl font-black text-white text-center mb-6">🔒 ورود به پنل مدیریت آرشیو</h2>
-          {loginError && <div className="p-3 bg-red-500/10 text-red-400 text-xs font-bold rounded-xl text-center">{loginError}</div>}
-          <div className="space-y-1">
-            <label className="text-xs text-slate-400 font-bold">نام کاربری:</label>
-            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
+        <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 p-8 rounded-2xl w-full max-w-md space-y-5">
+          <div className="text-center space-y-2 mb-4">
+            <h2 className="text-xl font-black text-white">🔒 ورود به پنل مدیریت آرشیو</h2>
+            <p className="text-[11px] text-slate-400 font-medium">جهت ورود، کلید دسترسی (Token) اختصاصی گیت‌هاب خود را وارد کنید.</p>
           </div>
-          <div className="space-y-1">
-            <label className="text-xs text-slate-400 font-bold">رمز عبور:</label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
+          
+          {loginError && <div className="p-3 bg-red-500/10 text-red-400 text-xs font-bold rounded-xl text-center border border-red-900/30">{loginError}</div>}
+          
+          <div className="space-y-1.5">
+            <label className="text-xs text-slate-400 font-bold">توکن گیت‌هاب (Personal Access Token):</label>
+            <input 
+              type="password" 
+              value={githubToken} 
+              onChange={(e) => setGithubToken(e.target.value)} 
+              className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left tracking-wider text-purple-400 focus:border-purple-600 transition" 
+              dir="ltr" 
+              placeholder="ghp_..." 
+              required
+            />
           </div>
-          <div className="space-y-1">
-            <label className="text-xs text-slate-400 font-bold">توکن گیت‌هاب:</label>
-            <input type="password" value={githubToken} onChange={(e) => setGithubToken(e.target.value)} className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" dir="ltr" placeholder="ghp_..." />
-          </div>
-          <button type="submit" className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition">ورود به سیستم ادمین</button>
+          
+          <button 
+            type="submit" 
+            disabled={loading}
+            className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition disabled:opacity-50"
+          >
+            {loading ? 'در حال بررسی هویت توکن...' : 'بررسی توکن و ورود به ادمین'}
+          </button>
         </form>
       </div>
     );
