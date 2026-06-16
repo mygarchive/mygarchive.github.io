@@ -281,5 +281,43 @@
     },
     "description_en": "Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. \nSimultaneous storytelling from three unique perspectives: \nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. \nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.\n\nEspañol\nRockstar Games se hizo más grande desde su entrega anterior de la serie. Obtienes la construcción del mundo complicada y realista de Liberty City de GTA4 en el escenario de Los Santos, un viejo favorito de los fans, GTA San Andreas. 561 vehículos diferentes (incluidos todos los transportes que puede operar) y la cantidad aumenta con cada actualización.\nNarración simultánea desde tres perspectivas únicas:\nSigue a Michael, ex-criminal que vive su vida de ocio lejos del pasado, Franklin, un niño que busca un futuro mejor, y Trevor, el pasado exacto del que Michael está tratando de huir.\nGTA Online proporcionará muchos desafíos adicionales incluso para los jugadores experimentados, recién llegados del modo historia. Ahora tendrás otros jugadores cerca que pueden ayudarte con la misma probabilidad que arruinar tu misión. Los jugadores pueden experimentar todas las mecánicas de GTA actualizadas a través del personaje personalizable único, y el contenido de la comunidad combinado con el sistema de nivelación tiende a mantener a todos ocupados y comprometidos.",
     "description_fa": "Rockstar Games از قسمت قبلی این سری بزرگتر شد. شما دنیای پیچیده و واقعی را از شهر آزادی GTA4 در محیط پر جنب و جوش و متنوع لوس سانتوس، از GTA San Andreas مورد علاقه طرفداران قدیمی دریافت می کنید. 561 وسیله نقلیه مختلف (از جمله هر حمل و نقلی که می توانید استفاده کنید) و با هر به روز رسانی مقدار آن افزایش می یابد. \nداستان سرایی همزمان از سه منظر منحصر به فرد: \nدنبال مایکل، جنایتکار سابق، زندگی فراغت خود به دور از گذشته، فرانکلین، کودکی که به دنبال آینده بهتر است، و تروور، همان گذشته ای که مایکل سعی دارد از آن فرار کند را دنبال کنید. \nGTA Online چالش‌های اضافی زیادی را حتی برای بازیکنان باتجربه فراهم می‌کند که تازه از حالت داستانی می‌آیند. حالا شما بازیکنان دیگری را در اطراف خواهید داشت که می توانند به شما کمک کنند تا ماموریت خود را خراب کنید. هر مکانیک GTA به‌روز می‌تواند توسط بازیکنان از طریق شخصیت منحصر به فرد قابل تنظیم تجربه شود، و محتوای انجمن همراه با سیستم سطح‌بندی باعث می‌شود همه افراد را سرگرم کند."
+  },
+  {
+    "id": 622492,
+    "name": "Forza Horizon 5",
+    "background_image": "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg",
+    "rating": 4.29,
+    "released": "2021-11-08",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "Everyone+",
+    "playtime": 15,
+    "developers": "Playground Games",
+    "steam_link": "https://store.steampowered.com/app/622492",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5e2/5e2e7ccb084034da25d0b21b7c03c273.jpg",
+      "https://media.rawg.io/media/screenshots/6c6/6c69fe99ec23d08b2b0a62feb9d89c65.jpg",
+      "https://media.rawg.io/media/screenshots/32c/32c5651c381e6b628c5ac681601a036a.jpg",
+      "https://media.rawg.io/media/screenshots/312/3122a56932654c304a60e9ef762277a7.jpg",
+      "https://media.rawg.io/media/screenshots/04c/04c7be71d5fd1abace38c90aaa95529d.jpg",
+      "https://media.rawg.io/media/screenshots/797/7979f94d39181787ee248a423191563f.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.\r\nExplore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano.\r\nImmerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.\r\nTake on awe-inspiring weather events like towering dust storms and intense tropical storms as Mexico’s unique, dynamic seasons change the world every week. Keep coming back for new events, challenges, collectibles, and rewards, and new areas to explore.\r\nTeam up with other players and enter the Horizon Arcade for a continuing series of fun, over-the-top challenges that keep you and your friends in the action and having fun with no menus, loading screens or lobbies.\r\nCreate your own expressions of fun with the new EventLab gameplay toolset including custom races, challenges, stunts, and new game modes. Customize your cars in more ways than ever before. Use the Gift Drops feature to share your custom creations.",
+    "description_fa": "ماجراجویی Horizon Ultimate شما در انتظار است! مناظر دنیای باز پر جنب و جوش و همیشه در حال تکامل مکزیک را با اقدامات رانندگی سرگرم کننده و بی حد و حصر در صدها خودروی برتر جهان کاوش کنید.\r\nدنیایی از کنتراست و زیبایی چشمگیر را کاوش کنید. بیابان‌های زنده، جنگل‌های سرسبز، شهرهای تاریخی، ویرانه‌های پنهان، سواحل بکر، دره‌های وسیع و آتشفشانی پوشیده از برف را کشف کنید.\r\nخود را در یک کمپین عمیق با صدها چالش غوطه ور کنید که به شما برای شرکت در فعالیت هایی که دوست دارید پاداش می دهد. با شخصیت های جدید آشنا شوید و نتایج ماموریت های Horizon Story را انتخاب کنید.\r\nرویدادهای آب و هوایی الهام‌بخش مانند طوفان‌های گرد و غبار و طوفان‌های شدید گرمسیری را تجربه کنید زیرا فصول منحصربه‌فرد و پویا مکزیک دنیا را هر هفته تغییر می‌دهند. برای رویدادهای جدید، چالش‌ها، کلکسیون‌ها و جوایز، و مناطق جدید برای کاوش دوباره برگردید.\r\nبا دیگر بازیکنان متحد شوید و وارد Horizon Arcade برای یک سری چالش‌های سرگرم‌کننده و فوق‌العاده مداوم شوید که شما و دوستانتان را در اکشن و سرگرمی نگه می‌دارد."
   }
 ]
