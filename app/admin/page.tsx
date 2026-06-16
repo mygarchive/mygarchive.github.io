@@ -50,7 +50,6 @@ export default function AdminPanel() {
     const adminStatus = localStorage.getItem('isAdmin');
     const savedToken = localStorage.getItem('gh_token');
     if (adminStatus === 'true' && savedToken) {
-      setIsLoggedIn(true);
       setGithubToken(savedToken);
       fetchMyGames(savedToken);
     }
@@ -65,17 +64,18 @@ export default function AdminPanel() {
       }
       localStorage.setItem('isAdmin', 'true');
       localStorage.setItem('gh_token', githubToken.trim());
-      setGithubToken(githubToken.trim());
       setLoginError('');
-      await fetchMyGames(githubToken.trim(), true);
+      await fetchMyGames(githubToken.trim());
     } else {
       setLoginError('نام کاربری یا رمز عبور اشتباه است!');
     }
   };
 
-  const fetchMyGames = async (token: string, isInitialLogin = false) => {
+  const fetchMyGames = async (token: string) => {
     try {
-      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${Date.now()}`);
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
@@ -125,6 +125,16 @@ export default function AdminPanel() {
         ? { minimum: pcRequirements.replace(/Minimum:|⚙️/gi, '').trim() }
         : { minimum: 'سیستم مورد نیاز به صورت مجزا ثبت نشده است.' };
 
+      // استخراج عدد رده سنی (به جای مدل آبجکتی متن)
+      const esrbAge = gameDetails.esrb_rating?.id 
+        ? `${gameDetails.esrb_rating.name.replace(/[^0-9]/g, '') || gameDetails.esrb_rating.name}+` 
+        : '---';
+
+      // استخراج نام کامل سازندگان و استیم لینک دقیق
+      const developersList = gameDetails.developers?.map((d: any) => d.name).join(', ') || '---';
+      const steamStore = gameDetails.stores?.find((s: any) => s.store.slug === 'steam');
+      const steamUrl = steamStore?.url || (steamStore?.store?.id ? `https://store.steampowered.com/app/${game.id}` : '');
+
       const newGameObj = {
         id: game.id,
         name: game.name,
@@ -132,10 +142,10 @@ export default function AdminPanel() {
         rating: game.rating,
         released: game.released,
         genres: game.genres || [],
-        esrb_rating: gameDetails.esrb_rating || '---',
+        esrb_rating: esrbAge,
         playtime: gameDetails.playtime || 0,
-        developers: gameDetails.developers || [],
-        steam_link: gameDetails.stores?.find((s: any) => s.store.slug === 'steam') ? `https://store.steampowered.com/app/${gameDetails.id}` : '',
+        developers: developersList,
+        steam_link: steamUrl,
         trailer_url: trailerUrl,
         gallery: gallery,
         requirements: requirementsObj,
@@ -145,9 +155,13 @@ export default function AdminPanel() {
 
       const updatedGames = [...myGames, newGameObj];
 
-      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json`, {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
-        headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json' },
+        headers: { 
+          'Authorization': `Bearer ${githubToken}`, 
+          'Content-Type': 'application/json',
+          'Accept': 'application/vnd.github.v3+json'
+        },
         body: JSON.stringify({
           message: `Add ${game.name} archive configuration`,
           content: safeBtoa(JSON.stringify(updatedGames, null, 2)),
@@ -173,9 +187,13 @@ export default function AdminPanel() {
     const updatedGames = myGames.filter((g) => g.id !== gameId);
 
     try {
-      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json`, {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
-        headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json' },
+        headers: { 
+          'Authorization': `Bearer ${githubToken}`, 
+          'Content-Type': 'application/json',
+          'Accept': 'application/vnd.github.v3+json'
+        },
         body: JSON.stringify({
           message: `Remove ${gameName}`,
           content: safeBtoa(JSON.stringify(updatedGames, null, 2)),
