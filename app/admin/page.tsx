@@ -93,30 +93,28 @@ export default function AdminPanel() {
       
       const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1000));
       
-      // سیستم استخراج فوق‌پیشرفته سیستم مورد نیاز از لایه‌های مختلف API
+      // موتور استخراج هوشمند و پیشرفته سیستم مورد نیاز بازی‌ها از تمامی لایه‌های آبجکت PC
       let minReq = '';
       let recReq = '';
       
-      const pcPlatforms = details.platforms?.find((p: any) => p.platform.slug === 'pc');
-      if (pcPlatforms) {
-        if (pcPlatforms.requirements_minimum) minReq = pcPlatforms.requirements_minimum;
-        if (pcPlatforms.requirements_recommended) recReq = pcPlatforms.requirements_recommended;
+      const pcPlatformData = details.platforms?.find((p: any) => p.platform.slug === 'pc');
+      if (pcPlatformData?.requirements) {
+        if (pcPlatformData.requirements.minimum) minReq = pcPlatformData.requirements.minimum;
+        if (pcPlatformData.requirements.recommended) recReq = pcPlatformData.requirements.recommended;
       }
 
-      if (!minReq && details.requirements?.minimum) minReq = details.requirements.minimum;
-      if (!recReq && details.requirements?.recommended) recReq = details.requirements.recommended;
+      // اگر در ساختار استاندارد نبود، متون خام را بر اساس ساختار متنی اسکن کند
+      if (!minReq && pcPlatformData?.requirements_minimum) minReq = pcPlatformData.requirements_minimum;
+      if (!recReq && pcPlatformData?.requirements_recommended) recReq = pcPlatformData.requirements_recommended;
 
-      // اگر کماکان خالی بود، در بین متن کلی پلتفرم‌ها جستجو کند
-      if (!minReq && details.platforms) {
-        for (const p of details.platforms) {
-          if (p.requirements?.minimum) minReq = p.requirements.minimum;
-          if (p.requirements?.recommended) recReq = p.requirements.recommended;
-        }
-      }
-
-      const cleanReq = (t: string, fallback: string) => {
-        if (!t) return fallback;
-        return t.replace(/Minimum:|Recommended:|⚙️/gi, '').replace(/<\/?b>/g, '').replace(/<\/?p>/g, '').trim();
+      const cleanReq = (text: string, fallback: string) => {
+        if (!text) return fallback;
+        return text
+          .replace(/Minimum:|Recommended:|⚙️/gi, '')
+          .replace(/<\/?b>/g, '')
+          .replace(/<\/?p>/g, '')
+          .replace(/<\/?br\s*\/?>/g, '\n')
+          .trim();
       };
 
       // تبدیل دقیق رده سنی به فرمت عددی تمیز
@@ -142,7 +140,6 @@ export default function AdminPanel() {
         }
       }
 
-      // اگر از بخش فروشگاه‌ها پیدا نشد، بر اساس نام بازی یک مچ استیم بسازد
       if (!steamUrl && game.name) {
         steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
       }
@@ -168,17 +165,20 @@ export default function AdminPanel() {
         description_fa: descriptionFa 
       };
 
-      const updatedGames = [...myGames, newGameObj];
+      // جلوگیری از ایجاد بازی تکراری در فایل جی‌سان
+      const updatedGames = myGames.filter((g) => g.id !== game.id);
+      updatedGames.push(newGameObj);
+
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Add ${game.name}`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: fileSha })
+        body: JSON.stringify({ message: `Add/Update ${game.name}`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: fileSha })
       });
 
       if (res.status === 200 || res.status === 201) {
         setFileSha((await res.json()).content.sha);
         setMyGames(updatedGames);
-        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره شد.`, isError: false });
+        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره و دیتای آن فیکس شد.`, isError: false });
       } else { setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب.', isError: true }); }
     } catch { setMessage({ text: 'خطا در ارتباط با سرورها.', isError: true }); }
     setLoading(false);
@@ -257,7 +257,10 @@ export default function AdminPanel() {
                 <div className="p-4 flex flex-col justify-between flex-1 space-y-4">
                   <h3 className="font-bold text-sm text-white text-left truncate" dir="ltr">{game.name}</h3>
                   {isAlreadyAdded ? (
-                    <button onClick={() => handleRemoveGame(game.id, game.name)} className="w-full py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف از آرشیو</button>
+                    <div className="flex gap-2 w-full">
+                      <button onClick={() => handleAddGame(game)} className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs transition font-bold">🔄 فیکس مجدد</button>
+                      <button onClick={() => handleRemoveGame(game.id, game.name)} className="px-3 py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف</button>
+                    </div>
                   ) : (
                     <button onClick={() => handleAddGame(game)} disabled={loading} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold disabled:opacity-50">＋ افزودن به آرشیو</button>
                   )}
