@@ -34,6 +34,13 @@ export default function AdminPanel() {
   const [message, setMessage] = useState({ text: '', isError: false });
   const [fileSha, setFileSha] = useState('');
 
+  // 🖼️ تابع بهینه‌سازی سایز عکس و دور زدن فیلترینگ ایران
+  const getOptimizedUrl = (url: string, width = 400) => {
+    if (!url) return '';
+    const cleanUrl = url.replace(/^https?:\/\//i, '');
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
+  };
+
   useEffect(() => {
     if (typeof window !== 'undefined' && window.location.pathname.includes('/app/')) {
       const cleanPath = window.location.pathname.replace('/app/', '/');
@@ -52,24 +59,18 @@ export default function AdminPanel() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     const cleanUsername = username.trim().toLowerCase();
     const cleanPassword = password.trim().toLowerCase();
 
-    // 🔐 بررسی کاملاً امن، مستقیم و بدون حساسیت به حروف بزرگ و کوچک
     if (cleanUsername === 'hf273' && cleanPassword === 'hf1to1') {
       if (!githubToken.trim().startsWith('ghp_')) {
         setLoginError('لطفاً توکن کلاسیک گیت‌هاب که با ghp_ شروع می‌شود را درست وارد کنید.');
         return;
       }
-      
-      // موقتاً قبل از تایید نهایی گیت‌هاب، وضعیت را ذخیره می‌کنیم
       localStorage.setItem('isAdmin', 'true');
       localStorage.setItem('gh_token', githubToken.trim());
       setGithubToken(githubToken.trim());
       setLoginError('');
-      
-      // تلاش برای خواندن دیتابیس بازی‌ها جهت تایید نهایی توکن گیت‌هاب
       await fetchMyGames(githubToken.trim(), true);
     } else {
       setLoginError('نام کاربری یا رمز عبور اشتباه است!');
@@ -78,7 +79,8 @@ export default function AdminPanel() {
 
   const fetchMyGames = async (token: string, isInitialLogin = false) => {
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
+      // استفاده از ترفند کش‌بریکست (?v=) برای گرفتن آخرین تغییرات دیتابیس
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, {
         headers: { 'Authorization': `token ${token}` }
       });
       
@@ -87,27 +89,17 @@ export default function AdminPanel() {
         setFileSha(data.sha);
         const content = JSON.parse(atob(data.content));
         setMyGames(Array.isArray(content) ? content : []);
-        setIsLoggedIn(true); // ورود موفقیت‌آمیز کامل شد
+        setIsLoggedIn(true);
       } else if (res.status === 401 || res.status === 403) {
         localStorage.clear();
         setIsLoggedIn(false);
         setLoginError('توکن گیت‌هاب معتبر نیست یا منقضی شده است!');
-      } else if (res.status === 404) {
-        if (isInitialLogin) {
-          // اگر فایل پیدا نشد اما در مرحله اول لاگین هستیم، وارد پنل می‌شویم تا فایل بسازیم
-          setIsLoggedIn(true);
-          setLoginError('');
-        } else {
-          console.error('فایل دیتابیس در مسیر data/games.json پیدا نشد.');
-        }
+      } else if (res.status === 404 && isInitialLogin) {
+        setIsLoggedIn(true);
+        setLoginError('');
       }
     } catch (err) {
-      console.error('خطا در ارتباط با گیت‌هاب:', err);
-      if (isInitialLogin) {
-        localStorage.clear();
-        setIsLoggedIn(false);
-        setLoginError('خطا در برقراری ارتباط با API گیت‌هاب. وضعیت شبکه را بررسی کنید.');
-      }
+      console.error(err);
     }
   };
 
@@ -115,7 +107,8 @@ export default function AdminPanel() {
     if (!searchQuery) return;
     setLoading(true);
     try {
-      const res = await fetch(`https://api.rawg.io/api/games?key=${RAWG_API_KEY}&search=${searchQuery}&page_size=6`);
+      // 🚀 افزایش تعداد نتایج به 20 برای لود کردن تمام نسخه‌های بازی‌ها
+      const res = await fetch(`https://api.rawg.io/api/games?key=${RAWG_API_KEY}&search=${searchQuery}&page_size=20`);
       const data = await res.json();
       setSearchResults(data.results || []);
     } catch (err) {
@@ -125,11 +118,6 @@ export default function AdminPanel() {
   };
 
   const handleAddGame = async (game: any) => {
-    if (myGames.some((g) => g.id === game.id)) {
-      setMessage({ text: 'این بازی از قبل در آرشیو شما هست!', isError: true });
-      return;
-    }
-    
     setLoading(true);
     setMessage({ text: 'در حال دریافت اطلاعات تکمیلی و ترجمه خودکار توضیحات...', isError: false });
 
@@ -139,13 +127,12 @@ export default function AdminPanel() {
       
       const rawDescriptionEn = gameDetails.description_raw || "No description available.";
       const shortDescriptionEn = rawDescriptionEn.length > 1000 ? rawDescriptionEn.substring(0, 1000) + '...' : rawDescriptionEn;
-
       const descriptionFa = await translateToPersian(shortDescriptionEn);
 
       const updatedGames = [...myGames, {
         id: game.id,
         name: game.name,
-        background_image: game.background_image,
+        background_image: game.background_image, // آدرس خام برای ذخیره در دیتابیس
         rating: game.rating,
         released: game.released,
         genres: game.genres,
@@ -167,14 +154,46 @@ export default function AdminPanel() {
       });
 
       if (res.status === 200 || res.status === 201) {
-        setMessage({ text: `بازی "${game.name}" همراه با توضیحات دو زبانه به آرشیو اضافه شد!`, isError: false });
-        setMyGames(updatedGames);
-        fetchMyGames(githubToken);
+        setMessage({ text: `بازی "${game.name}" با موفقیت به آرشیو اضافه شد! صفحه تا ۳ ثانیه دیگر رفرش می‌شود.`, isError: false });
+        setTimeout(() => window.location.reload(), 3000);
       } else {
-        setMessage({ text: 'خطا در ذخیره روی گیت‌هاب. سطح دسترسی توکن را چک کنید.', isError: true });
+        setMessage({ text: 'خطا در ذخیره روی گیت‌هاب.', isError: true });
       }
     } catch (err) {
-      setMessage({ text: 'ارتباط با سرور برقرار نشد یا خطایی در ترجمه رخ داد.', isError: true });
+      setMessage({ text: 'ارتباط با سرور برقرار نشد.', isError: true });
+    }
+    setLoading(false);
+  };
+
+  // ❌ تابع هوشمند حذف بازی از آرشیو
+  const handleRemoveGame = async (gameId: number, gameName: string) => {
+    if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
+    setLoading(true);
+    
+    const updatedGames = myGames.filter((g) => g.id !== gameId);
+
+    try {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${githubToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: `Remove ${gameName} from archive`,
+          content: btoa(unescape(encodeURIComponent(JSON.stringify(updatedGames, null, 2)))),
+          sha: fileSha
+        })
+      });
+
+      if (res.status === 200 || res.status === 201) {
+        setMessage({ text: `بازی "${gameName}" با موفقیت از آرشیو حذف شد! صفحه تا ۳ ثانیه دیگر رفرش می‌شود.`, isError: false });
+        setTimeout(() => window.location.reload(), 3000);
+      } else {
+        setMessage({ text: 'خطا در حذف بازی از روی گیت‌هاب.', isError: true });
+      }
+    } catch (err) {
+      setMessage({ text: 'مشکل در برقراری ارتباط با سرور.', isError: true });
     }
     setLoading(false);
   };
@@ -184,25 +203,20 @@ export default function AdminPanel() {
       <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center p-4" dir="rtl">
         <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 p-6 rounded-2xl w-full max-w-md space-y-4 shadow-xl">
           <h2 className="text-xl font-black text-center text-white mb-2">⚙️ ورود به پنل مدیریت آرشیو</h2>
-          
           <div>
             <label className="text-xs text-slate-400 block mb-1">نام کاربری:</label>
-            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm focus:border-purple-500 outline-none text-left" placeholder="نام کاربری را وارد کنید" required />
+            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-left outline-none" required />
           </div>
-
           <div>
             <label className="text-xs text-slate-400 block mb-1">رمز عبور:</label>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm focus:border-purple-500 outline-none text-left" placeholder="******" required />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-left outline-none" required />
           </div>
-
           <div>
             <label className="text-xs text-slate-400 block mb-1">توکن کلاسیک گیت‌هاب (ghp_...):</label>
-            <input type="password" value={githubToken} onChange={(e) => setGithubToken(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm focus:border-purple-500 outline-none text-left" placeholder="ghp_xxxxxxxxxxxx" required />
+            <input type="password" value={githubToken} onChange={(e) => setGithubToken(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-left outline-none" required />
           </div>
-
           {loginError && <p className="text-xs text-red-400 text-center font-bold">{loginError}</p>}
-
-          <button type="submit" className="w-full py-2.5 bg-purple-600 hover:bg-purple-700 font-bold rounded-xl transition text-sm text-white">اتصال و ورود</button>
+          <button type="submit" className="w-full py-2.5 bg-purple-600 hover:bg-purple-700 font-bold rounded-xl text-sm text-white transition">اتصال و ورود</button>
           <div className="text-center pt-2"><Link href="/" className="text-xs text-slate-500 hover:text-slate-300">➔ بازگشت به صفحه اصلی سایت</Link></div>
         </form>
       </div>
@@ -211,15 +225,19 @@ export default function AdminPanel() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12" dir="rtl">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <header className="flex justify-between items-center mb-8 border-b border-slate-900 pb-4">
           <h1 className="text-xl font-black text-white">🎮 پنل مدیریت و افزودن بازی</h1>
-          <button onClick={() => { localStorage.clear(); setIsLoggedIn(false); }} className="text-xs text-red-400 hover:underline">خروج از پنل</button>
+          <div className="flex items-center gap-4">
+            {/* ➔ مورد دوم: دکمه بازگشت به صفحه اصلی سایت */}
+            <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-3 py-1.5 rounded-xl hover:bg-purple-600 hover:text-white transition">➔ مشاهده سایت اصلی</Link>
+            <button onClick={() => { localStorage.clear(); setIsLoggedIn(false); }} className="text-xs text-red-400 hover:underline">خروج</button>
+          </div>
         </header>
 
         <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
-          <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی را به انگلیسی بنویسید..." className="flex-1 p-2 bg-slate-950 border border-slate-800 rounded-lg text-sm outline-none focus:border-purple-500" />
-          <button onClick={handleSearch} disabled={loading} className="px-5 bg-purple-600 hover:bg-purple-700 rounded-lg text-sm font-bold transition">جستجو</button>
+          <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی را به انگلیسی بنویسید (مثلاً Assassin)..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none focus:border-purple-500" />
+          <button onClick={handleSearch} disabled={loading} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold transition">جستجو</button>
         </div>
 
         {message.text && (
@@ -228,19 +246,36 @@ export default function AdminPanel() {
           </div>
         )}
 
-        {loading && <div className="text-center py-6 text-sm text-slate-400 animate-pulse">در حال پردازش...</div>}
+        {loading && <div className="text-center py-6 text-sm text-slate-400 animate-pulse">در حال پردازش داده‌ها...</div>}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {searchResults.map((game) => (
-            <div key={game.id} className="bg-slate-900 border border-slate-900/60 p-3 rounded-xl flex gap-4 items-center">
-              <img src={game.background_image} alt={game.name} className="w-20 h-20 object-cover rounded-lg bg-slate-950" />
-              <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-sm text-white truncate text-left" dir="ltr">{game.name}</h3>
-                <p className="text-xs text-slate-500 mt-1">انتشار: {game.released || '---'}</p>
-                <button onClick={() => handleAddGame(game)} className="mt-2 px-3 py-1 bg-slate-800 hover:bg-purple-600 border border-slate-700 hover:border-purple-500 rounded-md text-xs transition font-bold">＋ افزودن به آرشیو</button>
+        {/* ⚡ تغییر استایل به کارت‌های بزرگ‌تر و شیک‌تر */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {searchResults.map((game) => {
+            const isAlreadyAdded = myGames.some((g) => g.id === game.id);
+            return (
+              <div key={game.id} className="bg-slate-900 border border-slate-800/80 rounded-2xl overflow-hidden flex flex-col justify-between group shadow-lg hover:border-slate-700 transition">
+                {/* 🖼️ استفاده از تصویر کم‌حجم، سریع و ضدتحریم ایران */}
+                <img src={getOptimizedUrl(game.background_image, 500)} alt={game.name} className="w-full h-44 object-cover bg-slate-950 transition group-hover:scale-105 duration-300" />
+                <div className="p-4 flex-1 flex flex-col justify-between space-y-4">
+                  <div>
+                    <h3 className="font-bold text-base text-white text-left tracking-tight truncate-2-lines mb-1" dir="ltr">{game.name}</h3>
+                    <p className="text-xs text-slate-500">انتشار: {game.released || '---'}</p>
+                  </div>
+                  
+                  {/* ❌ مورد پنجم: دکمه داینامیک افزودن یا حذف هوشمند */}
+                  {isAlreadyAdded ? (
+                    <button onClick={() => handleRemoveGame(game.id, game.name)} className="w-full py-2 bg-red-950/40 hover:bg-red-600 border border-red-900 hover:border-red-500 text-red-400 hover:text-white rounded-xl text-xs transition font-black">
+                      ❌ حذف از آرشیو شما
+                    </button>
+                  ) : (
+                    <button onClick={() => handleAddGame(game)} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-black">
+                      ＋ افزودن به آرشیو
+                    </button>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
