@@ -33,7 +33,6 @@ function GameDetailContent() {
   if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-400">در حال دریافت اطلاعات بازی...</div>;
   if (!game) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm text-red-400">بازی مورد نظر در آرشیو یافت نشد.</div>;
 
-  // تابع پروکسی برای بهینه‌سازی و سبک کردن تصاویر سبک وب
   const getOptimizedUrl = (url: string, width = 800) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
@@ -54,7 +53,7 @@ function GameDetailContent() {
           </Link>
         </header>
 
-        {/* کاور اصلی بهینه‌سازی شده و بسیار سبک */}
+        {/* کاور اصلی بهینه‌شده با لود فوق‌سریع */}
         <div className="w-full rounded-2xl overflow-hidden border border-slate-900 shadow-2xl bg-slate-900 mb-8 flex justify-center items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={getOptimizedUrl(game.background_image, 800)} alt={game.name} className="w-full h-auto object-cover max-h-[450px]" />
@@ -71,7 +70,7 @@ function GameDetailContent() {
               </div>
             </div>
 
-            {/* بخش توضیحات بزرگ و خوانا */}
+            {/* توضیحات بازی */}
             <div className="space-y-5 bg-slate-900/40 border border-slate-900 p-6 rounded-2xl">
               {game.description_fa && (
                 <div>
@@ -87,7 +86,7 @@ function GameDetailContent() {
               )}
             </div>
 
-            {/* گالری تصاویر آلبومی بازی */}
+            {/* گالری تصاویر بهینه‌سازی شده */}
             {game.gallery && game.gallery.length > 0 && (
               <div className="space-y-3">
                 <h3 className="text-sm font-black text-white">📸 گالری تصاویر بازی:</h3>
@@ -106,35 +105,33 @@ function GameDetailContent() {
               </div>
             )}
 
-            {/* بخش سیستم مورد نیاز هوشمند */}
-            {game.requirements && (
-              <div className="space-y-4">
-                <h3 className="text-sm font-black text-white flex items-center gap-2 mb-1">💻 مشخصات سیستم سخت‌افزاری مورد نیاز:</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl space-y-3">
-                    <div className="text-xs font-bold text-red-400 border-b border-slate-900 pb-2 flex items-center justify-between">
-                      <span>⚠️ حداقل سیستم مورد نیاز</span>
-                      <span className="text-[10px] bg-red-950/40 px-2 py-0.5 rounded border border-red-900/50">Minimum</span>
-                    </div>
-                    <p className="text-xs text-slate-300 leading-6 text-left font-mono whitespace-pre-line" dir="ltr">
-                      {game.requirements.minimum || 'مشخصات حداقل سخت‌افزار ثبت نشده است.'}
-                    </p>
+            {/* رندر ۱۰۰٪ فیکس شده و دقیق سیستم مورد نیاز */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-black text-white flex items-center gap-2 mb-1">💻 مشخصات سیستم سخت‌افزاری مورد نیاز:</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl space-y-3">
+                  <div className="text-xs font-bold text-red-400 border-b border-slate-900 pb-2 flex items-center justify-between">
+                    <span>⚠️ حداقل سیستم مورد نیاز</span>
+                    <span className="text-[10px] bg-red-950/40 px-2 py-0.5 rounded border border-red-900/50">Minimum</span>
                   </div>
-                  <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl space-y-3">
-                    <div className="text-xs font-bold text-green-400 border-b border-slate-900 pb-2 flex items-center justify-between">
-                      <span>✅ سیستم پیشنهادی آرشیو</span>
-                      <span className="text-[10px] bg-green-950/40 px-2 py-0.5 rounded border border-green-900/50">Recommended</span>
-                    </div>
-                    <p className="text-xs text-slate-300 leading-6 text-left font-mono whitespace-pre-line" dir="ltr">
-                      {game.requirements.recommended || 'مشخصات سیستم پیشنهادی ثبت نشده است.'}
-                    </p>
+                  <p className="text-xs text-slate-300 leading-6 text-left font-mono whitespace-pre-line" dir="ltr">
+                    {game.requirements?.minimum || 'مشخصات حداقل سخت‌افزار ثبت نشده است.'}
+                  </p>
+                </div>
+                <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl space-y-3">
+                  <div className="text-xs font-bold text-green-400 border-b border-slate-900 pb-2 flex items-center justify-between">
+                    <span>✅ سیستم پیشنهادی آرشیو</span>
+                    <span className="text-[10px] bg-green-950/40 px-2 py-0.5 rounded border border-green-900/50">Recommended</span>
                   </div>
+                  <p className="text-xs text-slate-300 leading-6 text-left font-mono whitespace-pre-line" dir="ltr">
+                    {game.requirements?.recommended || 'مشخصات سیستم پیشنهادی ثبت نشده است.'}
+                  </p>
                 </div>
               </div>
-            )}
+            </div>
           </div>
 
-          {/* سایدبار اطلاعات عمومی و دکمه استیم */}
+          {/* سایدبار اطلاعات عمومی همراه با دکمه لینک مستقیم خرید از استیم */}
           <div className="space-y-6">
             <div className="bg-slate-900 border border-slate-800/60 p-5 rounded-2xl space-y-4 text-sm text-slate-300">
               <h3 className="font-black text-white text-base mb-2 border-b border-slate-900 pb-2">📊 اطلاعات عمومی</h3>
@@ -144,10 +141,10 @@ function GameDetailContent() {
               <p>🏢 سازنده/ناشر: <span className="text-slate-100" dir="ltr">{game.developers || '---'}</span></p>
               <p>⏱️ زمان اتمام: <span className="text-green-400 font-bold">{game.playtime || '---'} ساعت</span></p>
               
-              {/* احیای کامل دکمه فروشگاه استیم */}
+              {/* دکمه انتقال مستقیم به صفحه خرید خود بازی در استیم */}
               {game.steam_link && (
                 <div className="pt-2">
-                  <a href={game.steam_link} target="_blank" rel="noopener noreferrer" className="w-full py-2.5 bg-[#171a21] hover:bg-[#2a475e] text-white border border-[#2a475e] rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition">
+                  <a href={game.steam_link} target="_blank" rel="noopener noreferrer" className="w-full py-2.5 bg-[#171a21] hover:bg-[#2a475e] text-white border border-[#171a21] hover:border-[#2a475e] rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition duration-200">
                     🎮 مشاهده در استیم (صفحه اختصاصی)
                   </a>
                 </div>
@@ -157,25 +154,13 @@ function GameDetailContent() {
         </div>
       </div>
 
-      {/* مدال لایت‌باکس بزرگنمایی تصاویر گالری */}
+      {/* مدال لایت‌باکس گالری */}
       {activePhotoIndex !== null && game.gallery && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-zoom-out"
-          onClick={() => setActivePhotoIndex(null)}
-        >
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-zoom-out" onClick={() => setActivePhotoIndex(null)}>
           <div className="max-w-4xl max-h-full relative" onClick={(e) => e.stopPropagation()}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src={game.gallery[activePhotoIndex]} 
-              alt="Expanded preview" 
-              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl border border-slate-800" 
-            />
-            <button 
-              onClick={() => setActivePhotoIndex(null)}
-              className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 text-xs w-8 h-8 flex items-center justify-center border border-slate-700"
-            >
-              ✕
-            </button>
+            <img src={game.gallery[activePhotoIndex]} alt="Expanded preview" className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl border border-slate-800" />
+            <button onClick={() => setActivePhotoIndex(null)} className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 text-xs w-8 h-8 flex items-center justify-center border border-slate-700">✕</button>
           </div>
         </div>
       )}
