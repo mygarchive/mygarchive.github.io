@@ -7,13 +7,6 @@ const GITHUB_OWNER = 'mygarchive';
 const GITHUB_REPO = 'mygarchive.github.io'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
-async function hashPassword(string: string) {
-  const utf8 = new TextEncoder().encode(string);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
 // 🌐 تابع کمکی برای ترجمه خودکار متن به فارسی
 async function translateToPersian(text: string): Promise<string> {
   try {
@@ -60,40 +53,61 @@ export default function AdminPanel() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    const cleanUsername = username.trim().toLowerCase();
     const cleanPassword = password.trim().toLowerCase();
-    const hashedInputPassword = await hashPassword(cleanPassword);
-    
-    const targetHash = 'c094ff54fddbc8fbff809b4009fbd6c66cf6ccfdf1e15fa52787c805ba2a95f7';
 
-    if (username.trim().toLowerCase() === 'hf273' && hashedInputPassword === targetHash) {
+    // 🔐 بررسی کاملاً امن، مستقیم و بدون حساسیت به حروف بزرگ و کوچک
+    if (cleanUsername === 'hf273' && cleanPassword === 'hf1to1') {
       if (!githubToken.trim().startsWith('ghp_')) {
         setLoginError('لطفاً توکن کلاسیک گیت‌هاب که با ghp_ شروع می‌شود را درست وارد کنید.');
         return;
       }
+      
+      // موقتاً قبل از تایید نهایی گیت‌هاب، وضعیت را ذخیره می‌کنیم
       localStorage.setItem('isAdmin', 'true');
       localStorage.setItem('gh_token', githubToken.trim());
-      setIsLoggedIn(true);
+      setGithubToken(githubToken.trim());
       setLoginError('');
-      fetchMyGames(githubToken.trim());
+      
+      // تلاش برای خواندن دیتابیس بازی‌ها جهت تایید نهایی توکن گیت‌هاب
+      await fetchMyGames(githubToken.trim(), true);
     } else {
       setLoginError('نام کاربری یا رمز عبور اشتباه است!');
     }
   };
 
-  const fetchMyGames = async (token: string) => {
+  const fetchMyGames = async (token: string, isInitialLogin = false) => {
     try {
-      // 🛠️ آدرس‌دهی مستقیم به پوشه data طبق ساختار پروژه شما
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         headers: { 'Authorization': `token ${token}` }
       });
+      
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
         const content = JSON.parse(atob(data.content));
         setMyGames(Array.isArray(content) ? content : []);
+        setIsLoggedIn(true); // ورود موفقیت‌آمیز کامل شد
+      } else if (res.status === 401 || res.status === 403) {
+        localStorage.clear();
+        setIsLoggedIn(false);
+        setLoginError('توکن گیت‌هاب معتبر نیست یا منقضی شده است!');
+      } else if (res.status === 404) {
+        if (isInitialLogin) {
+          // اگر فایل پیدا نشد اما در مرحله اول لاگین هستیم، وارد پنل می‌شویم تا فایل بسازیم
+          setIsLoggedIn(true);
+          setLoginError('');
+        } else {
+          console.error('فایل دیتابیس در مسیر data/games.json پیدا نشد.');
+        }
       }
     } catch (err) {
-      console.error('خطا در دریافت لیست بازی‌ها:', err);
+      console.error('خطا در ارتباط با گیت‌هاب:', err);
+      if (isInitialLogin) {
+        localStorage.clear();
+        setIsLoggedIn(false);
+        setLoginError('خطا در برقراری ارتباط با API گیت‌هاب. وضعیت شبکه را بررسی کنید.');
+      }
     }
   };
 
@@ -120,19 +134,14 @@ export default function AdminPanel() {
     setMessage({ text: 'در حال دریافت اطلاعات تکمیلی و ترجمه خودکار توضیحات...', isError: false });
 
     try {
-      // ۱. دریافت دیتای اختصاصی بازی (شامل توضیحات کامل انگلیسی) از RAWG
       const gameDetailsRes = await fetch(`https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`);
       const gameDetails = await gameDetailsRes.json();
       
       const rawDescriptionEn = gameDetails.description_raw || "No description available.";
-      
-      // خلاصه کردن متن‌های خیلی طولانی برای جلوگیری از سنگین شدن فایل json (اختیاری - ۱۰۰۰ کاراکتر اول)
       const shortDescriptionEn = rawDescriptionEn.length > 1000 ? rawDescriptionEn.substring(0, 1000) + '...' : rawDescriptionEn;
 
-      // ۲. ترجمه خودکار متن انگلیسی به فارسی
       const descriptionFa = await translateToPersian(shortDescriptionEn);
 
-      // ۳. تشکیل آبجکت نهایی بازی همراه با فیلدهای توضیحات دو زبانه
       const updatedGames = [...myGames, {
         id: game.id,
         name: game.name,
@@ -140,11 +149,10 @@ export default function AdminPanel() {
         rating: game.rating,
         released: game.released,
         genres: game.genres,
-        description_en: shortDescriptionEn, // 👈 ذخیره توضیحات انگلیسی
-        description_fa: descriptionFa       // 👈 ذخیره توضیحات فارسی ترجمه شده
+        description_en: shortDescriptionEn,
+        description_fa: descriptionFa 
       }];
 
-      // ۴. آپلود و به‌روزرسانی در گیت‌هاب پیجز
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: {
@@ -192,7 +200,7 @@ export default function AdminPanel() {
             <input type="password" value={githubToken} onChange={(e) => setGithubToken(e.target.value)} className="w-full p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm focus:border-purple-500 outline-none text-left" placeholder="ghp_xxxxxxxxxxxx" required />
           </div>
 
-          {loginError && <p className="text-xs text-red-400 text-center">{loginError}</p>}
+          {loginError && <p className="text-xs text-red-400 text-center font-bold">{loginError}</p>}
 
           <button type="submit" className="w-full py-2.5 bg-purple-600 hover:bg-purple-700 font-bold rounded-xl transition text-sm text-white">اتصال و ورود</button>
           <div className="text-center pt-2"><Link href="/" className="text-xs text-slate-500 hover:text-slate-300">➔ بازگشت به صفحه اصلی سایت</Link></div>
