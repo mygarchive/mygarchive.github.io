@@ -16,27 +16,6 @@
     "description_fa": "مجموعه Batman: Arkham نسخه های قطعی بازی های Rocksteady's Arkham Trilogy، شامل تمام محتوای پس از عرضه را در یک مجموعه کامل برای شما به ارمغان می آورد.\nدو مورد از تحسین‌شده‌ترین عناوین نسل گذشته - Batman: Arkham Asylum و Batman: Arkham City را با تصاویری کاملاً بازسازی‌شده و به‌روزرسانی شده تجربه کنید. تجربه خود را با فینال انفجاری سری Arkham در Batman: Arkham Knight کامل کنید. بتمن شوید و از طیف گسترده ای از ابزارها و توانایی ها برای رویارویی با خطرناک ترین تبهکاران گاتهام استفاده کنید و در نهایت با تهدید نهایی علیه شهری روبرو شوید که بتمن سوگند یاد کرده است از آن محافظت کند.\n\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy). هزینه مجوز یکباره برای بازی در سیستم PS4™ اصلی تعیین شده حساب و سایر سیستم‌های PS4™ هنگام ورود به سیستم ..."
   },
   {
-    "id": 28153,
-    "name": "Assassin's Creed Origins",
-    "background_image": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
-    "rating": 3.96,
-    "released": "2017-10-27",
-    "genres": [
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      },
-      {
-        "id": 5,
-        "name": "RPG",
-        "slug": "role-playing-games-rpg"
-      }
-    ],
-    "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did...",
-    "description_fa": "Assassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه با تجدید نظر شدید است که به جای انیمیشن های از پیش تعیین شده، به مکانیک های جعبه ضربه متکی است."
-  },
-  {
     "id": 3287,
     "name": "Batman: Arkham Knight",
     "background_image": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg",
@@ -608,5 +587,43 @@
     },
     "description_en": "From one of gaming’s most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera – herself.\n*Xbox Live account required. Visit www.gears5.com for additional information.",
     "description_fa": "از یکی از تحسین‌شده‌ترین حماسه‌های بازی، Gears بزرگ‌تر از همیشه است، با پنج حالت هیجان‌انگیز و عمیق‌ترین کمپین تاکنون. با شروع جنگ همه جانبه، کیت دیاز جدا می شود تا ارتباط خود را با دشمن آشکار کند و خطر واقعی سرا - خودش را کشف می کند.\n*حساب Xbox Live مورد نیاز است. برای اطلاعات بیشتر به www.gears5.com مراجعه کنید."
+  },
+  {
+    "id": 28153,
+    "name": "Assassin's Creed Origins",
+    "background_image": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
+    "rating": 3.96,
+    "released": "2017-10-27",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 28,
+    "developers": "Ubisoft, Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/search/?term=Assassin's%20Creed%20Origins",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686972/movie_max.mp4",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
+      "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
+      "https://media.rawg.io/media/screenshots/313/3132876284966c4d055d752e7edc5509.jpg",
+      "https://media.rawg.io/media/screenshots/b3f/b3fe4ade2ed930cbd8253269ff38ba28.jpg",
+      "https://media.rawg.io/media/screenshots/2d7/2d7a5c1b08e5cc5bc7c371094376637c.jpg",
+      "https://media.rawg.io/media/screenshots/0a2/0a24d82ed3f2d35726d17e4c73593721.jpeg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did in the previous titles. Origins focuses on introducing various types of enemies that the players will have to learn about in order to defeat them.",
+    "description_fa": "Assassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه ای است که به شدت اصلاح شده است که به جای انیمیشن های از پیش تعیین شده، به مکانیک های جعبه ضربه متکی است."
   }
 ]
