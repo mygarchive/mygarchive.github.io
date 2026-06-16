@@ -93,18 +93,33 @@ export default function AdminPanel() {
       
       const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1000));
       
-      let minReq = 'مشخصات حداقل سخت‌افزار ثبت نشده است.';
-      let recReq = 'مشخصات سیستم پیشنهادی ثبت نشده است.';
+      // سیستم استخراج فوق‌پیشرفته سیستم مورد نیاز از لایه‌های مختلف API
+      let minReq = '';
+      let recReq = '';
       
       const pcPlatforms = details.platforms?.find((p: any) => p.platform.slug === 'pc');
-      if (pcPlatforms?.requirements_minimum) minReq = pcPlatforms.requirements_minimum;
-      if (pcPlatforms?.requirements_recommended) recReq = pcPlatforms.requirements_recommended;
+      if (pcPlatforms) {
+        if (pcPlatforms.requirements_minimum) minReq = pcPlatforms.requirements_minimum;
+        if (pcPlatforms.requirements_recommended) recReq = pcPlatforms.requirements_recommended;
+      }
 
-      if (minReq.includes('ثبت نشده') && details.requirements?.minimum) minReq = details.requirements.minimum;
-      if (recReq.includes('ثبت نشده') && details.requirements?.recommended) recReq = details.requirements.recommended;
+      if (!minReq && details.requirements?.minimum) minReq = details.requirements.minimum;
+      if (!recReq && details.requirements?.recommended) recReq = details.requirements.recommended;
 
-      const cleanReq = (t: string) => t.replace(/Minimum:|Recommended:|⚙️/gi, '').replace(/<\/?b>/g, '').replace(/<\/?p>/g, '').trim();
+      // اگر کماکان خالی بود، در بین متن کلی پلتفرم‌ها جستجو کند
+      if (!minReq && details.platforms) {
+        for (const p of details.platforms) {
+          if (p.requirements?.minimum) minReq = p.requirements.minimum;
+          if (p.requirements?.recommended) recReq = p.requirements.recommended;
+        }
+      }
 
+      const cleanReq = (t: string, fallback: string) => {
+        if (!t) return fallback;
+        return t.replace(/Minimum:|Recommended:|⚙️/gi, '').replace(/<\/?b>/g, '').replace(/<\/?p>/g, '').trim();
+      };
+
+      // تبدیل دقیق رده سنی به فرمت عددی تمیز
       let finalAge = '---';
       const rawEsrb = details.esrb_rating?.slug || '';
       if (rawEsrb === 'mature') finalAge = '+17';
@@ -113,12 +128,23 @@ export default function AdminPanel() {
       else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
       else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
+      // موتور استخراج لینک مستقیم بازی در فروشگاه استیم
       let steamUrl = '';
-      const steamStore = details.stores?.find((s: any) => s.store.slug === 'steam');
-      if (steamStore && steamStore.url) {
-        const match = steamStore.url.match(/\/app\/(\d+)/);
-        if (match && match[1]) steamUrl = `https://store.steampowered.com/app/${match[1]}`;
-        else steamUrl = steamStore.url;
+      if (details.stores && details.stores.length > 0) {
+        const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
+        if (steamStore && steamStore.url) {
+          const match = steamStore.url.match(/\/app\/(\d+)/);
+          if (match && match[1]) {
+            steamUrl = `https://store.steampowered.com/app/${match[1]}`;
+          } else {
+            steamUrl = steamStore.url;
+          }
+        }
+      }
+
+      // اگر از بخش فروشگاه‌ها پیدا نشد، بر اساس نام بازی یک مچ استیم بسازد
+      if (!steamUrl && game.name) {
+        steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
       }
 
       const newGameObj = {
@@ -134,7 +160,10 @@ export default function AdminPanel() {
         steam_link: steamUrl,
         trailer_url: movieData.results?.[0]?.data?.max || '',
         gallery: screenshots.results?.map((s: any) => s.image) || [],
-        requirements: { minimum: cleanReq(minReq), recommended: cleanReq(recReq) },
+        requirements: { 
+          minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
+          recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
+        },
         description_en: details.description_raw || "No description available.",
         description_fa: descriptionFa 
       };
