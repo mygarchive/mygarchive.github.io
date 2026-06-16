@@ -570,5 +570,43 @@
     },
     "description_en": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.\r\nExplore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano.\r\nImmerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.\r\nTake on awe-inspiring weather events like towering dust storms and intense tropical storms as Mexico’s unique, dynamic seasons change the world every week. Keep coming back for new events, challenges, collectibles, and rewards, and new areas to explore.\r\nTeam up with other players and enter the Horizon Arcade for a continuing series of fun, over-the-top challenges that keep you and your friends in the action and having fun with no menus, loading screens or lobbies.\r\nCreate your own expressions of fun with the new EventLab gameplay toolset including custom races, challenges, stunts, and new game modes. Customize your cars in more ways than ever before. Use the Gift Drops feature to share your custom creations.",
     "description_fa": "ماجراجویی Horizon Ultimate شما در انتظار است! مناظر دنیای باز پر جنب و جوش و همیشه در حال تکامل مکزیک را با اقدامات رانندگی سرگرم کننده و بی حد و حصر در صدها خودروی برتر جهان کاوش کنید.\r\nدنیایی از کنتراست و زیبایی چشمگیر را کاوش کنید. بیابان‌های زنده، جنگل‌های سرسبز، شهرهای تاریخی، ویرانه‌های پنهان، سواحل بکر، دره‌های وسیع و آتشفشانی پوشیده از برف را کشف کنید.\r\nخود را در یک کمپین عمیق با صدها چالش غوطه ور کنید که به شما برای شرکت در فعالیت هایی که دوست دارید پاداش می دهد. با شخصیت های جدید آشنا شوید و نتایج ماموریت های Horizon Story را انتخاب کنید.\r\nرویدادهای آب و هوایی الهام‌بخش مانند طوفان‌های گرد و غبار و طوفان‌های شدید گرمسیری را تجربه کنید زیرا فصول منحصربه‌فرد و پویا مکزیک دنیا را هر هفته تغییر می‌دهند. برای رویدادهای جدید، چالش‌ها، کلکسیون‌ها و جوایز، و مناطق جدید برای کاوش دوباره برگردید.\r\nبا دیگر بازیکنان متحد شوید و وارد Horizon Arcade برای یک سری چالش‌های سرگرم‌کننده و فوق‌العاده مداوم شوید که شما و دوستانتان را در اکشن و سرگرمی نگه می‌دارد."
+  },
+  {
+    "id": 326252,
+    "name": "Gears 5",
+    "background_image": "https://media.rawg.io/media/games/121/1213f8b9b0a26307e672cf51f34882f8.jpg",
+    "rating": 3.91,
+    "released": "2019-09-10",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 7,
+    "developers": "The Coalition",
+    "steam_link": "https://store.steampowered.com/search/?term=Gears%205",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/9f0/9f085738a4ee6bb44b4b26cd3eb9ef93.jpg",
+      "https://media.rawg.io/media/screenshots/1c8/1c8eb3c87b9396e924ade589d543790e.jpg",
+      "https://media.rawg.io/media/screenshots/a83/a832752f82cfde4a811c581e9cd3efd0.jpg",
+      "https://media.rawg.io/media/screenshots/a6f/a6fafe1183ce4b3f68287219ea3dd6c8.jpg",
+      "https://media.rawg.io/media/screenshots/38c/38c4c8601a72e1d0dacf6d1fe1c5dfb3.jpg",
+      "https://media.rawg.io/media/screenshots/ae7/ae7fcd1a2d11be26e1ea72e6d5d83ecc.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "From one of gaming’s most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera – herself.\n*Xbox Live account required. Visit www.gears5.com for additional information.",
+    "description_fa": "از یکی از تحسین‌شده‌ترین حماسه‌های بازی، Gears بزرگ‌تر از همیشه است، با پنج حالت هیجان‌انگیز و عمیق‌ترین کمپین تاکنون. با شروع جنگ همه جانبه، کیت دیاز جدا می شود تا ارتباط خود را با دشمن آشکار کند و خطر واقعی سرا - خودش را کشف می کند.\n*حساب Xbox Live مورد نیاز است. برای اطلاعات بیشتر به www.gears5.com مراجعه کنید."
   }
 ]
