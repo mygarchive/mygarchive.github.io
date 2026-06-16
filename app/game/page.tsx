@@ -13,11 +13,15 @@ function GameDetailContent() {
 
   useEffect(() => {
     if (!gameId) return;
-    fetch('https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=' + Date.now())
+    fetch('https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=' + Date.now())
       .then((res) => res.json())
-      .then((data) => {
-        const found = data.find((g: any) => g.id.toString() === gameId);
-        setGame(found);
+      .then((repoData) => {
+        if (repoData && repoData.content) {
+          const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+          const data = JSON.parse(content);
+          const found = data.find((g: any) => g.id.toString() === gameId);
+          setGame(found);
+        }
         setLoading(false);
       })
       .catch((err) => {
@@ -26,7 +30,6 @@ function GameDetailContent() {
       });
   }, [gameId]);
 
-  // منطق ناوبری کیبورد برای گالری تصاویر (ArrowRight, ArrowLeft, Escape)
   useEffect(() => {
     if (activePhotoIndex === null || !game?.gallery) return;
 
@@ -47,7 +50,6 @@ function GameDetailContent() {
   if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-400">در حال دریافت اطلاعات بازی...</div>;
   if (!game) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm text-red-400">بازی مورد نظر در آرشیو یافت نشد.</div>;
 
-  // بهینه‌سازی سایز عکس برای لود پرسرعت در صفحات گالری کوچک
   const getOptimizedUrl = (url: string, width = 300) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
@@ -56,7 +58,6 @@ function GameDetailContent() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 relative overflow-hidden" dir="rtl">
-      {/* بک گراند مات ملایم از کاور اصلی گیم */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-[0.07] blur-3xl pointer-events-none transform scale-110"
         style={{ backgroundImage: `url(${game.background_image})` }}
@@ -69,8 +70,8 @@ function GameDetailContent() {
           </Link>
         </header>
 
-        {/* کاور اصلی گیم بصورت بزرگ و بدون کات در اول صفحه */}
         <div className="w-full rounded-2xl overflow-hidden border border-slate-900 shadow-2xl bg-slate-950 mb-8">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={game.background_image} alt={game.name} className="w-full h-auto object-contain max-h-[500px]" />
         </div>
 
@@ -80,12 +81,11 @@ function GameDetailContent() {
               <h1 className="text-3xl font-black text-white text-left tracking-tight" dir="ltr">{game.name}</h1>
               <div className="flex flex-wrap gap-2 mt-3" dir="ltr">
                 {game.genres?.map((g: any) => (
-                  <span key={g.id} className="text-[10px] font-bold bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md text-slate-400">{g.name}</span>
+                  <span key={g.id || g.name} className="text-[10px] font-bold bg-slate-900 border border-slate-800 px-2.5 py-1 rounded-md text-slate-400">{g.name}</span>
                 ))}
               </div>
             </div>
 
-            {/* توضیحات فارسی و انگلیسی با ذکر ترجمه ماشینی */}
             <div className="space-y-4 bg-slate-900/40 border border-slate-900 p-5 rounded-2xl">
               {game.description_fa && (
                 <div>
@@ -101,7 +101,6 @@ function GameDetailContent() {
               )}
             </div>
 
-            {/* مشخصات سیستم مورد نیاز متمایز شده بر اساس فیلدها */}
             {game.requirements && (
               <div className="bg-slate-900/60 border border-slate-900 p-5 rounded-2xl space-y-3">
                 <h3 className="text-sm font-black text-white mb-2">💻 مشخصات سیستم مورد نیاز:</h3>
@@ -115,14 +114,13 @@ function GameDetailContent() {
             )}
           </div>
 
-          {/* سایدبار اطلاعات عمومی و مدیا */}
           <div className="space-y-6">
             <div className="bg-slate-900 border border-slate-800/60 p-5 rounded-2xl space-y-4 text-xs text-slate-400">
               <h3 className="font-black text-white text-sm mb-2 border-b border-slate-950 pb-2">📊 اطلاعات عمومی</h3>
               <p>🗓️ تاریخ انتشار: <span className="text-slate-200 font-bold">{game.released || '---'}</span></p>
               <p>⭐ امتیاز منتقدین: <span className="text-purple-400 font-bold">{game.rating || '---'} / 5</span></p>
-              <p>🔞 رده سنی: <span className="text-red-400 font-bold" dir="ltr">{game.esrb_rating?.name || game.esrb_rating || '---'}</span></p>
-              <p>🏢 سازنده/ناشر: <span className="text-slate-200" dir="ltr">{game.developers?.[0]?.name || '---'}</span></p>
+              <p>🔞 رده سنی (عدد): <span className="text-red-400 font-bold" dir="ltr">{game.esrb_rating || '---'}</span></p>
+              <p>🏢 سازنده/ناشر: <span className="text-slate-200" dir="ltr">{game.developers || '---'}</span></p>
               <p>⏱️ مدت زمان اتمام: <span className="text-green-400 font-bold">{game.playtime || '---'} ساعت</span></p>
               
               {game.steam_link && (
@@ -134,19 +132,16 @@ function GameDetailContent() {
               )}
             </div>
 
-            {/* بخش گالری تصاویر و ویدیو آلبومی */}
             {((game.gallery && game.gallery.length > 0) || game.trailer_url) && (
               <div className="bg-slate-900/40 border border-slate-900 p-4 rounded-2xl space-y-3">
                 <h3 className="text-xs font-black text-white mb-2">📸 گالری تصاویر و ویدیوها:</h3>
                 
-                {/* تریلر بازی */}
                 {game.trailer_url && (
                   <div className="mb-3 rounded-xl overflow-hidden border border-slate-950 bg-slate-950">
                     <video src={game.trailer_url} controls poster={getOptimizedUrl(game.background_image, 400)} className="w-full h-auto aspect-video" />
                   </div>
                 )}
 
-                {/* گالری تصاویر سبک که با کلیک باکیفیت لایت‌باکس باز می‌شود */}
                 <div className="grid grid-cols-3 gap-2">
                   {game.gallery?.map((imgUrl: string, idx: number) => (
                     <button 
@@ -154,6 +149,7 @@ function GameDetailContent() {
                       onClick={() => setActivePhotoIndex(idx)}
                       className="aspect-video bg-slate-950 border border-slate-950 rounded-lg overflow-hidden hover:border-purple-500 transition"
                     >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={getOptimizedUrl(imgUrl, 200)} alt={`gallery-${idx}`} className="w-full h-full object-cover" loading="lazy" />
                     </button>
                   ))}
@@ -164,7 +160,6 @@ function GameDetailContent() {
         </div>
       </div>
 
-      {/* مودال بزرگنمایی تصویر با قابلیت ورق زدن (Lightbox) */}
       {activePhotoIndex !== null && game.gallery && (
         <div className="fixed inset-0 z-50 bg-slate-950/95 flex flex-col items-center justify-center p-4 select-none touch-pan-y">
           <div className="absolute top-4 right-4 flex items-center gap-3">
@@ -184,6 +179,7 @@ function GameDetailContent() {
             ➔
           </button>
 
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src={game.gallery[activePhotoIndex]} 
             alt="Expanded view" 
@@ -198,7 +194,6 @@ function GameDetailContent() {
             ➔
           </button>
 
-          {/* کنترلرهای لمسی موبایل در پایین صفحه */}
           <div className="flex gap-4 mt-6 sm:hidden">
             <button onClick={() => setActivePhotoIndex((idx) => (idx !== null && idx > 0 ? idx - 1 : game.gallery.length - 1))} className="px-6 py-2.5 bg-slate-900 border border-slate-800 rounded-xl text-sm font-bold">قبلی</button>
             <button onClick={() => setActivePhotoIndex((idx) => (idx !== null && idx < game.gallery.length - 1 ? idx + 1 : 0))} className="px-6 py-2.5 bg-slate-900 border border-slate-800 rounded-xl text-sm font-bold">بعدی</button>
