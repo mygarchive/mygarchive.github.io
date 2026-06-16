@@ -422,5 +422,43 @@
     },
     "description_en": "The award winning Life is Strange series continues with a long-awaited sequel from DONTNOD Entertainment.\r\n\r\nTwo brothers Sean and Daniel Diaz, 16 and 9, are forced to run away from home after a tragic incident in Seattle. In fear of the police, Sean & Daniel head to Mexico while attempting to conceal a sudden and mysterious supernatural power.\r\n\r\nLife on the road is tough and now totally responsible for his much younger brother, Sean begins to realise that his decisions will impact their lives forever…\r\n\r\nEpisode 1 will be available on September 27th 2018.  Episodes 2-5 will be available at later dates.  \r\n\r\nComplete Season includes Episode 1 and the Episode 2-5 bundle. Episodes 2-5 available upon release.",
     "description_fa": "مجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
+  },
+  {
+    "id": 1015736,
+    "name": "Life is Strange: Reunion",
+    "background_image": "https://media.rawg.io/media/games/d3d/d3d01e3766e3e44efc03b63466e5fbe0.jpg",
+    "rating": 3.71,
+    "released": "2026-03-26",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Deck Nine Games",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8f4/8f4ea828a5730f07c46b8a9b5f40942e.jpg",
+      "https://media.rawg.io/media/screenshots/c11/c11f627deffe00c8d8f6b6dd1d9b038e.jpg",
+      "https://media.rawg.io/media/screenshots/d3d/d3d4e2b55cec0559f620afa2c90c3db1.jpg",
+      "https://media.rawg.io/media/screenshots/738/738a6ad7506d9c590155200096caff15.jpg",
+      "https://media.rawg.io/media/screenshots/276/2760f20f19343be95e417761c1ad2cb8.jpg",
+      "https://media.rawg.io/media/screenshots/113/113ddf4c6da191dbebea7d51752ae1e5.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The saga of Max and Chloe, and the fate of Caledon, is yours to decide! Play as both Max and Chloe as an all-new story builds towards an epic climax. The fire will force Max and Chloe to make devastating decisions. Can they find a future together… Before everything burns?",
+    "description_fa": "حماسه مکس و کلوئه و سرنوشت کالدون با شماست که تصمیم می گیرید! در نقش مکس و کلوئه بازی کنید زیرا داستانی کاملاً جدید به سمت اوج حماسی می‌رود. آتش مکس و کلویی را مجبور به تصمیم گیری ویرانگر می کند. آیا آنها می توانند آینده ای با هم پیدا کنند... قبل از اینکه همه چیز بسوزد؟"
   }
 ]
