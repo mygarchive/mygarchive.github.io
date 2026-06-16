@@ -8,13 +8,16 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=' + Date.now())
+    fetch('https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=' + Date.now())
       .then((res) => res.json())
-      .then((data) => {
-        if (Array.isArray(data)) {
-          // مرتب‌سازی خودکار بر اساس حروف الفبا
-          const sorted = data.sort((a, b) => a.name.localeCompare(b.name));
-          setGames(sorted);
+      .then((repoData) => {
+        if (repoData && repoData.content) {
+          const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+          const data = JSON.parse(content);
+          if (Array.isArray(data)) {
+            const sorted = data.sort((a, b) => a.name.localeCompare(b.name));
+            setGames(sorted);
+          }
         }
       })
       .catch((err) => console.error('Error loading games:', err));
@@ -64,6 +67,7 @@ export default function Home() {
             <Link key={game.id} href={`/game/?id=${game.id}`} className="group">
               <div className="bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden shadow-lg group-hover:border-slate-800 transition flex flex-col h-full">
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-950">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={getOptimizedUrl(game.background_image, 400)}
                     alt={game.name}
