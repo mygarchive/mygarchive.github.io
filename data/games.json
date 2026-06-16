@@ -460,5 +460,43 @@
     },
     "description_en": "Max Caulfield, photographer-in-residence at the prestigious Caledon University, discovers her closest new friend, Safi, dead in the snow.\nMurdered.\nTo save her, Max tries to Rewind time - a power she’s not used in years... instead, Max opens the way to a parallel timeline where Safi is still alive, and still in danger!\nMax realizes the killer will soon strike again - in both versions of reality.\nWith her new power to Shift between two timelines - can Max solve and prevent the same murder?",
     "description_fa": "مکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
+  },
+  {
+    "id": 573123,
+    "name": "Life is Strange: True Colors",
+    "background_image": "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg",
+    "rating": 3.79,
+    "released": "2021-09-10",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 11,
+    "developers": "Deck Nine",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b79/b79e78e7ec97b7bfbe423ade108b7e7b.jpg",
+      "https://media.rawg.io/media/screenshots/fff/fffa428795765de2d116bf761433c963.jpg",
+      "https://media.rawg.io/media/screenshots/e67/e672f40189b14f273f71e1a57dccb4e9.jpg",
+      "https://media.rawg.io/media/screenshots/912/912fe706f0071afde939f41cd042d926.jpg",
+      "https://media.rawg.io/media/screenshots/9ad/9ad105b9d1b39509995f4126cc675027.jpg",
+      "https://media.rawg.io/media/screenshots/4e4/4e46791fe550f87ea2507502f14328d2.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "A bold new era of the award-winning Life is Strange begins, with an all-new playable lead character and a thrilling mystery to solve!\r\nPre-order Life Is Strange: True Colors now to receive 4 additional in-game outfits for Alex.\r\nAlex Chen has long suppressed her 'curse': the supernatural ability to experience, absorb and manipulate the strong emotions of others, which she sees as blazing, colored auras.\r\nWhen her brother dies in a so-called accident, Alex must embrace her volatile power to find the truth – and uncover the dark secrets buried by a small town.\r\nTHE TRUTH WILL HURT\r\nDiscover the shocking secrets behind your brother’s death in an emotional roller-coaster of an adventure.\r\nFEEL EVERYTHING\r\nChange fate and change lives with the psychic power of Empathy.\r\nFORGE DEEP RELATIONSHIPS\r\nBuild trust with the townsfolk – and embrace friendship or romance with Ryan and Steph.\r\nA TRULY PERSONAL STORY\r\nMake tough decisions and choose your own future. Freely roam the streets, stores, and hidden spaces of Haven Springs and meet unforgettable characters.\r\nFIND YOUR VOICE\r\nAnd decide Alex's style, with up to 24 outfits in your wardrobe.\r\nEXCLUSIVE SOUNDTRACK\r\nNew tracks by mxmtoon and Novo Amor, and extensive licensed songs including Radiohead, Phoebe Bridgers, Gabrielle Aplin, and more.",
+    "description_fa": "یک دوره جدید جسورانه از برنده جایزه Life is Strange آغاز می شود، با یک شخصیت اصلی قابل بازی کاملاً جدید و یک معمای هیجان انگیز برای حل!\r\nاکنون Life Is Strange: True Colors را پیش‌سفارش دهید تا 4 لباس درون بازی برای الکس دریافت کنید.\r\nالکس چن مدت‌هاست که «نفرین» خود را سرکوب کرده است: توانایی ماوراء طبیعی برای تجربه، جذب و دستکاری احساسات قوی دیگران، که به نظر او هاله‌های درخشان و رنگی است.\r\nوقتی برادرش در به اصطلاح تصادف می میرد، الکس باید قدرت فرار او را برای یافتن حقیقت در آغوش بگیرد - و اسرار تاریک مدفون شده توسط یک شهر کوچک را کشف کند.\r\nحقیقت صدمه خواهد زد\r\nاسرار تکان دهنده مرگ برادرتان را در یک ترن هوایی هیجانی از یک ماجراجویی کشف کنید.\r\nهمه چیز را احساس کنید\r\nبا نیروی روانی همدلی سرنوشت را تغییر دهید و زندگی را تغییر دهید.\r\nایجاد روابط عمیق\r\nبا مردم شهر اعتماد ایجاد کنید - و با رایان و استف دوستی یا عاشقانه را در آغوش بگیرید.\r\nیک داستان واقعاً شخصی\r\nتصمیمات سخت بگیرید و آینده خود را انتخاب کنید. آزادانه در خیابان ها، فروشگاه ها و"
   }
 ]
