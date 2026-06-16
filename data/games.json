@@ -131,5 +131,38 @@
     },
     "description_en": "Batman: Arkham Knight is the final instalment for the Arkham series by now. Joining forces with Bruce Wayne for the last time, we have to oppose Scarecrow and other iconic villains such as The Riddler, Harleen Quinzel a.k.a. Harley Quinn, Penguin and others.\n\nThe story continued after events in Arkham City when Joker died due to infection in his blood. Now, Scarecrow tries to release a new fear toxin, meanwhile new mysterious Arkham Knight plots against Batman as well. Still having consequences after being poisoned by the Joker and seeing visions with him, Bruce has to prevail the death of Gotham City.\n\nThe gameplay mechanics stays the same to the Arkham series. Melee combat system, use of the detective skills to find clues and gadgets still play a major role in Batman's fight against evil. Although now you can travel around not only by your grappling hook but a legendary Batmobile as well. Iconic voices of the characters, Kevin Conroy and Mark Hammil once again return to give their voices for the last game in Arkham series.",
     "description_fa": "Batman: Arkham Knight آخرین قسمت سری Arkham است. با پیوستن به نیروهای بروس وین برای آخرین بار، باید با Scarecrow و دیگر شخصیت های شرور مانند The Riddler، Harleen Quinzel با نام مستعار Harley Quinn، Penguin و دیگران مقابله کنیم.\n\nداستان پس از اتفاقاتی در شهر Arkham ادامه یافت که جوکر به دلیل عفونت در خون خود درگذشت. اکنون، Scarecrow سعی می کند یک سم ترس جدید را آزاد کند، در همین حال، شوالیه اسرارآمیز جدید Arkham نیز علیه بتمن نقشه می کشد. بروس که پس از مسموم شدن توسط جوکر و دیدن رویاهایی با او عواقبی دارد، باید بر مرگ شهر گاتهام پیروز شود.\n\nمکانیک گیم پلی بازی در سری Arkham یکسان است. سیستم مبارزه با غوغا، استفاده از مهارت های کارآگاهی برای یافتن سرنخ ها و ابزارها هنوز نقش مهمی در مبارزه بتمن با شر دارد. اگرچه اکنون می توانید نه تنها با قلاب گیر خود بلکه با یک Batmobile افسانه ای به اطراف سفر کنید. صداهای نمادین شخصیت ها، کوین کانروی و مارک همیل بار دیگر برای ارائه صدای خود بازگشته اند"
+  },
+  {
+    "id": 295001,
+    "name": "Batman: The Telltale Series",
+    "background_image": "https://media.rawg.io/media/games/674/674b67b66f510f5b273f50ca09341ee2.jpg",
+    "rating": 3.75,
+    "released": "2016-08-02",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "Mature+",
+    "playtime": 9,
+    "developers": "Telltale Games",
+    "steam_link": "https://store.steampowered.com/app/295001",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7e5/7e5cb09816194238cd6af81ee1545dc0.jpg",
+      "https://media.rawg.io/media/screenshots/5b8/5b8778d09f4388077e7a39adafc88afe.jpg",
+      "https://media.rawg.io/media/screenshots/6a2/6a2f9fc05c1ac8bf66c3977367c8e0d6.jpg",
+      "https://media.rawg.io/media/screenshots/7ae/7ae056e77aba07d58a3c56793d15ed43.jpg",
+      "https://media.rawg.io/media/screenshots/8fe/8fe24cf41197f5afd0f562f22c31100e.jpg",
+      "https://media.rawg.io/media/screenshots/ff0/ff0ac37997b3c22f0cf88a2b41d497a6.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Batman: The Enemy Within, 2017, is an episodic point-and-click graphic adventure video game, a sequel to 2016's Batman: The Telltale Series.\n\nThe player controls the character, who, on the one hand, is the well-known billionaire, entrepreneur and philanthropist Bruce Wayne, and on the other hand, a crime fighter named Batman, hiding his real name from people.\n\n###The series\nThe Enemy Within is set in the same Batman continuity introduced in Batman: The Telltale Series - within Gotham, a city infested with crime and corruption. Both games are set in mid-to-late 2010s with technologies such as drones and smartphones. The places where The Enemy Within takes place are the same as in the previous game - Batcave, Wayne Enterprises and Gotham City Police Headquarters. The Enemy Within follows the events of the previous game, taking place between a couple of months to a year after these events.\n\n###Fresh interpretation of Batman in games, film, or comics\nThe creators of the series claim that the game offers the player to choose how to perceive certain situations - like Batman or Bruce Wayne. They promise a \"fresh interpretation of the universe set in current times, not tied to any existing iteration of Batman in games, film, or comics». To preserve this freshness, the creators of the game begin their story about Batman a few years after Bruce Wayne became Batman - they claim that it gives them the opportunity to be flexible in describing the character; As a result, the player, according to the creators of the game, also receives a certain freedom, playing for Batman in the branching narrative, which the game offers.\n\nPlayer selection influences what happens in the game next.\nThe game includes situations where it is necessary to act quickly, as well as the investigation sequences. \n\n###Crowd play\nIn the games of the series there is also the so-called \"crowd play\", it allows the game to be watched by an audience who can participate in the decision-making process.",
+    "description_fa": "Batman: The Enemy Within، 2017، یک بازی ویدئویی ماجراجویی گرافیکی اپیزودیک با نقطه و کلیک، دنباله ای بر Batman: The Telltale در سال 2016 است.\n\nبازیکن کنترل این شخصیت را بر عهده دارد که از یک طرف میلیاردر، کارآفرین و بشردوست معروف بروس وین و از طرف دیگر یک مبارز جنایتکار به نام بتمن نام واقعی خود را از مردم پنهان می کند.\n\n###سریال\nThe Enemy Within در همان تداوم بتمن که در Batman: The Telltale Series معرفی شده است - در گاتهام، شهری پر از جنایت و فساد می گذرد. هر دو بازی در اواسط تا اواخر دهه 2010 با فناوری هایی مانند هواپیماهای بدون سرنشین و گوشی های هوشمند ساخته می شوند. مکان‌هایی که The Enemy Within در آن اتفاق می‌افتد مانند بازی قبلی است - Batcave، Wayne Enterprises و Gotham City Police Headquarters. The Enemy Within وقایع بازی قبلی را دنبال می کند که بین یکی دو ماه تا یک سال پس از این اتفاقات رخ می دهد.\n\n###تفسیر تازه ای از بتمن در بازی ها، فیلم ها یا کمیک ها\nسازندگان سریال ادعا می کنند که تی"
   }
 ]
