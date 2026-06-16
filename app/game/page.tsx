@@ -1,19 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-// این خط به نکست‌جی‌اس می‌گوید که اگر آی‌دی بازی از قبل بیلد نشده بود، ارور ندهد
-export const dynamicParams = true;
-
-// این تابع خالی به نکست‌جی‌اس می‌گوید در زمان بیلد اولیه نیازی نیست صفحه‌ای از قبل ساخته شود
-export async function generateStaticParams() {
-  return [];
-}
-
-export default function GameDetails() {
-  const { id } = useParams();
+function GameDetailsContent() {
+  const searchParams = useSearchParams();
+  const id = searchParams.get('id');
   const [game, setGame] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
@@ -63,5 +56,13 @@ export default function GameDetails() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function GameDetails() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">در حال بارگذاری...</div>}>
+      <GameDetailsContent />
+    </Suspense>
   );
 }
