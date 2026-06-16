@@ -39,15 +39,17 @@ export default function Home() {
         <header className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-12 border-b border-slate-900 pb-6">
           <div>
             <h1 className="text-3xl font-black text-white">آرشیو تخصصی بازی‌ها</h1>
-            <p className="text-xs text-slate-400 mt-1">تعداد بازی‌های موجود در سایت: <span className="text-purple-400 font-bold">{games.length}</span> بازی</p>
+            <p className="text-xl font-black text-slate-200 mt-3">
+  تعداد بازی‌های موجود در سایت: <span className="text-2xl text-purple-400 font-extrabold">{games.length}</span> بازی
+</p>
           </div>
           <a 
-            href="https://t.me/mygarchive" 
+            href="https://t.me/HF273" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="flex items-center gap-2 px-4 py-2 bg-blue-950/50 border border-blue-900/60 rounded-xl text-xs text-blue-400 hover:bg-blue-600 hover:text-white transition"
           >
-            ✈️ کانال تلگرام ما: @mygarchive
+            ✈️ کانال تلگرام ما: @HF273
           </a>
         </header>
 
