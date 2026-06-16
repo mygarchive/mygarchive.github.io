@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 // تنظیمات گیت‌هاب شما - این دو مورد را دقیقاً طبق اکانت خودت پر کن
-const GITHUB_OWNER = 'نام_کاربری_شما_در_گیت‌هاب'; 
-const GITHUB_REPO = 'نام_مخزن_یا_ریپازیتوری_شما';
+const GITHUB_OWNER = 'mygarchive'; 
+const GITHUB_REPO = 'mygarchive';
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
 async function hashPassword(string: string) {
