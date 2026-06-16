@@ -164,5 +164,31 @@
     },
     "description_en": "Batman: The Enemy Within, 2017, is an episodic point-and-click graphic adventure video game, a sequel to 2016's Batman: The Telltale Series.\n\nThe player controls the character, who, on the one hand, is the well-known billionaire, entrepreneur and philanthropist Bruce Wayne, and on the other hand, a crime fighter named Batman, hiding his real name from people.\n\n###The series\nThe Enemy Within is set in the same Batman continuity introduced in Batman: The Telltale Series - within Gotham, a city infested with crime and corruption. Both games are set in mid-to-late 2010s with technologies such as drones and smartphones. The places where The Enemy Within takes place are the same as in the previous game - Batcave, Wayne Enterprises and Gotham City Police Headquarters. The Enemy Within follows the events of the previous game, taking place between a couple of months to a year after these events.\n\n###Fresh interpretation of Batman in games, film, or comics\nThe creators of the series claim that the game offers the player to choose how to perceive certain situations - like Batman or Bruce Wayne. They promise a \"fresh interpretation of the universe set in current times, not tied to any existing iteration of Batman in games, film, or comics». To preserve this freshness, the creators of the game begin their story about Batman a few years after Bruce Wayne became Batman - they claim that it gives them the opportunity to be flexible in describing the character; As a result, the player, according to the creators of the game, also receives a certain freedom, playing for Batman in the branching narrative, which the game offers.\n\nPlayer selection influences what happens in the game next.\nThe game includes situations where it is necessary to act quickly, as well as the investigation sequences. \n\n###Crowd play\nIn the games of the series there is also the so-called \"crowd play\", it allows the game to be watched by an audience who can participate in the decision-making process.",
     "description_fa": "Batman: The Enemy Within، 2017، یک بازی ویدئویی ماجراجویی گرافیکی اپیزودیک با نقطه و کلیک، دنباله ای بر Batman: The Telltale در سال 2016 است.\n\nبازیکن کنترل این شخصیت را بر عهده دارد که از یک طرف میلیاردر، کارآفرین و بشردوست معروف بروس وین و از طرف دیگر یک مبارز جنایتکار به نام بتمن نام واقعی خود را از مردم پنهان می کند.\n\n###سریال\nThe Enemy Within در همان تداوم بتمن که در Batman: The Telltale Series معرفی شده است - در گاتهام، شهری پر از جنایت و فساد می گذرد. هر دو بازی در اواسط تا اواخر دهه 2010 با فناوری هایی مانند هواپیماهای بدون سرنشین و گوشی های هوشمند ساخته می شوند. مکان‌هایی که The Enemy Within در آن اتفاق می‌افتد مانند بازی قبلی است - Batcave، Wayne Enterprises و Gotham City Police Headquarters. The Enemy Within وقایع بازی قبلی را دنبال می کند که بین یکی دو ماه تا یک سال پس از این اتفاقات رخ می دهد.\n\n###تفسیر تازه ای از بتمن در بازی ها، فیلم ها یا کمیک ها\nسازندگان سریال ادعا می کنند که تی"
+  },
+  {
+    "id": 103715,
+    "name": "Mixtape",
+    "background_image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
+    "rating": 4.27,
+    "released": "2026-05-07",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "هیچ توضیحی در دسترس نیست."
   }
 ]
