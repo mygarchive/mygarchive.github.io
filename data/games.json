@@ -98,5 +98,38 @@
     ],
     "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did...",
     "description_fa": "Assassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه با تجدید نظر شدید است که به جای انیمیشن های از پیش تعیین شده، به مکانیک های جعبه ضربه متکی است."
+  },
+  {
+    "id": 3287,
+    "name": "Batman: Arkham Knight",
+    "background_image": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg",
+    "rating": 4.24,
+    "released": "2015-06-23",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "Mature+",
+    "playtime": 19,
+    "developers": "Rocksteady Studios",
+    "steam_link": "https://store.steampowered.com/app/3287",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1ed/1ed7f33789fdb79dbe7ae346f7b24fdf.jpg",
+      "https://media.rawg.io/media/screenshots/c19/c19a4d55f1fa9661b32d43e110a5dbff.jpg",
+      "https://media.rawg.io/media/screenshots/b87/b873d09e51115514cb1445a954dbca9e.jpg",
+      "https://media.rawg.io/media/screenshots/cbe/cbee51d83cafbe75224336859ddfc27e.jpg",
+      "https://media.rawg.io/media/screenshots/d2a/d2ab2d0f10e778c1a867c999515c3f9a.jpg",
+      "https://media.rawg.io/media/screenshots/172/172a4d61d4b6d3b77f19f5826de439f2.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Batman: Arkham Knight is the final instalment for the Arkham series by now. Joining forces with Bruce Wayne for the last time, we have to oppose Scarecrow and other iconic villains such as The Riddler, Harleen Quinzel a.k.a. Harley Quinn, Penguin and others.\n\nThe story continued after events in Arkham City when Joker died due to infection in his blood. Now, Scarecrow tries to release a new fear toxin, meanwhile new mysterious Arkham Knight plots against Batman as well. Still having consequences after being poisoned by the Joker and seeing visions with him, Bruce has to prevail the death of Gotham City.\n\nThe gameplay mechanics stays the same to the Arkham series. Melee combat system, use of the detective skills to find clues and gadgets still play a major role in Batman's fight against evil. Although now you can travel around not only by your grappling hook but a legendary Batmobile as well. Iconic voices of the characters, Kevin Conroy and Mark Hammil once again return to give their voices for the last game in Arkham series.",
+    "description_fa": "Batman: Arkham Knight آخرین قسمت سری Arkham است. با پیوستن به نیروهای بروس وین برای آخرین بار، باید با Scarecrow و دیگر شخصیت های شرور مانند The Riddler، Harleen Quinzel با نام مستعار Harley Quinn، Penguin و دیگران مقابله کنیم.\n\nداستان پس از اتفاقاتی در شهر Arkham ادامه یافت که جوکر به دلیل عفونت در خون خود درگذشت. اکنون، Scarecrow سعی می کند یک سم ترس جدید را آزاد کند، در همین حال، شوالیه اسرارآمیز جدید Arkham نیز علیه بتمن نقشه می کشد. بروس که پس از مسموم شدن توسط جوکر و دیدن رویاهایی با او عواقبی دارد، باید بر مرگ شهر گاتهام پیروز شود.\n\nمکانیک گیم پلی بازی در سری Arkham یکسان است. سیستم مبارزه با غوغا، استفاده از مهارت های کارآگاهی برای یافتن سرنخ ها و ابزارها هنوز نقش مهمی در مبارزه بتمن با شر دارد. اگرچه اکنون می توانید نه تنها با قلاب گیر خود بلکه با یک Batmobile افسانه ای به اطراف سفر کنید. صداهای نمادین شخصیت ها، کوین کانروی و مارک همیل بار دیگر برای ارائه صدای خود بازگشته اند"
   }
 ]
