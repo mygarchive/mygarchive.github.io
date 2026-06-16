@@ -8,7 +8,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch('/data/games.json?v=' + Date.now())
+    fetch('https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=' + Date.now())
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
