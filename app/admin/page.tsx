@@ -66,7 +66,7 @@ export default function AdminPanel() {
 
   const fetchMyGames = async (token: string) => {
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/public/data/games.json`, {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         headers: { 'Authorization': `token ${token}` }
       });
       if (res.status === 200) {
@@ -110,7 +110,7 @@ export default function AdminPanel() {
     }];
 
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/public/data/games.json`, {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: {
           'Authorization': `token ${githubToken}`,
