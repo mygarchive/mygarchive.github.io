@@ -424,44 +424,6 @@
     "description_fa": "مجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
   },
   {
-    "id": 983211,
-    "name": "Life is Strange: Double Exposure",
-    "background_image": "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg",
-    "rating": 3,
-    "released": "2024-10-29",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 14,
-    "developers": "Deck Nine Games",
-    "steam_link": "",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/97f/97f60c5c224324f64229567311eacf7b.jpg",
-      "https://media.rawg.io/media/screenshots/8b3/8b35944e21c893e3734ce77c10913049.jpg",
-      "https://media.rawg.io/media/screenshots/e34/e34fd80c14d2bc4cfa43c1a32f79c133.jpg",
-      "https://media.rawg.io/media/screenshots/337/337cc83f9cf803f122d264f4f8887437.jpg",
-      "https://media.rawg.io/media/screenshots/b61/b61f40b27debe656eaedc45dc185ded5.jpg",
-      "https://media.rawg.io/media/screenshots/8f8/8f8d980b43d16d1c79846d6d9a69b7c8.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Max Caulfield, photographer-in-residence at the prestigious Caledon University, discovers her closest new friend, Safi, dead in the snow.\nMurdered.\nTo save her, Max tries to Rewind time - a power she’s not used in years... instead, Max opens the way to a parallel timeline where Safi is still alive, and still in danger!\nMax realizes the killer will soon strike again - in both versions of reality.\nWith her new power to Shift between two timelines - can Max solve and prevent the same murder?",
-    "description_fa": "مکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
-  },
-  {
     "id": 573123,
     "name": "Life is Strange: True Colors",
     "background_image": "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg",
