@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // این خط فوق‌العاده مهم است
+  output: 'export',
+  basePath: '/mygarchive',     // ✅ این خط باعث میشه گیت‌هاب مسیر استایل‌ها رو درست پیدا کنه
+  assetPrefix: '/mygarchive',  // ✅ این خط هم برای لود شدن درست فونت‌ها و فایل‌های سی‌اس‌اس هست
   images: {
-    unoptimized: true, // چون سرور نداریم، به این خط نیاز داریم
+    unoptimized: true,
   },
 };
 
