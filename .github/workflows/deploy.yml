@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true" # فعال‌سازی اجباری نود ۲۴ برای رفع اخطار گیت‌هاب
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   deploy:
@@ -24,15 +24,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2 # آپدیت به پچ نهایی سازگار با رانر جدید
         
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0 # آپدیت نسخه پکیج نود
         with:
-          node-version: "24" # ارتقا نسخه نود پروژه به ۲۴
+          node-version: "24"
           
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # آپدیت به نسخه ۵
+        uses: actions/configure-pages@v5
         
       - name: Install dependencies
         run: npm ci
