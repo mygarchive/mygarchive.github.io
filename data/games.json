@@ -536,5 +536,43 @@
     },
     "description_en": "A bold new era of the award-winning Life is Strange begins, with an all-new playable lead character and a thrilling mystery to solve!\r\nPre-order Life Is Strange: True Colors now to receive 4 additional in-game outfits for Alex.\r\nAlex Chen has long suppressed her 'curse': the supernatural ability to experience, absorb and manipulate the strong emotions of others, which she sees as blazing, colored auras.\r\nWhen her brother dies in a so-called accident, Alex must embrace her volatile power to find the truth – and uncover the dark secrets buried by a small town.\r\nTHE TRUTH WILL HURT\r\nDiscover the shocking secrets behind your brother’s death in an emotional roller-coaster of an adventure.\r\nFEEL EVERYTHING\r\nChange fate and change lives with the psychic power of Empathy.\r\nFORGE DEEP RELATIONSHIPS\r\nBuild trust with the townsfolk – and embrace friendship or romance with Ryan and Steph.\r\nA TRULY PERSONAL STORY\r\nMake tough decisions and choose your own future. Freely roam the streets, stores, and hidden spaces of Haven Springs and meet unforgettable characters.\r\nFIND YOUR VOICE\r\nAnd decide Alex's style, with up to 24 outfits in your wardrobe.\r\nEXCLUSIVE SOUNDTRACK\r\nNew tracks by mxmtoon and Novo Amor, and extensive licensed songs including Radiohead, Phoebe Bridgers, Gabrielle Aplin, and more.",
     "description_fa": "یک دوره جدید جسورانه از برنده جایزه Life is Strange آغاز می شود، با یک شخصیت اصلی قابل بازی کاملاً جدید و یک معمای هیجان انگیز برای حل!\r\nاکنون Life Is Strange: True Colors را پیش‌سفارش دهید تا 4 لباس درون بازی برای الکس دریافت کنید.\r\nالکس چن مدت‌هاست که «نفرین» خود را سرکوب کرده است: توانایی ماوراء طبیعی برای تجربه، جذب و دستکاری احساسات قوی دیگران، که به نظر او هاله‌های درخشان و رنگی است.\r\nوقتی برادرش در به اصطلاح تصادف می میرد، الکس باید قدرت فرار او را برای یافتن حقیقت در آغوش بگیرد - و اسرار تاریک مدفون شده توسط یک شهر کوچک را کشف کند.\r\nحقیقت صدمه خواهد زد\r\nاسرار تکان دهنده مرگ برادرتان را در یک ترن هوایی هیجانی از یک ماجراجویی کشف کنید.\r\nهمه چیز را احساس کنید\r\nبا نیروی روانی همدلی سرنوشت را تغییر دهید و زندگی را تغییر دهید.\r\nایجاد روابط عمیق\r\nبا مردم شهر اعتماد ایجاد کنید - و با رایان و استف دوستی یا عاشقانه را در آغوش بگیرید.\r\nیک داستان واقعاً شخصی\r\nتصمیمات سخت بگیرید و آینده خود را انتخاب کنید. آزادانه در خیابان ها، فروشگاه ها و"
+  },
+  {
+    "id": 573125,
+    "name": "Life is Strange Remastered",
+    "background_image": "https://media.rawg.io/media/games/e3f/e3fc11718acfeac81c05cbcc394dae2f.jpg",
+    "rating": 3.91,
+    "released": "2022-02-01",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "DONTNOD Entertainment, Deck Nine",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/34c/34c94f1120c3f5f90f83a1193f603e09.jpg",
+      "https://media.rawg.io/media/screenshots/90f/90f2dc1e64bc9349d7b091a9a6c4e632.jpg",
+      "https://media.rawg.io/media/screenshots/aad/aade9fcee5eb81f8faa4129f8cf99954.jpg",
+      "https://media.rawg.io/media/screenshots/fee/feede5f7791def9dc02bcc2da575fd52.jpg",
+      "https://media.rawg.io/media/screenshots/125/125049108706d2ac0b09a821eb334076.jpg",
+      "https://media.rawg.io/media/screenshots/19c/19c733b654b6d69a2910ddd75e44904d.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Experience the BAFTA award-winning story of Life is Strange now beautifully remastered with enhanced visuals and vastly improved animation using mocap technology.\n\nPlay as Max Caulfield, a photography senior who discovers she can rewind time while saving her best friend Chloe Price from a violent altercation.\n\nThe pair soon find themselves investigating the mysterious disappearance of fellow student Rachel Amber, uncovering a dark side to life in Arcadia Bay. Meanwhile, Max must quickly learn that changing the past can sometimes lead to a devastating future.",
+    "description_fa": "داستان برنده جایزه بافتا Life is Strange را تجربه کنید که اکنون به زیبایی با جلوه های بصری بهبود یافته و انیمیشن های بسیار بهبود یافته با استفاده از فناوری موکاپ بازسازی شده است.\n\nنقش مکس کالفیلد، یک کارشناس ارشد عکاسی را بازی کنید که متوجه می شود می تواند زمان را به عقب برگرداند و در عین حال بهترین دوستش کلوئی پرایس را از یک درگیری خشونت آمیز نجات دهد.\n\nاین زوج به زودی در حال تحقیق در مورد ناپدید شدن مرموز دانشجوی همکار ریچل آمبر هستند و جنبه تاریک زندگی در خلیج آرکادیا را کشف می کنند. در همین حال، مکس باید به سرعت یاد بگیرد که تغییر گذشته گاهی اوقات می تواند به آینده ای ویرانگر منجر شود."
   }
 ]
