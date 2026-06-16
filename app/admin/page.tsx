@@ -75,7 +75,7 @@ export default function AdminPanel() {
 
   const fetchMyGames = async (token: string, isInitialLogin = false) => {
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, {
+      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${Date.now()}`, {
         headers: { 'Authorization': `token ${token}` }
       });
       if (res.status === 200) {
@@ -149,7 +149,7 @@ export default function AdminPanel() {
 
       const updatedGames = [...myGames, newGameObj];
 
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
+      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json`, {
         method: 'PUT',
         headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({
