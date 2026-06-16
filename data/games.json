@@ -1,31 +1,5 @@
 [
   {
-    "id": 41494,
-    "name": "Cyberpunk 2077",
-    "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
-    "rating": 4.23,
-    "released": "2020-12-10",
-    "genres": [
-      {
-        "id": 2,
-        "name": "Shooter",
-        "slug": "shooter"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      },
-      {
-        "id": 5,
-        "name": "RPG",
-        "slug": "role-playing-games-rpg"
-      }
-    ],
-    "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does Ã¢ÂÂdirty businessÃ¢ÂÂ for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no compa...",
-    "description_fa": "Cyberpunk 2077 ÃÂÃÂ© ÃÂ¨ÃÂ§ÃÂ²ÃÂ ÃÂ¹ÃÂÃÂÃÂ ÃÂªÃÂ®ÃÂÃÂÃÂ ÃÂ§ÃÂ³ÃÂª ÃÂ©ÃÂ ÃÂ¨ÃÂ± ÃÂ§ÃÂ³ÃÂ§ÃÂ³ ÃÂ¨ÃÂ§ÃÂ²ÃÂ ÃÂÃÂÃÂ´ ÃÂ¢ÃÂÃÂ±ÃÂÃÂÃÂ Cyberpunk 2020 ÃÂ³ÃÂ§ÃÂ®ÃÂªÃÂ ÃÂ´ÃÂ¯ÃÂ ÃÂ§ÃÂ³ÃÂª.\r\n\r\n###ÃÂªÃÂÃÂ¸ÃÂÃÂ\r\nÃÂ¯ÃÂ§ÃÂ³ÃÂªÃÂ§ÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂ ÃÂ¯ÃÂ± ÃÂ³ÃÂ§ÃÂ 2077 ÃÂ¯ÃÂ± ÃÂÃÂ© ÃÂ©ÃÂÃÂ§ÃÂ ÃÂ´ÃÂÃÂ± ÃÂ®ÃÂÃÂ§ÃÂÃÂ ÃÂ¢ÃÂÃÂÃÂ¯ÃÂ ÃÂÃÂ¯ÃÂ± ÃÂ¯ÃÂ± ÃÂ´ÃÂÃÂ± ÃÂ´ÃÂ¨ ÃÂ¯ÃÂ± ÃÂ©ÃÂ§ÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂ§ ÃÂ§ÃÂªÃÂÃÂ§ÃÂ ÃÂÃÂ ÃÂ§ÃÂÃÂªÃÂ¯. ÃÂ¯ÃÂ± ÃÂ¯ÃÂÃÂÃÂ§ÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂÃÂ ÃÂªÃÂÃÂÃÂÃÂªÃ¢ÂÂÃÂ©ÃÂÃÂÃÂ¯ÃÂÃ¢ÂÂÃÂÃÂ§ÃÂ ÃÂ³ÃÂ§ÃÂÃÂ¨ÃÂ±ÃÂÃÂªÃÂÃÂ© ÃÂªÃÂÃÂ³ÃÂ¹ÃÂÃ¢ÂÂÃÂÃÂ§ÃÂÃÂªÃÂ ÃÂÃÂ¬ÃÂÃÂ¯ ÃÂ¯ÃÂ§ÃÂ±ÃÂ¯ ÃÂ©ÃÂ ÃÂÃÂ¯ÃÂ±ÃÂªÃÂ ÃÂÃÂ§ÃÂ¨ÃÂ©ÃÂ ÃÂ ÃÂ­ÃÂ§ÃÂÃÂ¸ÃÂ ÃÂ§ÃÂÃÂ±ÃÂ§ÃÂ¯ ÃÂ±ÃÂ§ ÃÂ§ÃÂÃÂ²ÃÂ§ÃÂÃÂ´ ÃÂÃÂÃ¢ÂÂÃÂ¯ÃÂÃÂ¯. ÃÂ§ÃÂÃÂ ÃÂ´ÃÂÃÂ± ÃÂªÃÂÃÂ³ÃÂ· ÃÂ´ÃÂ±ÃÂ©ÃÂª ÃÂÃÂ§ ÃÂ§ÃÂ¯ÃÂ§ÃÂ±ÃÂ ÃÂÃÂ ÃÂ´ÃÂÃÂ¯. ÃÂ¨ÃÂ³ÃÂÃÂ§ÃÂ±ÃÂ ÃÂ§ÃÂ² ÃÂÃÂ´ÃÂ§ÃÂºÃÂ ÃÂªÃÂÃÂ³ÃÂ· ÃÂ±ÃÂ¨ÃÂ§ÃÂª ÃÂÃÂ§ ÃÂªÃÂµÃÂ§ÃÂ­ÃÂ¨ ÃÂÃÂ ÃÂ´ÃÂÃÂ¯ ÃÂ ÃÂ¨ÃÂ³ÃÂÃÂ§ÃÂ±ÃÂ ÃÂ§ÃÂ² ÃÂÃÂ±ÃÂ¯ÃÂ ÃÂÃÂÃÂÃÂ± ÃÂ ÃÂ¨ÃÂ ÃÂ®ÃÂ§ÃÂÃÂÃÂ§ÃÂ ÃÂ¨ÃÂ§ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂ¯. ÃÂ´ÃÂÃÂ± ÃÂ´ÃÂ¨ ÃÂ¯ÃÂ§ÃÂ±ÃÂ§ÃÂ ÃÂ¹ÃÂ§ÃÂÃÂ ÃÂ§ÃÂÃÂÃÂ§ÃÂª ÃÂ®ÃÂ±ÃÂÃÂ´ÃÂ§ÃÂ ÃÂ§ÃÂ³ÃÂª ÃÂ©ÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂ§ÃÂ±ÃÂÃÂ§ÃÂ ÃÂ³ÃÂÃÂ§ÃÂÃÂ ÃÂ¬ÃÂ±ÃÂ§ÃÂ­ÃÂ§ÃÂ ÃÂ²ÃÂÃÂ±ÃÂ²ÃÂÃÂÃÂÃÂÃÂ ÃÂÃÂ±ÃÂÃÂ´ÃÂÃÂ¯ÃÂ¯ÃÂ§ÃÂ ÃÂÃÂÃÂ§ÃÂ¯ ÃÂÃÂ®ÃÂ¯ÃÂ± ÃÂ ÃÂ¨ÃÂ§ÃÂÃÂ¯ÃÂÃÂ§ÃÂ ÃÂ®ÃÂÃÂ§ÃÂ¨ÃÂ§ÃÂÃÂ ÃÂÃÂ±ÃÂ§ÃÂÃÂ§ÃÂ ÃÂ§ÃÂ³ÃÂª.\r\n\r\n###ÃÂ´ÃÂ®ÃÂµÃÂÃÂª ÃÂÃÂ§\r\nÃÂÃÂÃÂ±ÃÂÃÂ§ÃÂ ÃÂ§ÃÂµÃÂÃÂ ÃÂ©ÃÂ§ÃÂÃÂÃÂ§ÃÂ ÃÂÃÂ§ÃÂ¨ÃÂ ÃÂªÃÂÃÂ¸ÃÂÃÂ ÃÂ§ÃÂ³ÃÂªÃÂ ÃÂ§ÃÂ² ÃÂ¬ÃÂÃÂÃÂ ÃÂ¬ÃÂÃÂ³ÃÂÃÂª ÃÂ ÃÂ¸ÃÂ§ÃÂÃÂ±ÃÂ´ÃÂ ÃÂ ÃÂ¨ÃÂ§ ÃÂÃÂ§ÃÂ ÃÂÃÂ³ÃÂªÃÂ¹ÃÂ§ÃÂ± V. ÃÂ§ÃÂ ÃÂÃÂ© ÃÂÃÂ²ÃÂ¯ÃÂÃÂ± ÃÂ²ÃÂÃÂ±ÃÂ²ÃÂÃÂÃÂÃÂ ÃÂ§ÃÂ³ÃÂª ÃÂ©ÃÂ ÃÂ¨ÃÂ±ÃÂ§ÃÂ ÃÂ¾ÃÂÃÂÃÂ§ÃÂÃÂ©ÃÂ§ÃÂ±ÃÂ§ÃÂ ÃÂÃÂ®ÃÂªÃÂÃÂ \"ÃÂªÃÂ¬ÃÂ§ÃÂ±ÃÂª ÃÂ©ÃÂ«ÃÂÃÂ\" ÃÂ§ÃÂÃÂ¬ÃÂ§ÃÂ ÃÂÃÂ ÃÂ¯ÃÂÃÂ¯. ÃÂÃÂ©ÃÂ ÃÂ§ÃÂ² ÃÂÃÂÃÂ±ÃÂ§ÃÂÃÂ§ÃÂ NPC ÃÂ¨ÃÂ ÃÂÃÂ§ÃÂ ÃÂ¬ÃÂ©ÃÂ ÃÂ¯ÃÂ± ÃÂ§ÃÂÃÂ§ÃÂÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂ ÃÂ¨ÃÂ ÃÂÃÂÃÂ±ÃÂÃÂ§ÃÂ ÃÂ¯ÃÂ§ÃÂ³ÃÂªÃÂ§ÃÂ ÃÂÃÂÃ¢ÂÂÃÂ¾ÃÂÃÂÃÂÃÂ¯ÃÂ¯ ÃÂ ÃÂÃÂÃÂ±ÃÂ§ÃÂÃÂ§ÃÂ ÃÂÃÂ®ÃÂªÃÂÃÂ ÃÂ¯ÃÂÃÂ¯ÃÂ±ÃÂ ÃÂÃÂÃÂ©ÃÂ ÃÂ§ÃÂ³ÃÂª ÃÂ¯ÃÂ± ÃÂÃÂ£ÃÂÃÂÃÂ±ÃÂÃÂªÃ¢ÂÂÃÂÃÂ§ÃÂ ÃÂ®ÃÂ§ÃÂµÃÂ ÃÂ¨ÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂÃÂ©ÃÂ ÃÂÃÂÃÂ­ÃÂ ÃÂ´ÃÂÃÂÃÂ¯. ÃÂ¨ÃÂ§ ÃÂ§ÃÂÃÂ ÃÂ­ÃÂ§ÃÂÃÂ ÃÂ¨ÃÂ§ÃÂ²ÃÂ ÃÂÃÂÃÂ ÃÂÃÂÃÂÃÂ§ÃÂÃÂ ÃÂ ÃÂ±ÃÂÃÂÃÂ¨ ÃÂÃÂ¯ÃÂ§ÃÂ±ÃÂ¯..."
-  },
-  {
     "id": 269480,
     "name": "Batman: Arkham Collection",
     "background_image": "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg",
@@ -591,5 +565,48 @@
     },
     "description_en": "Phantom Liberty is a new spy-thriller adventure for Cyberpunk 2077. When the orbital shuttle of the President of the New United States of America is shot down over the deadliest district of Night City, there’s only one person who can save her — you. Become V, a cyberpunk for hire, and dive deep into a tangled web of espionage and political intrigue, unraveling a story that connects the highest echelons of power with the brutal world of black-market mercenaries.\n\nInfiltrate Dogtown, a city-within-a-city run by a trigger-happy militia and ruled by a leader with an iron fist. With the help of NUSA sleeper agent Solomon Reed (Idris Elba) and the support of Johnny Silverhand (Keanu Reeves), unravel a web of shattered loyalties and use your every skill to survive in a fractured world of desperate hustlers, shadowy netrunners, and ruthless mercenaries. Built with the power of next-gen hardware in mind, Phantom Liberty offers brand-new gameplay mechanics, nail-biting courier jobs, gigs, and missions — and a thrilling main quest where freedom and loyalty always come at a price.",
     "description_fa": "Phantom Liberty یک ماجراجویی جاسوسی-هیجان‌انگیز جدید برای Cyberpunk 2077 است. هنگامی که شاتل مداری رئیس‌جمهور ایالات متحده جدید آمریکا بر فراز مرگبارترین منطقه شهر شب سرنگون می‌شود، تنها یک نفر می‌تواند او را نجات دهد - شما. تبدیل به V، یک سایبرپانک برای استخدام شوید، و در اعماق شبکه‌ای از جاسوسی و دسیسه‌های سیاسی غوطه‌ور شوید و داستانی را باز کنید که بالاترین رده‌های قدرت را با دنیای بی‌رحمانه مزدوران بازار سیاه مرتبط می‌کند.\n\nبه داگ‌تاون نفوذ کنید، شهری در درون شهر که توسط یک شبه‌نظامی شاد اداره می‌شود و توسط یک رهبر با مشت آهنین اداره می‌شود. با کمک مامور خواب NUSA سولومون رید (ادریس البا) و حمایت جانی سیلورهند (کیانو ریوز)، شبکه ای از وفاداری های درهم شکسته را باز کنید و از تمام مهارت های خود برای زنده ماندن در دنیایی متلاشی شده از افراد ناامید، نترونرهای سایه دار و مزدوران بی رحم استفاده کنید. Phantom Liberty با در نظر گرفتن قدرت سخت‌افزار نسل بعدی، مکانیک‌های گیم‌پلی کاملاً جدید، کارهای پیک ناخن جویدن، کنسرت‌ها و مای را ارائه می‌کند."
+  },
+  {
+    "id": 41494,
+    "name": "Cyberpunk 2077",
+    "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+    "rating": 4.23,
+    "released": "2020-12-10",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 29,
+    "developers": "CD PROJEKT RED, CD PROJEKT",
+    "steam_link": "https://store.steampowered.com/search/?term=Cyberpunk%202077",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
+      "https://media.rawg.io/media/screenshots/2ab/2ab0b67e68b6ede6b19d80094b6f7f2a_qTSfS2g.jpg",
+      "https://media.rawg.io/media/screenshots/cd2/cd22af9d6ac593440defac6082760e4a.jpg",
+      "https://media.rawg.io/media/screenshots/9b5/9b51535beb9d9e416cb9aac874091334.jpg",
+      "https://media.rawg.io/media/screenshots/d84/d84d3a16c1e2cb24dcf73e0108d78455.jpg",
+      "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or 10 (64-bit)\r\n\r\nCPU: Intel Core i5-3570K or AMD FX-8310\r\n\r\nRAM: 8GB\r\n\r\nGPU: Nvidia GeForce GTX 780 3GB or AMD Radeon RX 470\r\n\r\nVRAM: 3GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB HDD \r\n\r\nGFX Setting Game Can Be Played On: Low",
+      "recommended": "OS: Windows 10 (64-bit)\r\n\r\nCPU: Intel Core i7-4790 or AMD Ryzen 3 3200G\r\n\r\nRAM: 12GB\r\n\r\nGPU: Nvidia GeForce GTX 1060 6GB, a GTX 1660 Super, or AMD Radeon RX 590\r\n\r\nVRAM: 6GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB SSD\r\n\r\nGFX Setting Game Can Be Played On: High"
+    },
+    "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
+    "description_fa": "Cyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ مهمانی و رقیب ندارد"
   }
 ]
