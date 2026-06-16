@@ -5,81 +5,85 @@ import Link from 'next/link';
 
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    // 🌐 خواندن مستقیم و زنده از لینک RAW گیت‌هاب برای دور زدن زمان بیلد اکشن‌ها
-    // به همراه پارامتر زمان زمان حال (?v=) جهت خنثی کردن ۱۰۰٪ کش مرورگر و CDN
-    fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${Date.now()}`, {
-      cache: 'no-store'
-    })
-      .then((res) => {
-        if (!res.ok) throw new Error('فایل دیتابیس هنوز ساخته نشده یا در دسترس نیست.');
-        return res.json();
-      })
+    fetch('/data/games.json?v=' + Date.now())
+      .then((res) => res.json())
       .then((data) => {
-        setGames(Array.isArray(data) ? data : []);
-        setLoading(false);
+        if (Array.isArray(data)) {
+          // مرتب‌سازی خودکار بر اساس حروف الفبا
+          const sorted = data.sort((a, b) => a.name.localeCompare(b.name));
+          setGames(sorted);
+        }
       })
-      .catch((err) => {
-        console.error('خطا در بارگذاری بازی‌های صفحه اصلی از سرور زنده:', err);
-        // لود بک‌آپ محلی در صورت بروز هرگونه خطای شبکه
-        fetch('/data/games.json', { cache: 'no-store' })
-          .then((res) => res.json())
-          .then((localData) => setGames(Array.isArray(localData) ? localData : []))
-          .catch(() => {})
-          .finally(() => setLoading(false));
-      });
+      .catch((err) => console.error('Error loading games:', err));
   }, []);
 
-  // 🖼️ بهینه‌سازی سایز عکس‌ها برای صفحه اصلی (فشرده، سریع و ضدتحریم ایران)
-  const getBypassUrl = (url: string) => {
+  const filteredGames = games.filter((game) =>
+    game.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const getOptimizedUrl = (url: string, width = 300) => {
     if (!url) return '';
     const cleanUrl = url.replace(/^https?:\/\//i, '');
-    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=400&q=80&output=jpg`;
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=75`;
   };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white font-bold animate-pulse" dir="rtl">
-        در حال بارگذاری آرشیو بازی‌ها به صورت آنی...
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12" dir="rtl">
       <div className="max-w-6xl mx-auto">
-        <header className="flex justify-between items-center mb-12 border-b border-slate-900 pb-6">
-          <h1 className="text-2xl md:text-3xl font-black text-white">🎮 آرشیو شخصی بازی‌های من</h1>
+        <header className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-12 border-b border-slate-900 pb-6">
+          <div>
+            <h1 className="text-3xl font-black text-white">آرشیو تخصصی بازی‌ها</h1>
+            <p className="text-xs text-slate-400 mt-1">تعداد بازی‌های موجود در سایت: <span className="text-purple-400 font-bold">{games.length}</span> بازی</p>
+          </div>
+          <a 
+            href="https://t.me/mygarchive" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 px-4 py-2 bg-blue-950/50 border border-blue-900/60 rounded-xl text-xs text-blue-400 hover:bg-blue-600 hover:text-white transition"
+          >
+            ✈️ کانال تلگرام ما: @mygarchive
+          </a>
         </header>
 
-        {games.length === 0 ? (
-          <p className="text-center text-slate-600 py-12">آرشیو بازی‌ها در حال حاضر خالی است.</p>
-        ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {games.map((game) => (
-              <Link 
-                href={`/game?id=${game.id}`} 
-                key={game.id} 
-                className="bg-slate-900/40 border border-slate-900/80 rounded-2xl overflow-hidden hover:border-purple-500/40 transition duration-300 flex flex-col justify-between group"
-              >
-                <div className="aspect-video w-full overflow-hidden bg-slate-950">
-                  <img 
-                    src={getBypassUrl(game.background_image)} 
-                    alt={game.name} 
-                    className="object-cover w-full h-full group-hover:scale-105 transition duration-500" 
+        <div className="bg-slate-900/40 border border-slate-900 p-4 rounded-2xl mb-8">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="جستجو در بین بازی‌های آرشیو (به انگلیسی)..."
+            className="w-full p-3.5 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none focus:border-purple-500 transition text-left"
+            dir="ltr"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {filteredGames.map((game) => (
+            <Link key={game.id} href={`/game/?id=${game.id}`} className="group">
+              <div className="bg-slate-900 border border-slate-900 rounded-2xl overflow-hidden shadow-lg group-hover:border-slate-800 transition flex flex-col h-full">
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-950">
+                  <img
+                    src={getOptimizedUrl(game.background_image, 400)}
+                    alt={game.name}
+                    className="w-full h-full object-cover transition duration-300 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-white text-sm line-clamp-1 mb-1 text-right" dir="ltr">{game.name}</h3>
-                  <p className="text-xs text-slate-500">امتیاز: ★ {game.rating?.toFixed(1) || '0'}</p>
+                <div className="p-3 flex-1 flex flex-col justify-between">
+                  <h3 className="font-bold text-sm text-white text-left tracking-tight line-clamp-1" dir="ltr">
+                    {game.name}
+                  </h3>
+                  <div className="flex justify-between items-center mt-2 pt-2 border-t border-slate-950 text-[10px] text-slate-500">
+                    <span>{game.released?.split('-')[0] || '---'}</span>
+                    <span className="text-purple-400 font-medium">★ {game.rating || '0'}</span>
+                  </div>
                 </div>
-              </Link>
-            ))}
-          </div>
-        )}
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
