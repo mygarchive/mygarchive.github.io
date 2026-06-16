@@ -8,7 +8,8 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api-store')
+    // خواندن مستقیم از فایل محلی پروژه
+    fetch('/data/games.json', { 'cache': 'no-store' })
       .then((res) => res.json())
       .then((data) => {
         setGames(Array.isArray(data) ? data : []);
@@ -28,100 +29,39 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 max-w-6xl mx-auto animate-pulse" dir="rtl">
-        <div className="h-12 bg-slate-900 rounded-2xl w-64 mb-12"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((n) => (
-            <div key={n} className="bg-slate-900/40 h-72 rounded-3xl border border-slate-900"></div>
-          ))}
-        </div>
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white font-bold animate-pulse">
+        در حال بارگذاری آرشیو بازی‌ها...
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 font-sans" dir="rtl">
-      <div className="max-w-6xl mx-auto flex flex-col min-h-[calc(100vh-6rem)]">
-        
-        <header className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-12 border-b border-slate-900 pb-6">
-          <h1 className="text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
-            آرشیو و کاتالوگ بازی‌های من
-          </h1>
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12" dir="rtl">
+      <div className="max-w-6xl mx-auto">
+        <header className="flex justify-between items-center mb-12 border-b border-slate-900 pb-6">
+          <h1 className="text-2xl md:text-3xl font-black text-white">🎮 آرشیو شخصی بازی‌های من</h1>
+          <Link href="/admin" className="px-4 py-2 bg-purple-600/20 hover:bg-purple-600 border border-purple-500/30 text-purple-300 hover:text-white rounded-xl transition text-sm font-bold">
+            ⚙️ ورود به پنل
+          </Link>
         </header>
 
-        <main className="flex-1">
-          {games.length === 0 ? (
-            <div className="text-center py-24 bg-slate-900/20 rounded-3xl border border-slate-900 border-dashed">
-              <p className="text-slate-500 mb-2">هنوز هیچ بازی به آرشیو اضافه نشده است.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {games.map((game) => (
-                <Link 
-                  href={`/game/${game.id}`} 
-                  key={game.id}
-                  className="bg-slate-900/30 border border-slate-900 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between group hover:border-purple-500/40 hover:shadow-purple-950/10 transition duration-300 backdrop-blur-sm"
-                >
-                  <div className="relative aspect-video w-full bg-slate-950 overflow-hidden">
-                    {game.background_image ? (
-                      <img 
-                        src={getBypassUrl(game.background_image)} 
-                        alt={game.name} 
-                        className="object-cover w-full h-full group-hover:scale-105 transition duration-500" 
-                        referrerPolicy="no-referrer"
-                        loading="lazy" 
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-slate-600 text-xs">بدون تصویر</div>
-                    )}
-                  </div>
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h3 className="font-bold text-white text-base line-clamp-1 mb-2 group-hover:text-purple-400 transition" title={game.name}>
-                        {game.name}
-                      </h3>
-                      <div className="flex justify-between items-center text-xs text-slate-500 mb-3">
-                        <span>📅 {game.released ? game.released.split('-')[0] : '---'}</span>
-                        <span className="text-amber-400 font-bold">★ {game.rating ? game.rating.toFixed(1) : '0'}</span>
-                      </div>
-                    </div>
-                    <div className="w-full py-2 bg-slate-950/50 group-hover:bg-purple-600 text-slate-400 group-hover:text-white font-bold rounded-xl border border-slate-800 group-hover:border-purple-500 text-center transition text-xs">
-                      🎮 مشاهده جزئیات بیشتر
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
-        </main>
-
-        {/* 🛠️ فوتر جدید همراه با لینک تماس تلگرام و دیتای توسعه‌دهنده */}
-        <footer className="mt-20 pt-6 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-          <div className="flex items-center gap-4">
-            <p>تمامی حقوق برای آرشیو بازی‌ها محفوظ است © ۲۰۲۶</p>
-            <span className="text-slate-800 hidden sm:inline">|</span>
-            <a 
-              href="https://t.me/HF273" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex items-center gap-1 text-sky-400 hover:text-sky-300 font-bold bg-sky-500/5 border border-sky-500/10 px-2.5 py-1 rounded-lg transition"
-            >
-              ✈️ تماس با من در تلگرام
-            </a>
+        {games.length === 0 ? (
+          <p className="text-center text-slate-500 py-12">هیچ بازی‌ای در آرشیو یافت نشد. از پنل مدیریت بازی اضافه کنید.</p>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {games.map((game) => (
+              <Link href={`/game/${game.id}`} key={game.id} className="bg-slate-900/40 border border-slate-900/80 rounded-2xl overflow-hidden hover:border-purple-500/40 transition duration-300 flex flex-col justify-between group">
+                <div className="aspect-video w-full overflow-hidden bg-slate-950">
+                  <img src={getBypassUrl(game.background_image)} alt={game.name} className="object-cover w-full h-full group-hover:scale-105 transition duration-500" />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-bold text-white text-sm line-clamp-1 mb-1">{game.name}</h3>
+                  <p className="text-xs text-slate-500">امتیاز: ★ {game.rating?.toFixed(1) || '0'}</p>
+                </div>
+              </Link>
+            ))}
           </div>
-          <p className="flex items-center gap-1">
-            قدرت‌گرفته و توسعه‌یافته با 💜 توسط 
-            <a 
-              href="https://gemini.google.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-purple-400 hover:text-purple-300 font-bold underline decoration-purple-500/30 underline-offset-4 transition mr-1"
-            >
-              Gemini
-            </a>
-          </p>
-        </footer>
-
+        )}
       </div>
     </div>
   );
