@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -13,7 +14,6 @@ export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
-  // هماهنگی وضعیت تم با حافظه مرورگر
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -99,7 +99,6 @@ export default function Home() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//i, ''))}&w=${width}&q=80`;
   };
 
-  // استایل‌های پویا و تضمینی برای حالت روز و شب بدون وابستگی به تنظیمات Tailwind
   const themeStyles = {
     bg: darkMode ? '#020617' : '#f8fafc',
     text: darkMode ? '#f1f5f9' : '#0f172a',
@@ -140,7 +139,6 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center gap-3">
-            {/* دکمه تم اختصاصی بالای سایت */}
             <button
               onClick={toggleTheme}
               className="p-3 rounded-xl text-xs font-bold shadow-sm transition hover:scale-105 active:scale-95 flex items-center gap-1.5"
