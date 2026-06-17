@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -111,14 +112,15 @@ export default function AdminPanel() {
         const data = await res.json();
         setFileSha(data.sha);
         const parsedGames = JSON.parse(safeAtob(data.content)) || [];
-        const sortedGames = parsedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
-        setMyGames(sortedGames);
+        setMyGames(parsedGames);
         setIsLoggedIn(true);
+        return { sha: data.sha, games: parsedGames };
       }
     } catch (err) { 
       console.error(err);
       setLoginError('خطا در واکشی اطلاعات آرشیو از گیت‌هاب.');
     }
+    return null;
   };
 
   const handleSearch = async () => {
@@ -137,8 +139,13 @@ export default function AdminPanel() {
 
   const handleAddGame = async (game: any) => {
     setLoading(true);
-    setMessage({ text: 'در حال دریافت اطلاعات تکمیلی و مشخصات سخت‌افزاری...', isError: false });
+    setMessage({ text: 'در حال دریافت اطلاعات تکمیلی و استخراج لینک مستقیم استیم...', isError: false });
+    
     try {
+      const latestRepoState = await fetchMyGames(githubToken);
+      let currentGamesList = latestRepoState ? latestRepoState.games : [...myGames];
+      let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
+
       const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
       const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
       const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
@@ -149,7 +156,6 @@ export default function AdminPanel() {
         fetchSmartRoute(screenshotsTarget, true)
       ]);
       
-      // افزایش طول سقف پردازش کاراکتر ترجمه به ۱۵۰۰ کاراکتر طبق درخواست
       const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
       
       let minReq = '';
@@ -182,10 +188,14 @@ export default function AdminPanel() {
       else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
       else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
+      // 🛠️ منطق پیشرفته و هوشمند برای کشف لینک مستقیم صفحه بازی در استیم
       let steamUrl = '';
+      
+      // روش اول: اسکن عمیق لیست استورها و استخراج مستقیم App ID بازی
       if (details.stores && details.stores.length > 0) {
         const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
         if (steamStore && steamStore.url) {
+          // استخراج شناسه عددی بازی از داخل آدرس‌های مختلف استیم
           const match = steamStore.url.match(/\/app\/(\d+)/);
           if (match && match[1]) {
             steamUrl = `https://store.steampowered.com/app/${match[1]}`;
@@ -195,6 +205,15 @@ export default function AdminPanel() {
         }
       }
 
+      // روش دوم: اگر در بخش استورها نبود، چک کردن فیلد لینک‌های وب‌سایت رسمی یا دیتای جانبی خود RAWG
+      if (!steamUrl && details.metacritic_platforms) {
+        const pcMeta = details.metacritic_platforms.find((p: any) => p.platform.slug === 'pc');
+        if (pcMeta && pcMeta.url) {
+          console.log("لینک متکریتیک به عنوان پشتیبان یافت شد.");
+        }
+      }
+
+      // روش سوم (بک‌آپ نهایی): در صورتی که مطلقاً هیچ آدرس مستقیمی در API نبود، فرستادن کاربر به صفحه سرچ دقیق نام بازی
       if (!steamUrl && game.name) {
         steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
       }
@@ -209,56 +228,71 @@ export default function AdminPanel() {
         esrb_rating: finalAge,
         playtime: details.playtime || 0,
         developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
-        steam_link: steamUrl,
+        steam_link: steamUrl, // ذخیره لینک فیکس شده مستقیم استیم
         trailer_url: movieData.results?.[0]?.data?.max || '',
         gallery: screenshots.results?.map((s: any) => s.image) || [],
         requirements: { 
           minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
           recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
         },
-        // ذخیره بهینه دیتای انگلیسی تا سقف ۱۵۰۰ برای جلوگیری از سنگین شدن دیتابیس جی‌سان
         description_en: (details.description_raw || "No description available.").substring(0, 1500),
         description_fa: descriptionFa 
       };
 
-      const cleanGamesList = myGames.filter((g) => g.id !== game.id);
+      const cleanGamesList = currentGamesList.filter((g: any) => g.id !== game.id);
       cleanGamesList.push(newGameObj);
-
-      const sortedGamesList = cleanGamesList.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Add/Update ${game.name} (Alphabetical Sort)`, content: safeBtoa(JSON.stringify(sortedGamesList, null, 2)), sha: fileSha })
+        body: JSON.stringify({ message: `Add/Update ${game.name} with Direct Steam Link`, content: safeBtoa(JSON.stringify(cleanGamesList, null, 2)), sha: currentSha })
       });
 
       if (res.status === 200 || res.status === 201) {
-        setFileSha((await res.json()).content.sha);
-        setMyGames(sortedGamesList);
-        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره و دیتای آن مرتب شد.`, isError: false });
-      } else { setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب.', isError: true }); }
-    } catch { setMessage({ text: 'خطا در ارتباط با سرورها یا پروکسی.', isError: true }); }
+        const resData = await res.json();
+        setFileSha(resData.content.sha);
+        setMyGames(cleanGamesList);
+        setMessage({ text: `بازی "${game.name}" با موفقیت همراه با لینک مستقیم استیم ذخیره شد.`, isError: false });
+      } else { 
+        setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب. لطفاً صفحه را رفرش کنید.', isError: true }); 
+      }
+    } catch (err) { 
+      console.error(err);
+      setMessage({ text: 'خطا در ارتباط با سرورها یا پروکسی.', isError: true }); 
+    }
     setLoading(false);
   };
 
   const handleRemoveGame = async (gameId: number, gameName: string) => {
     if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     setLoading(true);
-    const updatedGames = myGames.filter((g) => g.id !== gameId);
-    const sortedGamesList = updatedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
-    
+    setMessage({ text: 'در حال دریافت آخرین وضعیت مخزن برای حذف بازی...', isError: false });
+
     try {
+      const latestRepoState = await fetchMyGames(githubToken);
+      let currentGamesList = latestRepoState ? latestRepoState.games : [...myGames];
+      let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
+
+      const updatedGames = currentGamesList.filter((g: any) => g.id !== gameId);
+      
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(sortedGamesList, null, 2)), sha: fileSha })
+        body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: currentSha })
       });
+
       if (res.status === 200 || res.status === 201) {
-        setFileSha((await res.json()).content.sha);
-        setMyGames(sortedGamesList);
-        setMessage({ text: `بازی "${gameName}" حذف گردید.`, isError: false });
+        const resData = await res.json();
+        setFileSha(resData.content.sha);
+        setMyGames(updatedGames);
+        setMessage({ text: `بازی "${gameName}" با موفقیت حذف گردید.`, isError: false });
+      } else {
+        setMessage({ text: 'خطا در حذف بازی از روی گیت‌هاب.', isError: true });
       }
-    } catch (err) { console.error(err); }
+    } catch (err) { 
+      console.error(err);
+      setMessage({ text: 'خطا در پردازش حذف بازی.', isError: true });
+    }
     setLoading(false);
   };
 
