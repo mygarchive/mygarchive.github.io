@@ -3,6 +3,9 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+// 🛠️ کلید حل مشکل: ایمپورت مستقیم فایل دیتابیس محلی پروژه
+// این کار باعث می‌شود نکست‌جی‌اس در هر بیلد اجباراً آخرین تغییرات فایل را اعمال کند
+import localGamesData from '../data/games.json';
 
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
@@ -30,50 +33,50 @@ export default function Home() {
     localStorage.setItem('theme', newMode ? 'dark' : 'light');
   };
 
-  const fetchSmartData = async () => {
-    const cacheBuster = Date.now();
+  // مجهز به لایه ران‌تایم بک‌آپی هوشمند
+  const initData = async () => {
     try {
-      const res = await fetch(`https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`);
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn("CDN اول ناموفق بود...", e);
-    }
-    try {
-      const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn("CDN دوم ناموفق بود...", e);
-    }
-    const directRes = await fetch(`https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=${cacheBuster}`);
-    if (directRes.ok) {
-      const repoData = await directRes.json();
-      if (repoData && repoData.content) {
-        const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
-        return JSON.parse(content);
+      // گام اول: لود آنی از فایل لوکال بیلد شده (فوق‌العاده سریع و دقیق)
+      let data: any[] = Array.isArray(localGamesData) ? localGamesData : [];
+
+      // گام دوم: برای اطمینان ۱۰۰٪ در محیط زنده، یک فچ زنده با کش‌شکن سنگین هم از گیت‌هاب می‌زنیم
+      // تا اگر کاربر سایت را رفرش نکرد و دپلو هم زمان برد، آخرین دیتا را از روی سرور گیت‌هاب بگیرد
+      const cacheBuster = Date.now();
+      const directRes = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
+        cache: 'no-store'
+      });
+      
+      if (directRes.ok) {
+        const freshData = await directRes.json();
+        if (Array.isArray(freshData) && freshData.length > 0) {
+          data = freshData;
+        }
       }
+
+      setGames(data);
+      setFilteredGames(data);
+
+      const allGenres: string[] = [];
+      data.forEach((game: any) => {
+        game.genres?.forEach((g: any) => {
+          if (!allGenres.includes(g.name)) allGenres.push(g.name);
+        });
+      });
+      setGenres(allGenres.sort());
+      setLoading(false);
+    } catch (err) {
+      console.error("خطا در پردازش هوشمند دیتابیس بازی‌ها:", err);
+      // لایه محافظ پایداری: در صورت خطای شبکه، حتماً از همان دیتای لوکال استفاده کن
+      if (Array.isArray(localGamesData)) {
+        setGames(localGamesData);
+        setFilteredGames(localGamesData);
+      }
+      setLoading(false);
     }
-    throw new Error("خطا در دریافت اطلاعات.");
   };
 
   useEffect(() => {
-    fetchSmartData()
-      .then((data = []) => {
-        setGames(data);
-        setFilteredGames(data);
-
-        const allGenres: string[] = [];
-        data.forEach((game: any) => {
-          game.genres?.forEach((g: any) => {
-            if (!allGenres.includes(g.name)) allGenres.push(g.name);
-          });
-        });
-        setGenres(allGenres.sort());
-        setLoading(false); // ✅ پرانتز اضافه اصلاح شد
-      })
-      .catch((err) => {
-        console.error(err);
-        setLoading(false);
-      });
+    initData();
 
     const handleScroll = () => setShowScrollTop(window.scrollY > 400);
     window.addEventListener('scroll', handleScroll);
