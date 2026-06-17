@@ -14,7 +14,7 @@ function GameDetailContent() {
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
-  // تابع هوشمند چندمرحله‌ای لود بازی تکی از لایه‌های کش واسط
+  // تابع هوشمند چندمرحله‌ای لود بازی تکی از لایه‌های کش واسط جهت سرعت حداکثری در ایران
   const fetchSmartData = async () => {
     try {
       const res = await fetch('https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json');
@@ -99,6 +99,16 @@ function GameDetailContent() {
     }
   };
 
+  // استخراج آیدی استیم برای باز شدن مستقیم داخل اپلیکیشن استیم موبایل (Deep Link) بدون باگ و سرچ مجدد
+  const getSteamAppUrl = (steamLink: string) => {
+    if (!steamLink) return '#';
+    const match = steamLink.match(/\/app\/(\d+)/);
+    if (match && match[1]) {
+      return `steam://store/${match[1]}`;
+    }
+    return steamLink;
+  };
+
   if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-400">در حال دریافت سریع اطلاعات بازی...</div>;
   if (!game) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm text-red-400">بازی مورد نظر در آرشیو یافت نشد.</div>;
 
@@ -110,8 +120,9 @@ function GameDetailContent() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12 relative overflow-hidden" dir="rtl">
+      {/* افکت پس‌زمینه اصلاح‌شده: بلور ملایم‌تر (blur-md) و وضوح بیشتر (opacity-15) برای نمایش واضح کاور اصلی بازی */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-[0.05] blur-3xl pointer-events-none transform scale-110"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.15] blur-md pointer-events-none transform scale-105"
         style={{ backgroundImage: `url(${game.background_image})` }}
       />
 
@@ -122,6 +133,7 @@ function GameDetailContent() {
           </Link>
         </header>
 
+        {/* پوستر اصلی بازی */}
         <div className="w-full rounded-2xl overflow-hidden border border-slate-900 shadow-2xl bg-slate-900 mb-8 flex justify-center items-center">
           <img src={getOptimizedUrl(game.background_image, 800)} alt={game.name} className="w-full h-auto object-cover max-h-[450px]" />
         </div>
@@ -137,6 +149,7 @@ function GameDetailContent() {
               </div>
             </div>
 
+            {/* بخش توضیحات فارسی و انگلیسی کامل */}
             <div className="space-y-5 bg-slate-900/40 border border-slate-900 p-6 rounded-2xl">
               {game.description_fa && (
                 <div>
@@ -152,6 +165,17 @@ function GameDetailContent() {
               )}
             </div>
 
+            {/* ویدیوی پیش‌نمایش / تریلر بازی */}
+            {game.trailer_url && (
+              <div className="space-y-3">
+                <h3 className="text-sm font-black text-white">🎬 ویدیو / تریلر بازی:</h3>
+                <div className="w-full rounded-2xl overflow-hidden border border-slate-900 bg-slate-950 shadow-lg">
+                  <video src={game.trailer_url} controls preload="metadata" className="w-full h-auto max-h-[400px] outline-none" poster={getOptimizedUrl(game.background_image, 600)} />
+                </div>
+              </div>
+            )}
+
+            {/* گالری تصاویر پیشرفته */}
             {game.gallery && game.gallery.length > 0 && (
               <div className="space-y-3">
                 <h3 className="text-sm font-black text-white">📸 گالری تصاویر بازی:</h3>
@@ -169,6 +193,7 @@ function GameDetailContent() {
               </div>
             )}
 
+            {/* مشخصات سخت‌افزاری کامل سیستم */}
             <div className="space-y-4">
               <h3 className="text-sm font-black text-white flex items-center gap-2 mb-1">💻 مشخصات سیستم سخت‌افزاری مورد نیاز:</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -194,6 +219,7 @@ function GameDetailContent() {
             </div>
           </div>
 
+          {/* سایدبار اطلاعات عمومی بازی */}
           <div className="space-y-6">
             <div className="bg-slate-900 border border-slate-800/60 p-5 rounded-2xl space-y-4 text-sm text-slate-300">
               <h3 className="font-black text-white text-base mb-2 border-b border-slate-900 pb-2">📊 اطلاعات عمومی</h3>
@@ -204,9 +230,14 @@ function GameDetailContent() {
               <p>⏱️ زمان اتمام: <span className="text-green-400 font-bold">{game.playtime || '---'} ساعت</span></p>
               
               {game.steam_link && (
-                <div className="pt-2">
-                  <a href={game.steam_link} target="_blank" rel="noopener noreferrer" className="w-full py-2.5 bg-[#171a21] hover:bg-[#2a475e] text-white border border-[#171a21] hover:border-[#2a475e] rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition duration-200">
-                    🎮 مشاهده در استیم (صفحه اختصاصی)
+                <div className="pt-2 space-y-2">
+                  {/* دکمه اول: لینک مستقیم و عمیق به اپلیکیشن اختصاصی استیم روی موبایل */}
+                  <a href={getSteamAppUrl(game.steam_link)} className="w-full py-2.5 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition duration-200">
+                    📱 باز کردن مستقیم در اپ استیم موبایل
+                  </a>
+                  {/* دکمه دوم: باز کردن نسخه تحت وب استیم در مرورگر به عنوان جایگزین */}
+                  <a href={game.steam_link} target="_blank" rel="noopener noreferrer" className="w-full py-2 bg-[#171a21] hover:bg-[#2a475e] text-slate-400 rounded-xl flex items-center justify-center gap-2 text-[11px] transition duration-200">
+                    🌐 باز کردن نسخه تحت وب استیم
                   </a>
                 </div>
               )}
@@ -215,32 +246,42 @@ function GameDetailContent() {
         </div>
       </div>
 
+      {/* باکس نمایش تمام صفحه تصاویر کاملاً بهینه‌سازی شده برای موبایل و دکمه ضربدر پایین صفحه */}
       {activePhotoIndex !== null && game.gallery && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-2 md:p-6 cursor-zoom-out select-none" 
-          onClick={() => setActivePhotoIndex(null)}
+          onClick={() => setActivePhotoIndex(null)} // کلیک در فضای بیرون یا پس‌زمینه عکس گالری را می‌بندد
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="w-full max-w-[92vw] h-[82vh] max-h-[82vh] relative flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+          <div className="w-full max-w-[92vw] h-[78vh] max-h-[78vh] relative flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <img 
               src={getOptimizedUrl(game.gallery[activePhotoIndex], 1400)} 
               alt="Expanded preview" 
               className="w-full h-full object-contain rounded-xl shadow-2xl transition-all duration-150" 
             />
-            <button onClick={() => setActivePhotoIndex(null)} className="absolute top-4 right-4 bg-black/70 hover:bg-black/90 text-white rounded-full p-2 text-xs w-9 h-9 flex items-center justify-center border border-slate-800 transition shadow-xl">✕</button>
           </div>
 
-          <div className="flex items-center gap-6 mt-4 bg-slate-900/80 px-5 py-2 rounded-full border border-slate-800/70 backdrop-blur-md" onClick={(e) => e.stopPropagation()}>
+          {/* کنترل بار گالری منتقل شده به پایین صفحه جهت دسترسی راحت شست در موبایل */}
+          <div className="flex items-center gap-6 mt-4 bg-slate-900/80 px-5 py-2.5 rounded-full border border-slate-800/70 backdrop-blur-md" onClick={(e) => e.stopPropagation()}>
             <button 
               onClick={() => setActivePhotoIndex(activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1)}
               className="text-slate-400 hover:text-white transition font-bold text-sm px-1"
             >
               ➔
             </button>
-            <span className="text-xs font-mono font-bold text-slate-300">
+            <span className="text-xs font-mono font-bold text-slate-300 bg-slate-950 px-2.5 py-0.5 rounded">
               {activePhotoIndex + 1} / {game.gallery.length}
             </span>
+
+            {/* دکمه ضربدر اصلاح شده در پایین صفحه در دسترس شست */}
+            <button 
+              onClick={() => setActivePhotoIndex(null)} 
+              className="px-3 py-0.5 bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white rounded text-xs font-bold transition border border-red-500/20"
+            >
+              بستن ×
+            </button>
+
             <button 
               onClick={() => setActivePhotoIndex(activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1)}
               className="text-slate-400 hover:text-white transition font-bold text-sm px-1"
