@@ -38,9 +38,7 @@ export default function AdminPanel() {
     }
   }, []);
 
-  // تابع هوشمند و چندمرحله‌ای برای دور زدن تحریم و فیلترینگ با قابلیت جابجایی خودکار (Failover)
   const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
-    // مرحله اول: تست پروکسی پرسرعت اول
     try {
       const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`);
       if (res.ok) return await res.json();
@@ -48,7 +46,6 @@ export default function AdminPanel() {
       console.warn("پروکسی اول ناموفق بود، سوئیچ به پروکسی دوم...", e);
     }
 
-    // مرحله دوم: اگر اولی خراب بود، سوئیچ روی AllOrigins
     try {
       const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`);
       if (res.ok) {
@@ -56,10 +53,9 @@ export default function AdminPanel() {
         return parseAllOrigins ? JSON.parse(jsonWrapper.contents) : jsonWrapper;
       }
     } catch (e) {
-      console.warn("پروکسی دوم هم ناموفق بود، سوئیچ به اتصال مستقیم (نیازمند وی‌پی‌ان)...", e);
+      console.warn("پروکسی دوم هم ناموفق بود، سوئیچ به اتصال مستقیم...", e);
     }
 
-    // مرحله سوم: اتصال مستقیم به خود سرور اصلی (اگر وی‌پی‌ان روشن باشد کار می‌کند)
     const directRes = await fetch(targetUrl);
     if (directRes.ok) {
       return await directRes.json();
@@ -80,7 +76,7 @@ export default function AdminPanel() {
     setLoading(true);
     try {
       const checkRes = await fetch('https://api.github.com/user', {
-        headers: { 'Authorization': `Bearer ${trimmedToken}` }
+        headers: { 'Authorization': `token ${trimmedToken}` }
       });
 
       if (checkRes.status === 200) {
@@ -109,12 +105,16 @@ export default function AdminPanel() {
   const fetchMyGames = async (token: string) => {
     try {
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
-        headers: { 'Authorization': `Bearer ${token}` } 
+        headers: { 'Authorization': `token ${token}` } 
       });
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
-        setMyGames(JSON.parse(safeAtob(data.content)) || []);
+        const parsedGames = JSON.parse(safeAtob(data.content)) || [];
+        
+        // همگام‌سازی و مرتب‌سازی الفبایی در لوکال استیت ادمین
+        const sortedGames = parsedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+        setMyGames(sortedGames);
         setIsLoggedIn(true);
       }
     } catch (err) { 
@@ -221,19 +221,23 @@ export default function AdminPanel() {
         description_fa: descriptionFa 
       };
 
-      const updatedGames = myGames.filter((g) => g.id !== game.id);
-      updatedGames.push(newGameObj);
+      // فیلتر کردن بازی قدیمی و اضافه کردن دیتای فیکس‌شده جدید
+      const cleanGamesList = myGames.filter((g) => g.id !== game.id);
+      cleanGamesList.push(newGameObj);
+
+      // لایه حیاتی: مرتب‌سازی کل آرایه بر اساس الفبا (A-Z) قبل از ارسال به ریپازیتوری
+      const sortedGamesList = cleanGamesList.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
-        headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Add/Update ${game.name}`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: fileSha })
+        headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+        body: JSON.stringify({ message: `Add/Update ${game.name} (Alphabetical Sort)`, content: safeBtoa(JSON.stringify(sortedGamesList, null, 2)), sha: fileSha })
       });
 
       if (res.status === 200 || res.status === 201) {
         setFileSha((await res.json()).content.sha);
-        setMyGames(updatedGames);
-        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره و دیتای آن فیکس شد.`, isError: false });
+        setMyGames(sortedGamesList);
+        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره و دیتای آن مرتب شد.`, isError: false });
       } else { setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب.', isError: true }); }
     } catch { setMessage({ text: 'خطا در ارتباط با سرورها یا پروکسی.', isError: true }); }
     setLoading(false);
@@ -243,15 +247,18 @@ export default function AdminPanel() {
     if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     setLoading(true);
     const updatedGames = myGames.filter((g) => g.id !== gameId);
+    // مجدداً بعد از حذف نیز مطمئن می‌شویم که آرایه مرتب است
+    const sortedGamesList = updatedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+    
     try {
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
-        headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: fileSha })
+        headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+        body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(sortedGamesList, null, 2)), sha: fileSha })
       });
       if (res.status === 200 || res.status === 201) {
         setFileSha((await res.json()).content.sha);
-        setMyGames(updatedGames);
+        setMyGames(sortedGamesList);
         setMessage({ text: `بازی "${gameName}" حذف گردید.`, isError: false });
       }
     } catch (err) { console.error(err); }
@@ -319,7 +326,6 @@ export default function AdminPanel() {
             const isAlreadyAdded = myGames.some((g) => g.id === game.id);
             return (
               <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={getOptimizedUrl(game.background_image, 400)} alt={game.name} className="w-full h-40 object-cover" />
                 <div className="p-4 flex flex-col justify-between flex-1 space-y-4">
                   <h3 className="font-bold text-sm text-white text-left truncate" dir="ltr">{game.name}</h3>
