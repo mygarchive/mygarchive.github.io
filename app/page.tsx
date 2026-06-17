@@ -19,19 +19,27 @@ export default function Home() {
         if (repoData && repoData.content) {
           const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
           const data = JSON.parse(content) || [];
-          setGames(data);
-          setFilteredGames(data);
+          
+          // مرتب‌سازی بر اساس حروف الفبا (A to Z) برای تضمین ردیف بودن بازی‌ها
+          const sortedData = data.sort((a: any, b: any) => {
+            if (!a.name) return 1;
+            if (!b.name) return -1;
+            return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+          });
+
+          setGames(sortedData);
+          setFilteredGames(sortedData);
 
           // استخراج هوشمند و یکتای ژانرها از لیست بازی‌ها برای بخش فیلتر
           const allGenres: string[] = [];
-          data.forEach((game: any) => {
+          sortedData.forEach((game: any) => {
             game.genres?.forEach((g: any) => {
               if (!allGenres.includes(g.name)) {
                 allGenres.push(g.name);
               }
             });
           });
-          setGenres(allGenres);
+          setGenres(allGenres.sort()); // ژانرها هم الفبایی مرتب می‌شوند
         }
         setLoading(false);
       })
@@ -40,7 +48,6 @@ export default function Home() {
         setLoading(false);
       });
 
-    // مدیریت نمایش یا مخفی شدن دکمه شناور برگشت به بالا براساس اسکرول
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
@@ -86,7 +93,6 @@ export default function Home() {
         <header className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8 border-b border-slate-900 pb-6">
           <div>
             <h1 className="text-2xl font-black text-white">🎮 آرشیو شخصی بازی‌های من</h1>
-            {/* متن تعداد بازی‌ها با سایز بزرگ و خوانا بر اساس درخواست قبلی */}
             <p className="text-xl font-black text-slate-200 mt-3">
               تعداد بازی‌های موجود در سایت: <span className="text-2xl text-purple-400 font-extrabold">{games.length}</span> بازی
             </p>
@@ -95,7 +101,6 @@ export default function Home() {
             <a href="https://t.me/HF273" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-400 bg-blue-950/40 border border-blue-900/60 px-4 py-2 rounded-xl transition hover:bg-blue-900/30">
               ✈️ کانال تلگرام: HF273
             </a>
-            {/* دکمه مدیریت طبق درخواست شما از این قسمت حذف شد */}
           </div>
         </header>
 
@@ -139,7 +144,6 @@ export default function Home() {
                 className="bg-slate-900/70 border border-slate-900 rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-600/50 transition duration-300 shadow-md"
               >
                 <div className="w-full h-44 overflow-hidden bg-slate-950 relative">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src={getOptimizedUrl(game.background_image, 400)} 
                     alt={game.name} 
@@ -162,7 +166,7 @@ export default function Home() {
 
       </div>
 
-      {/* دکمه شناور رفتن به بالای صفحه (Floating Back-to-Top Button) */}
+      {/* دکمه شناور رفتن به بالای صفحه */}
       <button
         onClick={scrollToTop}
         className={`fixed bottom-6 right-6 z-50 p-3.5 bg-purple-600 hover:bg-purple-500 text-white rounded-full shadow-2xl border border-purple-500/30 transition-all duration-300 transform backdrop-blur-md ${
