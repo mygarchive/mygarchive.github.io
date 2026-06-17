@@ -14,17 +14,40 @@ function GameDetailContent() {
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
+  // تابع هوشمند چندمرحله‌ای لود بازی تکی از لایه‌های کش واسط
+  const fetchSmartData = async () => {
+    try {
+      const res = await fetch('https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json');
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("CDN اول ناموفق بود، سوئیچ به CDN دوم...", e);
+    }
+
+    try {
+      const res = await fetch('https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json');
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("CDN دوم ناموفق بود، سوئیچ به گیت‌هاب مستقیم...", e);
+    }
+
+    const directRes = await fetch('https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=' + Date.now());
+    if (directRes.ok) {
+      const repoData = await directRes.json();
+      if (repoData && repoData.content) {
+        const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+        return JSON.parse(content);
+      }
+    }
+    throw new Error("دیتابیس در دسترس نیست.");
+  };
+
   useEffect(() => {
     if (!gameId) return;
-    fetch('https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=' + Date.now())
-      .then((res) => res.json())
-      .then((repoData) => {
-        if (repoData && repoData.content) {
-          const content = decodeURIComponent(atob(repoData.content).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
-          const data = JSON.parse(content);
-          const found = data.find((g: any) => g.id.toString() === gameId);
-          setGame(found);
-        }
+    
+    fetchSmartData()
+      .then((data = []) => {
+        const found = data.find((g: any) => g.id.toString() === gameId);
+        setGame(found);
         setLoading(false);
       })
       .catch((err) => {
@@ -76,7 +99,7 @@ function GameDetailContent() {
     }
   };
 
-  if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-400">در حال دریافت اطلاعات بازی...</div>;
+  if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-400">در حال دریافت سریع اطلاعات بازی...</div>;
   if (!game) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-sm text-red-400">بازی مورد نظر در آرشیو یافت نشد.</div>;
 
   const getOptimizedUrl = (url: string, width = 800) => {
