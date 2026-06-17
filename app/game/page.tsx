@@ -15,7 +15,7 @@ function GameDetailContent() {
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
-  // لود اولیه تم از روی حافظه مرورگر
+  // لود همگام وضعیت تم سراسری از روی حافظه محلی سیستم
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -26,19 +26,6 @@ function GameDetailContent() {
       document.documentElement.classList.add('dark');
     }
   }, []);
-
-  // تابع تغییر تم
-  const toggleTheme = () => {
-    if (darkMode) {
-      setDarkMode(false);
-      localStorage.setItem('theme', 'light');
-      document.documentElement.classList.remove('dark');
-    } else {
-      setDarkMode(true);
-      localStorage.setItem('theme', 'dark');
-      document.documentElement.classList.add('dark');
-    }
-  };
 
   // تابع هوشمند چندمرحله‌ای لود بازی تکی از لایه‌های کش واسط جهت سرعت حداکثری در ایران
   const fetchSmartData = async () => {
@@ -125,26 +112,39 @@ function GameDetailContent() {
     }
   };
 
-  // تابع هوشمند برای اصلاح لینک‌های خراب سرچ و تبدیل آن به لینک مستقیم داخل برنامه یا سایت اصلی بدون باگ
-  const getSmartSteamLink = (steamLink: string) => {
-    if (!steamLink) return '#';
+  // تابع مهندسی شده و هوشمند برای فیکس ۱۰۰٪ دکمه استیم و باز کردن مستقیم کلاینت یا صفحه رسمی وب
+  const getSmartSteamLink = (steamLink: string, fallbackName: string) => {
+    if (!steamLink || steamLink === '#') {
+      if (fallbackName) return `steam://openurl/https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
+      return '#';
+    }
     
-    // استخراج آیدی عددی بازی (چه در لینک مستقیم و چه در لینک‌های اشتباه)
+    // ۱. بررسی وجود ساختار آیدی عددی مستقیم در رشته آدرس داده شده
     const idMatch = steamLink.match(/(?:app\/|term=)(\d+)/) || steamLink.match(/\/(\d+)\/?/);
     const appId = idMatch ? idMatch[1] : null;
 
-    // اگر آیدی عددی پیدا شد، آدرس مستقیم و بدون خطای بازی را بازسازی می‌کنیم
     if (appId) {
-      // این ساختار به صورت جهانی هم روی کامپیوتر و هم روی موبایل (در صورت نصب بودن اپلیکیشن) مستقیم به صفحه بازی می‌رود
+      // اجرای مستقیم برنامه استیم سیستم کاربر به صفحه دقیق خود بازی بدون رفتن به تب سرچ کلاینت
       return `steam://openurl/https://store.steampowered.com/app/${appId}`;
     }
 
-    // لایه پشتیبان در صورت عدم وجود آیدی عددی
+    // ۲. اگر لینک به شکل سرچ خام ذخیره شده بود، برای رفع باگ آن را فیلتر و بازسازی اختصاصی می‌کنیم
+    if (steamLink.includes('search') || steamLink.includes('term=')) {
+      if (fallbackName) {
+        return `steam://openurl/https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
+      }
+    }
+
+    // ۳. اگر هیچکدام نبود ولی آدرس معتبر بود، پروتکل نیتیو استیم را به ابتدای آن متصل می‌کنیم
+    if (steamLink.startsWith('http')) {
+      return `steam://openurl/${steamLink}`;
+    }
+
     return steamLink;
   };
 
-  if (loading) return <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-500 dark:text-slate-400 p-10 text-center animate-pulse transition-colors duration-300">در حال دریافت سریع اطلاعات بازی...</div>;
-  if (!game) return <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center text-sm text-red-500 transition-colors duration-300">بازی مورد نظر در آرشیو یافت نشد.</div>;
+  if (loading) return <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center text-sm animate-pulse text-slate-500 dark:text-slate-400">در حال دریافت سریع اطلاعات بازی...</div>;
+  if (!game) return <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center text-sm text-red-500">بازی مورد نظر در آرشیو یافت نشد.</div>;
 
   const getOptimizedUrl = (url: string, width = 800) => {
     if (!url) return '';
@@ -155,9 +155,9 @@ function GameDetailContent() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 p-6 md:p-12 relative overflow-hidden transition-colors duration-300" dir="rtl">
       
-      {/* افکت پس‌زمینه اصلاح شده: بلور روی blur-sm تنظیم شد تا تصویر واضح‌تر شود + تنظیم شفافیت متناسب برای روز و شب */}
+      {/* افکت پس‌زمینه اصلاح شده: بلور روی blur-sm جهت شفافیت بیشتر و وضوح پوستر بازی در پشت صفحه */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-[0.08] dark:opacity-[0.15] blur-sm pointer-events-none transform scale-105"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.08] dark:opacity-[0.15] blur-sm pointer-events-none transform scale-105 transition-all"
         style={{ backgroundImage: `url(${game.background_image})` }}
       />
 
@@ -166,15 +166,6 @@ function GameDetailContent() {
           <Link href="/" className="inline-flex items-center gap-2 text-xs text-purple-600 dark:text-purple-400 hover:text-purple-500 bg-purple-100 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-900/40 px-4 py-2 rounded-xl transition">
             ➔ بازگشت به صفحه اصلی آرشیو
           </Link>
-
-          {/* دکمهٔ شیک سوئیچ تم روز و شب */}
-          <button
-            onClick={toggleTheme}
-            className="p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-xs font-bold shadow-sm transition hover:scale-105 active:scale-95 text-slate-800 dark:text-white"
-            title={darkMode ? "فعال‌سازی حالت روز" : "فعال‌سازی حالت شب"}
-          >
-            {darkMode ? '☀️ حالت روز' : '🌙 حالت شب'}
-          </button>
         </header>
 
         {/* پوستر اصلی بازی */}
@@ -275,9 +266,9 @@ function GameDetailContent() {
               
               {game.steam_link && (
                 <div className="pt-2">
-                  {/* تک دکمهٔ هوشمند و ادغام‌شده با فراخوانی تابع اصلاح‌کنندهٔ هوشمند لینک استیم */}
+                  {/* دکمه هوشمند فیکس شده با لایه مانیتورینگ متغیر نام اختصاصی بازی */}
                   <a 
-                    href={getSmartSteamLink(game.steam_link)} 
+                    href={getSmartSteamLink(game.steam_link, game.name)} 
                     className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition shadow-lg shadow-purple-900/10"
                   >
                     🎮 مشاهده در استیم (Steam)
@@ -289,15 +280,18 @@ function GameDetailContent() {
         </div>
       </div>
 
-      {/* باکس نمایش تمام صفحه تصاویر کاملاً بهینه‌سازی شده برای موبایل */}
+      {/* باکس نمایش تمام صفحه تصاویر - برطرف کننده کامل باگ لمس در اندروید و iOS */}
       {activePhotoIndex !== null && game.gallery && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-2 md:p-6 cursor-zoom-out select-none" 
-          onClick={() => setActivePhotoIndex(null)} // کلیک در فضای بیرون یا پس‌زمینه عکس گالری را می‌بندد
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
+          onClick={() => setActivePhotoIndex(null)}
+          onTouchStart={() => setActivePhotoIndex(null)} // شلیک پد لمسی اختصاصی برای واکنش سریع در موبایل
         >
-          <div className="w-full max-w-[92vw] h-[78vh] max-h-[78vh] relative flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+          <div 
+            className="w-full max-w-[92vw] h-[78vh] max-h-[78vh] relative flex items-center justify-center" 
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={(e) => e.stopPropagation()} // جلوگیری از بسته شدن هنگام کلیک یا لمس روی خود عکس
+          >
             <img 
               src={getOptimizedUrl(game.gallery[activePhotoIndex], 1400)} 
               alt="Expanded preview" 
@@ -305,8 +299,11 @@ function GameDetailContent() {
             />
           </div>
 
-          {/* کنترل بار گالری منتقل شده به پایین صفحه جهت دسترسی راحت شست در موبایل */}
-          <div className="flex items-center gap-6 mt-4 bg-slate-900/80 px-5 py-2.5 rounded-full border border-slate-800/70 backdrop-blur-md" onClick={(e) => e.stopPropagation()}>
+          <div 
+            className="flex items-center gap-6 mt-4 bg-slate-900/80 px-5 py-2.5 rounded-full border border-slate-800/70 backdrop-blur-md" 
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={(e) => e.stopPropagation()} // عدم انتشار کلیک دکمه‌های کنترل بار به بیرون
+          >
             <button 
               onClick={() => setActivePhotoIndex(activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1)}
               className="text-slate-400 hover:text-white transition font-bold text-sm px-1"
@@ -317,7 +314,6 @@ function GameDetailContent() {
               {activePhotoIndex + 1} / {game.gallery.length}
             </span>
 
-            {/* دکمه ضربدر اصلاح شده در پایین صفحه در دسترس شست */}
             <button 
               onClick={() => setActivePhotoIndex(null)} 
               className="px-3 py-0.5 bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white rounded text-xs font-bold transition border border-red-500/20"
@@ -341,7 +337,7 @@ function GameDetailContent() {
 
 export default function GameDetailPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-400 p-10 text-center animate-pulseTransition-colors duration-300">در حال لود سیستم ناوبری...</div>}>
+    <Suspense fallback={<div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-400 p-10 text-center animate-pulse transition-colors duration-300">در حال لود سیستم ناوبری...</div>}>
       <GameDetailContent />
     </Suspense>
   );
