@@ -9,6 +9,7 @@ export default function Home() {
   const [filteredGames, setFilteredGames] = useState<any[]>([]);
   const [genres, setGenres] = useState<string[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<string>('alphabetical'); // وضعیت مرتب‌سازی جدید
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -30,19 +31,20 @@ export default function Home() {
   };
 
   const fetchSmartData = async () => {
+    const cacheBuster = Date.now();
     try {
-      const res = await fetch('https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json');
+      const res = await fetch(`https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
       console.warn("CDN اول ناموفق بود...", e);
     }
     try {
-      const res = await fetch('https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json');
+      const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
       console.warn("CDN دوم ناموفق بود...", e);
     }
-    const directRes = await fetch('https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=' + Date.now());
+    const directRes = await fetch(`https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=${cacheBuster}`);
     if (directRes.ok) {
       const repoData = await directRes.json();
       if (repoData && repoData.content) {
@@ -56,22 +58,17 @@ export default function Home() {
   useEffect(() => {
     fetchSmartData()
       .then((data = []) => {
-        const sortedData = data.sort((a: any, b: any) => {
-          if (!a.name) return 1;
-          if (!b.name) return -1;
-          return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
-        });
-        setGames(sortedData);
-        setFilteredGames(sortedData);
+        setGames(data);
+        setFilteredGames(data);
 
         const allGenres: string[] = [];
-        sortedData.forEach((game: any) => {
+        data.forEach((game: any) => {
           game.genres?.forEach((g: any) => {
             if (!allGenres.includes(g.name)) allGenres.push(g.name);
           });
         });
         setGenres(allGenres.sort());
-        setLoading(false);
+        setLoading(false))
       })
       .catch((err) => {
         console.error(err);
@@ -83,16 +80,43 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // منطق مجهز و زنده فیلترها + اعمال سیستم مرتب‌سازی درخواستی به صورت کاملاً تفکیک‌شده
   useEffect(() => {
-    let result = games;
+    let result = [...games];
+
+    // ۱. اعمال فیلتر ژانر
     if (selectedGenre !== 'all') {
       result = result.filter((game) => game.genres?.some((g: any) => g.name === selectedGenre));
     }
+
+    // ۲. اعمال فیلتر سرچ متنی
     if (searchQuery.trim() !== '') {
       result = result.filter((game) => game.name.toLowerCase().includes(searchQuery.toLowerCase()));
     }
+
+    // ۳. اعمال سیستم مرتب‌سازی (Sort) مجزا
+    if (sortBy === 'alphabetical') {
+      result.sort((a, b) => {
+        if (!a.name) return 1;
+        if (!b.name) return -1;
+        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+      });
+    } else if (sortBy === 'released') {
+      result.sort((a, b) => {
+        const dateA = a.released ? new Date(a.released).getTime() : 0;
+        const dateB = b.released ? new Date(b.released).getTime() : 0;
+        return dateB - dateA; // از جدیدترین به قدیمی‌ترین
+      });
+    } else if (sortBy === 'rating') {
+      result.sort((a, b) => {
+        const ratingA = a.rating ? parseFloat(a.rating) : 0;
+        const ratingB = b.rating ? parseFloat(b.rating) : 0;
+        return ratingB - ratingA; // از بیشترین امتیاز به کمترین
+      });
+    }
+
     setFilteredGames(result);
-  }, [selectedGenre, searchQuery, games]);
+  }, [selectedGenre, searchQuery, sortBy, games]);
 
   const getOptimizedUrl = (url: string, width = 400) => {
     if (!url) return '';
@@ -135,18 +159,28 @@ export default function Home() {
           <div>
             <h1 className="text-2xl font-black" style={{ color: themeStyles.titleText }}>🎮 آرشیو شخصی بازی‌های من</h1>
             <p className="text-xl font-black mt-3" style={{ color: themeStyles.text }}>
-              تعداد بازی‌های موجود: <span className="text-2xl text-purple-600 dark:text-purple-400 font-extrabold">{games.length}</span> بازی
+              تعداد بازی‌های موجود: <span className="text-2xl text-purple-600 dark:text-purple-400 font-extrabold">{filteredGames.length}</span> بازی
             </p>
           </div>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={toggleTheme}
-              className="p-3 rounded-xl text-xs font-bold shadow-sm transition hover:scale-105 active:scale-95 flex items-center gap-1.5"
-              style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.titleText }}
-              title={darkMode ? "فعال‌سازی حالت روز" : "فعال‌سازی حالت شب"}
-            >
-              {darkMode ? '☀️ حالت روز' : '🌙 حالت شب'}
-            </button>
+          <div className="flex items-center gap-4">
+            
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold" style={{ color: themeStyles.subText }}>
+                {darkMode ? 'تم تاریک' : 'تم روشن'}
+              </span>
+              <button
+                onClick={toggleTheme}
+                className="w-16 h-8 rounded-full p-1 transition-colors duration-300 relative focus:outline-none shadow-inner"
+                style={{ backgroundColor: darkMode ? '#334155' : '#cbd5e1' }}
+              >
+                <div
+                  className="w-6 h-6 rounded-full shadow-md flex items-center justify-center text-xs transition-transform duration-300 transform select-none bg-white"
+                  style={{ transform: darkMode ? 'translateX(-32px)' : 'translateX(0px)' }}
+                >
+                  {darkMode ? '🌙' : '☀️'}
+                </div>
+              </button>
+            </div>
 
             <a 
               href="https://t.me/HF273" 
@@ -155,15 +189,17 @@ export default function Home() {
               className="text-xs px-4 py-2 rounded-xl transition font-bold"
               style={{ backgroundColor: darkMode ? 'rgba(30, 41, 59, 0.5)' : '#dbeafe', border: `1px solid ${darkMode ? '#1e293b' : '#bfdbfe'}`, color: darkMode ? '#38bdf8' : '#2563eb' }}
             >
-              ✈️ کانال تلگرام: HF273
+              ✈️ کانال تلگرام
             </a>
           </div>
         </header>
 
+        {/* باکس ابزارهای فیلتر و مرتب‌سازی - کاملاً تفکیک‌شده و واکنش‌گرا */}
         <div 
-          className="p-4 rounded-2xl mb-8 flex flex-col md:flex-row gap-4 shadow-sm"
+          className="p-4 rounded-2xl mb-8 flex flex-col lg:flex-row gap-4 shadow-sm"
           style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
         >
+          {/* بخش سرچ متنی */}
           <div className="flex-1">
             <input 
               type="text" 
@@ -176,19 +212,37 @@ export default function Home() {
             />
           </div>
           
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>👁️ فیلتر ژانر:</span>
-            <select 
-              value={selectedGenre}
-              onChange={(e) => setSelectedGenre(e.target.value)}
-              className="p-3 rounded-xl text-xs font-bold outline-none cursor-pointer"
-              style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
-            >
-              <option value="all">همه سبک‌ها (All)</option>
-              {genres.map((genre) => (
-                <option key={genre} value={genre}>{genre}</option>
-              ))}
-            </select>
+          <div className="flex flex-wrap items-center gap-4">
+            {/* ۱. فیلتر سبک و ژانر بازی */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>👁️ فیلتر ژانر:</span>
+              <select 
+                value={selectedGenre}
+                onChange={(e) => setSelectedGenre(e.target.value)}
+                className="p-3 rounded-xl text-xs font-bold outline-none cursor-pointer"
+                style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+              >
+                <option value="all">همه سبک‌ها (All)</option>
+                {genres.map((genre) => (
+                  <option key={genre} value={genre}>{genre}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* ۲. فیلتر جدید مرتب‌سازی اختصاصی جداگانه */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>↕️ مرتب‌سازی:</span>
+              <select 
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="p-3 rounded-xl text-xs font-bold outline-none cursor-pointer"
+                style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+              >
+                <option value="alphabetical">🔤 حروف الفبا (A-Z)</option>
+                <option value="released">📅 سال انتشار (جدیدترین)</option>
+                <option value="rating">⭐ امتیاز منتقدین (بیشترین)</option>
+              </select>
+            </div>
           </div>
         </div>
 
@@ -214,11 +268,15 @@ export default function Home() {
                   <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
                     {game.name}
                   </h3>
+                  
+                  {/* بخش اصلاح شده زیر تصویر: نمایش سال انتشار و امتیاز (Rating) بجای رده سنی */}
                   <div 
                     className="flex justify-between items-center pt-2.5 text-[11px]"
                     style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
                   >
-                    <span className="px-2 py-0.5 rounded font-bold text-red-500" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">{game.esrb_rating || '---'}</span>
+                    <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
+                      ⭐ {game.rating || '---'}
+                    </span>
                     <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
                   </div>
                 </div>
