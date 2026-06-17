@@ -1,5 +1,43 @@
 [
   {
+    "id": 28153,
+    "name": "Assassin's Creed Origins",
+    "background_image": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
+    "rating": 3.96,
+    "released": "2017-10-27",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 28,
+    "developers": "Ubisoft, Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/search/?term=Assassin's%20Creed%20Origins",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686972/movie_max.mp4",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
+      "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
+      "https://media.rawg.io/media/screenshots/313/3132876284966c4d055d752e7edc5509.jpg",
+      "https://media.rawg.io/media/screenshots/b3f/b3fe4ade2ed930cbd8253269ff38ba28.jpg",
+      "https://media.rawg.io/media/screenshots/2d7/2d7a5c1b08e5cc5bc7c371094376637c.jpg",
+      "https://media.rawg.io/media/screenshots/0a2/0a24d82ed3f2d35726d17e4c73593721.jpeg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did in the previous titles. Origins focuses on introducing various types of enemies that the players will have to learn about in order to defeat them.",
+    "description_fa": "Assassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه ای است که به شدت اصلاح شده است که به جای انیمیشن های از پیش تعیین شده، به مکانیک های جعبه ضربه متکی است."
+  },
+  {
     "id": 269480,
     "name": "Batman: Arkham Collection",
     "background_image": "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg",
@@ -82,394 +120,6 @@
     "description_fa": "Batman: The Enemy Within، 2017، یک بازی ویدئویی ماجراجویی گرافیکی اپیزودیک با نقطه و کلیک، دنباله ای بر Batman: The Telltale در سال 2016 است.\n\nبازیکن کنترل این شخصیت را بر عهده دارد که از یک طرف میلیاردر، کارآفرین و بشردوست معروف بروس وین و از طرف دیگر یک مبارز جنایتکار به نام بتمن نام واقعی خود را از مردم پنهان می کند.\n\n###سریال\nThe Enemy Within در همان تداوم بتمن که در Batman: The Telltale Series معرفی شده است - در گاتهام، شهری پر از جنایت و فساد می گذرد. هر دو بازی در اواسط تا اواخر دهه 2010 با فناوری هایی مانند هواپیماهای بدون سرنشین و گوشی های هوشمند ساخته می شوند. مکان‌هایی که The Enemy Within در آن اتفاق می‌افتد مانند بازی قبلی است - Batcave، Wayne Enterprises و Gotham City Police Headquarters. The Enemy Within وقایع بازی قبلی را دنبال می کند که بین یکی دو ماه تا یک سال پس از این اتفاقات رخ می دهد.\n\n###تفسیر تازه ای از بتمن در بازی ها، فیلم ها یا کمیک ها\nسازندگان سریال ادعا می کنند که تی"
   },
   {
-    "id": 103715,
-    "name": "Mixtape",
-    "background_image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
-    "rating": 4.27,
-    "released": "2026-05-07",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      }
-    ],
-    "esrb_rating": "---",
-    "playtime": 0,
-    "developers": "---",
-    "steam_link": "",
-    "trailer_url": "",
-    "gallery": [],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "No description available.",
-    "description_fa": "هیچ توضیحی در دسترس نیست."
-  },
-  {
-    "id": 983374,
-    "name": "Mixtape (2025)",
-    "background_image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
-    "rating": 0,
-    "released": "2026-05-07",
-    "genres": [
-      {
-        "id": 51,
-        "name": "Indie",
-        "slug": "indie"
-      },
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      }
-    ],
-    "esrb_rating": "Rating Pending+",
-    "playtime": 0,
-    "developers": "Beethoven and Dinosaur",
-    "steam_link": "https://store.steampowered.com/app/983374",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/274/27489e9d2eeb610210bb3cbd54128235.jpg",
-      "https://media.rawg.io/media/screenshots/be2/be2d57e6ac10871ba5dd7efe6a51abd6.jpg",
-      "https://media.rawg.io/media/screenshots/5fb/5fbd580868b81f3e98df98292a5c8659.jpg",
-      "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "On their last night of high school, three friends embark on one more adventure together. Play through a mixtape of memories, set to the soundtrack of a generation.\n\nFeaturing music from DEVO, Roxy Music, Lush, The Smashing Pumpkins, Iggy Pop, Siouxsie and the Banshees, Joy Division, and many more.\n\nSkate. Party. Avoid the law.\n\nMake out. Sneak out. Hang out.",
-    "description_fa": "در آخرین شب دبیرستان، سه دوست با هم وارد یک ماجراجویی دیگر می شوند. با ترکیبی از خاطرات، با موسیقی متن یک نسل پخش کنید.\n\nدارای موسیقی از DEVO، Roxy Music، Lush، The Smashing Pumpkins، Iggy Pop، Siouxsie and the Banshees، Joy Division و بسیاری دیگر.\n\nاسکیت. مهمانی از قانون دوری کنید.\n\nدرست کردن. یواشکی بیرون. پاتوق کن"
-  },
-  {
-    "id": 4459,
-    "name": "Grand Theft Auto IV",
-    "background_image": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg",
-    "rating": 4.26,
-    "released": "2008-04-29",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "Mature+",
-    "playtime": 10,
-    "developers": "Rockstar North",
-    "steam_link": "https://store.steampowered.com/app/4459",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/07f/07f7cf80741ff306e4eca982c3e64ac8.jpg",
-      "https://media.rawg.io/media/screenshots/fef/fefd51ec13aa33acbd796ef79bcef7cb.jpg",
-      "https://media.rawg.io/media/screenshots/b78/b78ffd258d5793be704c380e572748bc.jpg",
-      "https://media.rawg.io/media/screenshots/17c/17c85ab9dfc4fda8e1e5ba72932ef2bf.jpg",
-      "https://media.rawg.io/media/screenshots/a12/a12ca99cc74c1e7eba7100b0891dd1e0.jpg",
-      "https://media.rawg.io/media/screenshots/b25/b254f9729ae3f36a9ccffccaa01d5cf6.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Every crime story is a story of a search for success. The player will become Niko Bellic, immigrant arriving at the Liberty City to reunite with his cousin Roman and find the man that betrayed him and his army unit fifteen years prior to the events of the game. While protecting his cousin, Niko has to deal with loan sharks, Russian mobsters, and other gangs. After the third game, GTA brought more realism to the player, in order to make the city and its people look more believable. Street vendors on every corner will sell food that replenishes health, bars with playable dart boards, bowling alleys and even comedy clubs and movie theatres. Open world will allow players not only hang out with important NPC in order to receive bonuses and unlocks but taking girls on the dates as well, to help Niko settle. Multiplayer mode allows up to 32 players to explore the copy of the single-player city and initiate multiplayer activities, like races or Deathmatches.",
-    "description_fa": "هر داستان جنایی، داستان جستجوی موفقیت است. بازیکن تبدیل به نیکو بلیک می شود، مهاجری که به شهر لیبرتی می رسد تا دوباره با پسر عمویش رومن متحد شود و مردی را پیدا کند که پانزده سال قبل از رویدادهای بازی به او و واحد ارتشش خیانت کرده است. نیکو در حالی که از پسر عموی خود محافظت می کند، مجبور است با کوسه های قرضه دار، اوباش روسی و سایر باندها مقابله کند. بعد از بازی سوم، GTA رئالیسم بیشتری را برای بازیکن به ارمغان آورد تا شهر و مردمش را باورپذیرتر جلوه دهد. فروشندگان خیابانی در هر گوشه، غذاهایی را می فروشند که سلامتی را تامین می کند، بارهایی با تخته دارت قابل بازی، سالن های بولینگ و حتی کلوپ های کمدی و سینما. دنیای باز به بازیکنان این امکان را می‌دهد که نه تنها با NPC مهم برای دریافت پاداش‌ها و باز کردن قفل‌ها معاشرت کنند، بلکه دختران را در تاریخ‌ها نیز می‌برند تا به نیکو کمک کنند تا تسویه حساب کنند. حالت چند نفره به حداکثر 32 بازیکن اجازه می دهد تا کپی شهر تک نفره را کاوش کنند و فعالیت های چند نفره مانند مسابقه یا مسابقات مرگ را آغاز کنند."
-  },
-  {
-    "id": 3498,
-    "name": "Grand Theft Auto V",
-    "background_image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
-    "rating": 4.47,
-    "released": "2013-09-17",
-    "genres": [
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "Mature+",
-    "playtime": 74,
-    "developers": "Rockstar North, Rockstar Games",
-    "steam_link": "https://store.steampowered.com/app/3498",
-    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256693661/movie_max.mp4",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/f95/f9518b1d99210c0cae21fc09e95b4e31.jpg",
-      "https://media.rawg.io/media/screenshots/a5c/a5c95ea539c87d5f538763e16e18fb99.jpg",
-      "https://media.rawg.io/media/screenshots/a7e/a7e990bc574f4d34e03b5926361d1ee7.jpg",
-      "https://media.rawg.io/media/screenshots/eb0/eb0a2c0de9194a635fc0cd04f5a29ae7.jpg",
-      "https://media.rawg.io/media/screenshots/ec7/ec7f05fb82290fea9647b7879fe9a6bf.jpg",
-      "https://media.rawg.io/media/screenshots/260/260559fbefce0b36c66ae5e280c7d774.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. \nSimultaneous storytelling from three unique perspectives: \nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. \nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.\n\nEspañol\nRockstar Games se hizo más grande desde su entrega anterior de la serie. Obtienes la construcción del mundo complicada y realista de Liberty City de GTA4 en el escenario de Los Santos, un viejo favorito de los fans, GTA San Andreas. 561 vehículos diferentes (incluidos todos los transportes que puede operar) y la cantidad aumenta con cada actualización.\nNarración simultánea desde tres perspectivas únicas:\nSigue a Michael, ex-criminal que vive su vida de ocio lejos del pasado, Franklin, un niño que busca un futuro mejor, y Trevor, el pasado exacto del que Michael está tratando de huir.\nGTA Online proporcionará muchos desafíos adicionales incluso para los jugadores experimentados, recién llegados del modo historia. Ahora tendrás otros jugadores cerca que pueden ayudarte con la misma probabilidad que arruinar tu misión. Los jugadores pueden experimentar todas las mecánicas de GTA actualizadas a través del personaje personalizable único, y el contenido de la comunidad combinado con el sistema de nivelación tiende a mantener a todos ocupados y comprometidos.",
-    "description_fa": "Rockstar Games از قسمت قبلی این سری بزرگتر شد. شما دنیای پیچیده و واقعی را از شهر آزادی GTA4 در محیط پر جنب و جوش و متنوع لوس سانتوس، از GTA San Andreas مورد علاقه طرفداران قدیمی دریافت می کنید. 561 وسیله نقلیه مختلف (از جمله هر حمل و نقلی که می توانید استفاده کنید) و با هر به روز رسانی مقدار آن افزایش می یابد. \nداستان سرایی همزمان از سه منظر منحصر به فرد: \nدنبال مایکل، جنایتکار سابق، زندگی فراغت خود به دور از گذشته، فرانکلین، کودکی که به دنبال آینده بهتر است، و تروور، همان گذشته ای که مایکل سعی دارد از آن فرار کند را دنبال کنید. \nGTA Online چالش‌های اضافی زیادی را حتی برای بازیکنان باتجربه فراهم می‌کند که تازه از حالت داستانی می‌آیند. حالا شما بازیکنان دیگری را در اطراف خواهید داشت که می توانند به شما کمک کنند تا ماموریت خود را خراب کنید. هر مکانیک GTA به‌روز می‌تواند توسط بازیکنان از طریق شخصیت منحصر به فرد قابل تنظیم تجربه شود، و محتوای انجمن همراه با سیستم سطح‌بندی باعث می‌شود همه افراد را سرگرم کند."
-  },
-  {
-    "id": 494384,
-    "name": "God of War: Ragnarök",
-    "background_image": "https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg",
-    "rating": 4.43,
-    "released": "2022-11-09",
-    "genres": [
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 0,
-    "developers": "SCE Santa Monica Studio",
-    "steam_link": "",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/55f/55fe715e129d5365b48b35b5fc8052be.jpg",
-      "https://media.rawg.io/media/screenshots/c3e/c3e2f128960ffdac8d91f097ebf213e4.jpg",
-      "https://media.rawg.io/media/screenshots/ab5/ab5dce69619658d010c7342523c63d69_fmTr8dx.jpg",
-      "https://media.rawg.io/media/screenshots/d19/d193a94e600261aa6a35883ae7258687.jpg",
-      "https://media.rawg.io/media/screenshots/87d/87d0502ad973a922615bb585ead18661.jpg",
-      "https://media.rawg.io/media/screenshots/001/00156acba9a5a3316893c22f4bd15edf.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.\r\n \r\nAlong the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...",
-    "description_fa": "کریتوس و آترئوس باید در جستجوی پاسخ به هر یک از نه قلمرو سفر کنند و برای نبرد پیشگویی شده ای که جهان را به پایان خواهد رساند آماده می شوند. کریتوس و آترئوس با هم به اعماق نه قلمرو می‌روند و در جستجوی پاسخ‌هایی هستند که نیروهای آسگاردی برای جنگ آماده می‌شوند.\r\n \r\nدر طول مسیر، آنها مناظر افسانه ای و خیره کننده را کاوش می کنند، متحدانی را از سراسر قلمروها جمع می کنند و با دشمنان ترسناکی به شکل خدایان و هیولاهای نورس روبرو می شوند. با نزدیک‌تر شدن تهدید راگناروک، کریتوس و آترئوس متوجه می‌شوند که بین امنیت خانواده‌شان و امنیت قلمروها انتخاب می‌کنند..."
-  },
-  {
-    "id": 1015736,
-    "name": "Life is Strange: Reunion",
-    "background_image": "https://media.rawg.io/media/games/d3d/d3d01e3766e3e44efc03b63466e5fbe0.jpg",
-    "rating": 3.71,
-    "released": "2026-03-26",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 0,
-    "developers": "Deck Nine Games",
-    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20Reunion",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/8f4/8f4ea828a5730f07c46b8a9b5f40942e.jpg",
-      "https://media.rawg.io/media/screenshots/c11/c11f627deffe00c8d8f6b6dd1d9b038e.jpg",
-      "https://media.rawg.io/media/screenshots/d3d/d3d4e2b55cec0559f620afa2c90c3db1.jpg",
-      "https://media.rawg.io/media/screenshots/738/738a6ad7506d9c590155200096caff15.jpg",
-      "https://media.rawg.io/media/screenshots/276/2760f20f19343be95e417761c1ad2cb8.jpg",
-      "https://media.rawg.io/media/screenshots/113/113ddf4c6da191dbebea7d51752ae1e5.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "The saga of Max and Chloe, and the fate of Caledon, is yours to decide! Play as both Max and Chloe as an all-new story builds towards an epic climax. The fire will force Max and Chloe to make devastating decisions. Can they find a future together… Before everything burns?",
-    "description_fa": "حماسه مکس و کلوئه و سرنوشت کالدون با شماست که تصمیم می گیرید! در نقش مکس و کلوئه بازی کنید زیرا داستانی کاملاً جدید به سمت اوج حماسی می‌رود. آتش مکس و کلویی را مجبور به تصمیم گیری ویرانگر می کند. آیا آنها می توانند آینده ای با هم پیدا کنند... قبل از اینکه همه چیز بسوزد؟"
-  },
-  {
-    "id": 58952,
-    "name": "Life is Strange 2",
-    "background_image": "https://media.rawg.io/media/games/883/883bc3050f9a4115d1968ece56bddfc2.jpg",
-    "rating": 3.8,
-    "released": "2018-09-27",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 6,
-    "developers": "DONTNOD Entertainment",
-    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%202",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/86e/86e7f7f3085d0f50b059995ef68131bb.jpg",
-      "https://media.rawg.io/media/screenshots/20d/20da36c5bff3fd598d066324f4992f96.jpg",
-      "https://media.rawg.io/media/screenshots/86e/86e4ab903e6352fc1c2451a1402a0ad1.jpg",
-      "https://media.rawg.io/media/screenshots/5b9/5b96d265e60a6e549fd785dbde739e31.jpg",
-      "https://media.rawg.io/media/screenshots/058/05895612c37538d757216b823e31b2d1.jpg"
-    ],
-    "requirements": {
-      "minimum": "OS: Windows 7 or above (64-bit Operating System Required)\r\n\r\nProcessor: Intel Core i3-2100 (3.1GHz) or AMD Phenom X4 945 (3.0GHz)\r\n\r\nMemory: 4 GB RAM\r\n\r\nGraphics: Nvidia GeForce GTX 650 2GB or AMD Radeon HD 7770 2GB\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 40 GB available space\r\n\r\nAdditional Notes: Please note that 32-bit operating systems will not be supported",
-      "recommended": "OS: Windows 10 64-bit\r\n\r\nProcessor: Intel Core i5 3470, (3.20 Ghz) or AMD FX-8350, (4.00 Ghz)\r\n\r\nMemory: 6 GB RAM\r\n\r\nGraphics: Nvidia GeForce GTX 970 4GB or AMD Radeon R9 280X 3GB\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 40 GB available space\r\n\r\nAdditional Notes: Please note that 32-bit operating systems will not be supported"
-    },
-    "description_en": "The award winning Life is Strange series continues with a long-awaited sequel from DONTNOD Entertainment.\r\n\r\nTwo brothers Sean and Daniel Diaz, 16 and 9, are forced to run away from home after a tragic incident in Seattle. In fear of the police, Sean & Daniel head to Mexico while attempting to conceal a sudden and mysterious supernatural power.\r\n\r\nLife on the road is tough and now totally responsible for his much younger brother, Sean begins to realise that his decisions will impact their lives forever…\r\n\r\nEpisode 1 will be available on September 27th 2018.  Episodes 2-5 will be available at later dates.  \r\n\r\nComplete Season includes Episode 1 and the Episode 2-5 bundle. Episodes 2-5 available upon release.",
-    "description_fa": "مجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
-  },
-  {
-    "id": 983211,
-    "name": "Life is Strange: Double Exposure",
-    "background_image": "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg",
-    "rating": 3,
-    "released": "2024-10-29",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 14,
-    "developers": "Deck Nine Games",
-    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20Double%20Exposure",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/97f/97f60c5c224324f64229567311eacf7b.jpg",
-      "https://media.rawg.io/media/screenshots/8b3/8b35944e21c893e3734ce77c10913049.jpg",
-      "https://media.rawg.io/media/screenshots/e34/e34fd80c14d2bc4cfa43c1a32f79c133.jpg",
-      "https://media.rawg.io/media/screenshots/337/337cc83f9cf803f122d264f4f8887437.jpg",
-      "https://media.rawg.io/media/screenshots/b61/b61f40b27debe656eaedc45dc185ded5.jpg",
-      "https://media.rawg.io/media/screenshots/8f8/8f8d980b43d16d1c79846d6d9a69b7c8.jpg"
-    ],
-    "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i5-2400 / AMD FX-6300\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce GTX 960, 4 GB / AMD Radeon RX 470, 4GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 30fps. SSD Recommended.",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i7-7700K / AMD Ryzen 5 3600\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce RTX 2080 Super, 8GB / AMD Radeon RX 6700 XT, 12GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 60fps. SSD Recommended."
-    },
-    "description_en": "Max Caulfield, photographer-in-residence at the prestigious Caledon University, discovers her closest new friend, Safi, dead in the snow.\nMurdered.\nTo save her, Max tries to Rewind time - a power she’s not used in years... instead, Max opens the way to a parallel timeline where Safi is still alive, and still in danger!\nMax realizes the killer will soon strike again - in both versions of reality.\nWith her new power to Shift between two timelines - can Max solve and prevent the same murder?",
-    "description_fa": "مکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
-  },
-  {
-    "id": 573123,
-    "name": "Life is Strange: True Colors",
-    "background_image": "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg",
-    "rating": 3.79,
-    "released": "2021-09-10",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 11,
-    "developers": "Deck Nine",
-    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20True%20Colors",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/b79/b79e78e7ec97b7bfbe423ade108b7e7b.jpg",
-      "https://media.rawg.io/media/screenshots/fff/fffa428795765de2d116bf761433c963.jpg",
-      "https://media.rawg.io/media/screenshots/e67/e672f40189b14f273f71e1a57dccb4e9.jpg",
-      "https://media.rawg.io/media/screenshots/912/912fe706f0071afde939f41cd042d926.jpg",
-      "https://media.rawg.io/media/screenshots/9ad/9ad105b9d1b39509995f4126cc675027.jpg",
-      "https://media.rawg.io/media/screenshots/4e4/4e46791fe550f87ea2507502f14328d2.jpg"
-    ],
-    "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD Phenom II X4 965, 3.40 GHz / Intel Core i5-2300, 2.80 GHz\nMemory: 6 GB RAM\nGraphics: Radeon HD 7790, 2 GB / GeForce GTX 750Ti, 2 GB\nDirectX: Version 11\nStorage: 30 GB available space",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD FX-8350, 4.00 GHz / Intel Core i5-3470, 3.20 GHz\nMemory: 8 GB RAM\nGraphics: Radeon RX 590, 8 GB / GeForce GTX 1060, 6 GB\nDirectX: Version 11\nStorage: 30 GB available space"
-    },
-    "description_en": "A bold new era of the award-winning Life is Strange begins, with an all-new playable lead character and a thrilling mystery to solve!\r\nPre-order Life Is Strange: True Colors now to receive 4 additional in-game outfits for Alex.\r\nAlex Chen has long suppressed her 'curse': the supernatural ability to experience, absorb and manipulate the strong emotions of others, which she sees as blazing, colored auras.\r\nWhen her brother dies in a so-called accident, Alex must embrace her volatile power to find the truth – and uncover the dark secrets buried by a small town.\r\nTHE TRUTH WILL HURT\r\nDiscover the shocking secrets behind your brother’s death in an emotional roller-coaster of an adventure.\r\nFEEL EVERYTHING\r\nChange fate and change lives with the psychic power of Empathy.\r\nFORGE DEEP RELATIONSHIPS\r\nBuild trust with the townsfolk – and embrace friendship or romance with Ryan and Steph.\r\nA TRULY PERSONAL STORY\r\nMake tough decisions and choose your own future. Freely roam the streets, stores, and hidden spaces of Haven Springs and meet unforgettable characters.\r\nFIND YOUR VOICE\r\nAnd decide Alex's style, with up to 24 outfits in your wardrobe.\r\nEXCLUSIVE SOUNDTRACK\r\nNew tracks by mxmtoon and Novo Amor, and extensive licensed songs including Radiohead, Phoebe Bridgers, Gabrielle Aplin, and more.",
-    "description_fa": "یک دوره جدید جسورانه از برنده جایزه Life is Strange آغاز می شود، با یک شخصیت اصلی قابل بازی کاملاً جدید و یک معمای هیجان انگیز برای حل!\r\nاکنون Life Is Strange: True Colors را پیش‌سفارش دهید تا 4 لباس درون بازی برای الکس دریافت کنید.\r\nالکس چن مدت‌هاست که «نفرین» خود را سرکوب کرده است: توانایی ماوراء طبیعی برای تجربه، جذب و دستکاری احساسات قوی دیگران، که به نظر او هاله‌های درخشان و رنگی است.\r\nوقتی برادرش در به اصطلاح تصادف می میرد، الکس باید قدرت فرار او را برای یافتن حقیقت در آغوش بگیرد - و اسرار تاریک مدفون شده توسط یک شهر کوچک را کشف کند.\r\nحقیقت صدمه خواهد زد\r\nاسرار تکان دهنده مرگ برادرتان را در یک ترن هوایی هیجانی از یک ماجراجویی کشف کنید.\r\nهمه چیز را احساس کنید\r\nبا نیروی روانی همدلی سرنوشت را تغییر دهید و زندگی را تغییر دهید.\r\nایجاد روابط عمیق\r\nبا مردم شهر اعتماد ایجاد کنید - و با رایان و استف دوستی یا عاشقانه را در آغوش بگیرید.\r\nیک داستان واقعاً شخصی\r\nتصمیمات سخت بگیرید و آینده خود را انتخاب کنید. آزادانه در خیابان ها، فروشگاه ها و"
-  },
-  {
-    "id": 573125,
-    "name": "Life is Strange Remastered",
-    "background_image": "https://media.rawg.io/media/games/e3f/e3fc11718acfeac81c05cbcc394dae2f.jpg",
-    "rating": 3.91,
-    "released": "2022-02-01",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 5,
-    "developers": "DONTNOD Entertainment, Deck Nine",
-    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%20Remastered",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/34c/34c94f1120c3f5f90f83a1193f603e09.jpg",
-      "https://media.rawg.io/media/screenshots/90f/90f2dc1e64bc9349d7b091a9a6c4e632.jpg",
-      "https://media.rawg.io/media/screenshots/aad/aade9fcee5eb81f8faa4129f8cf99954.jpg",
-      "https://media.rawg.io/media/screenshots/fee/feede5f7791def9dc02bcc2da575fd52.jpg",
-      "https://media.rawg.io/media/screenshots/125/125049108706d2ac0b09a821eb334076.jpg",
-      "https://media.rawg.io/media/screenshots/19c/19c733b654b6d69a2910ddd75e44904d.jpg"
-    ],
-    "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD Phenom II X4 965, 3.2 GHz /  Intel Core i3-2100, 3.1 GHz\nMemory: 4 GB RAM\nGraphics: Radeon R7 250x, 1GB /  GeForce GTX 460, 2 GB\nDirectX: Version 11\nStorage: 42 GB available space\nAdditional Notes: 720p / 30fps / Low settings",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD FX-8350, 4.2 GHz /  Intel Core i5-2400, 3.1 GHz\nMemory: 4 GB RAM\nGraphics: Radeon RX 580, 4 GB /  GeForce GTX 1060, 6 GB\nDirectX: Version 11\nStorage: 42 GB available space\nAdditional Notes: 1080p / 60fps / High settings"
-    },
-    "description_en": "Experience the BAFTA award-winning story of Life is Strange now beautifully remastered with enhanced visuals and vastly improved animation using mocap technology.\n\nPlay as Max Caulfield, a photography senior who discovers she can rewind time while saving her best friend Chloe Price from a violent altercation.\n\nThe pair soon find themselves investigating the mysterious disappearance of fellow student Rachel Amber, uncovering a dark side to life in Arcadia Bay. Meanwhile, Max must quickly learn that changing the past can sometimes lead to a devastating future.",
-    "description_fa": "داستان برنده جایزه بافتا Life is Strange را تجربه کنید که اکنون به زیبایی با جلوه های بصری بهبود یافته و انیمیشن های بسیار بهبود یافته با استفاده از فناوری موکاپ بازسازی شده است.\n\nنقش مکس کالفیلد، یک کارشناس ارشد عکاسی را بازی کنید که متوجه می شود می تواند زمان را به عقب برگرداند و در عین حال بهترین دوستش کلوئی پرایس را از یک درگیری خشونت آمیز نجات دهد.\n\nاین زوج به زودی در حال تحقیق در مورد ناپدید شدن مرموز دانشجوی همکار ریچل آمبر هستند و جنبه تاریک زندگی در خلیج آرکادیا را کشف می کنند. در همین حال، مکس باید به سرعت یاد بگیرد که تغییر گذشته گاهی اوقات می تواند به آینده ای ویرانگر منجر شود."
-  },
-  {
-    "id": 846303,
-    "name": "Cyberpunk 2077: Phantom Liberty",
-    "background_image": "https://media.rawg.io/media/games/062/06285b425e61623530c5430f20e5d222.jpg",
-    "rating": 4.71,
-    "released": "2023-09-26",
-    "genres": [
-      {
-        "id": 2,
-        "name": "Shooter",
-        "slug": "shooter"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 0,
-    "developers": "CD PROJEKT RED",
-    "steam_link": "https://store.steampowered.com/search/?term=Cyberpunk%202077%3A%20Phantom%20Liberty",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/80f/80fae78e5c12be23386e1f68786c8b4b.jpg",
-      "https://media.rawg.io/media/screenshots/078/078cfcc88982199f6e1bc6de24279593.jpg",
-      "https://media.rawg.io/media/screenshots/da5/da5c912366c9ca2ca282f55ecd3b33c2.jpg",
-      "https://media.rawg.io/media/screenshots/fc1/fc10d7ec161911a3bb3409cd0599db05.jpg",
-      "https://media.rawg.io/media/screenshots/1de/1def44eac50c83de5d3a0dffbe52b5f9.jpg",
-      "https://media.rawg.io/media/screenshots/6cd/6cd9d62ddb5771993d67a565f51c648d.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Phantom Liberty is a new spy-thriller adventure for Cyberpunk 2077. When the orbital shuttle of the President of the New United States of America is shot down over the deadliest district of Night City, there’s only one person who can save her — you. Become V, a cyberpunk for hire, and dive deep into a tangled web of espionage and political intrigue, unraveling a story that connects the highest echelons of power with the brutal world of black-market mercenaries.\n\nInfiltrate Dogtown, a city-within-a-city run by a trigger-happy militia and ruled by a leader with an iron fist. With the help of NUSA sleeper agent Solomon Reed (Idris Elba) and the support of Johnny Silverhand (Keanu Reeves), unravel a web of shattered loyalties and use your every skill to survive in a fractured world of desperate hustlers, shadowy netrunners, and ruthless mercenaries. Built with the power of next-gen hardware in mind, Phantom Liberty offers brand-new gameplay mechanics, nail-biting courier jobs, gigs, and missions — and a thrilling main quest where freedom and loyalty always come at a price.",
-    "description_fa": "Phantom Liberty یک ماجراجویی جاسوسی-هیجان‌انگیز جدید برای Cyberpunk 2077 است. هنگامی که شاتل مداری رئیس‌جمهور ایالات متحده جدید آمریکا بر فراز مرگبارترین منطقه شهر شب سرنگون می‌شود، تنها یک نفر می‌تواند او را نجات دهد - شما. تبدیل به V، یک سایبرپانک برای استخدام شوید، و در اعماق شبکه‌ای از جاسوسی و دسیسه‌های سیاسی غوطه‌ور شوید و داستانی را باز کنید که بالاترین رده‌های قدرت را با دنیای بی‌رحمانه مزدوران بازار سیاه مرتبط می‌کند.\n\nبه داگ‌تاون نفوذ کنید، شهری در درون شهر که توسط یک شبه‌نظامی شاد اداره می‌شود و توسط یک رهبر با مشت آهنین اداره می‌شود. با کمک مامور خواب NUSA سولومون رید (ادریس البا) و حمایت جانی سیلورهند (کیانو ریوز)، شبکه ای از وفاداری های درهم شکسته را باز کنید و از تمام مهارت های خود برای زنده ماندن در دنیایی متلاشی شده از افراد ناامید، نترونرهای سایه دار و مزدوران بی رحم استفاده کنید. Phantom Liberty با در نظر گرفتن قدرت سخت‌افزار نسل بعدی، مکانیک‌های گیم‌پلی کاملاً جدید، کارهای پیک ناخن جویدن، کنسرت‌ها و مای را ارائه می‌کند."
-  },
-  {
     "id": 41494,
     "name": "Cyberpunk 2077",
     "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
@@ -511,6 +161,44 @@
     },
     "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
     "description_fa": "Cyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ مهمانی و رقیب ندارد"
+  },
+  {
+    "id": 846303,
+    "name": "Cyberpunk 2077: Phantom Liberty",
+    "background_image": "https://media.rawg.io/media/games/062/06285b425e61623530c5430f20e5d222.jpg",
+    "rating": 4.71,
+    "released": "2023-09-26",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "CD PROJEKT RED",
+    "steam_link": "https://store.steampowered.com/search/?term=Cyberpunk%202077%3A%20Phantom%20Liberty",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/80f/80fae78e5c12be23386e1f68786c8b4b.jpg",
+      "https://media.rawg.io/media/screenshots/078/078cfcc88982199f6e1bc6de24279593.jpg",
+      "https://media.rawg.io/media/screenshots/da5/da5c912366c9ca2ca282f55ecd3b33c2.jpg",
+      "https://media.rawg.io/media/screenshots/fc1/fc10d7ec161911a3bb3409cd0599db05.jpg",
+      "https://media.rawg.io/media/screenshots/1de/1def44eac50c83de5d3a0dffbe52b5f9.jpg",
+      "https://media.rawg.io/media/screenshots/6cd/6cd9d62ddb5771993d67a565f51c648d.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Phantom Liberty is a new spy-thriller adventure for Cyberpunk 2077. When the orbital shuttle of the President of the New United States of America is shot down over the deadliest district of Night City, there’s only one person who can save her — you. Become V, a cyberpunk for hire, and dive deep into a tangled web of espionage and political intrigue, unraveling a story that connects the highest echelons of power with the brutal world of black-market mercenaries.\n\nInfiltrate Dogtown, a city-within-a-city run by a trigger-happy militia and ruled by a leader with an iron fist. With the help of NUSA sleeper agent Solomon Reed (Idris Elba) and the support of Johnny Silverhand (Keanu Reeves), unravel a web of shattered loyalties and use your every skill to survive in a fractured world of desperate hustlers, shadowy netrunners, and ruthless mercenaries. Built with the power of next-gen hardware in mind, Phantom Liberty offers brand-new gameplay mechanics, nail-biting courier jobs, gigs, and missions — and a thrilling main quest where freedom and loyalty always come at a price.",
+    "description_fa": "Phantom Liberty یک ماجراجویی جاسوسی-هیجان‌انگیز جدید برای Cyberpunk 2077 است. هنگامی که شاتل مداری رئیس‌جمهور ایالات متحده جدید آمریکا بر فراز مرگبارترین منطقه شهر شب سرنگون می‌شود، تنها یک نفر می‌تواند او را نجات دهد - شما. تبدیل به V، یک سایبرپانک برای استخدام شوید، و در اعماق شبکه‌ای از جاسوسی و دسیسه‌های سیاسی غوطه‌ور شوید و داستانی را باز کنید که بالاترین رده‌های قدرت را با دنیای بی‌رحمانه مزدوران بازار سیاه مرتبط می‌کند.\n\nبه داگ‌تاون نفوذ کنید، شهری در درون شهر که توسط یک شبه‌نظامی شاد اداره می‌شود و توسط یک رهبر با مشت آهنین اداره می‌شود. با کمک مامور خواب NUSA سولومون رید (ادریس البا) و حمایت جانی سیلورهند (کیانو ریوز)، شبکه ای از وفاداری های درهم شکسته را باز کنید و از تمام مهارت های خود برای زنده ماندن در دنیایی متلاشی شده از افراد ناامید، نترونرهای سایه دار و مزدوران بی رحم استفاده کنید. Phantom Liberty با در نظر گرفتن قدرت سخت‌افزار نسل بعدی، مکانیک‌های گیم‌پلی کاملاً جدید، کارهای پیک ناخن جویدن، کنسرت‌ها و مای را ارائه می‌کند."
   },
   {
     "id": 622492,
@@ -589,41 +277,353 @@
     "description_fa": "از یکی از تحسین‌شده‌ترین حماسه‌های بازی، Gears بزرگ‌تر از همیشه است، با پنج حالت هیجان‌انگیز و عمیق‌ترین کمپین تاکنون. با شروع جنگ همه جانبه، کیت دیاز جدا می شود تا ارتباط خود را با دشمن آشکار کند و خطر واقعی سرا - خودش را کشف می کند.\n*حساب Xbox Live مورد نیاز است. برای اطلاعات بیشتر به www.gears5.com مراجعه کنید."
   },
   {
-    "id": 28153,
-    "name": "Assassin's Creed Origins",
-    "background_image": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
-    "rating": 3.96,
-    "released": "2017-10-27",
+    "id": 494384,
+    "name": "God of War: Ragnarök",
+    "background_image": "https://media.rawg.io/media/games/1c3/1c305096502c475c00276c827f0fd697.jpg",
+    "rating": 4.43,
+    "released": "2022-11-09",
     "genres": [
       {
         "id": 4,
         "name": "Action",
         "slug": "action"
-      },
-      {
-        "id": 5,
-        "name": "RPG",
-        "slug": "role-playing-games-rpg"
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 28,
-    "developers": "Ubisoft, Ubisoft Montreal",
-    "steam_link": "https://store.steampowered.com/search/?term=Assassin's%20Creed%20Origins",
-    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686972/movie_max.mp4",
+    "playtime": 0,
+    "developers": "SCE Santa Monica Studio",
+    "steam_link": "",
+    "trailer_url": "",
     "gallery": [
-      "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
-      "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
-      "https://media.rawg.io/media/screenshots/313/3132876284966c4d055d752e7edc5509.jpg",
-      "https://media.rawg.io/media/screenshots/b3f/b3fe4ade2ed930cbd8253269ff38ba28.jpg",
-      "https://media.rawg.io/media/screenshots/2d7/2d7a5c1b08e5cc5bc7c371094376637c.jpg",
-      "https://media.rawg.io/media/screenshots/0a2/0a24d82ed3f2d35726d17e4c73593721.jpeg"
+      "https://media.rawg.io/media/screenshots/55f/55fe715e129d5365b48b35b5fc8052be.jpg",
+      "https://media.rawg.io/media/screenshots/c3e/c3e2f128960ffdac8d91f097ebf213e4.jpg",
+      "https://media.rawg.io/media/screenshots/ab5/ab5dce69619658d010c7342523c63d69_fmTr8dx.jpg",
+      "https://media.rawg.io/media/screenshots/d19/d193a94e600261aa6a35883ae7258687.jpg",
+      "https://media.rawg.io/media/screenshots/87d/87d0502ad973a922615bb585ead18661.jpg",
+      "https://media.rawg.io/media/screenshots/001/00156acba9a5a3316893c22f4bd15edf.jpg"
     ],
     "requirements": {
       "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
       "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
     },
-    "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did in the previous titles. Origins focuses on introducing various types of enemies that the players will have to learn about in order to defeat them.",
-    "description_fa": "Assassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه ای است که به شدت اصلاح شده است که به جای انیمیشن های از پیش تعیین شده، به مکانیک های جعبه ضربه متکی است."
+    "description_en": "Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.\r\n \r\nAlong the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...",
+    "description_fa": "کریتوس و آترئوس باید در جستجوی پاسخ به هر یک از نه قلمرو سفر کنند و برای نبرد پیشگویی شده ای که جهان را به پایان خواهد رساند آماده می شوند. کریتوس و آترئوس با هم به اعماق نه قلمرو می‌روند و در جستجوی پاسخ‌هایی هستند که نیروهای آسگاردی برای جنگ آماده می‌شوند.\r\n \r\nدر طول مسیر، آنها مناظر افسانه ای و خیره کننده را کاوش می کنند، متحدانی را از سراسر قلمروها جمع می کنند و با دشمنان ترسناکی به شکل خدایان و هیولاهای نورس روبرو می شوند. با نزدیک‌تر شدن تهدید راگناروک، کریتوس و آترئوس متوجه می‌شوند که بین امنیت خانواده‌شان و امنیت قلمروها انتخاب می‌کنند..."
+  },
+  {
+    "id": 4459,
+    "name": "Grand Theft Auto IV",
+    "background_image": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg",
+    "rating": 4.26,
+    "released": "2008-04-29",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "Mature+",
+    "playtime": 10,
+    "developers": "Rockstar North",
+    "steam_link": "https://store.steampowered.com/app/4459",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/07f/07f7cf80741ff306e4eca982c3e64ac8.jpg",
+      "https://media.rawg.io/media/screenshots/fef/fefd51ec13aa33acbd796ef79bcef7cb.jpg",
+      "https://media.rawg.io/media/screenshots/b78/b78ffd258d5793be704c380e572748bc.jpg",
+      "https://media.rawg.io/media/screenshots/17c/17c85ab9dfc4fda8e1e5ba72932ef2bf.jpg",
+      "https://media.rawg.io/media/screenshots/a12/a12ca99cc74c1e7eba7100b0891dd1e0.jpg",
+      "https://media.rawg.io/media/screenshots/b25/b254f9729ae3f36a9ccffccaa01d5cf6.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Every crime story is a story of a search for success. The player will become Niko Bellic, immigrant arriving at the Liberty City to reunite with his cousin Roman and find the man that betrayed him and his army unit fifteen years prior to the events of the game. While protecting his cousin, Niko has to deal with loan sharks, Russian mobsters, and other gangs. After the third game, GTA brought more realism to the player, in order to make the city and its people look more believable. Street vendors on every corner will sell food that replenishes health, bars with playable dart boards, bowling alleys and even comedy clubs and movie theatres. Open world will allow players not only hang out with important NPC in order to receive bonuses and unlocks but taking girls on the dates as well, to help Niko settle. Multiplayer mode allows up to 32 players to explore the copy of the single-player city and initiate multiplayer activities, like races or Deathmatches.",
+    "description_fa": "هر داستان جنایی، داستان جستجوی موفقیت است. بازیکن تبدیل به نیکو بلیک می شود، مهاجری که به شهر لیبرتی می رسد تا دوباره با پسر عمویش رومن متحد شود و مردی را پیدا کند که پانزده سال قبل از رویدادهای بازی به او و واحد ارتشش خیانت کرده است. نیکو در حالی که از پسر عموی خود محافظت می کند، مجبور است با کوسه های قرضه دار، اوباش روسی و سایر باندها مقابله کند. بعد از بازی سوم، GTA رئالیسم بیشتری را برای بازیکن به ارمغان آورد تا شهر و مردمش را باورپذیرتر جلوه دهد. فروشندگان خیابانی در هر گوشه، غذاهایی را می فروشند که سلامتی را تامین می کند، بارهایی با تخته دارت قابل بازی، سالن های بولینگ و حتی کلوپ های کمدی و سینما. دنیای باز به بازیکنان این امکان را می‌دهد که نه تنها با NPC مهم برای دریافت پاداش‌ها و باز کردن قفل‌ها معاشرت کنند، بلکه دختران را در تاریخ‌ها نیز می‌برند تا به نیکو کمک کنند تا تسویه حساب کنند. حالت چند نفره به حداکثر 32 بازیکن اجازه می دهد تا کپی شهر تک نفره را کاوش کنند و فعالیت های چند نفره مانند مسابقه یا مسابقات مرگ را آغاز کنند."
+  },
+  {
+    "id": 3498,
+    "name": "Grand Theft Auto V",
+    "background_image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
+    "rating": 4.47,
+    "released": "2013-09-17",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "Mature+",
+    "playtime": 74,
+    "developers": "Rockstar North, Rockstar Games",
+    "steam_link": "https://store.steampowered.com/app/3498",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256693661/movie_max.mp4",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/f95/f9518b1d99210c0cae21fc09e95b4e31.jpg",
+      "https://media.rawg.io/media/screenshots/a5c/a5c95ea539c87d5f538763e16e18fb99.jpg",
+      "https://media.rawg.io/media/screenshots/a7e/a7e990bc574f4d34e03b5926361d1ee7.jpg",
+      "https://media.rawg.io/media/screenshots/eb0/eb0a2c0de9194a635fc0cd04f5a29ae7.jpg",
+      "https://media.rawg.io/media/screenshots/ec7/ec7f05fb82290fea9647b7879fe9a6bf.jpg",
+      "https://media.rawg.io/media/screenshots/260/260559fbefce0b36c66ae5e280c7d774.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. \nSimultaneous storytelling from three unique perspectives: \nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. \nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.\n\nEspañol\nRockstar Games se hizo más grande desde su entrega anterior de la serie. Obtienes la construcción del mundo complicada y realista de Liberty City de GTA4 en el escenario de Los Santos, un viejo favorito de los fans, GTA San Andreas. 561 vehículos diferentes (incluidos todos los transportes que puede operar) y la cantidad aumenta con cada actualización.\nNarración simultánea desde tres perspectivas únicas:\nSigue a Michael, ex-criminal que vive su vida de ocio lejos del pasado, Franklin, un niño que busca un futuro mejor, y Trevor, el pasado exacto del que Michael está tratando de huir.\nGTA Online proporcionará muchos desafíos adicionales incluso para los jugadores experimentados, recién llegados del modo historia. Ahora tendrás otros jugadores cerca que pueden ayudarte con la misma probabilidad que arruinar tu misión. Los jugadores pueden experimentar todas las mecánicas de GTA actualizadas a través del personaje personalizable único, y el contenido de la comunidad combinado con el sistema de nivelación tiende a mantener a todos ocupados y comprometidos.",
+    "description_fa": "Rockstar Games از قسمت قبلی این سری بزرگتر شد. شما دنیای پیچیده و واقعی را از شهر آزادی GTA4 در محیط پر جنب و جوش و متنوع لوس سانتوس، از GTA San Andreas مورد علاقه طرفداران قدیمی دریافت می کنید. 561 وسیله نقلیه مختلف (از جمله هر حمل و نقلی که می توانید استفاده کنید) و با هر به روز رسانی مقدار آن افزایش می یابد. \nداستان سرایی همزمان از سه منظر منحصر به فرد: \nدنبال مایکل، جنایتکار سابق، زندگی فراغت خود به دور از گذشته، فرانکلین، کودکی که به دنبال آینده بهتر است، و تروور، همان گذشته ای که مایکل سعی دارد از آن فرار کند را دنبال کنید. \nGTA Online چالش‌های اضافی زیادی را حتی برای بازیکنان باتجربه فراهم می‌کند که تازه از حالت داستانی می‌آیند. حالا شما بازیکنان دیگری را در اطراف خواهید داشت که می توانند به شما کمک کنند تا ماموریت خود را خراب کنید. هر مکانیک GTA به‌روز می‌تواند توسط بازیکنان از طریق شخصیت منحصر به فرد قابل تنظیم تجربه شود، و محتوای انجمن همراه با سیستم سطح‌بندی باعث می‌شود همه افراد را سرگرم کند."
+  },
+  {
+    "id": 58952,
+    "name": "Life is Strange 2",
+    "background_image": "https://media.rawg.io/media/games/883/883bc3050f9a4115d1968ece56bddfc2.jpg",
+    "rating": 3.8,
+    "released": "2018-09-27",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "DONTNOD Entertainment",
+    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%202",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/86e/86e7f7f3085d0f50b059995ef68131bb.jpg",
+      "https://media.rawg.io/media/screenshots/20d/20da36c5bff3fd598d066324f4992f96.jpg",
+      "https://media.rawg.io/media/screenshots/86e/86e4ab903e6352fc1c2451a1402a0ad1.jpg",
+      "https://media.rawg.io/media/screenshots/5b9/5b96d265e60a6e549fd785dbde739e31.jpg",
+      "https://media.rawg.io/media/screenshots/058/05895612c37538d757216b823e31b2d1.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or above (64-bit Operating System Required)\r\n\r\nProcessor: Intel Core i3-2100 (3.1GHz) or AMD Phenom X4 945 (3.0GHz)\r\n\r\nMemory: 4 GB RAM\r\n\r\nGraphics: Nvidia GeForce GTX 650 2GB or AMD Radeon HD 7770 2GB\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 40 GB available space\r\n\r\nAdditional Notes: Please note that 32-bit operating systems will not be supported",
+      "recommended": "OS: Windows 10 64-bit\r\n\r\nProcessor: Intel Core i5 3470, (3.20 Ghz) or AMD FX-8350, (4.00 Ghz)\r\n\r\nMemory: 6 GB RAM\r\n\r\nGraphics: Nvidia GeForce GTX 970 4GB or AMD Radeon R9 280X 3GB\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 40 GB available space\r\n\r\nAdditional Notes: Please note that 32-bit operating systems will not be supported"
+    },
+    "description_en": "The award winning Life is Strange series continues with a long-awaited sequel from DONTNOD Entertainment.\r\n\r\nTwo brothers Sean and Daniel Diaz, 16 and 9, are forced to run away from home after a tragic incident in Seattle. In fear of the police, Sean & Daniel head to Mexico while attempting to conceal a sudden and mysterious supernatural power.\r\n\r\nLife on the road is tough and now totally responsible for his much younger brother, Sean begins to realise that his decisions will impact their lives forever…\r\n\r\nEpisode 1 will be available on September 27th 2018.  Episodes 2-5 will be available at later dates.  \r\n\r\nComplete Season includes Episode 1 and the Episode 2-5 bundle. Episodes 2-5 available upon release.",
+    "description_fa": "مجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
+  },
+  {
+    "id": 573125,
+    "name": "Life is Strange Remastered",
+    "background_image": "https://media.rawg.io/media/games/e3f/e3fc11718acfeac81c05cbcc394dae2f.jpg",
+    "rating": 3.91,
+    "released": "2022-02-01",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "DONTNOD Entertainment, Deck Nine",
+    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%20Remastered",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/34c/34c94f1120c3f5f90f83a1193f603e09.jpg",
+      "https://media.rawg.io/media/screenshots/90f/90f2dc1e64bc9349d7b091a9a6c4e632.jpg",
+      "https://media.rawg.io/media/screenshots/aad/aade9fcee5eb81f8faa4129f8cf99954.jpg",
+      "https://media.rawg.io/media/screenshots/fee/feede5f7791def9dc02bcc2da575fd52.jpg",
+      "https://media.rawg.io/media/screenshots/125/125049108706d2ac0b09a821eb334076.jpg",
+      "https://media.rawg.io/media/screenshots/19c/19c733b654b6d69a2910ddd75e44904d.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD Phenom II X4 965, 3.2 GHz /  Intel Core i3-2100, 3.1 GHz\nMemory: 4 GB RAM\nGraphics: Radeon R7 250x, 1GB /  GeForce GTX 460, 2 GB\nDirectX: Version 11\nStorage: 42 GB available space\nAdditional Notes: 720p / 30fps / Low settings",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD FX-8350, 4.2 GHz /  Intel Core i5-2400, 3.1 GHz\nMemory: 4 GB RAM\nGraphics: Radeon RX 580, 4 GB /  GeForce GTX 1060, 6 GB\nDirectX: Version 11\nStorage: 42 GB available space\nAdditional Notes: 1080p / 60fps / High settings"
+    },
+    "description_en": "Experience the BAFTA award-winning story of Life is Strange now beautifully remastered with enhanced visuals and vastly improved animation using mocap technology.\n\nPlay as Max Caulfield, a photography senior who discovers she can rewind time while saving her best friend Chloe Price from a violent altercation.\n\nThe pair soon find themselves investigating the mysterious disappearance of fellow student Rachel Amber, uncovering a dark side to life in Arcadia Bay. Meanwhile, Max must quickly learn that changing the past can sometimes lead to a devastating future.",
+    "description_fa": "داستان برنده جایزه بافتا Life is Strange را تجربه کنید که اکنون به زیبایی با جلوه های بصری بهبود یافته و انیمیشن های بسیار بهبود یافته با استفاده از فناوری موکاپ بازسازی شده است.\n\nنقش مکس کالفیلد، یک کارشناس ارشد عکاسی را بازی کنید که متوجه می شود می تواند زمان را به عقب برگرداند و در عین حال بهترین دوستش کلوئی پرایس را از یک درگیری خشونت آمیز نجات دهد.\n\nاین زوج به زودی در حال تحقیق در مورد ناپدید شدن مرموز دانشجوی همکار ریچل آمبر هستند و جنبه تاریک زندگی در خلیج آرکادیا را کشف می کنند. در همین حال، مکس باید به سرعت یاد بگیرد که تغییر گذشته گاهی اوقات می تواند به آینده ای ویرانگر منجر شود."
+  },
+  {
+    "id": 983211,
+    "name": "Life is Strange: Double Exposure",
+    "background_image": "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg",
+    "rating": 3,
+    "released": "2024-10-29",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 14,
+    "developers": "Deck Nine Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20Double%20Exposure",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/97f/97f60c5c224324f64229567311eacf7b.jpg",
+      "https://media.rawg.io/media/screenshots/8b3/8b35944e21c893e3734ce77c10913049.jpg",
+      "https://media.rawg.io/media/screenshots/e34/e34fd80c14d2bc4cfa43c1a32f79c133.jpg",
+      "https://media.rawg.io/media/screenshots/337/337cc83f9cf803f122d264f4f8887437.jpg",
+      "https://media.rawg.io/media/screenshots/b61/b61f40b27debe656eaedc45dc185ded5.jpg",
+      "https://media.rawg.io/media/screenshots/8f8/8f8d980b43d16d1c79846d6d9a69b7c8.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i5-2400 / AMD FX-6300\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce GTX 960, 4 GB / AMD Radeon RX 470, 4GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 30fps. SSD Recommended.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i7-7700K / AMD Ryzen 5 3600\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce RTX 2080 Super, 8GB / AMD Radeon RX 6700 XT, 12GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 60fps. SSD Recommended."
+    },
+    "description_en": "Max Caulfield, photographer-in-residence at the prestigious Caledon University, discovers her closest new friend, Safi, dead in the snow.\nMurdered.\nTo save her, Max tries to Rewind time - a power she’s not used in years... instead, Max opens the way to a parallel timeline where Safi is still alive, and still in danger!\nMax realizes the killer will soon strike again - in both versions of reality.\nWith her new power to Shift between two timelines - can Max solve and prevent the same murder?",
+    "description_fa": "مکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
+  },
+  {
+    "id": 1015736,
+    "name": "Life is Strange: Reunion",
+    "background_image": "https://media.rawg.io/media/games/d3d/d3d01e3766e3e44efc03b63466e5fbe0.jpg",
+    "rating": 3.71,
+    "released": "2026-03-26",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Deck Nine Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20Reunion",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8f4/8f4ea828a5730f07c46b8a9b5f40942e.jpg",
+      "https://media.rawg.io/media/screenshots/c11/c11f627deffe00c8d8f6b6dd1d9b038e.jpg",
+      "https://media.rawg.io/media/screenshots/d3d/d3d4e2b55cec0559f620afa2c90c3db1.jpg",
+      "https://media.rawg.io/media/screenshots/738/738a6ad7506d9c590155200096caff15.jpg",
+      "https://media.rawg.io/media/screenshots/276/2760f20f19343be95e417761c1ad2cb8.jpg",
+      "https://media.rawg.io/media/screenshots/113/113ddf4c6da191dbebea7d51752ae1e5.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The saga of Max and Chloe, and the fate of Caledon, is yours to decide! Play as both Max and Chloe as an all-new story builds towards an epic climax. The fire will force Max and Chloe to make devastating decisions. Can they find a future together… Before everything burns?",
+    "description_fa": "حماسه مکس و کلوئه و سرنوشت کالدون با شماست که تصمیم می گیرید! در نقش مکس و کلوئه بازی کنید زیرا داستانی کاملاً جدید به سمت اوج حماسی می‌رود. آتش مکس و کلویی را مجبور به تصمیم گیری ویرانگر می کند. آیا آنها می توانند آینده ای با هم پیدا کنند... قبل از اینکه همه چیز بسوزد؟"
+  },
+  {
+    "id": 573123,
+    "name": "Life is Strange: True Colors",
+    "background_image": "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg",
+    "rating": 3.79,
+    "released": "2021-09-10",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 11,
+    "developers": "Deck Nine",
+    "steam_link": "https://store.steampowered.com/search/?term=Life%20is%20Strange%3A%20True%20Colors",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b79/b79e78e7ec97b7bfbe423ade108b7e7b.jpg",
+      "https://media.rawg.io/media/screenshots/fff/fffa428795765de2d116bf761433c963.jpg",
+      "https://media.rawg.io/media/screenshots/e67/e672f40189b14f273f71e1a57dccb4e9.jpg",
+      "https://media.rawg.io/media/screenshots/912/912fe706f0071afde939f41cd042d926.jpg",
+      "https://media.rawg.io/media/screenshots/9ad/9ad105b9d1b39509995f4126cc675027.jpg",
+      "https://media.rawg.io/media/screenshots/4e4/4e46791fe550f87ea2507502f14328d2.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD Phenom II X4 965, 3.40 GHz / Intel Core i5-2300, 2.80 GHz\nMemory: 6 GB RAM\nGraphics: Radeon HD 7790, 2 GB / GeForce GTX 750Ti, 2 GB\nDirectX: Version 11\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD FX-8350, 4.00 GHz / Intel Core i5-3470, 3.20 GHz\nMemory: 8 GB RAM\nGraphics: Radeon RX 590, 8 GB / GeForce GTX 1060, 6 GB\nDirectX: Version 11\nStorage: 30 GB available space"
+    },
+    "description_en": "A bold new era of the award-winning Life is Strange begins, with an all-new playable lead character and a thrilling mystery to solve!\r\nPre-order Life Is Strange: True Colors now to receive 4 additional in-game outfits for Alex.\r\nAlex Chen has long suppressed her 'curse': the supernatural ability to experience, absorb and manipulate the strong emotions of others, which she sees as blazing, colored auras.\r\nWhen her brother dies in a so-called accident, Alex must embrace her volatile power to find the truth – and uncover the dark secrets buried by a small town.\r\nTHE TRUTH WILL HURT\r\nDiscover the shocking secrets behind your brother’s death in an emotional roller-coaster of an adventure.\r\nFEEL EVERYTHING\r\nChange fate and change lives with the psychic power of Empathy.\r\nFORGE DEEP RELATIONSHIPS\r\nBuild trust with the townsfolk – and embrace friendship or romance with Ryan and Steph.\r\nA TRULY PERSONAL STORY\r\nMake tough decisions and choose your own future. Freely roam the streets, stores, and hidden spaces of Haven Springs and meet unforgettable characters.\r\nFIND YOUR VOICE\r\nAnd decide Alex's style, with up to 24 outfits in your wardrobe.\r\nEXCLUSIVE SOUNDTRACK\r\nNew tracks by mxmtoon and Novo Amor, and extensive licensed songs including Radiohead, Phoebe Bridgers, Gabrielle Aplin, and more.",
+    "description_fa": "یک دوره جدید جسورانه از برنده جایزه Life is Strange آغاز می شود، با یک شخصیت اصلی قابل بازی کاملاً جدید و یک معمای هیجان انگیز برای حل!\r\nاکنون Life Is Strange: True Colors را پیش‌سفارش دهید تا 4 لباس درون بازی برای الکس دریافت کنید.\r\nالکس چن مدت‌هاست که «نفرین» خود را سرکوب کرده است: توانایی ماوراء طبیعی برای تجربه، جذب و دستکاری احساسات قوی دیگران، که به نظر او هاله‌های درخشان و رنگی است.\r\nوقتی برادرش در به اصطلاح تصادف می میرد، الکس باید قدرت فرار او را برای یافتن حقیقت در آغوش بگیرد - و اسرار تاریک مدفون شده توسط یک شهر کوچک را کشف کند.\r\nحقیقت صدمه خواهد زد\r\nاسرار تکان دهنده مرگ برادرتان را در یک ترن هوایی هیجانی از یک ماجراجویی کشف کنید.\r\nهمه چیز را احساس کنید\r\nبا نیروی روانی همدلی سرنوشت را تغییر دهید و زندگی را تغییر دهید.\r\nایجاد روابط عمیق\r\nبا مردم شهر اعتماد ایجاد کنید - و با رایان و استف دوستی یا عاشقانه را در آغوش بگیرید.\r\nیک داستان واقعاً شخصی\r\nتصمیمات سخت بگیرید و آینده خود را انتخاب کنید. آزادانه در خیابان ها، فروشگاه ها و"
+  },
+  {
+    "id": 103715,
+    "name": "Mixtape",
+    "background_image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
+    "rating": 4.27,
+    "released": "2026-05-07",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "",
+    "trailer_url": "",
+    "gallery": [],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "هیچ توضیحی در دسترس نیست."
+  },
+  {
+    "id": 983374,
+    "name": "Mixtape (2025)",
+    "background_image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
+    "rating": 0,
+    "released": "2026-05-07",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "Rating Pending+",
+    "playtime": 0,
+    "developers": "Beethoven and Dinosaur",
+    "steam_link": "https://store.steampowered.com/app/983374",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/274/27489e9d2eeb610210bb3cbd54128235.jpg",
+      "https://media.rawg.io/media/screenshots/be2/be2d57e6ac10871ba5dd7efe6a51abd6.jpg",
+      "https://media.rawg.io/media/screenshots/5fb/5fbd580868b81f3e98df98292a5c8659.jpg",
+      "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "On their last night of high school, three friends embark on one more adventure together. Play through a mixtape of memories, set to the soundtrack of a generation.\n\nFeaturing music from DEVO, Roxy Music, Lush, The Smashing Pumpkins, Iggy Pop, Siouxsie and the Banshees, Joy Division, and many more.\n\nSkate. Party. Avoid the law.\n\nMake out. Sneak out. Hang out.",
+    "description_fa": "در آخرین شب دبیرستان، سه دوست با هم وارد یک ماجراجویی دیگر می شوند. با ترکیبی از خاطرات، با موسیقی متن یک نسل پخش کنید.\n\nدارای موسیقی از DEVO، Roxy Music، Lush، The Smashing Pumpkins، Iggy Pop، Siouxsie and the Banshees، Joy Division و بسیاری دیگر.\n\nاسکیت. مهمانی از قانون دوری کنید.\n\nدرست کردن. یواشکی بیرون. پاتوق کن"
   }
 ]
