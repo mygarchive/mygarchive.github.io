@@ -752,5 +752,37 @@
     },
     "description_en": "Grand Theft Auto: Episodes from Liberty City, as a part of the GTA franchise, offers players an open-world action with countless signs of immorality and violence. Although Episodes from LC is not a direct sequel to the series, it is slightly connected with the original GTA IV. Despite having the same game setting as in the previous GTA chapter (the action takes place in Liberty City approximately at the same time), the city itself faces some cosmetic changes. Several new details (new vehicles, weaponry and mini-games) were also added to the gameplay. The game also has better graphics and optimization. Episodes gives players an opportunity to dive into the atmosphere of crime, which Liberty City is famous for. The game includes two separate storylines: The Lost and Damned, and The Ballad of Gay Tony. In The Lost and Damned players take control of Johnny, a member of brutal biker gang The Lost, who has to fight against rival gangs for control of a city. Ballad of Gay Tony experiences playing for Luis Lopez, who tries to find himself in the world full of violence and obscenity.",
     "description_fa": "Grand Theft Auto: Episodes from Liberty City، به عنوان بخشی از فرنچایز GTA، یک اکشن جهان باز با نشانه های بی شماری از غیراخلاقی و خشونت را به بازیکنان ارائه می دهد. اگرچه Episodes from LC دنباله مستقیم سری نیست، اما کمی با GTA IV اصلی مرتبط است. علیرغم داشتن تنظیمات بازی مشابه در فصل قبلی GTA (اکشن تقریباً در همان زمان در شهر لیبرتی انجام می شود)، خود شهر با تغییرات زیبایی روبرو است. چندین جزئیات جدید (وسایل نقلیه جدید، سلاح و مینی بازی) نیز به گیم پلی بازی اضافه شد. همچنین بازی دارای گرافیک و بهینه سازی بهتری است. اپیزودها به بازیکنان این فرصت را می دهد تا در فضای جنایی که لیبرتی سیتی به آن شهرت دارد، شیرجه بزنند. این بازی شامل دو خط داستانی مجزا است: The Lost and Damned و The Ballad of Gay Tony. در بازی The Lost and Damned، بازیکنان کنترل جانی، یکی از اعضای باند دوچرخه‌سواری وحشیانه The Lost را به دست می‌گیرند، که باید برای کنترل یک شهر با گروه‌های رقیب مبارزه کند. Ballad of Gay Tony بازی برای لوئیس لوپز را تجربه می کند که سعی می کند خود را در دنیای پر از خشونت و فحاشی بیابد."
+  },
+  {
+    "id": 1010949,
+    "name": "Forza Horizon 6",
+    "background_image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
+    "rating": 4.41,
+    "released": "2026-05-19",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Playground Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Forza%20Horizon%206",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a93/a93f2a8ec0d112b5514cfdea70e02941.jpg",
+      "https://media.rawg.io/media/screenshots/e55/e552184cae79bdccfe6fc4e0bef0eff6.jpg",
+      "https://media.rawg.io/media/screenshots/4b3/4b31d3f63fd0f14775cb9aa9c867f546.jpg",
+      "https://media.rawg.io/media/screenshots/b6c/b6ce385dcbc719779964af47d9f15010.jpg",
+      "https://media.rawg.io/media/screenshots/aa4/aa41094e34080e189ad219b7d4da23cd.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.\n\nIn Forza Horizon 6, you will get to discover a scenic and breathtaking Japan, where you will build up your racing status to become a Legend at the Horizon Festival.",
+    "description_fa": "Forza Horizon 6 ورودی بعدی از سری بازی‌های رانندگی جهان باز است که مورد تحسین منتقدان قرار گرفته و جوایزی را دریافت کرده است. Forza Horizon 6 برای اولین بار در سال 2026 روی کنسول های Xbox Series X|S و رایانه های شخصی عرضه خواهد شد.\n\nدر Forza Horizon 6، ژاپن منظره و نفس گیر را کشف خواهید کرد، جایی که وضعیت مسابقه خود را برای تبدیل شدن به یک افسانه در جشنواره Horizon ایجاد خواهید کرد."
   }
 ]
