@@ -133,7 +133,6 @@ export default function AdminPanel() {
     setLoading(false);
   };
 
-  // تابع کاملاً خودکار برای دریافت اطلاعات، ویدیوها و گالری بدون دخالت دست
   const handleAddGame = async (game: any) => {
     setLoading(true);
     setMessage({ text: 'در حال استخراج خودکار ویدیوها، تصاویر گالری و لینک‌های اختصاصی استیم...', isError: false });
@@ -146,17 +145,19 @@ export default function AdminPanel() {
       const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
       const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
       const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
-      const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`; // منبع کمکی ویدیوهای یوتیوب اختصاصی RAWG
+      const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
 
-      // دریافت همزمان اطلاعات از تمامی منابع متصل به بازی
+      // دریافت اطلاعات به صورت موازی با مدیریت خطای انفرادی برای یوتیوب
       const [details, movieData, screenshots, youtubeData] = await Promise.all([
         fetchSmartRoute(detailsTarget, true),
         fetchSmartRoute(moviesTarget, true),
         fetchSmartRoute(screenshotsTarget, true),
-        fetchSmartRoute(youtubeTarget, true).catch(() => ({ results: [] })) // هندل کردن ارور احتمالی پیج یوتیوب
+        fetchSmartRoute(youtubeTarget, true).catch(() => ({ results: [] }))
       ]);
       
-      const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
+      // ترجمه متن و اضافه کردن لیبل مورد نظر شما
+      const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
+      const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
       
       let minReq = '';
       let recReq = '';
@@ -188,7 +189,7 @@ export default function AdminPanel() {
       else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
       else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
-      // منطق هوشمند برای استخراج شناسه عددی بازی و فیکس کردن لینک استیم
+      // منطق کشف لینک مستقیم استیم
       let steamUrl = '';
       if (details.stores && details.stores.length > 0) {
         const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
@@ -206,22 +207,28 @@ export default function AdminPanel() {
         steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
       }
 
-      // 🎬 جمع‌آوری خودکار ویدیوهای یوتیوب از دیتای خام بازی
+      // 🎬 جمع‌آوری پیشرفته و دقیق لینک‌های ویدیو یوتیوب
       const autoYoutubeVideos: string[] = [];
       
-      // ۱. چک کردن ویدیوهای رسمی یوتیوب ست شده در تب ویدیوهای RAWG
       if (youtubeData && youtubeData.results && youtubeData.results.length > 0) {
-        youtubeData.results.slice(0, 3).forEach((vid: any) => {
+        youtubeData.results.slice(0, 5).forEach((vid: any) => {
           if (vid.external_id) {
             autoYoutubeVideos.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
           }
         });
       }
 
-      // ۲. اضافه کردن تریلر پیش‌فرض در صورت وجود و نبودن در لیست قبلی
       const mainTrailer = movieData.results?.[0]?.data?.max || '';
-      if (mainTrailer && mainTrailer.includes('youtube.com') && !autoYoutubeVideos.includes(mainTrailer)) {
-        autoYoutubeVideos.push(mainTrailer);
+      if (mainTrailer && !autoYoutubeVideos.includes(mainTrailer)) {
+        autoYoutubeVideos.unshift(mainTrailer);
+      }
+
+      // 📸 حل مشکل ۶ عکس: گرفتن تصاویر مستقیماً از انپویند اختصاصی اسکرین‌شات‌ها تا سقف ۱۰ عدد
+      let finalGallery: string[] = [];
+      if (screenshots && screenshots.results && screenshots.results.length > 0) {
+        finalGallery = screenshots.results.map((s: any) => s.image).slice(0, 10);
+      } else if (game.short_screenshots && game.short_screenshots.length > 0) {
+        finalGallery = game.short_screenshots.map((s: any) => s.image).slice(0, 10);
       }
 
       const newGameObj = {
@@ -236,14 +243,14 @@ export default function AdminPanel() {
         developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
         steam_link: steamUrl,
         trailer_url: mainTrailer,
-        youtube_videos: autoYoutubeVideos, // ذخیره اتوماتیک آرایه ویدیوهای یوتیوب کشف شده
-        gallery: screenshots.results?.map((s: any) => s.image).slice(0, 10) || [], // دریافت اتوماتیک تا سقف ۱۰ تصویر گالری
+        youtube_videos: autoYoutubeVideos, 
+        gallery: finalGallery, // هدر دیتابیس دقیقاً با ۱۰ عکس پر می‌شود
         requirements: { 
           minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
           recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
         },
         description_en: (details.description_raw || "No description available.").substring(0, 1500),
-        description_fa: descriptionFa 
+        description_fa: descriptionFaWithLabel
       };
 
       const cleanGamesList = currentGamesList.filter((g: any) => g.id !== game.id);
@@ -252,14 +259,14 @@ export default function AdminPanel() {
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
         method: 'PUT',
         headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-        body: JSON.stringify({ message: `Auto Add/Update ${game.name} with Videos and 10 Images`, content: safeBtoa(JSON.stringify(cleanGamesList, null, 2)), sha: currentSha })
+        body: JSON.stringify({ message: `Auto Add/Update ${game.name} with Full Gallery and Videos`, content: safeBtoa(JSON.stringify(cleanGamesList, null, 2)), sha: currentSha })
       });
 
       if (res.status === 200 || res.status === 201) {
         const resData = await res.json();
         setFileSha(resData.content.sha);
         setMyGames(cleanGamesList);
-        setMessage({ text: `بازی "${game.name}" با موفقیت همراه با ویدیوها و ۱۰ تصویر به صورت کاملاً خودکار ذخیره شد.`, isError: false });
+        setMessage({ text: `بازی "${game.name}" با موفقیت همراه با ویدیوها و گالری کامل تصاویر بازی (تا ۱۰ تصویر) به صورت کاملاً خودکار ذخیره شد.`, isError: false });
       } else { 
         setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب. لطفاً صفحه را رفرش کنید.', isError: true }); 
       }
