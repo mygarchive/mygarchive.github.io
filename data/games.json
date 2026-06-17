@@ -310,44 +310,6 @@
     "description_fa": "کریتوس و آترئوس باید در جستجوی پاسخ به هر یک از نه قلمرو سفر کنند و برای نبرد پیشگویی شده ای که جهان را به پایان خواهد رساند آماده می شوند. کریتوس و آترئوس با هم به اعماق نه قلمرو می‌روند و در جستجوی پاسخ‌هایی هستند که نیروهای آسگاردی برای جنگ آماده می‌شوند.\r\n \r\nدر طول مسیر، آنها مناظر افسانه ای و خیره کننده را کاوش می کنند، متحدانی را از سراسر قلمروها جمع می کنند و با دشمنان ترسناکی به شکل خدایان و هیولاهای نورس روبرو می شوند. با نزدیک‌تر شدن تهدید راگناروک، کریتوس و آترئوس متوجه می‌شوند که بین امنیت خانواده‌شان و امنیت قلمروها انتخاب می‌کنند..."
   },
   {
-    "id": 4459,
-    "name": "Grand Theft Auto IV",
-    "background_image": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg",
-    "rating": 4.26,
-    "released": "2008-04-29",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "Mature+",
-    "playtime": 10,
-    "developers": "Rockstar North",
-    "steam_link": "https://store.steampowered.com/app/4459",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/07f/07f7cf80741ff306e4eca982c3e64ac8.jpg",
-      "https://media.rawg.io/media/screenshots/fef/fefd51ec13aa33acbd796ef79bcef7cb.jpg",
-      "https://media.rawg.io/media/screenshots/b78/b78ffd258d5793be704c380e572748bc.jpg",
-      "https://media.rawg.io/media/screenshots/17c/17c85ab9dfc4fda8e1e5ba72932ef2bf.jpg",
-      "https://media.rawg.io/media/screenshots/a12/a12ca99cc74c1e7eba7100b0891dd1e0.jpg",
-      "https://media.rawg.io/media/screenshots/b25/b254f9729ae3f36a9ccffccaa01d5cf6.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Every crime story is a story of a search for success. The player will become Niko Bellic, immigrant arriving at the Liberty City to reunite with his cousin Roman and find the man that betrayed him and his army unit fifteen years prior to the events of the game. While protecting his cousin, Niko has to deal with loan sharks, Russian mobsters, and other gangs. After the third game, GTA brought more realism to the player, in order to make the city and its people look more believable. Street vendors on every corner will sell food that replenishes health, bars with playable dart boards, bowling alleys and even comedy clubs and movie theatres. Open world will allow players not only hang out with important NPC in order to receive bonuses and unlocks but taking girls on the dates as well, to help Niko settle. Multiplayer mode allows up to 32 players to explore the copy of the single-player city and initiate multiplayer activities, like races or Deathmatches.",
-    "description_fa": "هر داستان جنایی، داستان جستجوی موفقیت است. بازیکن تبدیل به نیکو بلیک می شود، مهاجری که به شهر لیبرتی می رسد تا دوباره با پسر عمویش رومن متحد شود و مردی را پیدا کند که پانزده سال قبل از رویدادهای بازی به او و واحد ارتشش خیانت کرده است. نیکو در حالی که از پسر عموی خود محافظت می کند، مجبور است با کوسه های قرضه دار، اوباش روسی و سایر باندها مقابله کند. بعد از بازی سوم، GTA رئالیسم بیشتری را برای بازیکن به ارمغان آورد تا شهر و مردمش را باورپذیرتر جلوه دهد. فروشندگان خیابانی در هر گوشه، غذاهایی را می فروشند که سلامتی را تامین می کند، بارهایی با تخته دارت قابل بازی، سالن های بولینگ و حتی کلوپ های کمدی و سینما. دنیای باز به بازیکنان این امکان را می‌دهد که نه تنها با NPC مهم برای دریافت پاداش‌ها و باز کردن قفل‌ها معاشرت کنند، بلکه دختران را در تاریخ‌ها نیز می‌برند تا به نیکو کمک کنند تا تسویه حساب کنند. حالت چند نفره به حداکثر 32 بازیکن اجازه می دهد تا کپی شهر تک نفره را کاوش کنند و فعالیت های چند نفره مانند مسابقه یا مسابقات مرگ را آغاز کنند."
-  },
-  {
     "id": 58952,
     "name": "Life is Strange 2",
     "background_image": "https://media.rawg.io/media/games/883/883bc3050f9a4115d1968ece56bddfc2.jpg",
