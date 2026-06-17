@@ -627,6 +627,44 @@
     "description_fa": "در آخرین شب دبیرستان، سه دوست با هم وارد یک ماجراجویی دیگر می شوند. با ترکیبی از خاطرات، با موسیقی متن یک نسل پخش کنید.\n\nدارای موسیقی از DEVO، Roxy Music، Lush، The Smashing Pumpkins، Iggy Pop، Siouxsie and the Banshees، Joy Division و بسیاری دیگر.\n\nاسکیت. مهمانی از قانون دوری کنید.\n\nدرست کردن. یواشکی بیرون. پاتوق کن"
   },
   {
+    "id": 39685,
+    "name": "World of Warcraft: Cataclysm",
+    "background_image": "https://media.rawg.io/media/games/4b9/4b9b27acc65760d166a9d65ee5bb6330.jpg",
+    "rating": 4.04,
+    "released": "2010-12-07",
+    "genres": [
+      {
+        "id": 59,
+        "name": "Massively Multiplayer",
+        "slug": "massively-multiplayer"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "https://store.steampowered.com/search/?term=World%20of%20Warcraft%3A%20Cataclysm",
+    "trailer_url": "",
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/940/940a9ebe18966f513e70d03108c87574.jpg",
+      "https://media.rawg.io/media/screenshots/6ea/6eaf376fb068d204e89a84b9760b4674.jpg",
+      "https://media.rawg.io/media/screenshots/a2a/a2a5b264a1e36f2a037fb86ec1df5179.jpg",
+      "https://media.rawg.io/media/screenshots/255/2554c92946fa1d1f819d01fb9f575bf3.jpg",
+      "https://media.rawg.io/media/screenshots/96e/96e29436535e4962a51cfbb864019e6e.jpg",
+      "https://media.rawg.io/media/screenshots/397/3977d01730a622d768283464fb20d72f_p8uz2aN.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": ""
+  },
+  {
     "id": 840768,
     "name": "World of Warcraft: Dragonflight",
     "background_image": "https://media.rawg.io/media/games/2e6/2e648d2839020bc467a46ad9e218c859.jpg",
