@@ -718,41 +718,6 @@
     "description_fa": "مکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
   },
   {
-    "id": 388315,
-    "name": "World of Warcraft: Shadowlands",
-    "background_image": "https://media.rawg.io/media/games/1bf/1bff5a69755eaeef9d37b4e0a14e9bca.jpg",
-    "rating": 3.3,
-    "released": "2020-11-23",
-    "genres": [
-      {
-        "id": 59,
-        "name": "Massively Multiplayer",
-        "slug": "massively-multiplayer"
-      },
-      {
-        "id": 5,
-        "name": "RPG",
-        "slug": "role-playing-games-rpg"
-      }
-    ],
-    "esrb_rating": "---",
-    "playtime": 0,
-    "developers": "---",
-    "steam_link": "https://store.steampowered.com/search/?term=World%20of%20Warcraft%3A%20Shadowlands",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/d33/d3392c86c97a30ea308a32d9e60a4ab6.jpg",
-      "https://media.rawg.io/media/screenshots/33c/33c1fe5f1e4b2b0c087882f8deac7b6d.jpg",
-      "https://media.rawg.io/media/screenshots/719/719eee7d6c51431c21c061283d6a0224.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived. Pre-purchase the next World of Warcraft expansion now and be ready to discover what awaits in this world between worlds.",
-    "description_fa": "چه چیزی فراتر از دنیایی که می شناسید نهفته است؟ سرزمین سایه ها، محل استراحت هر روح فانی – فضیلت یا پست – که تا به حال زندگی کرده است. اکنون نسخه بعدی World of Warcraft را پیش خرید کنید و آماده باشید تا آنچه را که در این جهان بین دنیاها در انتظار شماست کشف کنید."
-  },
-  {
     "id": 43432,
     "name": "World of Warcraft: Legion",
     "background_image": "https://media.rawg.io/media/games/e61/e61f516a8a17eaa80ce484e5fd751e5b.jpg",
