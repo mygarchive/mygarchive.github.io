@@ -111,8 +111,6 @@ export default function AdminPanel() {
         const data = await res.json();
         setFileSha(data.sha);
         const parsedGames = JSON.parse(safeAtob(data.content)) || [];
-        
-        // همگام‌سازی و مرتب‌سازی الفبایی در لوکال استیت ادمین
         const sortedGames = parsedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
         setMyGames(sortedGames);
         setIsLoggedIn(true);
@@ -151,7 +149,8 @@ export default function AdminPanel() {
         fetchSmartRoute(screenshotsTarget, true)
       ]);
       
-      const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1000));
+      // افزایش طول سقف پردازش کاراکتر ترجمه به ۱۵۰۰ کاراکتر طبق درخواست
+      const descriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
       
       let minReq = '';
       let recReq = '';
@@ -217,15 +216,14 @@ export default function AdminPanel() {
           minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
           recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
         },
-        description_en: details.description_raw || "No description available.",
+        // ذخیره بهینه دیتای انگلیسی تا سقف ۱۵۰۰ برای جلوگیری از سنگین شدن دیتابیس جی‌سان
+        description_en: (details.description_raw || "No description available.").substring(0, 1500),
         description_fa: descriptionFa 
       };
 
-      // فیلتر کردن بازی قدیمی و اضافه کردن دیتای فیکس‌شده جدید
       const cleanGamesList = myGames.filter((g) => g.id !== game.id);
       cleanGamesList.push(newGameObj);
 
-      // لایه حیاتی: مرتب‌سازی کل آرایه بر اساس الفبا (A-Z) قبل از ارسال به ریپازیتوری
       const sortedGamesList = cleanGamesList.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
@@ -247,7 +245,6 @@ export default function AdminPanel() {
     if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     setLoading(true);
     const updatedGames = myGames.filter((g) => g.id !== gameId);
-    // مجدداً بعد از حذف نیز مطمئن می‌شویم که آرایه مرتب است
     const sortedGamesList = updatedGames.sort((a: any, b: any) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
     
     try {
