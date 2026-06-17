@@ -4,7 +4,6 @@
 import { useEffect, useState, Suspense, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-// 🛠️ اصلاح آدرس ایمپورت با استفاده از @ برای دسترسی مستقیم به روت پروژه و حل خطای وب‌پک
 import localGamesData from '@/data/games.json';
 
 function GameDetailContent() {
@@ -18,6 +17,7 @@ function GameDetailContent() {
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
+  // هماهنگی ۱۰۰٪ هوشمند با تم انتخاب شده در صفحه اصلی سایت بدون نیاز به اسلایدر مجزا
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -27,38 +27,30 @@ function GameDetailContent() {
     }
   }, []);
 
-  const toggleTheme = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    localStorage.setItem('theme', newMode ? 'dark' : 'light');
-  };
-
-  // مجهز به سیستم کش‌شکن جهت بروزرسانی همزمان دیتابیس در همان لحظه کامپایل گیت‌هاب
   const fetchSmartData = async () => {
     const cacheBuster = Date.now();
     
-    // 🛠️ رفع ارور Mixed Content: تغییر تمام پروتکل‌های CDN به https مستقیم و امن
     try {
       const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
         cache: 'no-store'
       });
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("منبع اول (گیت‌هاب خام) ناموفق بود، سوئیچ به CDN دوم...", e);
+      console.warn("منبع اول ناموفق بود، سوئیچ به CDN دوم...", e);
     }
 
     try {
       const res = await fetch(`https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("CDN استاتیکالی ناموفق بود، سوئیچ به CDN سوم...", e);
+      console.warn("CDN دوم ناموفق بود، سوئیچ به CDN سوم...", e);
     }
 
     try {
       const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("CDN جی‌اس‌دلیور ناموفق بود، سوئیچ به گیت‌هاب API...", e);
+      console.warn("CDN سوم ناموفق بود، سوئیچ به گیت‌هاب API...", e);
     }
 
     const directRes = await fetch(`https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=${cacheBuster}`);
@@ -70,7 +62,6 @@ function GameDetailContent() {
       }
     }
     
-    // لایه نهایی پایداری: اگر هیچ‌کدام از شبکه لود نشدند، از دیتای لوکال زمان بیلد استفاده کن
     if (Array.isArray(localGamesData)) {
       return localGamesData;
     }
@@ -84,7 +75,6 @@ function GameDetailContent() {
     fetchSmartData()
       .then((data = []) => {
         const found = data.find((g: any) => g.id.toString() === gameId);
-        // اگر در دیتای لایو شبکه نبود، برای اطمینان بیشتر مجدداً دیتای لوکال بیلد شده را چک کن
         if (!found && Array.isArray(localGamesData)) {
           const fallbackFound = localGamesData.find((g: any) => g.id.toString() === gameId);
           setGame(fallbackFound || null);
@@ -94,7 +84,7 @@ function GameDetailContent() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("خطا در سیستم دریافت هوشمند اطلاعات:", err);
+        console.error("خطا در دریافت اطلاعات:", err);
         if (Array.isArray(localGamesData)) {
           const found = localGamesData.find((g: any) => g.id.toString() === gameId);
           setGame(found || null);
@@ -152,14 +142,13 @@ function GameDetailContent() {
     }
   };
 
-  // الگوریتم کاملاً هوشمند استخراج آیدی و بازسازی لینک به فرمت مستقیم استیم فروشگاه بدون ریدایرکت سرچ کامپوننت ادمین
+  // الگوریتم پیشرفته استخراج شناسه بازی استیم جهت هدایت مستقیم به صفحه اختصاصی گیم به جای صفحه اصلی استیم
   const getSmartSteamLink = (steamLink: string, fallbackName: string) => {
     if (!steamLink || steamLink === '#') {
       if (fallbackName) return `https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
       return 'https://store.steampowered.com';
     }
 
-    // استخراج شماره شناسه یکتا از لینک خام ورودی پنل
     const idMatch = steamLink.match(/(?:app\/|term=|check\/app\/)(\d+)/) || steamLink.match(/\/(\d+)\/?/);
     const appId = idMatch ? idMatch[1] : null;
 
@@ -167,12 +156,10 @@ function GameDetailContent() {
       return `https://store.steampowered.com/app/${appId}`;
     }
 
-    // بازسازی لینک‌های متنی و تم‌های از پیش ساخته ادمین گیت‌هاب
     if (steamLink.includes('term=')) {
       const urlParams = new URLSearchParams(steamLink.split('?')[1]);
       const term = urlParams.get('term');
       if (term) {
-        // اگر شناسه در نام موجود بود (مثلا حاصل از برخی ربات‌ها)
         const innerId = term.match(/(\d+)/);
         if (innerId) return `https://store.steampowered.com/app/${innerId[1]}`;
         return `https://store.steampowered.com/search/?term=${encodeURIComponent(term)}`;
@@ -184,6 +171,22 @@ function GameDetailContent() {
     }
 
     return `https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
+  };
+
+  // تبدیل آدرس‌های استاندارد ویدیوهای یوتیوب به فرمت تعبیه‌شده (Embed) برای پخش داخل آیفریم سایت
+  const convertToEmbedUrl = (url: string) => {
+    if (!url) return '';
+    if (url.includes('youtube.com/embed/')) return url;
+    
+    let videoId = null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    
+    if (match && match[2].length === 11) {
+      videoId = match[2];
+    }
+    
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
   };
 
   const getOptimizedUrl = (url: string, width = 800) => {
@@ -226,7 +229,6 @@ function GameDetailContent() {
       >
         <div className="text-3xl">⚠️</div>
         <h2 className="text-sm font-bold">بازی مورد نظر در آرشیو یافت نشد.</h2>
-        <p className="text-xs" style={{ color: themeStyles.subText }}>اگر بازی جدیداً اضافه شده، ممکن است دپلو گیت‌هاب چند لحظه زمان ببرد.</p>
         <Link href="/" className="mt-2 text-xs bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-xl font-bold transition">بازگشت به صفحه اصلی آرشیو</Link>
       </div>
     );
@@ -238,7 +240,6 @@ function GameDetailContent() {
       dir="rtl"
       style={{ backgroundColor: themeStyles.bg, color: themeStyles.text }}
     >
-      
       <div 
         className="absolute inset-0 bg-cover bg-center blur-sm pointer-events-none transform scale-105 transition-all"
         style={{ backgroundImage: `url(${game.background_image})`, opacity: themeStyles.opacity }}
@@ -256,22 +257,6 @@ function GameDetailContent() {
           >
             ➔ بازگشت به صفحه اصلی آرشیو
           </Link>
-
-          {/* اسلایدر لایو اختصاصی وضعیت روز و شب هماهنگ با صفحه اصلی سایت */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={toggleTheme}
-              className="w-16 h-8 rounded-full p-1 transition-colors duration-300 relative focus:outline-none shadow-inner"
-              style={{ backgroundColor: darkMode ? '#334155' : '#cbd5e1' }}
-            >
-              <div
-                className="w-6 h-6 rounded-full shadow-md flex items-center justify-center text-xs transition-transform duration-300 transform select-none bg-white"
-                style={{ transform: darkMode ? 'translateX(-32px)' : 'translateX(0px)' }}
-              >
-                {darkMode ? '🌙' : '☀️'}
-              </div>
-            </button>
-          </div>
         </header>
 
         <div 
@@ -316,27 +301,59 @@ function GameDetailContent() {
               )}
             </div>
 
-            {game.trailer_url && (
-              <div className="space-y-3">
-                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>🎬 ویدیو / تریلر بازی:</h3>
-                <div className="w-full rounded-2xl overflow-hidden bg-black shadow-lg" style={{ border: `1px solid ${themeStyles.border}` }}>
-                  <video src={game.trailer_url} controls preload="metadata" className="w-full h-auto max-h-[400px] outline-none" poster={getOptimizedUrl(game.background_image, 600)} />
+            {/* بخش کاملاً جدید و هوشمند ویدیوها و گیم‌پلی بازی از یوتیوب */}
+            {((game.youtube_videos && game.youtube_videos.length > 0) || game.trailer_url) && (
+              <div className="space-y-4">
+                <h3 className="text-sm font-black flex items-center gap-2" style={{ color: themeStyles.titleText }}>🎬 ویدیوها و گیم‌پلی بازی (یوتیوب):</h3>
+                <div className="space-y-4">
+                  {/* اگر آرایه‌ای از ویدیوهای یوتیوب در دیتابیس ست شده باشد */}
+                  {game.youtube_videos && game.youtube_videos.map((vidUrl: string, idx: number) => (
+                    <div key={idx} className="w-full rounded-2xl overflow-hidden bg-black shadow-lg aspect-video" style={{ border: `1px solid ${themeStyles.border}` }}>
+                      <iframe
+                        src={convertToEmbedUrl(vidUrl)}
+                        title={`${game.name} Video ${idx + 1}`}
+                        className="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  ))}
+                  
+                  {/* تریلر مستقیم قدیمی در صورت وجود */}
+                  {game.trailer_url && !game.youtube_videos?.includes(game.trailer_url) && (
+                    <div className="w-full rounded-2xl overflow-hidden bg-black shadow-lg" style={{ border: `1px solid ${themeStyles.border}` }}>
+                      {game.trailer_url.includes('youtube.com') || game.trailer_url.includes('youtu.be') ? (
+                        <div className="aspect-video w-full">
+                          <iframe
+                            src={convertToEmbedUrl(game.trailer_url)}
+                            title="Game Trailer"
+                            className="w-full h-full border-0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : (
+                        <video src={game.trailer_url} controls preload="metadata" className="w-full h-auto max-h-[400px] outline-none" poster={getOptimizedUrl(game.background_image, 600)} />
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             )}
 
+            {/* گالری اسکرین‌شات‌ها مجهز به سیستم گرید پویا بدون قفل روی ۶ عدد (پشتیبانی کامل تا ۱۰+ عکس) */}
             {game.gallery && game.gallery.length > 0 && (
               <div className="space-y-3">
-                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی:</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                  {game.gallery.map((imgUrl: string, idx: number) => (
+                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی (تا ۱۰ تصویر):</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                  {game.gallery.slice(0, 10).map((imgUrl: string, idx: number) => (
                     <div 
                       key={idx} 
                       onClick={() => setActivePhotoIndex(idx)}
-                      className="cursor-pointer rounded-xl overflow-hidden hover:border-purple-500 transition shadow-md"
+                      className="cursor-pointer rounded-xl overflow-hidden hover:border-purple-500 hover:scale-[1.02] transition duration-300 shadow-md aspect-video"
                       style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
                     >
-                      <img src={getOptimizedUrl(imgUrl, 300)} alt={`screenshot-${idx}`} className="w-full h-24 object-cover" />
+                      <img src={getOptimizedUrl(imgUrl, 400)} alt={`screenshot-${idx}`} className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>
@@ -360,7 +377,7 @@ function GameDetailContent() {
                 </div>
                 <div 
                   className="p-4 rounded-xl space-y-3 shadow-sm"
-                  style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.5)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                  style={{ backgroundColor: darkMode ? 'rgba(22, 163, 74, 0.15)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
                 >
                   <div className="text-xs font-bold text-green-600 pb-2 flex items-center justify-between" style={{ borderBottom: `1px solid ${darkMode ? '#0f172a' : '#f1f5f9'}` }}>
                     <span>✅ سیستم پیشنهادی آرشیو</span>
@@ -376,7 +393,7 @@ function GameDetailContent() {
 
           <div className="space-y-6">
             <div 
-              className="p-5 rounded-2xl space-y-4 text-sm shadow-sm"
+              className="p-5 rounded-2xl space-y-4 text-sm shadow-sm relative z-20"
               style={{ backgroundColor: themeStyles.sidebarBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
             >
               <h3 className="font-black text-base mb-2 pb-2" style={{ color: themeStyles.titleText, borderBottom: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}` }}>📊 اطلاعات عمومی</h3>
@@ -407,14 +424,11 @@ function GameDetailContent() {
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-2 md:p-6 select-none" 
           onClick={() => setActivePhotoIndex(null)}
-          onTouchStart={() => setActivePhotoIndex(null)}
         >
           <div 
             className="w-full max-w-[92vw] h-[75vh] max-h-[75vh] relative flex items-center justify-center" 
             onClick={(e) => e.stopPropagation()}
-            onTouchStart={(e) => e.stopPropagation()}
             onTouchMove={handleTouchMove}
-            onMouseDown={(e) => e.stopPropagation()}
           >
             <div
               className="w-full h-full flex items-center justify-center"
@@ -433,36 +447,32 @@ function GameDetailContent() {
           <div 
             className="flex items-center gap-5 mt-6 bg-slate-900/90 px-6 py-3.5 rounded-2xl border border-slate-800 backdrop-blur-md shadow-2xl" 
             onClick={(e) => e.stopPropagation()}
-            onTouchStart={(e) => e.stopPropagation()}
           >
             <button 
               onClick={() => setActivePhotoIndex(activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1)}
-              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90 select-none"
-              title="تصویر بعدی"
+              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
             >
               ➔
             </button>
 
             <span className="text-sm font-mono font-bold text-slate-300 bg-slate-950 px-3.5 py-1.5 rounded-lg border border-slate-900 min-w-[60px] text-center">
-              {activePhotoIndex + 1} / {game.gallery.length}
+              {activePhotoIndex + 1} / {Math.min(game.gallery.length, 10)}
             </span>
 
             <button 
               onClick={() => setActivePhotoIndex(null)} 
-              className="px-6 h-12 bg-red-600 hover:bg-red-500 text-white rounded-xl text-sm font-extrabold transition border border-red-700 active:scale-90 flex items-center justify-center gap-1 select-none"
+              className="px-6 h-12 bg-red-600 hover:bg-red-500 text-white rounded-xl text-sm font-extrabold transition border border-red-700 active:scale-90"
             >
               بستن ×
             </button>
 
             <button 
               onClick={() => setActivePhotoIndex(activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1)}
-              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90 select-none"
-              title="تصویر قبلی"
+              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
             >
               ←
             </button>
           </div>
-          <p className="text-[11px] text-slate-500 mt-3 block sm:hidden">💡 روی صفحه موبایل می‌توانید با کشیدن انگشت (Swipe) نیز بین عکس‌ها جابجا شوید.</p>
         </div>
       )}
     </div>
