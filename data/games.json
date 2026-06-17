@@ -751,38 +751,5 @@
     },
     "description_en": "What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived. Pre-purchase the next World of Warcraft expansion now and be ready to discover what awaits in this world between worlds.",
     "description_fa": "چه چیزی فراتر از دنیایی که می شناسید نهفته است؟ سرزمین سایه ها، محل استراحت هر روح فانی – فضیلت یا پست – که تا به حال زندگی کرده است. اکنون نسخه بعدی World of Warcraft را پیش خرید کنید و آماده باشید تا آنچه را که در این جهان بین دنیاها در انتظار شماست کشف کنید."
-  },
-  {
-    "id": 840768,
-    "name": "World of Warcraft: Dragonflight",
-    "background_image": "https://media.rawg.io/media/games/2e6/2e648d2839020bc467a46ad9e218c859.jpg",
-    "rating": 3.27,
-    "released": "2022-11-28",
-    "genres": [
-      {
-        "id": 59,
-        "name": "Massively Multiplayer",
-        "slug": "massively-multiplayer"
-      }
-    ],
-    "esrb_rating": "---",
-    "playtime": 0,
-    "developers": "---",
-    "steam_link": "https://store.steampowered.com/search/?term=World%20of%20Warcraft%3A%20Dragonflight",
-    "trailer_url": "",
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/55c/55ce1ee13f9a43d253f51024bea97f38.jpeg",
-      "https://media.rawg.io/media/screenshots/7e9/7e9df3f68cb3c8164ac344b3ecc14c48.jpg",
-      "https://media.rawg.io/media/screenshots/f0a/f0a519db70a79c02fccbfb00bdda40b0.jpg",
-      "https://media.rawg.io/media/screenshots/f58/f583a9be7bf19c5687c11680fa1dc741.jpg",
-      "https://media.rawg.io/media/screenshots/26e/26eefae375ae485e46d4aa85fa8d14a7.jpg",
-      "https://media.rawg.io/media/screenshots/c76/c76fddbdeec4c9621fe80d08cc4587c6.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Following a period of calamity for the world of Azeroth, long-forgotten forces are stirring in the mythical Dragon Isles, the ancestral home of dragonkind. World of Warcraft®: Dragonflight™, the ninth expansion for Blizzard Entertainment’s acclaimed massively multiplayer online role-playing game, sends players to this fabled land and ushers in a new era of high-fantasy adventure. \n\nAs long-dormant forces begin to stir in their sacred homeland, the dragons of Azeroth—at times both allies and adversaries of the mortal races—call on the heroes of the Alliance and Horde to help reckon with the looming threats and ancient mysteries on the verge of awakening.",
-    "description_fa": "پس از یک دوره فاجعه برای دنیای آزروث، نیروهایی که مدت هاست فراموش شده اند در جزایر اسطوره ای اژدها، خانه اجدادی اژدها، در حال حرکت هستند. World of Warcraft®: Dragonflight™، نهمین بسط برای بازی نقش‌آفرینی آنلاین و چندنفره تحسین‌شده Blizzard Entertainment، بازیکنان را به این سرزمین افسانه‌ای می‌فرستد و دوره جدیدی از ماجراجویی‌های فانتزی را آغاز می‌کند. \n\nهمانطور که نیروهای مدت طولانی در میهن مقدس خود به حرکت در می آیند، اژدهایان آزروت - گاه متحدان و دشمنان نژادهای فانی - از قهرمانان اتحاد و هورد می خواهند تا با تهدیدات و اسرار باستانی که در آستانه بیداری هستند، کمک کنند."
   }
 ]
