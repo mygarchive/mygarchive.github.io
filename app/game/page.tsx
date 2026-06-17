@@ -4,6 +4,8 @@
 import { useEffect, useState, Suspense, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+// 🛠️ لایه محافظتی لوکال برای هماهنگی کامل با فرآیند بیلد و کش‌شکنی صفحه اصلی
+import localGamesData from '../data/games.json';
 
 function GameDetailContent() {
   const searchParams = useSearchParams();
@@ -34,18 +36,29 @@ function GameDetailContent() {
   // مجهز به سیستم کش‌شکن جهت بروزرسانی همزمان دیتابیس در همان لحظه کامپایل گیت‌هاب
   const fetchSmartData = async () => {
     const cacheBuster = Date.now();
+    
+    // 🛠️ رفع ارور Mixed Content: تغییر تمام پروتکل‌های CDN به https مستقیم و امن
+    try {
+      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
+        cache: 'no-store'
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("منبع اول (گیت‌هاب خام) ناموفق بود، سوئیچ به CDN دوم...", e);
+    }
+
     try {
       const res = await fetch(`https://cdn.statically.io/gh/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("CDN اول ناموفق بود، سوئیچ به CDN دوم...", e);
+      console.warn("CDN استاتیکالی ناموفق بود، سوئیچ به CDN سوم...", e);
     }
 
     try {
       const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("CDN دوم ناموفق بود، سوئیچ به گیت‌هاب مستقیم...", e);
+      console.warn("CDN جی‌اس‌دلیور ناموفق بود، سوئیچ به گیت‌هاب API...", e);
     }
 
     const directRes = await fetch(`https://api.github.com/repos/mygarchive/mygarchive.github.io/contents/data/games.json?v=${cacheBuster}`);
@@ -56,6 +69,12 @@ function GameDetailContent() {
         return JSON.parse(content);
       }
     }
+    
+    // لایه نهایی پایداری: اگر هیچ‌کدام از شبکه لود نشدند، از دیتای لوکال زمان بیلد استفاده کن
+    if (Array.isArray(localGamesData)) {
+      return localGamesData;
+    }
+    
     throw new Error("دیتابیس در دسترس نیست.");
   };
 
@@ -65,11 +84,21 @@ function GameDetailContent() {
     fetchSmartData()
       .then((data = []) => {
         const found = data.find((g: any) => g.id.toString() === gameId);
-        setGame(found);
+        // اگر در دیتای لایو شبکه نبود، برای اطمینان بیشتر مجدداً دیتای لوکال بیلد شده را چک کن
+        if (!found && Array.isArray(localGamesData)) {
+          const fallbackFound = localGamesData.find((g: any) => g.id.toString() === gameId);
+          setGame(fallbackFound || null);
+        } else {
+          setGame(found || null);
+        }
         setLoading(false);
       })
       .catch((err) => {
-        console.error(err);
+        console.error("خطا در سیستم دریافت هوشمند اطلاعات:", err);
+        if (Array.isArray(localGamesData)) {
+          const found = localGamesData.find((g: any) => g.id.toString() === gameId);
+          setGame(found || null);
+        }
         setLoading(false);
       });
   }, [gameId]);
@@ -191,10 +220,14 @@ function GameDetailContent() {
   if (!game) {
     return (
       <div 
-        className="min-h-screen flex items-center justify-center text-sm transition-colors duration-300"
+        className="min-h-screen flex flex-col items-center justify-center gap-4 transition-colors duration-300"
         style={{ backgroundColor: themeStyles.bg, color: '#f87171' }}
+        dir="rtl"
       >
-        بازی مورد نظر در آرشیو یافت نشد.
+        <div className="text-3xl">⚠️</div>
+        <h2 className="text-sm font-bold">بازی مورد نظر در آرشیو یافت نشد.</h2>
+        <p className="text-xs" style={{ color: themeStyles.subText }}>اگر بازی جدیداً اضافه شده، ممکن است دپلو گیت‌هاب چند لحظه زمان ببرد.</p>
+        <Link href="/" className="mt-2 text-xs bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-xl font-bold transition">بازگشت به صفحه اصلی آرشیو</Link>
       </div>
     );
   }
