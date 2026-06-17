@@ -13,7 +13,7 @@ export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
-  // لود اولیه تم از روی حافظه مرورگر
+  // لود اولیه وضعیت تم از حافظه مرورگر
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -25,7 +25,7 @@ export default function Home() {
     }
   }, []);
 
-  // تابع تغییر تم
+  // تابع تغییر تم و ذخیره آن برای کل صفحات
   const toggleTheme = () => {
     if (darkMode) {
       setDarkMode(false);
@@ -121,7 +121,16 @@ export default function Home() {
               تعداد بازی‌های موجود: <span className="text-2xl text-purple-600 dark:text-purple-400 font-extrabold">{games.length}</span> بازی
             </p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3">
+            {/* دکمه انتقال یافته روز و شب به بالای سایت قرینه با استایل درخواستی */}
+            <button
+              onClick={toggleTheme}
+              className="p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-xs font-bold shadow-sm transition hover:scale-105 active:scale-95 text-slate-800 dark:text-white flex items-center gap-1.5"
+              title={darkMode ? "فعال‌سازی حالت روز" : "فعال‌سازی حالت شب"}
+            >
+              {darkMode ? '☀️ حالت روز' : '🌙 حالت شب'}
+            </button>
+
             <a href="https://t.me/HF273" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 px-4 py-2 rounded-xl transition hover:bg-blue-200 dark:hover:bg-blue-900/30">
               ✈️ کانال تلگرام: HF273
             </a>
@@ -188,17 +197,8 @@ export default function Home() {
 
       </div>
 
-      {/* دکمه‌های شناور سمت راست (تغییر تم + بازگشت به بالا) */}
+      {/* دکمه شناور بازگشت به بالا بدون دکمه تم مکرر */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        {/* دکمه سوییچ شب و روز */}
-        <button
-          onClick={toggleTheme}
-          className="p-3.5 bg-white dark:bg-slate-900 text-slate-800 dark:text-yellow-400 rounded-full shadow-xl border border-slate-200 dark:border-slate-800 transition-all duration-300 transform hover:scale-110 active:scale-95 text-lg"
-          title={darkMode ? "فعال‌سازی حالت روز" : "فعال‌سازی حالت شب"}
-        >
-          {darkMode ? '☀️' : '🌙'}
-        </button>
-
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className={`p-3.5 bg-purple-600 hover:bg-purple-500 text-white rounded-full shadow-2xl border border-purple-500/30 transition-all duration-300 transform ${
