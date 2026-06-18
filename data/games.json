@@ -251,5 +251,45 @@
     },
     "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ حزب و سیستم همراهی ندارد.\r\n\r\n###بازی\r\nبازیکن V را از دید اول شخص کنترل می کند و از نمای سوم شخص فقط برای کات سین ها استفاده می شود. قهرمان می تواند با پای پیاده یا با استفاده از وسایل نقلیه مختلف در سراسر شهر سفر کند، به شیوه ای که برخی ناظران با سری GTA مقایسه می کنند. گزینه‌های زیادی برای سفارشی‌سازی کاراکتر وجود دارد، از جمله سه کلاس کاراکتر، و انواع تقویت‌کننده‌هایی که V می‌تواند برای افزایش توانایی‌های خود نصب کند."
+  },
+  {
+    "id": 573123,
+    "name": "Life is Strange: True Colors",
+    "background_image": "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg",
+    "rating": 3.79,
+    "released": "2021-09-10",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 11,
+    "developers": "Deck Nine",
+    "steam_link": "",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b79/b79e78e7ec97b7bfbe423ade108b7e7b.jpg",
+      "https://media.rawg.io/media/screenshots/fff/fffa428795765de2d116bf761433c963.jpg",
+      "https://media.rawg.io/media/screenshots/e67/e672f40189b14f273f71e1a57dccb4e9.jpg",
+      "https://media.rawg.io/media/screenshots/912/912fe706f0071afde939f41cd042d926.jpg",
+      "https://media.rawg.io/media/screenshots/9ad/9ad105b9d1b39509995f4126cc675027.jpg",
+      "https://media.rawg.io/media/screenshots/4e4/4e46791fe550f87ea2507502f14328d2.jpg",
+      "https://media.rawg.io/media/games/278/2784fe67065c5095411f0d4c85205143.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD Phenom II X4 965, 3.40 GHz / Intel Core i5-2300, 2.80 GHz\nMemory: 6 GB RAM\nGraphics: Radeon HD 7790, 2 GB / GeForce GTX 750Ti, 2 GB\nDirectX: Version 11\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: AMD FX-8350, 4.00 GHz / Intel Core i5-3470, 3.20 GHz\nMemory: 8 GB RAM\nGraphics: Radeon RX 590, 8 GB / GeForce GTX 1060, 6 GB\nDirectX: Version 11\nStorage: 30 GB available space"
+    },
+    "description_en": "A bold new era of the award-winning Life is Strange begins, with an all-new playable lead character and a thrilling mystery to solve!\r\nPre-order Life Is Strange: True Colors now to receive 4 additional in-game outfits for Alex.\r\nAlex Chen has long suppressed her 'curse': the supernatural ability to experience, absorb and manipulate the strong emotions of others, which she sees as blazing, colored auras.\r\nWhen her brother dies in a so-called accident, Alex must embrace her volatile power to find the truth – and uncover the dark secrets buried by a small town.\r\nTHE TRUTH WILL HURT\r\nDiscover the shocking secrets behind your brother’s death in an emotional roller-coaster of an adventure.\r\nFEEL EVERYTHING\r\nChange fate and change lives with the psychic power of Empathy.\r\nFORGE DEEP RELATIONSHIPS\r\nBuild trust with the townsfolk – and embrace friendship or romance with Ryan and Steph.\r\nA TRULY PERSONAL STORY\r\nMake tough decisions and choose your own future. Freely roam the streets, stores, and hidden spaces of Haven Springs and meet unforgettable characters.\r\nFIND YOUR VOICE\r\nAnd decide Alex's style, with up to 24 outfits in your wardrobe.\r\nEXCLUSIVE SOUNDTRACK\r\nNew tracks by mxmtoon and Novo Amor, and extensive licensed songs including Radiohead, Phoebe Bridgers, Gabrielle Aplin, and more.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک دوره جدید جسورانه از برنده جایزه Life is Strange آغاز می شود، با یک شخصیت اصلی قابل بازی کاملاً جدید و یک معمای هیجان انگیز برای حل!\r\nاکنون Life Is Strange: True Colors را پیش‌سفارش دهید تا 4 لباس درون بازی برای الکس دریافت کنید.\r\nالکس چن مدت‌هاست که «نفرین» خود را سرکوب کرده است: توانایی ماوراء طبیعی برای تجربه، جذب و دستکاری احساسات قوی دیگران، که به نظر او هاله‌های درخشان و رنگی است.\r\nوقتی برادرش در به اصطلاح تصادف می میرد، الکس باید قدرت فرار او را برای یافتن حقیقت در آغوش بگیرد - و اسرار تاریک مدفون شده توسط یک شهر کوچک را کشف کند.\r\nحقیقت صدمه خواهد زد\r\nاسرار تکان دهنده مرگ برادرتان را در یک ترن هوایی هیجانی از یک ماجراجویی کشف کنید.\r\nهمه چیز را احساس کنید\r\nبا نیروی روانی همدلی سرنوشت را تغییر دهید و زندگی را تغییر دهید.\r\nایجاد روابط عمیق\r\nبا مردم شهر اعتماد ایجاد کنید - و با رایان و استف دوستی یا عاشقانه را در آغوش بگیرید.\r\nیک داستان واقعاً شخصی\r\nتصمیمات سخت بگیرید و آینده خود را انتخاب کنید. آزادانه در خیابان ها، فروشگاه ها و فضاهای مخفی Haven Springs پرسه بزنید و با شخصیت های فراموش نشدنی ملاقات کنید.\r\nصدای خود را پیدا کنید\r\nو با حداکثر 24 لباس در کمد لباس خود، سبک الکس را تعیین کنید.\r\nموسیقی متن منحصر به فرد\r\nآهنگ‌های جدید mxmtoon و Novo Amor، و آهنگ‌های دارای مجوز گسترده از جمله Radiohead، Phoebe Bridgers، Gabrielle Aplin و غیره."
   }
 ]
