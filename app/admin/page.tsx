@@ -135,7 +135,7 @@ export default function AdminPanel() {
 
   const handleAddGame = async (game: any) => {
     setLoading(true);
-    setMessage({ text: 'در حال استخراج خودکار ویدیوها، تصاویر گالری و لینک‌های اختصاصی استیم...', isError: false });
+    setMessage({ text: 'در حال استخراج خودکار ویدیوها، تصاویر گالری و لینک اختصاصی استیم...', isError: false });
     
     try {
       const latestRepoState = await fetchMyGames(githubToken);
@@ -147,7 +147,6 @@ export default function AdminPanel() {
       const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
       const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
 
-      // دریافت اطلاعات به صورت موازی با مدیریت خطای انفرادی برای یوتیوب
       const [details, movieData, screenshots, youtubeData] = await Promise.all([
         fetchSmartRoute(detailsTarget, true),
         fetchSmartRoute(moviesTarget, true),
@@ -155,7 +154,7 @@ export default function AdminPanel() {
         fetchSmartRoute(youtubeTarget, true).catch(() => ({ results: [] }))
       ]);
       
-      // ترجمه متن و اضافه کردن لیبل مورد نظر شما
+      // اعمال ترجمه به همراه برچسب صریح برای بخش توضیحات فارسی بازی
       const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
       const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
       
@@ -189,7 +188,7 @@ export default function AdminPanel() {
       else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
       else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
-      // منطق کشف لینک مستقیم استیم
+      // 🔗 اصلاح بخش استیم: پیدا کردن لینک مستقیم و دقیق؛ در غیر این صورت خالی می‌ماند تا دکمه مخفی شود.
       let steamUrl = '';
       if (details.stores && details.stores.length > 0) {
         const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
@@ -203,13 +202,8 @@ export default function AdminPanel() {
         }
       }
 
-      if (!steamUrl && game.name) {
-        steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
-      }
-
-      // 🎬 جمع‌آوری پیشرفته و دقیق لینک‌های ویدیو یوتیوب
+      // 🎬 جمع‌آوری پیشرفته ویدیوهای یوتیوب
       const autoYoutubeVideos: string[] = [];
-      
       if (youtubeData && youtubeData.results && youtubeData.results.length > 0) {
         youtubeData.results.slice(0, 5).forEach((vid: any) => {
           if (vid.external_id) {
@@ -223,13 +217,17 @@ export default function AdminPanel() {
         autoYoutubeVideos.unshift(mainTrailer);
       }
 
-      // 📸 حل مشکل ۶ عکس: گرفتن تصاویر مستقیماً از انپویند اختصاصی اسکرین‌شات‌ها تا سقف ۱۰ عدد
+      // 📸 تجمیع و ترکیب آلبوم تصاویر برای اطمینان از رسیدن به سقف ۱۰ تصویر کامل
       let finalGallery: string[] = [];
       if (screenshots && screenshots.results && screenshots.results.length > 0) {
-        finalGallery = screenshots.results.map((s: any) => s.image).slice(0, 10);
-      } else if (game.short_screenshots && game.short_screenshots.length > 0) {
-        finalGallery = game.short_screenshots.map((s: any) => s.image).slice(0, 10);
+        finalGallery = screenshots.results.map((s: any) => s.image);
       }
+      if (game.short_screenshots && game.short_screenshots.length > 0) {
+        game.short_screenshots.forEach((s: any) => {
+          if (!finalGallery.includes(s.image)) finalGallery.push(s.image);
+        });
+      }
+      finalGallery = finalGallery.slice(0, 10);
 
       const newGameObj = {
         id: game.id,
@@ -241,10 +239,10 @@ export default function AdminPanel() {
         esrb_rating: finalAge,
         playtime: details.playtime || 0,
         developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
-        steam_link: steamUrl,
+        steam_link: steamUrl, // اگر بازی در استیم نباشد مقدار آن "" خواهد بود
         trailer_url: mainTrailer,
         youtube_videos: autoYoutubeVideos, 
-        gallery: finalGallery, // هدر دیتابیس دقیقاً با ۱۰ عکس پر می‌شود
+        gallery: finalGallery, 
         requirements: { 
           minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
           recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
@@ -266,7 +264,7 @@ export default function AdminPanel() {
         const resData = await res.json();
         setFileSha(resData.content.sha);
         setMyGames(cleanGamesList);
-        setMessage({ text: `بازی "${game.name}" با موفقیت همراه با ویدیوها و گالری کامل تصاویر بازی (تا ۱۰ تصویر) به صورت کاملاً خودکار ذخیره شد.`, isError: false });
+        setMessage({ text: `بازی "${game.name}" با موفقیت ذخیره شد.`, isError: false });
       } else { 
         setMessage({ text: 'خطا در ثبت اطلاعات روی گیت‌هاب. لطفاً صفحه را رفرش کنید.', isError: true }); 
       }
