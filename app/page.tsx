@@ -3,8 +3,6 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-// 🛠️ کلید حل مشکل: ایمپورت مستقیم فایل دیتابیس محلی پروژه
-// این کار باعث می‌شود نکست‌جی‌اس در هر بیلد اجباراً آخرین تغییرات فایل را اعمال کند
 import localGamesData from '../data/games.json';
 
 export default function Home() {
@@ -33,15 +31,11 @@ export default function Home() {
     localStorage.setItem('theme', newMode ? 'dark' : 'light');
   };
 
-  // مجهز به لایه ران‌تایم بک‌آپی هوشمند
   const initData = async () => {
     try {
-      // گام اول: لود آنی از فایل لوکال بیلد شده (فوق‌العاده سریع و دقیق)
       let data: any[] = Array.isArray(localGamesData) ? localGamesData : [];
-
-      // گام دوم: برای اطمینان ۱۰۰٪ در محیط زنده، یک فچ زنده با کش‌شکن سنگین هم از گیت‌هاب می‌زنیم
-      // تا اگر کاربر سایت را رفرش نکرد و دپلو هم زمان برد، آخرین دیتا را از روی سرور گیت‌هاب بگیرد
       const cacheBuster = Date.now();
+      
       const directRes = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
         cache: 'no-store'
       });
@@ -66,7 +60,6 @@ export default function Home() {
       setLoading(false);
     } catch (err) {
       console.error("خطا در پردازش هوشمند دیتابیس بازی‌ها:", err);
-      // لایه محافظ پایداری: در صورت خطای شبکه، حتماً از همان دیتای لوکال استفاده کن
       if (Array.isArray(localGamesData)) {
         setGames(localGamesData);
         setFilteredGames(localGamesData);
@@ -77,7 +70,6 @@ export default function Home() {
 
   useEffect(() => {
     initData();
-
     const handleScroll = () => setShowScrollTop(window.scrollY > 400);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -129,7 +121,8 @@ export default function Home() {
     subText: darkMode ? '#94a3b8' : '#475569',
     cardBg: darkMode ? '#0f172a' : '#ffffff',
     border: darkMode ? '#1e293b' : '#e2e8f0',
-    inputBg: darkMode ? '#020617' : '#f1f5f9'
+    inputBg: darkMode ? '#020617' : '#f1f5f9',
+    footerBg: darkMode ? '#0f172a' : '#ffffff'
   };
 
   if (loading) {
@@ -145,11 +138,11 @@ export default function Home() {
 
   return (
     <div 
-      className="min-h-screen p-6 md:p-12 relative transition-colors duration-300" 
+      className="min-h-screen p-6 md:p-12 relative flex flex-col justify-between transition-colors duration-300" 
       dir="rtl"
       style={{ backgroundColor: themeStyles.bg, color: themeStyles.text }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto w-full flex-grow">
         
         <header 
           className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8 pb-6"
@@ -157,8 +150,8 @@ export default function Home() {
         >
           <div>
             <h1 className="text-2xl font-black" style={{ color: themeStyles.titleText }}>🎮 آرشیو شخصی بازی‌های من</h1>
-            <p className="text-xl font-black mt-3" style={{ color: themeStyles.text }}>
-              تعداد بازی‌های موجود: <span className="text-2xl text-purple-600 dark:text-purple-400 font-extrabold">{filteredGames.length}</span> بازی
+            <p className="text-sm font-medium mt-2" style={{ color: themeStyles.subText }}>
+              تعداد بازی‌های موجود: <span className="text-base text-purple-600 dark:text-purple-400 font-extrabold">{filteredGames.length}</span> بازی
             </p>
           </div>
           <div className="flex items-center gap-4">
@@ -181,15 +174,12 @@ export default function Home() {
               </button>
             </div>
 
-            <a 
-              href="https://t.me/HF273" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-xs px-4 py-2 rounded-xl transition font-bold"
-              style={{ backgroundColor: darkMode ? 'rgba(30, 41, 59, 0.5)' : '#dbeafe', border: `1px solid ${darkMode ? '#1e293b' : '#bfdbfe'}`, color: darkMode ? '#38bdf8' : '#2563eb' }}
+            <Link
+              href="/admin"
+              className="text-xs px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white transition font-bold shadow-lg shadow-purple-600/20"
             >
-              ✈️ کانال تلگرام
-            </a>
+              ⚙️ مدیریت آرشیو
+            </Link>
           </div>
         </header>
 
@@ -244,13 +234,14 @@ export default function Home() {
         {filteredGames.length === 0 ? (
           <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          /* گرید هوشمند ۵ ستونه اختصاصی برای مانیتورهای بزرگ 2K */
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
             {filteredGames.map((game) => (
               <Link 
                 href={`/game?id=${game.id}`} 
                 key={game.id} 
                 className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm"
-                style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.7)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
               >
                 <div className="w-full h-44 overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
                   <img 
@@ -278,8 +269,44 @@ export default function Home() {
             ))}
           </div>
         )}
-
       </div>
+
+      {/* بخش پایینی سایت (Footer) همراه با متن حقوقی، امضا و شبکه‌های اجتماعی داینامیک */}
+      <footer 
+        className="mt-16 p-6 rounded-2xl border text-center space-y-4 max-w-7xl mx-auto w-full"
+        style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
+      >
+        <p className="text-xs leading-6" style={{ color: themeStyles.subText }}>
+          ⚖️ <span className="font-bold">سلب مسئولیت حقوقی:</span> تمامی محتوا، تصاویر و اطلاعات درج شده در این آرشیو صرفاً جهت استفاده شخصی، مستندسازی اطلاعات بازی‌ها و اهداف آموزشی پیاده‌سازی شده است و تمامی حقوق مادی و معنوی بازی‌ها متعلق به سازندگان و ناشران اصلی آن‌ها می‌باشد.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-3 text-xs border-t" style={{ borderColor: darkMode ? '#020617' : '#f1f5f9' }}>
+          <div className="flex items-center gap-3">
+            <a 
+              href="https://t.me/HF273" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-1.5 hover:text-blue-500 transition font-bold"
+            >
+              <svg className="w-4 h-4 fill-current text-sky-400" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1 .22-1.62.15-.15 2.7-2.48 2.75-2.7.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.25-.02-.11.02-1.83 1.16-5.16 3.42-.49.34-.93.51-1.33.5-.44-.01-1.3-.25-1.93-.46-.78-.25-1.4-.39-1.35-.83.03-.23.35-.47.96-.71 3.76-1.64 6.27-2.72 7.54-3.25 3.59-1.48 4.34-1.74 4.83-1.75.11 0 .35.03.5.16.13.11.17.26.18.37z"/>
+              </svg>
+              کانال تلگرام
+            </a>
+            <a 
+              href="https://bale.ai/invite/HF273" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-1.5 hover:text-green-600 transition font-bold"
+            >
+              <span className="w-4 h-4 rounded-full bg-green-500 text-white flex items-center justify-center font-mono text-[9px]">B</span>
+              پیام‌رسان بله
+            </a>
+          </div>
+          <div className="font-mono text-[11px]" style={{ color: themeStyles.subText }}>
+            توسعه‌یافته با 💜 و هوش مصنوعی <span className="text-purple-500 font-bold">Gemini</span>
+          </div>
+        </div>
+      </footer>
 
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <button
