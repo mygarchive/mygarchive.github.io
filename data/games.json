@@ -445,5 +445,47 @@
     },
     "description_en": "The award winning Life is Strange series continues with a long-awaited sequel from DONTNOD Entertainment.\r\n\r\nTwo brothers Sean and Daniel Diaz, 16 and 9, are forced to run away from home after a tragic incident in Seattle. In fear of the police, Sean & Daniel head to Mexico while attempting to conceal a sudden and mysterious supernatural power.\r\n\r\nLife on the road is tough and now totally responsible for his much younger brother, Sean begins to realise that his decisions will impact their lives forever…\r\n\r\nEpisode 1 will be available on September 27th 2018.  Episodes 2-5 will be available at later dates.  \r\n\r\nComplete Season includes Episode 1 and the Episode 2-5 bundle. Episodes 2-5 available upon release.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
+  },
+  {
+    "id": 10213,
+    "name": "Dota 2",
+    "background_image": "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg",
+    "rating": 3.07,
+    "released": "2013-07-09",
+    "genres": [
+      {
+        "id": 59,
+        "name": "Massively Multiplayer",
+        "slug": "massively-multiplayer"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 14,
+    "developers": "Valve Software",
+    "steam_link": "",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256692017/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256692017/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/cef/cefd0f45c88be2d6e2ff7eed94c16cf3.jpg",
+      "https://media.rawg.io/media/screenshots/e2a/e2a1a6c8b07bcdb91d7c6050b16854c5.jpg",
+      "https://media.rawg.io/media/screenshots/55e/55e2c2ff16229eef87cfd8728ca537ac.jpg",
+      "https://media.rawg.io/media/screenshots/601/601ceb08d04da42f4de5d8b9016f31a6.jpg",
+      "https://media.rawg.io/media/screenshots/f02/f02a389dafd748b801cb4ff971a868af.jpg",
+      "https://media.rawg.io/media/screenshots/da6/da6e4cba4e5787674d0e6877d1fc426a.jpg",
+      "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or newer\nProcessor: Dual core from Intel or AMD at 2.8 GHz\nMemory: 4 GB RAM\nGraphics: nVidia GeForce 8600/9600GT, ATI/AMD Radeon HD2600/3600\nDirectX: Version 9.0c\nNetwork: Broadband Internet connection\nStorage: 15 GB available space\nSound Card: DirectX Compatible",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "What used to be an unofficial modded map for the Warcraft 3, ended up being the most budgeted cybersport discipline, gathering millions of people to watch annual international championships.\nMOBA genre started with the DOTA, Defense of the Ancients, which can be efficiently described as 5 vs 5 top-down action strategy game, during which players are tasked to destroy the enemy core while protecting their own.\nPlayers can pick out of the roster of 112 heroes and battle on the single map while taking advantage of field vision, resources and item build that can either make heroes stronger or disable the enemy. DOTA 2 is still active, and receives updates weekly, reshaping metas and refreshing game balance, if by any chance some heroes became unreasonably strong. Each hero has not only a unique set of abilities but is fully customizable, through getting items for heroes after matches of through the trade. Not only heroes but terrain, couriers, that deliver items for you and even match announcers, that can be voiced by heroes, professional casters of just memorable characters from other forms of media.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nچیزی که قبلاً یک نقشه اصلاح‌شده غیررسمی برای Warcraft 3 بود، در نهایت به بودجه‌ترین رشته ورزشی سایبری تبدیل شد و میلیون‌ها نفر را برای تماشای مسابقات قهرمانی بین‌المللی سالانه گرد هم آورد.\nژانر MOBA با DOTA، Defense of the Ancients شروع شد، که می‌توان آن را به‌عنوان بازی استراتژی اکشن 5 در مقابل 5 از بالا به پایین توصیف کرد، که در طی آن بازیکنان وظیفه دارند تا هسته دشمن را نابود کنند و در عین حال از هسته خود محافظت کنند.\nبازیکنان می توانند از فهرست 112 قهرمان انتخاب کنند و روی نقشه واحد بجنگند و در عین حال از دید میدانی، منابع و ساخت آیتم استفاده کنند که می تواند قهرمانان را قوی تر کند یا دشمن را از کار بیاندازد. DOTA 2 هنوز فعال است و هر هفته به‌روزرسانی‌ها را دریافت می‌کند، متاها را تغییر می‌دهد و تعادل بازی را تازه‌سازی می‌کند، اگر به‌طور تصادفی برخی از قهرمانان به‌طور غیرمنطقی قوی شوند. هر قهرمان نه تنها مجموعه‌ای از توانایی‌های منحصربه‌فرد دارد، بلکه کاملاً قابل تنظیم است، از طریق گرفتن آیتم‌ها برای قهرمانان پس از مسابقات از طریق تجارت. نه تنها قهرمان‌ها، بلکه زمین، پیک‌هایی که آیتم‌هایی را برای شما تحویل می‌دهند و حتی گویندگان مسابقه را می‌دهند، که می‌توانند توسط قهرمانان، بازیگران حرفه‌ای شخصیت‌های به یاد ماندنی از دیگر اشکال رسانه‌ها صداپیشگی کنند."
   }
 ]
