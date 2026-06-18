@@ -142,11 +142,10 @@ function GameDetailContent() {
     }
   };
 
-  // الگوریتم پیشرفته استخراج شناسه بازی استیم جهت هدایت مستقیم به صفحه اختصاصی گیم به جای صفحه اصلی استیم
-  const getSmartSteamLink = (steamLink: string, fallbackName: string) => {
-    if (!steamLink || steamLink === '#') {
-      if (fallbackName) return `https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
-      return 'https://store.steampowered.com';
+  // الگوریتم اصلاح شده استخراج لینک مستقیم استیم؛ اگر بازی در استیم نباشد، مقدار null برمی‌گرداند تا دکمه مخفی شود.
+  const getSmartSteamLink = (steamLink: string) => {
+    if (!steamLink || steamLink === '#' || steamLink.includes('search/?term=')) {
+      return null;
     }
 
     const idMatch = steamLink.match(/(?:app\/|term=|check\/app\/)(\d+)/) || steamLink.match(/\/(\d+)\/?/);
@@ -156,21 +155,11 @@ function GameDetailContent() {
       return `https://store.steampowered.com/app/${appId}`;
     }
 
-    if (steamLink.includes('term=')) {
-      const urlParams = new URLSearchParams(steamLink.split('?')[1]);
-      const term = urlParams.get('term');
-      if (term) {
-        const innerId = term.match(/(\d+)/);
-        if (innerId) return `https://store.steampowered.com/app/${innerId[1]}`;
-        return `https://store.steampowered.com/search/?term=${encodeURIComponent(term)}`;
-      }
-    }
-
-    if (steamLink.startsWith('http')) {
+    if (steamLink.startsWith('http') && !steamLink.includes('search')) {
       return steamLink;
     }
 
-    return `https://store.steampowered.com/search/?term=${encodeURIComponent(fallbackName)}`;
+    return null;
   };
 
   // تبدیل آدرس‌های استاندارد ویدیوهای یوتیوب به فرمت تعبیه‌شده (Embed) برای پخش داخل آیفریم سایت
@@ -233,6 +222,9 @@ function GameDetailContent() {
       </div>
     );
   }
+
+  // بررسی وضعیت لینک استیم برای پنهان‌سازی دکمه در صورت عدم وجود بازی روی پلتفرم استیم
+  const validSteamUrl = getSmartSteamLink(game.steam_link);
 
   return (
     <div 
@@ -301,7 +293,7 @@ function GameDetailContent() {
               )}
             </div>
 
-            {/* بخش کاملاً جدید و هوشمند ویدیوها و گیم‌پلی بازی از یوتیوب */}
+            {/* بخش ویدیوها و گیم‌پلی بازی از یوتیوب */}
             {((game.youtube_videos && game.youtube_videos.length > 0) || game.trailer_url) && (
               <div className="space-y-4">
                 <h3 className="text-sm font-black flex items-center gap-2" style={{ color: themeStyles.titleText }}>🎬 ویدیوها و گیم‌پلی بازی (یوتیوب):</h3>
@@ -341,10 +333,10 @@ function GameDetailContent() {
               </div>
             )}
 
-            {/* گالری اسکرین‌شات‌ها مجهز به سیستم گرید پویا بدون قفل روی ۶ عدد (پشتیبانی کامل تا ۱۰+ عکس) */}
+            {/* گالری اسکرین‌شات‌ها (اصلاح شده: عنوان ساده و شکیل بدون متن داخل پرانتز) */}
             {game.gallery && game.gallery.length > 0 && (
               <div className="space-y-3">
-                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی (تا ۱۰ تصویر):</h3>
+                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی:</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                   {game.gallery.slice(0, 10).map((imgUrl: string, idx: number) => (
                     <div 
@@ -403,10 +395,11 @@ function GameDetailContent() {
               <p>🏢 سازنده/ناشر: <span style={{ color: themeStyles.titleText }} dir="ltr">{game.developers || '---'}</span></p>
               <p>⏱️ زمان اتمام: <span className="text-green-500 font-bold">{game.playtime || '---'} ساعت</span></p>
               
-              {game.steam_link && (
+              {/* بخش کاملاً اصلاح شده استیم: اگر لینک مستقیم وجود نداشته باشد، کل این ساختار مخفی می‌گردد */}
+              {validSteamUrl && (
                 <div className="pt-2">
                   <a 
-                    href={getSmartSteamLink(game.steam_link, game.name)} 
+                    href={validSteamUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition shadow-lg shadow-purple-900/10"
