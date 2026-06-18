@@ -17,7 +17,6 @@ function GameDetailContent() {
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
-  // هماهنگی ۱۰۰٪ هوشمند با تم انتخاب شده در صفحه اصلی سایت بدون نیاز به اسلایدر مجزا
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -142,7 +141,6 @@ function GameDetailContent() {
     }
   };
 
-  // الگوریتم اصلاح شده استخراج لینک مستقیم استیم؛ اگر بازی در استیم نباشد، مقدار null برمی‌گرداند تا دکمه مخفی شود.
   const getSmartSteamLink = (steamLink: string) => {
     if (!steamLink || steamLink === '#' || steamLink.includes('search/?term=')) {
       return null;
@@ -162,7 +160,6 @@ function GameDetailContent() {
     return null;
   };
 
-  // تبدیل آدرس‌های استاندارد ویدیوهای یوتیوب به فرمت تعبیه‌شده (Embed) برای پخش داخل آیفریم سایت
   const convertToEmbedUrl = (url: string) => {
     if (!url) return '';
     if (url.includes('youtube.com/embed/')) return url;
@@ -195,40 +192,15 @@ function GameDetailContent() {
     btnBg: darkMode ? 'rgba(88, 28, 135, 0.3)' : '#f3e8ff',
     btnBorder: darkMode ? 'rgba(126, 34, 206, 0.4)' : '#e9d5ff',
     btnText: darkMode ? '#c084fc' : '#6b21a8',
-    opacity: darkMode ? '0.15' : '0.08'
+    opacity: darkMode ? '0.15' : '0.08',
+    footerBg: darkMode ? '#0f172a' : '#ffffff'
   };
 
-  if (loading) {
-    return (
-      <div 
-        className="min-h-screen flex items-center justify-center text-sm animate-pulse transition-colors duration-300"
-        style={{ backgroundColor: themeStyles.bg, color: themeStyles.subText }}
-      >
-        در حال دریافت سریع اطلاعات بازی...
-      </div>
-    );
-  }
-  
-  if (!game) {
-    return (
-      <div 
-        className="min-h-screen flex flex-col items-center justify-center gap-4 transition-colors duration-300"
-        style={{ backgroundColor: themeStyles.bg, color: '#f87171' }}
-        dir="rtl"
-      >
-        <div className="text-3xl">⚠️</div>
-        <h2 className="text-sm font-bold">بازی مورد نظر در آرشیو یافت نشد.</h2>
-        <Link href="/" className="mt-2 text-xs bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-xl font-bold transition">بازگشت به صفحه اصلی آرشیو</Link>
-      </div>
-    );
-  }
-
-  // بررسی وضعیت لینک استیم برای پنهان‌سازی دکمه در صورت عدم وجود بازی روی پلتفرم استیم
   const validSteamUrl = getSmartSteamLink(game.steam_link);
 
   return (
     <div 
-      className="min-h-screen p-6 md:p-12 relative overflow-hidden transition-colors duration-300" 
+      className="min-h-screen p-6 md:p-12 relative overflow-hidden flex flex-col justify-between transition-colors duration-300" 
       dir="rtl"
       style={{ backgroundColor: themeStyles.bg, color: themeStyles.text }}
     >
@@ -237,14 +209,14 @@ function GameDetailContent() {
         style={{ backgroundImage: `url(${game.background_image})`, opacity: themeStyles.opacity }}
       />
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-4xl mx-auto relative z-10 w-full flex-grow">
         <header 
           className="mb-6 flex justify-between items-center gap-4 pb-4"
           style={{ borderBottom: `1px solid ${themeStyles.border}` }}
         >
           <Link 
             href="/" 
-            className="inline-flex items-center gap-2 text-xs px-4 py-2 rounded-xl transition"
+            className="inline-flex items-center gap-2 text-xs px-4 py-2 rounded-xl transition font-bold"
             style={{ backgroundColor: themeStyles.btnBg, border: `1px solid ${themeStyles.btnBorder}`, color: themeStyles.btnText }}
           >
             ➔ بازگشت به صفحه اصلی آرشیو
@@ -293,12 +265,10 @@ function GameDetailContent() {
               )}
             </div>
 
-            {/* بخش ویدیوها و گیم‌پلی بازی از یوتیوب */}
             {((game.youtube_videos && game.youtube_videos.length > 0) || game.trailer_url) && (
               <div className="space-y-4">
                 <h3 className="text-sm font-black flex items-center gap-2" style={{ color: themeStyles.titleText }}>🎬 ویدیوها و گیم‌پلی بازی (یوتیوب):</h3>
                 <div className="space-y-4">
-                  {/* اگر آرایه‌ای از ویدیوهای یوتیوب در دیتابیس ست شده باشد */}
                   {game.youtube_videos && game.youtube_videos.map((vidUrl: string, idx: number) => (
                     <div key={idx} className="w-full rounded-2xl overflow-hidden bg-black shadow-lg aspect-video" style={{ border: `1px solid ${themeStyles.border}` }}>
                       <iframe
@@ -311,7 +281,6 @@ function GameDetailContent() {
                     </div>
                   ))}
                   
-                  {/* تریلر مستقیم قدیمی در صورت وجود */}
                   {game.trailer_url && !game.youtube_videos?.includes(game.trailer_url) && (
                     <div className="w-full rounded-2xl overflow-hidden bg-black shadow-lg" style={{ border: `1px solid ${themeStyles.border}` }}>
                       {game.trailer_url.includes('youtube.com') || game.trailer_url.includes('youtu.be') ? (
@@ -333,7 +302,6 @@ function GameDetailContent() {
               </div>
             )}
 
-            {/* گالری اسکرین‌شات‌ها (اصلاح شده: عنوان ساده و شکیل بدون متن داخل پرانتز) */}
             {game.gallery && game.gallery.length > 0 && (
               <div className="space-y-3">
                 <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی:</h3>
@@ -369,7 +337,7 @@ function GameDetailContent() {
                 </div>
                 <div 
                   className="p-4 rounded-xl space-y-3 shadow-sm"
-                  style={{ backgroundColor: darkMode ? 'rgba(22, 163, 74, 0.15)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                  style={{ backgroundColor: darkMode ? 'rgba(22, 163, 74, 0.05)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
                 >
                   <div className="text-xs font-bold text-green-600 pb-2 flex items-center justify-between" style={{ borderBottom: `1px solid ${darkMode ? '#0f172a' : '#f1f5f9'}` }}>
                     <span>✅ سیستم پیشنهادی آرشیو</span>
@@ -395,7 +363,6 @@ function GameDetailContent() {
               <p>🏢 سازنده/ناشر: <span style={{ color: themeStyles.titleText }} dir="ltr">{game.developers || '---'}</span></p>
               <p>⏱️ زمان اتمام: <span className="text-green-500 font-bold">{game.playtime || '---'} ساعت</span></p>
               
-              {/* بخش کاملاً اصلاح شده استیم: اگر لینک مستقیم وجود نداشته باشد، کل این ساختار مخفی می‌گردد */}
               {validSteamUrl && (
                 <div className="pt-2">
                   <a 
@@ -412,6 +379,30 @@ function GameDetailContent() {
           </div>
         </div>
       </div>
+
+      <footer 
+        className="mt-16 p-6 rounded-2xl border text-center space-y-4 max-w-4xl mx-auto w-full relative z-10"
+        style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
+      >
+        <p className="text-xs leading-6" style={{ color: themeStyles.subText }}>
+          ⚖️ <span className="font-bold">سلب مسئولیت حقوقی:</span> تمامی محتوا، تصاویر و اطلاعات درج شده در این آرشیو صرفاً جهت استفاده شخصی، مستندسازی اطلاعات بازی‌ها و اهداف آموزشی پیاده‌سازی شده است و تمامی حقوق مادی و معنوی بازی‌ها متعلق به سازندگان و ناشران اصلی آن‌ها می‌باشد.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-3 text-xs border-t" style={{ borderColor: darkMode ? '#020617' : '#f1f5f9' }}>
+          <div className="flex items-center gap-3">
+            <a href="https://t.me/HF273" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-blue-500 transition font-bold">
+              <svg className="w-4 h-4 fill-current text-sky-400" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1 .22-1.62.15-.15 2.7-2.48 2.75-2.7.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.25-.02-.11.02-1.83 1.16-5.16 3.42-.49.34-.93.51-1.33.5-.44-.01-1.3-.25-1.93-.46-.78-.25-1.4-.39-1.35-.83.03-.23.35-.47.96-.71 3.76-1.64 6.27-2.72 7.54-3.25 3.59-1.48 4.34-1.74 4.83-1.75.11 0 .35.03.5.16.13.11.17.26.18.37z"/></svg>
+              کانال تلگرام
+            </a>
+            <a href="https://bale.ai/invite/HF273" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-green-600 transition font-bold">
+              <span className="w-4 h-4 rounded-full bg-green-500 text-white flex items-center justify-center font-mono text-[9px]">B</span>
+              پیام‌رسان بله
+            </a>
+          </div>
+          <div className="font-mono text-[11px]" style={{ color: themeStyles.subText }}>
+            توسعه‌یافته با 💜 و هوش مصنوعی <span className="text-purple-500 font-bold">Gemini</span>
+          </div>
+        </div>
+      </footer>
 
       {activePhotoIndex !== null && game.gallery && (
         <div 
