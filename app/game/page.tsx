@@ -60,29 +60,29 @@ function GameDetailContent() {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (PhotoIndex === null || !game?.gallery) return;
+      if (activePhotoIndex === null || !game?.gallery) return;
 
       if (e.key === 'Escape') {
         setActivePhotoIndex(null);
       } else if (e.key === 'ArrowRight') {
-        const prevIndex = PhotoIndex === 0 ? game.gallery.length - 1 : PhotoIndex - 1;
+        const prevIndex = activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1;
         setActivePhotoIndex(prevIndex);
       } else if (e.key === 'ArrowLeft') {
-        const nextIndex = PhotoIndex === game.gallery.length - 1 ? 0 : PhotoIndex + 1;
+        const nextIndex = activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1;
         setActivePhotoIndex(nextIndex);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [PhotoIndex, game]);
+  }, [activePhotoIndex, game]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.changedTouches[0].clientX;
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    if (PhotoIndex !== null) {
+    if (activePhotoIndex !== null) {
       if (e.cancelable) e.preventDefault();
     }
   };
@@ -93,16 +93,16 @@ function GameDetailContent() {
   };
 
   const handleSwipe = () => {
-    if (PhotoIndex === null || !game?.gallery) return;
+    if (activePhotoIndex === null || !game?.gallery) return;
 
     const swipeDistance = touchStartX.current - touchEndX.current;
     const minSwipeDistance = 40;
 
     if (swipeDistance > minSwipeDistance) {
-      const nextIndex = PhotoIndex === game.gallery.length - 1 ? 0 : PhotoIndex + 1;
+      const nextIndex = activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1;
       setActivePhotoIndex(nextIndex);
     } else if (swipeDistance < -minSwipeDistance) {
-      const prevIndex = PhotoIndex === 0 ? game.gallery.length - 1 : PhotoIndex - 1;
+      const prevIndex = activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1;
       setActivePhotoIndex(prevIndex);
     }
   };
@@ -188,7 +188,6 @@ function GameDetailContent() {
 
       <div className="max-w-4xl mx-auto relative z-10 w-full flex-grow">
         
-        {/* هدر ساده صفحه اختصاصی بازی */}
         <header 
           className="mb-6 flex justify-between items-center gap-4 pb-4"
           style={{ borderBottom: `1px solid ${themeStyles.border}` }}
@@ -359,7 +358,6 @@ function GameDetailContent() {
         </div>
       </div>
 
-      {/* فوتر ساده صفحه اختصاصی بازی */}
       <footer 
         className="mt-16 p-6 rounded-2xl border text-center space-y-4 max-w-4xl mx-auto w-full relative z-10"
         style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
@@ -369,7 +367,7 @@ function GameDetailContent() {
         </p>
       </footer>
 
-      {PhotoIndex !== null && game.gallery && (
+      {activePhotoIndex !== null && game.gallery && (
         <div 
           className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-2 md:p-6 select-none" 
           onClick={() => setActivePhotoIndex(null)}
@@ -385,7 +383,7 @@ function GameDetailContent() {
               onTouchEnd={handleTouchEnd}
             >
               <img 
-                src={getOptimizedUrl(game.gallery[PhotoIndex], 1400)} 
+                src={getOptimizedUrl(game.gallery[activePhotoIndex], 1400)} 
                 alt="Expanded preview" 
                 className="w-full h-full object-contain rounded-xl shadow-2xl transition-all" 
                 draggable="false"
@@ -398,14 +396,14 @@ function GameDetailContent() {
             onClick={(e) => e.stopPropagation()}
           >
             <button 
-              onClick={() => setActivePhotoIndex(PhotoIndex === 0 ? game.gallery.length - 1 : PhotoIndex - 1)}
+              onClick={() => setActivePhotoIndex(activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1)}
               className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
             >
               ➔
             </button>
 
             <span className="text-sm font-mono font-bold text-slate-300 bg-slate-950 px-3.5 py-1.5 rounded-lg border border-slate-900 min-w-[60px] text-center">
-              {PhotoIndex + 1} / {Math.min(game.gallery.length, 10)}
+              {activePhotoIndex + 1} / {Math.min(game.gallery.length, 10)}
             </span>
 
             <button 
@@ -416,7 +414,7 @@ function GameDetailContent() {
             </button>
 
             <button 
-              onClick={() => setActivePhotoIndex(PhotoIndex === game.gallery.length - 1 ? 0 : PhotoIndex + 1)}
+              onClick={() => setActivePhotoIndex(activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1)}
               className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
             >
               ←
