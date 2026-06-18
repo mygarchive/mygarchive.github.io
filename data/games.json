@@ -124,50 +124,6 @@
     "description_fa": "پس از یک دوره فاجعه برای دنیای آزروث، نیروهایی که مدت هاست فراموش شده اند در جزایر اسطوره ای اژدها، خانه اجدادی اژدها، در حال حرکت هستند. World of Warcraft®: Dragonflight™، نهمین بسط برای بازی نقش‌آفرینی آنلاین و چندنفره تحسین‌شده Blizzard Entertainment، بازیکنان را به این سرزمین افسانه‌ای می‌فرستد و دوره جدیدی از ماجراجویی‌های فانتزی را آغاز می‌کند. \n\nهمانطور که نیروهای مدت طولانی در میهن مقدس خود به حرکت در می آیند، اژدهایان آزروت - گاه متحدان و دشمنان نژادهای فانی - از قهرمانان اتحاد و هورد می خواهند تا با تهدیدات و اسرار باستانی که در آستانه بیداری هستند، کمک کنند."
   },
   {
-    "id": 41494,
-    "name": "Cyberpunk 2077",
-    "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
-    "rating": 4.23,
-    "released": "2020-12-10",
-    "genres": [
-      {
-        "id": 2,
-        "name": "Shooter",
-        "slug": "shooter"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      },
-      {
-        "id": 5,
-        "name": "RPG",
-        "slug": "role-playing-games-rpg"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 29,
-    "developers": "CD PROJEKT RED, CD PROJEKT",
-    "steam_link": "https://store.steampowered.com/search/?term=Cyberpunk%202077",
-    "trailer_url": "",
-    "youtube_videos": [],
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
-      "https://media.rawg.io/media/screenshots/2ab/2ab0b67e68b6ede6b19d80094b6f7f2a_qTSfS2g.jpg",
-      "https://media.rawg.io/media/screenshots/cd2/cd22af9d6ac593440defac6082760e4a.jpg",
-      "https://media.rawg.io/media/screenshots/9b5/9b51535beb9d9e416cb9aac874091334.jpg",
-      "https://media.rawg.io/media/screenshots/d84/d84d3a16c1e2cb24dcf73e0108d78455.jpg",
-      "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg"
-    ],
-    "requirements": {
-      "minimum": "OS: Windows 7 or 10 (64-bit)\r\n\r\nCPU: Intel Core i5-3570K or AMD FX-8310\r\n\r\nRAM: 8GB\r\n\r\nGPU: Nvidia GeForce GTX 780 3GB or AMD Radeon RX 470\r\n\r\nVRAM: 3GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB HDD \r\n\r\nGFX Setting Game Can Be Played On: Low",
-      "recommended": "OS: Windows 10 (64-bit)\r\n\r\nCPU: Intel Core i7-4790 or AMD Ryzen 3 3200G\r\n\r\nRAM: 12GB\r\n\r\nGPU: Nvidia GeForce GTX 1060 6GB, a GTX 1660 Super, or AMD Radeon RX 590\r\n\r\nVRAM: 6GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB SSD\r\n\r\nGFX Setting Game Can Be Played On: High"
-    },
-    "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
-    "description_fa": "Cyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ حزب و سیستم همراهی ندارد.\r\n\r\n###بازی\r\nبازیکن V را از دید اول شخص کنترل می کند و از نمای سوم شخص فقط برای کات سین ها استفاده می شود. قهرمان می تواند با پای پیاده یا با استفاده از وسایل نقلیه مختلف در سراسر شهر سفر کند، به شیوه ای که برخی ناظران با سری GTA مقایسه می کنند. گزینه‌های زیادی برای سفارشی‌سازی کاراکتر وجود دارد، از جمله سه کلاس کاراکتر، و انواع تقویت‌کننده‌هایی که V می‌تواند برای افزایش توانایی‌های خود نصب کند."
-  },
-  {
     "id": 983211,
     "name": "Life is Strange: Double Exposure",
     "background_image": "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg",
@@ -289,5 +245,50 @@
     },
     "description_en": "Experience survival horror like never before in the eighth major installment in the storied Resident Evil franchise - Resident Evil Village.\n\nSet a few years after the horrifying events in the critically acclaimed Resident Evil 7 biohazard, the all-new storyline begins with Ethan Winters and his wife Mia living peacefully in a new location, free from their past nightmares. Just as they are building their new life together, tragedy befalls them once again.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nترس بقا را مانند هرگز در هشتمین قسمت اصلی در فرانچایز داستانی Resident Evil - Resident Evil Village تجربه کنید.\n\nچند سال پس از اتفاقات هولناک در بازی تحسین شده Resident Evil 7، داستان کاملاً جدید با Ethan Winters و همسرش Mia شروع می‌شود که به‌طور مسالمت‌آمیزی در مکانی جدید زندگی می‌کنند، فارغ از کابوس‌های گذشته‌شان. درست زمانی که آنها در حال ساختن زندگی جدید خود با یکدیگر هستند، یک بار دیگر مصیبت برای آنها اتفاق می افتد."
+  },
+  {
+    "id": 41494,
+    "name": "Cyberpunk 2077",
+    "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+    "rating": 4.23,
+    "released": "2020-12-10",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 29,
+    "developers": "CD PROJEKT RED, CD PROJEKT",
+    "steam_link": "",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
+      "https://media.rawg.io/media/screenshots/2ab/2ab0b67e68b6ede6b19d80094b6f7f2a_qTSfS2g.jpg",
+      "https://media.rawg.io/media/screenshots/cd2/cd22af9d6ac593440defac6082760e4a.jpg",
+      "https://media.rawg.io/media/screenshots/9b5/9b51535beb9d9e416cb9aac874091334.jpg",
+      "https://media.rawg.io/media/screenshots/d84/d84d3a16c1e2cb24dcf73e0108d78455.jpg",
+      "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg",
+      "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or 10 (64-bit)\r\n\r\nCPU: Intel Core i5-3570K or AMD FX-8310\r\n\r\nRAM: 8GB\r\n\r\nGPU: Nvidia GeForce GTX 780 3GB or AMD Radeon RX 470\r\n\r\nVRAM: 3GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB HDD \r\n\r\nGFX Setting Game Can Be Played On: Low",
+      "recommended": "OS: Windows 10 (64-bit)\r\n\r\nCPU: Intel Core i7-4790 or AMD Ryzen 3 3200G\r\n\r\nRAM: 12GB\r\n\r\nGPU: Nvidia GeForce GTX 1060 6GB, a GTX 1660 Super, or AMD Radeon RX 590\r\n\r\nVRAM: 6GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB SSD\r\n\r\nGFX Setting Game Can Be Played On: High"
+    },
+    "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ حزب و سیستم همراهی ندارد.\r\n\r\n###بازی\r\nبازیکن V را از دید اول شخص کنترل می کند و از نمای سوم شخص فقط برای کات سین ها استفاده می شود. قهرمان می تواند با پای پیاده یا با استفاده از وسایل نقلیه مختلف در سراسر شهر سفر کند، به شیوه ای که برخی ناظران با سری GTA مقایسه می کنند. گزینه‌های زیادی برای سفارشی‌سازی کاراکتر وجود دارد، از جمله سه کلاس کاراکتر، و انواع تقویت‌کننده‌هایی که V می‌تواند برای افزایش توانایی‌های خود نصب کند."
   }
 ]
