@@ -160,21 +160,24 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex items-center gap-2 border-r pr-6" style={{ borderColor: themeStyles.border }}>
+            {/* اسلایدر دکمه‌ای هوشمند و متحرک حالت روز و شب به همراه آیکون لایو */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold" style={{ color: themeStyles.subText }}>
+                {darkMode ? 'تم تاریک' : 'تم روشن'}
+              </span>
               <button
                 onClick={toggleTheme}
-                className="w-14 h-7 rounded-full p-1 transition-colors duration-300 relative focus:outline-none shadow-inner"
+                className="w-16 h-8 rounded-full p-1 transition-colors duration-300 relative focus:outline-none shadow-inner"
                 style={{ backgroundColor: darkMode ? '#334155' : '#cbd5e1' }}
               >
                 <div
-                  className="w-5 h-5 rounded-full shadow-md flex items-center justify-center text-[10px] transition-transform duration-300 transform bg-white"
-                  style={{ transform: darkMode ? 'translateX(-28px)' : 'translateX(0px)' }}
+                  className="w-6 h-6 rounded-full shadow-md flex items-center justify-center text-xs transition-transform duration-300 transform select-none bg-white"
+                  style={{ transform: darkMode ? 'translateX(-32px)' : 'translateX(0px)' }}
                 >
                   {darkMode ? '🌙' : '☀️'}
                 </div>
               </button>
             </div>
-          </div>
         </header>
 
         <div 
@@ -273,7 +276,7 @@ export default function Home() {
         style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
       >
         <p className="text-xs leading-6" style={{ color: themeStyles.subText }}>
-          ⚖️ <span className="font-bold text-amber-600">سلب مسئولیت حقوقی:</span> تمامی اطلاعات، تصاویر و محتوای درج شده در این وب‌سایت از منابع مختلف خارجی دریافت شده و به صورت کاملاً اتوماتیک جمع‌آوری می‌شوند. صاحب سایت هیچ‌گونه مسئولیتی در قبال صحت، دقت و محتوای اطلاعات و عکس‌ها بر عهده ندارد. تمامی حقوق مادی و معنوی مربوط به محتوای بازی‌ها، متعلق به سازندگان و ناشران اصلی آن‌ها می‌باشد. منبع ذخیره‌سازی این اطلاعات در فایل `data/games.json` قرار دارد.
+          ⚖️ <span className="font-bold text-amber-600">سلب مسئولیت حقوقی:</span> .تمامی اطلاعات، تصاویر و محتوای درج شده در این وب‌سایت از منابع خارجی دریافت شده و به صورت کاملاً اتوماتیک جمع‌آوری می‌شوند. صاحب سایت هیچ‌گونه مسئولیتی در قبال صحت، دقت و محتوای اطلاعات و عکس‌ها بر عهده ندارد. تمامی حقوق مادی و معنوی مربوط به محتوای بازی‌ها، متعلق به سازندگان و ناشران اصلی آن‌ها می‌باشد
         </p>
         <div className="flex justify-center items-center pt-3 text-xs border-t" style={{ borderColor: darkMode ? '#020617' : '#f1f5f9' }}>
           <div className="font-mono" style={{ color: themeStyles.subText }}>
