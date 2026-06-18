@@ -1,435 +1,435 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState, Suspense, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import localGamesData from '@/data/games.json';
 
-// ساختارهای ثابت پروژه شما
-const GITHUB_OWNER = 'hf273'; 
-const GITHUB_REPO = 'game-list'; 
-const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
+function GameDetailContent() {
+  const searchParams = useSearchParams();
+  const gameId = searchParams.get('id');
+  const [game, setGame] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null);
+  const [darkMode, setDarkMode] = useState(true);
 
-// ساختار تسک‌های صف‌بندی برای گیت‌هاب
-interface QueueTask {
-  type: 'ADD' | 'REMOVE';
-  game: any;
-  gameId?: number;
-  gameName?: string;
-}
-
-async function translateToPersian(text: string): Promise<string> {
-  try {
-    const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=fa&dt=t&q=${encodeURIComponent(text)}`);
-    return res.ok ? (await res.json())[0].map((item: any) => item[0]).join('') : 'ترجمه خودکار با خطا مواجه شد.';
-  } catch { return 'خطا در ارتباط با سرور ترجمه.'; }
-}
-
-const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
-const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
-
-export default function AdminPanel() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [loginError, setLoginError] = useState('');
-  const [githubToken, setGithubToken] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<any[]>([]);
-  const [myGames, setMyGames] = useState<any[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState({ text: '', isError: false });
-  const [fileSha, setFileSha] = useState('');
-
-  // استیت‌های مربوط به سیستم هوشمند صف‌بندی (Queue)
-  const [queue, setQueue] = useState<QueueTask[]>([]);
-  const [isProcessingQueue, setIsProcessingQueue] = useState(false);
-
-  const getOptimizedUrl = (url: string, width = 400) => url ? `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//i, ''))}&w=${width}&q=80` : '';
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
 
   useEffect(() => {
-    const savedToken = localStorage.getItem('gh_token');
-    if (localStorage.getItem('isAdmin') === 'true' && savedToken) {
-      setGithubToken(savedToken);
-      fetchMyGames(savedToken);
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      setDarkMode(false);
+    } else {
+      setDarkMode(true);
     }
   }, []);
 
-  // مانیتورینگ صف: هر زمان تسک جدیدی وارد شد، به صورت خودکار پردازش را آغاز کن
-  useEffect(() => {
-    if (queue.length > 0 && !isProcessingQueue) {
-      processNextQueueTask();
-    }
-  }, [queue, isProcessingQueue]);
-
-  // مکانیزم ضد تحریم و پروکسی که خودت قبلاً پیاده کرده بودی کاملاً حفظ شده
-  const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
+  const fetchSmartData = async () => {
+    const cacheBuster = Date.now();
     try {
-      const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`);
+      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
+        cache: 'no-store'
+      });
       if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn("پروکسی اول ناموفق بود، سوئیچ به پروکسی دوم...", e);
-    }
+    } catch (e) {}
 
     try {
-      const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`);
-      if (res.ok) {
-        const jsonWrapper = await res.json();
-        return parseAllOrigins ? JSON.parse(jsonWrapper.contents) : jsonWrapper;
-      }
-    } catch (e) {
-      console.warn("پروکسی دوم هم ناموفق بود، سوئیچ به اتصال مستقیم...", e);
-    }
+      const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
+      if (res.ok) return await res.json();
+    } catch (e) {}
 
-    const directRes = await fetch(targetUrl);
-    if (directRes.ok) return await directRes.json();
-    
-    throw new Error("تمامی مسیرهای ارتباطی با سرور بازی‌ها با خطا مواجه شدند.");
+    if (Array.isArray(localGamesData)) return localGamesData;
+    throw new Error("دیتابیس در دسترس نیست.");
   };
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoginError('');
-    const trimmedToken = githubToken.trim();
-    if (!trimmedToken.startsWith('ghp_') && !trimmedToken.startsWith('github_pat_')) {
-      return setLoginError('لطفاً یک توکن معتبر گیت‌هاب وارد کنید.');
-    }
-
-    setLoading(true);
-    try {
-      const checkRes = await fetch('https://api.github.com/user', {
-        headers: { 'Authorization': `token ${trimmedToken}` }
+  useEffect(() => {
+    if (!gameId) return;
+    fetchSmartData()
+      .then((data = []) => {
+        const found = data.find((g: any) => g.id.toString() === gameId);
+        setGame(found || null);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("خطا:", err);
+        setLoading(false);
       });
-      if (checkRes.status === 200) {
-        localStorage.setItem('isAdmin', 'true');
-        localStorage.setItem('gh_token', trimmedToken);
-        await fetchMyGames(trimmedToken);
-      } else {
-        setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
+  }, [gameId]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (activePhotoIndex === null || !game?.gallery) return;
+
+      if (e.key === 'Escape') {
+        setActivePhotoIndex(null);
+      } else if (e.key === 'ArrowRight') {
+        const prevIndex = activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1;
+        setActivePhotoIndex(prevIndex);
+      } else if (e.key === 'ArrowLeft') {
+        const nextIndex = activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1;
+        setActivePhotoIndex(nextIndex);
       }
-    } catch {
-      setLoginError('خطا در برقراری ارتباط با گیت‌هاب. وضعیت اینترنت خود را بررسی کنید.');
-    }
-    setLoading(false);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [activePhotoIndex, game]);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0].clientX;
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('isAdmin');
-    localStorage.removeItem('gh_token');
-    setIsLoggedIn(false);
-    setGithubToken('');
-    setMyGames([]);
-    setSearchResults([]);
-    setQueue([]);
-    setMessage({ text: 'با موفقیت از پنل خارج شدید.', isError: false });
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (activePhotoIndex !== null) {
+      if (e.cancelable) e.preventDefault();
+    }
   };
 
-  const fetchMyGames = async (token: string) => {
-    try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
-        headers: { 'Authorization': `token ${token}` } 
-      });
-      if (res.status === 200) {
-        const data = await res.json();
-        setFileSha(data.sha);
-        const parsedGames = JSON.parse(safeAtob(data.content)) || [];
-        setMyGames(parsedGames);
-        setIsLoggedIn(true);
-        return { sha: data.sha, games: parsedGames };
-      }
-    } catch (err) { 
-      console.error(err);
-      setLoginError('خطا در واکشی اطلاعات آرشیو از گیت‌هاب.');
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (activePhotoIndex === null || !game?.gallery) return;
+
+    const swipeDistance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 40;
+
+    if (swipeDistance > minSwipeDistance) {
+      const nextIndex = activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1;
+      setActivePhotoIndex(nextIndex);
+    } else if (swipeDistance < -minSwipeDistance) {
+      const prevIndex = activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1;
+      setActivePhotoIndex(prevIndex);
     }
+  };
+
+  const getSmartSteamLink = (steamLink: string) => {
+    if (!steamLink || steamLink === '#' || steamLink.includes('search/?term=')) {
+      return null;
+    }
+
+    const idMatch = steamLink.match(/(?:app\/|term=|check\/app\/)(\d+)/) || steamLink.match(/\/(\d+)\/?/);
+    const appId = idMatch ? idMatch[1] : null;
+
+    if (appId) {
+      return `https://store.steampowered.com/app/${appId}`;
+    }
+
+    if (steamLink.startsWith('http') && !steamLink.includes('search')) {
+      return steamLink;
+    }
+
     return null;
   };
 
-  const handleSearch = async () => {
-    if (!searchQuery) return;
-    setLoading(true);
-    try {
-      const targetUrl = `https://api.rawg.io/api/games?key=${RAWG_API_KEY}&search=${encodeURIComponent(searchQuery)}&page_size=24`;
-      const data = await fetchSmartRoute(targetUrl, true);
-      setSearchResults(data.results || []);
-    } catch (err) { 
-      console.error("خطای جامع در سیستم جستجو:", err); 
-      setMessage({ text: 'خطا در برقراری ارتباط. اگر وی‌پی‌ان دارید روشن کنید و دوباره بزنید.', isError: true });
+  const convertToEmbedUrl = (url: string) => {
+    if (!url) return '';
+    if (url.includes('youtube.com/embed/')) return url;
+    
+    let videoId = null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    
+    if (match && match[2].length === 11) {
+      videoId = match[2];
     }
-    setLoading(false);
+    
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
   };
 
-  // قرار دادن عملیاتِ افزودنِ بازی در صف انتظار (بدون تغییر رابط کاربری)
-  const handleAddGame = (game: any) => {
-    setQueue((prev) => [...prev, { type: 'ADD', game }]);
-    setMessage({ text: `بازی "${game.name}" به صف پردازش گیت‌هاب اضافه شد.`, isError: false });
+  const getOptimizedUrl = (url: string, width = 800) => {
+    if (!url) return '';
+    const cleanUrl = url.replace(/^https?:\/\//i, '');
+    return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // قرار دادن عملیاتِ حذفِ بازی در صف انتظار
-  const handleRemoveGame = (gameId: number, gameName: string) => {
-    if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
-    setQueue((prev) => [...prev, { type: 'REMOVE', game: null, gameId, gameName }]);
-    setMessage({ text: `درخواست حذف "${gameName}" به صف اضافه شد.`, isError: false });
+  const themeStyles = {
+    bg: darkMode ? '#020617' : '#f8fafc',
+    text: darkMode ? '#f1f5f9' : '#0f172a',
+    titleText: darkMode ? '#ffffff' : '#0f172a',
+    subText: darkMode ? '#94a3b8' : '#475569',
+    cardBg: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff',
+    sidebarBg: darkMode ? '#0f172a' : '#ffffff',
+    border: darkMode ? '#1e293b' : '#e2e8f0',
+    btnBg: darkMode ? 'rgba(88, 28, 135, 0.3)' : '#f3e8ff',
+    btnBorder: darkMode ? 'rgba(126, 34, 206, 0.4)' : '#e9d5ff',
+    btnText: darkMode ? '#c084fc' : '#6b21a8',
+    opacity: darkMode ? '#020617' : '#f1f5f9',
+    footerBg: darkMode ? '#0f172a' : '#ffffff'
   };
 
-  // هستهٔ پردازشی مخفی: انجام خودکار تمام فرآیندهای استخراج و کامیت به گیت‌هاب
-  const processNextQueueTask = async () => {
-    if (queue.length === 0) return;
+  if (loading || !game) {
+    return (
+      <div 
+        className="min-h-screen flex items-center justify-center text-sm animate-pulse transition-colors duration-300"
+        style={{ backgroundColor: themeStyles.bg, color: themeStyles.subText }}
+      >
+        در حال بارگذاری اطلاعات بازی...
+      </div>
+    );
+  }
 
-    setIsProcessingQueue(true);
-    const currentTask = queue[0];
-    const { type, game, gameId, gameName } = currentTask;
-
-    try {
-      // قدم اول: گرفتن آخرین SHA فایل از گیت‌هاب برای جلوگیری از تداخل (Conflict)
-      const latestRepoState = await fetchMyGames(githubToken);
-      let currentGamesList = latestRepoState ? latestRepoState.games : [...myGames];
-      let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
-
-      if (type === 'ADD') {
-        setMessage({ text: `⏳ در حال استخراج خودکار [${queue.length} بازی در صف]: تریلر، لینک استیم، گالری ۱۰ تایی و ترجمه برای "${game.name}"...`, isError: false });
-
-        const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
-        const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
-        const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
-        const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
-
-        const [details, movieData, screenshots, youtubeData] = await Promise.all([
-          fetchSmartRoute(detailsTarget, true),
-          fetchSmartRoute(moviesTarget, true),
-          fetchSmartRoute(screenshotsTarget, true),
-          fetchSmartRoute(youtubeTarget, true).catch(() => ({ results: [] }))
-        ]);
-        
-        const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
-        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
-        
-        let minReq = '';
-        let recReq = '';
-        
-        const pcPlatformData = details.platforms?.find((p: any) => p.platform.slug === 'pc');
-        if (pcPlatformData?.requirements) {
-          if (pcPlatformData.requirements.minimum) minReq = pcPlatformData.requirements.minimum;
-          if (pcPlatformData.requirements.recommended) recReq = pcPlatformData.requirements.recommended;
-        }
-
-        if (!minReq && pcPlatformData?.requirements_minimum) minReq = pcPlatformData.requirements_minimum;
-        if (!recReq && pcPlatformData?.requirements_recommended) recReq = pcPlatformData.requirements_recommended;
-
-        const cleanReq = (text: string, fallback: string) => {
-          if (!text) return fallback;
-          return text
-            .replace(/Minimum:|Recommended:|⚙️/gi, '')
-            .replace(/<\/?b>/g, '')
-            .replace(/<\/?p>/g, '')
-            .replace(/<\/?br\s*\/?>/g, '\n')
-            .trim();
-        };
-
-        let finalAge = '---';
-        const rawEsrb = details.esrb_rating?.slug || '';
-        if (rawEsrb === 'mature') finalAge = '+17';
-        else if (rawEsrb === 'adults-only') finalAge = '+18';
-        else if (rawEsrb === 'teen') finalAge = '+13';
-        else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
-        else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
-
-        // اصلاحیه استخراج دقیق لینک استیم
-        let steamUrl = '';
-        if (details.stores && details.stores.length > 0) {
-          const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam');
-          if (steamStore && steamStore.url) {
-            const match = steamStore.url.match(/\/app\/(\d+)/);
-            if (match && match[1]) {
-              steamUrl = `https://store.steampowered.com/app/${match[1]}`;
-            } else {
-              steamUrl = steamStore.url;
-            }
-          }
-        }
-
-        // استخراج اتوماتیک ویدیوهای یوتیوب
-        const autoYoutubeVideos: string[] = [];
-        if (youtubeData && youtubeData.results && youtubeData.results.length > 0) {
-          youtubeData.results.slice(0, 5).forEach((vid: any) => {
-            if (vid.external_id) {
-              autoYoutubeVideos.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
-            }
-          });
-        }
-
-        const mainTrailer = movieData.results?.[0]?.data?.max || '';
-        if (mainTrailer && !autoYoutubeVideos.includes(mainTrailer)) {
-          autoYoutubeVideos.unshift(mainTrailer);
-        }
-
-        // فیکس شدن ۱۰۰ درصدی گالری ۱۰ عکسی
-        let finalGallery: string[] = [];
-        if (screenshots && screenshots.results && screenshots.results.length > 0) {
-          finalGallery = screenshots.results.map((s: any) => s.image);
-        }
-        if (game.short_screenshots && game.short_screenshots.length > 0) {
-          game.short_screenshots.forEach((s: any) => {
-            if (!finalGallery.includes(s.image)) finalGallery.push(s.image);
-          });
-        }
-        finalGallery = finalGallery.slice(0, 10);
-
-        const newGameObj = {
-          id: game.id,
-          name: game.name,
-          background_image: game.background_image,
-          rating: game.rating,
-          released: game.released,
-          genres: game.genres || [],
-          esrb_rating: finalAge,
-          playtime: details.playtime || 0,
-          developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
-          steam_link: steamUrl, 
-          trailer_url: mainTrailer,
-          youtube_videos: autoYoutubeVideos, 
-          gallery: finalGallery, 
-          requirements: { 
-            minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
-            recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
-          },
-          description_en: (details.description_raw || "No description available.").substring(0, 1500),
-          description_fa: descriptionFaWithLabel
-        };
-
-        const cleanGamesList = currentGamesList.filter((g: any) => g.id !== game.id);
-        cleanGamesList.push(newGameObj);
-
-        // ارسال کامیت امن به گیت‌هاب
-        const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
-          method: 'PUT',
-          headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Auto Add/Update ${game.name} via Queue`, content: safeBtoa(JSON.stringify(cleanGamesList, null, 2)), sha: currentSha })
-        });
-
-        if (res.status === 200 || res.status === 201) {
-          const resData = await res.json();
-          setFileSha(resData.content.sha);
-          setMyGames(cleanGamesList);
-          setMessage({ text: `✅ بازی "${game.name}" با موفقیت ذخیره شد.`, isError: false });
-        } else { 
-          setMessage({ text: '❌ خطا در ثبت روی گیت‌هاب. توکن یا اینترنت را بررسی کنید.', isError: true }); 
-        }
-
-      } else if (type === 'REMOVE') {
-        setMessage({ text: `⏳ در حال حذف "${gameName}" از دیتابیس...`, isError: false });
-
-        const updatedGames = currentGamesList.filter((g: any) => g.id !== gameId);
-        
-        const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
-          method: 'PUT',
-          headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Remove ${gameName} via Queue`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: currentSha })
-        });
-
-        if (res.status === 200 || res.status === 201) {
-          const resData = await res.json();
-          setFileSha(resData.content.sha);
-          setMyGames(updatedGames);
-          setMessage({ text: `✅ بازی "${gameName}" با موفقیت حذف گردید.`, isError: false });
-        } else {
-          setMessage({ text: '❌ خطا در حذف بازی.', isError: true });
-        }
-      }
-    } catch (err) {
-      console.error("خطای صف:", err);
-      setMessage({ text: '❌ خطا در ارتباط با سرورها.', isError: true });
-    } finally {
-      // با موفقیت یا خطا، کار فعلی از صف پاک می‌شود و کار بعدی در صف قرار می‌گیرد
-      setQueue((prev) => prev.slice(1));
-      setIsProcessingQueue(false);
-    }
-  };
+  const validSteamUrl = game?.steam_link ? getSmartSteamLink(game.steam_link) : null;
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12" dir="rtl">
-      {!isLoggedIn ? (
-        <div className="min-h-screen text-slate-100 flex items-center justify-center p-6">
-          <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 p-8 rounded-2xl w-full max-w-md space-y-5">
-            <div className="text-center space-y-2 mb-4">
-              <h2 className="text-xl font-black text-white">🔒 ورود به پنل مدیریت آرشیو</h2>
-              <p className="text-[11px] text-slate-400 font-medium">جهت ورود، کلید دسترسی (Token) اختصاصی گیت‌هاب خود را وارد کنید.</p>
-            </div>
-            
-            {loginError && <div className="p-3 bg-red-500/10 text-red-400 text-xs font-bold rounded-xl text-center border border-red-900/30">{loginError}</div>}
-            
-            <div className="space-y-1.5">
-              <label className="text-xs text-slate-400 font-bold">توکن گیت‌هاب (Personal Access Token):</label>
-              <input 
-                type="password" 
-                value={githubToken} 
-                onChange={(e) => setGithubToken(e.target.value)} 
-                className="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left tracking-wider text-purple-400 focus:border-purple-600 transition" 
-                dir="ltr" 
-                placeholder="ghp_..." 
-                required
-              />
-            </div>
-            
-            <button 
-              type="submit" 
-              disabled={loading}
-              className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition disabled:opacity-50"
-            >
-              {loading ? 'در حال بررسی هویت توکن...' : 'بررسی توکن و ورود به ادمین'}
-            </button>
-          </form>
+    <div 
+      className="min-h-screen p-6 md:p-12 relative overflow-hidden flex flex-col justify-between transition-colors duration-300" 
+      dir="rtl"
+      style={{ backgroundColor: themeStyles.bg, color: themeStyles.text }}
+    >
+      <div 
+        className="absolute inset-0 bg-cover bg-center blur-sm pointer-events-none transform scale-105 transition-all"
+        style={{ backgroundImage: `url(${game?.background_image})`, opacity: darkMode ? 0.15 : 0.08 }}
+      />
+
+      <div className="max-w-4xl mx-auto relative z-10 w-full flex-grow">
+        
+        <header 
+          className="mb-6 flex justify-between items-center gap-4 pb-4"
+          style={{ borderBottom: `1px solid ${themeStyles.border}` }}
+        >
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-2 text-xs px-4 py-2 rounded-xl transition font-bold"
+            style={{ backgroundColor: themeStyles.btnBg, border: `1px solid ${themeStyles.btnBorder}`, color: themeStyles.btnText }}
+          >
+            ➔ بازگشت به صفحه اصلی آرشیو
+          </Link>
+        </header>
+
+        <div 
+          className="w-full rounded-2xl overflow-hidden shadow-xl mb-8 flex justify-center items-center"
+          style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+        >
+          <img src={getOptimizedUrl(game?.background_image, 800)} alt={game?.name || 'Game Image'} className="w-full h-auto object-cover max-h-[450px]" />
         </div>
-      ) : (
-        <div className="max-w-5xl mx-auto">
-          <header className="flex justify-between items-center mb-8 border-b border-slate-900 pb-4">
-            <div className="flex items-center gap-4">
-              <h1 className="text-lg font-black text-white">🎮 کنترل پنل هوشمند آرشیو</h1>
-              <button onClick={handleLogout} className="text-xs bg-red-950/40 border border-red-900/60 hover:bg-red-900 text-red-400 hover:text-white px-3 py-1.5 rounded-xl transition font-bold">🚪 خروج از پنل</button>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 space-y-6">
+            <div>
+              <h1 className="text-3xl font-black text-left tracking-tight" style={{ color: themeStyles.titleText }} dir="ltr">{game?.name}</h1>
+              <div className="flex flex-wrap gap-2 mt-3" dir="ltr">
+                {game?.genres?.map((g: any) => (
+                  <span 
+                    key={g?.id || g?.name} 
+                    className="text-xs font-bold px-2.5 py-1 rounded-md"
+                    style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}`, color: themeStyles.subText }}
+                  >
+                    {g?.name}
+                  </span>
+                ))}
+              </div>
             </div>
-            {queue.length > 0 && (
-              <div className="text-xs bg-purple-950/60 border border-purple-800/80 text-purple-300 px-3 py-1.5 rounded-xl animate-pulse font-mono">
-                ⏳ در حال پردازش پس‌زمینه: {queue.length} بازی در صف
+
+            <div 
+              className="space-y-5 p-6 rounded-2xl shadow-sm"
+              style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
+            >
+              {game?.description_fa && (
+                <div>
+                  <h3 className="text-sm font-bold text-purple-500 mb-2">✍️ توضیحات بازی (ترجمه فارسی):</h3>
+                  <p className="text-base leading-8 text-justify font-normal" style={{ color: darkMode ? '#e2e8f0' : '#334155' }}>{game.description_fa}</p>
+                </div>
+              )}
+              {game?.description_en && (
+                <div className="pt-4" style={{ borderTop: `1px solid ${themeStyles.border}` }} dir="ltr">
+                  <h3 className="text-xs font-bold mb-2 text-left" style={{ color: themeStyles.subText }}>📄 Original Description:</h3>
+                  <p className="text-sm leading-7 text-left font-serif line-clamp-6 hover:line-clamp-none transition duration-300" style={{ color: themeStyles.subText }}>{game.description_en}</p>
+                </div>
+              )}
+            </div>
+
+            {((game?.youtube_videos && game.youtube_videos.length > 0) || game?.trailer_url) && (
+              <div className="space-y-4">
+                <h3 className="text-sm font-black flex items-center gap-2" style={{ color: themeStyles.titleText }}>🎬 ویدیوها و گیم‌پلی بازی (یوتیوب):</h3>
+                <div className="space-y-4">
+                  {game?.youtube_videos && game.youtube_videos.map((vidUrl: string, idx: number) => (
+                    <div key={idx} className="w-full rounded-2xl overflow-hidden bg-black shadow-lg aspect-video" style={{ border: `1px solid ${themeStyles.border}` }}>
+                      <iframe
+                        src={convertToEmbedUrl(vidUrl)}
+                        title={`${game?.name || 'Game'} Video ${idx + 1}`}
+                        className="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  ))}
+                  
+                  {game?.trailer_url && !game.youtube_videos?.includes(game.trailer_url) && (
+                    <div className="w-full rounded-2xl overflow-hidden bg-black shadow-lg" style={{ border: `1px solid ${themeStyles.border}` }}>
+                      {game.trailer_url.includes('youtube.com') || game.trailer_url.includes('youtu.be') ? (
+                        <div className="aspect-video w-full">
+                          <iframe
+                            src={convertToEmbedUrl(game.trailer_url)}
+                            title="Game Trailer"
+                            className="w-full h-full border-0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : (
+                        <video src={game.trailer_url} controls preload="metadata" className="w-full h-auto max-h-[400px] outline-none" poster={getOptimizedUrl(game.background_image, 600)} />
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
             )}
-            <div className="flex items-center gap-4">
-              <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2 rounded-xl">➔ نمایش صفحه اصلی سایت</Link>
-            </div>
-          </header>
 
-          <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
-            <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
-            <button onClick={handleSearch} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold">جستجو</button>
+            {game?.gallery && game.gallery.length > 0 && (
+              <div className="space-y-3">
+                <h3 className="text-sm font-black" style={{ color: themeStyles.titleText }}>📸 گالری تصاویر بازی:</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                  {game.gallery.slice(0, 10).map((imgUrl: string, idx: number) => (
+                    <div 
+                      key={idx} 
+                      onClick={() => setActivePhotoIndex(idx)}
+                      className="cursor-pointer rounded-xl overflow-hidden hover:border-purple-500 hover:scale-[1.02] transition duration-300 shadow-md aspect-video"
+                      style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                    >
+                      <img src={getOptimizedUrl(imgUrl, 400)} alt={`screenshot-${idx}`} className="w-full h-full object-cover" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="space-y-4">
+              <h3 className="text-sm font-black flex items-center gap-2 mb-1" style={{ color: themeStyles.titleText }}>💻 مشخصات سیستم سخت‌افزاری مورد نیاز:</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div 
+                  className="p-4 rounded-xl space-y-3 shadow-sm"
+                  style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.5)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                >
+                  <div className="text-xs font-bold text-red-500 pb-2 flex items-center justify-between" style={{ borderBottom: `1px solid ${darkMode ? '#0f172a' : '#f1f5f9'}` }}>
+                    <span>⚠️ حداقل سیستم مورد نیاز</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded font-mono font-bold" style={{ backgroundColor: darkMode ? 'rgba(220, 38, 38, 0.15)' : '#fee2e2', color: '#ef4444' }}>Minimum</span>
+                  </div>
+                  <p className="text-xs leading-6 text-left font-mono whitespace-pre-line" style={{ color: darkMode ? '#cbd5e1' : '#475569' }} dir="ltr">
+                    {game?.requirements?.minimum || 'مشخصات حداقل سخت‌افزار ثبت نشده است.'}
+                  </p>
+                </div>
+                <div 
+                  className="p-4 rounded-xl space-y-3 shadow-sm"
+                  style={{ backgroundColor: darkMode ? 'rgba(22, 163, 74, 0.05)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
+                >
+                  <div className="text-xs font-bold text-green-600 pb-2 flex items-center justify-between" style={{ borderBottom: `1px solid ${darkMode ? '#0f172a' : '#f1f5f9'}` }}>
+                    <span>✅ سیستم پیشنهادی آرشیو</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded font-mono font-bold" style={{ backgroundColor: darkMode ? 'rgba(22, 163, 74, 0.15)' : '#dcfce7', color: '#16a34a' }}>Recommended</span>
+                  </div>
+                  <p className="text-xs leading-6 text-left font-mono whitespace-pre-line" style={{ color: darkMode ? '#cbd5e1' : '#475569' }} dir="ltr">
+                    {game?.requirements?.recommended || 'مشخصات سیستم پیشنهادی ثبت نشده است.'}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {message.text && <div className={`p-3 rounded-lg text-xs font-bold mb-6 text-center ${message.isError ? 'bg-red-500/10 text-red-400' : 'bg-green-500/10 text-green-400'}`}>{message.text}</div>}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {searchResults.map((game) => {
-              const isAlreadyAdded = myGames.some((g) => g.id === game.id);
-              const isTaskInQueue = queue.some((q) => q.game?.id === game.id);
+          <div className="space-y-6">
+            <div 
+              className="p-5 rounded-2xl space-y-4 text-sm shadow-sm relative z-20"
+              style={{ backgroundColor: themeStyles.sidebarBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+            >
+              <h3 className="font-black text-base mb-2 pb-2" style={{ color: themeStyles.titleText, borderBottom: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}` }}>📊 اطلاعات عمومی</h3>
+              <p>🗓️ تاریخ انتشار: <span className="font-bold" style={{ color: themeStyles.titleText }}>{game?.released || '---'}</span></p>
+              <p>⭐ امتیاز منتقدین: <span className="text-purple-500 font-bold">{game?.rating || '---'} / 5</span></p>
+              <p>🔞 رده سنی: <span className="text-red-500 font-bold" dir="ltr">{game?.esrb_rating || '---'}</span></p>
+              <p>🏢 سازنده/ناشر: <span style={{ color: themeStyles.titleText }} dir="ltr">{game?.developers || '---'}</span></p>
+              <p>⏱️ زمان اتمام: <span className="text-green-500 font-bold">{game?.playtime || '---'} ساعت</span></p>
               
-              return (
-                <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
-                  <img src={getOptimizedUrl(game.background_image, 400)} alt={game.name} className="w-full h-40 object-cover" />
-                  <div className="p-4 flex flex-col justify-between flex-1 space-y-4">
-                    <h3 className="font-bold text-sm text-white text-left truncate" dir="ltr">{game.name}</h3>
-                    
-                    {isTaskInQueue ? (
-                      <button disabled className="w-full py-2 bg-slate-800 text-slate-400 border border-slate-700 rounded-xl text-xs font-bold animate-pulse cursor-not-allowed">
-                        ⏳ در صف انتظار (پردازش خودکار)...
-                      </button>
-                    ) : isAlreadyAdded ? (
-                      <div className="flex gap-2 w-full">
-                        <button onClick={() => handleAddGame(game)} className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs transition font-bold">🔄 فیکس مجدد</button>
-                        <button onClick={() => handleRemoveGame(game.id, game.name)} className="px-3 py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف</button>
-                      </div>
-                    ) : (
-                      <button onClick={() => handleAddGame(game)} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold">＋ افزودن به آرشیو</button>
-                    )}
-                  </div>
+              {validSteamUrl && (
+                <div className="pt-2">
+                  <a 
+                    href={validSteamUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-bold flex items-center justify-center gap-2 text-xs transition shadow-lg shadow-purple-900/10"
+                  >
+                    🎮 مشاهده در استیم (Steam)
+                  </a>
                 </div>
-              );
-            })}
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer 
+        className="mt-16 p-6 rounded-2xl border text-center space-y-4 max-w-4xl mx-auto w-full relative z-10"
+        style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
+      >
+        <p className="text-xs leading-6 font-semibold" style={{ color: themeStyles.subText }}>
+          ⚖️ تمامی حقوق مادی و معنوی مربوط به محتوای این بازی، متعلق به سازندگان و ناشران اصلی آن می‌باشد.
+        </p>
+      </footer>
+
+      {activePhotoIndex !== null && game.gallery && (
+        <div 
+          className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-2 md:p-6 select-none" 
+          onClick={() => setActivePhotoIndex(null)}
+        >
+          <div 
+            className="w-full max-w-[92vw] h-[75vh] max-h-[75vh] relative flex items-center justify-center" 
+            onClick={(e) => e.stopPropagation()}
+            onTouchMove={handleTouchMove}
+          >
+            <div
+              className="w-full h-full flex items-center justify-center"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
+              <img 
+                src={getOptimizedUrl(game.gallery[activePhotoIndex], 1400)} 
+                alt="Expanded preview" 
+                className="w-full h-full object-contain rounded-xl shadow-2xl transition-all" 
+                draggable="false"
+              />
+            </div>
+          </div>
+
+          <div 
+            className="flex items-center gap-5 mt-6 bg-slate-900/90 px-6 py-3.5 rounded-2xl border border-slate-800 backdrop-blur-md shadow-2xl" 
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button 
+              onClick={() => setActivePhotoIndex(activePhotoIndex === 0 ? game.gallery.length - 1 : activePhotoIndex - 1)}
+              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
+            >
+              ➔
+            </button>
+
+            <span className="text-sm font-mono font-bold text-slate-300 bg-slate-950 px-3.5 py-1.5 rounded-lg border border-slate-900 min-w-[60px] text-center">
+              {activePhotoIndex + 1} / {Math.min(game.gallery.length, 10)}
+            </span>
+
+            <button 
+              onClick={() => setActivePhotoIndex(null)} 
+              className="px-6 h-12 bg-red-600 hover:bg-red-500 text-white rounded-xl text-sm font-extrabold transition border border-red-700 active:scale-90"
+            >
+              بستن ×
+            </button>
+
+            <button 
+              onClick={() => setActivePhotoIndex(activePhotoIndex === game.gallery.length - 1 ? 0 : activePhotoIndex + 1)}
+              className="text-white hover:text-purple-400 bg-slate-800 hover:bg-slate-700 transition font-black text-xl w-14 h-12 flex items-center justify-center rounded-xl border border-slate-700 active:scale-90"
+            >
+              ←
+            </button>
           </div>
         </div>
       )}
     </div>
+  );
+}
+
+export default function GameDetailPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-400 p-10 text-center animate-pulse transition-colors duration-300">در حال لود سیستم ناوبری...</div>}>
+      <GameDetailContent />
+    </Suspense>
   );
 }
