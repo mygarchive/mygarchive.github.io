@@ -256,51 +256,53 @@ export default function Home() {
           </div>
         </div>
 
-        {filteredGames.length === 0 ? (
-          <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
-            {filteredGames.map((game) => (
-              <a 
-                href={`./game?id=${game.id}`} 
-                key={game.id} 
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = `./game?id=${game.id}`;
-                }}
-                className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
-                style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
-              >
-                <div className="w-full h-44 overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
-  <img 
-    src={getOptimizedUrl(game.background_image, 400)} 
-    alt={game.name} 
-    onError={(e) => {
-      e.currentTarget.onerror = null;
-      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
-    }}
-    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
-  />
-</div>
-                <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
-                  <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
-                    {game.name}
-                  </h3>
-                  
-                  <div 
-                    className="flex justify-between items-center pt-2.5 text-[11px]"
-                    style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
-                  >
-                    <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
-                      ⭐ {game.rating || '---'}
-                    </span>
-                    <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
-                  </div>
-                </div>
-              </a>
-            ))}
+     {filteredGames.length === 0 ? (
+  <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
+) : (
+  /* 🖥️ بهینه‌سازی گرید برای نمایش منظم در تمام مانیتورها از جمله 2K و التراواید */
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
+    {filteredGames.map((game) => (
+      <a 
+        href={`./game?id=${game.id}`} 
+        key={game.id} 
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = `./game?id=${game.id}`;
+        }}
+        className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
+        style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
+      >
+        {/* 🎬 تغییر به نسبت تصویر ۱۶:۹ استاندارد ویدیوگیم بدون کات خوردن یا مربعی شدن */}
+        <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
+          <img 
+            src={getOptimizedUrl(game.background_image, 400)} 
+            alt={game.name} 
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
+            }}
+            className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
+          />
+        </div>
+        <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
+          <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
+            {game.name}
+          </h3>
+          
+          <div 
+            className="flex justify-between items-center pt-2.5 text-[11px]"
+            style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
+          >
+            <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
+              ⭐ {game.rating || '---'}
+            </span>
+            <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
           </div>
-        )}
+        </div>
+      </a>
+    ))}
+  </div>
+)}
       </div>
 
       <footer 
