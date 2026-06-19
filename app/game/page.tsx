@@ -212,7 +212,7 @@ function GameDetailContent() {
     >
       <div 
         className="absolute inset-0 bg-cover bg-center blur-sm pointer-events-none transform scale-105 transition-all"
-        style={{ backgroundImage: `url(${game?.background_image})`, opacity: darkMode ? 0.15 : 0.08 }}
+        style={{ backgroundImage: `url(${getOptimizedUrl(game?.background_image, 1200)})`, opacity: darkMode ? 0.15 : 0.08 }}
       />
 
       <div className="max-w-4xl mx-auto relative z-10 w-full flex-grow">
@@ -234,7 +234,15 @@ function GameDetailContent() {
           className="w-full rounded-2xl overflow-hidden shadow-xl mb-8 flex justify-center items-center"
           style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
         >
-          <img src={getOptimizedUrl(game?.background_image, 800)} alt={game?.name || 'Game Image'} className="w-full h-auto object-cover max-h-[450px]" />
+          <img 
+  src={getOptimizedUrl(game?.background_image, 800)} 
+  alt={game?.name || 'Game Image'} 
+  onError={(e) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game?.background_image || '')}`;
+  }}
+  className="w-full h-auto object-cover max-h-[450px]" 
+/>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -320,7 +328,15 @@ function GameDetailContent() {
                       className="cursor-pointer rounded-xl overflow-hidden hover:border-purple-500 hover:scale-[1.02] transition duration-300 shadow-md aspect-video"
                       style={{ backgroundColor: darkMode ? '#0f172a' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
                     >
-                      <img src={getOptimizedUrl(imgUrl, 400)} alt={`screenshot-${idx}`} className="w-full h-full object-cover" />
+                      <img 
+  src={getOptimizedUrl(imgUrl, 400)} 
+  alt={`screenshot-${idx}`} 
+  onError={(e) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(imgUrl)}`;
+  }}
+  className="w-full h-full object-cover" 
+/>
                     </div>
                   ))}
                 </div>
@@ -422,11 +438,15 @@ function PhotoModalRender(activePhotoIndex: any, game: any, setActivePhotoIndex:
       >
         <div className="w-full h-full flex items-center justify-center" onTouchStart={TouchStartHandler} onTouchEnd={TouchEndHandler}>
           <img 
-            src={`https://images.weserv.nl/?url=${encodeURIComponent(game.gallery[activePhotoIndex].replace(/^https?:\/\//i, ''))}&w=1400&q=80`} 
-            alt="Expanded preview" 
-            className="w-full h-full object-contain rounded-xl shadow-2xl transition-all" 
-            draggable="false"
-          />
+  src={`https://images.weserv.nl/?url=${encodeURIComponent(game.gallery[activePhotoIndex].replace(/^https?:\/\//i, ''))}&w=1400&q=80`} 
+  alt="Expanded preview" 
+  onError={(e) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.gallery[activePhotoIndex])}`;
+  }}
+  className="w-full h-full object-contain rounded-xl shadow-2xl transition-all" 
+  draggable="false"
+/>
         </div>
       </div>
 
