@@ -86,7 +86,15 @@ function GameDetailContent() {
         setLoading(false);
       });
   }, [gameId]);
-
+// 👑 کد جدید برای تغییر خودکار تایتل تب مرورگر به اسم بازی
+  useEffect(() => {
+    if (game && game.name) {
+      document.title = `${game.name} | MyGArchive`;
+    } else {
+      document.title = "Game Details | MyGArchive";
+    }
+  }, [game]);
+  
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (activePhotoIndex === null || !game?.gallery) return;
