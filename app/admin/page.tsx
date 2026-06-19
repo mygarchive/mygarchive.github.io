@@ -4,8 +4,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
-const GITHUB_OWNER = 'hf273'; 
-const GITHUB_REPO = 'game-list'; 
+const GITHUB_OWNER = 'mygarchive'; 
+const GITHUB_REPO = 'mygarchive.github.io'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
 interface QueueTask {
