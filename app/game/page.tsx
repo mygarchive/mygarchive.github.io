@@ -26,21 +26,50 @@ function GameDetailContent() {
     }
   }, []);
 
+  // 🚀 سیستم پروکسی هوشمند چند لایه برای دریافت دیتابیس بازی‌ها
   const fetchSmartData = async () => {
     const cacheBuster = Date.now();
-    try {
-      const res = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
-        cache: 'no-store'
-      });
-      if (res.ok) return await res.json();
-    } catch (e) {}
+    const targetUrl = `https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`;
 
+    // 🌟 لایه اول: پروکسی اختصاصی و فوق‌سریع کلادفلر شما
+    try {
+      const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+      const res = await fetch(proxyUrl, { cache: 'no-store' });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("لایه ۱ (کلادفلر) ناموفق بود. سوئیچ به لایه‌های پشتیبان...");
+    }
+
+    // 🔄 لایه دوم پشتیبان: پروکسی عمومی CodeTabs
+    try {
+      const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("لایه ۲ (CodeTabs) ناموفق بود...");
+    }
+
+    // 🔄 لایه سوم پشتیبان: پروکسی عمومی Corsproxy
+    try {
+      const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("لایه ۳ (Corsproxy) ناموفق بود...");
+    }
+
+    // 🔄 لایه چهارم: استفاده از cdn.jsdelivr (کد قدیمی شما)
     try {
       const res = await fetch(`https://cdn.jsdelivr.net/gh/mygarchive/mygarchive.github.io@main/data/games.json?v=${cacheBuster}`);
       if (res.ok) return await res.json();
-    } catch (e) {}
+    } catch (e) {
+      console.warn("لایه ۴ (jsDelivr) ناموفق بود...");
+    }
 
-    if (Array.isArray(localGamesData)) return localGamesData;
+    // 📥 لایه آخر (آفلاین): بارگذاری از فایل داخلی پروژه
+    if (Array.isArray(localGamesData)) {
+      console.log("بارگذاری دیتای آفلاین/لوکال به عنوان آخرین راه حل.");
+      return localGamesData;
+    }
+    
     throw new Error("دیتابیس در دسترس نیست.");
   };
 
@@ -53,7 +82,7 @@ function GameDetailContent() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("خطا:", err);
+        console.error("خطا در دریافت اطلاعات بازی:", err);
         setLoading(false);
       });
   }, [gameId]);
@@ -379,7 +408,6 @@ function GameDetailContent() {
   );
 }
 
-// توابع کمکی برای جلوگیری از شلوغی
 function PhotoModalRender(activePhotoIndex: any, game: any, setActivePhotoIndex: any, TouchMoveHandler: any, TouchStartHandler: any, TouchEndHandler: any) {
   if (activePhotoIndex === null || !game.gallery) return null;
   return (
