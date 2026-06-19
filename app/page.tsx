@@ -35,16 +35,44 @@ export default function Home() {
     try {
       let data: any[] = Array.isArray(localGamesData) ? localGamesData : [];
       const cacheBuster = Date.now();
+      const targetUrl = `https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`;
       
-      const directRes = await fetch(`https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json?v=${cacheBuster}`, {
-        cache: 'no-store'
-      });
-      
-      if (directRes.ok) {
-        const freshData = await directRes.json();
-        if (Array.isArray(freshData) && freshData.length > 0) {
-          data = freshData;
-        }
+      let fetchedData = null;
+
+      // 🚀 لایه اول: شاه‌راه اختصاصی کلادفلر شما
+      try {
+        const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+        const res = await fetch(proxyUrl, { cache: 'no-store' });
+        if (res.ok) fetchedData = await res.json();
+      } catch (e) { console.warn("لایه ۱ (کلادفلر) ناموفق بود."); }
+
+      // 🔄 لایه دوم پشتیبان: پروکسی CodeTabs
+      if (!fetchedData) {
+        try {
+          const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
+          if (res.ok) fetchedData = await res.json();
+        } catch (e) { console.warn("لایه ۲ (CodeTabs) ناموفق بود."); }
+      }
+
+      // 🔄 لایه سوم پشتیبان: پروکسی Corsproxy
+      if (!fetchedData) {
+        try {
+          const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
+          if (res.ok) fetchedData = await res.json();
+        } catch (e) { console.warn("لایه ۳ (Corsproxy) ناموفق بود."); }
+      }
+
+      // 🔄 لایه چهارم: درخواست مستقیم (برای کاربرانی که وی‌پاین روشن دارند)
+      if (!fetchedData) {
+        try {
+          const res = await fetch(targetUrl, { cache: 'no-store' });
+          if (res.ok) fetchedData = await res.json();
+        } catch (e) { console.warn("لایه ۴ (مستقیم) ناموفق بود."); }
+      }
+
+      // اعمال دیتای دریافت شده از اینترنت
+      if (Array.isArray(fetchedData) && fetchedData.length > 0) {
+        data = fetchedData;
       }
 
       setGames(data);
@@ -59,7 +87,8 @@ export default function Home() {
       setGenres(allGenres.sort());
       setLoading(false);
     } catch (err) {
-      console.error("خطا در پردازش دیتابیس بازی‌ها:", err);
+      console.error("خطا در لایه‌های پروکسی صفحه اصلی:", err);
+      // لایه آخر (آفلاین): دیتای لوکال هاردکد شده
       if (Array.isArray(localGamesData)) {
         setGames(localGamesData);
         setFilteredGames(localGamesData);
@@ -91,7 +120,7 @@ export default function Home() {
     } else if (sortBy === 'released') {
       result.sort((a, b) => {
         const dateA = a.released ? new Date(a.released).getTime() : 0;
-        const dateB = b.released ? new Date(a.released).getTime() : 0;
+        const dateB = b.released ? new Date(b.released).getTime() : 0; // اصلاح باگ جزیی کد اصلی شما (استفاده صحیح از b.released)
         return dateB - dateA;
       });
     } else if (sortBy === 'rating') {
