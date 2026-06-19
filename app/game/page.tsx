@@ -89,7 +89,7 @@ function GameDetailContent() {
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     touchEndX.current = e.changedTouches[0].clientX;
-    handleSwipeHandler();
+    SwipeHandler();
   };
 
   const SwipeHandler = () => {
