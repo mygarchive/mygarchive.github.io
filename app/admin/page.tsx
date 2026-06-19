@@ -67,23 +67,32 @@ export default function AdminPanel() {
 
   // سیستم چند لایه پروکسی ارتقا یافته برای دور زدن تحریم RAWG بدون نیاز به VPN
   const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
-    // لایه اول: پروکسی CodeTabs (پایداری بالا در شبکه ایران)
+    // 🚀 لایه اول: پروکسی اختصاصی و شخصی شما روی کلادفلر (بدون فیلتر و تحریم)
+    try {
+      const myWorkerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+      const res = await fetch(myWorkerUrl);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("پروکسی اختصاصی کلادفلر ناموفق بود، سوئیچ به پروکسی‌های پشتیبان...");
+    }
+
+    // لایه دوم پشتیبان: پروکسی CodeTabs
     try {
       const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("پروکسی اول (CodeTabs) ناموفق بود...");
+      console.warn("پروکسی CodeTabs ناموفق بود...");
     }
 
-    // لایه دوم: پروکسی Corsproxy.io
+    // لایه سوم پشتیبان: پروکسی Corsproxy.io
     try {
       const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("پروکسی دوم (Corsproxy) ناموفق بود...");
+      console.warn("پروکسی Corsproxy ناموفق بود...");
     }
 
-    // لایه سوم: پروکسی AllOrigins
+    // لایه چهارم پشتیبان: پروکسی AllOrigins
     try {
       const res = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(targetUrl)}`);
       if (res.ok) {
@@ -91,18 +100,10 @@ export default function AdminPanel() {
         return parseAllOrigins ? JSON.parse(jsonWrapper.contents) : jsonWrapper;
       }
     } catch (e) {
-      console.warn("پروکسی سوم (AllOrigins) ناموفق بود...");
+      console.warn("پروکسی AllOrigins ناموفق بود...");
     }
 
-    // لایه چهارم: پروکسی ThingProxy
-    try {
-      const res = await fetch(`https://thingproxy.freeboard.io/fetch/${encodeURIComponent(targetUrl)}`);
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn("پروکسی چهارم (ThingProxy) ناموفق بود...");
-    }
-
-    // تلاش مستقیم (آخرین راه حل در صورت خاموش بودن تحریم یا فیلتر)
+    // تلاش مستقیم (آخرین راه حل با وی‌پاین)
     const directRes = await fetch(targetUrl);
     if (directRes.ok) return await directRes.json();
     
