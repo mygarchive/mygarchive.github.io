@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
 const GITHUB_OWNER = 'hf273'; 
@@ -51,12 +51,6 @@ export default function AdminPanel() {
     }
   }, []);
 
-  useEffect(() => {
-    if (queue.length > 0 && !isProcessingQueue) {
-      processNextQueueTask();
-    }
-  }, [queue, isProcessingQueue]);
-
   const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
     try {
       const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`);
@@ -102,7 +96,7 @@ export default function AdminPanel() {
         setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
       }
     } catch {
-      setLoginError('خطا در برقراری ارتباط با گیت‌hاب.');
+      setLoginError('خطا در برقراری ارتباط با گیت‌هاب.');
     }
     setLoading(false);
   };
@@ -153,22 +147,19 @@ export default function AdminPanel() {
     setLoading(false);
   };
 
-  // اضافه شدن خودکار بدون پرسش دستی
   const handleAddGame = (game: any) => {
     setQueue((prev) => [...prev, { type: 'ADD', game }]);
     setMessage({ text: `بازی "${game.name}" به صف پردازش گیت‌هاب اضافه شد.`, isError: false });
   };
 
-  // فیکس مجدد (آپدیت کامل از API)
   const handleFixGame = (game: any) => {
     setQueue((prev) => [...prev, { type: 'ADD', game }]);
     setMessage({ text: `درخواست به‌روزرسانی/فیکس "${game.name}" به صف اضافه شد.`, isError: false });
   };
 
-  // ویرایش دستی اطلاعات بازی (مثل لینک استیم)
   const handleEditGame = (game: any) => {
     const newSteamLink = window.prompt("لینک استیم جدید را برای این بازی وارد کنید:", game.steam_link || "");
-    if (newSteamLink === null) return; // کاربر کنسل کرد
+    if (newSteamLink === null) return;
 
     const overrideData = {
       steam_link: newSteamLink.trim()
@@ -184,21 +175,22 @@ export default function AdminPanel() {
     setMessage({ text: `درخواست حذف "${gameName}" به صف اضافه شد.`, isError: false });
   };
 
-  const processNextQueueTask = async () => {
+  // --- اصلاح شده با useCallback ---
+  const processNextQueueTask = useCallback(async () => {
     if (queue.length === 0) return;
 
     setIsProcessingQueue(true);
     const currentTask = queue[0];
     const { type, game, gameId, gameName, overrideData } = currentTask;
 
+    function RepoStateCleaner(list: any[]) {
+      return list.map(g => ({ ...g }));
+    }
+
     try {
       const latestRepoState = await fetchMyGames(githubToken);
-      let currentGamesList = latestRepoState ? latestRepoStateCleaner(latestRepoState.games) : [...myGames];
+      let currentGamesList = latestRepoState ? RepoStateCleaner(latestRepoState.games) : [...myGames];
       let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
-
-      function RepoStateCleaner(list: any[]) {
-        return list.map(g => ({ ...g }));
-      }
 
       if (type === 'ADD') {
         setMessage({ text: `⏳ در حال استخراج اطلاعات از RAWG برای "${game.name}"...`, isError: false });
@@ -216,7 +208,8 @@ export default function AdminPanel() {
         ]);
         
         const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
-        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawFa}`;
+        // اصلاح متغیر در خط زیر (rawFa به rawDescriptionFa تغییر یافت)
+        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
         
         let minReq = '';
         let recReq = '';
@@ -333,12 +326,10 @@ export default function AdminPanel() {
         }
 
       } else if (type === 'UPDATE') {
-        // ادیت دستی اطلاعات ثبت شده در آرشیو
         setMessage({ text: `⏳ در حال اعمال اصلاحیه برای "${game.name}"...`, isError: false });
 
         const targetGameIdx = currentGamesList.findIndex((g: any) => g.id === game.id);
         if (targetGameIdx !== -1) {
-          // ادغام اطلاعات قبلی با دیتای جدیدِ ویرایش شده توسط کاربر (Override Data)
           currentGamesList[targetGameIdx] = {
             ...currentGamesList[targetGameIdx],
             ...overrideData
@@ -387,7 +378,14 @@ export default function AdminPanel() {
       setQueue((prev) => prev.slice(1));
       setIsProcessingQueue(false);
     }
-  };
+  }, [githubToken, myGames, fileSha, queue, isProcessingQueue]); // وابستگی‌ها اصلاح شد
+
+  // اصلاح این بخش برای استفاده از تابع بهینه‌شده
+  useEffect(() => {
+    if (queue.length > 0 && !isProcessingQueue) {
+      processNextQueueTask();
+    }
+  }, [queue, isProcessingQueue, processNextQueueTask]);
 
   const displayedGames = viewMode === 'SEARCH' ? searchResults : myGames;
 
@@ -488,7 +486,6 @@ export default function AdminPanel() {
                           <button onClick={() => handleFixGame(game)} className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs transition font-bold">🔄 فیکس مجدد</button>
                           <button onClick={() => handleRemoveGame(game.id, game.name)} className="px-3 py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف</button>
                         </div>
-                        {/* دکمه ویرایش دستی استیم و اطلاعات */}
                         <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش/اصلاح لینک استیم دستی</button>
                       </div>
                     ) : (
