@@ -177,18 +177,18 @@ function GameDetailContent() {
   };
 
   const themeStyles = {
-    bg: darkMode ? '#020617' : '#f8fafc',
-    text: darkMode ? '#f1f5f9' : '#0f172a',
+    bg: darkMode ? '#020617' : '#f1f5f9',                             // تغییر به خاکستری-آبی مات به جای سفید
+    text: darkMode ? '#f1f5f9' : '#1e293b',                           // سرمه‌ای تیره ملایم به جای مشکی خالص
     titleText: darkMode ? '#ffffff' : '#0f172a',
-    subText: darkMode ? '#94a3b8' : '#475569',
-    cardBg: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff',
+    subText: darkMode ? '#94a3b8' : '#475569',                        // کاهش کنتراست متن‌های فرعی
+    cardBg: darkMode ? 'rgba(15, 23, 42, 0.4)' : 'rgba(255, 255, 255, 0.8)', // پس‌زمینه شیشه‌ای ملایم برای کارت‌ها
     sidebarBg: darkMode ? '#0f172a' : '#ffffff',
-    border: darkMode ? '#1e293b' : '#e2e8f0',
-    btnBg: darkMode ? 'rgba(88, 28, 135, 0.3)' : '#f3e8ff',
+    border: darkMode ? '#1e293b' : '#cbd5e1',                         // بوردرهای نرم‌تر در حالت روشن
+    btnBg: darkMode ? 'rgba(88, 28, 135, 0.3)' : '#f3e8ff',           // رنگ بنفش ملایم محبوب شما
     btnBorder: darkMode ? 'rgba(126, 34, 206, 0.4)' : '#e9d5ff',
     btnText: darkMode ? '#c084fc' : '#6b21a8',
     opacity: darkMode ? '#020617' : '#f1f5f9',
-    footerBg: darkMode ? '#0f172a' : '#ffffff'
+    footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'
   };
 
   if (loading || !game) {
