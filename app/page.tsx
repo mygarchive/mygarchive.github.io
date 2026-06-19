@@ -136,14 +136,14 @@ export default function Home() {
   };
 
   const themeStyles = {
-    bg: darkMode ? '#020617' : '#f8fafc',
-    text: darkMode ? '#f1f5f9' : '#0f172a',
+    bg: darkMode ? '#020617' : '#f1f5f9',                             // تغییر به خاکستری-آبی مات به جای سفید گچ‌مانند
+    text: darkMode ? '#f1f5f9' : '#1e293b',                           // سرمه‌ای تیره ملایم به جای مشکی خالص برای متن‌ها
     titleText: darkMode ? '#ffffff' : '#0f172a',
-    subText: darkMode ? '#94a3b8' : '#475569',
-    cardBg: darkMode ? '#0f172a' : '#ffffff',
-    border: darkMode ? '#1e293b' : '#e2e8f0',
-    inputBg: darkMode ? '#020617' : '#f1f5f9',
-    footerBg: darkMode ? '#0f172a' : '#ffffff'
+    subText: darkMode ? '#94a3b8' : '#475569',                        // خاکستری متعادل برای متن‌های فرعی
+    cardBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.8)',        // کارت‌های شیشه‌ای ملایم به جای سفید خالص
+    border: darkMode ? '#1e293b' : '#cbd5e1',                         // بوردرهای کمی نرم‌تر و مشخص‌تر در تم روشن
+    inputBg: darkMode ? '#020617' : 'rgba(255, 255, 255, 0.6)',       // باکس سرچ ملایم و هماهنگ با کارت‌ها
+    footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'       // فوتر مات و سبک
   };
 
   if (loading) {
