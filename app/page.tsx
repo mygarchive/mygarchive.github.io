@@ -272,12 +272,16 @@ export default function Home() {
                 style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
               >
                 <div className="w-full h-44 overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
-                  <img 
-                    src={getOptimizedUrl(game.background_image, 400)} 
-                    alt={game.name} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
-                  />
-                </div>
+  <img 
+    src={getOptimizedUrl(game.background_image, 400)} 
+    alt={game.name} 
+    onError={(e) => {
+      e.currentTarget.onerror = null;
+      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
+    }}
+    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
+  />
+</div>
                 <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
                   <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
                     {game.name}
