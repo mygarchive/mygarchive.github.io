@@ -312,7 +312,7 @@ export default function Home() {
         </p>
         <div className="flex justify-center items-center pt-3 text-xs border-t" style={{ borderColor: darkMode ? '#020617' : '#f1f5f9' }}>
           <div className="font-mono" style={{ color: themeStyles.subText }}>
-            توسعه‌یافته با 💜 توسط <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="text-purple-500 font-bold hover:underline">gemini</a>
+            توسعه‌یافته با 💜 توسط <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="text-purple-500 font-bold hover:underline">Gemini</a>
           </div>
         </div>
       </footer>
