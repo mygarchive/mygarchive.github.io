@@ -260,7 +260,14 @@ if (details.stores && details.stores.length > 0) {
       s.store?.id === 1
   );
 
-  console.log("STEAM STORE FOUND:", steamStore);
+  console.log(
+  "STEAM STORE FULL:",
+  JSON.stringify(steamStore, null, 2)
+);
+  console.log(
+  "STEAM STORE FULL:",
+  JSON.stringify(steamStore, null, 2)
+);
 
   if (steamStore) {
     console.log("STEAM STORE KEYS:", Object.keys(steamStore));
