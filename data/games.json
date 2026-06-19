@@ -159,5 +159,46 @@
     },
     "description_en": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.\n\nIn Forza Horizon 6, you will get to discover a scenic and breathtaking Japan, where you will build up your racing status to become a Legend at the Horizon Festival.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nForza Horizon 6 ورودی بعدی از سری بازی‌های رانندگی جهان باز است که مورد تحسین منتقدان قرار گرفته و جوایزی را دریافت کرده است. Forza Horizon 6 برای اولین بار در سال 2026 روی کنسول های Xbox Series X|S و رایانه های شخصی عرضه خواهد شد.\n\nدر Forza Horizon 6، ژاپن منظره و نفس گیر را کشف خواهید کرد، جایی که وضعیت مسابقه خود را برای تبدیل شدن به یک افسانه در جشنواره Horizon ایجاد خواهید کرد."
+  },
+  {
+    "id": 8488,
+    "name": "Tom Clancy's Rainbow Six Siege",
+    "background_image": "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
+    "rating": 3.88,
+    "metacritic": 75,
+    "released": "2015-12-01",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 32,
+    "developers": "Ubisoft, Ubisoft Montreal, Sperasoft",
+    "steam_link": "https://store.steampowered.com/app/359550/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/cde/cde4694574a78e355478cf6e438106ac.jpg",
+      "https://media.rawg.io/media/screenshots/6c3/6c386356a134572ccac11bffa6a74820.jpg",
+      "https://media.rawg.io/media/screenshots/2b3/2b38b4a3dcdd8993ae211dc1616f6ced.jpg",
+      "https://media.rawg.io/media/screenshots/df2/df22920866e77c82a6a505776023d7d9.jpg",
+      "https://media.rawg.io/media/screenshots/5c3/5c3b2517577b729ba9c59d1638fd3a48.jpg",
+      "https://media.rawg.io/media/screenshots/004/004cd2d5e5bf8c06f24a526d2ccd6fff.jpg",
+      "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7, Windows 8.1, Windows 10 (64bit versions required)\nProcessor: Intel Core i3 560 @ 3.3 GHz or AMD Phenom II X4 945 @ 3.0 GHz\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GTX 460 or AMD Radeon HD 5870 (DirectX-11 compliant with 1GB of VRAM)\nNetwork: Broadband Internet connection\nStorage: 30 GB available space\nSound Card: DirectX® 9.0c compatible sound card with latest drivers\nAdditional Notes: SUPPORTED VIDEO CARDS AT TIME OF RELEASE:  GeForce GTX 460 or better, GTX 560 or better, GTX 650 or better, GTX 750 or better, or any card from the GT900 and Titan Series, Radeon HD5870 or better, HD6870 or better, HD7770 or better, R7 260X or better, or any card from the R-300 series and Fury X. Laptop models of these cards may work but are not supported. These chipsets are the only ones that will run this game. Additional chipsets may be supported after release. For an up-to-date list of supported chipsets, please visit the FAQ for this game on our support website: http://support.ubi.com",
+      "recommended": "OS: Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions required)\nProcessor: Intel Core i5-2500K @ 3.3 GHz or better or AMD FX-8120 @ 3.1 Ghz or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 670 (or GTX 760 / GTX 960) or AMD Radeon HD 7970 (or R9 280x [2GB VRAM] / R9 380 / Fury X)\nNetwork: Broadband Internet connection\nStorage: 47 GB available space\nSound Card: DirectX® 9.0c compatible sound card 5.1 with latest drivers\nAdditional Notes: SUPPORTED VIDEO CARDS AT TIME OF RELEASE:  GeForce GTX 460 or better, GTX 560 or better, GTX 650 or better, GTX 750 or better, or any card from the GT900 and Titan Series, Radeon HD5870 or better, HD6870 or better, HD7770 or better, R7 260X or better, or any card from the R-300 series and Fury X. Laptop models of these cards may work but are not supported. These chipsets are the only ones that will run this game. Additional chipsets may be supported after release. For an up-to-date list of supported chipsets, please visit the FAQ for this game on our support website: http://support.ubi.com"
+    },
+    "description_en": "The gameplay of the game is based on intense strategic battles between the Navigator and the defenders in a limited space. Locations in the game consist of a multi-level object (for example, a multi-storey building), inside which there are defenders, and the area around it, where the attackers begin.\r\n\r\nDestruction is at the head of the game mechanics. The surrounding objects are created with maximum realism, the degree of damage depends on the calibre of the bullets used by the players or on the total power of the laid explosives. Walls can be destroyed, creating new firing positions and shelters. Optimal use of the potential of destruction often becomes a guarantee of victory. Defenders can limit the ability of attackers to destroy, using kits to strengthen the walls and the device of some operatives.\r\n\r\nThe primary game mode - multiplayer, normal or rating. During the game in the last mode, the player is assigned a certain rank, and parameters such as the ratio of kills/deaths and wins/losses are recorded in his profile displayed in the game.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nگیم پلی بازی بر اساس نبردهای استراتژیک شدید بین Navigator و مدافعان در یک فضای محدود است. مکان‌های بازی شامل یک شی چند سطحی (به عنوان مثال، یک ساختمان چند طبقه) است که در داخل آن مدافعان قرار دارند و منطقه اطراف آن، جایی که مهاجمان شروع می‌شوند.\r\n\r\nتخریب در راس مکانیک بازی قرار دارد. اشیاء اطراف با حداکثر واقع گرایی ایجاد می شوند، میزان آسیب به کالیبر گلوله های استفاده شده توسط بازیکنان یا به کل قدرت مواد منفجره گذاشته شده بستگی دارد. دیوارها را می توان تخریب کرد و موقعیت ها و پناهگاه های جدید ایجاد کرد. استفاده بهینه از پتانسیل تخریب اغلب به تضمین پیروزی تبدیل می شود. مدافعان می توانند با استفاده از کیت هایی برای تقویت دیوارها و دستگاه برخی از عوامل، توانایی مهاجمان را برای تخریب محدود کنند.\r\n\r\nحالت بازی اولیه - چند نفره، معمولی یا رتبه بندی. در حین بازی در آخرین حالت، به بازیکن رتبه خاصی اختصاص داده می شود و پارامترهایی مانند نسبت کشتار/مرگ و برد/باخت در پروفایل نمایش داده شده او در بازی ثبت می شود."
   }
 ]
