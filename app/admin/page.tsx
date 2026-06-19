@@ -4,17 +4,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-// ساختارهای ثابت پروژه شما
 const GITHUB_OWNER = 'hf273'; 
 const GITHUB_REPO = 'game-list'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
 
-// ساختار تسک‌های صف‌بندی برای گیت‌هاب
 interface QueueTask {
-  type: 'ADD' | 'REMOVE';
+  type: 'ADD' | 'REMOVE' | 'UPDATE';
   game: any;
   gameId?: number;
   gameName?: string;
+  overrideData?: any; // برای اعمال ویرایش دستی
 }
 
 async function translateToPersian(text: string): Promise<string> {
@@ -37,8 +36,8 @@ export default function AdminPanel() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({ text: '', isError: false });
   const [fileSha, setFileSha] = useState('');
+  const [viewMode, setViewMode] = useState<'SEARCH' | 'ARCHIVE'>('SEARCH');
 
-  // استیت‌های مربوط به سیستم هوشمند صف‌بندی (Queue)
   const [queue, setQueue] = useState<QueueTask[]>([]);
   const [isProcessingQueue, setIsProcessingQueue] = useState(false);
 
@@ -52,20 +51,18 @@ export default function AdminPanel() {
     }
   }, []);
 
-  // مانیتورینگ صف: هر زمان تسک جدیدی وارد شد، به صورت خودکار پردازش را آغاز کن
   useEffect(() => {
     if (queue.length > 0 && !isProcessingQueue) {
       processNextQueueTask();
     }
   }, [queue, isProcessingQueue]);
 
-  // مکانیزم ضد تحریم و پروکسی که خودت قبلاً پیاده کرده بودی کاملاً حفظ شده
   const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
     try {
       const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`);
       if (res.ok) return await res.json();
     } catch (e) {
-      console.warn("پروکسی اول ناموفق بود، سوئیچ به پروکسی دوم...", e);
+      console.warn("پروکسی اول ناموفق بود...", e);
     }
 
     try {
@@ -75,7 +72,7 @@ export default function AdminPanel() {
         return parseAllOrigins ? JSON.parse(jsonWrapper.contents) : jsonWrapper;
       }
     } catch (e) {
-      console.warn("پروکسی دوم هم ناموفق بود، سوئیچ به اتصال مستقیم...", e);
+      console.warn("پروکسی دوم ناموفق بود...", e);
     }
 
     const directRes = await fetch(targetUrl);
@@ -105,7 +102,7 @@ export default function AdminPanel() {
         setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
       }
     } catch {
-      setLoginError('خطا در برقراری ارتباط با گیت‌هاب. وضعیت اینترنت خود را بررسی کنید.');
+      setLoginError('خطا در برقراری ارتباط با گیت‌hاب.');
     }
     setLoading(false);
   };
@@ -144,46 +141,67 @@ export default function AdminPanel() {
   const handleSearch = async () => {
     if (!searchQuery) return;
     setLoading(true);
+    setViewMode('SEARCH');
     try {
       const targetUrl = `https://api.rawg.io/api/games?key=${RAWG_API_KEY}&search=${encodeURIComponent(searchQuery)}&page_size=24`;
       const data = await fetchSmartRoute(targetUrl, true);
       setSearchResults(data.results || []);
     } catch (err) { 
-      console.error("خطای جامع در سیستم جستجو:", err); 
-      setMessage({ text: 'خطا در برقراری ارتباط. اگر وی‌پی‌ان دارید روشن کنید و دوباره بزنید.', isError: true });
+      console.error("خطای سیستم جستجو:", err); 
+      setMessage({ text: 'خطا در برقراری ارتباط با سرور RAWG.', isError: true });
     }
     setLoading(false);
   };
 
-  // قرار دادن عملیاتِ افزودنِ بازی در صف انتظار (بدون تغییر رابط کاربری)
+  // اضافه شدن خودکار بدون پرسش دستی
   const handleAddGame = (game: any) => {
     setQueue((prev) => [...prev, { type: 'ADD', game }]);
     setMessage({ text: `بازی "${game.name}" به صف پردازش گیت‌هاب اضافه شد.`, isError: false });
   };
 
-  // قرار دادن عملیاتِ حذفِ بازی در صف انتظار
+  // فیکس مجدد (آپدیت کامل از API)
+  const handleFixGame = (game: any) => {
+    setQueue((prev) => [...prev, { type: 'ADD', game }]);
+    setMessage({ text: `درخواست به‌روزرسانی/فیکس "${game.name}" به صف اضافه شد.`, isError: false });
+  };
+
+  // ویرایش دستی اطلاعات بازی (مثل لینک استیم)
+  const handleEditGame = (game: any) => {
+    const newSteamLink = window.prompt("لینک استیم جدید را برای این بازی وارد کنید:", game.steam_link || "");
+    if (newSteamLink === null) return; // کاربر کنسل کرد
+
+    const overrideData = {
+      steam_link: newSteamLink.trim()
+    };
+
+    setQueue((prev) => [...prev, { type: 'UPDATE', game, overrideData }]);
+    setMessage({ text: `درخواست اصلاح اطلاعات بازی "${game.name}" به صف اضافه شد.`, isError: false });
+  };
+
   const handleRemoveGame = (gameId: number, gameName: string) => {
     if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     setQueue((prev) => [...prev, { type: 'REMOVE', game: null, gameId, gameName }]);
     setMessage({ text: `درخواست حذف "${gameName}" به صف اضافه شد.`, isError: false });
   };
 
-  // هستهٔ پردازشی مخفی: انجام خودکار تمام فرآیندهای استخراج و کامیت به گیت‌هاب
   const processNextQueueTask = async () => {
     if (queue.length === 0) return;
 
     setIsProcessingQueue(true);
     const currentTask = queue[0];
-    const { type, game, gameId, gameName } = currentTask;
+    const { type, game, gameId, gameName, overrideData } = currentTask;
 
     try {
-      // قدم اول: گرفتن آخرین SHA فایل از گیت‌هاب برای جلوگیری از تداخل (Conflict)
       const latestRepoState = await fetchMyGames(githubToken);
-      let currentGamesList = latestRepoState ? latestRepoState.games : [...myGames];
+      let currentGamesList = latestRepoState ? latestRepoStateCleaner(latestRepoState.games) : [...myGames];
       let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
 
+      function RepoStateCleaner(list: any[]) {
+        return list.map(g => ({ ...g }));
+      }
+
       if (type === 'ADD') {
-        setMessage({ text: `⏳ در حال استخراج خودکار [${queue.length} بازی در صف]: تریلر، لینک استیم، گالری ۱۰ تایی و ترجمه برای "${game.name}"...`, isError: false });
+        setMessage({ text: `⏳ در حال استخراج اطلاعات از RAWG برای "${game.name}"...`, isError: false });
 
         const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
         const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
@@ -198,7 +216,7 @@ export default function AdminPanel() {
         ]);
         
         const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
-        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
+        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawFa}`;
         
         let minReq = '';
         let recReq = '';
@@ -208,7 +226,6 @@ export default function AdminPanel() {
           if (pcPlatformData.requirements.minimum) minReq = pcPlatformData.requirements.minimum;
           if (pcPlatformData.requirements.recommended) recReq = pcPlatformData.requirements.recommended;
         }
-
         if (!minReq && pcPlatformData?.requirements_minimum) minReq = pcPlatformData.requirements_minimum;
         if (!recReq && pcPlatformData?.requirements_recommended) recReq = pcPlatformData.requirements_recommended;
 
@@ -230,102 +247,65 @@ export default function AdminPanel() {
         else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
         else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
-        // ==========================================
-        // سیستم هوشمند استخراج لینک استیم (با قابلیت سرچ خودکار)
-        // ==========================================
-        let steamUrl = '';
+        const metacriticScore = details.metacritic || null;
 
-        // ۱. بررسی فروشگاه‌های ثبت شده در RAWG (استخراج App ID واقعی استیم از داخل لینک)
+        let steamUrl = '';
         if (details.stores && details.stores.length > 0) {
           const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam' || s.store?.id === 1);
           if (steamStore && steamStore.url) {
             const match = steamStore.url.match(/(?:app|sub)\/(\d+)/);
-            if (match && match[1]) {
-              steamUrl = `https://store.steampowered.com/app/${match[1]}/`; // لینک تمیز با آیدی واقعی
-            } else {
-              steamUrl = steamStore.url; // ثبت لینک خام در صورت عجیب بودن فرمت
-            }
+            steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : steamStore.url;
           }
         }
-
-        // ۲. بررسی فیلد وب‌سایت (گاهی RAWG لینک استیم را اینجا قرار می‌دهد)
         if (!steamUrl && details.website && details.website.includes('steampowered.com')) {
           const match = details.website.match(/(?:app|sub)\/(\d+)/);
-          if (match && match[1]) {
-            steamUrl = `https://store.steampowered.com/app/${match[1]}/`;
-          } else {
-            steamUrl = details.website;
-          }
+          steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : details.website;
         }
-
-        // ۳. دیتابیس فال‌بک (فقط برای حل باگ RAWG در بازی‌های شرکت Valve مثل دوتا ۲)
         if (!steamUrl) {
-          const fallbackSteamLinks: { [key: string]: string } = {
+          const fallbackList: { [key: string]: string } = {
             "Dota 2": "https://store.steampowered.com/app/570/",
             "Counter-Strike 2": "https://store.steampowered.com/app/730/",
-            "Counter-Strike: Global Offensive": "https://store.steampowered.com/app/730/",
             "Team Fortress 2": "https://store.steampowered.com/app/440/",
             "Portal 2": "https://store.steampowered.com/app/620/",
-            "Portal": "https://store.steampowered.com/app/400/",
-            "Left 4 Dead 2": "https://store.steampowered.com/app/550/",
-            "Half-Life 2": "https://store.steampowered.com/app/220/",
-            "Apex Legends": "https://store.steampowered.com/app/1172470/"
+            "Left 4 Dead 2": "https://store.steampowered.com/app/550/"
           };
-          const exactName = details.name || game.name;
-          if (fallbackSteamLinks[exactName]) {
-            steamUrl = fallbackSteamLinks[exactName];
-          }
+          const exact = details.name || game.name;
+          steamUrl = fallbackList[exact] || `https://store.steampowered.com/search/?term=${encodeURIComponent(exact)}`;
         }
 
-        // ۴. جستجوی خودکار در استیم (تیر آخر)
-        // اگر بعد از ۳ مرحله بالا هیچ لینکی پیدا نشد، نام بازی در استیم جستجو می‌شود
-        if (!steamUrl) {
-          const exactGameName = details.name || game.name;
-          steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(exactGameName)}`;
-        }
-        // ==========================================
-
-        // استخراج اتوماتیک ویدیوهای یوتیوب
-        const autoYoutubeVideos: string[] = [];
-        if (youtubeData && youtubeData.results && youtubeData.results.length > 0) {
+        const autoYoutube: string[] = [];
+        if (youtubeData?.results?.length > 0) {
           youtubeData.results.slice(0, 5).forEach((vid: any) => {
-            if (vid.external_id) {
-              autoYoutubeVideos.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
-            }
+            if (vid.external_id) autoYoutube.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
           });
         }
+        const trailer = movieData.results?.[0]?.data?.max || '';
+        if (trailer && !autoYoutube.includes(trailer)) autoYoutube.unshift(trailer);
 
-        const mainTrailer = movieData.results?.[0]?.data?.max || '';
-        if (mainTrailer && !autoYoutubeVideos.includes(mainTrailer)) {
-          autoYoutubeVideos.unshift(mainTrailer);
-        }
-
-        // فیکس شدن ۱۰۰ درصدی گالری ۱۰ عکسی
-        let finalGallery: string[] = [];
-        if (screenshots && screenshots.results && screenshots.results.length > 0) {
-          finalGallery = screenshots.results.map((s: any) => s.image);
-        }
-        if (game.short_screenshots && game.short_screenshots.length > 0) {
+        let galleryFinal: string[] = [];
+        if (screenshots?.results?.length > 0) galleryFinal = screenshots.results.map((s: any) => s.image);
+        if (game.short_screenshots?.length > 0) {
           game.short_screenshots.forEach((s: any) => {
-            if (!finalGallery.includes(s.image)) finalGallery.push(s.image);
+            if (!galleryFinal.includes(s.image)) galleryFinal.push(s.image);
           });
         }
-        finalGallery = finalGallery.slice(0, 10);
+        galleryFinal = galleryFinal.slice(0, 10);
 
         const newGameObj = {
           id: game.id,
           name: game.name,
           background_image: game.background_image,
           rating: game.rating,
+          metacritic: metacriticScore,
           released: game.released,
           genres: game.genres || [],
           esrb_rating: finalAge,
           playtime: details.playtime || 0,
           developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
           steam_link: steamUrl, 
-          trailer_url: mainTrailer,
-          youtube_videos: autoYoutubeVideos, 
-          gallery: finalGallery, 
+          trailer_url: trailer,
+          youtube_videos: autoYoutube, 
+          gallery: galleryFinal, 
           requirements: { 
             minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
             recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
@@ -334,54 +314,82 @@ export default function AdminPanel() {
           description_fa: descriptionFaWithLabel
         };
 
-        const cleanGamesList = currentGamesList.filter((g: any) => g.id !== game.id);
-        cleanGamesList.push(newGameObj);
+        const cleanList = currentGamesList.filter((g: any) => g.id !== game.id);
+        cleanList.push(newGameObj);
 
-        // ارسال کامیت امن به گیت‌هاب
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
           headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Auto Add/Update ${game.name} via Queue`, content: safeBtoa(JSON.stringify(cleanGamesList, null, 2)), sha: currentSha })
+          body: JSON.stringify({ message: `Auto Add ${game.name}`, content: safeBtoa(JSON.stringify(cleanList, null, 2)), sha: currentSha })
         });
 
         if (res.status === 200 || res.status === 201) {
           const resData = await res.json();
           setFileSha(resData.content.sha);
-          setMyGames(cleanGamesList);
-          setMessage({ text: `✅ بازی "${game.name}" با موفقیت ذخیره شد.`, isError: false });
+          setMyGames(cleanList);
+          setMessage({ text: `✅ بازی "${game.name}" با موفقیت ثبت شد.`, isError: false });
         } else { 
-          setMessage({ text: '❌ خطا در ثبت روی گیت‌هاب. توکن یا اینترنت را بررسی کنید.', isError: true }); 
+          setMessage({ text: '❌ خطا در ثبت روی گیت‌هاب.', isError: true }); 
+        }
+
+      } else if (type === 'UPDATE') {
+        // ادیت دستی اطلاعات ثبت شده در آرشیو
+        setMessage({ text: `⏳ در حال اعمال اصلاحیه برای "${game.name}"...`, isError: false });
+
+        const targetGameIdx = currentGamesList.findIndex((g: any) => g.id === game.id);
+        if (targetGameIdx !== -1) {
+          // ادغام اطلاعات قبلی با دیتای جدیدِ ویرایش شده توسط کاربر (Override Data)
+          currentGamesList[targetGameIdx] = {
+            ...currentGamesList[targetGameIdx],
+            ...overrideData
+          };
+
+          const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+            body: JSON.stringify({ message: `Manual Edit ${game.name}`, content: safeBtoa(JSON.stringify(currentGamesList, null, 2)), sha: currentSha })
+          });
+
+          if (res.status === 200 || res.status === 201) {
+            const resData = await res.json();
+            setFileSha(resData.content.sha);
+            setMyGames(currentGamesList);
+            setMessage({ text: `✅ اصلاحیه بازی "${game.name}" با موفقیت اعمال و ذخیره شد.`, isError: false });
+          } else {
+            setMessage({ text: '❌ خطا در اعمال اصلاحیه.', isError: true });
+          }
         }
 
       } else if (type === 'REMOVE') {
         setMessage({ text: `⏳ در حال حذف "${gameName}" از دیتابیس...`, isError: false });
 
-        const updatedGames = currentGamesList.filter((g: any) => g.id !== gameId);
+        const updated = currentGamesList.filter((g: any) => g.id !== gameId);
         
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
           headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Remove ${gameName} via Queue`, content: safeBtoa(JSON.stringify(updatedGames, null, 2)), sha: currentSha })
+          body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updated, null, 2)), sha: currentSha })
         });
 
         if (res.status === 200 || res.status === 201) {
           const resData = await res.json();
           setFileSha(resData.content.sha);
-          setMyGames(updatedGames);
+          setMyGames(updated);
           setMessage({ text: `✅ بازی "${gameName}" با موفقیت حذف گردید.`, isError: false });
         } else {
           setMessage({ text: '❌ خطا در حذف بازی.', isError: true });
         }
       }
     } catch (err) {
-      console.error("خطای صف:", err);
+      console.error("خطا در صف:", err);
       setMessage({ text: '❌ خطا در ارتباط با سرورها.', isError: true });
     } finally {
-      // با موفقیت یا خطا، کار فعلی از صف پاک می‌شود و کار بعدی در صف قرار می‌گیرد
       setQueue((prev) => prev.slice(1));
       setIsProcessingQueue(false);
     }
   };
+
+  const displayedGames = viewMode === 'SEARCH' ? searchResults : myGames;
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6 md:p-12" dir="rtl">
@@ -390,13 +398,11 @@ export default function AdminPanel() {
           <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 p-8 rounded-2xl w-full max-w-md space-y-5">
             <div className="text-center space-y-2 mb-4">
               <h2 className="text-xl font-black text-white">🔒 ورود به پنل مدیریت آرشیو</h2>
-              <p className="text-[11px] text-slate-400 font-medium">جهت ورود، کلید دسترسی (Token) اختصاصی گیت‌هاب خود را وارد کنید.</p>
+              <p className="text-[11px] text-slate-400 font-medium">کلید دسترسی گیت‌هاب (Token) را وارد کنید.</p>
             </div>
-            
             {loginError && <div className="p-3 bg-red-500/10 text-red-400 text-xs font-bold rounded-xl text-center border border-red-900/30">{loginError}</div>}
-            
             <div className="space-y-1.5">
-              <label className="text-xs text-slate-400 font-bold">توکن گیت‌هاب (Personal Access Token):</label>
+              <label className="text-xs text-slate-400 font-bold">توکن گیت‌هاب:</label>
               <input 
                 type="password" 
                 value={githubToken} 
@@ -407,13 +413,12 @@ export default function AdminPanel() {
                 required
               />
             </div>
-            
             <button 
               type="submit" 
               disabled={loading}
               className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-sm transition disabled:opacity-50"
             >
-              {loading ? 'در حال بررسی هویت توکن...' : 'بررسی توکن و ورود به ادمین'}
+              {loading ? 'در حال بررسی...' : 'ورود به پنل'}
             </button>
           </form>
         </div>
@@ -422,29 +427,50 @@ export default function AdminPanel() {
           <header className="flex justify-between items-center mb-8 border-b border-slate-900 pb-4">
             <div className="flex items-center gap-4">
               <h1 className="text-lg font-black text-white">🎮 کنترل پنل هوشمند آرشیو</h1>
-              <button onClick={handleLogout} className="text-xs bg-red-950/40 border border-red-900/60 hover:bg-red-900 text-red-400 hover:text-white px-3 py-1.5 rounded-xl transition font-bold">🚪 خروج از پنل</button>
+              <button onClick={handleLogout} className="text-xs bg-red-950/40 border border-red-900/60 hover:bg-red-900 text-red-400 hover:text-white px-3 py-1.5 rounded-xl transition font-bold">🚪 خروج</button>
             </div>
             {queue.length > 0 && (
               <div className="text-xs bg-purple-950/60 border border-purple-800/80 text-purple-300 px-3 py-1.5 rounded-xl animate-pulse font-mono">
-                ⏳ در حال پردازش پس‌زمینه: {queue.length} بازی در صف
+                ⏳ صف پردازش: {queue.length}
               </div>
             )}
-            <div className="flex items-center gap-4">
-              <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2 rounded-xl">➔ نمایش صفحه اصلی سایت</Link>
-            </div>
+            <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2 rounded-xl">➔ صفحه اصلی سایت</Link>
           </header>
 
-          <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
-            <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
-            <button onClick={handleSearch} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold">جستجو</button>
+          <div className="flex gap-4 mb-6">
+            <button 
+              onClick={() => setViewMode('SEARCH')}
+              className={`flex-1 py-3 rounded-xl text-sm font-bold transition border ${viewMode === 'SEARCH' ? 'bg-purple-600 border-purple-500 text-white shadow-lg shadow-purple-900/20' : 'bg-slate-900 border-slate-800 text-slate-400 hover:bg-slate-800'}`}
+            >
+              🔍 جستجوی بازی جدید
+            </button>
+            <button 
+              onClick={() => setViewMode('ARCHIVE')}
+              className={`flex-1 py-3 rounded-xl text-sm font-bold transition border ${viewMode === 'ARCHIVE' ? 'bg-blue-600 border-blue-500 text-white shadow-lg shadow-blue-900/20' : 'bg-slate-900 border-slate-800 text-slate-400 hover:bg-slate-800'}`}
+            >
+              🗂️ بازی‌های من ({myGames.length})
+            </button>
           </div>
+
+          {viewMode === 'SEARCH' && (
+            <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
+              <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
+              <button onClick={handleSearch} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold">جستجو</button>
+            </div>
+          )}
 
           {message.text && <div className={`p-3 rounded-lg text-xs font-bold mb-6 text-center ${message.isError ? 'bg-red-500/10 text-red-400' : 'bg-green-500/10 text-green-400'}`}>{message.text}</div>}
 
+          {viewMode === 'ARCHIVE' && displayedGames.length === 0 && (
+            <div className="text-center py-12 text-slate-500 font-bold text-sm bg-slate-900/30 rounded-2xl border border-slate-800/50">
+              بازی‌ای در آرشیو موجود نیست.
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {searchResults.map((game) => {
+            {displayedGames.map((game) => {
               const isAlreadyAdded = myGames.some((g) => g.id === game.id);
-              const isTaskInQueue = queue.some((q) => q.game?.id === game.id);
+              const isTaskInQueue = queue.some((q) => q.game?.id === game.id || q.gameId === game.id);
               
               return (
                 <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
@@ -454,12 +480,16 @@ export default function AdminPanel() {
                     
                     {isTaskInQueue ? (
                       <button disabled className="w-full py-2 bg-slate-800 text-slate-400 border border-slate-700 rounded-xl text-xs font-bold animate-pulse cursor-not-allowed">
-                        ⏳ در صف انتظار (پردازش خودکار)...
+                        ⏳ در صف پردازش...
                       </button>
                     ) : isAlreadyAdded ? (
-                      <div className="flex gap-2 w-full">
-                        <button onClick={() => handleAddGame(game)} className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs transition font-bold">🔄 فیکس مجدد</button>
-                        <button onClick={() => handleRemoveGame(game.id, game.name)} className="px-3 py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف</button>
+                      <div className="flex flex-col gap-2 w-full">
+                        <div className="flex gap-2 w-full">
+                          <button onClick={() => handleFixGame(game)} className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs transition font-bold">🔄 فیکس مجدد</button>
+                          <button onClick={() => handleRemoveGame(game.id, game.name)} className="px-3 py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف</button>
+                        </div>
+                        {/* دکمه ویرایش دستی استیم و اطلاعات */}
+                        <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش/اصلاح لینک استیم دستی</button>
                       </div>
                     ) : (
                       <button onClick={() => handleAddGame(game)} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold">＋ افزودن به آرشیو</button>
