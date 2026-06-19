@@ -490,6 +490,7 @@
     "name": "Cyberpunk 2077",
     "background_image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
     "rating": 4.23,
+    "metacritic": 73,
     "released": "2020-12-10",
     "genres": [
       {
@@ -520,8 +521,7 @@
       "https://media.rawg.io/media/screenshots/cd2/cd22af9d6ac593440defac6082760e4a.jpg",
       "https://media.rawg.io/media/screenshots/9b5/9b51535beb9d9e416cb9aac874091334.jpg",
       "https://media.rawg.io/media/screenshots/d84/d84d3a16c1e2cb24dcf73e0108d78455.jpg",
-      "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg",
-      "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg"
+      "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg"
     ],
     "requirements": {
       "minimum": "OS: Windows 7 or 10 (64-bit)\r\n\r\nCPU: Intel Core i5-3570K or AMD FX-8310\r\n\r\nRAM: 8GB\r\n\r\nGPU: Nvidia GeForce GTX 780 3GB or AMD Radeon RX 470\r\n\r\nVRAM: 3GB\r\n\r\nDirect X: Version 12\r\n\r\nAvailable Storage Space: 70GB HDD \r\n\r\nGFX Setting Game Can Be Played On: Low",
