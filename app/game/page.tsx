@@ -89,10 +89,10 @@ function GameDetailContent() {
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     touchEndX.current = e.changedTouches[0].clientX;
-    handleSwipe();
+    handleSwipeHandler();
   };
 
-  const handleSwipe = () => {
+  const SwipeHandler = () => {
     if (activePhotoIndex === null || !game?.gallery) return;
 
     const swipeDistance = touchStartX.current - touchEndX.current;
@@ -380,7 +380,7 @@ function GameDetailContent() {
 }
 
 // توابع کمکی برای جلوگیری از شلوغی
-function PhotoModalRender(activePhotoIndex: any, game: any, setActivePhotoIndex: any, handleTouchMoveHandler:any, TouchStartHandler:any, TouchEndHandler:any) {
+function PhotoModalRender(activePhotoIndex: any, game: any, setActivePhotoIndex: any, TouchMoveHandler: any, TouchStartHandler: any, TouchEndHandler: any) {
   if (activePhotoIndex === null || !game.gallery) return null;
   return (
     <div 
