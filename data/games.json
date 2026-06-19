@@ -487,5 +487,47 @@
     },
     "description_en": "What used to be an unofficial modded map for the Warcraft 3, ended up being the most budgeted cybersport discipline, gathering millions of people to watch annual international championships.\nMOBA genre started with the DOTA, Defense of the Ancients, which can be efficiently described as 5 vs 5 top-down action strategy game, during which players are tasked to destroy the enemy core while protecting their own.\nPlayers can pick out of the roster of 112 heroes and battle on the single map while taking advantage of field vision, resources and item build that can either make heroes stronger or disable the enemy. DOTA 2 is still active, and receives updates weekly, reshaping metas and refreshing game balance, if by any chance some heroes became unreasonably strong. Each hero has not only a unique set of abilities but is fully customizable, through getting items for heroes after matches of through the trade. Not only heroes but terrain, couriers, that deliver items for you and even match announcers, that can be voiced by heroes, professional casters of just memorable characters from other forms of media.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nچیزی که قبلاً یک نقشه اصلاح‌شده غیررسمی برای Warcraft 3 بود، در نهایت به بودجه‌ترین رشته ورزشی سایبری تبدیل شد و میلیون‌ها نفر را برای تماشای مسابقات قهرمانی بین‌المللی سالانه گرد هم آورد.\nژانر MOBA با DOTA، Defense of the Ancients شروع شد، که می‌توان آن را به‌عنوان بازی استراتژی اکشن 5 در مقابل 5 از بالا به پایین توصیف کرد، که در طی آن بازیکنان وظیفه دارند تا هسته دشمن را نابود کنند و در عین حال از هسته خود محافظت کنند.\nبازیکنان می توانند از فهرست 112 قهرمان انتخاب کنند و روی نقشه واحد بجنگند و در عین حال از دید میدانی، منابع و ساخت آیتم استفاده کنند که می تواند قهرمانان را قوی تر کند یا دشمن را از کار بیاندازد. DOTA 2 هنوز فعال است و هر هفته به‌روزرسانی‌ها را دریافت می‌کند، متاها را تغییر می‌دهد و تعادل بازی را تازه‌سازی می‌کند، اگر به‌طور تصادفی برخی از قهرمانان به‌طور غیرمنطقی قوی شوند. هر قهرمان نه تنها مجموعه‌ای از توانایی‌های منحصربه‌فرد دارد، بلکه کاملاً قابل تنظیم است، از طریق گرفتن آیتم‌ها برای قهرمانان پس از مسابقات از طریق تجارت. نه تنها قهرمان‌ها، بلکه زمین، پیک‌هایی که آیتم‌هایی را برای شما تحویل می‌دهند و حتی گویندگان مسابقه را می‌دهند، که می‌توانند توسط قهرمانان، بازیگران حرفه‌ای شخصیت‌های به یاد ماندنی از دیگر اشکال رسانه‌ها صداپیشگی کنند."
+  },
+  {
+    "id": 10986,
+    "name": "Syberia 3",
+    "background_image": "https://media.rawg.io/media/games/d0c/d0cfde21933c9075e793d6cc0c49c91d.jpg",
+    "rating": 2.96,
+    "released": "2017-04-19",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 6,
+    "developers": "Plug In Digital, Microids, Anuman Interactive",
+    "steam_link": "https://store.steampowered.com/search/?term=Syberia%203",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256679248/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256679248/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/708/708bd9aa88e294722798b6862b3f2701.jpg",
+      "https://media.rawg.io/media/screenshots/981/9810f770c62cc4d64ad0d8966d6c1400.jpg",
+      "https://media.rawg.io/media/screenshots/119/119f8137070b242c92aae728651bb2c1.jpg",
+      "https://media.rawg.io/media/screenshots/879/879c6519a0e7c52b664cf5288d7a4b7c.jpg",
+      "https://media.rawg.io/media/screenshots/ed4/ed45f9d663da694e31626de3356be526.jpg",
+      "https://media.rawg.io/media/screenshots/a1a/a1a989d829b0e029ae61abc73fee8656.jpg",
+      "https://media.rawg.io/media/games/d0c/d0cfde21933c9075e793d6cc0c49c91d.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7+ 64bit\nProcessor: Intel Core i3\nMemory: 4 GB RAM\nGraphics: AMD R7 260X - Nvidia GTX 550 Ti 2GB\nDirectX: Version 11\nStorage: 45 GB available space\nSound Card: Any",
+      "recommended": "OS: Windows 7+ 64bit\nProcessor: Intel Core i5\nMemory: 8 GB RAM\nGraphics: Nvidia GTX 960 2 GB\nDirectX: Version 11\nStorage: 45 GB available space\nSound Card: Any"
+    },
+    "description_en": "Digital Deluxe Edition\nDigital Deluxe Edition includes:\nDigital Standard Game\nDigital Soundtracks (*mp3)\nExclusive Digital 20 first pages  of the next Comic Books (*Pdf)\n1 Digital Wallpaper\nAbout the GameAuthor and creator : Benoît SokalOverview:\nThe limitless imagination of Benoît Sokal continues in Syberia 3, focusing on an entirely new adventure. After abandoning the island, Kate is found dying on the edge of a river by the Youkole tribe, a nomadic people migrating with their snow ostriches. Stuck in Valsembor village, together they must find a way to continue their journey in a race against their enemies and unexpected obstacles, not to mention Kate's past, which catches up with her.\nThe next generation in adventure games, Syberia 3 takes you inside an enchanting, mysterious universe full of life for you to explore in 3D. Plunged into the heart of a world inhabited by a cast of interesting characters, you'll discover and experience a fabulous tale as imagined by Benoit Sokal.\nA brand new tale, completely different from the first two Syberia games\nExceptionally immersive storytelling, multiplied by Benoit Sokal's unparalleled artistic direction\nExplore Benoit Sokal's poetic universe in 3D for the first time\nOriginal score by Inon Zur (Syberia 2, Fallout, Dragon Age, Prince of Persia)\nOriginal, real-time 3D puzzles and mysteriesPreviously in Syberia\nA lawyer in NYC, Kate Walker was sent to Europe on a simple mission that gradually transformed into personal quest, an adventu",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنسخه لوکس دیجیتال\nDigital Deluxe Edition شامل:\nبازی استاندارد دیجیتال\nموسیقی متن دیجیتال (*mp3)\nانحصاری دیجیتال 20 صفحه اول کتاب های مصور بعدی (*Pdf)\n1 کاغذ دیواری دیجیتال\nدرباره بازی نویسنده و سازنده: Benoît Sokal مرور کلی:\nتخیل بی حد و حصر Benoît Sokal در Syberia 3 با تمرکز بر یک ماجراجویی کاملاً جدید ادامه دارد. پس از ترک جزیره، کیت در حال مرگ در لبه رودخانه توسط قبیله یوکوله، یک مردم عشایری که با شترمرغ های برفی خود مهاجرت می کنند، پیدا می شود. آنها که در دهکده والسمبور گیر کرده اند، با هم باید راهی برای ادامه سفر خود در مسابقه ای در برابر دشمنان و موانع غیرمنتظره خود بیابند، بدون در نظر گرفتن گذشته کیت، که به او می رسد.\nنسل بعدی بازی‌های ماجراجویی، Syberia 3 شما را به درون دنیایی افسون‌کننده و اسرارآمیز پر از زندگی می‌برد تا بتوانید به صورت سه بعدی کاوش کنید. با فرو رفتن در قلب دنیایی که در آن گروهی از شخصیت‌های جالب زندگی می‌کنند، داستانی افسانه‌ای را که توسط بنوا سوکال تصور می‌شود، کشف و تجربه خواهید کرد.\nیک داستان کاملا جدید، کاملا متفاوت از دو بازی اول Syberia\nداستان سرایی فوق‌العاده همه جانبه که با کارگردانی هنری بی‌نظیر بنوا سوکال تضعیف شده است.\nبرای اولین بار جهان شاعرانه Benoit Sokal را به صورت سه بعدی کاوش کنید\nموسیقی متن اصلی اینون زور (Syberia 2, Fallout, Dragon Age, Prince of Persia)\nمعماها و معماهای سه بعدی اصلی و بی‌درنگ قبلا در Syberia\nکیت واکر که یک وکیل در نیویورک است برای یک ماموریت ساده به اروپا فرستاده شد که به تدریج به یک جستجوی شخصی تبدیل شد، یک ماجراجویی."
   }
 ]
