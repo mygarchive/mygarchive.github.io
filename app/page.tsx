@@ -15,6 +15,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const [isFooterOpen, setIsFooterOpen] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -177,17 +178,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            <div className="flex items-center gap-4 text-xs font-bold">
-              <a href="https://t.me/HF273" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-sky-400 transition" style={{ color: themeStyles.subText }}>
-                <svg className="w-5 h-5 fill-current text-sky-400" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1 .22-1.62.15-.15 2.7-2.48 2.75-2.7.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.25-.02-.11.02-1.83 1.16-5.16 3.42-.49.34-.93.51-1.33.5-.44-.01-1.3-.25-1.93-.46-.78-.25-1.4-.39-1.35-.83.03-.23.35-.47.96-.71 3.76-1.64 6.27-2.72 7.54-3.25 3.59-1.48 4.34-1.74 4.83-1.75.11 0 .35.03.5.16.13.11.17.26.18.37z"/></svg>
-                تلگرام: HF273@
-              </a>
-              <a href="https://bale.ai/invite/HF273" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-green-500 transition" style={{ color: themeStyles.subText }}>
-                <span className="w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center font-mono text-[10px]">B</span>
-                بله: HF273@
-              </a>
-            </div>
-
+            
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold" style={{ color: themeStyles.subText }}>
                 {darkMode ? 'تم تاریک' : 'تم روشن'}
@@ -305,17 +296,98 @@ export default function Home() {
 )}
       </div>
 
-      <footer 
-        className="mt-16 p-6 rounded-2xl border text-center space-y-4 max-w-7xl mx-auto w-full"
-        style={{ backgroundColor: themeStyles.footerBg, borderColor: themeStyles.border }}
-      >
-        <p className="text-xs leading-6" style={{ color: themeStyles.subText }}>
-          ⚖️ <span className="font-bold text-amber-600">سلب مسئولیت حقوقی:</span> تمامی اطلاعات، تصاویر و محتوای درج شده در این وب‌سایت از منابع خارجی دریافت شده و به صورت کاملاً اتوماتیک جمع‌آوری می‌شوند. صاحب سایت هیچ‌گونه مسئولیتی در قبال صحت، دقت و محتوای اطلاعات و عکس‌ها بر عهده ندارد. تمامی حقوق مادی و معنوی مربوط به محتوای بازی‌ها، متعلق به سازندگان و ناشران اصلی آن‌ها می‌باشد.
-        </p>
-        <div className="flex justify-center items-center pt-3 text-xs border-t" style={{ borderColor: darkMode ? '#020617' : '#f1f5f9' }}>
-          <div className="font-mono" style={{ color: themeStyles.subText }}>
-            توسعه‌یافته با 💜 توسط <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="text-purple-500 font-bold hover:underline">Gemini</a>
+      {/* 🌐 فوتر کشویی هوشمند دو زبانه و اتوماتیک */}
+      <footer className="w-full mt-12 pb-6 flex flex-col items-center max-w-7xl mx-auto">
+        
+        {/* دکمه اصلی به زبان انگلیسی */}
+        <button
+          onClick={() => setIsFooterOpen(!isFooterOpen)}
+          className="px-5 py-2.5 rounded-full text-xs font-bold shadow-sm transition duration-300 flex items-center gap-2 hover:scale-105 active:scale-95 font-mono"
+          style={{ 
+            backgroundColor: themeStyles.cardBg, 
+            color: themeStyles.text,
+            border: `1px solid ${themeStyles.border}` 
+          }}
+        >
+          {isFooterOpen ? '🔼 Close Info' : '🔽 Contact & Disclaimer'}
+        </button>
+
+        {/* باکس کشویی مات و انیمیشنی */}
+        <div
+          className={`w-full mt-4 rounded-2xl overflow-hidden transition-all duration-500 ease-in-out ${
+            isFooterOpen ? 'max-h-[600px] opacity-100 p-6 border' : 'max-h-0 opacity-0 p-0 border-none'
+          }`}
+          style={{ 
+            backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.3)' : 'rgba(255, 255, 255, 0.6)', 
+            backdropFilter: 'blur(12px)',
+            borderColor: themeStyles.border 
+          }}
+        >
+          {/* بخش دو ستونه اطلاعات */}
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8" dir="rtl">
+            
+            {/* سمت راست: متن سلب مسئولیت حقوقی دو زبانه و خودکار */}
+            <div className="flex-1 text-right space-y-4">
+              <h4 className="text-xs font-black text-purple-500 mb-1">⚖️ Disclaimer & Source / اطلاعات حقوقی</h4>
+              
+              {/* نسخه فارسی */}
+              <p className="text-[12px] leading-6" style={{ color: themeStyles.subText }}>
+                این وب‌سایت یک آرشیو شخصی برای معرفی بازی‌های ویدیویی است. اطلاعات و تصاویر این آرشیو از منابع شخص ثالث مانند{' '}
+                <a 
+                  href="https://rawg.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-purple-500 hover:underline font-mono font-bold"
+                >
+                  RAWG
+                </a>{' '}
+                به صورت کاملاً خودکار جمع‌آوری و دریافت می‌شوند. تمامی حقوق مربوط به بازی‌ها، تصاویر، لوگوها و علائم تجاری متعلق به سازندگان و ناشران اصلی بازی می‌باشد. 
+                در صورت وجود هرگونه درخواست حذف یا اصلاح محتوا، لطفاً از طریق راه‌های ارتباطی سایت اطلاع دهید.
+              </p>
+
+              {/* نسخه انگلیسی */}
+              <p className="text-[11px] leading-5 text-left font-mono opacity-75 pt-2 border-t border-dashed" style={{ color: themeStyles.subText, borderColor: themeStyles.border }} dir="ltr">
+                This website is a personal archive for video game presentation. All data and media are automatically fetched and collected from third-party platforms like{' '}
+                <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline font-bold">RAWG</a>. 
+                All rights, logos, and trademarks belong to their respective owners and publishers. 
+                For any content removal or correction requests, please reach out via contact links.
+              </p>
+            </div>
+
+            {/* سمت چپ: راه‌های ارتباطی با آیدی تنظیم‌شده شما */}
+            <div className="flex flex-col items-center md:items-end gap-2 min-w-[150px]">
+              <h4 className="text-xs font-black text-purple-500 mb-1 font-mono" dir="ltr">📬 Contact Me</h4>
+              <div className="flex gap-3 mt-1">
+                <a
+                  href="https://t.me/HF273"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-sky-500 hover:text-white"
+                  style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
+                >
+                  Telegram
+                </a>
+                <a
+                  href="https://bale.ai/invite/HF273"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-green-600 hover:text-white"
+                  style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
+                >
+                  Bale
+                </a>
+              </div>
+            </div>
+
           </div>
+        
+          <div 
+            className="mt-6 pt-4 text-center text-[10px] tracking-wide font-mono opacity-80"
+            style={{ borderTop: `1px dashed ${themeStyles.border}`, color: themeStyles.subText }}
+          >
+            Developed with <span className="text-purple-500 animate-pulse">💜</span> by Gemini
+          </div>
+
         </div>
       </footer>
 
