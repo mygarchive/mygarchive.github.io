@@ -359,7 +359,7 @@ export default function Home() {
               <h4 className="text-xs font-black text-purple-500 mb-1 font-mono" dir="ltr">📬 Contact Me</h4>
               <div className="flex gap-3 mt-1">
                 <a
-                  href="https://t.me/HF273"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-sky-500 hover:text-white"
@@ -368,13 +368,13 @@ export default function Home() {
                   Telegram
                 </a>
                 <a
-                  href="https://bale.ai/invite/HF273"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-green-600 hover:text-white"
                   style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
                 >
-                  Bale
+                   
                 </a>
               </div>
             </div>
