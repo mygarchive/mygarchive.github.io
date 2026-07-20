@@ -17,6 +17,9 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
+  // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی و سرعت فوق‌العاده
+  const [visibleCount, setVisibleCount] = useState<number>(12);
+
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
@@ -100,7 +103,14 @@ export default function Home() {
 
   useEffect(() => {
     initData();
-    const handleScroll = () => setShowScrollTop(window.scrollY > 400);
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+
+      // 📜 اسکرول بی‌نهایت: افزودن ۱۲ کارت جدید هنگام نزدیک شدن به انتهای صفحه
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) {
+        setVisibleCount((prev) => prev + 12);
+      }
+    };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -121,7 +131,7 @@ export default function Home() {
     } else if (sortBy === 'released') {
       result.sort((a, b) => {
         const dateA = a.released ? new Date(a.released).getTime() : 0;
-        const dateB = b.released ? new Date(b.released).getTime() : 0; // اصلاح باگ جزیی کد اصلی شما (استفاده صحیح از b.released)
+        const dateB = b.released ? new Date(b.released).getTime() : 0;
         return dateB - dateA;
       });
     } else if (sortBy === 'rating') {
@@ -129,6 +139,8 @@ export default function Home() {
     }
 
     setFilteredGames(result);
+    // 🔄 ریست کردن تعداد کارت‌های مرئی با تغییر فیلتر یا سرچ
+    setVisibleCount(12);
   }, [selectedGenre, searchQuery, sortBy, games]);
 
   const getOptimizedUrl = (url: string, width = 400) => {
@@ -137,14 +149,14 @@ export default function Home() {
   };
 
   const themeStyles = {
-    bg: darkMode ? '#020617' : '#f1f5f9',                             // تغییر به خاکستری-آبی مات به جای سفید گچ‌مانند
-    text: darkMode ? '#f1f5f9' : '#1e293b',                           // سرمه‌ای تیره ملایم به جای مشکی خالص برای متن‌ها
+    bg: darkMode ? '#020617' : '#f1f5f9',
+    text: darkMode ? '#f1f5f9' : '#1e293b',
     titleText: darkMode ? '#ffffff' : '#0f172a',
-    subText: darkMode ? '#94a3b8' : '#475569',                        // خاکستری متعادل برای متن‌های فرعی
-    cardBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.8)',        // کارت‌های شیشه‌ای ملایم به جای سفید خالص
-    border: darkMode ? '#1e293b' : '#cbd5e1',                         // بوردرهای کمی نرم‌تر و مشخص‌تر در تم روشن
-    inputBg: darkMode ? '#020617' : 'rgba(255, 255, 255, 0.6)',       // باکس سرچ ملایم و هماهنگ با کارت‌ها
-    footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'       // فوتر مات و سبک
+    subText: darkMode ? '#94a3b8' : '#475569',
+    cardBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.8)',
+    border: darkMode ? '#1e293b' : '#cbd5e1',
+    inputBg: darkMode ? '#020617' : 'rgba(255, 255, 255, 0.6)',
+    footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'
   };
 
   if (loading) {
@@ -247,19 +259,17 @@ export default function Home() {
           </div>
         </div>
 
-     {filteredGames.length === 0 ? (
+      {filteredGames.length === 0 ? (
   <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
 ) : (
   /* 🖥️ بهینه‌سازی گرید برای نمایش منظم در تمام مانیتورها از جمله 2K و التراواید */
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
-    {filteredGames.map((game) => (
+    {filteredGames.slice(0, visibleCount).map((game) => (
       <a 
         href={`./game?id=${game.id}`} 
         key={game.id} 
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = `./game?id=${game.id}`;
-        }}
+        target="_blank"
+        rel="noopener noreferrer"
         className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
         style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
       >
@@ -268,6 +278,7 @@ export default function Home() {
           <img 
             src={getOptimizedUrl(game.background_image, 400)} 
             alt={game.name} 
+            loading="lazy"
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
