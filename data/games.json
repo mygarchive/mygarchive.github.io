@@ -4548,5 +4548,46 @@
     },
     "description_en": "Far across the sea, an island calls…\nEmbark on a heartrending journey into a brutal, breathtaking world twisted by supernatural forces.\n\nAfter escaping their devastated homeland, Amicia and Hugo travel far south, to new regions and vibrant cities. There, they attempt to start a new life and control Hugo’s curse.\n\nBut, when Hugo’s powers reawaken, death and destruction return in a flood of devouring rats. Forced to flee once more, the siblings place their hopes in a prophesized island that may hold the key to saving Hugo.\n\nDiscover the cost of saving those you love in a desperate struggle for survival. Strike from the shadows or unleash hell, overcoming foes and challenges with a variety of weapons, tools and unearthly powers.\n\n● Sequel to the award-winning adventure A Plague Tale: Innocence\n● A spectacular grounded tale twisted by supernatural forces\n● Use a variety of tools, sneak, fight, or unleash hell and rats\n● Stunning visuals combine with an enthralling score",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر آن سوی دریا، جزیره ای صدا می کند…\nسفری دلخراش را به دنیایی بی رحمانه و نفس گیر که توسط نیروهای ماوراء طبیعی پیچیده شده است، آغاز کنید.\n\nآمیسیا و هوگو پس از فرار از سرزمین ویران شده خود، به مناطق جنوبی و شهرهای پر جنب و جوش سفر می کنند. در آنجا، آنها سعی می کنند زندگی جدیدی را شروع کنند و نفرین هوگو را کنترل کنند.\n\nاما وقتی قدرت هوگو دوباره بیدار می شود، مرگ و ویرانی در سیل موش های بلعنده بازمی گردد. خواهران و برادران مجبور به فرار یک بار دیگر، امید خود را به جزیره ای پیشگویی می کنند که ممکن است کلید نجات هوگو را داشته باشد.\n\nهزینه نجات کسانی که دوستشان دارید را در یک مبارزه ناامیدکننده برای بقا کشف کنید. از سایه ها ضربه بزنید یا جهنم را آزاد کنید، با انواع سلاح ها، ابزارها و قدرت های غیرزمینی بر دشمنان و چالش ها غلبه کنید.\n\n● دنباله ماجراجویی برنده جایزه A Plague Tale: Innocence\n● یک داستان زمینی دیدنی که توسط نیروهای ماوراء طبیعی پیچ خورده است\n● از ابزارهای مختلف استفاده کنید، دزدکی حرکت کنید، بجنگید یا جهنم و موش ها را آزاد کنید\n● تصاویری خیره کننده با یک امتیاز جذاب ترکیب می شود"
+  },
+  {
+    "id": 989330,
+    "name": "A Quiet Place: The Road Ahead",
+    "background_image": "https://media.rawg.io/media/games/fff/fff66fcc5922c2d6db60b5fbb7a466da.jpg",
+    "rating": 2.83,
+    "metacritic": null,
+    "released": "2024-10-17",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 15,
+    "developers": "Stormind Games",
+    "steam_link": "https://store.steampowered.com/app/2233120/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/cea/cea38a56526e5dfd8272d9244f21d4e7.jpg",
+      "https://media.rawg.io/media/games/fff/fff66fcc5922c2d6db60b5fbb7a466da.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit + (22H2 update or later)\nProcessor: CPU Ryzen 3 1200, Core i5-4690\nMemory: 8 GB RAM\nGraphics: GTX 1660; RX Vega 64\nStorage: 50 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit + (22H2 update or later)\nProcessor: CPU Ryzen 5 1500X, Core i5-6600\nMemory: 16 GB RAM\nGraphics: Graphics RTX 3070; RX 6700 XT\nStorage: 50 GB available space"
+    },
+    "description_en": "A Quiet Place: The Road Ahead is a single-player horror adventure game inspired by the critically acclaimed blockbuster movie franchise. Survive in silence.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nA Quiet Place: The Road Ahead یک بازی ماجراجویی ترسناک تک نفره است که از مجموعه فیلم های پرفروش تحسین شده الهام گرفته شده است. در سکوت زنده بمان"
   }
 ]
