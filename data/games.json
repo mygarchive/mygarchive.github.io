@@ -3889,5 +3889,51 @@
     },
     "description_en": "The Wild Eight is in a constant state of improvement, and it is not yet complete. If you are not ready for rare bugs and wipes, we recommend waiting for the full release. This does not mean that the game is unplayable or lacks features, it’s actually vice-versa! Right now The Wild Eight is fully enjoyable and has all main features such as the multiplayer, storyline and side quests. Buying the game and providing your feedback during Early Access will support us in improving the game. For more details check out our Early Access section above.\n***\nThe plane crash was only the beginning. Eight survivors are stranded in the middle of an unforgiving Alaska. Don’t let it consume you. Survive and live to tell the tale of The Wild Eight.\nIn The Wild Eight always keeping on the move is your only way to survive and find out what happened with this mysterious place. It doesn't pretend to be a realistic survival sim, but very challenging and fun game designed for both, a teamwork multiplayer and an immersive singleplayer experience.\nEXPLOREUncover the mystery behind the plane crash by following the quest lines and find all the anomalies that lie hidden in this snowy region. Follow the side quests to abandoned buildings, strange laboratories, facilities for unique loot and something out of this world!\n\nCOOPERATEJoin with other players online to take on the toughest of all the challenges.\n\nSURVIVEBrave new horizons in this beautiful, yet deadly random generated low-poly world. Warm your bod",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWild Eight در حال بهبود دائمی است و هنوز کامل نشده است. اگر برای باگ‌ها و پاک‌های نادر آماده نیستید، توصیه می‌کنیم منتظر انتشار کامل باشید. این بدان معنا نیست که بازی غیرقابل بازی یا فاقد ویژگی است، در واقع برعکس است! در حال حاضر The Wild Eight کاملاً لذت‌بخش است و تمام ویژگی‌های اصلی مانند چند نفره، خط داستانی و ماموریت‌های جانبی را دارد. خرید بازی و ارائه بازخورد خود در هنگام دسترسی زودهنگام، ما را در بهبود بازی حمایت می کند. برای جزئیات بیشتر، بخش دسترسی اولیه ما را در بالا بررسی کنید.\n***\nسقوط هواپیما تنها آغاز ماجرا بود. هشت بازمانده در وسط آلاسکای نابخشوده گیر افتاده اند. نگذارید شما را مصرف کند. زنده بمانید و زندگی کنید تا داستان The Wild Eight را بگویید.\nدر The Wild Eight همیشه در حال حرکت بودن تنها راه شما برای زنده ماندن و پیدا کردن آنچه در این مکان مرموز رخ داده است. این وانمود نمی‌کند که یک سیم‌کارت واقعی بقا است، اما بازی بسیار چالش برانگیز و سرگرم‌کننده است که برای هر دو، کار تیمی و تجربه تک‌نفره همهجانبه طراحی شده است.\nبا دنبال کردن خطوط جستجو، رمز و راز سقوط هواپیما را کشف کنید و تمام ناهنجاری‌های پنهان در این منطقه برفی را پیدا کنید. ماموریت های جانبی را به ساختمان های متروکه، آزمایشگاه های عجیب و غریب، امکانات برای غارت منحصر به فرد و چیزی خارج از این دنیا دنبال کنید!\n\nCOOPERATE به سایر بازیکنان آنلاین بپیوندید تا سخت ترین چالش ها را انجام دهید.\n\nSURVIVE افق های جدید را در این دنیای زیبا و در عین حال مرگبار تصادفی کم پلی تولید شده زنده کنید. بدنت را گرم کن"
+  },
+  {
+    "id": 1090,
+    "name": "This War of Mine",
+    "background_image": "https://media.rawg.io/media/games/283/283e7e600366b0da7021883d27159b27.jpg",
+    "rating": 4.07,
+    "metacritic": 83,
+    "released": "2014-11-14",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 4,
+    "developers": "11 Bit Studios",
+    "steam_link": "https://store.steampowered.com/app/282070/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/9e8/9e8b0c791f6dfc516a29e8b03d4fc7c3.jpg",
+      "https://media.rawg.io/media/screenshots/294/29423009618495c87e9763eae5623de5.jpg",
+      "https://media.rawg.io/media/screenshots/fef/feff21b52293d9620423235314a581d0.jpg",
+      "https://media.rawg.io/media/screenshots/a58/a587e9b61baa56ca72869abe839a634e.jpg",
+      "https://media.rawg.io/media/screenshots/257/257ad17745b95dbb0c02127d64b23473.jpg",
+      "https://media.rawg.io/media/screenshots/a34/a34c4dd8482b553855dc1eb4eedaf9b9.jpg",
+      "https://media.rawg.io/media/games/283/283e7e600366b0da7021883d27159b27.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP SP3 (32 bit) / Vista\nProcessor: Intel(R) Core(TM)2 Duo 2.4, AMD Athlon(TM) X2 2.8 Ghz\nMemory: 2 GB RAM\nGraphics: Geforce 9600 GS, Radeon HD4000, Shader Model 3.0, 512 MB\nDirectX: Version 9.0c\nSound Card: DirectX compatible",
+      "recommended": "OS: Windows 7/Windows 8\nProcessor: Intel(R) Core(TM)2 Quad 2.7 Ghz, AMD Phenom(TM)II X4 3 Ghz\nMemory: 4 GB RAM\nGraphics: GeForce GTX 260, Radeon HD 5770, 1024 MB, Shader Model 3.0\nDirectX: Version 9.0c\nSound Card: DirectX compatible"
+    },
+    "description_en": "A small town surrounded by war. The usual order is irrevocably violated, you have to survive, but you are not a soldier and certainly not a superhero.\r\nThe player controls a group of two to four civilians selected from twelve characters. The goal is simple - to survive the war.\r\nLater, new people can join the group. Characters need food, can get sick, freeze, die from wounds. Can run away with all the food stock.\r\nThe day is different from the night in everything. During the day we equip the shelter, repair and produce weapons and tools - from what can be found. In the afternoon we communicate with neighbours, sometimes with benefit. At night we go out for prey. The night harbours us but also harbours looters, often they are armed. Winter brings cold and freezes water, requires more health and firewood.\r\nDecisions that have to be made often have a moral dimension - can one rob an unarmed person if this is a matter of life and death for someone from the group?\r\nAs in life, events are seen as random and do not repeat from game to game. The same characters can behave very differently, and the siege can sometimes last twenty days, and sometimes eighty.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشهر کوچکی که اطراف آن را جنگ احاطه کرده است. نظم معمول به طور غیرقابل برگشت نقض می شود، شما باید زنده بمانید، اما شما یک سرباز و قطعا یک ابرقهرمان نیستید.\r\nبازیکن کنترل گروهی متشکل از دو تا چهار غیرنظامی را بر عهده دارد که از دوازده شخصیت انتخاب شده اند. هدف ساده است - زنده ماندن از جنگ.\r\nبعداً افراد جدید می توانند به گروه ملحق شوند. شخصیت ها به غذا نیاز دارند، می توانند بیمار شوند، یخ بزنند، از زخم ها بمیرند. می تواند با تمام موجودی غذا فرار کند.\r\nروز در همه چیز با شب متفاوت است. در طول روز ما پناهگاه را تجهیز می کنیم، سلاح و ابزار را تعمیر و تولید می کنیم - از آنچه می توان یافت. بعدازظهرها با همسایه ها ارتباط برقرار می کنیم، گاهی اوقات با سود. شب برای شکار بیرون می رویم. شب پناهگاه ماست، اما غارتگران را نیز در خود جای داده است، اغلب آنها مسلح هستند. زمستان سرما می آورد و آب را یخ می زند، به سلامتی و هیزم بیشتری نیاز دارد.\r\nتصمیماتی که باید گرفته شود اغلب جنبه اخلاقی دارند - آیا می توان از یک فرد غیرمسلح غارت کرد اگر این موضوع مرگ و زندگی فردی از گروه است؟\r\nمانند زندگی، رویدادها به صورت تصادفی دیده می شوند و از بازی به بازی دیگر تکرار نمی شوند. همین شخصیت ها می توانند بسیار متفاوت رفتار کنند و محاصره گاهی بیست روز و گاهی هشتاد روز طول می کشد."
   }
 ]
