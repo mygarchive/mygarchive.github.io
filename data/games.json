@@ -32,46 +32,5 @@
     },
     "description_en": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.\n\nIn Forza Horizon 6, you will get to discover a scenic and breathtaking Japan, where you will build up your racing status to become a Legend at the Horizon Festival.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nForza Horizon 6 ورودی بعدی از سری بازی‌های رانندگی جهان باز است که مورد تحسین منتقدان قرار گرفته و جوایزی را دریافت کرده است. Forza Horizon 6 برای اولین بار در سال 2026 روی کنسول های Xbox Series X|S و رایانه های شخصی عرضه خواهد شد.\n\nدر Forza Horizon 6، ژاپن منظره و نفس گیر را کشف خواهید کرد، جایی که وضعیت مسابقه خود را برای تبدیل شدن به یک افسانه در جشنواره Horizon ایجاد خواهید کرد."
-  },
-  {
-    "id": 868087,
-    "name": "Silent Hill f",
-    "background_image": "https://media.rawg.io/media/games/e7f/e7f2f571761abd7b3c0598c719ae8893.jpg",
-    "rating": 3.7,
-    "metacritic": null,
-    "released": "2025-09-24",
-    "genres": [
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 28,
-    "developers": "NeoBards Entertainment",
-    "steam_link": "https://store.steampowered.com/app/2947440/",
-    "trailer_url": "",
-    "youtube_videos": [],
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/8b2/8b243945a439d181d8736e785064e01d.jpg",
-      "https://media.rawg.io/media/screenshots/97f/97f19e3d62170c95f73540802337706a.jpg",
-      "https://media.rawg.io/media/screenshots/7e8/7e83f179b2fee75d5dbb31b4e79eea14.jpg",
-      "https://media.rawg.io/media/screenshots/5f3/5f3136d462b25ab9d457fd2bf527ef89.jpg",
-      "https://media.rawg.io/media/screenshots/47f/47f1c434f1c207753c405beaa5cb3d7b.jpg",
-      "https://media.rawg.io/media/screenshots/09d/09df8ba296963befe670093e8f6e7748.jpg",
-      "https://media.rawg.io/media/games/e7f/e7f2f571761abd7b3c0598c719ae8893.jpg"
-    ],
-    "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 11 x64\nProcessor: Intel Core i5-8400 / AMD Ryzen 5 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1070 Ti or AMD Radeon™ RX 5700\nDirectX: Version 12\nStorage: 50 GB available space\nSound Card: Windows Compatible Audio Device.\nAdditional Notes: Playing on minimum requirements should enable to play on Performance quality settings in 30 at 720p. SSD is recommended.",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 11 x64\nProcessor: Intel Core i7-9700 / AMD Ryzen 5 5500\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce® RTX 2080 or AMD Radeon™ RX 6800XT\nDirectX: Version 12\nStorage: 50 GB available space\nSound Card: Windows Compatible Audio Device.\nAdditional Notes: Playing on recommended requirements should enable to play on Performance settings in 60 FPS or Quality settings in 30 FPS at FullHD (or 4k using DLSS or similar technology). SSD required."
-    },
-    "description_en": "SILENT HILL f – will be a completely new story set in 1960's Japan featuring a beautiful, yet horrifying world. Written by Ryūkishi07, famed for Japanese visual novels dealing with murder mysteries, psychological and supernatural horror.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSILENT HILL f ​​- یک داستان کاملاً جدید است که در دهه 1960 ژاپن اتفاق می افتد و دنیایی زیبا و در عین حال وحشتناک را به نمایش می گذارد. نوشته Ryūkishi07، که به خاطر رمان های بصری ژاپنی که با اسرار قتل، وحشت روانی و فراطبیعی سروکار دارند، مشهور است."
   }
 ]
