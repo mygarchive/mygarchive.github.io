@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": 580972,
+    "name": "Alan Wake 2",
+    "background_image": "https://media.rawg.io/media/games/5b9/5b963d7633cd640fa2dbc4069d1c6377.jpg",
+    "rating": 4.32,
+    "metacritic": null,
+    "released": "2023-10-27",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Remedy Entertainment",
+    "steam_link": "https://store.steampowered.com/app/3274290/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6b8/6b8fe21f070edc4c9184062f9dc714e3.jpg",
+      "https://media.rawg.io/media/screenshots/cae/caefb537267fb10f3fe0413f16c733ed.jpg",
+      "https://media.rawg.io/media/screenshots/3e0/3e08d7746359b512714b510a1ee30163_WTYwMbp.jpg",
+      "https://media.rawg.io/media/screenshots/24c/24ce827e6ddae7317ced5e2d98e11d5e.jpg",
+      "https://media.rawg.io/media/screenshots/df2/df20dab4bfbfd611aa496116cca810bc.jpg",
+      "https://media.rawg.io/media/screenshots/1eb/1eb720bb7d9eea3f352fbf881666aaeb.jpg",
+      "https://media.rawg.io/media/games/5b9/5b963d7633cd640fa2dbc4069d1c6377.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Alan Wake 2 is a survival horror game with an intense atmosphere and a twisted, layered, psychological story - it is the long awaited sequel to Remedy Entertainment's award-winning 2010 psychological thriller, Alan Wake, and 2021's Alan Wake Remastered.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAlan Wake 2 یک بازی ترسناک بقا با فضایی شدید و داستانی پیچیده، لایه‌ای و روان‌شناختی است - این بازی دنباله‌ای است که مدت‌ها انتظارش را می‌کشیدیم تا فیلم هیجان‌انگیز روان‌شناختی 2010 Remedy Entertainment، Alan Wake، و Alan Wake Remastered در سال 2021 برنده جایزه شود."
+  }
+]
