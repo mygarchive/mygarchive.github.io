@@ -4630,5 +4630,51 @@
     },
     "description_en": "Embody Arbaaz in his quest for retribution through a colourful depiction of 19th century Colonial India in 2.5D stealth gameplay.\n• Travel across an amazing 19th-century India and its legendary landmarks\nDiscover an exquisite depiction of Colonial India thanks to a palette of vibrant colours. Zip-line across the streets of Amritsar, hide in the shadows of the palace, and hunt legendary artifacts, following in the footsteps of Alexander the Great.\n• Experience the thrill of being a stealthy assassin\nAs a smart and charming Assassin, use new subterfuges to disguise and to loot. Discover all-new Assassin’s gear such as the talwar (curved sword) and chakram (circular throwing weapon) to deal great damage and interact with the environment.\n• Showcase your fighting talents with the new double kill move, helix strike, or silent takedown. Be more agile than ever in even more platforming levels, and escape through the destructible environments of the squares and bazaars, leaving a trail of chaos in your wake.\n• Discover a brand-new challenge mode\nUnlock various challenge rooms: your skills and abilities will be pushed to their limits through a complex sequence of obstacle course. Beat the score to collect artifacts, fulfill special contracts and assassinate in an exciting new game experience!",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nارباز را در تلاش خود برای انتقام از طریق تصویری رنگارنگ از هند مستعمره قرن نوزدهم در گیم پلی مخفیانه 2.5 بعدی تجسم کنید.\n• در سراسر هند شگفت انگیز قرن نوزدهمی و مکان های دیدنی افسانه ای آن سفر کنید\nبه لطف پالت رنگ‌های زنده، تصویری بدیع از هند مستعمره را کشف کنید. زیپ لاین در سراسر خیابان های آمریتسار، در سایه های قصر پنهان شوید و آثار باستانی افسانه ای را دنبال کنید و به دنبال اسکندر مقدونی باشید.\n• هیجان یک قاتل مخفی بودن را تجربه کنید\nبه‌عنوان یک قاتل باهوش و جذاب، برای پنهان کردن و غارت از روش‌های فریبکاری جدید استفاده کنید. ابزار کاملاً جدید Assassin مانند تالوار (شمشیر خمیده) و چاکرام (اسلحه پرتاب دایره‌ای) را برای وارد کردن آسیب بزرگ و تعامل با محیط کشف کنید.\n• استعدادهای رزمی خود را با حرکت کشتن دوگانه جدید، ضربه مارپیچ، یا حذف بی‌صدا به نمایش بگذارید. حتی در سطوح پلتفرم بیشتر از همیشه چابک تر باشید و از محیط های تخریب پذیر میدان ها و بازارها فرار کنید و دنباله ای از هرج و مرج را در پی خود باقی بگذارید.\n• یک حالت چالش کاملاً جدید را کشف کنید\nقفل اتاق‌های چالش مختلف را باز کنید: مهارت‌ها و توانایی‌های شما از طریق یک توالی پیچیده از مسیر موانع به حد خود رسیده است. برای جمع آوری مصنوعات، انجام قراردادهای خاص و ترور در یک تجربه بازی جدید و هیجان انگیز، امتیاز را شکست دهید!"
+  },
+  {
+    "id": 19338,
+    "name": "Assassin’s Creed Chronicles: Russia",
+    "background_image": "https://media.rawg.io/media/games/cd9/cd9a44c7a80b8319a84ea737e71cb592.jpg",
+    "rating": 3.05,
+    "metacritic": 58,
+    "released": "2016-02-09",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Ubisoft, Climax Studios",
+    "steam_link": "https://store.steampowered.com/app/359600/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
+      "https://media.rawg.io/media/screenshots/8aa/8aab0c89fe3a7ddd6798db0ac7ef1275.jpg",
+      "https://media.rawg.io/media/screenshots/06a/06a3fb5267cbbc0c6b869259608812dd.jpg",
+      "https://media.rawg.io/media/screenshots/154/154dbabd61bf305dcbbb1fce1af365c1.jpg",
+      "https://media.rawg.io/media/screenshots/c3d/c3d21e4fbcb94c3891981fd66df62c77.jpg",
+      "https://media.rawg.io/media/screenshots/bb8/bb8445dc01655495a5a2ea64bd33212c.jpg",
+      "https://media.rawg.io/media/games/cd9/cd9a44c7a80b8319a84ea737e71cb592.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1 or Windows 8 or Windows 8.1 (32/64bit versions)\nProcessor: Intel Core 2 Duo E8200 @ 2.6 GHz or AMD Athlon II X2 240 @ 2.8 GHz\nMemory: 2 GB RAM\nGraphics: nVidia GeForce GTS450 or AMD Radeon HD5770 (1024MB VRAM with Shader Model 5.0)\nDirectX: Version 10\nStorage: 4 GB available space\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: Video Drivers: nVidia GeForce 347.52 and AMD Catalyst Omega 14.12",
+      "recommended": "OS: Windows 7 SP1 or Windows 8 or Windows 8.1 (32/64bit versions)\nProcessor: Intel Core i3 2105 @ 3.1 GHz or AMD Phenom II X4 955 @ 3.2 GHz\nMemory: 4 GB RAM\nGraphics: nVidia GeForce GTX 470 or AMD Radeon HD5870 or better (1024MB VRAM with Shader Model 5.0)\nDirectX: Version 10\nStorage: 4 GB available space\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: Video Drivers: nVidia GeForce 347.52 and AMD Catalyst Omega 14.12.    Supported video cards at the time of release: nVidia GeForce GTS 450 or better, GTX 500, GTX 600, GTX 700 series; AMD Radeon HD5770 or better, Radeon HD6000, HD7000, R7 200, R9 200 series    Note: Laptop versions of these cards may work but are NOT officially supported."
+    },
+    "description_en": "Join Nikolaï Orelov in his search for redemption as you journey through an iconic, propaganda art style Russia in 2.5D gameplay.\n• Survive the aftermath of October Revolution.\nDive into the middle of a major historical event served by iconic propaganda art style and its revolutionary symbolism. Jump on the famous trans-Siberian train, infiltrate the Kremlin and escape from Moscow!\n• Experience the thrill of being a stealthy Assassin in a modern setting.\nExplore a new contemporary setting in the 20th century and its modern stealth systems, such as elevators, radios & trip wires. Interact with new vehicles like trucks, trains & tanks.\n• Switch between two playable characters.\nEmbody Nikolaï, snipe targets with his silenced rifle, detonate mines from a distance or get up close with its bayonet. Discover Nikolaï’s Mechanical Winch, a versatile tool that sends electric shocks.\nPlay Anastasia, infiltrate narrow channels and discover her exclusive Helix Blade.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه نیکولای اورلوف در جستجوی رستگاری بپیوندید و در گیم پلی 2.5 بعدی از یک هنر نمادین، سبک تبلیغاتی روسیه سفر کنید.\n• از پیامدهای انقلاب اکتبر زنده بمانید.\nدر میانه یک رویداد تاریخی مهم که با سبک نمادین هنر تبلیغاتی و نمادهای انقلابی آن سروکار دارد، شیرجه بزنید. به قطار معروف ترانس سیبری بپرید، به کرملین نفوذ کنید و از مسکو فرار کنید!\n• هیجان یک قاتل مخفی بودن را در محیطی مدرن تجربه کنید.\nمحیط جدید معاصر در قرن بیستم و سیستم‌های پنهانکاری مدرن آن، مانند آسانسور، رادیو، و سیم‌های سفر را کاوش کنید. با وسایل نقلیه جدید مانند کامیون، قطار و تانک تعامل داشته باشید.\n• بین دو شخصیت قابل پخش سوئیچ کنید.\nنیکولای را تجسم کنید، با تفنگ خاموشش به اهدافی ضربه بزنید، مین ها را از راه دور منفجر کنید یا با سرنیزه آن از نزدیک نزدیک شوید. وینچ مکانیکی Nikolaï’s Mechanical Winch را کشف کنید، ابزاری همه کاره برای ارسال شوک الکتریکی.\nآناستازیا را بازی کنید، به کانال های باریک نفوذ کنید و هلیکس بلید انحصاری او را کشف کنید."
   }
 ]
