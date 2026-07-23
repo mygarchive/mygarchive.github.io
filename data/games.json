@@ -5696,5 +5696,41 @@
     },
     "description_en": "Call of Duty: Black Ops II is a first-person shooter, a direct sequel to Call of Duty: Black Ops that features its protagonists. The story is divided into two time periods. It starts in 1986 with Alex Mason that has to return to work after his retirement to catch Raul Menendez, responsible for multiple crimes. The second storyline takes place in 2025; you play as David, Mason’s son, who also needs to find Menendez who sparks the second Cold War. The game has several endings depending on your actions in both storylines.\nThe campaign mode in Black Ops II is also selected in two parts. There are story missions, where you can make decisions that will affect the future of the characters. Additionally, Strike Force missions, available in 2025, feature permanent death - if the character is killed, you can’t return to the checkpoint, and have to continue the game without them.\nLike two previous games in the series, Black Ops II has the Zombies mode with a completely new story. It starts with nuclear experiments in 2025 Nevada that cause the appearance of zombies.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops II یک بازی تیراندازی اول شخص است که دنباله ای مستقیم برای Call of Duty: Black Ops است که شخصیت های اصلی آن را به نمایش می گذارد. داستان به دو دوره زمانی تقسیم می شود. در سال 1986 با الکس میسون شروع می شود که باید پس از بازنشستگی به سر کار بازگردد تا رائول منندز را که مسئول چندین جنایت است دستگیر کند. داستان دوم در سال 2025 اتفاق می افتد. شما در نقش دیوید، پسر میسون بازی می کنید، او همچنین باید منندز را که جرقه جنگ سرد دوم را آغاز می کند، پیدا کند. بسته به اقدامات شما در هر دو خط داستانی، بازی دارای چندین پایان است.\nحالت کمپین در Black Ops II نیز در دو قسمت انتخاب شده است. ماموریت های داستانی وجود دارد که در آن می توانید تصمیماتی بگیرید که آینده شخصیت ها را تحت تاثیر قرار می دهد. علاوه بر این، ماموریت‌های Strike Force که در سال 2025 در دسترس هستند، دارای مرگ دائمی هستند - اگر شخصیت کشته شود، نمی‌توانید به ایست بازرسی برگردید و باید بدون آن‌ها بازی را ادامه دهید.\nمانند دو بازی قبلی این سری، Black Ops II دارای حالت زامبی با داستانی کاملاً جدید است. با آزمایش های هسته ای در سال 2025 نوادا شروع می شود که باعث ظاهر شدن زامبی ها می شود."
+  },
+  {
+    "id": 14331,
+    "name": "Call of Duty 2",
+    "background_image": "https://media.rawg.io/media/games/50c/50c69996b917ae50d8d319f6ce9bed37.jpg",
+    "rating": 4.21,
+    "metacritic": 86,
+    "released": "2005-10-25",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Infinity Ward",
+    "steam_link": "https://store.steampowered.com/app/202970/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/de5/de518b36baf53aea7642a58ef773aee4.jpg",
+      "https://media.rawg.io/media/screenshots/866/8669d6cc0334edfac9ba9ae065b11030.jpg",
+      "https://media.rawg.io/media/screenshots/403/403b09e8ca249fa453d8105c81329f1c.jpg",
+      "https://media.rawg.io/media/screenshots/30e/30e45fd7c807a58ad92e379bac6c90a7.jpg",
+      "https://media.rawg.io/media/screenshots/216/2164ef7fc7cce8c1bfe664a408a01f6f.jpg",
+      "https://media.rawg.io/media/screenshots/2a4/2a47536a5ee46af711975769ee1ad52c.jpg",
+      "https://media.rawg.io/media/games/50c/50c69996b917ae50d8d319f6ce9bed37.jpg"
+    ],
+    "requirements": {
+      "minimum": "3D hardware accelerator card required - 100% DirectX 9.0c compatible 64MB hardware accelerator video card and the latest drivers*, Microsoft Windows 2000/XP, Pentium IV 1.4GHz or AMD Athlon XP 1700+ processor or higher, 256MB RAM (512MB RAM recommended), 100% DirectX 9.0c compatible 16-bit sound card and latest drivers, 100% Windows 2000/XP compatible mouse, keyboard and latest drivers, 4.0GB of uncompressed free hard disk space (plus 600MB for Windows 2000/XP swap file)\nMulti-player Requirements:\nInternet (TCP/IP) and LAN (TCP/IP) play supported\nInternet play requires broadband connection and latest drivers\nLAN play requires network interface card and latest driversImportant Notice: *Some 3D accelerator cards with the chipset listed here may not be compatible with the 3D acceleration features utilized by Call of Duty. Please refer to your hardware manufacturer for 100% DirectX 9.0c compatibility.\nSupported Chipsets\nATI Radeon 8500\nATI Radeon 9000\nATI Radeon 9200\nATI Radeon 9500\nATI Radeon 9600\nATI Radeon 9700\nATI Radeon 9800\nATI Radeon X300\nATI Radeon X550\nATI Radeon X600\nATI Radeon X700\nATI Radeon X800\nATI Radeon X850\nnVidia GeForce 2 Ultra\nAll nVidia GeForce 3/Ti Series\nAll nVidia GeForce 4/Ti Series\nAll nVidia GeForce FX Series\nAll nVidia GeForce 6 Series\nRecommend nVidia GeForce 7 Series or higher",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty 2 is a first-person shooter, a second installment in the Call of Duty series.\n\n###Plot and location\nThe game is set during one of the most troubling periods of the 20 century: the 2nd World War. The player can take command of various soldiers from Allied armies, and take part in various campaigns in Europe and Africa. The three playable campaigns focus on the Soviet, American and British soldiers fighting the Axis, each encompassing traditional battlegrounds such as Stalingrad, El Alamein and Hill 400.\n\n###Gameplay\nCall of Duty 2 focuses on combining realism and entertainment in warfare simulation. The playable character can carry two firearms, unique for each country, utilizing each of them in different situations. UI has been changed drastically, removing the visible health bar and overhauling compass HUD. The difficulty system can provide a cinematic experience while keeping the gameplay realistic - on Veteran, each bullet can be fatal.\n\n###Visuals and other features\nThe game boasts a refined graphics engine, with smooth textures, good performance, and stunning effects. Explosions and falling buildings, bullets flying and artillery blasting the ground, every detail is done to ensure the immersion on the battlegrounds of World War II. Multiplayer features include different playing modes, up to 64 players fighting in different locations and using a variety of American, British, Soviet and German weapons.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty 2 یک بازی تیراندازی اول شخص است که دومین قسمت از سری Call of Duty است.\n\n###قطعه و مکان\nداستان بازی در یکی از دردسرسازترین دوره های قرن بیستم اتفاق می افتد: جنگ جهانی دوم. بازیکن می تواند فرماندهی سربازان مختلف ارتش متفقین را بر عهده بگیرد و در مبارزات مختلف در اروپا و آفریقا شرکت کند. این سه کمپین قابل پخش بر روی سربازان شوروی، آمریکایی و بریتانیایی تمرکز می‌کنند که با محور می‌جنگند، که هر کدام شامل میدان‌های نبرد سنتی مانند استالینگراد، العلمین و تپه 400 است.\n\n###بازی\nCall of Duty 2 بر روی ترکیب واقع گرایی و سرگرمی در شبیه سازی جنگ تمرکز دارد. شخصیت قابل بازی می تواند دو اسلحه گرم، منحصر به فرد برای هر کشور حمل کند و از هر یک از آنها در موقعیت های مختلف استفاده کند. رابط کاربری به شدت تغییر کرده است و نوار سلامت قابل مشاهده را حذف کرده و HUD قطب نما را بازسازی کرده است. سیستم سختی می‌تواند تجربه‌ای سینمایی را ارائه دهد و در عین حال گیم‌پلی را واقع‌بینانه نگه می‌دارد - در Veteran، هر گلوله می‌تواند کشنده باشد.\n\n###تصویر و ویژگی های دیگر\nاین بازی دارای یک موتور گرافیکی پیشرفته، با بافت های صاف، عملکرد خوب و جلوه های خیره کننده است. انفجارها و سقوط ساختمان ها، پرواز گلوله ها و انفجار توپخانه روی زمین، تمام جزئیات برای اطمینان از غوطه ور شدن در میدان های جنگ جهانی دوم انجام می شود. ویژگی های چند نفره شامل حالت های مختلف بازی، مبارزه تا 64 بازیکن در مکان های مختلف و استفاده از انواع سلاح های آمریکایی، بریتانیایی، شوروی و آلمانی است."
   }
 ]
