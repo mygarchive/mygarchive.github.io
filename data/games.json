@@ -1788,5 +1788,51 @@
     },
     "description_en": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom.  As invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.\n\nNow a trusted member of the rightful king’s allies, Henry is sent to escort Sir Hans Capon on a diplomatic mission. After they are ambushed and nearly killed, the two young men embark on a series of perilous adventures, putting their skills, character and friendship to the ultimate test.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nپادشاهی بوهمیا، اوایل قرن پانزدهم: هرج و مرج بر پادشاهی حاکم شده است.  در حالی که مهاجمان این سرزمین بی‌حکم را غارت می‌کنند و ترس و وحشت ایجاد می‌کنند، هنری از اسکالیتز به دنبال انتقام از خانواده کشته شده‌اش است.\n\nاکنون هنری که یکی از اعضای مورد اعتماد متحدان پادشاه برحق است، برای اسکورت سر هانس کاپون در یک ماموریت دیپلماتیک فرستاده می شود. پس از اینکه آنها در کمین قرار می گیرند و تقریباً کشته می شوند، دو مرد جوان وارد یک سری ماجراجویی های خطرناک می شوند و مهارت ها، شخصیت و دوستی خود را در آزمون نهایی قرار می دهند."
+  },
+  {
+    "id": 3254,
+    "name": "Journey",
+    "background_image": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg",
+    "rating": 4.32,
+    "metacritic": 92,
+    "released": "2012-03-13",
+    "genres": [
+      {
+        "id": 19,
+        "name": "Family",
+        "slug": "family"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "thatgamecompany, チョコマメ",
+    "steam_link": "https://store.steampowered.com/app/3628950/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b3f/b3f7f9c7fc81de2417135f758470b806.jpg",
+      "https://media.rawg.io/media/screenshots/08b/08b24d5b3d2074f37500e938771edafa.jpg",
+      "https://media.rawg.io/media/screenshots/704/70438c6fad16044c53a67b5c63fda9a6.jpg",
+      "https://media.rawg.io/media/screenshots/d3c/d3c6674838af8d63f2e8bc1d7da16a9d.jpg",
+      "https://media.rawg.io/media/screenshots/f61/f61dc90adfc5796cd1a950f6eb5eb16e.jpg",
+      "https://media.rawg.io/media/screenshots/509/5094aeab0e11682a6792d09a0828154a.jpg",
+      "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS *: Windows 7 (SP1+), Windows 10 and Windows 11\nProcessor: Intel® Core™ i5 4570 or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 1050 or AMD equivalent\nDirectX: Version 10\nStorage: 1 GB available space",
+      "recommended": "OS *: Windows 7 (SP1+), Windows 10 and Windows 11\nProcessor: Intel® Core™ i7 5700k or better\nMemory: 16 GB RAM\nGraphics: NVIDIA GTX 1080 or AMD equivalent\nDirectX: Version 12\nStorage: 1 GB available space"
+    },
+    "description_en": "Journey is an indie game placed in a setting of the vast desert. The protagonist is a nameless and speechless figure moving towards the distant mountain. The player gets to know the story without words, but rather through cutscenes. The main character wears a magical scarf, which allows flying for some time, and recharges it with gathered cloth or simply by walking. From time to time the protagonist finds collectible items and discover ruins that can give additional information about the world or the storyline. The only way of interaction with in-game objects is a shout. \n\nThe game transfers the atmosphere of an absolute loneliness. However, during the journey the character can meet other players controlling differently dressed, but generally the same figures. Wandering together can be helpful for both players, as they are able to charge one another’s scarves. The thing is that both players cannot communicate each other in any way, except producing noises. Together players can complete levels and continue moving to their final destination.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nJourney یک بازی مستقل است که در محیطی از صحرای وسیع قرار گرفته است. قهرمان داستان شخصیتی بی نام و بی زبان است که به سمت کوه دوردست حرکت می کند. بازیکن بدون کلمات، بلکه از طریق صحنه های کوتاه، با داستان آشنا می شود. شخصیت اصلی یک روسری جادویی می‌پوشد که اجازه می‌دهد برای مدتی پرواز کند و آن را با پارچه جمع‌شده یا به سادگی با راه رفتن شارژ می‌کند. هر از چند گاهی، قهرمان اقلام کلکسیونی پیدا می‌کند و خرابه‌هایی را کشف می‌کند که می‌توانند اطلاعات بیشتری در مورد جهان یا خط داستانی ارائه دهند. تنها راه تعامل با اشیاء درون بازی فریاد زدن است. \n\nبازی فضای یک تنهایی مطلق را منتقل می کند. با این حال، در طول سفر، شخصیت می‌تواند با بازیکنان دیگری ملاقات کند که لباس‌های متفاوت، اما به طور کلی چهره‌های مشابه را کنترل می‌کنند. سرگردانی با هم می تواند برای هر دو بازیکن مفید باشد، زیرا آنها می توانند روسری های یکدیگر را شارژ کنند. موضوع این است که هر دو بازیکن به هیچ وجه نمی توانند با یکدیگر ارتباط برقرار کنند، مگر اینکه صدا تولید کنند. بازیکنان با هم می توانند سطوح را تکمیل کنند و به حرکت خود به مقصد نهایی خود ادامه دهند."
   }
 ]
