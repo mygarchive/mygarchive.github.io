@@ -1357,5 +1357,44 @@
     },
     "description_en": "The first-ever sequel from Supergiant Games builds on the best aspects of the original god-like rogue-like dungeon crawler in an all-new, action-packed, endlessly replayable experience rooted in the Underworld of Greek myth and its deep connections to the dawn of witchcraft.\nBATTLE BEYOND THE UNDERWORLD\nAs the immortal Princess of the Underworld, you'll explore a bigger, deeper mythic world, vanquishing the forces of the Titan of Time with the full might of Olympus behind you, in a sweeping story that continually unfolds through your every setback and accomplishment.\nMASTER WITCHCRAFT AND DARK SORCERY\nInfuse your legendary weapons of Night with ancient magick, so that none may stand in your way. Become stronger still with powerful Boons from more than a dozen Olympian gods, from Apollo to Zeus. There are nearly limitless ways to build your abilities.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاولین دنباله از بازی‌های سوپرجاینت بر اساس بهترین جنبه‌های خزنده سیاه چال سرکش مانند خدا در تجربه‌ای کاملاً جدید، پر اکشن و قابل پخش بی‌پایان است که ریشه در دنیای اموات اسطوره یونانی و پیوندهای عمیق آن با طلوع جادو دارد.\nنبرد فراتر از دنیای زیرزمینی\nبه عنوان پرنسس جاودانه دنیای زیرین، دنیای اسطوره‌ای بزرگ‌تر و عمیق‌تری را کاوش خواهید کرد و نیروهای تیتان زمان را با قدرت کامل المپ پشت سر خود شکست می‌دهید، در داستانی فراگیر که به طور مداوم در هر شکست و موفقیت شما آشکار می‌شود.\nاستاد جادوگری و جادوگری تاریک\nاسلحه‌های افسانه‌ای شب خود را با جادوی باستانی آغشته کنید تا هیچ‌کس مانعی برای شما نباشد. با بون های قدرتمند بیش از دوازده خدای المپیک، از آپولو گرفته تا زئوس، همچنان قوی تر شوید. روش های تقریباً نامحدودی برای ایجاد توانایی های شما وجود دارد."
+  },
+  {
+    "id": 782261,
+    "name": "Hell is Us",
+    "background_image": "https://media.rawg.io/media/games/60b/60b7561ab47a7c0853ae983d419b47cb.jpg",
+    "rating": 3.5,
+    "metacritic": null,
+    "released": "2025-09-04",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Rogue Factor",
+    "steam_link": "https://store.steampowered.com/app/1620730/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/746/74649954ceef11c460866e908e95cd49.jpg",
+      "https://media.rawg.io/media/screenshots/431/431ef69b2a22271f4da549b3493d46e6.jpg",
+      "https://media.rawg.io/media/screenshots/744/7449654ec8431d7e6565429b9416c993.jpg",
+      "https://media.rawg.io/media/screenshots/be9/be969c310593270bd1589ef86175dc7d.jpg",
+      "https://media.rawg.io/media/games/60b/60b7561ab47a7c0853ae983d419b47cb.jpg"
+    ],
+    "requirements": {
+      "minimum": "Mínimo:\nRequiere un procesador y un sistema operativo de 64 bits\nSO: Windows 10/11 64-bit\nProcesador: Intel Core i7-7700K or AMD Ryzen 3 3300X\nMemoria: 16 GB de RAM\nGráficos: NVIDIA GeForce GTX 1070, 8GB or AMD Radeon RX 5600 XT, 6GB or Intel Arc A750, 8GB \nDirectX: Versión 12\nAlmacenamiento: 30 GB de espacio disponible\nTarjeta de sonido: Windows Compatible Audio Device\nNotas adicionales: HDD Supported, SSD Recommended. The above specifications were tested with performance upscaling enabled.",
+      "recommended": "Recomendado:\nRequiere un procesador y un sistema operativo de 64 bits\nSO: Windows 10/11 64-bit\nProcesador: Intel Core i7-11700K or AMD Ryzen 5 7600\nMemoria: 16 GB de RAM\nGráficos: NVIDIA GeForce RTX 2080 Ti, 11GB or AMD Radeon RX 6750 XT, 12GB or Intel Arc B580, 12GB\nDirectX: Versión 12\nAlmacenamiento: 30 GB de espacio disponible\nTarjeta de sonido: Windows Compatible Audio Device\nNotas adicionales: SSD Required. The above specifications were tested with balanced upscaling enabled."
+    },
+    "description_en": "If war is the closest we get to hell on earth, it's because Earth harbours the worst of demons: humankind. In an isolated country ravaged by infighting, discover the secrets of your past and deal with the repercussions of a mysterious calamity.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاگر جنگ نزدیکترین فاصله ما به جهنم روی زمین است، به این دلیل است که زمین بدترین شیاطین را در خود جای داده است: نوع بشر. در یک کشور منزوی که توسط جنگ داخلی ویران شده است، اسرار گذشته خود را کشف کنید و با عواقب یک فاجعه مرموز مقابله کنید."
   }
 ]
