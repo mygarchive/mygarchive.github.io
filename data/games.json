@@ -4377,5 +4377,48 @@
     },
     "description_en": "The Finch's family, also known as \"America's most unfortunate family\", believes that the family is being pursued by a deadly curse. Each generation has only one child who survived to give birth to the next one.\n\nThe player begins to act as Edith Finch, who arrives in an orderly abandoned family mansion to find out what opens the key that she received from her mother along with the will. Of course, she is most interested in the question of the family curse, or more precisely, whether she will become a victim of it. In any case, all the relatives known to her, even on American soil, died an unnatural death. Exploring the house, she opens the rooms of each deceased relative. And plunges into the circumstances of premature death of everyone.\n\nLife (and death) of each of the deceased relatives Edith the hero resides in the image of this relative.\nThe essence of the game is to clarify the circumstances of the death of many members of the same family in order to see behind these deaths and biographies something common and native. It is interesting to dive not only in different human images, but also act in the guise of birds or animals.\nIn addition to following Edith, the game has something to inspect, search, discover and solve, play mini-games.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nخانواده فینچ که به عنوان \"بدبخت ترین خانواده آمریکا\" نیز شناخته می شود، معتقد است که این خانواده توسط یک نفرین مرگبار تعقیب می شود. هر نسل فقط یک فرزند دارد که زنده مانده تا فرزند بعدی را به دنیا بیاورد.\n\nبازیکن شروع به ایفای نقش ادیت فینچ می کند که به یک عمارت خانوادگی متروکه می رسد تا بفهمد چه چیزی کلیدی را که از مادرش به همراه وصیت نامه دریافت کرده است باز می کند. البته او بیشتر به موضوع نفرین خانوادگی علاقه دارد یا به طور دقیق تر، آیا قربانی آن خواهد شد یا خیر. در هر صورت، همه اقوام شناخته شده او، حتی در خاک آمریکا، به مرگ غیرطبیعی مردند. او با کاوش در خانه، اتاق هر یک از بستگان متوفی را باز می کند. و در شرایط مرگ زودرس همه فرو می رود.\n\nزندگی (و مرگ) هر یک از بستگان متوفی ادیت قهرمان در تصویر این خویشاوند ساکن است.\nماهیت بازی روشن کردن شرایط مرگ بسیاری از اعضای یک خانواده است تا در پس این مرگ‌ها و زندگی‌نامه‌ها چیزی معمولی و بومی مشاهده شود. غواصی نه تنها در تصاویر مختلف انسان، بلکه در پوشش پرندگان یا حیوانات نیز جالب است.\nعلاوه بر دنبال کردن Edith، بازی چیزی برای بررسی، جستجو، کشف و حل، انجام مینی گیم دارد."
+  },
+  {
+    "id": 28202,
+    "name": "Wolfenstein II: The New Colossus",
+    "background_image": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg",
+    "rating": 4.09,
+    "metacritic": 86,
+    "released": "2017-10-25",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 11,
+    "developers": "Bethesda Softworks, id Software, Arkane Studios, Panic Button, Machine Games, Goodbye Kansas Games, Doctor Entertainment",
+    "steam_link": "https://store.steampowered.com/app/612880/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256698449/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256698449/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/46f/46fd3ba7b2ff7539af8d58181c455dd8.jpg",
+      "https://media.rawg.io/media/screenshots/a59/a59057a832fec0b2d31701ec4679f93c.jpg",
+      "https://media.rawg.io/media/screenshots/f8a/f8ac9fd590b7eacdfc7157357b887af0.jpg",
+      "https://media.rawg.io/media/screenshots/c6e/c6e99ef6cbf97ab5beafc0b2754bad3e.jpg",
+      "https://media.rawg.io/media/screenshots/ae4/ae4e4e0fe6fccf191dcd683d80d4d3cd.jpg",
+      "https://media.rawg.io/media/screenshots/4f5/4f5a646bfe8fbcdbfd3a0472788dfa5c.jpg",
+      "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+    ],
+    "requirements": {
+      "minimum": "Betriebssystem: Win7, 8.1, or 10 (64-Bit versions)\nProzessor: Intel Core i5-3570/i7-3770 or AMD FX-8350/Ryzen 5 1400\nArbeitsspeicher: 8 GB RAM\nGrafik: Nvidia GTX 770 4GB/AMD Radeon R9 290 4GB or better\nSpeicherplatz: 55 GB verfügbarer Speicherplatz",
+      "recommended": "Empfohlen:\nBetriebssystem: Win7, 8.1, or 10 (64-Bit versions)\nProzessor: Intel Core i7-4770/AMD FX-9370/Ryzen 5 1600X\nArbeitsspeicher: 16 GB RAM\nGrafik: Nvidia GTX 1060 6GB/AMD Radeon RX 470 4GB or better\nSpeicherplatz: 55 GB verfügbarer Speicherplatz"
+    },
+    "description_en": "Wolfenstein 2: The New Colossus is a singleplayer FPS developed by MachineGames. It is the third installment in the rebooted series.\n\nSet in the alternate 1961 where Nazi Germany won World War II, the game picks up right at the end of Wolfenstein: The New Order. After sustaining heavy injuries in the battle with Wilhelm \"Deathshead\" Strasse, BJ Blaskowicz orders a nuclear strike on Deathshead's compound in order to cripple the Nazi war machine, but he is evacuated by his comrades before the rocket launch. Blaskowicz falls unconscious for 5 months and is woken up by a Nazi attack. The player has to repel the attack and end the Nazi reign over America once and for all.\n\nThe New Colossus features several stealth-action elements, just like the previous title in the series. There are some major differences in the mechanics: now BJ can modify his weaponry on-the-go, dual wield two different weapons at the same time. The cover system makes a comeback. The Protagonist doesn't stick to cover, leaning out of it instead.\n\nThe game offers a linear storyline, but the player is free to complete side-missions in any order they like. Completing these missions is rewarded with new weapon upgrades.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWolfenstein 2: The New Colossus یک FPS تک نفره است که توسط MachineGames توسعه یافته است. این سومین قسمت از سری ریبوت شده است.\n\nدر سال 1961، جایی که آلمان نازی در جنگ جهانی دوم پیروز شد، بازی درست در پایان Wolfenstein: The New Order شروع می شود. پس از تحمل جراحات سنگین در نبرد با ویلهلم \"دث هد\" استراسه، بی جی بلاسکوویچ دستور حمله هسته ای به محوطه دث هد را می دهد تا ماشین جنگی نازی ها را فلج کند، اما قبل از پرتاب موشک توسط همرزمانش تخلیه می شود. بلاسکوویچ به مدت 5 ماه بیهوش می شود و با حمله نازی ها از خواب بیدار می شود. بازیکن باید حمله را دفع کند و یک بار برای همیشه به سلطنت نازی ها بر آمریکا پایان دهد.\n\nNew Colossus دارای چندین عنصر اکشن مخفی کاری است، درست مانند عنوان قبلی این سری. تفاوت‌های عمده‌ای در مکانیک وجود دارد: اکنون BJ می‌تواند سلاح‌های خود را در حین حرکت تغییر دهد و همزمان دو سلاح مختلف را به کار گیرد. سیستم پوشش باز می گردد. Protagonist به پوشش نمی چسبد، به جای آن به بیرون خم می شود.\n\nبازی یک خط داستانی خطی ارائه می دهد، اما بازیکن آزاد است تا ماموریت های جانبی را به هر ترتیبی که دوست دارد انجام دهد. تکمیل این ماموریت ها با ارتقاء سلاح های جدید پاداش می گیرد."
   }
 ]
