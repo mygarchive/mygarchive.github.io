@@ -2836,5 +2836,43 @@
     },
     "description_en": "SILENT HILL f – will be a completely new story set in 1960's Japan featuring a beautiful, yet horrifying world. Written by Ryūkishi07, famed for Japanese visual novels dealing with murder mysteries, psychological and supernatural horror.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSILENT HILL f ​​- یک داستان کاملاً جدید است که در دهه 1960 ژاپن اتفاق می افتد و دنیایی زیبا و در عین حال وحشتناک را به نمایش می گذارد. نوشته Ryūkishi07، که به خاطر رمان های بصری ژاپنی که با اسرار قتل، وحشت روانی و فراطبیعی سروکار دارند، مشهور است."
+  },
+  {
+    "id": 962986,
+    "name": "South of Midnight",
+    "background_image": "https://media.rawg.io/media/games/734/73451dc0abd013bee5b7d88faaacec11.jpg",
+    "rating": 3.63,
+    "metacritic": null,
+    "released": "2025-04-08",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 21,
+    "developers": "Compulsion Games",
+    "steam_link": "https://store.steampowered.com/app/1934570/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/283/28326b57b7fbeb0da66d86a31772f022.jpg",
+      "https://media.rawg.io/media/screenshots/1d4/1d457fd29b2c6853f37d751bc89b250e.jpg",
+      "https://media.rawg.io/media/screenshots/c14/c147275e1b3b0666747da89702bb3e03.jpg",
+      "https://media.rawg.io/media/games/734/73451dc0abd013bee5b7d88faaacec11.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10/11\nProcessor: AMD Ryzen 3 1300X / Intel i3-8100\nMemory: 12 GB RAM\nGraphics: AMD RX 580 / Nvidia GTX 1060\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: Performance scales with higher-end systems",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10/11\nProcessor: AMD 1600X / Intel i5-7600K\nMemory: 16 GB RAM\nGraphics: AMD RX 6600 / Nvidia RTX 2060 / Intel Arc A580\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: Performance scales with higher-end systems"
+    },
+    "description_en": "South of Midnight is a new action-adventure from Compulsion Games. Explore the mythos and confront mysterious creatures of the Deep South in this modern folktale while learning to weave an ancient power to surmount obstacles and face the pain haunting your hometown.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSouth of Midnight یک اکشن ماجراجویی جدید از Compulsion Games است. اسطوره ها را کاوش کنید و با موجودات مرموز جنوب عمیق در این داستان عامیانه مدرن روبرو شوید و در عین حال یاد بگیرید که یک قدرت باستانی را برای غلبه بر موانع و رویارویی با دردهای آزاردهنده شهر خود ببافید."
   }
 ]
