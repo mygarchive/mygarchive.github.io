@@ -5655,5 +5655,46 @@
     },
     "description_en": "###The restart\nReleased in 2016, the remastered version of one of the most revolutionary parts of the annual Call of Duty series. In 2007, the series moved from historical scenery to modern, got a new more advanced graphics thanks to the freshly-released consoles and presented to the players a hardcore fast-paced multiplayer. The latter is still wanted by hardcore fans, which gave the publisher Activision Blizzard a reason to remaster the game.\n\n###Key features\nIn the new version, developers from the Raven Software did their best to rebuild the experience (the original game was developed by Infinity Ward). The game is available for purchase, as a separate product, and as part of a bundle. Owners of the original version of the game can get Remastered for free - you need to have the original disk for this or digital purchase. The re-released game did not change the gameplay in any way: it is still a fast-paced first-person shooter. The story campaign, during which the player takes control of several characters, also has not changed. Most of the changes turned out to be cosmetic and allowed the new studio to add new technologies to the original game: for example, while prone and moving, the weapon touching the ground will vibrate the controller. Also in the single-player campaign, new cheat codes were added, such as exaggerated physics and the ability to replace heads on the shoulders of virtual people with watermelons.\n\n###The changes\nThe main changes lie in multiplayer, which ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n###راه اندازی مجدد\nنسخه بازسازی شده یکی از انقلابی ترین قسمت های سری سالانه Call of Duty که در سال 2016 منتشر شد. در سال 2007، این سری از مناظر تاریخی به مدرن منتقل شد، به لطف کنسول های تازه منتشر شده، گرافیک پیشرفته تری دریافت کرد و یک بازی چند نفره سریع و هاردکور را به بازیکنان ارائه کرد. مورد دوم همچنان مورد توجه طرفداران هاردکور است و همین امر به ناشر Activision Blizzard دلیلی برای ریمستر بازی داد.\n\n###ویژگی های کلیدی\nدر نسخه جدید، توسعه دهندگان Raven Software تمام تلاش خود را برای بازسازی این تجربه انجام دادند (بازی اصلی توسط Infinity Ward ساخته شده است). این بازی به عنوان یک محصول جداگانه و به عنوان بخشی از یک بسته برای خرید در دسترس است. دارندگان نسخه اصلی بازی می توانند Remastered را به صورت رایگان دریافت کنند - برای این خرید یا خرید دیجیتال باید دیسک اصلی را داشته باشید. بازی منتشر شده به هیچ وجه تغییری در گیم پلی بازی ایجاد نکرد: هنوز هم یک بازی تیراندازی اول شخص سریع است. کمپین داستانی که طی آن بازیکن کنترل چندین شخصیت را به دست می‌گیرد نیز تغییری نکرده است. بیشتر تغییرات ظاهری زیبایی داشتند و به استودیوی جدید اجازه دادند تا فناوری های جدیدی را به بازی اصلی اضافه کند: برای مثال، در حالی که مستعد و در حال حرکت است، برخورد سلاح با زمین کنترل کننده را به لرزه در می آورد. همچنین در کمپین تک نفره، کدهای تقلب جدیدی مانند فیزیک اغراق آمیز و امکان جایگزینی سر بر روی شانه افراد مجازی با هندوانه اضافه شد.\n\n###تغییرات\nتغییرات اصلی در چند نفره نهفته است که"
+  },
+  {
+    "id": 14446,
+    "name": "Call of Duty: Black Ops II",
+    "background_image": "https://media.rawg.io/media/games/8ee/8eed88e297441ef9202b5d1d35d7d86f.jpg",
+    "rating": 3.96,
+    "metacritic": 74,
+    "released": "2012-11-13",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Treyarch",
+    "steam_link": "https://store.steampowered.com/app/202970/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c5c/c5c52956aaa535f92067f8dbb94ed792.jpg",
+      "https://media.rawg.io/media/screenshots/898/898c3ea7d05d437208adf5c7098b87d4.jpg",
+      "https://media.rawg.io/media/screenshots/490/490cd725bd80c0bc2359a0405ee21213.jpg",
+      "https://media.rawg.io/media/screenshots/fd0/fd0fe49f4a55f6f1af36aaacf0d92051.jpg",
+      "https://media.rawg.io/media/screenshots/b75/b7525f0077cf7d7ec6c055f2b51614ef.jpg",
+      "https://media.rawg.io/media/screenshots/8f7/8f75918847ba00b554ed6ba2e9cef848.jpg",
+      "https://media.rawg.io/media/games/8ee/8eed88e297441ef9202b5d1d35d7d86f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows Vista SP2 or Windows 7.  Windows XP is not supported\nProcessor: Intel Core2 Duo E8200 2.66 GHz or AMD Phenom X3 8750 2.4 GHz\nMemory: 2 GB for 32-bit OS or 4 GB for 64-bit OS\nGraphics: Nvidia GeForce 8800GT 512 MB or ATI Radeon HD 3870 512 MB\nDirectX: Version 9.0c\nHard Drive: 16 GB\nSound: DirectX 11.0c compatible\nAdditional: Broadband connection required for activation and multiplayer gameplay\nNote: Windows XP Operating System is not supported\nFurther information: Available here",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty: Black Ops II is a first-person shooter, a direct sequel to Call of Duty: Black Ops that features its protagonists. The story is divided into two time periods. It starts in 1986 with Alex Mason that has to return to work after his retirement to catch Raul Menendez, responsible for multiple crimes. The second storyline takes place in 2025; you play as David, Mason’s son, who also needs to find Menendez who sparks the second Cold War. The game has several endings depending on your actions in both storylines.\nThe campaign mode in Black Ops II is also selected in two parts. There are story missions, where you can make decisions that will affect the future of the characters. Additionally, Strike Force missions, available in 2025, feature permanent death - if the character is killed, you can’t return to the checkpoint, and have to continue the game without them.\nLike two previous games in the series, Black Ops II has the Zombies mode with a completely new story. It starts with nuclear experiments in 2025 Nevada that cause the appearance of zombies.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops II یک بازی تیراندازی اول شخص است که دنباله ای مستقیم برای Call of Duty: Black Ops است که شخصیت های اصلی آن را به نمایش می گذارد. داستان به دو دوره زمانی تقسیم می شود. در سال 1986 با الکس میسون شروع می شود که باید پس از بازنشستگی به سر کار بازگردد تا رائول منندز را که مسئول چندین جنایت است دستگیر کند. داستان دوم در سال 2025 اتفاق می افتد. شما در نقش دیوید، پسر میسون بازی می کنید، او همچنین باید منندز را که جرقه جنگ سرد دوم را آغاز می کند، پیدا کند. بسته به اقدامات شما در هر دو خط داستانی، بازی دارای چندین پایان است.\nحالت کمپین در Black Ops II نیز در دو قسمت انتخاب شده است. ماموریت های داستانی وجود دارد که در آن می توانید تصمیماتی بگیرید که آینده شخصیت ها را تحت تاثیر قرار می دهد. علاوه بر این، ماموریت‌های Strike Force که در سال 2025 در دسترس هستند، دارای مرگ دائمی هستند - اگر شخصیت کشته شود، نمی‌توانید به ایست بازرسی برگردید و باید بدون آن‌ها بازی را ادامه دهید.\nمانند دو بازی قبلی این سری، Black Ops II دارای حالت زامبی با داستانی کاملاً جدید است. با آزمایش های هسته ای در سال 2025 نوادا شروع می شود که باعث ظاهر شدن زامبی ها می شود."
   }
 ]
