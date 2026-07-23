@@ -1265,5 +1265,46 @@
     },
     "description_en": "The FRAMED Collection is a double-issue dosage of the groundbreaking noir-puzzle games that uniquely play like a comic book, FRAMED and FRAMED 2.\nChange the Order, Change the Outcome\nRather than take direct control of a character, the FRAMED Collection has you re-arranging the panels of a comic book and altering the sequence of events, in order to change the outcome of each page in the story.\nElegant mechanics based around re-arranging panels of a comic book to change the outcome of each scene\nUnique hand-drawn aesthetic with silhouetted characters\nFully-scored with smooth live jazz\nIncredibly fluid and lifelike animation\nBeautiful and mysterious settings\nCats and dogs for those bored with just humans\nCompletely overhauled experience for Steam players\nCigarettes and Defenestration\nThanks to our previous success we are now able to bring the collected compilation of the classic panel-switching games, along with some new, unique features to Steam! The games have been completely overhauled and redesigned for Steam, and given that extra love and care needed that we know connoisseurs of great taste demand.\nSo sit back, pour out a glass of your favourite tipple, and settle into the smooth jazzy tones of the multi-award winning games in the FRAMED Collection.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه FRAMED یک دوز دو نسخه ای از بازی های پازل نوآر پیشگامانه است که به طور منحصر به فرد مانند یک کتاب کمیک، FRAMED و FRAMED 2 بازی می کنند.\nترتیب را تغییر دهید، نتیجه را تغییر دهید\nبه جای کنترل مستقیم یک شخصیت، مجموعه FRAMED به شما اجازه می‌دهد که پانل‌های یک کتاب کمیک را مجدداً تنظیم کنید و توالی رویدادها را تغییر دهید تا نتیجه هر صفحه از داستان را تغییر دهید.\nمکانیک های زیبا بر اساس تنظیم مجدد پانل های یک کتاب کمیک برای تغییر نتیجه هر صحنه\nزیبایی شناسی منحصر به فرد با دست طراحی شده با شخصیت های شبح شده\nبه طور کامل با موسیقی جاز زنده روان\nانیمیشنی فوق العاده روان و واقعی\nتنظیمات زیبا و مرموز\nگربه‌ها و سگ‌ها برای کسانی که حوصله انسان‌ها را ندارند\nتجربه کاملاً بازسازی شده برای بازیکنان Steam\nسیگار و دفاع\nبه لطف موفقیت قبلی‌مان، اکنون می‌توانیم مجموعه‌ای از بازی‌های کلاسیک تعویض پنل را به همراه برخی ویژگی‌های جدید و منحصربه‌فرد به Steam بیاوریم! بازی‌ها به‌طور کامل برای Steam بازنگری و طراحی شده‌اند، و با توجه به عشق و مراقبت بیشتری که ما علاقه‌مندان به طعم و مزه را می‌شناسیم، نیاز داریم.\nپس بنشینید، یک لیوان از لقمه مورد علاقه خود را بریزید و به آهنگ‌های جازی نرم بازی‌های برنده چند جایزه در مجموعه FRAMED بنشینید."
+  },
+  {
+    "id": 18003,
+    "name": "Gone Home",
+    "background_image": "https://media.rawg.io/media/games/9e5/9e5b91a6d02e66b8d450a977a59ae123.jpg",
+    "rating": 3.73,
+    "metacritic": 86,
+    "released": "2013-08-14",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "The Fullbright Company",
+    "steam_link": "https://store.steampowered.com/app/232430/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/701/701d063ccc8dab39ed6e230a72e72b76.jpg",
+      "https://media.rawg.io/media/screenshots/037/03717a25772f97b587922ecc6c2254bc.jpg",
+      "https://media.rawg.io/media/screenshots/3eb/3ebee92d3a699fbc35c81921abce47ad.jpg",
+      "https://media.rawg.io/media/screenshots/052/0529b88e50f312ce8ae3719b12e7db9a.jpg",
+      "https://media.rawg.io/media/screenshots/c31/c31de50bfc4df71daef49e903f6b9f96.jpg",
+      "https://media.rawg.io/media/screenshots/e5e/e5ef9536af8b4138dabccf7ab519a9f5.jpg",
+      "https://media.rawg.io/media/games/9e5/9e5b91a6d02e66b8d450a977a59ae123.jpg"
+    ],
+    "requirements": {
+      "minimum": "•  WindowsXP SP2 or higher\n•  1.80GHz Processor\n•  2GB Memory\n•  Video card with 512MB of VRAM\n• (NOTE: Intel HD Graphic 4000 NOT CURRENTLY SUPPORTED on Windows 8)\n•  2GB HDD space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Portland. It's June 7, 1995. After a year of living abroad, the game's main character, 21-year-old girl Katie Greenbriar, finally returns home, waiting for a warm welcome from her family. But somehow, she finds that there is no one in the house! Where is everyone? What happened here? This will be seen in Gone Home - a unique adventure game.\n\nThis game is an interactive investigation. You will need to analyse the details of the most ordinary-looking house, learn the history of the people living here. The primary task is to reveal the mystery of what happened, using everything that is possible, as the house has a lot of interactive elements, which allows you to interact with the environment entirely.\n\nSurprisingly, simple movements create an atmosphere of almost inhabited home, as well as expertly crafted light and sound. Each piece of paper breathes history, and it is stunningly believable in both form and content.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nپورتلند. 7 ژوئن 1995 است. پس از یک سال زندگی در خارج از کشور، شخصیت اصلی بازی، کتی گرینبریار، دختر 21 ساله، سرانجام به خانه باز می گردد و منتظر استقبال گرم خانواده اش است. اما به نوعی متوجه می شود که هیچ کس در خانه نیست! همه کجا هستند؟ اینجا چه اتفاقی افتاد؟ این در Gone Home دیده می شود - یک بازی ماجراجویی منحصر به فرد.\n\nاین بازی یک تحقیق تعاملی است. شما باید جزئیات معمولی ترین خانه را تجزیه و تحلیل کنید، تاریخ مردمی که در اینجا زندگی می کنند را بیاموزید. وظیفه اصلی این است که با استفاده از هر چیزی که ممکن است راز آنچه اتفاق افتاده را فاش کنید، زیرا خانه دارای عناصر تعاملی زیادی است که به شما امکان می دهد به طور کامل با محیط تعامل داشته باشید.\n\nبا کمال تعجب، حرکات ساده فضایی از خانه تقریبا مسکونی و همچنین نور و صدای ماهرانه ایجاد می کند. هر تکه کاغذ از تاریخ نفس می کشد و هم از نظر شکل و هم از نظر محتوا به طرز خیره کننده ای باورپذیر است."
   }
 ]
