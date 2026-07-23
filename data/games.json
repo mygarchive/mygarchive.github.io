@@ -4032,5 +4032,51 @@
     },
     "description_en": "Tomb Raider I-III Remastered Starring Lara Croft.\n\nPlay the Original Three Tomb Raider Adventures: For the first time ever, play the complete experience with all expansions and secret levels on modern platforms in this definitive collection.\n\nIncluded Game Titles\nTomb Raider I + The Unfinished Business Expansion\nTomb Raider II + The Gold Mask Expansion\nTomb Raider III + The Lost Artifact Expansion\n\nSolve Ancient Mysteries: Uncover treasures of the ancient world by solving puzzles and unraveling mysteries lost to the ravages of time.\n\nGlobe-trotting Adventure: Follow Lara Croft around the world and face off against deadly foes and dangerous myths.\n\nLovingly Restored: Experience the classics boasting upgraded graphics, with the option to switch to the original polygon look at any time.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nTomb Raider I-III Remastered با بازی لارا کرافت.\n\nبازی Original Three Tomb Raider Adventures: برای اولین بار، تجربه کامل را با تمام بسط ها و سطوح مخفی در پلتفرم های مدرن در این مجموعه قطعی بازی کنید.\n\nعناوین بازی گنجانده شده است\nTomb Raider I + The Unfinished Business Expansion\nTomb Raider II + گسترش ماسک طلا\nTomb Raider III + The Lost Artifact Expansion\n\nحل اسرار باستانی: گنجینه های دنیای باستان را با حل معماها و کشف اسرار از دست رفته در زمان نابودی کشف کنید.\n\nماجراجویی غواصی در جهان: لارا کرافت را در سراسر جهان دنبال کنید و با دشمنان مرگبار و اسطوره های خطرناک روبرو شوید.\n\nبا عشق بازیابی شده: کلاسیک ها را با گرافیک ارتقا یافته تجربه کنید، با این گزینه که در هر زمانی به ظاهر چند ضلعی اصلی بروید."
+  },
+  {
+    "id": 990490,
+    "name": "Tomb Raider IV•V•VI Remastered",
+    "background_image": "https://media.rawg.io/media/games/307/307e204b2743469aa3aa630b953b8f18.jpg",
+    "rating": 3.86,
+    "metacritic": null,
+    "released": "2025-02-14",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 7,
+    "developers": "Aspyr Media, Crystal Dynamics",
+    "steam_link": "https://store.steampowered.com/search/?term=Tomb%20Raider%20IV%E2%80%A2V%E2%80%A2VI%20Remastered",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/dd9/dd95ab67525c218365dab98d08ca0e33.jpg",
+      "https://media.rawg.io/media/screenshots/e89/e892b5d5e7fd2a3762a7f4c1f44b75d0.jpg",
+      "https://media.rawg.io/media/screenshots/143/14373a8d87f650e91833bc7e314912cf.jpg",
+      "https://media.rawg.io/media/screenshots/e4c/e4cda04cfd06db2df960dee099eeebb2.jpg",
+      "https://media.rawg.io/media/screenshots/10c/10c114d18f73edfc6a83b0899a8e6b70.jpg",
+      "https://media.rawg.io/media/screenshots/19b/19b711105bc7b12fd69a137fe72e3eed.jpg",
+      "https://media.rawg.io/media/games/307/307e204b2743469aa3aa630b953b8f18.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10+\nProcessor: Intel i3 / AMD FX-4100\nMemory: 4 GB RAM\nGraphics: GeForce GT 620 1gb / Radeon HD 8670D",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10+\nProcessor: Intel i7 / AMD Ryzen 7 5800\nMemory: 16 GB RAM\nGraphics: NVIDA RTX 2080 / Radeon RX 6750"
+    },
+    "description_en": "Play the next series of Tomb Raider adventures in this remastered collection of the Darkness Trilogy.\nIncluded Game Titles:\n\nTomb Raider: The Last Revelation – Lara Croft discovers the lost tomb of the Egyptian God Set, unwittingly unleashing him and fulfilling an ancient prophecy—one that plunges mankind into darkness.\n\nTomb Raider: Chronicles – Following the events of The Last Revelation, Lara Croft is buried in an Egyptian tomb and is presumed dead. At her memorial, those closest to her reminisce about secrets from her past.\n\nTomb Raider: The Angel of Darkness – Accused of murder, Lara becomes a fugitive on the run, while uncovering a sinister conspiracy involving alchemical experiments and the search for ancient artifacts.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسری بعدی ماجراهای Tomb Raider را در این مجموعه بازسازی شده از Darkness Trilogy بازی کنید.\nعناوین بازی شامل:\n\nTomb Raider: The Last Revelation - لارا کرافت مقبره گمشده ست خدای مصری را کشف می کند، ناخواسته او را آزاد می کند و یک پیشگویی باستانی را محقق می کند - پیشگویی که بشر را در تاریکی فرو می برد.\n\nTomb Raider: Chronicles - پس از وقایع The Last Revelation، لارا کرافت در یک مقبره مصری دفن شد و فرض بر این است که مرده است. در مراسم یادبود او، نزدیکترین افراد به او اسرار گذشته او را به یاد می آورند.\n\nTomb Raider: The Angel of Darkness - متهم به قتل، لارا در حال فرار تبدیل به یک فراری می شود، در حالی که کشف یک توطئه شوم شامل آزمایش های کیمیاگری و جستجوی مصنوعات باستانی است."
   }
 ]
