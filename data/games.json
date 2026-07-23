@@ -2396,5 +2396,49 @@
     },
     "description_en": "Pacific Drive is a run-based, first-person driving survival game. Your car is your only companion as you navigate a surreal and anomaly-filled reimagining of the Pacific Northwest. Structured as a “road-like”, each excursion into the wilderness brings unique and strange challenges, as you restore and upgrade your car from an abandoned garage that acts as your home base. With the car as your lifeline, you’ll unravel a long-forgotten mystery as you make your way to the heart of the Olympic Exclusion Zone.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nPacific Drive یک بازی بقا در رانندگی اول شخص است. ماشین شما تنها همراه شماست در حالی که در یک تصویر سورئال و پر از ناهنجاری از شمال غربی اقیانوس آرام حرکت می کنید. با ساختاری «جاده‌مانند»، هر گشت و گذار در بیابان چالش‌های منحصر به فرد و عجیبی را به همراه دارد، زیرا ماشین خود را از یک گاراژ متروکه که به عنوان پایگاه خانه شما عمل می‌کند، بازسازی و ارتقا می‌دهید. با ماشین به عنوان راه نجات شما، در حالی که به سمت قلب منطقه محرومیت المپیک می روید، یک راز فراموش شده را کشف خواهید کرد."
+  },
+  {
+    "id": 962011,
+    "name": "Prince of Persia: The Lost Crown",
+    "background_image": "https://media.rawg.io/media/games/cca/ccaa933775fe1ffcebe40a01f52545db.jpg",
+    "rating": 3.95,
+    "metacritic": null,
+    "released": "2024-01-18",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "https://store.steampowered.com/app/2751000/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/fc0/fc03983d06ff39095176e4d44535e3ad.jpg",
+      "https://media.rawg.io/media/screenshots/9b2/9b2c52dd3c53675e5fa3682562f33c5a.jpg",
+      "https://media.rawg.io/media/screenshots/1c5/1c598576f67907fa7a9dcfb66afe7a94.jpg",
+      "https://media.rawg.io/media/screenshots/47b/47b8b8afa6e01da69206a06f1f9f7af9.jpg",
+      "https://media.rawg.io/media/games/cca/ccaa933775fe1ffcebe40a01f52545db.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "UNLEASH YOUR INNER WARRIOR\nUse your Time Powers, combat, and platforming skills to perform deadly combos and defeat time-corrupted enemies and mythological creatures.\n\nLOSE YOURSELF IN THE PRODIGIOUS MOUNT QAF\nDiscover a cursed Persian-inspired world filled with larger-than-life landmarks and explore a variety of highly detailed biomes, each with their own identity, wonder, and danger.\n\nLIVE AN EPIC ADVENTURE\nImmerse yourself in a Persian mythological​ fantasy through an intriguing and original story as you use your wits to solve puzzles, find hidden treasures, and complete quests to learn more about this corrupted place.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجنگجوی درونی خود را آزاد کنید\nاز قدرت های زمانی، مبارزه و مهارت های پلتفرمینگ خود برای اجرای کمبوهای مرگبار و شکست دادن دشمنان خراب شده در زمان و موجودات افسانه ای استفاده کنید.\n\nخود را در کوه شگفت انگیز QAF گم کنید\nدنیای نفرین شده الهام گرفته از فارسی پر از مکان های دیدنی بزرگتر را کشف کنید و انواع بیوم های بسیار دقیق را کشف کنید که هر کدام هویت، شگفتی و خطر خاص خود را دارند.\n\nدر یک ماجراجویی حماسی زندگی کنید\nبا استفاده از عقل خود برای حل معماها، یافتن گنجینه های پنهان و جستجوهای کامل برای کسب اطلاعات بیشتر در مورد این مکان خراب، خود را در یک فانتزی اساطیری ایرانی از طریق یک داستان جذاب و اصلی غرق کنید."
   }
 ]
