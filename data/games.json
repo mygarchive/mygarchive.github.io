@@ -5114,5 +5114,41 @@
     },
     "description_en": "In 2015, the characters Shaun and Rebecca penetrate into one of the offices of \"Abstergo industries\", which is located in London, where they install bugs. There they find information that Abstergo looks through the life of British Assassins Jacob and Evie Frye, hoping to find a Piece of Eden hidden in London.\n\nIn the centre of the story of the past are the twin assassins Jacob and Evie Frye. They go to London to put their orders there and at the same time to find a Piece of Eden.\n\nHowever, a more exciting innovation in the mechanics of Syndicate was the harpoon. It is actively used during a secretive passage - harpoon allows you to change position and save time instantly.\n\nAnother important aspect of the game is the gang. You can spend money and resources not only on yourself but also on your allies. By investing in the development of Rooks, you will help them to sabotage the Gallows. Outside the story, the campaign begins classic Assassin's Creed: towers, the liberation of territories and a lot of third-party jobs.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر سال 2015، شخصیت‌های Shaun و Rebecca به یکی از دفاتر \"صنایع آبسترگو\" که در لندن قرار دارد، نفوذ می‌کنند و در آنجا باگ‌ها را نصب می‌کنند. در آنجا اطلاعاتی پیدا می‌کنند که Abstergo به زندگی آدمکش‌های بریتانیایی جیکوب و ایوی فرای نگاه می‌کند، به این امید که قطعه‌ای از عدن را در لندن پنهان کند.\n\nدر مرکز داستان گذشته، دو قاتل جاکوب و ایوی فرای قرار دارند. آنها به لندن می روند تا سفارشات خود را در آنجا بگذارند و در همان زمان قطعه ای از عدن را پیدا کنند.\n\nبا این حال، یک نوآوری هیجان انگیزتر در مکانیک Syndicate، هارپون بود. این به طور فعال در طول یک عبور مخفیانه استفاده می شود - هارپون به شما امکان می دهد موقعیت خود را تغییر دهید و فورا در زمان صرفه جویی کنید.\n\nیکی دیگر از جنبه های مهم بازی گروه است. شما می توانید پول و منابع را نه تنها برای خود، بلکه برای متحدان خود نیز خرج کنید. با سرمایه گذاری در توسعه Rooks، به آنها کمک می کنید تا Gallows را خراب کنند. خارج از داستان، کمپین Assassin's Creed کلاسیک را آغاز می کند: برج ها، آزادسازی مناطق و بسیاری از مشاغل شخص ثالث."
+  },
+  {
+    "id": 8146,
+    "name": "Assassin's Creed Unity",
+    "background_image": "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg",
+    "rating": 3.63,
+    "metacritic": 71,
+    "released": "2014-11-11",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 14,
+    "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Toronto, Ubisoft Montpellier",
+    "steam_link": "https://store.steampowered.com/app/289650/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/bd3/bd3302a08d8c9ffbb73ffd4cd40714aa.jpg",
+      "https://media.rawg.io/media/screenshots/bd8/bd84c249c0629a21eb100e9f85741af4.jpg",
+      "https://media.rawg.io/media/screenshots/896/896a031eff2e03dc483e2c72c9709457.jpg",
+      "https://media.rawg.io/media/screenshots/8b1/8b189e10ce9c9276d052ee5cb04ff4b8.jpg",
+      "https://media.rawg.io/media/screenshots/5e0/5e076dd9935da9e829a2508ee1e64d18.jpg",
+      "https://media.rawg.io/media/screenshots/192/192e78d96471392a05fef86dbc13a7d1.jpg",
+      "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1, Windows 8/8.1 (64-bit operating system required)\nProcessor: Intel Core i5-2500K @ 3.3 GHz or AMD FX-8350 @ 4.0 GHz\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GTX 680 or AMD Radeon HD 7970 (2 GB VRAM)\nStorage: 50 GB available space\nSound Card: DirectX 9.0c compatible sound card with latest drivers\nAdditional Notes: Windows-compatible keyboard and mouse required, optional controller",
+      "recommended": "OS: Windows 7 SP1, Windows 8/8.1 (64-bit operating system required)\nProcessor: Intel Core i7-3770 @ 3.4 GHz or AMD FX-8350 @ 4.0 GHz or better\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 780 or AMD Radeon R9 290X (3 GB VRAM)\nStorage: 50 GB available space\nSound Card: DirectX 9.0c compatible sound card with latest drivers\nAdditional Notes: Supported video cards at the time of release: NVIDIA GeForce GTX 680 or better, GeForce GTX 700 series; AMD Radeon HD7970 or better, Radeon R9 200 series Note: Laptop versions of these cards may work but are NOT officially supported."
+    },
+    "description_en": "The game takes place in Paris, during the Great French Revolution, from the capture of the Bastille in 1789 to the Thermidorian coup. Behind all action, there is an intrigue connected with the change of the Great Master of the Order of Templars. The game has a new assassin, Arno Victor Dorian.\nThe setting provides an abundance of locations - from Versailles to the Parisian multi-level catacombs.\nThe mission system is entirely different from the previous games of the series. In this game, there is a cooperative mode for a maximum of 4 people.\nParkour now allows you to climb walls without any troubles at all. A system of shelters and the ability to manipulate the crowd are added.\nThe player has an influence on the character improvement scenario.\nAn interesting detail - before the murder of the primary victim, her whole life flashes before the eyes of the assassin.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی در پاریس، در جریان انقلاب کبیر فرانسه، از تصرف باستیل در سال 1789 تا کودتای ترمیدوری اتفاق می افتد. در پس همه اقدامات، دسیسه ای وجود دارد که با تغییر استاد بزرگ نظم تمپلارها مرتبط است. بازی دارای یک قاتل جدید به نام آرنو ویکتور دوریان است.\nاین محیط مکان های فراوانی را فراهم می کند - از ورسای گرفته تا دخمه های چند سطحی پاریس.\nسیستم ماموریت کاملاً با بازی های قبلی این سری متفاوت است. در این بازی حالت تعاونی برای حداکثر 4 نفر وجود دارد.\nپارکور اکنون به شما امکان می دهد بدون هیچ مشکلی از دیوارها بالا بروید. سیستمی از پناهگاه ها و توانایی دستکاری جمعیت اضافه شده است.\nبازیکن در سناریوی بهبود شخصیت تاثیر دارد.\nیک جزئیات جالب - قبل از قتل قربانی اصلی، تمام زندگی او جلوی چشمان قاتل می گذرد."
   }
 ]
