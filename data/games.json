@@ -563,5 +563,54 @@
     },
     "description_en": "Cronos: The New Dawn is a pulse-pounding, third-person survival horror game where time is your deadliest weapon — and your worst enemy. Survive a brutal future, dive back in time, and stop nightmarish creatures from merging into unstoppable abominations.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCronos: The New Dawn یک بازی ترسناک و سوم شخص است که در آن زمان مرگبارترین سلاح و بدترین دشمن شماست. در آینده ای وحشیانه جان سالم به در ببرید، در زمان غواصی کنید و موجودات کابوس وار را از ادغام شدن در شرارت های غیرقابل توقف متوقف کنید."
+  },
+  {
+    "id": 650605,
+    "name": "Cult of the Lamb",
+    "background_image": "https://media.rawg.io/media/games/ab8/ab8217a1fe2ced388a388722734e6d16.jpg",
+    "rating": 4.11,
+    "metacritic": null,
+    "released": "2022-08-11",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 10,
+    "developers": "Massive Monster",
+    "steam_link": "https://store.steampowered.com/app/1313140/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/60d/60d3d2424395f6c2896bdca47a292fe1.jpg",
+      "https://media.rawg.io/media/screenshots/b12/b12f69d94409953a19a149588db6cce8.jpg",
+      "https://media.rawg.io/media/screenshots/5d1/5d17e40abacbfa45d6ac8e55eac3224d.jpg",
+      "https://media.rawg.io/media/screenshots/6af/6af4732db1b900f0027e8db9e395ae47.jpg",
+      "https://media.rawg.io/media/games/ab8/ab8217a1fe2ced388a388722734e6d16.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7 or later\nProcessor: Intel Core i3-3240 (2 * 3400); AMD FX-4300 (4 * 3800)\nMemory: 4 GB RAM\nGraphics: GeForce GTX 560 Ti (1024 VRAM); Radeon HD 7750 (1024 VRAM)\nStorage: 4 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-3470\nMemory: 8 GB RAM\nGraphics: GeForce GTX 1050 (2048 VRAM); Radeon R9 380 (2048 VRAM)\nStorage: 4 GB available space"
+    },
+    "description_en": "Start your own cult in a land of false prophets, venturing out into diverse and mysterious regions to build a loyal community of woodland worshippers and spread your Word to become the one true cult.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nفرقه خود را در سرزمین پیامبران دروغین راه اندازی کنید، به مناطق مختلف و مرموز بروید تا جامعه ای وفادار از پرستان جنگل بسازید و کلام خود را گسترش دهید تا به یک فرقه واقعی تبدیل شوید."
   }
 ]
