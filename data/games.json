@@ -3708,5 +3708,46 @@
     },
     "description_en": "The Long Dark is a game about surviving in the unforgiving conditions of frozen North Canadian taiga. The Arctic wilderness may be breathtakingly beautiful, thanks to the game’s artful visual style, but it is also deadly. Low temperatures, hungry animals like wolves and bears, and starvation can easily kill your character. To stay alive, he will need to learn how to light a campfire, find shelter, care about his wounds, hunt for food and protect himself in an unfriendly environment. Many necessary items in the game, including some of the weapons, need to be crafted out of the junk that you can find in the woods and in abandoned buildings.\nIn the story mode, called Wintermute, you control a pilot, Will Mackenzie, who was hired by his ex-wife Astrid to deliver a mysterious cargo. Eventually, his plane crashed in the woods. Will is injured, and Astrid is missing, presumably lost somewhere in the wilderness. Your goal is to survive and to rescue your companion. Wintermute follows a linear plot and only allows you to explore a limited area. However, it is recommended to start with, since it serves as a sort of tutorial to the open-world sandbox mode. This is the most popular mode, in which you are not confined to the plot and can discover new areas.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Long Dark یک بازی در مورد زنده ماندن در شرایط نابخشوده تایگای یخ زده شمال کانادا است. طبیعت وحشی قطب شمال، به لطف سبک بصری هنرمندانه بازی، ممکن است به طرز نفس گیر زیبایی باشد، اما کشنده نیز هست. دمای پایین، حیوانات گرسنه مانند گرگ و خرس و گرسنگی می توانند به راحتی شخصیت شما را بکشند. برای زنده ماندن، او باید یاد بگیرد که چگونه آتش روشن کند، سرپناه پیدا کند، مراقب زخم هایش باشد، به دنبال غذا بگردد و از خود در یک محیط غیر دوستانه محافظت کند. بسیاری از موارد ضروری در بازی، از جمله برخی از سلاح‌ها، باید از زباله‌هایی ساخته شوند که می‌توانید در جنگل‌ها و ساختمان‌های متروکه پیدا کنید.\nدر حالت داستانی که Wintermute نام دارد، شما کنترل خلبانی به نام ویل مکنزی را دارید که توسط همسر سابقش آسترید برای تحویل محموله مرموز استخدام شده بود. در نهایت هواپیمای او در جنگل سقوط کرد. ویل مجروح شده است و آسترید گم شده است و احتمالاً جایی در بیابان گم شده است. هدف شما زنده ماندن و نجات همراه خود است. Wintermute یک طرح خطی را دنبال می کند و فقط به شما امکان می دهد یک منطقه محدود را کاوش کنید. با این حال، توصیه می شود با آن شروع کنید، زیرا به عنوان نوعی آموزش برای حالت sandbox جهان باز عمل می کند. این محبوب ترین حالت است که در آن شما محدود به طرح نیستید و می توانید مناطق جدیدی را کشف کنید."
+  },
+  {
+    "id": 804851,
+    "name": "The Plucky Squire",
+    "background_image": "https://media.rawg.io/media/games/15b/15b8dfa78091b549baa744597e49edd3.jpg",
+    "rating": 3.86,
+    "metacritic": null,
+    "released": "2024-09-17",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "All Possible Futures",
+    "steam_link": "https://store.steampowered.com/app/1627570/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/bed/bed30ba055a986da0e9bcf5ea584e722.jpg",
+      "https://media.rawg.io/media/screenshots/ace/ace74e7b46350ace9e7fc2c67fb6eaa5.jpg",
+      "https://media.rawg.io/media/screenshots/86f/86f01c9f2fa2f34272fba8bd667c6f89.jpg",
+      "https://media.rawg.io/media/screenshots/114/1149913f83f6de958ad6ab04cdac5bc4.jpg",
+      "https://media.rawg.io/media/screenshots/1e2/1e2934de5ed7b9e396ee38b64a9e2c5a.jpg",
+      "https://media.rawg.io/media/screenshots/0a7/0a7c9a1ca568714346898925790cef66.jpg",
+      "https://media.rawg.io/media/games/15b/15b8dfa78091b549baa744597e49edd3.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 x64 Bit\nProcessor: Intel Core i3-4160 / AMD FX-4350\nMemory: 8 GB RAM\nGraphics: GeForce GTX 960 (4096Mb) / Radeon RX 460 (4096Mb)\nDirectX: Version 12\nStorage: 27 GB available space\nAdditional Notes: Low Quality setting, 1080p, producing 40+ FPS",
+      "recommended": "OS: Windows 10 x64 Bit\nProcessor: Intel Core i5-8600K / AMD Ryzen 5 1500X\nMemory: 16 GB RAM\nGraphics: GeForce GTX 1080 (8192MB) / Radeon RX Vega 64 (8192 MB) / Intel Arc A750\nDirectX: Version 12\nStorage: 27 GB available space\nAdditional Notes: High Quality setting, 1080p, producing 60 FPS"
+    },
+    "description_en": "The Plucky Squire follows the magical adventures of Jot and his friends - storybook characters who discover a three-dimensional world outside the pages of their book.\nWhen the malevolent Humgrump realizes he's the villain of the book - destined to lose his battle against the forces of good for all eternity - he kicks the heroic Jot out of its pages and changes the story forever.\nJot must face challenges, unlike anything he's ever seen if he is to save his friends from Humgrump's dark forces and restore the book's happy ending.\nJump between 2D and 3D worlds in this charming action-adventure - solving puzzles, boxing badgers, flying with a jetpack, and enjoying many more delightful and surprising mini-challenges as you become the hero of a living storybook.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Plucky Squire ماجراهای جادویی Jot و دوستانش را دنبال می کند - شخصیت های کتاب داستان که دنیایی سه بعدی را خارج از صفحات کتاب خود کشف می کنند.\nوقتی هامگرامپ بدخواه متوجه می شود که او شرور کتاب است - که قرار است نبرد خود را در برابر نیروهای خیر برای همیشه ببازد - جوت قهرمان را از صفحات آن بیرون می کشد و داستان را برای همیشه تغییر می دهد.\nجوت باید با چالش هایی روبرو شود، برخلاف هر چیزی که تا به حال دیده است، اگر بخواهد دوستانش را از نیروهای تاریک هامگرامپ نجات دهد و پایان خوش کتاب را بازگرداند.\nدر این اکشن-ماجراجویی جذاب بین دنیای دوبعدی و سه بعدی پرش کنید - حل پازل، بوکس گورکن، پرواز با جت پک، و لذت بردن از بسیاری از چالش های کوچک لذت بخش و غافلگیرکننده دیگر که قهرمان یک کتاب داستان زنده می شوید."
   }
 ]
