@@ -5458,5 +5458,46 @@
     },
     "description_en": "Batman: The Enemy Within, 2017, is an episodic point-and-click graphic adventure video game, a sequel to 2016's Batman: The Telltale Series.\n\nThe player controls the character, who, on the one hand, is the well-known billionaire, entrepreneur and philanthropist Bruce Wayne, and on the other hand, a crime fighter named Batman, hiding his real name from people.\n\n###The series\nThe Enemy Within is set in the same Batman continuity introduced in Batman: The Telltale Series - within Gotham, a city infested with crime and corruption. Both games are set in mid-to-late 2010s with technologies such as drones and smartphones. The places where The Enemy Within takes place are the same as in the previous game - Batcave, Wayne Enterprises and Gotham City Police Headquarters. The Enemy Within follows the events of the previous game, taking place between a couple of months to a year after these events.\n\n###Fresh interpretation of Batman in games, film, or comics\nThe creators of the series claim that the game offers the player to choose how to perceive certain situations - like Batman or Bruce Wayne. They promise a \"fresh interpretation of the universe set in current times, not tied to any existing iteration of Batman in games, film, or comics». To preserve this freshness, the creators of the game begin their story about Batman a few years after Bruce Wayne became Batman - they claim that it gives them the opportunity to be flexible in describing the character; As a result, the player, accord",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: The Enemy Within، 2017، یک بازی ویدئویی ماجراجویی گرافیکی اپیزودیک با نقطه و کلیک، دنباله ای بر Batman: The Telltale در سال 2016 است.\n\nبازیکن کنترل این شخصیت را بر عهده دارد که از یک طرف میلیاردر، کارآفرین و بشردوست معروف بروس وین و از طرف دیگر یک مبارز جنایتکار به نام بتمن نام واقعی خود را از مردم پنهان می کند.\n\n###سریال\nThe Enemy Within در همان تداوم بتمن که در Batman: The Telltale Series معرفی شده است - در گاتهام، شهری پر از جنایت و فساد می گذرد. هر دو بازی در اواسط تا اواخر دهه 2010 با فناوری هایی مانند هواپیماهای بدون سرنشین و گوشی های هوشمند ساخته می شوند. مکان‌هایی که The Enemy Within در آن اتفاق می‌افتد مانند بازی قبلی است - Batcave، Wayne Enterprises و Gotham City Police Headquarters. The Enemy Within وقایع بازی قبلی را دنبال می کند که بین یکی دو ماه تا یک سال پس از این اتفاقات رخ می دهد.\n\n###تفسیر تازه ای از بتمن در بازی ها، فیلم ها یا کمیک ها\nسازندگان این سری ادعا می کنند که بازی به بازیکن پیشنهاد می دهد که چگونه موقعیت های خاص را درک کند - مانند بتمن یا بروس وین. آنها قول \"تفسیری تازه از جهان را می دهند که در زمان های کنونی اتفاق می افتد، بدون هیچ گونه تکرار موجود از بتمن در بازی ها، فیلم ها یا کمیک ها.\" برای حفظ این تازگی، سازندگان بازی داستان خود را در مورد بتمن چند سال پس از تبدیل شدن بروس وین به بتمن آغاز می کنند - آنها ادعا می کنند که این فرصت را به آنها می دهد که در توصیف شخصیت، مطابق با نتیجه، شخصیت انعطاف پذیر باشند."
+  },
+  {
+    "id": 865,
+    "name": "Call of Duty: Black Ops",
+    "background_image": "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg",
+    "rating": 4.06,
+    "metacritic": 81,
+    "released": "2010-11-09",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 9,
+    "developers": "Raven Software, Treyarch, n-Space",
+    "steam_link": "https://store.steampowered.com/app/202970/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a02/a027c280854d5e2f5356f87665dd524a.jpg",
+      "https://media.rawg.io/media/screenshots/6fb/6fba712fa9ca9ffada775b77e4dcff74.jpg",
+      "https://media.rawg.io/media/screenshots/e8d/e8dfc3e3614f83b968898eb2adbd5e64.jpg",
+      "https://media.rawg.io/media/screenshots/7be/7be0d2082caa1eebf28a901f0ccb3561.jpg",
+      "https://media.rawg.io/media/screenshots/892/89281338b206f0d06bae96beb00aa9dd.jpg",
+      "https://media.rawg.io/media/screenshots/9e7/9e7aa6f83ffdfc7ec57f78d1dcdaf0fa.jpg",
+      "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows® Vista / XP / 7\n Processor: Intel® Core™2 Duo E6600 or AMD Phenom™ X3 8750 or better\n Memory: 2GB\n Graphics: Shader 3.0 or better 256MB NVIDIA® GeForce® 8600GT / ATI Radeon® X1950Pro or better\n   DirectX®: DirectX® 9.0c\n Hard Drive: 12GB*\n Sound: DirectX® 9.0c-compatible\n    *Call of Duty®: Black Ops requires an initial hard drive space of approximately 24GB to download and install the game via digital download (8GB of compressed files, 8GB of decompressed files and 8GB of installed files). Upon installing the game, 16GB (compressed and decompressed files) may be deleted from the hard drive. Please make note of where the compressed and decompressed files are being saved on your hard drive in order to later locate these temporary files for removal.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty: Black Ops is a first-person shooter, a seventh installment in the series altogether and a sequel to Call of Duty: World at War. The game takes place during the Cold War and shows different historical periods of it.\r\nThe main character is a CIA agent, set out on different classified missions and tasked with eliminating enemies if needed. The story in the game is complicated, featuring characters from the previous games, and historical figures like JFK and Fidel Castro. Despite its emphasis on the scenario and real-world plausibility, Black Ops doesn’t lack in gameplay terms, as the combat system is, as established in series, extensive and realistic. The graphics are made for the player’s highest level of entertainment, with massive special effects and excellent quality of every detail.\r\nCall of Duty: Black Ops features a trademark multiplayer system, with different game modes, competitive play, and cooperative maps. The players can earn ranks for their performance, unlock new customizable weapons and different perks for use in the upcoming battles.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops یک بازی تیراندازی اول شخص، هفتمین قسمت از مجموعه و دنباله ای برای Call of Duty: World at War است. بازی در دوران جنگ سرد می گذرد و دوره های مختلف تاریخی آن را نشان می دهد.\r\nشخصیت اصلی یک مامور سیا است که در ماموریت های طبقه بندی شده مختلف قرار دارد و در صورت نیاز وظیفه دارد دشمنان را از بین ببرد. داستان بازی پیچیده است و شخصیت های بازی های قبلی و شخصیت های تاریخی مانند JFK و فیدل کاسترو را در خود جای داده است. علیرغم تاکید بر سناریو و قابل قبول بودن در دنیای واقعی، Black Ops از نظر گیم پلی کمبودی ندارد، زیرا سیستم مبارزه، همانطور که در سری ها ایجاد شده، گسترده و واقع گرایانه است. گرافیک برای بالاترین سطح سرگرمی بازیکن، با جلوه های ویژه عظیم و کیفیت عالی در هر جزئیات ساخته شده است.\r\nCall of Duty: Black Ops دارای یک سیستم چند نفره علامت تجاری با حالت های مختلف بازی، بازی رقابتی و نقشه های همکاری است. بازیکنان می توانند برای عملکرد خود رتبه کسب کنند، سلاح های قابل تنظیم جدید و امتیازات مختلف را برای استفاده در نبردهای آینده باز کنند."
   }
 ]
