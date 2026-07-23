@@ -1786,8 +1786,9 @@
       "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit (or newer)\nProcessor: Intel Core i5-8400, AMD Ryzen 5 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1060 (6GB), AMD Radeon RX 580\nStorage: 100 GB available space",
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit (or newer)\nProcessor: Intel Core i7-13700K, AMD Ryzen 7 7800X3D\nMemory: 32 GB RAM\nGraphics: NVIDIA GeForce RTX 4070, AMD Radeon RX 7800 XT\nStorage: 100 GB available space"
     },
-"description_en": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom.\nAs invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.\n\nNow a trusted member of the rightful king’s allies, Henry is sent to escort Sir Hans Capon on a diplomatic mission. After they are ambushed and nearly killed, the two young men embark on a series of perilous adventures, putting their skills, character and friendship to the ultimate test.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nپادشاهی بوهمیا، اوایل قرن پانزدهم: هرج و مرج بر پادشاهی حاکم شده است.\nدر حالی که مهاجمان این سرزمین بی‌حکم را غارت می‌کنند و ترس و وحشت ایجاد می‌کنند، هنری از اسکالیتز به دنبال انتقام از خانواده کشته شده‌اش است.\n\nاکنون هنری که یکی از اعضای مورد اعتماد متحدان پادشاه برحق است، برای اسکورت سر هانس کاپون در یک ماموریت دیپلماتیک فرستاده می شود. پس از اینکه آنها در کمین قرار می گیرند و تقریباً کشته می شوند، دو مرد جوان وارد یک سری ماجراجویی های خطرناک می شوند و مهارت ها، شخصیت و دوستی خود را در آزمون نهایی قرار می دهند."  },
+    "description_en": "Kingdom of Bohemia, Early 15th Century: chaos has befallen the kingdom.\nAs invaders pillage this ungoverned land, sowing fear and terror, Henry of Skalitz seeks revenge for his murdered family.\n\nNow a trusted member of the rightful king’s allies, Henry is sent to escort Sir Hans Capon on a diplomatic mission. After they are ambushed and nearly killed, the two young men embark on a series of perilous adventures, putting their skills, character and friendship to the ultimate test.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nپادشاهی بوهمیا، اوایل قرن پانزدهم: هرج و مرج بر پادشاهی حاکم شده است.\nدر حالی که مهاجمان این سرزمین بی‌حکم را غارت می‌کنند و ترس و وحشت ایجاد می‌کنند، هنری از اسکالیتز به دنبال انتقام از خانواده کشته شده‌اش است.\n\nاکنون هنری که یکی از اعضای مورد اعتماد متحدان پادشاه برحق است، برای اسکورت سر هانس کاپون در یک ماموریت دیپلماتیک فرستاده می شود. پس از اینکه آنها در کمین قرار می گیرند و تقریباً کشته می شوند، دو مرد جوان وارد یک سری ماجراجویی های خطرناک می شوند و مهارت ها، شخصیت و دوستی خود را در آزمون نهایی قرار می دهند."
+  },
   {
     "id": 3254,
     "name": "Journey",
@@ -2753,5 +2754,46 @@
     },
     "description_en": "Cyberpunk 2077 is a science fiction game loosely based on the role-playing game Cyberpunk 2020.\r\n\r\n###Setting\r\nThe game is set in the year 2077 in a fictional futuristic metropolis Night City in California. In the world of the game, there are developed cybernetic augmentations that enhance people's strength, agility, and memory. The city is governed by corporations. Many jobs are taken over by the robots, leaving a lot of people poor and homeless. Night City has a roaring underworld, with black markets, underground surgeons, drug dealers, and street gangs abound.\r\n\r\n###Characters\r\nThe main protagonist is fully customizable, including his or her sex and appearance, and goes by the nickname V. He or she is an underground mercenary who does “dirty business” for the various contractors. An NPC companion named Jackie joins the protagonist early at the game, and various other companions may join the player on certain missions as the plot demands. However, the game has no parties and no companion system.\r\n\r\n###Gameplay\r\nThe player controls V from the first person view, with the third-person view used for cutscenes only. The protagonist can travel across the city on feet or using various vehicles, in a manner some observers compared to GTA series. There are many options for the character customization, including three character classes, and a variety of augmentations V can install to enhance his or her abilities.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ حزب و سیستم همراهی ندارد.\r\n\r\n###بازی\r\nبازیکن V را از دید اول شخص کنترل می کند و از نمای سوم شخص فقط برای کات سین ها استفاده می شود. قهرمان می تواند با پای پیاده یا با استفاده از وسایل نقلیه مختلف در سراسر شهر سفر کند، به شیوه ای که برخی ناظران با سری GTA مقایسه می کنند. گزینه‌های زیادی برای سفارشی‌سازی کاراکتر وجود دارد، از جمله سه کلاس کاراکتر، و انواع تقویت‌کننده‌هایی که V می‌تواند برای افزایش توانایی‌های خود نصب کند."
+  },
+  {
+    "id": 868086,
+    "name": "Silent Hill 2",
+    "background_image": "https://media.rawg.io/media/games/09b/09b41c1a2c5761c5b1772a4ae238bb0e.jpg",
+    "rating": 4.45,
+    "metacritic": null,
+    "released": "2024-10-08",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 1,
+    "developers": "Bloober Team",
+    "steam_link": "https://store.steampowered.com/app/2124490/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b84/b84bf73824e8387369157ac7906421bd.jpg",
+      "https://media.rawg.io/media/screenshots/85e/85e8aa29b80f1c126d740acc674ec7a1.jpg",
+      "https://media.rawg.io/media/screenshots/dfe/dfec4b95e0100879f1f2da5c29761470.jpg",
+      "https://media.rawg.io/media/screenshots/8b8/8b84a78f1fdab724272f60116174fa23.jpg",
+      "https://media.rawg.io/media/screenshots/6bb/6bbd1d30d8cdb85abacb47fbb7c2d93f.jpg",
+      "https://media.rawg.io/media/screenshots/b34/b34b5833595e77a8c16fb81fdf62ca52.jpg",
+      "https://media.rawg.io/media/games/09b/09b41c1a2c5761c5b1772a4ae238bb0e.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Having received a letter from his deceased wife,\nJames heads to where they shared so many memories,\nin the hope of seeing her one more time: Silent Hill.\nThere, by the lake, he finds a woman eerily similar to her...\n\"My name...is Maria,\" the woman smiles. Her face, her voice... She's just like her.\nExperience a master-class in psychological survival horror―lauded as the best in the series―on the latest hardware with chilling visuals and visceral sounds.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا دریافت نامه ای از همسر متوفی خود،\nجیمز به جایی می رود که آنها خاطرات زیادی را به اشتراک گذاشته بودند،\nبه امید اینکه یک بار دیگر او را ببینم: سایلنت هیل.\nآنجا، در کنار دریاچه، زنی را می یابد که به طرز وحشتناکی شبیه او است...\nزن لبخند می زند: «اسم من...ماریا است». صورتش، صدایش... او هم مثل خودش است.\nبا جدیدترین سخت‌افزار با جلوه‌های بصری و صداهای احشایی، یک کلاس اصلی در ترسناک بقا روان‌شناختی را تجربه کنید - که به عنوان بهترین در این مجموعه تحسین شده است."
   }
 ]
