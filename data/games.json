@@ -4126,5 +4126,51 @@
     },
     "description_en": "Explore a land filled with lost legends, ancient powers, and ferocious monsters in TUNIC, an isometric action game about a small fox on a big adventure. Stranded on a mysterious beach, armed with only your own curiosity, you will confront colossal beasts, collect strange and powerful items, and unravel long-lost secrets.\n\nExplore a hostile and intricately-connected world of shady forests, sprawling ruins, and labyrinthine catacombs\nFight mighty bosses deep beneath the earth, high above the clouds, and in places stranger still\nCollect the missing manual pages, bursting with hints and original full-colour illustrations\nDiscover hidden treasures to help you on your way\nUnearth secret relics, secret techniques, secret puzzles, and… listen, there’s a lot of secrets!\nFeaturing sound design by Power Up Audio (Celeste, Darkest Dungeon, Subnautica: Below Zero)\nAnd an original soundtrack by Lifeformed (Dustforce, Double Fine Adventure)\n\nKeep your wits about you and be brave, little fox!",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسرزمینی پر از افسانه های گمشده، قدرت های باستانی و هیولاهای وحشی را در TUNIC کاوش کنید، یک بازی اکشن ایزومتریک درباره یک روباه کوچک در یک ماجراجویی بزرگ. در ساحلی اسرارآمیز، تنها با کنجکاوی خود مسلح شده اید، با جانوران عظیم الجثه روبرو می شوید، اقلام عجیب و غریب و قدرتمندی را جمع آوری می کنید و رازهای گمشده را کشف خواهید کرد.\n\nدنیایی خصمانه و به هم پیوسته از جنگل‌های سایه‌دار، خرابه‌های گسترده، و دخمه‌های هزارتویی را کاوش کنید.\nبا رئیس‌های قدرتمند در اعماق زمین، بالای ابرها و در مکان‌های غریبه‌تر مبارزه کنید\nصفحات دستی گمشده را جمع آوری کنید، پر از نکات و تصاویر تمام رنگی اصلی\nگنجینه های پنهان را کشف کنید تا به شما در راه خود کمک کنند\nبقایای مخفیانه، تکنیک های مخفی، پازل های مخفی، و ... گوش کنید، رازهای زیادی وجود دارد!\nبا طراحی صدا توسط Power Up Audio (Celeste، Darkest Dungeon، Subnautica: Below Zero)\nو یک موسیقی متن اصلی توسط Lifeformed (Dustforce، Double Fine Adventure)\n\nعقلت را حفظ کن و شجاع باش، روباه کوچولو!"
+  },
+  {
+    "id": 720949,
+    "name": "Turbo Overkill",
+    "background_image": "https://media.rawg.io/media/games/cfb/cfbcd421991cb6ced0b6b9448f0b9d3f.jpg",
+    "rating": 3.67,
+    "metacritic": null,
+    "released": "2023-08-11",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "Trigger Happy Interactive",
+    "steam_link": "https://store.steampowered.com/app/1328350/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/06b/06be522a0bc040fcb78710771cee18c3.jpg",
+      "https://media.rawg.io/media/screenshots/778/7781cd6ddf56a4acefbae7f6416de41c.jpg",
+      "https://media.rawg.io/media/screenshots/7e5/7e5fdfcd9a84cf37e4b3e94e4a31fd85.jpg",
+      "https://media.rawg.io/media/screenshots/66d/66dcd797066a1fcbb2936b1724a4f0e5.jpg",
+      "https://media.rawg.io/media/screenshots/8e8/8e833bfe42f1249ff96068511fc928bc.jpg",
+      "https://media.rawg.io/media/screenshots/c0d/c0dd8d3c46bde31497315e3fea4d0695.jpg",
+      "https://media.rawg.io/media/games/cfb/cfbcd421991cb6ced0b6b9448f0b9d3f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: CPU with 2+ GHz, 4 cores\nMemory: 8 GB RAM\nGraphics: GeForce GTX 970 or R9 390X\nDirectX: Version 10\nStorage: 5 GB available space\nAdditional Notes: Specs not finalized",
+      "recommended": "OS: Windows 10\nProcessor: CPU with 3+ GHz, 8 cores\nMemory: 16 GB RAM\nGraphics: GeForce RTX 3050 or Radeon RX 6500 XT\nDirectX: Version 10\nStorage: 5 GB available space\nAdditional Notes: Specs not finalized"
+    },
+    "description_en": "Half-metal, half-human, half-crazyHeavily inspired by some of the all-time greats like Doom, Duke Nukem and Quake, with stunning cyberpunk visuals, Turbo Overkill is the most savage FPS ever released by Apogee. You play as half-metal, half-human, half-crazy Johnny Turbo, augmented with hidden arm rockets and a chainsaw that extends from your lower leg allowing you to kick-slice enemies wide open.\nIn this Blade Runner-meets-DOOM hellscape, Johnny returns to his hometown of Paradise and finds its entire population possessed by Syn, a rogue AI, and its army of augmented minions. Desperate for enough money to outrun his past mistakes, Johnny takes on the impossible job of destroying the greatest AI ever created. Rival bounty hunters want to claim the prize first. Nothing is easy in paradise.\nHero Time, wall-running, dashing and grappling hooks, oh myTurbo Overkill takes over-the-top to never-before-reached heights. Activate Hero Time(™), a new form of slow motion with a twist. Build incredible speed by wall-running and dashing. Slide on your chainsaw leg, eviscerating foes and opening up bosses for critical damage, and go car-surfing on the hoods of flying cars. Blast away with the Twin Magnums, which lock-on and instagib several foes, the Boomer Shotgun and its attached grenade launcher, or the Telefragger sniper rifle, which teleports Johnny inside an enemy before they explode from within. The FPS genre is about to get wild and fun again.\nRace through two dozen stages packed wi",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنیمه فلزی، نیمه انسان، نیمه دیوانه که به شدت از برخی از بزرگان تاریخ مانند Doom، Duke Nukem و Quake الهام گرفته شده است، با تصاویر سایبرپانک خیره کننده، Turbo Overkill وحشیانه ترین FPSی است که تا به حال توسط Apogee منتشر شده است. شما در نقش جانی توربو نیمه فلزی، نیمه انسان، نیمه دیوانه بازی می کنید که با موشک های بازوی مخفی و اره برقی که از ساق پای شما امتداد دارد، تقویت شده و به شما اجازه می دهد تا دشمنان را کاملاً باز کنید.\nدر این منظره جهنمی Blade Runner-Meets-DOOM، جانی به زادگاهش Paradise باز می گردد و متوجه می شود که تمام جمعیت آن توسط Syn، یک هوش مصنوعی سرکش، و ارتش مینیون های تقویت شده اش تسخیر شده اند. جانی که از پول کافی برای پیشی گرفتن از اشتباهات گذشته خود ناامید است، کار غیرممکنی را بر عهده می گیرد که بزرگترین هوش مصنوعی را که تا به حال ساخته شده است، نابود کند. شکارچیان جایزه رقیب می خواهند ابتدا جایزه را دریافت کنند. هیچ چیز در بهشت ​​آسان نیست.\nHero Time، قلاب‌های دویدن روی دیوار، قلاب‌های پرتحرک و گیر، oh myTurbo Overkill از بالاترین سطح به ارتفاعاتی می‌برد که قبلاً هرگز به آن نرسیده‌اید. Hero Time(™) را فعال کنید، شکل جدیدی از حرکت آهسته با چرخش. سرعت باورنکردنی را با دویدن روی دیوار و تند تند ایجاد کنید. روی پای اره برقی خود بلغزانید، دشمنان را از بین ببرید و کارفرمایان را برای آسیب های جدی باز کنید و روی کاپوت ماشین های پرنده به گشت و گذار بپردازید. با مگنوم‌های دوقلو، که چندین دشمن را قفل می‌کنند و آنها را درگیر می‌کنند، تفنگ ساچمه‌ای بومر و نارنجک‌انداز متصل به آن، یا تفنگ تک‌تیرانداز Telefragger، که جانی را قبل از اینکه از داخل منفجر شوند، به داخل دشمن منتقل می‌کند، منفجر شوید. ژانر FPS دوباره وحشی و سرگرم کننده می شود.\nمسابقه را از طریق دو دوجین مرحله بسته بندی شده wi"
   }
 ]
