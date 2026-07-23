@@ -1306,5 +1306,56 @@
     },
     "description_en": "Portland. It's June 7, 1995. After a year of living abroad, the game's main character, 21-year-old girl Katie Greenbriar, finally returns home, waiting for a warm welcome from her family. But somehow, she finds that there is no one in the house! Where is everyone? What happened here? This will be seen in Gone Home - a unique adventure game.\n\nThis game is an interactive investigation. You will need to analyse the details of the most ordinary-looking house, learn the history of the people living here. The primary task is to reveal the mystery of what happened, using everything that is possible, as the house has a lot of interactive elements, which allows you to interact with the environment entirely.\n\nSurprisingly, simple movements create an atmosphere of almost inhabited home, as well as expertly crafted light and sound. Each piece of paper breathes history, and it is stunningly believable in both form and content.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nپورتلند. 7 ژوئن 1995 است. پس از یک سال زندگی در خارج از کشور، شخصیت اصلی بازی، کتی گرینبریار، دختر 21 ساله، سرانجام به خانه باز می گردد و منتظر استقبال گرم خانواده اش است. اما به نوعی متوجه می شود که هیچ کس در خانه نیست! همه کجا هستند؟ اینجا چه اتفاقی افتاد؟ این در Gone Home دیده می شود - یک بازی ماجراجویی منحصر به فرد.\n\nاین بازی یک تحقیق تعاملی است. شما باید جزئیات معمولی ترین خانه را تجزیه و تحلیل کنید، تاریخ مردمی که در اینجا زندگی می کنند را بیاموزید. وظیفه اصلی این است که با استفاده از هر چیزی که ممکن است راز آنچه اتفاق افتاده را فاش کنید، زیرا خانه دارای عناصر تعاملی زیادی است که به شما امکان می دهد به طور کامل با محیط تعامل داشته باشید.\n\nبا کمال تعجب، حرکات ساده فضایی از خانه تقریبا مسکونی و همچنین نور و صدای ماهرانه ایجاد می کند. هر تکه کاغذ از تاریخ نفس می کشد و هم از نظر شکل و هم از نظر محتوا به طرز خیره کننده ای باورپذیر است."
+  },
+  {
+    "id": 891238,
+    "name": "Hades II",
+    "background_image": "https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg",
+    "rating": 4.36,
+    "metacritic": null,
+    "released": "2025-09-25",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Supergiant Games",
+    "steam_link": "https://store.steampowered.com/app/1145350/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/59e/59e9ba1215b11e43ad64f363bfb7f65b.jpg",
+      "https://media.rawg.io/media/screenshots/e93/e93aa58a1bf6f628507121a206ef856d.jpg",
+      "https://media.rawg.io/media/screenshots/f2a/f2ad5b935bec0757defcbd1245182971.jpg",
+      "https://media.rawg.io/media/screenshots/12d/12d0e3888fde20cb974e2951fad3d4f6.jpg",
+      "https://media.rawg.io/media/screenshots/971/971f056ee50927f331f880271b0ab414.jpg",
+      "https://media.rawg.io/media/screenshots/565/565801fac627e1d6828fe56ea172d5ff.jpg",
+      "https://media.rawg.io/media/games/8fd/8fd2e8317849fd265ad8781c324d4ec2.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Dual Core 2.4 GHz\nMemory: 8 GB RAM\nGraphics: GeForce GTX 950, Radeon R7 360, or Intel HD Graphics 630\nStorage: 10 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Quad Core 2.4ghz\nMemory: 16 GB RAM\nGraphics: GeForce RTX 2060, Radeon RX 5600 XT, or Intel Arc A580\nStorage: 10 GB available space"
+    },
+    "description_en": "The first-ever sequel from Supergiant Games builds on the best aspects of the original god-like rogue-like dungeon crawler in an all-new, action-packed, endlessly replayable experience rooted in the Underworld of Greek myth and its deep connections to the dawn of witchcraft.\nBATTLE BEYOND THE UNDERWORLD\nAs the immortal Princess of the Underworld, you'll explore a bigger, deeper mythic world, vanquishing the forces of the Titan of Time with the full might of Olympus behind you, in a sweeping story that continually unfolds through your every setback and accomplishment.\nMASTER WITCHCRAFT AND DARK SORCERY\nInfuse your legendary weapons of Night with ancient magick, so that none may stand in your way. Become stronger still with powerful Boons from more than a dozen Olympian gods, from Apollo to Zeus. There are nearly limitless ways to build your abilities.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاولین دنباله از بازی‌های سوپرجاینت بر اساس بهترین جنبه‌های خزنده سیاه چال سرکش مانند خدا در تجربه‌ای کاملاً جدید، پر اکشن و قابل پخش بی‌پایان است که ریشه در دنیای اموات اسطوره یونانی و پیوندهای عمیق آن با طلوع جادو دارد.\nنبرد فراتر از دنیای زیرزمینی\nبه عنوان پرنسس جاودانه دنیای زیرین، دنیای اسطوره‌ای بزرگ‌تر و عمیق‌تری را کاوش خواهید کرد و نیروهای تیتان زمان را با قدرت کامل المپ پشت سر خود شکست می‌دهید، در داستانی فراگیر که به طور مداوم در هر شکست و موفقیت شما آشکار می‌شود.\nاستاد جادوگری و جادوگری تاریک\nاسلحه‌های افسانه‌ای شب خود را با جادوی باستانی آغشته کنید تا هیچ‌کس مانعی برای شما نباشد. با بون های قدرتمند بیش از دوازده خدای المپیک، از آپولو گرفته تا زئوس، همچنان قوی تر شوید. روش های تقریباً نامحدودی برای ایجاد توانایی های شما وجود دارد."
   }
 ]
