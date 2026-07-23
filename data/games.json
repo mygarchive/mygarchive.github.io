@@ -4955,5 +4955,51 @@
     },
     "description_en": "Assassin's Creed Odyssey is the twentieth game in its series. It is the earliest game in the Assassin's Creed universe chronology and the prequel to Assassin's Creed Origins.\n\n###Plot\nThe events of Assassin's Creed Odyssey's take place in the Classical Era of Ancient Greece, in 431 BC, before the Brotherhood of Assassins was even formed. The plot follows a fictionalized story of the Peloponnesian War between city-states of Sparta and Athens that left Greece devastated. The player can choose to control either a male (named Alexios) or female (named Kassandra) protagonist, both of them being descendants of the famous Spartan king Leonidas. The player enters the plot as a mercenary and can side with either Athens or its rival Sparta. There's also the frame story set in the contemporary age. Its protagonist is Layla Hassan, who was also the main character in the frame story of Assassin's Creed Origins.\n\n###Gameplay\nUnlike most earlier installments of Assassin's Creed, which put the emphasis solely on action, Odyssey has a strong role-playing element in it. Dialogue options and the non-linear plot allow the player to reach several alternate endings. The game also has a reputation system and multiple options for romancing, including same-sex romances. The combat system is similar to that in Origins with the addition of new skills. The game also reintroduces naval battles.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed Odyssey بیستمین بازی از مجموعه خود است. این اولین بازی در زمان‌شناسی دنیای Assassin's Creed و پیش درآمد Assassin's Creed Origins است.\n\n###طرح\nوقایع Assassin's Creed Odyssey's در دوران کلاسیک یونان باستان، در سال 431 قبل از میلاد، قبل از تشکیل گروه Brotherhood of Assassins رخ می دهد. خلاصه داستان داستانی تخیلی از جنگ پلوپونز بین دولت شهرهای اسپارتا و آتن است که یونان را ویران کرد. بازیکن می تواند یک قهرمان مرد (به نام الکسیوس) یا زن (به نام کاساندرا) را کنترل کند که هر دو از نوادگان پادشاه معروف اسپارتی، لئونیداس هستند. بازیکن به عنوان یک مزدور وارد نقشه می شود و می تواند طرف آتن یا رقیبش اسپارتا باشد. همچنین داستان قاب در عصر معاصر وجود دارد. شخصیت اصلی آن لیلا حسن است که شخصیت اصلی داستان قاب Assassin's Creed Origins نیز بود.\n\n###بازی\nبرخلاف اکثر قسمت‌های قبلی Assassin's Creed که تنها بر روی اکشن تاکید می‌کردند، Odyssey یک عنصر نقش‌آفرینی قوی در خود دارد. گزینه های گفتگو و طرح غیر خطی به بازیکن اجازه می دهد تا به چندین پایان متناوب برسد. این بازی همچنین دارای یک سیستم شهرت و گزینه های متعدد برای عاشقانه، از جمله عاشقانه های همجنس است. سیستم مبارزه با اضافه شدن مهارت های جدید مشابه سیستم Origins است. این بازی همچنین نبردهای دریایی را دوباره معرفی می کند."
+  },
+  {
+    "id": 406952,
+    "name": "Assassin’s Creed Odyssey - The Fate of Atlantis",
+    "background_image": "https://media.rawg.io/media/games/c95/c9565c19c24cd13875572cc26e62bef3.jpg",
+    "rating": 3.6,
+    "metacritic": null,
+    "released": "2019-04-23",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Ubisoft",
+    "steam_link": "https://store.steampowered.com/search/?term=Assassin%E2%80%99s%20Creed%20Odyssey%20-%20The%20Fate%20of%20Atlantis",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/e9e/e9e0e59fb347b716debdd75d3e28dd94.jpg",
+      "https://media.rawg.io/media/screenshots/cad/cad4ea1288d96a10eaa2568fc12b778a.jpg",
+      "https://media.rawg.io/media/screenshots/ddf/ddfd177b11c14209dc5ff2acbf03e8d3.jpg",
+      "https://media.rawg.io/media/screenshots/6ba/6ba35b944db6fc7d71dbf73a29bcfdc2.jpg",
+      "https://media.rawg.io/media/screenshots/35c/35cb2464ae206d019d6346ab40c57030.jpg",
+      "https://media.rawg.io/media/screenshots/07a/07a21c0b95210097da4933eece0dbaed.jpg",
+      "https://media.rawg.io/media/games/c95/c9565c19c24cd13875572cc26e62bef3.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "In the second DLC, The Fate of Atlantis, venture into the fabled realms of Greek mythology to discover your hero's true power and unravel the mysteries of the First Civilisation.\n\nExplore three new worlds from Greek mythology: Elysium, the Underworld, and Atlantis!\n\nFace legendary trials and encounter the gods themselves, including Persephone, Hades, Poseidon, and more!\n\nDelve deeper into Assassin's Creed lore and uncover the mysterious power of the First Civilisation.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر DLC دوم، The Fate of Atlantis، وارد قلمرو افسانه‌ای اساطیر یونان شوید تا قدرت واقعی قهرمان خود را کشف کنید و اسرار اولین تمدن را کشف کنید.\n\nسه دنیای جدید از اساطیر یونان را کاوش کنید: Elysium، The Underworld و Atlantis!\n\nبا آزمایشات افسانه ای روبرو شوید و با خود خدایان از جمله پرسفون، هادس، پوزیدون و غیره روبرو شوید!\n\nعمیق تر در داستان Assassin's Creed کاوش کنید و قدرت اسرارآمیز First Civilisation را کشف کنید."
   }
 ]
