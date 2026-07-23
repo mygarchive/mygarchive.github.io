@@ -3609,5 +3609,51 @@
     },
     "description_en": "The Great War: Western Front is the definitive WW1 strategy game. Play a deciding role in history with this real-time tactical experience as you take charge in the pivotal Western Front from 1914 to 1919.\n\nPick your faction and lead your forces to victory, by directing your armies in gritty real-time battles and by guiding high-level decisions in turn-based strategic gameplay. Dig detailed trenches, research new technologies such as poison gas and tanks, and make decisions that will have a profound and lasting effect on your success. Think like a Commander to either relive history - or redefine it.\n\n\nDiscover unparalleled levels of strategic choice as you step into the role of both Theatre Commander and Field Commander.\n\nAs Theatre Commander, experience enthralling turn-based grand-strategy as you direct the deployment of forces, perform research and carefully consider how you disseminate your resources across the Western Front in a war won by inches. Alongside this, take up the mantle of Field Commander in dynamic real-time battles as you direct units to defeat your opponent, build trenches and perform direct assaults by sending your infantry over the top. Pick your battles and fight them your way to shape the course of history.\n\n\nBattlefields are persistent, and as you continue your push across the Western Front, you will revisit previous battlefields which will still bear the scars and destruction of earlier encounters.\n\nArtillery bombardments leave behind craters, tanks, ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Great War: Western Front بازی استراتژی قطعی WW1 است. با این تجربه تاکتیکی بی‌درنگ، نقش تعیین‌کننده‌ای در تاریخ داشته باشید، زیرا در جبهه‌ی محوری غرب از سال 1914 تا 1919 مسئولیت می‌گیرید.\n\nجناح خود را انتخاب کنید و نیروهای خود را با هدایت ارتش خود در نبردهای واقعی و با هدایت تصمیمات سطح بالا در گیم پلی استراتژیک نوبتی به پیروزی هدایت کنید. سنگرهای دقیق حفر کنید، در مورد فن آوری های جدید مانند گاز سمی و مخازن تحقیق کنید و تصمیماتی بگیرید که تأثیر عمیق و پایداری بر موفقیت شما خواهد داشت. مانند یک فرمانده فکر کنید تا تاریخ را دوباره زنده کنید - یا آن را دوباره تعریف کنید.\n\n\nبا قدم گذاشتن در نقش فرمانده تئاتر و فرمانده میدان، سطوح بی نظیری از انتخاب استراتژیک را کشف کنید.\n\nبه‌عنوان فرمانده تئاتر، در حین هدایت استقرار نیروها، انجام تحقیقات و نحوه توزیع منابع خود در سراسر جبهه غربی در جنگی که با اینچ به پیروزی رسیده‌اید، یک استراتژی بزرگ نوبتی جذاب را تجربه کنید. علاوه بر این، در نبردهای پویا و بلادرنگ، ردای فرمانده میدان را به دست بگیرید و واحدها را برای شکست دادن حریف خود هدایت کنید، سنگر بسازید و با فرستادن پیاده نظام خود به بالای سر، حملات مستقیم انجام دهید. نبردهای خود را انتخاب کنید و با آنها مبارزه کنید تا مسیر تاریخ را شکل دهید.\n\n\nمیدان‌های نبرد پایدار هستند و همانطور که به فشار خود در سراسر جبهه غربی ادامه می‌دهید، میدان‌های جنگ قبلی را که هنوز زخم‌ها و ویرانی‌های رویارویی‌های قبلی را تحمل می‌کنند، دوباره مشاهده خواهید کرد.\n\nبمباران توپخانه دهانه ها، تانک ها،"
+  },
+  {
+    "id": 494379,
+    "name": "The Invincible",
+    "background_image": "https://media.rawg.io/media/games/a41/a41faac69727bc7766b3b78f0acfec2f.jpg",
+    "rating": 4.03,
+    "metacritic": null,
+    "released": "2023-11-06",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Starward Industries",
+    "steam_link": "https://store.steampowered.com/app/731040/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/18d/18ddc2f47bf818f7491b1a5bf6951c4d.jpg",
+      "https://media.rawg.io/media/screenshots/538/538f4bca5b9a37057ed195afb220b6eb.jpg",
+      "https://media.rawg.io/media/screenshots/4c2/4c2fe77ccf5cfd8a0ac85dad2eeecf58.jpg",
+      "https://media.rawg.io/media/screenshots/4ed/4ed9d9340a37347dea2598c112355d06.jpg",
+      "https://media.rawg.io/media/screenshots/dfe/dfeda738c781ef51a8b0a2a9258c5d59.jpg",
+      "https://media.rawg.io/media/screenshots/e63/e63afbb61f216ccec3f455e7f54fbafe.jpg",
+      "https://media.rawg.io/media/games/a41/a41faac69727bc7766b3b78f0acfec2f.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64-bit)\nProcessor: AMD Ryzen 5 3600 (6 core with 3,5 Ghz) or Intel i5-10400F (6 core with 2,9 Ghz)\nMemory: 8 GB RAM\nGraphics: Radeon 6500XT (4GB) or Nvidia GTX 1660 (4GB)/1060 (6GB)\nDirectX: Version 12\nStorage: 40 GB available space\nAdditional Notes: SSD (Preferred), HDD (Supported). Framerate might drop in graphics-intensive scenes. Ultrawide screen not supported yet, this feature will be added as a priority.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64-bit)\nProcessor: AMD Ryzen 7 5800x (8 core with 3,8 Ghz) or Intel i7 - 10700(8 core with 2,9 Ghz)\nMemory: 16 GB RAM\nGraphics: Radeon 6600XT (8GB) or Nvidia GTX 1660 Ti (6GB)\nDirectX: Version 12\nStorage: 40 GB available space\nAdditional Notes: SSD. Framerate might drop in graphics-intensive scenes. Ultrawide screen not supported yet, this feature will be added as a priority. 5.1 headphones or 5.1 sound system recommended"
+    },
+    "description_en": "The Invincible is a first-person Sci-Fi thriller set in a retro-future timeline. Waking up as a space scientist on a hostile planet, you embark on a mysterious mission to find the missing crew of your spaceship. Survival is a matter of your correct choices, taken whilst uncovering the secrets of the planet, bigger than anyone thought.\n\nYou are a scientist onboard an interstellar scientific expedition, suddenly thrown into a life-or-death rescue mission. Landing on a planet Regis III you have to find the missing crew members using some advanced space equipment, whilst relying on your brains and instincts to survive on the planet which quickly occurs to be unwelcoming. Soon you’ll discover that Regis III holds terrifying secrets which are uncovered while you’re piecing together the fate of your crew. And as you delve deeper into the mystery, you realise that perhaps you are not alone, and that some places like this planet are better left untouched. But it’s too late to turn back.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشکست ناپذیر یک تریلر علمی تخیلی اول شخص است که در یک جدول زمانی یکپارچه‌سازی با آینده اتفاق می‌افتد. هنگامی که به عنوان یک دانشمند فضایی در یک سیاره متخاصم از خواب بیدار می شوید، ماموریتی مرموز را برای یافتن خدمه گمشده سفینه فضایی خود آغاز می کنید. بقا به انتخاب های صحیح شما بستگی دارد، در حالی که اسرار این سیاره را کشف می کنید، بزرگتر از آن چیزی که هر کسی فکر می کرد.\n\nشما یک دانشمند در یک اکتشاف علمی بین ستاره ای هستید که ناگهان در یک ماموریت نجات زندگی یا مرگ پرتاب می شوید. با فرود بر روی سیاره Regis III، باید با استفاده از تجهیزات فضایی پیشرفته، خدمه گمشده را پیدا کنید، در حالی که به مغز و غرایز خود برای زنده ماندن در این سیاره تکیه کنید، که به سرعت ناخوشایند است. به زودی متوجه خواهید شد که Regis III اسرار وحشتناکی را در خود نگه می‌دارد که زمانی که شما سرنوشت خدمه خود را جمع‌آوری می‌کنید، آشکار می‌شوند. و همانطور که عمیق‌تر در این راز کاوش می‌کنید، متوجه می‌شوید که شاید تنها نیستید و برخی مکان‌ها مانند این سیاره بهتر است دست نخورده باقی بمانند. اما برای برگشتن خیلی دیر است."
   }
 ]
