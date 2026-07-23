@@ -4213,5 +4213,46 @@
     },
     "description_en": "Are You Ready To Seek Your Fortune?\r\n\r\nSeek your fortune and leave your mark on the map in the UNCHARTED: Legacy of Thieves Collection. Uncover the thrilling cinematic storytelling and the largest blockbuster action set pieces in the UNCHARTED franchise, packed with all the wit, cunning, and over the top moments of the beloved thieves – Nathan Drake and Chloe Frazer.\r\n\r\nIn an experience delivered by award winning developer Naughty Dog can, the UNCHARTED: Legacy of Thieves Collection includes the two critically-acclaimed, globe-trotting single player adventures from UNCHARTED™ 4: A Thief’s End and UNCHARTED™: The Lost Legacy. Each story is filled with laughs, drama, high octane combat, and a sense of wonder – remastered to be even more immersive.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nآیا برای جستجوی ثروت خود آماده هستید؟\r\n\r\nدر مجموعه UNCHARTED: Legacy of Thieves به دنبال ثروت خود باشید و نشان خود را روی نقشه بگذارید. داستان‌سرایی هیجان‌انگیز سینمایی و بزرگترین مجموعه‌های اکشن بلاک‌باستر در فرنچایز UNCHARTED، مملو از تمام شوخ طبعی، حیله‌گری، و برترین لحظات دزدان محبوب - ناتان دریک و کلوئی فریزر را کشف کنید.\r\n\r\nدر تجربه ای که توسط توسعه دهنده برنده جایزه Naughty Dog ارائه شده است، مجموعه UNCHARTED: Legacy of Thieves شامل دو ماجراجویی تک نفره تحسین شده و تحسین شده جهان از UNCHARTED™ 4: A Thief's End و UNCHARTED™: The Lost Legacy است. هر داستان مملو از خنده، درام، مبارزه با اکتان بالا و حس شگفتی است – بازسازی شده تا حتی بیشتر غوطه ور شود."
+  },
+  {
+    "id": 485219,
+    "name": "Unknown 9: Awakening",
+    "background_image": "https://media.rawg.io/media/games/f1a/f1aa0e2ce14294b842ac90e63078bc01.jpg",
+    "rating": 2.73,
+    "metacritic": null,
+    "released": "2024-10-17",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 3,
+    "developers": "Reflector Entertainment",
+    "steam_link": "https://store.steampowered.com/app/1477940/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/857/8577834b685115f6f1ed24187388b28b.jpg",
+      "https://media.rawg.io/media/screenshots/33a/33a6dc68d097025c45015ae65ee3dd66.jpg",
+      "https://media.rawg.io/media/screenshots/ff7/ff703f85ffc83432a52d17fc838ed909.jpg",
+      "https://media.rawg.io/media/screenshots/579/5794f0bc313ad7dfa5a08f3c6ec3dc04.jpg",
+      "https://media.rawg.io/media/screenshots/c60/c60c1ad11156913a7920972d7aef4ba1.jpg",
+      "https://media.rawg.io/media/screenshots/fe1/fe15f214568649025ae9ec20d03bcd22_RIlrZOf.jpg",
+      "https://media.rawg.io/media/games/f1a/f1aa0e2ce14294b842ac90e63078bc01.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: 4 or 6 cores / 8 threads / 3.6 Ghz Base clock speed\nMemory: 12 GB RAM\nGraphics: 8 GB VRAM / AMD RX 580\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: SSD Required",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: 6 cores / 12 threads / 3.4 Ghz Base clock speed\nMemory: 16 GB RAM\nGraphics: 8 GB VRAM / AMD RX 5700 XT\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: SSD Required"
+    },
+    "description_en": "Raised on the streets of Kolkata India and haunted by visions of her own death, Haroona struggles to understand her mysterious innate abilities to manipulate the unseen. A mentor soon helps Haroona hone her gifts, teaches her to access the mysterious hidden dimension known as The Fold and propels her on a journey to unlock the mysteries of this new realm",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهارونا که در خیابان‌های کلکته هند بزرگ شده و با رؤیاهایی از مرگ خود تسخیر شده است، تلاش می‌کند تا توانایی‌های مرموز ذاتی خود را برای دستکاری نادیده‌ها درک کند. یک مربی به زودی به هارونا کمک می کند تا هدایای خود را افزایش دهد، به او می آموزد که به بعد پنهان اسرارآمیز معروف به The Fold دسترسی پیدا کند و او را به سفری سوق می دهد تا اسرار این قلمرو جدید را باز کند."
   }
 ]
