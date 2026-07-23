@@ -2291,5 +2291,56 @@
     },
     "description_en": "Three extremely high speed and intense ninja action games are now available in one package!\r\nEnjoy 3 games from the NINJA GAIDEN series in this single collection.　\r\n\r\nThe nostalgic yet timeless high-speed action of the series unfolds on the latest hardware, so look forward to heated battles with fearsome opponents!\r\n\r\nIn addition to Ryu Hayabusa, the 4 female characters Ayane, Rachel, Momiji, and Kasumi are also playable. Pair up favorite characters, and switch between characters during battles.\r\n\r\n* The heroines included in this title are the same as the original versions. In addition, the characters that are playable and scenes (modes) vary for each title.\r\n\r\nMost of the previously released game modes and DLC costumes for each title are included in this thrilling collection. In addition to Ryu Hayabusa, each of the other characters also have many different costumes to choose from, allowing for action packed battles in outfits of your choice.\r\n\r\n \r\n\r\nIncluded Titles\r\n\r\n  NINJA GAIDEN Sigma (NINJA GAIDEN Σ)\r\n\r\n  NINJA GAIDEN Sigma 2 (NINJA GAIDEN Σ2)\r\n\r\n  NINJA GAIDEN 3: Razor's Edge\r\n\r\n \r\n\r\nClassic Costumes Included\r\n\r\n  DLC costumes included",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسه بازی اکشن نینجا با سرعت بسیار بالا و شدید اکنون در یک بسته در دسترس هستند!\r\nاز 3 بازی از سری NINJA GAIDEN در این مجموعه لذت ببرید.　\r\n\r\nاکشن پرسرعت نوستالژیک و در عین حال بی‌انتها این سری بر روی جدیدترین سخت‌افزار آشکار می‌شود، بنابراین منتظر نبردهای داغ با مخالفان ترسناک باشید!\r\n\r\nعلاوه بر ریو هایابوسا، ۴ شخصیت زن Ayane، Rachel، Momiji و Kasumi نیز قابل بازی هستند. شخصیت های مورد علاقه خود را جفت کنید و در طول نبرد بین شخصیت ها جابجا شوید.\r\n\r\n* قهرمان های موجود در این عنوان همانند نسخه های اصلی هستند. علاوه بر این، شخصیت های قابل بازی و صحنه ها (حالت ها) برای هر عنوان متفاوت است.\r\n\r\nاکثر حالت های بازی که قبلا منتشر شده بود و لباس های DLC برای هر عنوان در این مجموعه هیجان انگیز گنجانده شده است. علاوه بر ریو هایابوسا، هر یک از شخصیت‌های دیگر لباس‌های مختلفی برای انتخاب دارند که امکان نبردهای اکشن را با لباس‌های دلخواه شما فراهم می‌کند.\r\n\r\n \r\n\r\nعناوین گنجانده شده\r\n\r\n  نینجا گایدن سیگما (NINJA GAIDEN Σ)\r\n\r\n  NINJA GAIDEN Sigma 2 (NINJA GAIDEN Σ2)\r\n\r\n  NINJA GAIDEN 3: Razor's Edge\r\n\r\n \r\n\r\nلباس کلاسیک گنجانده شده است\r\n\r\n  لباس های DLC گنجانده شده است"
+  },
+  {
+    "id": 1004299,
+    "name": "Ninja Gaiden: Ragebound",
+    "background_image": "https://media.rawg.io/media/games/40c/40c911198ddaf503afa3a9674199b906.jpg",
+    "rating": 4,
+    "metacritic": null,
+    "released": "2025-07-31",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 3,
+    "developers": "The Game Kitchen",
+    "steam_link": "https://store.steampowered.com/app/2542120/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1f2/1f2979062ee6886bd7d0420cc6dd52a1.jpg",
+      "https://media.rawg.io/media/screenshots/34e/34ed73f74baf9a42a86bee358440abef.jpg",
+      "https://media.rawg.io/media/screenshots/251/251d9c8fdc48d77041ec36211277c440.jpg",
+      "https://media.rawg.io/media/screenshots/f45/f456984c83b9eb820f50d1cfa3886673.jpg",
+      "https://media.rawg.io/media/screenshots/139/139932b96c2fa7b6949de1d4532ae7e7.jpg",
+      "https://media.rawg.io/media/screenshots/804/804e5f0ddc8e344a795836b55372760e.jpg",
+      "https://media.rawg.io/media/games/40c/40c911198ddaf503afa3a9674199b906.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core Duo E8300 or AMD Phenom II X2 550\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GT 220, 1 GB or AMD Radeon HD 4550, 1GB\nAdditional Notes: DETAILS: 720p @ 30 FPS",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 11\nProcessor: Intel Core Quad Q8300 or AMD Phenom II X3 710\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GT 640, 4GB or AMD Radeon R7 250, 2GB\nAdditional Notes: DETAILS: 1080p @ 60 FPS"
+    },
+    "description_en": "A brand-new side-scrolling entry to the NINJA GAIDEN series from the team behind Blasphemous, NINJA GAIDEN: Ragebound redefines the classic platformer saga in a spectacular, thrilling and challenging ninja adventure.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ورودی کاملاً جدید به سری NINJA GAIDEN از تیم پشتیبان Blasphemous، NINJA GAIDEN: Ragebound حماسه پلتفرمر کلاسیک را در یک ماجراجویی تماشایی، هیجان انگیز و چالش برانگیز نینجا تعریف می کند."
   }
 ]
