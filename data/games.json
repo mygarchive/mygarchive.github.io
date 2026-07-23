@@ -2904,5 +2904,38 @@
     },
     "description_en": "Prototype of the game Spiral that I am developing for my first level design class..\nV4 - first 3 levels of the original game idea\nALLEGEDLY, You play as a thief who is robbing a mysterious mansion. Traveling deeper in you discover an interesting looking potion. There is something more to it than we really know...\nThe original game idea consist of the potion allowing the player to go back in time a couple seconds while battling a the main antagonist who has the ability to warp the playing field.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنمونه اولیه بازی Spiral که برای کلاس طراحی سطح اول خود در حال توسعه هستم..\nV4 - 3 سطح اول ایده اصلی بازی\nظاهراً، شما در نقش دزدی بازی می کنید که در حال سرقت از یک عمارت مرموز است. با سفر عمیق تر، معجون جالبی را کشف می کنید. چیزی بیشتر از آن چیزی است که ما واقعاً می دانیم ...\nایده اصلی بازی شامل معجون است که به بازیکن اجازه می‌دهد چند ثانیه به گذشته برگردد و در حالی که با آنتاگونیست اصلی که توانایی انحراف زمین بازی را دارد می‌جنگد."
+  },
+  {
+    "id": 3933,
+    "name": "Tom Clancy’s Splinter Cell Blacklist",
+    "background_image": "https://media.rawg.io/media/games/de9/de93cd3e51d2c57e33bbf7dade34f25a.jpg",
+    "rating": 4.08,
+    "metacritic": 81,
+    "released": "2013-08-20",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 10,
+    "developers": "Ubisoft Toronto",
+    "steam_link": "https://store.steampowered.com/app/235600/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a3a/a3ab33764d8ae5b9690e4b9f5ac1e308.jpg",
+      "https://media.rawg.io/media/screenshots/98e/98ecf315b32bcc2ff826433f3102dedf.jpg",
+      "https://media.rawg.io/media/screenshots/ba8/ba8a4865039ad3502d5d0df9038d014b.jpg",
+      "https://media.rawg.io/media/games/de9/de93cd3e51d2c57e33bbf7dade34f25a.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Tom Clancy’s Splinter Cell Blacklist is a stealth-action game developed by Ubisoft Toronto. It is the sixth main installment in the series.\n\n###Story\nThe game takes place six months after the events of Conviction. The Third Echelon got disbanded, and Sam Fischer became a private security contractor. A terrorist organization known as The Engineers threatens the United States with a series of terrorist attacks if the U.S. Military will not call off their troops stationed in other countries. POTUS comes to Fischer, forms the Fourth Echelon and grants Sam with a Fifth Freedom - the freedom to defend the four first freedoms no matter what it takes.\n\n###Gameplay\nSplinter Cell Blacklist focuses on a stealth mission approach. The player is still free to go in loud, but it will be much harder, as Fischer can sustain a very small amount of damage even on the lowest difficulty.\n\nThe players have a wide range of gadgets at their disposal, such as the snake cam, a throwable sticky camera that can distract enemies, a portable EMP, and a variety of grenades. It is also possible to upgrade Fisher's outfit, making it more stealthy or improve its armor. The players can also upgrade their HQ to gain certain advantages on the battlefield, such as an improved minimap.\n\nThe game evaluates the players' performance. Three play styles are available - Ghost, a complete stealth approach with no kills; Panther - a stealthy approach with enemy kills; Assault - a head-on gunfight with the enemies.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nTom Clancy’s Splinter Cell Blacklist یک بازی اکشن مخفی کاری است که توسط Ubisoft Toronto ساخته شده است. این ششمین قسمت اصلی این مجموعه است.\n\n###داستان\nبازی شش ماه پس از وقایع Conviction اتفاق می افتد. رده سوم منحل شد و سم فیشر یک پیمانکار امنیتی خصوصی شد. یک سازمان تروریستی موسوم به مهندسان، ایالات متحده را با یک سری حملات تروریستی تهدید می کند اگر ارتش ایالات متحده نیروهای خود را که در کشورهای دیگر مستقر هستند خارج نکند. POTUS نزد فیشر می آید، رده چهارم را تشکیل می دهد و به سام یک آزادی پنجم می دهد - آزادی دفاع از چهار آزادی اول بدون توجه به آنچه که لازم باشد.\n\n###بازی\nSplinter Cell Blacklist بر رویکرد ماموریت مخفی کاری تمرکز دارد. بازیکن همچنان آزاد است که با صدای بلند برود، اما این کار بسیار سخت تر خواهد بود، زیرا فیشر می تواند آسیب بسیار کمی را حتی در کمترین سختی تحمل کند.\n\nبازیکنان طیف گسترده ای از ابزارها را در اختیار دارند، مانند دوربین مار، دوربین چسبنده قابل پرتاب که می تواند حواس دشمنان را پرت کند، EMP قابل حمل و انواع نارنجک. همچنین می‌توان لباس فیشر را ارتقا داد و آن را مخفی‌تر کرد یا زره آن را بهبود بخشید. بازیکنان همچنین می توانند HQ خود را ارتقا دهند تا از مزایای خاصی در میدان نبرد برخوردار شوند، مانند مینی مپ بهبود یافته.\n\nبازی عملکرد بازیکنان را ارزیابی می کند. سه سبک بازی موجود است - Ghost، یک رویکرد مخفی کاری کامل بدون کشتن. پلنگ - یک رویکرد مخفیانه با کشتن دشمن. حمله - یک درگیری مسلحانه با دشمنان."
   }
 ]
