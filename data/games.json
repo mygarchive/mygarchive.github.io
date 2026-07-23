@@ -2876,36 +2876,6 @@
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSouth of Midnight یک اکشن ماجراجویی جدید از Compulsion Games است. اسطوره ها را کاوش کنید و با موجودات مرموز جنوب عمیق در این داستان عامیانه مدرن روبرو شوید و در عین حال یاد بگیرید که یک قدرت باستانی را برای غلبه بر موانع و رویارویی با دردهای آزاردهنده شهر خود ببافید."
   },
   {
-    "id": 442512,
-    "name": "Spiral",
-    "background_image": "https://media.rawg.io/media/screenshots/3e3/3e3080d430ff02c976bacc6ffa6dc21f.jpg",
-    "rating": 0,
-    "metacritic": null,
-    "released": "2020-05-08",
-    "genres": [
-      {
-        "id": 83,
-        "name": "Platformer",
-        "slug": "platformer"
-      }
-    ],
-    "esrb_rating": "---",
-    "playtime": 0,
-    "developers": "Valigate",
-    "steam_link": "https://store.steampowered.com/app/99900/",
-    "trailer_url": "",
-    "youtube_videos": [],
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/3e3/3e3080d430ff02c976bacc6ffa6dc21f.jpg"
-    ],
-    "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
-    },
-    "description_en": "Prototype of the game Spiral that I am developing for my first level design class..\nV4 - first 3 levels of the original game idea\nALLEGEDLY, You play as a thief who is robbing a mysterious mansion. Traveling deeper in you discover an interesting looking potion. There is something more to it than we really know...\nThe original game idea consist of the potion allowing the player to go back in time a couple seconds while battling a the main antagonist who has the ability to warp the playing field.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنمونه اولیه بازی Spiral که برای کلاس طراحی سطح اول خود در حال توسعه هستم..\nV4 - 3 سطح اول ایده اصلی بازی\nظاهراً، شما در نقش دزدی بازی می کنید که در حال سرقت از یک عمارت مرموز است. با سفر عمیق تر، معجون جالبی را کشف می کنید. چیزی بیشتر از آن چیزی است که ما واقعاً می دانیم ...\nایده اصلی بازی شامل معجون است که به بازیکن اجازه می‌دهد چند ثانیه به گذشته برگردد و در حالی که با آنتاگونیست اصلی که توانایی انحراف زمین بازی را دارد می‌جنگد."
-  },
-  {
     "id": 3933,
     "name": "Tom Clancy’s Splinter Cell Blacklist",
     "background_image": "https://media.rawg.io/media/games/de9/de93cd3e51d2c57e33bbf7dade34f25a.jpg",
