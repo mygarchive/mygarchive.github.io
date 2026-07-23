@@ -269,5 +269,46 @@
     },
     "description_en": "Braid is a traditional platform game with puzzle solving. The story follows the main character Tim on his way through twisted 2D levels. According to the storyline, Tim’s aim is to rescue the princess from a monster. In the course of the completion, players will be able to get some additional information about the protagonist’s relationship with the princess. Players control the protagonist as he climbs platforms, jumps on the enemies to defeat them and to collect keys to hidden quests and mosaic parts. Players have to lead Tim through 6 worlds, each based on an intriguing time mechanic, as Tim features the ability to rewind the original pace of time. For example, Time and Forgiveness world allows respawning Tim after his death by switching time back. To attend the last level, Tim must assemble the mosaic. The story ends in the world simply called “1”, where time flows in reverse and returns to the normal pace by rewinding. The last room of the final world contains Tim’s meeting with the princess, but, due to the time pace turned back, players face some unpredictable twists of the plot.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBraid یک بازی پلتفرم سنتی با حل پازل است. داستان شخصیت اصلی تیم را در مسیر خود در سطوح دوبعدی پیچ خورده دنبال می کند. طبق خط داستانی، هدف تیم نجات شاهزاده خانم از دست یک هیولا است. در طول تکمیل، بازیکنان می توانند اطلاعات بیشتری در مورد رابطه قهرمان داستان با شاهزاده خانم به دست آورند. بازیکنان هنگام بالا رفتن از سکوها، قهرمان داستان را کنترل می کنند، بر روی دشمنان می پرند تا آنها را شکست دهند و کلیدهای ماموریت های مخفی و قطعات موزاییک را جمع آوری کنند. بازیکنان باید تیم را در 6 جهان هدایت کنند، که هر کدام بر اساس مکانیک زمان جذاب است، زیرا تیم توانایی بازگرداندن سرعت اولیه زمان را دارد. به عنوان مثال، دنیای Time and Forgiveness اجازه می دهد تا تیم را پس از مرگش با تغییر زمان به عقب بازگرداند. برای حضور در آخرین سطح، تیم باید موزاییک را جمع کند. داستان در دنیایی به نام «1» به پایان می رسد، جایی که زمان برعکس جریان می یابد و با چرخش به عقب به سرعت عادی باز می گردد. آخرین اتاق دنیای آخر شامل ملاقات تیم با شاهزاده خانم است، اما به دلیل بازگشت سرعت زمان، بازیکنان با پیچش های غیرقابل پیش بینی داستان روبرو می شوند."
+  },
+  {
+    "id": 973509,
+    "name": "Brothers: A Tale of Two Sons Remake",
+    "background_image": "https://media.rawg.io/media/games/dae/dae322f5d859b49835f4259d0ea764b7.jpg",
+    "rating": 3.76,
+    "metacritic": null,
+    "released": "2024-02-27",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "Avantgarden",
+    "steam_link": "https://store.steampowered.com/app/2153350/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a30/a30ea7dcb03cc4ae9b40e8a4747e1a67.jpg",
+      "https://media.rawg.io/media/screenshots/6c8/6c8b798ba164704c256e9c806c2beaaf.jpg",
+      "https://media.rawg.io/media/screenshots/b07/b07a6965dfa53cdafdc1ab5ee549f21b.jpg",
+      "https://media.rawg.io/media/screenshots/943/943e17a0279cdaeb9ea0e8184626f61c.jpg",
+      "https://media.rawg.io/media/screenshots/444/4446ac3830f005b18241272490207124.jpg",
+      "https://media.rawg.io/media/screenshots/c2e/c2e4279f656e003813ae5f222fe0d3ae.jpg",
+      "https://media.rawg.io/media/games/dae/dae322f5d859b49835f4259d0ea764b7.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-6700 (4 * 3400), AMD Ryzen 5 1500X (4 * 3500)\nMemory: 8 GB RAM\nGraphics: Nvidia GTX1650 GPU with 8 GB Dedicated RAM\nDirectX: Version 11\nStorage: 35 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-10700 (8 * 2900), AMD Ryzen 7 3700X (8 * 3600) or equivalent\nMemory: 16 GB RAM\nGraphics: Geforce RTX 2060 Super (6144 MB), Radeon RX 5700 (8192 MB)\nDirectX: Version 12\nStorage: 35 GB available space"
+    },
+    "description_en": "Guide two brothers on an epic fairy tale filled with discovery, loss, adventure, and mystery.\nWith their father suffering from a deadly illness, two brothers must bravely set out to find the “Water of Life,” the one cure that can save him. With no option for failure the brothers must rely on each other using their individual skills to protect one another and overcome the obstacles ahead in this unforgettable journey.\nA TIMELESS CLASSIC REMADE\nHailed by critics when it was originally released, Brothers: A Tale of Two Sons is back! Faithful to the gameplay and touching story from 2013, Brothers: A Tale of Two Sons Remake features rebuilt characters and landscapes based on the original and has been updated to the latest generation of graphics, performance, and gameplay. Paired with a re-recorded soundtrack with a live orchestra, prepare for an emotional experience that will take your adventure to all new heights.\nEMBARK ON A FANTASTICAL EPIC\nSolve puzzles, discover hidden stories, traverse dangerous locations, and fight deadly bosses. In single-player mode, navigate this story as both brothers in tandem or play in local co-op with a friend, each controlling one of the brothers as you play together.\nGET IMMERSED IN THE EMOTIONAL WORLD OF BROTHERS\nBrothers: A Tale of Two Sons is full of hidden details that reward those who seek them out. In addition to the original hidden treats and rich storyline, the remake has added new secrets to be discovered.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدو برادر را در یک افسانه حماسی پر از کشف، از دست دادن، ماجراجویی و رمز و راز راهنمایی کنید.\nدر حالی که پدرشان از یک بیماری کشنده رنج می برد، دو برادر باید شجاعانه به دنبال «آب زندگی» بروند، درمانی که می تواند او را نجات دهد. بدون هیچ گزینه ای برای شکست، برادران باید با استفاده از مهارت های فردی خود به یکدیگر اعتماد کنند تا از یکدیگر محافظت کنند و بر موانع پیش رو در این سفر فراموش نشدنی غلبه کنند.\nیک بازسازی کلاسیک بی انتها\nBrothers: A Tale of Two Sons در زمان انتشار اولیه مورد استقبال منتقدان قرار گرفت! وفادار به گیم پلی و داستان تاثیرگذار از سال 2013، Brothers: A Tale of Two Sons Remake دارای شخصیت ها و مناظر بازسازی شده بر اساس نسخه اصلی است و به آخرین نسل گرافیک، عملکرد و گیم پلی به روز شده است. همراه با یک موسیقی متن دوباره ضبط شده با یک ارکستر زنده، برای یک تجربه احساسی آماده شوید که ماجراجویی شما را به ارتفاعات جدید خواهد برد.\nوارد یک حماسه خارق العاده شوید\nپازل ها را حل کنید، داستان های پنهان را کشف کنید، از مکان های خطرناک عبور کنید و با رئیس های مرگبار مبارزه کنید. در حالت تک‌نفره، این داستان را به‌عنوان هر دو برادر در پشت سر هم هدایت کنید یا به صورت محلی با یک دوست بازی کنید و هر کدام یکی از برادران را در حین بازی کنترل می‌کنند.\nدر دنیای عاطفی برادران غوطه ور شوید\nBrothers: A Tale of Two Sons پر از جزئیات پنهان است که به کسانی که به دنبال آنها هستند پاداش می دهد. علاوه بر غذاهای مخفی اصلی و داستان غنی، بازسازی اسرار جدیدی برای کشف اضافه کرده است."
   }
 ]
