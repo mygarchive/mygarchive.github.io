@@ -1440,5 +1440,56 @@
     },
     "description_en": "Agent 47 returns as a ruthless professional for the most important contracts of his entire career in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمامور 47 به عنوان یک حرفه ای بی رحم برای مهم ترین قراردادهای کل دوران حرفه ای خود در HITMAN 3 باز می گردد، پایانی دراماتیک برای سه گانه World of Assassination."
+  },
+  {
+    "id": 292844,
+    "name": "Hollow Knight: Silksong",
+    "background_image": "https://media.rawg.io/media/games/27c/27cd8b7dead05a870f8a514a9a1915ad.jpg",
+    "rating": 4.39,
+    "metacritic": null,
+    "released": "2025-09-04",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 24,
+    "developers": "Team Cherry",
+    "steam_link": "https://store.steampowered.com/app/1030300/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/9f9/9f9a0edd1478facde5209abe4000c015.jpg",
+      "https://media.rawg.io/media/screenshots/3f3/3f35cf2130d1d8763ee45dc77ce843b2.jpg",
+      "https://media.rawg.io/media/screenshots/7e1/7e160928dc38f72937951f56e73a1988.jpg",
+      "https://media.rawg.io/media/screenshots/b96/b9656b6e62746c588ea12287fc1c0aed.jpg",
+      "https://media.rawg.io/media/screenshots/404/4048fa94127cec67d8464aaa13f6d588.jpg",
+      "https://media.rawg.io/media/screenshots/79a/79a5026c9032d626d59b57e5d6edb45a_EiUzDAs.jpg",
+      "https://media.rawg.io/media/games/27c/27cd8b7dead05a870f8a514a9a1915ad.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: Intel Core 2 Duo E5200\nMemory: 4 GB RAM\nGraphics: GeForce 9800GTX+ (1GB)\nDirectX: Version 10\nStorage: 9 GB available space\nAdditional Notes: 1080p, 16:9 recommended",
+      "recommended": "OS: Windows 10\nProcessor: Intel Core i5\nMemory: 8 GB RAM\nGraphics: GeForce GTX 560+\nDirectX: Version 10\nStorage: 9 GB available space\nAdditional Notes: 1080p, 16:9 recommended"
+    },
+    "description_en": "Hollow Knight: Silksong is the epic sequel to Hollow Knight, the epic action-adventure of bugs and heroes. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover ancient secrets tied to your nature and your past.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nHollow Knight: Silksong دنباله حماسی Hollow Knight، ماجراجویی حماسی حشرات و قهرمانان است. به عنوان شکارچی مرگبار هورنت، به سرزمین‌های کاملاً جدید سفر کنید، قدرت‌های جدید را کشف کنید، با انبوهی از حشرات و جانوران مبارزه کنید و اسرار باستانی مرتبط با طبیعت و گذشته خود را کشف کنید."
   }
 ]
