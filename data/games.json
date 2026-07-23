@@ -3483,5 +3483,51 @@
     },
     "description_en": "Not all wars are fought on the open battlefield. Download The Saboteur to visit 1940s Nazi-occupied Paris, as you play tough Irish racecar mechanic Sean Devlin. Working with the French Resistance, Sean is out for revenge against ruthless Nazi Colonel Kurt Dierker, who executed Sean’s best friend.\r\n\r\nThis open-world action thriller takes you through the seedy streets of Paris, as you seek to undermine the German authority and lead a rebellion. Fight across rooftops and through dangerous alleys, and operate a wide variety of vehicles as you navigate your terrain. You can even climb the Eiffel Tower or Notre Dame Cathedral for a sniping mission.\r\n\r\nUse stealth and disguise to strike at the heart of the Nazi war machine by disabling trains, destroying bridges, and blowing up enemy facilities. As you work to remove the oppressive forces from parts of the city, the drab black-and-white palette gives way to bright colors, signifying that you have inspired the townspeople. The more you incite the people, the more they will aid you by intervening in fights or providing a quick getaway from pursuing Germans. The Saboteur presents a fresh take on World War II and features dramatic cinematic elements.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهمه جنگ ها در میدان نبرد آزاد انجام نمی شود. دانلود فیلم خرابکار برای بازدید از پاریس تحت اشغال نازی ها در دهه 1940، در حالی که در نقش مکانیک ماشین مسابقه ای سرسخت ایرلندی شان دولین بازی می کنید. با همکاری مقاومت فرانسه، شان برای انتقام از سرهنگ نازی بی رحم کورت دیرکر، که بهترین دوست شان را اعدام کرد، آماده است.\r\n\r\nاین اکشن مهیج دنیای باز شما را در خیابان‌های پرآشوب پاریس می‌برد، زیرا به دنبال تضعیف اقتدار آلمان و رهبری یک شورش هستید. در پشت بام‌ها و در کوچه‌های خطرناک بجنگید و در حین حرکت در زمین خود با وسایل نقلیه متنوعی کار کنید. شما حتی می توانید برای یک ماموریت تیراندازی از برج ایفل یا کلیسای جامع نوتردام بالا بروید.\r\n\r\nاز مخفی کاری و مبدل برای ضربه زدن به قلب ماشین جنگی نازی ها با از کار انداختن قطارها، تخریب پل ها و منفجر کردن امکانات دشمن استفاده کنید. همانطور که برای حذف نیروهای سرکوبگر از بخش‌هایی از شهر کار می‌کنید، پالت سیاه و سفید بی‌حساب جای خود را به رنگ‌های روشن می‌دهد که نشان می‌دهد شما الهام‌بخش مردم شهر شده‌اید. هر چه بیشتر مردم را تحریک کنید، آنها با مداخله در دعوا یا فرار سریع از تعقیب آلمانی ها به شما کمک خواهند کرد. The Saboteur برداشتی تازه از جنگ جهانی دوم را ارائه می دهد و عناصر سینمایی دراماتیک را به نمایش می گذارد."
+  },
+  {
+    "id": 42187,
+    "name": "The Sims 4",
+    "background_image": "https://media.rawg.io/media/games/e44/e445335e611b4ccf03af71fffcbd30a4.jpg",
+    "rating": 3.67,
+    "metacritic": 67,
+    "released": "2014-09-02",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 4,
+    "developers": "Electronic Arts, Maxis",
+    "steam_link": "https://store.steampowered.com/app/1222670/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/72c/72c690315354c314ed292aac71aeb231.jpg",
+      "https://media.rawg.io/media/screenshots/5da/5da8b4ed0c50a84db6aa8a6504854d14.jpg",
+      "https://media.rawg.io/media/screenshots/695/69566d0e355c337308742bce08f36af0.jpg",
+      "https://media.rawg.io/media/screenshots/95c/95c67b60122424e021ccf028829c529c.jpg",
+      "https://media.rawg.io/media/screenshots/ceb/ceb2381b094ec125cffb76bcf1afdea8.jpg",
+      "https://media.rawg.io/media/screenshots/95a/95aa076f45d0b25830f60c05e001cfc8.jpg",
+      "https://media.rawg.io/media/games/e44/e445335e611b4ccf03af71fffcbd30a4.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: 64 Bit Required. Windows 7 (SP1), Windows 8, Windows 8.1, or Windows 10\nProcessor: 1.8 GHz Intel Core 2 Duo, AMD Athlon 64 Dual-Core 4000+ or equivalent (For computers using built-in graphics chipsets, the game requires 2.0 GHz Intel Core 2 Duo, 2.0 GHz AMD Turion 64 X2 TL-62 or equivalent)\nMemory: 4 GB RAM\nGraphics: 128 MB of Video RAM and support for Pixel Shader 3.0. Supported Video Cards: NVIDIA GeForce 6600 or better, ATI Radeon X1300 or better, Intel GMA X4500 or better\nDirectX: Version 9.0\nNetwork: Broadband Internet connection\nStorage: 17 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: 64 Bit Windows 7 (SP1), 8, 8.1, or 10\nProcessor: Intel core i5 or faster, AMD Athlon X4\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 650 or better\nDirectX: Version 9.0\nNetwork: Broadband Internet connection\nStorage: 18 GB available space"
+    },
+    "description_en": "Enjoy the power to create and control people in a virtual world where there are no rules.\r\n\r\nExpress your creativity as you customize your Sims’ appearances and personalities, and build them the perfect homes. Develop your Sims’ relationships, pursue careers, and explore vibrant new worlds.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاز قدرت ایجاد و کنترل افراد در دنیای مجازی که هیچ قانونی وجود ندارد، لذت ببرید.\r\n\r\nهنگام سفارشی کردن ظاهر و شخصیت سیمز خود، خلاقیت خود را ابراز کنید و خانه های عالی برای آنها بسازید. روابط سیمز خود را توسعه دهید، مشاغل را دنبال کنید و دنیاهای جدید پر جنب و جوش را کشف کنید."
   }
 ]
