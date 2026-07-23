@@ -5499,5 +5499,46 @@
     },
     "description_en": "Call of Duty: Black Ops is a first-person shooter, a seventh installment in the series altogether and a sequel to Call of Duty: World at War. The game takes place during the Cold War and shows different historical periods of it.\r\nThe main character is a CIA agent, set out on different classified missions and tasked with eliminating enemies if needed. The story in the game is complicated, featuring characters from the previous games, and historical figures like JFK and Fidel Castro. Despite its emphasis on the scenario and real-world plausibility, Black Ops doesn’t lack in gameplay terms, as the combat system is, as established in series, extensive and realistic. The graphics are made for the player’s highest level of entertainment, with massive special effects and excellent quality of every detail.\r\nCall of Duty: Black Ops features a trademark multiplayer system, with different game modes, competitive play, and cooperative maps. The players can earn ranks for their performance, unlock new customizable weapons and different perks for use in the upcoming battles.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops یک بازی تیراندازی اول شخص، هفتمین قسمت از مجموعه و دنباله ای برای Call of Duty: World at War است. بازی در دوران جنگ سرد می گذرد و دوره های مختلف تاریخی آن را نشان می دهد.\r\nشخصیت اصلی یک مامور سیا است که در ماموریت های طبقه بندی شده مختلف قرار دارد و در صورت نیاز وظیفه دارد دشمنان را از بین ببرد. داستان بازی پیچیده است و شخصیت های بازی های قبلی و شخصیت های تاریخی مانند JFK و فیدل کاسترو را در خود جای داده است. علیرغم تاکید بر سناریو و قابل قبول بودن در دنیای واقعی، Black Ops از نظر گیم پلی کمبودی ندارد، زیرا سیستم مبارزه، همانطور که در سری ها ایجاد شده، گسترده و واقع گرایانه است. گرافیک برای بالاترین سطح سرگرمی بازیکن، با جلوه های ویژه عظیم و کیفیت عالی در هر جزئیات ساخته شده است.\r\nCall of Duty: Black Ops دارای یک سیستم چند نفره علامت تجاری با حالت های مختلف بازی، بازی رقابتی و نقشه های همکاری است. بازیکنان می توانند برای عملکرد خود رتبه کسب کنند، سلاح های قابل تنظیم جدید و امتیازات مختلف را برای استفاده در نبردهای آینده باز کنند."
+  },
+  {
+    "id": 11276,
+    "name": "Call of Duty: Modern Warfare 3",
+    "background_image": "https://media.rawg.io/media/games/e9c/e9c042d14515eb3ff7cb4db9fe78e435.jpg",
+    "rating": 3.79,
+    "metacritic": 85,
+    "released": "2011-11-08",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 8,
+    "developers": "Aspyr Media, Raven Software, Treyarch, Infinity Ward, Sledgehammer Games, Neversoft Entertainment",
+    "steam_link": "https://store.steampowered.com/app/3595270/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/2d0/2d088eaa8dfffa81caed030adb832f50.jpg",
+      "https://media.rawg.io/media/screenshots/220/220ab5f4d052cab06b54d284e3e6ca85.jpg",
+      "https://media.rawg.io/media/screenshots/795/795ddfe820efcef3c67d5170c08e4ffb.jpg",
+      "https://media.rawg.io/media/screenshots/4ea/4ea0b45d4ef5b1ddb2fbee16aa58b061.jpg",
+      "https://media.rawg.io/media/screenshots/780/7805e988c2ba06cff804f2ff56981d27.jpg",
+      "https://media.rawg.io/media/screenshots/cd7/cd782cf22623a81cab4fcb7e8194e672.jpg",
+      "https://media.rawg.io/media/games/e9c/e9c042d14515eb3ff7cb4db9fe78e435.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS Version: Windows® XP/ Windows® Vista / Windows® 7\nProcessor: Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better\nMemory: 2 GB\nGraphics: Shader 3.0 or better 256 MB NVIDIA® GeForce™ 8600GT / ATI® Radeon™ X1950 or better\nNetwork: Broadband connection and service required for Multiplayer Connectivity. Internet connection required for activation.\nDirectX®: DirectX® 9.0c or later\nDisk Space: 16 GB\nSound Card: DirectX® 9.0c or later",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The eighth Call of Duty game overall is the sequel to Modern Warfare 2 and is set in an alternate reality of the modern era. In the campaign mode, the game continues the Modern Warfare storyline about an American spec ops squad Task Force 141 fighting Russian nationalists. \r\nThe player will control different characters on various military missions across the world. The protagonists from the previous part, Soap MacTavish and John Price, appear in certain missions but are sidelined by several new playable characters, most prominently, the Russian former Spetsnaz operative Yuri. Terrorist leader Vladimir Makarov, the villain of Modern Warfare 2, returns as well, and is trying to provoke the start of World War III. The player’s missions this time will be centered around protecting the West against Makarov’s attacks.\r\nThe game introduces a new Survival mode, in which the player repeals wave after wave of eternally respawning opponents. This mode allows for multiplayer co-op for two players. The traditional multiplayer mode was revised as well, adding a new reward mechanic, Pointstreaks, in which the player can choose between three sets of rules, called “strike packages”, to count his or her points.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهشتمین بازی Call of Duty به طور کلی دنباله‌ی Modern Warfare 2 است و در واقعیتی جایگزین از دوران مدرن جریان دارد. در حالت مبارزات انتخاباتی، بازی داستان جنگ مدرن را در مورد یک تیم عملیاتی آمریکایی به نام Task Force 141 ادامه می‌دهد که با ملی‌گرایان روسی می‌جنگد. \r\nبازیکن در ماموریت های نظامی مختلف در سراسر جهان شخصیت های مختلف را کنترل می کند. قهرمان‌های قسمت قبلی، Soap MacTavish و John Price، در ماموریت‌های خاصی ظاهر می‌شوند، اما توسط چندین شخصیت قابل بازی جدید کنار گذاشته می‌شوند که برجسته‌ترین آنها، یوری عامل سابق اسپتسناز روسی است. رهبر تروریست ها ولادیمیر ماکاروف، شرور جنگ مدرن 2 نیز بازمی گردد و تلاش می کند شروع جنگ جهانی سوم را تحریک کند. ماموریت های بازیکن این بار حول محور محافظت از غرب در برابر حملات ماکاروف خواهد بود.\r\nبازی حالت Survival جدیدی را معرفی می‌کند که در آن بازیکن موج به موج مخالفان ابدی بازپخش را لغو می‌کند. این حالت امکان همکاری چند نفره را برای دو بازیکن فراهم می کند. حالت سنتی چند نفره نیز اصلاح شد و مکانیک پاداش جدیدی به نام Pointstreaks اضافه شد که در آن بازیکن می‌تواند بین سه مجموعه قانون به نام «بسته‌های ضربه‌ای» برای شمارش امتیازات خود انتخاب کند."
   }
 ]
