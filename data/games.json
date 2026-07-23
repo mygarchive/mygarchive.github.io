@@ -3085,5 +3085,56 @@
     },
     "description_en": "S.T.A.L.K.E.R. 2 is a brand-new entry in the legendary series, enjoyed by millions of players worldwide. \r\n\r\nThe explosive combination of first-person shooter, immersive sim and horror is back. It’s the ultimate S.T.A.L.K.E.R. experience of unprecedented scale, advanced graphics, freedom of choices and the thickest atmosphere of a deadly adventure.\r\n\r\nWelcome to The Zone — an area of exclusion around the Chernobyl Nuclear Power Plant. Full of radiation, mutants and anomalies, it keeps drawing adventurers from beyond the perimeter.\r\n\r\nBounty hunters dwell deep into the Zone, driven by its treasures and mysteries. These people are known as stalkers.\r\n\r\nAre you ready to become one of them?",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nS.T.A.L.K.E.R. 2 یک ورودی کاملاً جدید در سری افسانه ای است که میلیون ها بازیکن در سراسر جهان از آن لذت می برند. \r\n\r\nترکیب انفجاری تیراندازی اول شخص، سیم کارت همهجانبه و ترسناک بازگشته است. این S.T.A.L.K.E.R نهایی است. تجربه مقیاس بی سابقه، گرافیک پیشرفته، آزادی انتخاب و غلیظ ترین فضای یک ماجراجویی مرگبار.\r\n\r\nبه منطقه خوش آمدید - منطقه ای ممنوعه در اطراف نیروگاه هسته ای چرنوبیل. پر از تشعشعات، جهش‌یافته‌ها و ناهنجاری‌ها، ماجراجویان را از آن سوی محیط می‌کشد.\r\n\r\nشکارچیان باونتی در اعماق منطقه زندگی می کنند، که توسط گنجینه ها و اسرار آن هدایت می شوند. این افراد به عنوان استالکر شناخته می شوند.\r\n\r\nآیا حاضرید یکی از آنها شوید؟"
+  },
+  {
+    "id": 3052,
+    "name": "STAR WARS Battlefront",
+    "background_image": "https://media.rawg.io/media/games/bd2/bd2cc7714e0b9b1adad1ba1b2400d436.jpg",
+    "rating": 3.29,
+    "metacritic": 73,
+    "released": "2015-11-17",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Electronic Arts, Electronic Arts DICE",
+    "steam_link": "https://store.steampowered.com/app/1237950/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8ce/8ced2a642c401a1a294f15e1797b45be.jpg",
+      "https://media.rawg.io/media/screenshots/9cf/9cf0681c66ad789ba38f166d3b73142a.jpg",
+      "https://media.rawg.io/media/screenshots/edf/edf5eb20ab93537494edcb069e08a293.jpg",
+      "https://media.rawg.io/media/screenshots/022/0226ed40f8cdf6a75928eb2510a47d5a.jpg",
+      "https://media.rawg.io/media/screenshots/1e3/1e36819203695d2d4fc54b10fc8eac8e.jpg",
+      "https://media.rawg.io/media/screenshots/f1d/f1d3e56a17b13ef6d21ceb56bafcf673.jpg",
+      "https://media.rawg.io/media/games/bd2/bd2cc7714e0b9b1adad1ba1b2400d436.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 7, Windows 8.1 and Windows 10\nProcessor: Intel i3 6300T or equivalent\nMemory: 8 GB RAM\nGraphics: Graphics card (NVIDIA): nVidia GeForce GTX 660 2GB Graphics card (AMD): AMD Radeon HD 7850 2GB\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 40 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: OS: 64-bit Windows 10 or later\nProcessor: Processor (Intel): Intel i5 6600 or equivalent\nMemory: 16 GB RAM\nGraphics: Graphics card (NVIDIA): nVidia GeForce GTX 970 4GB Graphics card (AMD): AMD Radeon R9 290 4GB\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 40 GB available space"
+    },
+    "description_en": "The game takes place in the setting of the epic \"Star Wars\". This game is the third in a series of games with the common name of Star Wars Battlefront.\n\nThe gameplay consists of battles. You can play on the side of the rebels or on the side of the Empire. You can also go through missions based on the stories of movies. You can play alone and in multiplayer modes, supporting up to 40 players. Multiplayer modes work in a network game or behind a single screen. The game provides an opportunity to participate in the battles for Hoth, Endor, Tatooine and other legendary planets. There is a mission on the unexplored planet of Sallast. You can control not only players, but also a variety of techniques, including huge walkers. As the game characters are present the main characters of the \"Star Wars\" Darth Vader and Luke Skywalker, Boba Fett.\nThe novelty of the series is the presence of species from the first and from the third person.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی در محیط حماسی \"جنگ ستارگان\" اتفاق می افتد. این بازی سومین بازی از سری بازی‌های با نام رایج Star Wars Battlefront است.\n\nگیم پلی بازی از مبارزات تشکیل شده است. شما می توانید در کنار شورشیان یا در کنار امپراتوری بازی کنید. همچنین می توانید ماموریت هایی را بر اساس داستان فیلم ها انجام دهید. شما می توانید به تنهایی و در حالت های چند نفره بازی کنید و تا 40 بازیکن را پشتیبانی کنید. حالت های چند نفره در یک بازی شبکه یا پشت یک صفحه نمایش کار می کنند. این بازی فرصتی را برای شرکت در نبردهای Hoth، Endor، Tatooine و دیگر سیارات افسانه ای فراهم می کند. ماموریتی در سیاره ناشناخته سالاست وجود دارد. شما می توانید نه تنها بازیکنان، بلکه انواع تکنیک ها، از جمله واکرهای بزرگ را نیز کنترل کنید. با حضور شخصیت های بازی، شخصیت های اصلی \"جنگ ستارگان\" دارث ویدر و لوک اسکای واکر، بوبا فت.\nتازگی سریال حضور گونه ها از اول شخص و سوم شخص است."
   }
 ]
