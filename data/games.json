@@ -3749,5 +3749,46 @@
     },
     "description_en": "The Plucky Squire follows the magical adventures of Jot and his friends - storybook characters who discover a three-dimensional world outside the pages of their book.\nWhen the malevolent Humgrump realizes he's the villain of the book - destined to lose his battle against the forces of good for all eternity - he kicks the heroic Jot out of its pages and changes the story forever.\nJot must face challenges, unlike anything he's ever seen if he is to save his friends from Humgrump's dark forces and restore the book's happy ending.\nJump between 2D and 3D worlds in this charming action-adventure - solving puzzles, boxing badgers, flying with a jetpack, and enjoying many more delightful and surprising mini-challenges as you become the hero of a living storybook.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Plucky Squire ماجراهای جادویی Jot و دوستانش را دنبال می کند - شخصیت های کتاب داستان که دنیایی سه بعدی را خارج از صفحات کتاب خود کشف می کنند.\nوقتی هامگرامپ بدخواه متوجه می شود که او شرور کتاب است - که قرار است نبرد خود را در برابر نیروهای خیر برای همیشه ببازد - جوت قهرمان را از صفحات آن بیرون می کشد و داستان را برای همیشه تغییر می دهد.\nجوت باید با چالش هایی روبرو شود، برخلاف هر چیزی که تا به حال دیده است، اگر بخواهد دوستانش را از نیروهای تاریک هامگرامپ نجات دهد و پایان خوش کتاب را بازگرداند.\nدر این اکشن-ماجراجویی جذاب بین دنیای دوبعدی و سه بعدی پرش کنید - حل پازل، بوکس گورکن، پرواز با جت پک، و لذت بردن از بسیاری از چالش های کوچک لذت بخش و غافلگیرکننده دیگر که قهرمان یک کتاب داستان زنده می شوید."
+  },
+  {
+    "id": 981792,
+    "name": "The Rogue Prince of Persia",
+    "background_image": "https://media.rawg.io/media/games/85c/85c86ed632879f104bb2d6536b14035e.jpg",
+    "rating": 3.58,
+    "metacritic": null,
+    "released": "2025-08-20",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 1,
+    "developers": "Evil Empire",
+    "steam_link": "https://store.steampowered.com/app/2717880/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/635/63573d998dbdda86c99e398dc4ce75b9.jpg",
+      "https://media.rawg.io/media/screenshots/471/47130605b69c811862b27b3107fc8e50.jpg",
+      "https://media.rawg.io/media/screenshots/d37/d37507d2d32fd5d47146f53cec243740.jpg",
+      "https://media.rawg.io/media/screenshots/621/621f39c609e367a83731a2e5efbd313c.jpg",
+      "https://media.rawg.io/media/screenshots/b24/b2457b5078d3bc091c217dd41b181ef4.jpg",
+      "https://media.rawg.io/media/screenshots/eb2/eb202b712ec1afecfffbc866864170c3.jpg",
+      "https://media.rawg.io/media/games/85c/85c86ed632879f104bb2d6536b14035e.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-4460 3.2 GHz / AMD Ryzen 3 1200 3.2 GHz\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 950 (2GB) / AMD RX 5500 XT (4GB)\nDirectX: Version 11\nStorage: 5 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "Jump into this action roguelite installment in the Prince of Persia series as you flow between death-defying platforming and acrobatic combat as the Prince himself. Battle through the capital city again and again with one goal – find a way to save Persia from a Hun invasion wielding dark magic.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه این قسمت اکشن سرکش در سری شاهزاده ایرانی بپرید و به عنوان خود شاهزاده بین پلتفرم های مرگبار و مبارزات آکروباتیک حرکت می کنید. بارها و بارها با یک هدف در پایتخت نبرد کنید - راهی برای نجات ایران از تهاجم هون ها که جادوی تاریکی دارد پیدا کنید."
   }
 ]
