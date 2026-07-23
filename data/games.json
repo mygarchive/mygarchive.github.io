@@ -4832,5 +4832,46 @@
     },
     "description_en": "Assassin's Creed III is the fifth game of the series, preceded by the first chapter taking place in the time of the Third Crusade and by the Ezio trilogy, positioning itself in the times of the Italian Renaissance (1476-1499). It is the 3rd person action adventure with an accent on exploring and hunting\nDuring the new installment, the player is set to make way through the American Revolution, while being on both side of a conflict — our hero has English father and Mohawk mother, which tears him apart. Such conflicts serve as the leitmotif through the entirety of a game — not only we are choosing sides to fight on in the Civil War, but also we are facing the decisions of choosing Assassins' or Templar's side.\nAs it is common in the Assasin's Creed games, the gameplay concentrates profoundly around fighting the multiple enemies all at once, parkouring off walls and micro-management: selling resources, exchanging ships and so on. The Assassin's Creed III, however, highlights the hunting and simultaneous use of two weapons as the new in-game features.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed III پنجمین بازی از این سری است که قبل از آن فصل اول در زمان جنگ صلیبی سوم و سه گانه اتزیو اتفاق می افتد و خود را در زمان رنسانس ایتالیا (1476-1499) قرار می دهد. این اکشن ماجراجویی سوم شخص با تاکید بر کاوش و شکار است\nدر طول قسمت جدید، بازیکن قرار است راه خود را از طریق انقلاب آمریکا باز کند، در حالی که در هر دو طرف درگیری قرار دارد - قهرمان ما دارای پدر انگلیسی و مادر موهاوک است که او را از هم می پاشد. چنین درگیری‌هایی به‌عنوان موتیف کلیت یک بازی عمل می‌کنند - نه تنها ما طرف‌هایی را برای مبارزه در جنگ داخلی انتخاب می‌کنیم، بلکه با تصمیم‌گیری‌ها برای انتخاب سمت Assassins یا Templar نیز روبرو هستیم.\nهمانطور که در بازی‌های Assasin's Creed رایج است، گیم‌پلی بازی عمیقاً حول مبارزه با چندین دشمن به طور همزمان، پارکور کردن از دیوارها و مدیریت خرد متمرکز می‌شود: فروش منابع، تبادل کشتی و غیره. با این حال، Assassin's Creed III شکار و استفاده همزمان از دو سلاح را به عنوان ویژگی های جدید درون بازی برجسته می کند."
+  },
+  {
+    "id": 4209,
+    "name": "Assassin's Creed III: Liberation",
+    "background_image": "https://media.rawg.io/media/games/e20/e20a9d3e14560dfd90e1713211af2dc5.jpg",
+    "rating": 3.14,
+    "metacritic": 70,
+    "released": "2012-10-30",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Ubisoft Sofia",
+    "steam_link": "https://store.steampowered.com/search/?term=Assassin's%20Creed%20III%3A%20Liberation",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/3b6/3b65e01b9d5f781a92f657e1b83bb869.jpg",
+      "https://media.rawg.io/media/screenshots/e34/e34b9d44ce5ca9eb0e7f1f4054e3c62a.jpg",
+      "https://media.rawg.io/media/screenshots/3d1/3d1c6dacb342750c721c7f9324627a54.jpg",
+      "https://media.rawg.io/media/screenshots/21b/21b96b4469468449197e05da34a3fc02.jpg",
+      "https://media.rawg.io/media/screenshots/928/9282f2865fb9dbd4c13c77bef05ce4a6.jpg",
+      "https://media.rawg.io/media/screenshots/25f/25ff696a50bb06b96e8a19ff6b346a82.jpg",
+      "https://media.rawg.io/media/games/e20/e20a9d3e14560dfd90e1713211af2dc5.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Introducing Assassin’s Creed® III Liberation, the stunning new chapter in the Assassin’s Creed saga, exclusively for PlayStation®Vita handheld entertainment system. The year is 1765. During the lead up to the American Revolution in the north, Spanish forces plan to take control of Louisiana in the south – but they have yet to reckon with Aveline, a deadly Assassin who will use everything in her arsenal to win freedom for her land and people.\n1 player(s)\n1024KB Minimum\nPurchase or use of this item is subject to the PlayStation®Network Terms of Service and User Agreement and this item's use restrictions. This item has been sublicensed to you by Sony Computer Entertainment America. One-time license fee for downloads to up to 2 console systems and 2 portable systems that are associated with the purchasing account.\n©2012 Ubisoft Entertainment. All Rights Reserved. Assassin’s Creed, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمعرفی Assassin’s Creed® III Liberation، فصل جدید خیره کننده در حماسه Assassin’s Creed، به طور انحصاری برای سیستم سرگرمی دستی PlayStation®Vita. سال 1765 است. در طول انقلاب آمریکا در شمال، نیروهای اسپانیایی قصد دارند کنترل لوئیزیانا در جنوب را به دست بگیرند - اما آنها هنوز با Aveline، یک قاتل مرگبار که از همه چیز در زرادخانه خود برای به دست آوردن آزادی برای سرزمین و مردم خود استفاده می کند، حساب نمی کنند.\n1 بازیکن\nحداقل 1024 کیلوبایت\nخرید یا استفاده از این مورد منوط به شرایط سرویس PlayStation®Network و قرارداد کاربر و محدودیت‌های استفاده از این مورد است. این مورد توسط Sony Computer Entertainment America به شما مجوز فرعی داده شده است. هزینه مجوز یک بار برای دانلود تا 2 سیستم کنسول و 2 سیستم قابل حمل که با حساب خرید مرتبط هستند.\n©2012 Ubisoft Entertainment. تمامی حقوق محفوظ است. Assassin’s Creed، Ubisoft و لوگوی Ubisoft علائم تجاری Ubisoft Entertainment در ایالات متحده و/یا سایر کشورها هستند."
   }
 ]
