@@ -3396,5 +3396,46 @@
     },
     "description_en": "SUPPORTER EDITION\nJOIN THE COMMUNITY\nJoin the official community Discord to stay on top of game updates & news, participate in developer Q&As, and to provide feedback and input on the game's development!\nAbout the Game\nTaxi Life is compatible with the most popular steering wheel peripherals and game controllers.\nClimb into the driver's seat of your car and your business, transport passengers across Barcelona and grow your company!\nAfter arriving in Barcelona with nothing but a car and a dream, drive around the busy streets of the famous city and transport passengers while offering them impeccable service. You will need to follow the rules of the road; deal with impatient tourists, changing weather and rush hours; adapt your routes to avoid traffic jams and accidents; and, most of all, ensure your clients are pleased with your service to earn the best ratings and the most generous tips!\nTransport your passengers across 286 miles (460 km) of roads in a large area of Barcelona reproduced at 1:1 scale.\nExplore the city and earn experience points by discovering new points of interest.\nUse your experience points to unlock new skills, such as the ability to accept longer fares\n\nPick up clients and take them to their destination\nFollow the rules of the road and avoid collisions with vehicles and pedestrians\nAdapt your route based on random events (accidents, construction work, parades, etc.)\nAdapt to changing weather: for example, increase your braking distance when the road surface ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSUPPORTER EDITION\nبه انجمن بپیوندید\nبه انجمن رسمی Discord بپیوندید تا از به‌روزرسانی‌ها و اخبار بازی مطلع شوید، در پرسش و پاسخ توسعه‌دهندگان شرکت کنید، و بازخورد و نظرات خود را در مورد توسعه بازی ارائه دهید!\nدرباره بازی\nتاکسی لایف با محبوب ترین لوازم جانبی فرمان و کنترلرهای بازی سازگار است.\nبه صندلی راننده ماشین و کسب و کار خود بروید، مسافران را در سراسر بارسلون حمل کنید و شرکت خود را توسعه دهید!\nپس از رسیدن به بارسلونا با چیزی جز یک ماشین و یک رویا، در خیابان های شلوغ شهر معروف رانندگی کنید و مسافران را حمل کنید و در عین حال خدمات بی عیب و نقصی به آنها ارائه دهید. شما باید قوانین جاده را دنبال کنید؛ برخورد با گردشگران بی حوصله، تغییر آب و هوا و ساعات شلوغی؛ مسیرهای خود را برای جلوگیری از ترافیک و تصادف تطبیق دهید. و مهمتر از همه، اطمینان حاصل کنید که مشتریان شما از خدمات شما راضی هستند تا بهترین رتبه بندی ها و سخاوتمندانه ترین نکات را کسب کنند!\nمسافران خود را در مسیرهای 286 مایلی (460 کیلومتری) در منطقه وسیعی از بارسلون که در مقیاس 1:1 بازتولید شده است حمل کنید.\nشهر را کاوش کنید و با کشف نقاط مورد علاقه جدید، امتیاز کسب کنید.\nاز امتیازات تجربه خود برای باز کردن مهارت های جدید مانند توانایی پذیرش کرایه های طولانی تر استفاده کنید\n\nمشتریان را انتخاب کنید و به مقصد ببرید\nقوانین جاده را رعایت کنید و از برخورد با وسایل نقلیه و عابران پیاده خودداری کنید\nمسیر خود را بر اساس رویدادهای تصادفی (حوادث، کار ساختمانی، رژه و غیره) تطبیق دهید.\nبا تغییر آب و هوا سازگار شوید: برای مثال، فاصله ترمز خود را در هنگام روی سطح جاده افزایش دهید"
+  },
+  {
+    "id": 440081,
+    "name": "The Medium",
+    "background_image": "https://media.rawg.io/media/games/8f5/8f5c25901d96e709ea631599106eda1c.jpg",
+    "rating": 3.53,
+    "metacritic": 74,
+    "released": "2021-01-28",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 9,
+    "developers": "Bloober Team",
+    "steam_link": "https://store.steampowered.com/app/1293160/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/170/1708577e5a906e513daa4c88568e1119.jpg",
+      "https://media.rawg.io/media/screenshots/037/037eeba5eeb49e0080a50883c061b39b.jpg",
+      "https://media.rawg.io/media/screenshots/e8a/e8a07acd6993cc7ca2fb05a140a04ff5_oPkuc6K.jpg",
+      "https://media.rawg.io/media/screenshots/551/55166f53951099ff9dd6e28f1cf914b0.jpg",
+      "https://media.rawg.io/media/screenshots/eb9/eb98aa03f5131a0f6ba77c1b19aed063.jpg",
+      "https://media.rawg.io/media/screenshots/c99/c998545ac3d94df1481f5eb3592f0f69.jpg",
+      "https://media.rawg.io/media/games/8f5/8f5c25901d96e709ea631599106eda1c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64bit version only)\nProcessor: Intel® Core™ i5-6600 / AMD Ryzen™ 5 2500X\nMemory: 8 GB RAM\nGraphics: @1080p NVIDIA GeForce® GTX 1060 6GB / AMD Radeon™ R9 390X (or equivalent with 4 GB VRAM)\nDirectX: Version 11\nStorage: 30 GB available space\nSound Card: DirectX compatible, headphones recommended",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64bit version only)\nProcessor: Intel® Core™ i5-9600 / AMD Ryzen™ 7 3700X\nMemory: 16 GB RAM\nGraphics: @1080p NVIDIA GeForce® GTX 1660 Ti / Radeon™ RX Vega 56 | @4K NVIDIA GeForce® RTX 2070 / Radeon™ RX 5700 XT\nDirectX: Version 12\nStorage: 30 GB available space\nSound Card: DirectX compatible, headphones recommended\nAdditional Notes: NVIDIA GeForce® RTX 2080 ror 4K with ray tracing on"
+    },
+    "description_en": "Become a medium living in two worlds: the real and the spirit one. Haunted by a vision of a child’s murder, you travel to an abandoned hotel resort, which years ago became the stage of an unthinkable tragedy. There you begin your search for difficult answers. The Medium features a “dual” soundtrack by Bloober Team’s Arkadiusz Reikowski and legendary composer Akira Yamaoka of Silent Hill fame.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه یک رسانه تبدیل شوید که در دو جهان زندگی می کند: دنیای واقعی و دنیای روح. تسخیر شده توسط رؤیای قتل یک کودک، به هتلی متروکه سفر می‌کنید که سال‌ها پیش صحنه یک تراژدی غیرقابل تصور شد. در آنجا جستجوی خود را برای پاسخ های دشوار آغاز می کنید. The Medium دارای یک موسیقی متن \"دوگانه\" توسط Arkadiusz Reikowski از تیم Bloober و آهنگساز افسانه ای Akira Yamaoka از شهرت Silent Hill است."
   }
 ]
