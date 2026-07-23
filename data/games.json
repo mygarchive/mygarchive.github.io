@@ -3034,5 +3034,56 @@
     },
     "description_en": "Play the renowned survival and open-world classics with the original S.T.A.L.K.E.R. trilogy, now available on consoles for the first time.\n\nControl legendary stalkers and investigate the origins of the Zone, forging paths that can lead to different outcomes according to your actions and decisions.\n\nTest your mettle by exploring radioactive debris and anomalies and put your reflexes to the test in intense, tactical shootouts.\n\nSearch for the answers to the darkest mysteries that could cost you your sanity in sinister catacombs full of hungry mutants.\n\nTravel through vast locations filled with Eastern European atmosphere and reminiscent of the real-life Chornobyl Exclusion Zone: the city of Prypiat, the Nuclear Power Plant, the Jupiter plant and many others.\n\nFace the loneliness and desolation of these lands, the only company you'll have on your journey through this dark sci-fi setting.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا S.T.A.L.K.E.R اصلی، آثار کلاسیک معروف بقا و جهان باز را بازی کنید. سه گانه، اکنون برای اولین بار بر روی کنسول ها موجود است.\n\nاستالکرهای افسانه ای را کنترل کنید و منشاء Zone را بررسی کنید، مسیرهایی را ایجاد کنید که می تواند با توجه به اقدامات و تصمیمات شما به نتایج متفاوتی منجر شود.\n\nتوانایی خود را با کاوش در زباله‌های رادیواکتیو و ناهنجاری‌ها آزمایش کنید و رفلکس‌های خود را در تیراندازی‌های شدید و تاکتیکی آزمایش کنید.\n\nدر دخمه‌های شوم مملو از جهش یافته‌های گرسنه، به دنبال پاسخ تاریک‌ترین رازهایی باشید که می‌تواند به بهای سلامت عقل شما تمام شود.\n\nدر مکان‌های وسیع پر از فضای اروپای شرقی و یادآور منطقه محرومیتی چرنوبیل در زندگی واقعی سفر کنید: شهر پریپیات، نیروگاه هسته‌ای، نیروگاه مشتری و بسیاری دیگر.\n\nبا تنهایی و ویرانی این سرزمین ها روبرو شوید، تنها شرکتی که در سفر خود در این محیط تاریک علمی تخیلی خواهید داشت."
+  },
+  {
+    "id": 58386,
+    "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+    "background_image": "https://media.rawg.io/media/games/3e8/3e81585ecda204d4f4b80a041b069adb.jpg",
+    "rating": 3.77,
+    "metacritic": null,
+    "released": "2024-11-20",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 7,
+    "developers": "GSC Game World",
+    "steam_link": "https://store.steampowered.com/app/1643320/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/803/803b7d21b59df5005799c3399019279a.jpg",
+      "https://media.rawg.io/media/screenshots/782/7824700bd21e40cf2a0bebaeb8114dc3.jpg",
+      "https://media.rawg.io/media/screenshots/9dd/9dd9b0c112201cbdf6828f01c0334cfa.jpg",
+      "https://media.rawg.io/media/screenshots/7e2/7e2eb2f0dab20622fbbbeeae39dc8978.jpg",
+      "https://media.rawg.io/media/screenshots/17d/17da49bd8779122e0d7f24696f5b4db9.jpg",
+      "https://media.rawg.io/media/screenshots/1f7/1f7ee9a93cf8b9be74a06d4b2fc2fcbf.jpg",
+      "https://media.rawg.io/media/games/3e8/3e81585ecda204d4f4b80a041b069adb.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 x64 / Windows 11 x64\nProcessor: Intel Core i7-7700K / AMD Ryzen 5 1600X\nMemory: 16 GB RAM\nGraphics: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB / Intel Arc A750\nStorage: 160 GB available space\nAdditional Notes: Graphics Preset: LOW / Resolution: 1080p / Target FPS: 30. 16 GB Dual Channel RAM. SSD required. The listed specifications were evaluated using TSR and comparable technologies.",
+      "recommended": "OS: Windows 10 x64 / Windows 11 x64\nProcessor: Intel Core i7-11700 / AMD Ryzen 7 5800X\nMemory: 32 GB RAM\nGraphics: Nvidia GeForce RTX 3070 Ti / Nvidia GeForce RTX 4070 / AMD Radeon RX 6800 XT\nStorage: 160 GB available space\nAdditional Notes: Graphics Preset: HIGH / Resolution: 1440p / Target FPS: 60. 32 GB Dual Channel RAM. SSD required. The above specifications were tested with TSR, DLSS, FSR and XeSS."
+    },
+    "description_en": "S.T.A.L.K.E.R. 2 is a brand-new entry in the legendary series, enjoyed by millions of players worldwide. \r\n\r\nThe explosive combination of first-person shooter, immersive sim and horror is back. It’s the ultimate S.T.A.L.K.E.R. experience of unprecedented scale, advanced graphics, freedom of choices and the thickest atmosphere of a deadly adventure.\r\n\r\nWelcome to The Zone — an area of exclusion around the Chernobyl Nuclear Power Plant. Full of radiation, mutants and anomalies, it keeps drawing adventurers from beyond the perimeter.\r\n\r\nBounty hunters dwell deep into the Zone, driven by its treasures and mysteries. These people are known as stalkers.\r\n\r\nAre you ready to become one of them?",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nS.T.A.L.K.E.R. 2 یک ورودی کاملاً جدید در سری افسانه ای است که میلیون ها بازیکن در سراسر جهان از آن لذت می برند. \r\n\r\nترکیب انفجاری تیراندازی اول شخص، سیم کارت همهجانبه و ترسناک بازگشته است. این S.T.A.L.K.E.R نهایی است. تجربه مقیاس بی سابقه، گرافیک پیشرفته، آزادی انتخاب و غلیظ ترین فضای یک ماجراجویی مرگبار.\r\n\r\nبه منطقه خوش آمدید - منطقه ای ممنوعه در اطراف نیروگاه هسته ای چرنوبیل. پر از تشعشعات، جهش‌یافته‌ها و ناهنجاری‌ها، ماجراجویان را از آن سوی محیط می‌کشد.\r\n\r\nشکارچیان باونتی در اعماق منطقه زندگی می کنند، که توسط گنجینه ها و اسرار آن هدایت می شوند. این افراد به عنوان استالکر شناخته می شوند.\r\n\r\nآیا حاضرید یکی از آنها شوید؟"
   }
 ]
