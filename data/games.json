@@ -5422,5 +5422,41 @@
     },
     "description_en": "Batman: Arkham Asylum is the first game in Warner Brothers’ action-adventure franchise Batman: Arkham. The game takes places in fictional Asylum on Arkham Island near Gotham City where dangerous and mentally unstable criminals are kept.  \nThe story follows Batman as he captures Joker after his assault on Gotham City Hall. The game starts when Batman accompanies convoy that transfers Joker to the Arkham Asylum. With the help from Harley Queen and corrupted police officers, Joker manages to escape. He releases his gang members takes over the Asylum. Now Batman must defeat Joker, restore order in Arkham and save Gotham from bombs that Joker planted in it. During the game, the player meets several characters from Batman universe such as Scarecrow, Killer Croc, Poison Ivy, Commissioner Gordon and others.  \nThe gameplay is a mix of action sequences, investigations and puzzle solving. In action sequences Batman has to defeat villains with brute force or stealthy, using his numerous gadgets.\nThe Game of the Year Edition of Batman: Arkham Asylum includes support of 3D displays, two pairs of 3D glasses, and six previously released DLCs.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: Arkham Asylum اولین بازی از مجموعه اکشن-ماجراجویی برادران وارنر Batman: Arkham است. بازی در پناهگاه خیالی در جزیره آرکام در نزدیکی شهر گاتهام می گذرد، جایی که جنایتکاران خطرناک و روانی ناپایدار نگهداری می شوند.  \nداستان به دنبال بتمن است که جوکر را پس از حمله به تالار شهر گاتهام دستگیر می کند. بازی زمانی شروع می شود که بتمن کاروانی را همراهی می کند که جوکر را به آسایشگاه Arkham منتقل می کند. جوکر با کمک هارلی کویین و افسران پلیس فاسد موفق به فرار می شود. او اعضای باند خود را آزاد می کند تا پناهگاه را تصاحب کند. حالا بتمن باید جوکر را شکست دهد، نظم را در آرکام بازگرداند و گاتهام را از بمب هایی که جوکر در آن کار گذاشته نجات دهد. در طول بازی، بازیکن با چندین شخصیت از دنیای بتمن مانند Scarecrow، Killer Croc، Poison Ivy، Commissioner Gordon و دیگران آشنا می شود.  \nگیم پلی بازی ترکیبی از سکانس های اکشن، تحقیقات و حل پازل است. در سکانس‌های اکشن بتمن باید با استفاده از ابزارهای متعدد خود، شروران را با نیروی خشن یا مخفیانه شکست دهد.\nنسخه بازی سال Batman: Arkham Asylum شامل پشتیبانی از نمایشگرهای سه بعدی، دو جفت عینک سه بعدی و شش DLC است که قبلا منتشر شده بود."
+  },
+  {
+    "id": 295001,
+    "name": "Batman: The Telltale Series",
+    "background_image": "https://media.rawg.io/media/games/674/674b67b66f510f5b273f50ca09341ee2.jpg",
+    "rating": 3.76,
+    "metacritic": 79,
+    "released": "2016-08-02",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 9,
+    "developers": "Telltale Games",
+    "steam_link": "https://store.steampowered.com/app/498240/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7e5/7e5cb09816194238cd6af81ee1545dc0.jpg",
+      "https://media.rawg.io/media/screenshots/5b8/5b8778d09f4388077e7a39adafc88afe.jpg",
+      "https://media.rawg.io/media/screenshots/6a2/6a2f9fc05c1ac8bf66c3977367c8e0d6.jpg",
+      "https://media.rawg.io/media/screenshots/7ae/7ae056e77aba07d58a3c56793d15ed43.jpg",
+      "https://media.rawg.io/media/screenshots/8fe/8fe24cf41197f5afd0f562f22c31100e.jpg",
+      "https://media.rawg.io/media/screenshots/ff0/ff0ac37997b3c22f0cf88a2b41d497a6.jpg",
+      "https://media.rawg.io/media/games/674/674b67b66f510f5b273f50ca09341ee2.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Batman: The Enemy Within, 2017, is an episodic point-and-click graphic adventure video game, a sequel to 2016's Batman: The Telltale Series.\n\nThe player controls the character, who, on the one hand, is the well-known billionaire, entrepreneur and philanthropist Bruce Wayne, and on the other hand, a crime fighter named Batman, hiding his real name from people.\n\n###The series\nThe Enemy Within is set in the same Batman continuity introduced in Batman: The Telltale Series - within Gotham, a city infested with crime and corruption. Both games are set in mid-to-late 2010s with technologies such as drones and smartphones. The places where The Enemy Within takes place are the same as in the previous game - Batcave, Wayne Enterprises and Gotham City Police Headquarters. The Enemy Within follows the events of the previous game, taking place between a couple of months to a year after these events.\n\n###Fresh interpretation of Batman in games, film, or comics\nThe creators of the series claim that the game offers the player to choose how to perceive certain situations - like Batman or Bruce Wayne. They promise a \"fresh interpretation of the universe set in current times, not tied to any existing iteration of Batman in games, film, or comics». To preserve this freshness, the creators of the game begin their story about Batman a few years after Bruce Wayne became Batman - they claim that it gives them the opportunity to be flexible in describing the character; As a result, the player, accord",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: The Enemy Within، 2017، یک بازی ویدئویی ماجراجویی گرافیکی اپیزودیک با نقطه و کلیک، دنباله ای بر Batman: The Telltale در سال 2016 است.\n\nبازیکن کنترل این شخصیت را بر عهده دارد که از یک طرف میلیاردر، کارآفرین و بشردوست معروف بروس وین و از طرف دیگر یک مبارز جنایتکار به نام بتمن نام واقعی خود را از مردم پنهان می کند.\n\n###سریال\nThe Enemy Within در همان تداوم بتمن که در Batman: The Telltale Series معرفی شده است - در گاتهام، شهری پر از جنایت و فساد می گذرد. هر دو بازی در اواسط تا اواخر دهه 2010 با فناوری هایی مانند هواپیماهای بدون سرنشین و گوشی های هوشمند ساخته می شوند. مکان‌هایی که The Enemy Within در آن اتفاق می‌افتد مانند بازی قبلی است - Batcave، Wayne Enterprises و Gotham City Police Headquarters. The Enemy Within وقایع بازی قبلی را دنبال می کند که بین یکی دو ماه تا یک سال پس از این اتفاقات رخ می دهد.\n\n###تفسیر تازه ای از بتمن در بازی ها، فیلم ها یا کمیک ها\nسازندگان این سری ادعا می کنند که بازی به بازیکن پیشنهاد می دهد که چگونه موقعیت های خاص را درک کند - مانند بتمن یا بروس وین. آنها قول \"تفسیری تازه از جهان را می دهند که در زمان های کنونی اتفاق می افتد، بدون هیچ گونه تکرار موجود از بتمن در بازی ها، فیلم ها یا کمیک ها.\" برای حفظ این تازگی، سازندگان بازی داستان خود را در مورد بتمن چند سال پس از تبدیل شدن بروس وین به بتمن آغاز می کنند - آنها ادعا می کنند که این فرصت را به آنها می دهد که در توصیف شخصیت، مطابق با نتیجه، شخصیت انعطاف پذیر باشند."
   }
 ]
