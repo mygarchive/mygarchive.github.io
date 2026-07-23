@@ -5612,5 +5612,48 @@
     },
     "description_en": "Call of Duty 3 delivers the intensity of being closer than ever to the\nfury of combat during the Normandy Breakout, the historic campaign that\nmade the liberation of Paris possible and brought the Allies a step\ncloser to Berlin. Through a seamless narrative that delivers the rush of\nunrelenting battle and breathtaking action, players assume the roles of\nfour ordinary Allied soldiers—American, British, Canadian and Polish—and\nare thrust onto an authentic, living battlefield for an unprecedented\nvariety of combat with advanced high-definition graphics, detailed\ncharacter animations and explosive on-screen action, providing the most\nimmersive and cinematically intense war experience ever.\n\nBranching Mission Paths – Next-generation level design provides\nmultiple attack routes that let players decide how to confront the\nenemy – flank an opponent, or hit him head-on. Each unique mission\npath requires special tactics, from sniping and demolition to all-out\nhead-on clashes.\n\nBattle Actions – An all-new close-quarters battle mechanic allows\nplayers to fight hand-to-hand, improvise explosive devices, and\nexecute a host of other battlefield situations that require cunning\nand rapid reflexes to survive.\n\nNowhere to Hide – Environmental physics allow players to destroy enemy\nsoft cover hideouts, forcing foes out in the open. But be wary,\nopponents can eliminate your protective cover as well.\n\nUtilizing the Wii Remote – Call of Duty 3 utilizes the precise\ncontrols of the Wii Remote control",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty 3 شدت نزدیک‌تر از همیشه را به شما ارائه می‌دهد\nخشم نبرد در جریان فرار نرماندی، کارزار تاریخی که\nآزادسازی پاریس را ممکن ساخت و متفقین را گام برداشت\nنزدیکتر به برلین از طریق یک روایت بدون درز که عجله از\nنبرد بی امان و اکشن نفس گیر، بازیکنان نقش ها را بر عهده می گیرند\nچهار سرباز معمولی متفقین - آمریکایی، انگلیسی، کانادایی و لهستانی - و\nبه یک میدان نبرد واقعی و زنده برای یک صحنه بی سابقه رانده می شوند\nانواع مبارزات با گرافیک پیشرفته با کیفیت بالا، با جزئیات\nانیمیشن‌های شخصیت‌ها و اکشن‌های انفجاری روی صفحه، بیشترین امکانات را ارائه می‌کنند\nتجربه جنگی همهجانبه و شدید سینمایی.\n\nBranching Mission Paths – طراحی سطح نسل بعدی فراهم می کند\nچندین مسیر حمله که به بازیکنان اجازه می دهد تصمیم بگیرند که چگونه با آن مقابله کنند\nدشمن - طرف مقابل حریف را بپوشانید یا او را به صورت سر در بیاورید. هر ماموریت منحصر به فرد\nمسیر نیاز به تاکتیک‌های خاصی دارد، از تیراندازی و تخریب تا همه‌جانبه\nدرگیری های رودررو\n\nاقدامات نبرد - یک مکانیک کاملاً جدید نبرد نزدیک به شما اجازه می دهد\nبازیکنان برای مبارزه تن به تن، ساخت وسایل انفجاری و\nانبوهی از موقعیت های میدان جنگ دیگر را که نیاز به حیله گری دارند، اجرا کنید\nو رفلکس های سریع برای زنده ماندن.\n\nجایی برای پنهان شدن نیست - فیزیک محیطی به بازیکنان اجازه می دهد دشمن را نابود کنند\nمخفیگاه های پوشش نرم، دشمنان را مجبور به بیرون رفتن در فضای باز می کند. اما مراقب باشید،\nحریفان می توانند پوشش محافظ شما را نیز از بین ببرند.\n\nاستفاده از کنترل از راه دور Wii – Call of Duty 3 از دقت استفاده می کند\nکنترل های کنترل از راه دور Wii"
+  },
+  {
+    "id": 884,
+    "name": "Call of Duty: Modern Warfare Remastered",
+    "background_image": "https://media.rawg.io/media/games/509/509c81a5da92a8d0645d9e160d155017.jpg",
+    "rating": 3.98,
+    "metacritic": 86,
+    "released": "2016-10-05",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Raven Software, Activision, Beenox",
+    "steam_link": "https://store.steampowered.com/app/393080/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256691384/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256691384/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1a0/1a0e31d5e6d2280b9116f8578ef4062e.jpg",
+      "https://media.rawg.io/media/screenshots/072/072b27ac889e5cdc50e1c44c81ee708e.jpg",
+      "https://media.rawg.io/media/screenshots/5b4/5b4cec47ad94a702d127eac3c8fab1c6.jpg",
+      "https://media.rawg.io/media/screenshots/1e8/1e82d22c8b8cf53dbc01f8deb290ecdf.jpg",
+      "https://media.rawg.io/media/screenshots/2d3/2d34faa70e10ef091ddf3ce8d5198e7d.jpg",
+      "https://media.rawg.io/media/screenshots/7f1/7f172379e0339a5936f615d6b883044a.jpg",
+      "https://media.rawg.io/media/games/509/509c81a5da92a8d0645d9e160d155017.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 64-Bit or later\nProcessor: Intel Core i3-3225 @ 3.30GHz or equivalent\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 660 2GB / AMD Radeon HD 7850 2GB\nDirectX: Version 11\nNetwork: Broadband Internet connection\nSound Card: DirectX 11 Compatible\nAdditional Notes: Disk space requirement may change over time.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "###The restart\nReleased in 2016, the remastered version of one of the most revolutionary parts of the annual Call of Duty series. In 2007, the series moved from historical scenery to modern, got a new more advanced graphics thanks to the freshly-released consoles and presented to the players a hardcore fast-paced multiplayer. The latter is still wanted by hardcore fans, which gave the publisher Activision Blizzard a reason to remaster the game.\n\n###Key features\nIn the new version, developers from the Raven Software did their best to rebuild the experience (the original game was developed by Infinity Ward). The game is available for purchase, as a separate product, and as part of a bundle. Owners of the original version of the game can get Remastered for free - you need to have the original disk for this or digital purchase. The re-released game did not change the gameplay in any way: it is still a fast-paced first-person shooter. The story campaign, during which the player takes control of several characters, also has not changed. Most of the changes turned out to be cosmetic and allowed the new studio to add new technologies to the original game: for example, while prone and moving, the weapon touching the ground will vibrate the controller. Also in the single-player campaign, new cheat codes were added, such as exaggerated physics and the ability to replace heads on the shoulders of virtual people with watermelons.\n\n###The changes\nThe main changes lie in multiplayer, which ",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n###راه اندازی مجدد\nنسخه بازسازی شده یکی از انقلابی ترین قسمت های سری سالانه Call of Duty که در سال 2016 منتشر شد. در سال 2007، این سری از مناظر تاریخی به مدرن منتقل شد، به لطف کنسول های تازه منتشر شده، گرافیک پیشرفته تری دریافت کرد و یک بازی چند نفره سریع و هاردکور را به بازیکنان ارائه کرد. مورد دوم همچنان مورد توجه طرفداران هاردکور است و همین امر به ناشر Activision Blizzard دلیلی برای ریمستر بازی داد.\n\n###ویژگی های کلیدی\nدر نسخه جدید، توسعه دهندگان Raven Software تمام تلاش خود را برای بازسازی این تجربه انجام دادند (بازی اصلی توسط Infinity Ward ساخته شده است). این بازی به عنوان یک محصول جداگانه و به عنوان بخشی از یک بسته برای خرید در دسترس است. دارندگان نسخه اصلی بازی می توانند Remastered را به صورت رایگان دریافت کنند - برای این خرید یا خرید دیجیتال باید دیسک اصلی را داشته باشید. بازی منتشر شده به هیچ وجه تغییری در گیم پلی بازی ایجاد نکرد: هنوز هم یک بازی تیراندازی اول شخص سریع است. کمپین داستانی که طی آن بازیکن کنترل چندین شخصیت را به دست می‌گیرد نیز تغییری نکرده است. بیشتر تغییرات ظاهری زیبایی داشتند و به استودیوی جدید اجازه دادند تا فناوری های جدیدی را به بازی اصلی اضافه کند: برای مثال، در حالی که مستعد و در حال حرکت است، برخورد سلاح با زمین کنترل کننده را به لرزه در می آورد. همچنین در کمپین تک نفره، کدهای تقلب جدیدی مانند فیزیک اغراق آمیز و امکان جایگزینی سر بر روی شانه افراد مجازی با هندوانه اضافه شد.\n\n###تغییرات\nتغییرات اصلی در چند نفره نهفته است که"
   }
 ]
