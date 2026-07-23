@@ -4755,5 +4755,46 @@
     },
     "description_en": "Digital Deluxe Edition2 Exclusive Single-Player Maps: The Trajan Market & The Aqueduct\n2 Multiplayer Characters:The Officer - Death's Finest Ally: Few have seen him. Even fewer have lived to tell about it. Fear is his friend, and Death is his ally.\nThe Harlequin - The Walking Nightmare: Behind the gaudy costume and twisted smile lies the soul of a merciless Assassin.img.padding {padding-right: 10px;}\n1 Ezio Skin - Helmschmied Drachen Armor: Fashioned by the Helmschmied Armory in 1489, only a few sets were completed due to the weight of the metal. Very few men proved strong enough to wear it.\n\nimg.padding {padding-right: 10px;}\nThe Original Codex Written by Altaïr: Take a closer look at the history of the Assassins and art of Assassin’s Creed Brotherhood.\nMultiplayer Characters Collectible Trading Cards: A set of trading cards featuring all the characters of Assassin's Creed Brotherhood Multiplayer, including their kill moves and biographies.\nMap of Rome\nAssassin’s Creed Lineage - The Complete Movie: Explore the events that revolve around Ezio’s father, Giovanni Auditore da Firenze, and gain insight on the Assassin’s Creed story and universe.\nMaking-Of Assassin’s Creed Brotherhood - Behind the Brotherhood: Go behind the scenes with the development team to learn about how the game was made and Ezio’s continuing story.\nGame Soundtrack: 22 songs from the original game soundtrack by Jesper Kyd.\nDigital Premium Edition content is only available via download\nAbout the GameLive and b",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDigital Deluxe Edition2 نقشه های انحصاری تک نفره: بازار تراژان و قنات\n2 شخصیت چند نفره: افسر - بهترین متحد مرگ: تعداد کمی او را دیده اند. حتی کمتر کسی زندگی کرده است که در مورد آن بگوید. ترس دوست اوست و مرگ متحد او.\nThe Harlequin - The Walking Nightmare: پشت لباس شیک و لبخند پیچ خورده روح یک قاتل بی رحم نهفته است.img.padding {padding-right: 10px;}\n1 Ezio Skin - Helmschmied Drachen Armor: در سال 1489 توسط Helmschmied Armory ساخته شد، تنها چند مجموعه به دلیل وزن فلز تکمیل شد. تعداد بسیار کمی از مردان به اندازه کافی قوی بودند که بتوانند آن را بپوشند.\n\nimg.padding {padding-right: 10px;}\nکدکس اصلی نوشته Altaïr: نگاهی دقیق تر به تاریخچه Assassins و هنر Assassin’s Creed Brotherhood بیندازید.\nکارت‌های بازرگانی جمع‌آوری‌شده شخصیت‌های چند نفره: مجموعه‌ای از کارت‌های معاملاتی شامل تمام شخصیت‌های Assassin's Creed Brotherhood Multiplayer، از جمله حرکت‌های کشتن و بیوگرافی آنها.\nنقشه رم\nAssassin’s Creed Lineage - The Complete Movie: رویدادهایی را که حول پدر اتزیو، جیووانی آدیتوره دا فیرنز می چرخد، کاوش کنید و در مورد داستان و جهان Assassin’s Creed اطلاعاتی کسب کنید.\nMaking-Of Assassin’s Creed Brotherhood - Behind the Brotherhood: با تیم سازنده به پشت صحنه بروید تا از نحوه ساخت بازی و ادامه داستان اتزیو مطلع شوید.\nموسیقی متن بازی: 22 آهنگ از موسیقی متن اصلی بازی توسط Jesper Kyd.\nمحتوای نسخه پرمیوم دیجیتال فقط از طریق دانلود در دسترس است\nدرباره GameLive و b"
+  },
+  {
+    "id": 19640,
+    "name": "Assassin's Creed: Director's Cut Edition",
+    "background_image": "https://media.rawg.io/media/games/4b1/4b11e8fc75e054939c29e7319a643600.jpg",
+    "rating": 3.92,
+    "metacritic": 79,
+    "released": "2008-04-09",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/15100/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b99/b9978aede349c80ac38fd35b9ddc83af.jpg",
+      "https://media.rawg.io/media/screenshots/7db/7db429fa55a164ad285cc58c95a90a07.jpg",
+      "https://media.rawg.io/media/screenshots/010/01016bdfbc05128ef0e1d12e3af8ec31.jpg",
+      "https://media.rawg.io/media/screenshots/d12/d12195c4771842c723103ac16cbf11e0.jpg",
+      "https://media.rawg.io/media/screenshots/f87/f879251773bc0b1c34ff74b0754afe79.jpg",
+      "https://media.rawg.io/media/screenshots/7e8/7e877418a08a20b728f620eeabf1d396.jpg",
+      "https://media.rawg.io/media/games/4b1/4b11e8fc75e054939c29e7319a643600.jpg"
+    ],
+    "requirements": {
+      "minimum": "Supported OS: Windows® XP/Windows Vista® (only)\nProcessor: Dual core processor 2.6 GHz Intel® Pentium® D or AMD Athlon™ 64 X2 3800+ (Intel Core® 2 Duo 2.2 GHz or AMD Athlon 64 X2 4400+ or better recommended)\nSystem Memory: Windows XP: 1 GB RAM / Windows Vista: 2 GB RAM\nVideo Card: 256 MB DirectX® 10.0-compliant video card or DirectX 9.0-compliant card with Shader Model 3.0 or higher (*see supported list)\nSound Card: DirectX 9.0 or 10.0-compliant sound card (5.1 sound card recommended)\nDirectX Version: Direct X 9.0 (Windows XP) or 10.0 (Windows Vista) libraries \nHard Disk: 8 GB available hard disk space\nSupported Peripherals: Keyboard, mouse, optional controller (Xbox 360® Controller for Windows recommended)\n*Supported video cards at time of release: ATI® RADEON® X1600** /1650**- 1950/  HD 2000/3000 series, NVIDIA GeForce® 6800**/7/8/9 series.  **PCI Express only supported. Laptop versions of these cards may work but are NOT supported. These chipsets are the only ones that will run this game. For the most up-to-date requirements, please visit the FAQ for this game at: http://support.ubi.com.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Assassin’s Creed is an action-adventure game that follows the confrontation of the Assassins and the Templars. It’s the first installment in the series, followed by several standalone titles and DLCs. Director’s Cut Edition is the extended version of Assassin’s Creed with more investigation options and several new missions. \n\nThe game’s world is split between the modernity and the time after the Third Crusade when the main action is set. You play as Desmond Miles, a descendant of an assassin named Altair Ibn-La'Ahad. You need to step into the war over the Apple of Eden. With the Animus machine Desmond’s mind is sent to the past and you take control of Altair. The game missions are in fact a series of assassinations you need to carry out.\n\nAssassin’s Creed is set in an open world with three main cities: Jerusalem, Acre, or Damascus. In every city you get information about your target and can complete side quests. You upgrade Altair with new weapons after each successful assassination. The protagonist is also very skillful and has the Eagle Vision ability to highlight all visible characters either they are targets, enemies, allies or neutrals. This option is only available when the health bar is full.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin’s Creed یک بازی اکشن ماجراجویی است که رویارویی Assassins و Templars را دنبال می کند. این اولین قسمت از این سری است و پس از آن چندین عنوان مستقل و DLC عرضه می شود. Director’s Cut Edition نسخه توسعه یافته Assassin’s Creed با گزینه های تحقیقاتی بیشتر و چندین ماموریت جدید است. \n\nدنیای بازی بین مدرنیته و زمان پس از سومین جنگ صلیبی که اکشن اصلی تنظیم می شود تقسیم شده است. شما در نقش دزموند مایلز، از نوادگان یک قاتل به نام الطیر بن لااحد بازی می کنید. شما باید وارد جنگ بر سر سیب عدن شوید. با دستگاه Animus ذهن دزموند به گذشته فرستاده می شود و شما کنترل Altair را به دست می گیرید. ماموریت های بازی در واقع مجموعه ای از ترورها هستند که باید انجام دهید.\n\nAssassin’s Creed در یک دنیای باز با سه شهر اصلی: اورشلیم، عکا یا دمشق اتفاق می‌افتد. در هر شهر اطلاعاتی در مورد هدف خود به دست می آورید و می توانید ماموریت های جانبی را تکمیل کنید. بعد از هر ترور موفق، Altair را با سلاح های جدید ارتقا می دهید. قهرمان داستان همچنین بسیار ماهر است و توانایی Eagle Vision را دارد تا تمام شخصیت‌های قابل مشاهده را برجسته کند، خواه هدف، دشمن، متحد یا خنثی باشند. این گزینه فقط زمانی در دسترس است که نوار سلامت پر باشد."
   }
 ]
