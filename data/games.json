@@ -121,5 +121,46 @@
     },
     "description_en": "Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.\r\n\r\nMysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.\r\n\r\nFrom the creators of Divinity: Original Sin 2 comes a next-generation RPG, set in the world of Dungeons and Dragons.\r\n\r\nChoose from a wide selection of D&D races and classes, or play as an origin character with a hand-crafted background. Adventure, loot, battle and romance as you journey through the Forgotten Realms and beyond. Play alone, and select your companions carefully, or as a party of up to four in multiplayer.\r\n\r\nAbducted, infected, lost. You are turning into a monster, but as the corruption inside you grows, so does your power. That power may help you to survive, but there will be a price to pay, and more than any ability, the bonds of trust that you build within your party could be your greatest strength. Caught in a conflict between devils, deities, and sinister otherworldly forces, you will determine the fate of the Forgotten Realms together.\r\n\r\nForged with the new Divinity 4.0 engine, Baldur’s Gate 3 gives you unprecedented freedom to explore, experiment, and interact with a world that reacts to your choices. A grand, cinematic narrative brings you closer to your characters than ever before, as you venture through our ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمهمانی خود را جمع کنید و در داستانی از مشارکت و خیانت، فداکاری و بقا و فریب قدرت مطلق به قلمروهای فراموش شده بازگردید.\r\n\r\nتوانایی های اسرارآمیز در درون شما بیدار می شوند که از یک انگل Mind Flayer که در مغز شما کاشته شده است، استخراج شده است. مقاومت کنید و تاریکی را بر علیه خود برگردانید. یا فساد را در آغوش بگیرید و به شر نهایی تبدیل شوید.\r\n\r\nاز سوی سازندگان Divinity: Original Sin 2 یک RPG نسل بعدی ارائه می شود که در دنیای سیاه چال ها و اژدها اتفاق می افتد.\r\n\r\nاز میان طیف گسترده ای از مسابقات و کلاس های D&D انتخاب کنید، یا به عنوان یک شخصیت اصلی با پس زمینه ای دست ساز بازی کنید. ماجراجویی، غارت، نبرد و عاشقانه در حین سفر در قلمروهای فراموش شده و فراتر از آن. به تنهایی بازی کنید و همراهان خود را با دقت انتخاب کنید یا به عنوان یک مهمانی تا چهار نفر در چند نفره.\r\n\r\nربوده شده، آلوده، گم شده است. شما در حال تبدیل شدن به یک هیولا هستید، اما با افزایش فساد درون شما، قدرت شما نیز افزایش می یابد. این قدرت ممکن است به شما کمک کند بقا کنید، اما باید بهایی پرداخت کنید، و بیش از هر توانایی، پیوندهای اعتمادی که در حزب خود ایجاد می کنید می تواند بزرگترین قدرت شما باشد. گرفتار درگیری بین شیاطین، خدایان و نیروهای شوم ماورایی، سرنوشت قلمروهای فراموش شده را با هم تعیین خواهید کرد.\r\n\r\nBaldur’s Gate 3 که با موتور جدید Divinity 4.0 ساخته شده است، آزادی بی‌سابقه‌ای برای کاوش، آزمایش و تعامل با دنیایی به شما می‌دهد که به انتخاب‌های شما واکنش نشان می‌دهد. یک روایت بزرگ و سینمایی شما را بیش از هر زمان دیگری به شخصیت‌هایتان نزدیک می‌کند، همانطور که از طریق ما جسارت می‌کنید."
+  },
+  {
+    "id": 3028,
+    "name": "Beyond: Two Souls",
+    "background_image": "https://media.rawg.io/media/games/07a/07a74470a2618fd71945db0619602baf.jpg",
+    "rating": 3.81,
+    "metacritic": 73,
+    "released": "2013-10-07",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 4,
+    "developers": "Quantic Dream",
+    "steam_link": "https://store.steampowered.com/app/960990/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a82/a8201e35f036391731bbaf331a2e1263.jpg",
+      "https://media.rawg.io/media/screenshots/45e/45eedc925290bc4b4ff42b973e9f5375.jpg",
+      "https://media.rawg.io/media/screenshots/039/039c8156ad9539491a4a2adf88b1a772.jpg",
+      "https://media.rawg.io/media/screenshots/d68/d68a67c0eca09cfcbd9d4faade3f0f88.jpg",
+      "https://media.rawg.io/media/screenshots/1e0/1e031910c688e91c767e5d21dafa747e.jpg",
+      "https://media.rawg.io/media/screenshots/433/433f0f6cc42b56ed5b5ba403907e7030.jpg",
+      "https://media.rawg.io/media/games/07a/07a74470a2618fd71945db0619602baf.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7 or later (64 bit)\nProcessor: Intel Core i5-4430 @ 3.0 GHz or AMD FX-6300 @ 3.5 GHz\nMemory: 4 GB RAM\nGraphics: Nvidia GeForce GTX 660 with 2GB VRAM or AMD Radeon HD 7870 with 2GB VRAM\nDirectX: Version 11\nStorage: 49 GB available space\nAdditional Notes: 720p, 30 FPS",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 7 or later (64 bit)\nProcessor: Intel Core i5-6600K @ 3.5GHz or AMD Ryzen 3 1300X @ 3.4GHz\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 970 with 4GB VRAM or AMD Radeon R9 390 with 4GB VRAM\nDirectX: Version 11\nStorage: 49 GB available space\nAdditional Notes: 1080p, 60 FPS"
+    },
+    "description_en": "This game is often called an \"interactive film\" - because the proportion between the given story and the possibilities to influence the story is indeed somewhat different than in most games. The game develops between three points in the biography of the girl Jodie Holmes. In these three points, we find ourselves repeatedly. And in general, we see 16 years of her life, from 8 to 24 years.\nJodie from birth has a gift of communication with a disembodied being called Aiden. In this context, the Jodie-Aiden couple can capture people's consciousness, move objects, and even strangle people. At the same time, Jodie is periodically exposed to attacks of vague energies.\nHer parents are not her relatives, they give her to psychiatrists and refuse her. When the family of one of the psychiatrists perishes, Jodie, with the help of Ayden, establishes a connection with the deceased, she can let the living and the dead speak.\nThe CIA is interested in Jodie's abilities and makes her become an agent. She then instructs her on several missions, but Jodie realises that she is being used for criminal activities - and refuses to cooperate with the CIA. CIA agents do not leave her alone, and she destroys them.\nThe game has a lot of interpretations of what is happening in the world of the dead, different people use Jodi's forces in different ways. Jody herself also does not have a clear picture, she seeks and finds real parents, helps different people - but they rarely pay her the same.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین بازی اغلب \"فیلم تعاملی\" نامیده می شود - زیرا تناسب بین داستان داده شده و احتمالات تأثیرگذاری بر داستان در واقع تا حدودی با بیشتر بازی ها متفاوت است. بازی بین سه نقطه در زندگی نامه دختر جودی هلمز توسعه می یابد. در این سه نقطه، خود را به کرات می یابیم. و به طور کلی 16 سال از زندگی او را از 8 تا 24 سال می بینیم.\nجودی از بدو تولد استعداد ارتباط با موجودی بی‌جسم به نام آیدن را دارد. در این زمینه، زوج Jodie-Aiden می توانند هوشیاری افراد را به تصویر بکشند، اشیا را جابجا کنند و حتی افراد را خفه کنند. در همان زمان، جودی به طور دوره ای در معرض حملات انرژی های مبهم قرار می گیرد.\nپدر و مادرش از بستگانش نیستند، او را به روانپزشک می دهند و او را رد می کنند. هنگامی که خانواده یکی از روانپزشکان از بین می رود، جودی با کمک آیدن با فرد متوفی ارتباط برقرار می کند، او می تواند اجازه دهد زنده ها و مرده ها صحبت کنند.\nسیا به توانایی های جودی علاقه مند است و او را وادار به تبدیل شدن به یک مامور می کند. سپس او را در چندین ماموریت راهنمایی می کند، اما جودی متوجه می شود که از او برای فعالیت های مجرمانه استفاده می شود - و از همکاری با سیا امتناع می ورزد. ماموران سیا او را تنها نمی گذارند و او آنها را نابود می کند.\nبازی تعابیر زیادی از اتفاقات دنیای مردگان دارد، افراد مختلف به روش های مختلف از نیروهای جودی استفاده می کنند. خود جودی نیز تصویر روشنی ندارد ، او به دنبال والدین واقعی می گردد و به افراد مختلف کمک می کند - اما آنها به ندرت به او پول می دهند."
   }
 ]
