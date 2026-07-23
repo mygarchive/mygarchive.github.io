@@ -1917,5 +1917,61 @@
     },
     "description_en": "You wake up at an abandoned train station in Krat, a city overwhelmed by madness and bloodlust. In front of you lies a single note that reads:\r\n\"Find Mr. Geppetto. He's here in the city.\"\r\nPlay as Pinocchio, a puppet mechanoid, and fight through everything in your path to find this mystery person. But don't expect any help along the way and don't make the mistake of trusting anyone.\r\nYou must always lie to others if you hope to become human.\r\nInspired by the familiar story of Pinocchio, Lies of P is an action souls-like game set in a cruel, dark Belle Époque world.\r\nAll of humanity is lost in a once beautiful city that has now become a living hell filled with unspeakable horrors.\r\nLies of P offers an elegant world filled with tension, deep combat system and a gripping story.\r\nGuide Pinocchio's and experience his unrelenting journey to become human.A Dark Fairytale RetoldThe timeless tale of Pinocchio has been reimagined with dark and striking visuals.\r\nSet in the fallen city of Krat, Pinnochio desperately fights to become human against all odds.Visual ConceptThe city of Krat was insipired by the Belle Époque Era in Europe (late 19th Century to the early 20th Century) and is the epitome of a collapsed city bereft of prosperity.'Lying' Quests and Multiple EndingsExperience interconnected procedural quests that play out depending on how you lie. These choices will then affect how the story ends.Weapon-Making SystemYou can combine weapons in a multitude of ways to create somethin",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما در یک ایستگاه قطار متروکه در کرات، شهری که غرق در جنون و خونخواهی است، از خواب بیدار می شوید. در مقابل شما یک یادداشت قرار دارد که در آن نوشته شده است:\r\n\"آقای ژپتو را پیدا کن. او اینجا در شهر است.\"\r\nدر نقش پینوکیو، یک مکانیک عروسکی بازی کنید و برای یافتن این شخص اسرارآمیز با همه چیز در مسیر خود مبارزه کنید. اما در این راه انتظار کمک نداشته باشید و این اشتباه را مرتکب نشوید که به کسی اعتماد کنید.\r\nهمیشه باید به دیگران دروغ بگویی اگر امیدواری انسان شوی.\r\nLies of P با الهام از داستان آشنای پینوکیو، یک بازی اکشن روح‌مانند است که در دنیای بی‌رحمانه و تاریک Belle Époque اتفاق می‌افتد.\r\nتمام بشریت در شهری زمانی زیبا گم شده است که اکنون به جهنمی پر از وحشت های غیرقابل وصف تبدیل شده است.\r\nLies of P دنیایی زیبا پر از تنش، سیستم مبارزه عمیق و داستانی جذاب را ارائه می دهد.\r\nپینوکیو را راهنمایی کنید و سفر بی امان او را برای تبدیل شدن به انسان تجربه کنید. بازگویی یک افسانه تاریک داستان جاودانه پینوکیو با تصاویری تاریک و خیره کننده دوباره تصور شده است.\r\nدر شهر سقوط کرده کرات، پینوکیو ناامیدانه می‌جنگد تا در برابر همه شانس‌ها تبدیل به انسان شود. مفهوم بصری شهر کرات الهام‌گرفته از دوران بل اپوک در اروپا (اواخر قرن نوزدهم تا اوایل قرن بیستم) است و مظهر یک شهر در حال فروپاشی و ثروتمندترین شهر است. Endings تلاش‌های رویه‌ای به هم پیوسته را تجربه کنید که بسته به نحوه دروغگویی شما انجام می‌شوند. سپس این انتخاب‌ها بر نحوه پایان داستان تأثیر می‌گذارند. سیستم ساخت سلاح می‌توانید سلاح‌ها را به روش‌های مختلف ترکیب کنید تا چیزی بسازید."
+  },
+  {
+    "id": 1030,
+    "name": "Limbo",
+    "background_image": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+    "rating": 4.14,
+    "metacritic": 88,
+    "released": "2010-07-21",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Double Eleven, Playdead, 鱼俞",
+    "steam_link": "https://store.steampowered.com/app/48000/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/512/512f4bc2092016478ddcb9e7e60aeec0.jpg",
+      "https://media.rawg.io/media/screenshots/63d/63d30699e8fcab9c808e6714d9d3fd59.jpg",
+      "https://media.rawg.io/media/screenshots/de0/de04bbc0fd9904071ef25bf23113c8c4.jpg",
+      "https://media.rawg.io/media/screenshots/eed/eedbbca4ae2debf2d4e23e55d1f6cff7.jpg",
+      "https://media.rawg.io/media/screenshots/59f/59f472b3ed7b414777a29213d70b4d17.jpg",
+      "https://media.rawg.io/media/screenshots/e58/e58d31146e4a9e3786dabcbfc30126bc.jpg",
+      "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS *: Windows 7(SP1+) and above\nProcessor: x64 or x86\nMemory: 4 GB RAM\nDirectX: Version 10\nStorage: 600 MB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "This popular 2D puzzle-platformer creates the atmosphere of isolation, where the player alone can guide the nameless protagonist to his destination. Hostile environments and one-hit deaths may seem difficult, but the game implements a fair amount of checkpoints. The monochrome color palette showcases cartoony proportions of every living thing while making lack of details threatening. Limbo shows you exactly what you encounter, but never how it looks.\n\nLimbo uses the atmosphere and sound design of the horror genre while avoiding tropes of the modern horror games. The overarching theme and unique style compensated for the rather short game with an abrupt ending, making Limbo one of the most impactful games for the genre.\n\nThe simple controls and easy-to-pick-up mechanics help to make a clear distinction, which part of the stage players can interact with, and which part can lead to the quick death. Even though the game is in black and white, this separation is intuitive and natural, so the player would know exactly where to go or what to do.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین پلتفرم‌ساز معمایی دوبعدی محبوب، فضای انزوا را ایجاد می‌کند، جایی که بازیکن به تنهایی می‌تواند قهرمان بی‌نام را به مقصدش هدایت کند. محیط‌های خصمانه و مرگ‌های یک‌باره ممکن است دشوار به نظر برسند، اما بازی دارای تعداد قابل توجهی از نقاط بازرسی است. پالت رنگ تک رنگ نسبت های کارتونی هر موجود زنده را به نمایش می گذارد و در عین حال کمبود جزئیات را تهدید کننده می کند. Limbo دقیقاً به شما نشان می دهد که با چه چیزی روبرو می شوید، اما هرگز چگونه به نظر می رسد.\n\nLimbo از اتمسفر و طراحی صدای ژانر وحشت استفاده می کند و در عین حال از بازی های ترسناک مدرن دوری می کند. تم فراگیر و سبک منحصر به فرد، بازی نسبتاً کوتاه با پایانی ناگهانی را جبران کرد و Limbo را به یکی از تأثیرگذارترین بازی‌های این سبک تبدیل کرد.\n\nکنترل‌های ساده و مکانیک‌های آسان برای برداشتن به شما کمک می‌کند تا تمایز واضحی ایجاد کنید، کدام بخش از صحنه می‌تواند با آن تعامل داشته باشد و کدام بخش می‌تواند منجر به مرگ سریع شود. حتی اگر بازی سیاه و سفید است، این جداسازی بصری و طبیعی است، بنابراین بازیکن دقیقا می‌داند کجا برود یا چه کاری انجام دهد."
   }
 ]
