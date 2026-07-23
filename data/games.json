@@ -3574,5 +3574,40 @@
     },
     "description_en": "The Elder Scrolls IV: Oblivion™ Remastered modernizes the 2006 Game of the Year with all new stunning visuals and refined gameplay. Explore the vast landscape of Cyrodiil like never before and stop the forces of Oblivion from overtaking the land in one of the greatest RPGs ever from the award-winning Bethesda Game Studios.\n\nRediscover Cyrodiil\n\nJourney through the rich world of Tamriel and battle across the planes of Oblivion where handcrafted details have been meticulously recreated to ensure each moment of exploration is awe-inspiring.\n\nNavigate Your Own Story\n\nFrom the noble warrior to the sinister assassin, wizened sorcerer, or scrappy blacksmith, forge your path and play the way you want.\n\nExperience an Epic Adventure\n\nStep inside a universe bursting with captivating stories and encounter an unforgettable cast of characters. Master swordcraft and wield powerful magic as you fight to save Tamriel from the Daedric invasion.\n\nThe Complete Story\n\nExperience everything Oblivion has to offer with previously released story expansions Shivering Isles, Knights of the Nine, and additional downloadable content included in The Elder Scrolls IV: Oblivion Remastered.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Elder Scrolls IV: Oblivion™ Remastered بازی سال 2006 را با تمام جلوه‌های بصری خیره‌کننده جدید و گیم‌پلی اصلاح‌شده مدرن می‌کند. مناظر وسیع Cyrodiil را بی‌سابقه کاوش کنید و نیروهای Oblivion را از سبقت گرفتن از زمین در یکی از بهترین بازی‌های RPG از استودیوی بازی‌سازی Bethesda بازدارد.\n\nCyrodiil را دوباره کشف کنید\n\nدر دنیای غنی Tamriel سفر کنید و در هواپیماهای Oblivion نبرد کنید، جایی که جزئیات دست ساز به دقت بازسازی شده اند تا اطمینان حاصل شود که هر لحظه کاوش الهام بخش است.\n\nدر داستان خود پیمایش کنید\n\nاز جنگجوی نجیب گرفته تا قاتل شوم، جادوگر باهوش، یا آهنگر ناقص، مسیر خود را بسازید و آنطور که می خواهید بازی کنید.\n\nیک ماجراجویی حماسی را تجربه کنید\n\nوارد دنیایی پر از داستان های جذاب شوید و با گروهی از شخصیت های فراموش نشدنی روبرو شوید. در هنگام مبارزه برای نجات تامریل از تهاجم Daedric، در شمشیربازی استاد شوید و جادوی قدرتمندی را به کار ببرید.\n\nداستان کامل\n\nهمه چیزهایی را که Oblivion ارائه کرده است با بسط های داستانی منتشر شده قبلی Shivering Isles، Knights of the Nine و محتوای قابل دانلود اضافی موجود در The Elder Scrolls IV: Oblivion Remastered تجربه کنید."
+  },
+  {
+    "id": 881576,
+    "name": "The Great War: Western Front",
+    "background_image": "https://media.rawg.io/media/screenshots/2fb/2fb53442d9307ee8b1a550d1e4b13461.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2023-03-30",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "Petroglyph, Petroglyph Games",
+    "steam_link": "https://store.steampowered.com/app/2109370/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0c2/0c2ea33171f6c7add36373703723bcdd.jpg",
+      "https://media.rawg.io/media/screenshots/166/16616c79f70fedd5fdb089dd3448a172.jpg",
+      "https://media.rawg.io/media/screenshots/396/396910fa70b90ede3199ccec3d088186.jpg",
+      "https://media.rawg.io/media/screenshots/c5c/c5cf2481a34ebf96f745b9bf568be5bb.jpg",
+      "https://media.rawg.io/media/screenshots/e63/e63ecec8d61794eb667b2940f90c3d0e.jpg",
+      "https://media.rawg.io/media/screenshots/2fb/2fb53442d9307ee8b1a550d1e4b13461.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64bit\nProcessor: Intel i5-4590 / AMD FX-8350\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 780 / AMD Radeon R9 390\nDirectX: Version 11\nStorage: 13 GB available space\nAdditional Notes: SSD Recommended",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64bit\nProcessor: Intel i5-8600K / AMD Ryzen 5 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1060 / AMD Radeon RX 580\nDirectX: Version 11\nStorage: 13 GB available space\nAdditional Notes: SSD Recommended"
+    },
+    "description_en": "The Great War: Western Front is the definitive WW1 strategy game. Play a deciding role in history with this real-time tactical experience as you take charge in the pivotal Western Front from 1914 to 1919.\n\nPick your faction and lead your forces to victory, by directing your armies in gritty real-time battles and by guiding high-level decisions in turn-based strategic gameplay. Dig detailed trenches, research new technologies such as poison gas and tanks, and make decisions that will have a profound and lasting effect on your success. Think like a Commander to either relive history - or redefine it.\n\n\nDiscover unparalleled levels of strategic choice as you step into the role of both Theatre Commander and Field Commander.\n\nAs Theatre Commander, experience enthralling turn-based grand-strategy as you direct the deployment of forces, perform research and carefully consider how you disseminate your resources across the Western Front in a war won by inches. Alongside this, take up the mantle of Field Commander in dynamic real-time battles as you direct units to defeat your opponent, build trenches and perform direct assaults by sending your infantry over the top. Pick your battles and fight them your way to shape the course of history.\n\n\nBattlefields are persistent, and as you continue your push across the Western Front, you will revisit previous battlefields which will still bear the scars and destruction of earlier encounters.\n\nArtillery bombardments leave behind craters, tanks, ",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Great War: Western Front بازی استراتژی قطعی WW1 است. با این تجربه تاکتیکی بی‌درنگ، نقش تعیین‌کننده‌ای در تاریخ داشته باشید، زیرا در جبهه‌ی محوری غرب از سال 1914 تا 1919 مسئولیت می‌گیرید.\n\nجناح خود را انتخاب کنید و نیروهای خود را با هدایت ارتش خود در نبردهای واقعی و با هدایت تصمیمات سطح بالا در گیم پلی استراتژیک نوبتی به پیروزی هدایت کنید. سنگرهای دقیق حفر کنید، در مورد فن آوری های جدید مانند گاز سمی و مخازن تحقیق کنید و تصمیماتی بگیرید که تأثیر عمیق و پایداری بر موفقیت شما خواهد داشت. مانند یک فرمانده فکر کنید تا تاریخ را دوباره زنده کنید - یا آن را دوباره تعریف کنید.\n\n\nبا قدم گذاشتن در نقش فرمانده تئاتر و فرمانده میدان، سطوح بی نظیری از انتخاب استراتژیک را کشف کنید.\n\nبه‌عنوان فرمانده تئاتر، در حین هدایت استقرار نیروها، انجام تحقیقات و نحوه توزیع منابع خود در سراسر جبهه غربی در جنگی که با اینچ به پیروزی رسیده‌اید، یک استراتژی بزرگ نوبتی جذاب را تجربه کنید. علاوه بر این، در نبردهای پویا و بلادرنگ، ردای فرمانده میدان را به دست بگیرید و واحدها را برای شکست دادن حریف خود هدایت کنید، سنگر بسازید و با فرستادن پیاده نظام خود به بالای سر، حملات مستقیم انجام دهید. نبردهای خود را انتخاب کنید و با آنها مبارزه کنید تا مسیر تاریخ را شکل دهید.\n\n\nمیدان‌های نبرد پایدار هستند و همانطور که به فشار خود در سراسر جبهه غربی ادامه می‌دهید، میدان‌های جنگ قبلی را که هنوز زخم‌ها و ویرانی‌های رویارویی‌های قبلی را تحمل می‌کنند، دوباره مشاهده خواهید کرد.\n\nبمباران توپخانه دهانه ها، تانک ها،"
   }
 ]
