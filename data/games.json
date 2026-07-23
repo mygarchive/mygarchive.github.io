@@ -883,5 +883,56 @@
     },
     "description_en": "Deathrun is a fun and exciting multiplayer game where you race through obstacle-filled courses in a battle-royale-style challenge! In this dynamic, cartoonish game, you must overcome deadly traps, dodge hazards, and outrun your opponents to be the last one standing!Built on Unreal Engine 5, Deathrun offers smooth animations and a vibrant visual style. With P2P network architecture, you can compete with friends and players worldwide, enjoying fast and stable matches.Dive into wild challenges, customize your character with a variety of outfits and accessories, and prove that you have what it takes to become the champion!Game Features:Cartoonish graphics on Unreal Engine 5: A bright and stylish visual world where every challenge looks amazing.P2P multiplayer: Engage in low-latency matches no matter where you or your opponents are.Character customization: Create your own unique look with tons of costume and accessory options.Exciting levels: Each arena is full of dynamic traps that will keep you on edge from start to finish.Regular updates: New levels, game modes, and cosmetic items are constantly added.Ready to race through deadly obstacles and become the best of the best? Join us in Deathrun and show what you’re made of!",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDeathrun یک بازی چندنفره سرگرم کننده و هیجان انگیز است که در آن در یک چالش به سبک بتل رویال در مسیرهای پر از موانع مسابقه می دهید! در این بازی پویا و کارتونی، شما باید بر تله‌های مرگبار غلبه کنید، از خطرات دور بزنید و از حریفان خود پیشی بگیرید تا آخرین نفر باشید! Deathrun که بر روی Unreal Engine 5 ساخته شده، انیمیشن‌های روان و سبک بصری پر جنب و جوشی را ارائه می‌دهد. با معماری شبکه P2P، می‌توانید با دوستان و بازیکنان در سراسر جهان رقابت کنید، از مسابقات سریع و پایدار لذت ببرید. در چالش‌های وحشی شیرجه بزنید، شخصیت خود را با انواع لباس‌ها و لوازم جانبی شخصی‌سازی کنید، و ثابت کنید که آنچه را که برای قهرمان شدن لازم است دارید! ویژگی‌های بازی: گرافیک کارتونی در Unreal Engine 5: یک چالش روشن و شیک در دنیای بصری چندگانه. مسابقات با تأخیر کم مهم نیست که شما یا حریفان کجا هستید. سفارشی سازی شخصیت: با هزاران گزینه لباس و لوازم جانبی ظاهر منحصر به فرد خود را ایجاد کنید. سطوح هیجان انگیز: هر عرصه مملو از تله های پویا است که شما را از ابتدا تا انتها در لبه پیشرفت نگه می دارد. به روز رسانی های منظم: سطوح جدید، حالت های بازی، و آیتم های آرایشی و بهداشتی اضافه می شوند.آماده هستید که به طور مداوم به بهترین موانع مسابقه تبدیل شوید؟ به ما در Deathrun بپیوندید و نشان دهید که از چه چیزی ساخته شده اید!"
+  },
+  {
+    "id": 333205,
+    "name": "Door Kickers 2: Task Force North",
+    "background_image": "https://media.rawg.io/media/screenshots/63a/63a03ebcab1a0b5066c429eccffb87f4.jpg",
+    "rating": 4.31,
+    "metacritic": null,
+    "released": "2020-11-03",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "KillHouse Games",
+    "steam_link": "https://store.steampowered.com/app/1239080/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6da/6da50e36debe61bd526bdc1cf8e79a8c.jpeg",
+      "https://media.rawg.io/media/screenshots/64c/64c21304bd81e09173a936ca59bab99a.jpg",
+      "https://media.rawg.io/media/screenshots/f0a/f0a1f8dfede5cf514cb1fcc73d442305.jpg",
+      "https://media.rawg.io/media/screenshots/cca/ccafa6b137bde956faff8ce48dfcb286.jpg",
+      "https://media.rawg.io/media/screenshots/605/605f94f599a2ae446303e3f1ace09bdb.jpg",
+      "https://media.rawg.io/media/screenshots/22f/22f214266f7c80b3789d632d16f505db.jpg",
+      "https://media.rawg.io/media/screenshots/63a/63a03ebcab1a0b5066c429eccffb87f4.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10\nProcessor: dual-core potato\nMemory: 4 GB RAM\nGraphics: Integrated Intel HD 630 or better (OpenGL 3.1 / DirectX 10 compatible video card)\nStorage: 1 GB available space\nAdditional Notes: mouse with 3 buttons and scroll wheel",
+      "recommended": "OS: Windows 10\nProcessor: i5\nMemory: 4 GB RAM\nGraphics: Any dedicated video card newer than 2016\nStorage: 1 GB available space\nAdditional Notes: mouse with 3 buttons and scroll wheel"
+    },
+    "description_en": "Command military Special Ops Teams in gripping tactical combat against a Middle East-based terrorist network. Sequel to RockPaperShotgun's \"Best Tactics Game of 2014\".",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nفرماندهی تیم‌های عملیات ویژه نظامی در نبرد تاکتیکی علیه یک شبکه تروریستی مستقر در خاورمیانه. دنباله بازی RockPaperShotgun \"بهترین بازی تاکتیکی 2014\"."
   }
 ]
