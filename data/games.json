@@ -2255,5 +2255,41 @@
     },
     "description_en": "The definitive ninja hack & slash franchise returns with NINJA GAIDEN 4! Embark on a cutting-edge adventure where legacy meets innovation in this high-octane blend of style and no-holds-barred combat.\n\nReturn of the Legend: Experience a return to the intense, high-speed combat that established NINJA GAIDEN as a premier action game series. Prepare for a legacy reborn with captivating style for a new generation of players.\n\nEpic Hack and Slash Combat, Evolved: NINJA GAIDEN 4 fuses Team NINJA’s tempered combat philosophy with the stylish, dynamic action gameplay of PlatinumGames. Engage in visually stunning combat that rewards precision and strategy. Use Bloodbind Ninjutsu to transform your weapons and unleash devastation upon your enemies, alongside legacy techniques like the Izuna Drop and Flying Swallow. The legendary Ryu Hayabusa also returns with a revamped yet familiar set of tools to master.  With a customizable player experience, NINJA GAIDEN 4 will push action game veterans to their limits while allowing newcomers to enjoy a heart-pounding adventure full of twists and turns.\n\nAn Ancient Enemy Returns: An endless rain of miasma hangs over a near-future Tokyo in the wake of an ancient enemy’s resurrection. The fate of the city lies in the hands of young ninja prodigy, Yakumo. Fighting his way through cybernetic ninja soldiers and otherworldly creatures, Yakumo must reconcile a destiny he shares with the legendary Ryu Hayabusa himself and free Tokyo from the ancient curse ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nفرنچایز قطعی هک و اسلش نینجا با NINJA GAIDEN 4 بازمی گردد! وارد یک ماجراجویی پیشرفته شوید که در آن میراث با نوآوری در این ترکیب سبک با اکتان بالا و نبردهای بدون محدودیت روبرو می شود.\n\nReturn of the Legend: بازگشت به نبردهای شدید و پرسرعت را تجربه کنید که NINJA GAIDEN را به عنوان یک سری بازی اکشن برتر معرفی کرد. آماده شدن برای میراثی که با سبکی فریبنده برای نسل جدیدی از بازیکنان متولد شده است.\n\nمبارزه حماسی با هک اند اسلش، تکامل یافته: NINJA GAIDEN 4 فلسفه رزمی معتدل Team NINJA را با گیم پلی اکشن شیک و پویا PlatinumGames ترکیب می کند. در نبردهای بصری خیره کننده شرکت کنید که به دقت و استراتژی پاداش می دهد. از Bloodbind Ninjutsu برای تغییر دادن سلاح های خود و ایجاد ویرانی بر دشمنان خود، در کنار تکنیک های قدیمی مانند Izuna Drop و Flying Swallow استفاده کنید. Ryu Hayabusa افسانه‌ای نیز با مجموعه‌ای از ابزارهای اصلاح‌شده و در عین حال آشنا بازمی‌گردد.  NINJA GAIDEN 4 با تجربه بازیکنی قابل تنظیم، کهنه‌سربازان بازی‌های اکشن را به محدودیت‌های خود سوق می‌دهد و در عین حال به تازه‌واردها اجازه می‌دهد از یک ماجراجویی دلخراش و پر از پیچ و خم لذت ببرند.\n\nبازگشت یک دشمن باستانی: در پی رستاخیز یک دشمن باستانی، باران بی پایان میاسما بر فراز توکیویی در آینده نزدیک است. سرنوشت شهر در دستان اعجوبه نینجای جوان، یاکومو است. یاکومو در راه مبارزه با سربازان سایبرنتیک نینجا و موجودات ماورایی، باید سرنوشتی را که با خود ریو هایابوسا افسانه ای مشترک است آشتی دهد و توکیو را از نفرین باستانی آزاد کند."
+  },
+  {
+    "id": 558985,
+    "name": "NINJA GAIDEN: Master Collection",
+    "background_image": "https://media.rawg.io/media/games/4ba/4ba82cbd691f84df4f63ed6dfa74e5f7.jpg",
+    "rating": 4.18,
+    "metacritic": 72,
+    "released": "2021-06-10",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Team NINJA",
+    "steam_link": "https://store.steampowered.com/app/575623/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c9c/c9c2da9b2a0b02e74bef09ed5cc831ca.jpg",
+      "https://media.rawg.io/media/screenshots/09f/09fa6f11193edbc2580c3d5f23bf4f26.jpg",
+      "https://media.rawg.io/media/screenshots/5c5/5c5e25f3305762423a3cc057d69d2275.jpg",
+      "https://media.rawg.io/media/screenshots/af8/af8e84b732c9978feaf7983353d072ee.jpg",
+      "https://media.rawg.io/media/screenshots/6c6/6c602d92e56cf5ccc933a67f74f610da.jpg",
+      "https://media.rawg.io/media/screenshots/48b/48bfa0513ce6a707119d92bf2f54ba9c.jpg",
+      "https://media.rawg.io/media/games/4ba/4ba82cbd691f84df4f63ed6dfa74e5f7.jpg"
+    ],
+    "requirements": {
+      "minimum": "CPU: Intel Core i3 4130 or over\r\n\r\nRAM: 4 GB\r\n\r\nOS: Windows 10, 64bit\r\n\r\nVIDEO CARD: NVIDIA GeForce GTX 970 VRAM 4GB or over, AMD R7 370 VRAM 4GB or over\r\n\r\nPIXEL SHADER: 5.1\r\n\r\nVERTEX SHADER: 5.1\r\n\r\nSOUND CARD: DirectX 9.0c or above & 16 bit stereo, 48KHz WAVE file can be played\r\n\r\nFREE DISK SPACE: 20 GB\r\n\r\nDEDICATED VIDEO RAM: 4096 MB",
+      "recommended": "CPU: Intel Core i5 4460 or over, AMD Ryzen5 1400 or over\r\n\r\nRAM: 8 GB\r\n\r\nOS: Windows 10, 64bit\r\n\r\nVIDEO CARD: NVIDIA GeForce GTX 1060 VRAM 6GB or over, AMD RX 580 VRAM 8GB or over\r\n\r\nPIXEL SHADER: 5.1\r\n\r\nVERTEX SHADER: 5.1\r\n\r\nSOUND CARD: DirectX 9.0c or above & 16 bit stereo, 48KHz WAVE file can be played\r\n\r\nFREE DISK SPACE: 20 GB\r\n\r\nDEDICATED VIDEO RAM: 6 GB"
+    },
+    "description_en": "Three extremely high speed and intense ninja action games are now available in one package!\r\nEnjoy 3 games from the NINJA GAIDEN series in this single collection.　\r\n\r\nThe nostalgic yet timeless high-speed action of the series unfolds on the latest hardware, so look forward to heated battles with fearsome opponents!\r\n\r\nIn addition to Ryu Hayabusa, the 4 female characters Ayane, Rachel, Momiji, and Kasumi are also playable. Pair up favorite characters, and switch between characters during battles.\r\n\r\n* The heroines included in this title are the same as the original versions. In addition, the characters that are playable and scenes (modes) vary for each title.\r\n\r\nMost of the previously released game modes and DLC costumes for each title are included in this thrilling collection. In addition to Ryu Hayabusa, each of the other characters also have many different costumes to choose from, allowing for action packed battles in outfits of your choice.\r\n\r\n \r\n\r\nIncluded Titles\r\n\r\n  NINJA GAIDEN Sigma (NINJA GAIDEN Σ)\r\n\r\n  NINJA GAIDEN Sigma 2 (NINJA GAIDEN Σ2)\r\n\r\n  NINJA GAIDEN 3: Razor's Edge\r\n\r\n \r\n\r\nClassic Costumes Included\r\n\r\n  DLC costumes included",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسه بازی اکشن نینجا با سرعت بسیار بالا و شدید اکنون در یک بسته در دسترس هستند!\r\nاز 3 بازی از سری NINJA GAIDEN در این مجموعه لذت ببرید.　\r\n\r\nاکشن پرسرعت نوستالژیک و در عین حال بی‌انتها این سری بر روی جدیدترین سخت‌افزار آشکار می‌شود، بنابراین منتظر نبردهای داغ با مخالفان ترسناک باشید!\r\n\r\nعلاوه بر ریو هایابوسا، ۴ شخصیت زن Ayane، Rachel، Momiji و Kasumi نیز قابل بازی هستند. شخصیت های مورد علاقه خود را جفت کنید و در طول نبرد بین شخصیت ها جابجا شوید.\r\n\r\n* قهرمان های موجود در این عنوان همانند نسخه های اصلی هستند. علاوه بر این، شخصیت های قابل بازی و صحنه ها (حالت ها) برای هر عنوان متفاوت است.\r\n\r\nاکثر حالت های بازی که قبلا منتشر شده بود و لباس های DLC برای هر عنوان در این مجموعه هیجان انگیز گنجانده شده است. علاوه بر ریو هایابوسا، هر یک از شخصیت‌های دیگر لباس‌های مختلفی برای انتخاب دارند که امکان نبردهای اکشن را با لباس‌های دلخواه شما فراهم می‌کند.\r\n\r\n \r\n\r\nعناوین گنجانده شده\r\n\r\n  نینجا گایدن سیگما (NINJA GAIDEN Σ)\r\n\r\n  NINJA GAIDEN Sigma 2 (NINJA GAIDEN Σ2)\r\n\r\n  NINJA GAIDEN 3: Razor's Edge\r\n\r\n \r\n\r\nلباس کلاسیک گنجانده شده است\r\n\r\n  لباس های DLC گنجانده شده است"
   }
 ]
