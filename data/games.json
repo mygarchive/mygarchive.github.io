@@ -787,5 +787,46 @@
     },
     "description_en": "Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the stranded remnants of the future in his hands, Sam embarks on a journey to reunite the shattered world one step at a time. What is the mystery of the Death Stranding? What will Sam discover on the road ahead? A genre defining gameplay experience holds these answers and more.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسم بریجز باید در دنیایی که کاملاً توسط Death Stranding دگرگون شده است، شجاعت کند. سام با حمل بقایای سرگردان آینده در دستان خود، سفری را آغاز می کند تا جهان از هم پاشیده را یک قدم در یک زمان دوباره متحد کند. رمز و راز Death Stranding چیست؟ سام در جاده پیش رو چه چیزی را کشف خواهد کرد؟ تجربه گیم پلی تعیین کننده ژانر این پاسخ ها و موارد دیگر را در اختیار دارد."
+  },
+  {
+    "id": 891532,
+    "name": "Death Stranding 2: On The Beach",
+    "background_image": "https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg",
+    "rating": 4.32,
+    "metacritic": null,
+    "released": "2025-06-26",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Kojima Productions",
+    "steam_link": "https://store.steampowered.com/app/3280350/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7a9/7a97a649fde5f258651ae5e69abf0ed0.jpg",
+      "https://media.rawg.io/media/screenshots/372/372b0916c1ce240a4406373c120abd8f.jpg",
+      "https://media.rawg.io/media/screenshots/9c4/9c4d0e73de232433f8b977c39ca65d45.jpg",
+      "https://media.rawg.io/media/screenshots/a25/a25a14bc153866bd1dc9f776426c7b5b.jpg",
+      "https://media.rawg.io/media/screenshots/8a8/8a87fa3c9a671416715d9ba29789cd7f.jpg",
+      "https://media.rawg.io/media/screenshots/901/901efd17e514cede763eeb9837a80614.jpg",
+      "https://media.rawg.io/media/games/b85/b85bc300d42588af66fb516b7563f74f.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Embark on an inspiring mission of human connection beyond the UCA. Sam—with companions by his side—sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected? Step by step, legendary game creator Hideo Kojima changes the world once again.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nماموریت الهام بخش ارتباط انسانی فراتر از UCA را آغاز کنید. سام - با همراهانش در کنارش - برای نجات بشریت از انقراض راهی سفر جدیدی می شود. به آنها بپیوندید تا در دنیایی که توسط دشمنان ماورایی محاصره شده است، موانع، و یک سوال ترسناک عبور می کنند: آیا باید به هم متصل می شدیم؟ گام به گام، هیدئو کوجیما، خالق افسانه ای بازی، جهان را بار دیگر تغییر می دهد."
   }
 ]
