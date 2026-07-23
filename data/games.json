@@ -2440,5 +2440,46 @@
     },
     "description_en": "UNLEASH YOUR INNER WARRIOR\nUse your Time Powers, combat, and platforming skills to perform deadly combos and defeat time-corrupted enemies and mythological creatures.\n\nLOSE YOURSELF IN THE PRODIGIOUS MOUNT QAF\nDiscover a cursed Persian-inspired world filled with larger-than-life landmarks and explore a variety of highly detailed biomes, each with their own identity, wonder, and danger.\n\nLIVE AN EPIC ADVENTURE\nImmerse yourself in a Persian mythological​ fantasy through an intriguing and original story as you use your wits to solve puzzles, find hidden treasures, and complete quests to learn more about this corrupted place.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجنگجوی درونی خود را آزاد کنید\nاز قدرت های زمانی، مبارزه و مهارت های پلتفرمینگ خود برای اجرای کمبوهای مرگبار و شکست دادن دشمنان خراب شده در زمان و موجودات افسانه ای استفاده کنید.\n\nخود را در کوه شگفت انگیز QAF گم کنید\nدنیای نفرین شده الهام گرفته از فارسی پر از مکان های دیدنی بزرگتر را کشف کنید و انواع بیوم های بسیار دقیق را کشف کنید که هر کدام هویت، شگفتی و خطر خاص خود را دارند.\n\nدر یک ماجراجویی حماسی زندگی کنید\nبا استفاده از عقل خود برای حل معماها، یافتن گنجینه های پنهان و جستجوهای کامل برای کسب اطلاعات بیشتر در مورد این مکان خراب، خود را در یک فانتزی اساطیری ایرانی از طریق یک داستان جذاب و اصلی غرق کنید."
+  },
+  {
+    "id": 1005896,
+    "name": "Project Motor Racing",
+    "background_image": "https://media.rawg.io/media/screenshots/081/081b5dbb6e90e352ea076471f155e10d.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2025-11-25",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 0,
+    "developers": "Straight4 Studios",
+    "steam_link": "https://store.steampowered.com/app/299970/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a41/a411d6a9089538403374e278ee4ef76d.jpg",
+      "https://media.rawg.io/media/screenshots/9f6/9f6a326c2e8e913d2e58985daf530e63.jpg",
+      "https://media.rawg.io/media/screenshots/9f7/9f75d39267d9d8e4a272fd21b6dc7115.jpg",
+      "https://media.rawg.io/media/screenshots/2a4/2a473d634a232e93ba8bbb9ef67202fd.jpg",
+      "https://media.rawg.io/media/screenshots/794/794b5891d00f69db82c299fcf9f38ea2.jpg",
+      "https://media.rawg.io/media/screenshots/475/47551a27f15b7c69148a6f849b308c5e.jpg",
+      "https://media.rawg.io/media/screenshots/081/081b5dbb6e90e352ea076471f155e10d.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (x64)\nProcessor: Intel Core i7-8700 / AMD Ryzen 5 (minimum 12 threads required)\nMemory: 16 GB RAM\nGraphics: NVIDIA RTX 2060 / AMD Radeon RX 580 (6 GB VRAM or more)\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 50 GB available space\nSound Card: Sound card\nAdditional Notes: These system requirements can´t cover all possible system configurations so issues could occur that influence the functionality in some cases.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 11 (x64)\nProcessor: Intel Core i7-10700 or AMD Ryzen 7 (minimum 12 threads required)\nMemory: 24 GB RAM\nGraphics: NVIDIA RTX 3070 / AMD Radeon RX 6800 (8 GB VRAM or more)\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 50 GB available space\nSound Card: Sound card\nAdditional Notes: These system requirements can´t cover all possible system configurations so issues could occur that influence the functionality in some cases."
+    },
+    "description_en": "Built4racers |\n\nThis is Project Motor Racing\n\nReplicating the challenge and sensory overload of professional-level race cars with all the uncompromising passion of big-time motorsport, Project Motor Racing blends 20 years’ worth of racing simulator know-how into one unforgettable racing experience.\n\nAll the passion, beauty & intensity of pro motorsport merging the most iconic cars & circuits with a new benchmark in handling performance.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBuilt4racers |\n\nاین Project Motor Racing است\n\nProject Motor Racing با تکرار چالش و بار بیش از حد حسی ماشین‌های مسابقه‌ای در سطح حرفه‌ای با تمام شور و اشتیاق سازش ناپذیر ورزش‌های موتوری بزرگ، 20 سال دانش شبیه‌ساز مسابقه را در یک تجربه مسابقه‌ای فراموش‌نشدنی ترکیب می‌کند.\n\nتمام اشتیاق، زیبایی و شدت موتوراسپرت حرفه ای که نمادین ترین خودروها و مدارها را با معیاری جدید در عملکرد هندلینگ ادغام می کند."
   }
 ]
