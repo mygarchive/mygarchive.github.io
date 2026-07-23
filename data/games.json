@@ -665,5 +665,45 @@
     },
     "description_en": "Dead Cells is a roguelike adventure title developed by Motion Twin.\n\n###Story\nNot much story is present in the game, as only bits of any information are given out to the players. The game takes place at a remote island, where the players take place of the Prisoner. The Prisoner does not speak, yet he can express confusion and frustration using his body language. The Prisoner is basically immortal, as, in case of death, his head disconnects itself from the Prisoner's body, and gets back to the game's starting area. \n\n###Gameplay\nThe game's heavily inspired by The Binding of Isaac, as stated by the developers.\n\nDead Cells features the procedurally generated environments that are typical for roguelike games, yet it puts a strong emphasis on exploration that is typically found in metroidvanias.\n\nThe players set out to explore the island where a prison was built. As the players come down into the dungeons of the island, they find various loot, fight dangerous creatures, collect armor, abilities, and power-ups. Upon death, the players lose all the loot they had on them. It is possible to find a shopkeep somewhere in the dungeons to purchase new equipment or have some rest. \n\nThe game uses death as a learning experience, as it randomizes the placement of enemies, so the players can't take multiple attempts to complete a level. The developers want the player to examine the enemy behavior and learn how to combat the enemies themselves.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDead Cells یک عنوان ماجراجویی سرکش است که توسط Motion Twin ساخته شده است.\n\n###داستان\nداستان چندانی در بازی وجود ندارد، زیرا تنها بخش‌هایی از اطلاعات به بازیکنان داده می‌شود. بازی در جزیره ای دور افتاده اتفاق می افتد، جایی که بازیکنان جای Prisoner را می گیرند. زندانی صحبت نمی کند، با این حال می تواند با استفاده از زبان بدن خود سردرگمی و ناامیدی را بیان کند. Prisoner اساساً جاودانه است، زیرا در صورت مرگ، سر او از بدن Prisoner جدا می شود و به منطقه شروع بازی باز می گردد. \n\n###بازی\nهمانطور که توسعه دهندگان گفته اند، بازی به شدت از The Binding of Isaac الهام گرفته شده است.\n\nDead Cells دارای محیط‌هایی است که به صورت رویه‌ای تولید می‌شوند که برای بازی‌های سرکش معمولی هستند، با این حال تأکید زیادی بر اکتشاف دارد که معمولاً در مترویدوانیا یافت می‌شود.\n\nبازیکنان برای کاوش در جزیره ای که در آن زندان ساخته شده بود، حرکت کردند. با پایین آمدن بازیکنان به سیاه چال های جزیره، غارت های مختلفی پیدا می کنند، با موجودات خطرناک مبارزه می کنند، زره ها، توانایی ها و قدرت ها را جمع آوری می کنند. پس از مرگ، بازیکنان تمام غارتی را که بر روی خود داشتند از دست می‌دهند. ممکن است در جایی در سیاه چال ها مغازه دار پیدا کنید تا تجهیزات جدید بخرید یا کمی استراحت کنید. \n\nاین بازی از مرگ به عنوان یک تجربه یادگیری استفاده می کند، زیرا قرار دادن دشمنان را تصادفی می کند، بنابراین بازیکنان نمی توانند چندین بار برای تکمیل یک سطح تلاش کنند. توسعه دهندگان از بازیکن می خواهند رفتار دشمن را بررسی کند و یاد بگیرد که چگونه با دشمنان خود مبارزه کند."
+  },
+  {
+    "id": 42857,
+    "name": "Dead Island 2",
+    "background_image": "https://media.rawg.io/media/games/9cd/9cd22ae5aebd922f96f2bc50efab83df.jpg",
+    "rating": 3.68,
+    "metacritic": 75,
+    "released": "2023-04-21",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 11,
+    "developers": "Dambuster Studios",
+    "steam_link": "https://store.steampowered.com/app/934700/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/2c6/2c60d574b9e1d1b30ce90e75b8be05e0.jpeg",
+      "https://media.rawg.io/media/screenshots/d04/d040d2a3ee04f8dc9ae5c07cb9788b49.jpeg",
+      "https://media.rawg.io/media/screenshots/bf2/bf2af639b4ba20f6733876c296a3e878.jpeg",
+      "https://media.rawg.io/media/screenshots/5a2/5a2e05e11184b88908ec876fd46ef027.jpg",
+      "https://media.rawg.io/media/screenshots/8fd/8fda490dea7045e6427f0df96eeb9967.jpg",
+      "https://media.rawg.io/media/games/9cd/9cd22ae5aebd922f96f2bc50efab83df.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD FX-9590 / Intel Core i7-7700HQ\nMemory: 10 GB RAM\nGraphics: Radeon R9 390X (8192 VRAM) / GeForce GTX 1060 (6144 VRAM)\nDirectX: Version 12\nStorage: 70 GB GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Ryzen 5 5600X / Intel Core i9-9900k\nMemory: 10 GB RAM\nGraphics: Radeon RX 6800 XT (16384 VRAM) / GeForce RTX 2070 Super (8192 MB)\nDirectX: Version 12\nStorage: 70 GB GB available space"
+    },
+    "description_en": "A deadly virus is spreading across Los Angeles, California, turning its inhabitants into ravenous zombies. The city is in quarantine and the military have retreated. Bitten, infected, but more than just immune, you learn to harness the zombie inside. Only you, and the handful of other swaggering fellows who happen to be resistant to the pathogen, holds the future of LA (and humanity), in the balance. As you uncover the truth behind the outbreak you’ll discover who – or what – you are. Survive, evolve, save the world – just another day in LA! The much-loved zombie saga is back with a unique formula of horror, dark humor and over the top zombie-slaying, spanning an epic pulp adventure. Dead Island 2 is a thrilling First-Person Action RPG that takes players across a brand-new playground. Stylish, vibrant and flooded with zombie infection, explore iconic, gore-drenched Los Angeles. Meet larger-than-life characters. Slay countless foes in exquisitely bloody detail. And evolve to become the ultimate Zombie Slayer. See you in HELL-A!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ویروس کشنده در سراسر لس آنجلس، کالیفرنیا در حال گسترش است و ساکنان آن را به زامبی های درنده تبدیل می کند. شهر در قرنطینه است و ارتش عقب نشینی کرده است. گزیده شده، آلوده، اما بیش از اینکه فقط مصون باشید، یاد می گیرید که زامبی درون خود را مهار کنید. فقط شما، و تعداد انگشت شماری از افراد متکبر دیگر که اتفاقاً در برابر پاتوژن مقاوم هستند، آینده لس آنجلس (و بشریت) را در تعادل نگه می دارید. همانطور که حقیقت را در پس شیوع بیماری کشف می کنید، متوجه خواهید شد که چه کسی هستید - یا چیست. زنده بمانید، تکامل پیدا کنید، جهان را نجات دهید - فقط یک روز دیگر در لس آنجلس! حماسه زامبی بسیار دوست داشتنی با فرمول منحصر به فرد ترسناک، طنز تاریک و زامبی کشی، که یک ماجراجویی حماسی را در بر می گیرد، بازگشته است. Dead Island 2 یک نقش آفرینی اکشن اول شخص هیجان انگیز است که بازیکنان را به یک زمین بازی کاملاً جدید می برد. شیک، پر جنب و جوش و مملو از عفونت زامبی‌ها، لس‌آنجلس نمادین و غرق در غرق شدن را کاوش کنید. با شخصیت های بزرگتر از زندگی آشنا شوید. دشمنان بی شماری را با جزئیات بسیار خونین بکشید. و برای تبدیل شدن به زامبی کش نهایی تکامل پیدا کنید. می بینمت در HELL-A!"
   }
 ]
