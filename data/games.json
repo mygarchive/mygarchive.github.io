@@ -1602,5 +1602,51 @@
     },
     "description_en": "INSIDE is a platform adventure game that transfers the atmosphere of a dystopic world. Players assume the role of a lonely boy, who walks through the monochromatic 2.5D environment and solves various puzzles. By the time main antagonists of the character pursue him throughout the whole world. The main storyline follows the unnamed boy through the in-game world locations including a forest, a farm, and a fictional laboratory, where experiments on bodies are held. The gameplay is divided into levels tied to each location. While completing them, the boy, controlled by players, has to swim, run, climb the obstacles and use his supernatural ability to control bodies with his special helmet. In the course of the travel, the protagonist also comes across a siren-like creature, who gives him gear for breathing underwater. The death occurs in several ways ranging from drowning to being shot with a tranquilizer dart. In addition to the basic ending, the storyline features an alternate one, which unlocks after collecting all the hidden glowing orbs.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nINSIDE یک بازی ماجراجویی پلتفرمی است که فضای یک دنیای دیستوپیک را منتقل می کند. بازیکنان نقش پسری تنها را بر عهده می گیرند که در محیط تک رنگ 2.5 بعدی قدم می زند و معماهای مختلف را حل می کند. زمانی که آنتاگونیست های اصلی شخصیت او را در سراسر جهان تعقیب می کنند. خط داستانی اصلی پسر ناشناس را در مکان‌های دنیای درون بازی از جمله جنگل، مزرعه و آزمایشگاه خیالی دنبال می‌کند که در آن آزمایش‌ها روی اجساد انجام می‌شود. گیم پلی به سطوح مرتبط با هر مکان تقسیم می شود. در حین تکمیل آنها، پسر که توسط بازیکنان کنترل می شود، باید شنا کند، بدود، از موانع بالا برود و از توانایی فوق طبیعی خود برای کنترل بدن با کلاه مخصوص خود استفاده کند. در طول سفر، قهرمان داستان با موجودی آژیر مانند روبرو می‌شود که به او وسایلی برای تنفس زیر آب می‌دهد. مرگ به روش های مختلفی از غرق شدن تا شلیک با دارت آرام بخش رخ می دهد. علاوه بر پایان اصلی، خط داستانی دارای یک پایان دیگر است که پس از جمع آوری تمام گوی های درخشان پنهان باز می شود."
+  },
+  {
+    "id": 455597,
+    "name": "It Takes Two",
+    "background_image": "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg",
+    "rating": 4.46,
+    "metacritic": 88,
+    "released": "2021-03-26",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 10,
+    "developers": "Hazelight",
+    "steam_link": "https://store.steampowered.com/app/1426210/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/252/252844a85405a3147440806709a47f79.jpg",
+      "https://media.rawg.io/media/screenshots/88a/88a0a4d7a1f4dbe78c2c34810afcaffa.jpg",
+      "https://media.rawg.io/media/screenshots/bef/bef5d6085129fda4d26a2293b9edb30e.jpg",
+      "https://media.rawg.io/media/screenshots/0f1/0f157efb373e3c5da268f2ecdb03701e.jpg",
+      "https://media.rawg.io/media/screenshots/5f4/5f429ee02d86be1822963fd0a77a71ab.jpg",
+      "https://media.rawg.io/media/screenshots/c01/c01d8a0c413b3a065ea52b80f1ad6212.jpg",
+      "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 8.1 64-bit or Windows 10 64-bit\nProcessor: Intel Core i3-2100T or AMD FX 6100\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 660 or AMD R7 260x\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 50 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 8.1 64-bit or Windows 10 64-bit\nProcessor: Intel Core i5 3570K or AMD Ryzen 3 1300x\nMemory: 16 GB RAM\nGraphics: Nvidia GeForce GTX 980 or AMD R9 290X\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 50 GB available space"
+    },
+    "description_en": "Bring your favorite co-op partner and together step into the shoes of May and Cody. As the couple is going through a divorce, through unknown means their minds are transported into two dolls which their daughter, Rose, made to represent them. Now they must reluctantly find a way to get back into their bodies, a quest which takes them through the most wild, unexpected and fantastical journey imaginable.\r\n\r\nIt Takes Two further builds on Hazelight’s proven track record of making rich and engaging co-op experiences. While developing It Takes Two it has been the team’s number one priority to truly merge story and gameplay. Allowing both to influence each other guarantees a game that is as engaging to play as it is compelling to experience.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشریک تعاونی مورد علاقه خود را بیاورید و با هم وارد کفش های می و کودی شوید. از آنجایی که این زوج طلاق می گذرانند، از طریق راه های نامعلومی ذهن آنها به دو عروسک منتقل می شود که دخترشان، رز، برای نمایندگی آنها ساخته است. اکنون آنها باید با اکراه راهی برای بازگشت به بدن خود پیدا کنند، تلاشی که آنها را در وحشیانه ترین، غیرمنتظره ترین و خارق العاده ترین سفری که قابل تصور است می برد.\r\n\r\nIt Takes Two بیشتر بر اساس سابقه اثبات شده Hazelight در ایجاد تجربیات مشارکتی غنی و جذاب است. در حین توسعه It Takes Two، ادغام واقعی داستان و گیم پلی اولویت اول تیم بوده است. اجازه دادن به هر دوی آنها برای تأثیرگذاری بر یکدیگر، تضمین کننده یک بازی است که به همان اندازه که برای بازی جذاب است، تجربه آن جذاب است."
   }
 ]
