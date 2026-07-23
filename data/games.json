@@ -5268,5 +5268,41 @@
     },
     "description_en": "Welcome to the Living Lands, a mysterious island filled with adventure and danger.\nSet in the fictional world of Eora that was first introduced to players in the Pillars of Eternity franchise, Avowed is a first-person fantasy action RPG from the award-winning team at Obsidian Entertainment.\nYou are the envoy of Aedyr, a distant land, sent to investigate rumors of a spreading plague throughout the Living Lands - an island full of mysteries and secrets, danger and adventure, and choices and consequences, and untamed wilderness. You discover a personal connection to the Living Lands and an ancient secret that threatens to destroy everything. Can you save this unknown frontier and your soul from the forces threatening to tear them asunder?",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه سرزمین های زنده خوش آمدید، جزیره ای اسرارآمیز پر از ماجراجویی و خطر.\nدر دنیای خیالی Eora که برای اولین بار در فرنچایز Pillars of Eternity به بازیکنان معرفی شد، Avowed یک نقش آفرینی اکشن فانتزی اول شخص از تیم برنده جایزه در Obsidian Entertainment است.\nشما فرستاده آدیر هستید، سرزمینی دور، که برای بررسی شایعات شیوع طاعون در سرتاسر سرزمین های زنده فرستاده شده اید - جزیره ای پر از اسرار و اسرار، خطر و ماجراجویی، و انتخاب ها و عواقب، و بیابان رام نشده. شما یک ارتباط شخصی با سرزمین های زنده و یک راز باستانی کشف می کنید که همه چیز را تهدید می کند. آیا می توانید این مرز ناشناخته و روح خود را از نیروهایی که آنها را تهدید به پاره کردن آنها می کنند نجات دهید؟"
+  },
+  {
+    "id": 28623,
+    "name": "Batman: Arkham City",
+    "background_image": "https://media.rawg.io/media/games/b5a/b5a1226bfd971284a735a4a0969086b3.jpg",
+    "rating": 4.41,
+    "metacritic": 94,
+    "released": "2011-10-18",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 20,
+    "developers": "Rocksteady Studios",
+    "steam_link": "https://store.steampowered.com/app/200260/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/186/186256b37ba30738c118daefceba77e4.jpg",
+      "https://media.rawg.io/media/screenshots/55b/55ba4f622a1babc31b54489ea0144758.jpg",
+      "https://media.rawg.io/media/screenshots/bb5/bb5411aecf12acfd49faba2b6ce813a3.jpg",
+      "https://media.rawg.io/media/screenshots/395/39596a0aa8ff855314e1e7f5d989456f.jpg",
+      "https://media.rawg.io/media/screenshots/6b9/6b922232de644023769aa82cdff46fdf.jpg",
+      "https://media.rawg.io/media/screenshots/3a4/3a458afd3a2787ade55e6b3756e73751.jpg",
+      "https://media.rawg.io/media/games/b5a/b5a1226bfd971284a735a4a0969086b3.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The plot of Arkham City begins one and a half years after the events of Arkham Asylum. Quincy Sharp, former superintendent of the Arkham Psychiatric Hospital, became mayor of Gotham and created the prison \"Arkham City\". Prisoners of Arkham City are not controlled by anyone in its borders, they are only forbidden from running away ...\r\nThere are all the regular characters in the game - Joker, Two-Face, Catwoman, Ra's al Ghul, James Gordon and others. Each villain individually and all of them together give Batman difficult tasks that move the game forward.\r\nArkham City has an open world. All gadgets from Arkham Asylum are available to the player from the very beginning. Many of them are improved, there are also new ones. The game has a \"Detective mode\" - the skeletons of enemies are highlighted, it is possible to conduct various examinations, for example, tracking the flight of a sniper's bullet. There is also access to a database that tracks villains in the city.\r\nAt a certain point in the story, you can play as a Catwoman. She has an analogue of \"Detective Mode\" - \"Mode of the thief\".\r\nThe visual decision and soundtrack are very atmospheric, soft, but give a clear sense of gloom and horror, entirely in the spirit of the plot and characters.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان شهر آرکام یک سال و نیم پس از حوادث Arkham Asylum آغاز می شود. کوئینسی شارپ، سرپرست سابق بیمارستان روانی آرکام، شهردار گاتهام شد و زندان \"آرکهام سیتی\" را ایجاد کرد. زندانیان شهر آرکام در مرزهای آن توسط کسی کنترل نمی شوند، آنها فقط از فرار منع می شوند ...\r\nهمه شخصیت های معمولی در بازی وجود دارند - جوکر، دو چهره، زن گربه ای، راس الغول، جیمز گوردون و دیگران. هر شرور به صورت جداگانه و همه آنها با هم وظایف سختی را به بتمن می دهند که بازی را به جلو می برد.\r\nشهر آرکام یک دنیای باز دارد. تمامی گجت های Arkham Asylum از همان ابتدا در اختیار بازیکن قرار می گیرد. بسیاری از آنها بهبود یافته اند، موارد جدید نیز وجود دارد. بازی دارای \"حالت کارآگاه\" است - اسکلت های دشمنان برجسته شده است، امکان انجام آزمایشات مختلف، به عنوان مثال، ردیابی پرواز گلوله تک تیرانداز وجود دارد. همچنین دسترسی به پایگاه داده ای وجود دارد که افراد شرور را در شهر ردیابی می کند.\r\nدر یک نقطه خاص از داستان، شما می توانید به عنوان یک زن گربه ای بازی کنید. او یک آنالوگ از \"حالت کارآگاه\" - \"حالت دزد\" دارد.\r\nتصمیم بصری و موسیقی متن بسیار جوی، ملایم است، اما حس واضحی از تاریکی و وحشت را کاملاً مطابق با روح داستان و شخصیت ها ارائه می دهد."
   }
 ]
