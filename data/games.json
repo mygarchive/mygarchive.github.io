@@ -5376,5 +5376,51 @@
     },
     "description_en": "Batman Arkham Origins is an action-adventure game, the third main entry in Warner Brothers’ Batman: Arkham series. Concerning story, Origins is the prequel to the first game in the franchise, Batman: Arkham Asylum. It takes place in Gotham City on Christmas Eve. The notorious crime lord Black Mask places $50 million bounties on Batman and hires eight of the world’s deadliest assassins including Bane, Deathstroke, Killer Croc and others. The story covers some events important for the other installments in the series, like Batman’s first encounter with Joker and incidents that lead to the reopening of Arkham Asylum. \nThe gameplay of Origins is very similar to the previous two installments. It mostly consists of beat-em-up sequences, stealth sequences, and investigations. Like in Arkham City player can freely explore an open world, but this time it is not just Arkham Asylum, but the whole of Gotham City.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman Arkham Origins یک بازی اکشن-ماجراجویی، سومین ورودی اصلی از سری Batman: Arkham برادران وارنر است. در رابطه با داستان، Origins پیش درآمد اولین بازی این فرنچایز، Batman: Arkham Asylum است. در شب کریسمس در شهر گاتهام اتفاق می افتد. بلک ماسک، ارباب جنایتکار بدنام، 50 میلیون دلار جایزه برای بتمن می گذارد و هشت نفر از مرگبارترین قاتلان جهان از جمله Bane، Deathstroke، Killer Croc و دیگران را استخدام می کند. داستان برخی از رویدادهای مهم برای قسمت های دیگر این مجموعه را پوشش می دهد، مانند اولین برخورد بتمن با جوکر و حوادثی که منجر به بازگشایی Arkham Asylum می شود. \nگیم پلی بازی Origins بسیار شبیه به دو قسمت قبلی است. بیشتر شامل سکانس های ضرب و شتم، سکانس های مخفی کاری و تحقیقات است. مانند بازی Arkham City، بازیکن می تواند آزادانه یک جهان باز را کاوش کند، اما این بار نه تنها Arkham Asylum، بلکه کل شهر Gotham است."
+  },
+  {
+    "id": 17572,
+    "name": "Batman: Arkham Asylum Game of the Year Edition",
+    "background_image": "https://media.rawg.io/media/games/fd8/fd882c8267a44621a0de6f9cec77ae90.jpg",
+    "rating": 4.39,
+    "metacritic": 91,
+    "released": "2010-03-26",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Feral Interactive, Rocksteady Studios",
+    "steam_link": "https://store.steampowered.com/app/35140/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/85b/85bb2ed59cc85c21bfdc068012dfc5c8.jpg",
+      "https://media.rawg.io/media/screenshots/05e/05ebf1dc9066bf43e9c45b31399e741d.jpg",
+      "https://media.rawg.io/media/screenshots/ee2/ee2b4270a1eb48b0aa2ac3deb882ce9b.jpg",
+      "https://media.rawg.io/media/screenshots/a43/a43dde8dcb6445387f429da88d50b703.jpg",
+      "https://media.rawg.io/media/screenshots/803/803acffeb45da0d884582991f380c6bf.jpg",
+      "https://media.rawg.io/media/screenshots/23e/23e14000ba6668b022633e3600c8c140.jpg",
+      "https://media.rawg.io/media/games/fd8/fd882c8267a44621a0de6f9cec77ae90.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Vista/XP\n                    Processor: 3Ghz Intel or AMD or any Dual Core\n                    Memory: 1GB Ram(XP)/2GB Ram\n                    Graphics: PCI Express SM3 NVidia 6600/ ATI 1300\n                    DirectX®: 9\n                    Hard Drive: 8GB free space\n                    Sound: Any onboard sound card",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Batman: Arkham Asylum is the first game in Warner Brothers’ action-adventure franchise Batman: Arkham. The game takes places in fictional Asylum on Arkham Island near Gotham City where dangerous and mentally unstable criminals are kept.  \nThe story follows Batman as he captures Joker after his assault on Gotham City Hall. The game starts when Batman accompanies convoy that transfers Joker to the Arkham Asylum. With the help from Harley Queen and corrupted police officers, Joker manages to escape. He releases his gang members takes over the Asylum. Now Batman must defeat Joker, restore order in Arkham and save Gotham from bombs that Joker planted in it. During the game, the player meets several characters from Batman universe such as Scarecrow, Killer Croc, Poison Ivy, Commissioner Gordon and others.  \nThe gameplay is a mix of action sequences, investigations and puzzle solving. In action sequences Batman has to defeat villains with brute force or stealthy, using his numerous gadgets.\nThe Game of the Year Edition of Batman: Arkham Asylum includes support of 3D displays, two pairs of 3D glasses, and six previously released DLCs.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: Arkham Asylum اولین بازی از مجموعه اکشن-ماجراجویی برادران وارنر Batman: Arkham است. بازی در پناهگاه خیالی در جزیره آرکام در نزدیکی شهر گاتهام می گذرد، جایی که جنایتکاران خطرناک و روانی ناپایدار نگهداری می شوند.  \nداستان به دنبال بتمن است که جوکر را پس از حمله به تالار شهر گاتهام دستگیر می کند. بازی زمانی شروع می شود که بتمن کاروانی را همراهی می کند که جوکر را به آسایشگاه Arkham منتقل می کند. جوکر با کمک هارلی کویین و افسران پلیس فاسد موفق به فرار می شود. او اعضای باند خود را آزاد می کند تا پناهگاه را تصاحب کند. حالا بتمن باید جوکر را شکست دهد، نظم را در آرکام بازگرداند و گاتهام را از بمب هایی که جوکر در آن کار گذاشته نجات دهد. در طول بازی، بازیکن با چندین شخصیت از دنیای بتمن مانند Scarecrow، Killer Croc، Poison Ivy، Commissioner Gordon و دیگران آشنا می شود.  \nگیم پلی بازی ترکیبی از سکانس های اکشن، تحقیقات و حل پازل است. در سکانس‌های اکشن بتمن باید با استفاده از ابزارهای متعدد خود، شروران را با نیروی خشن یا مخفیانه شکست دهد.\nنسخه بازی سال Batman: Arkham Asylum شامل پشتیبانی از نمایشگرهای سه بعدی، دو جفت عینک سه بعدی و شش DLC است که قبلا منتشر شده بود."
   }
 ]
