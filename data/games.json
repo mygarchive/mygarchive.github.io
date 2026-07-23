@@ -5340,5 +5340,41 @@
     },
     "description_en": "Batman: Arkham Knight is the final instalment for the Arkham series by now. Joining forces with Bruce Wayne for the last time, we have to oppose Scarecrow and other iconic villains such as The Riddler, Harleen Quinzel a.k.a. Harley Quinn, Penguin and others.\n\nThe story continued after events in Arkham City when Joker died due to infection in his blood. Now, Scarecrow tries to release a new fear toxin, meanwhile new mysterious Arkham Knight plots against Batman as well. Still having consequences after being poisoned by the Joker and seeing visions with him, Bruce has to prevail the death of Gotham City.\n\nThe gameplay mechanics stays the same to the Arkham series. Melee combat system, use of the detective skills to find clues and gadgets still play a major role in Batman's fight against evil. Although now you can travel around not only by your grappling hook but a legendary Batmobile as well. Iconic voices of the characters, Kevin Conroy and Mark Hammil once again return to give their voices for the last game in Arkham series.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: Arkham Knight آخرین قسمت سری Arkham است. با پیوستن به نیروهای بروس وین برای آخرین بار، باید با Scarecrow و دیگر شخصیت های شرور مانند The Riddler، Harleen Quinzel با نام مستعار Harley Quinn، Penguin و دیگران مقابله کنیم.\n\nداستان پس از اتفاقاتی در شهر Arkham ادامه یافت که جوکر به دلیل عفونت در خون خود درگذشت. اکنون، Scarecrow سعی می کند یک سم ترس جدید را آزاد کند، در همین حال، شوالیه اسرارآمیز جدید Arkham نیز علیه بتمن نقشه می کشد. بروس که پس از مسموم شدن توسط جوکر و دیدن رویاهایی با او عواقبی دارد، باید بر مرگ شهر گاتهام پیروز شود.\n\nمکانیک گیم پلی بازی در سری Arkham یکسان است. سیستم مبارزه با غوغا، استفاده از مهارت های کارآگاهی برای یافتن سرنخ ها و ابزارها هنوز نقش مهمی در مبارزه بتمن با شر دارد. اگرچه اکنون می توانید نه تنها با قلاب گیر خود بلکه با یک Batmobile افسانه ای به اطراف سفر کنید. صداهای نمادین شخصیت ها، کوین کانروی و مارک همیل بار دیگر بازگشته اند تا صدای خود را برای آخرین بازی در سری Arkham ارائه دهند."
+  },
+  {
+    "id": 2235,
+    "name": "Batman: Arkham Origins",
+    "background_image": "https://media.rawg.io/media/games/fc3/fc30790a3b3c738d7a271b02c1e26dc2.jpg",
+    "rating": 3.95,
+    "metacritic": 74,
+    "released": "2013-10-25",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 12,
+    "developers": "Warner Bros. Interactive, Splash Damage",
+    "steam_link": "https://store.steampowered.com/app/209000/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/dc3/dc388c04293881ff771241a80b4c2261.jpg",
+      "https://media.rawg.io/media/screenshots/ca9/ca9e389da140dad6aac3829f840da57a.jpg",
+      "https://media.rawg.io/media/screenshots/e82/e82b3df1d687b0590643ad82d5a54fc9.jpg",
+      "https://media.rawg.io/media/screenshots/04e/04e478ce59abed28b912d6b296378227.jpg",
+      "https://media.rawg.io/media/screenshots/9e7/9e7cb59972f4b09f5bf9cf0d7c4fe4b1.jpg",
+      "https://media.rawg.io/media/screenshots/0cb/0cb5067fa0e917050d5a84e0f6177f8f.jpeg",
+      "https://media.rawg.io/media/games/fc3/fc30790a3b3c738d7a271b02c1e26dc2.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS:32-bit:  Vista, Win 7, Win 8\nProcessor:Intel Core 2 Duo, 2.4 GHz / AMD Athlon X2, 2.8 GHz\nMemory:2 GB RAM\nGraphics:NVIDIA GeForce 8800 GTS / AMD Radeon HD 3850 or better with 512 MB of VRAM\nDirectX®:9.0c\n        Hard Drive Space:20 GB\n        Other Requirements:Broadband Internet connection\n        Additional Notes:Windows XP and DirectX® 9.0b and below not supported",
+      "recommended": "OS:64-bit: Vista, Win 7, Win 8\nProcessor:Intel Core i5-750, 2.67 GHz / AMD Phenom II X4 965, 3.4 GHz\nMemory:4 GB RAM\nGraphics:NVIDIA GeForce GTX 560 / AMD Radeon HD 6950 or better with 768 MB+ of VRAM (DirectX 11 Compatible)\nDirectX®:11\n        Hard Drive Space:20 GB\n        Other Requirements:Broadband Internet connection\n        Additional Notes:Windows XP and DirectX® 9.0b and below not supported"
+    },
+    "description_en": "Batman Arkham Origins is an action-adventure game, the third main entry in Warner Brothers’ Batman: Arkham series. Concerning story, Origins is the prequel to the first game in the franchise, Batman: Arkham Asylum. It takes place in Gotham City on Christmas Eve. The notorious crime lord Black Mask places $50 million bounties on Batman and hires eight of the world’s deadliest assassins including Bane, Deathstroke, Killer Croc and others. The story covers some events important for the other installments in the series, like Batman’s first encounter with Joker and incidents that lead to the reopening of Arkham Asylum. \nThe gameplay of Origins is very similar to the previous two installments. It mostly consists of beat-em-up sequences, stealth sequences, and investigations. Like in Arkham City player can freely explore an open world, but this time it is not just Arkham Asylum, but the whole of Gotham City.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman Arkham Origins یک بازی اکشن-ماجراجویی، سومین ورودی اصلی از سری Batman: Arkham برادران وارنر است. در رابطه با داستان، Origins پیش درآمد اولین بازی این فرنچایز، Batman: Arkham Asylum است. در شب کریسمس در شهر گاتهام اتفاق می افتد. بلک ماسک، ارباب جنایتکار بدنام، 50 میلیون دلار جایزه برای بتمن می گذارد و هشت نفر از مرگبارترین قاتلان جهان از جمله Bane، Deathstroke، Killer Croc و دیگران را استخدام می کند. داستان برخی از رویدادهای مهم برای قسمت های دیگر این مجموعه را پوشش می دهد، مانند اولین برخورد بتمن با جوکر و حوادثی که منجر به بازگشایی Arkham Asylum می شود. \nگیم پلی بازی Origins بسیار شبیه به دو قسمت قبلی است. بیشتر شامل سکانس های ضرب و شتم، سکانس های مخفی کاری و تحقیقات است. مانند بازی Arkham City، بازیکن می تواند آزادانه یک جهان باز را کاوش کند، اما این بار نه تنها Arkham Asylum، بلکه کل شهر Gotham است."
   }
 ]
