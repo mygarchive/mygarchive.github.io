@@ -3136,5 +3136,46 @@
     },
     "description_en": "The game takes place in the setting of the epic \"Star Wars\". This game is the third in a series of games with the common name of Star Wars Battlefront.\n\nThe gameplay consists of battles. You can play on the side of the rebels or on the side of the Empire. You can also go through missions based on the stories of movies. You can play alone and in multiplayer modes, supporting up to 40 players. Multiplayer modes work in a network game or behind a single screen. The game provides an opportunity to participate in the battles for Hoth, Endor, Tatooine and other legendary planets. There is a mission on the unexplored planet of Sallast. You can control not only players, but also a variety of techniques, including huge walkers. As the game characters are present the main characters of the \"Star Wars\" Darth Vader and Luke Skywalker, Boba Fett.\nThe novelty of the series is the presence of species from the first and from the third person.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی در محیط حماسی \"جنگ ستارگان\" اتفاق می افتد. این بازی سومین بازی از سری بازی‌های با نام رایج Star Wars Battlefront است.\n\nگیم پلی بازی از مبارزات تشکیل شده است. شما می توانید در کنار شورشیان یا در کنار امپراتوری بازی کنید. همچنین می توانید ماموریت هایی را بر اساس داستان فیلم ها انجام دهید. شما می توانید به تنهایی و در حالت های چند نفره بازی کنید و تا 40 بازیکن را پشتیبانی کنید. حالت های چند نفره در یک بازی شبکه یا پشت یک صفحه نمایش کار می کنند. این بازی فرصتی را برای شرکت در نبردهای Hoth، Endor، Tatooine و دیگر سیارات افسانه ای فراهم می کند. ماموریتی در سیاره ناشناخته سالاست وجود دارد. شما می توانید نه تنها بازیکنان، بلکه انواع تکنیک ها، از جمله واکرهای بزرگ را نیز کنترل کنید. با حضور شخصیت های بازی، شخصیت های اصلی \"جنگ ستارگان\" دارث ویدر و لوک اسکای واکر، بوبا فت.\nتازگی سریال حضور گونه ها از اول شخص و سوم شخص است."
+  },
+  {
+    "id": 58779,
+    "name": "Starfield",
+    "background_image": "https://media.rawg.io/media/games/ba8/ba82c971336adfd290e4c0eab6504fcf.jpg",
+    "rating": 3.25,
+    "metacritic": 88,
+    "released": "2023-09-06",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 29,
+    "developers": "Bethesda Game Studios",
+    "steam_link": "https://store.steampowered.com/app/1716740/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/f7d/f7d990724dd553484e527b4096025a65.jpg",
+      "https://media.rawg.io/media/screenshots/0ad/0adfb93f5621bd549b8813b6b4c6e623.jpg",
+      "https://media.rawg.io/media/screenshots/f74/f7431a20a8bb390b813ea751d758ed07.jpg",
+      "https://media.rawg.io/media/screenshots/7bc/7bc2c5288b78693eb9eaa0a06a8361e9.jpg",
+      "https://media.rawg.io/media/screenshots/85f/85fee5a7b12edcbe8352b2d1676296ac.jpg",
+      "https://media.rawg.io/media/screenshots/eb6/eb61692a22bef1e16d43ee1c49f31814.jpg",
+      "https://media.rawg.io/media/games/ba8/ba82c971336adfd290e4c0eab6504fcf.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 version 21H1 (10.0.19043)\nProcessor: AMD Ryzen 5 2600X, Intel Core i7-6800K\nMemory: 16 GB RAM\nGraphics: AMD Radeon RX 5700, NVIDIA GeForce 1070 Ti\nDirectX: Version 12\nStorage: 125 GB available space\nAdditional Notes: SSD Required",
+      "recommended": "OS: Windows 10/11 with updates\nProcessor: AMD Ryzen 5 3600X, Intel i5-10600K\nMemory: 16 GB RAM\nGraphics: AMD Radeon RX 6800 XT, NVIDIA GeForce RTX 2080\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 125 GB available space\nAdditional Notes: SSD Required"
+    },
+    "description_en": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4. In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery.\n\nThe year is 2330. Humanity has ventured beyond our solar system, settling new planets, and living as a spacefaring people. From humble beginnings as a space miner, you will join Constellation – the last group of space explorers seeking rare artifacts throughout the galaxy – and navigate the vast expanse of the Settled Systems in Bethesda Game Studios’ biggest and most ambitious game.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nStarfield اولین دنیای جدید در ۲۵ سال اخیر استودیو Bethesda Game، خالقان برنده جایزه The Elder Scrolls V: Skyrim و Fallout 4 است. در این بازی نقش‌آفرینی نسل بعدی که در میان ستارگان قرار می‌گیرد، هر شخصیتی را که می‌خواهید بسازید و با آزادی بی‌نظیر به کاوش در سفری حماسی برای پاسخگویی به بزرگ‌ترین نوع بشریت من بپردازید.\n\nسال 2330 است. بشریت فراتر از منظومه شمسی ما جسارت کرده است، سیارات جدید را مستقر کرده و به عنوان مردمی فضانورد زندگی می کند. از ابتدا به عنوان یک معدنچی فضایی، به Constellation - آخرین گروه کاوشگران فضایی که به دنبال مصنوعات کمیاب در سراسر کهکشان هستند - می‌پیوندید و در گستره وسیع سیستم‌های مستقر در بزرگ‌ترین و جاه‌طلبانه‌ترین بازی استودیو بازی Bethesda حرکت می‌کنید."
   }
 ]
