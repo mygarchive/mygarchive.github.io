@@ -612,5 +612,58 @@
     },
     "description_en": "Start your own cult in a land of false prophets, venturing out into diverse and mysterious regions to build a loyal community of woodland worshippers and spread your Word to become the one true cult.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nفرقه خود را در سرزمین پیامبران دروغین راه اندازی کنید، به مناطق مختلف و مرموز بروید تا جامعه ای وفادار از پرستان جنگل بسازید و کلام خود را گسترش دهید تا به یک فرقه واقعی تبدیل شوید."
+  },
+  {
+    "id": 11726,
+    "name": "Dead Cells",
+    "background_image": "https://media.rawg.io/media/games/f90/f90ee1a4239247a822771c40488e68c5.jpg",
+    "rating": 4.23,
+    "metacritic": 88,
+    "released": "2018-08-07",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 10,
+    "developers": "Plug In Digital, Playdigious, Motion Twin",
+    "steam_link": "https://store.steampowered.com/app/588650/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256679287/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256679287/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/9da/9da742eb3dd48210ace18f8cf19a7085.jpg",
+      "https://media.rawg.io/media/screenshots/2c1/2c14a27025356907201370507cc799da.jpg",
+      "https://media.rawg.io/media/screenshots/58e/58efd4d0b47504204061f2c3a2d026e6.jpg",
+      "https://media.rawg.io/media/screenshots/e47/e473d6539eda4198c020639ed3395a6e.jpg",
+      "https://media.rawg.io/media/screenshots/f7c/f7c59ff0d63c47d8a90e1ee5daec703a.jpg",
+      "https://media.rawg.io/media/screenshots/dce/dce8c90aaae7d95e3be59a54335bfb06.jpg",
+      "https://media.rawg.io/media/games/f90/f90ee1a4239247a822771c40488e68c5.jpg"
+    ],
+    "requirements": {
+      "minimum": "7 / 8 / 10Processor: Intel i5+Memory: 4 GB RAMGraphics: Nvidia GTX 460 / Radeon HD 7800 or betterStorage: 500 MB available spaceMouse, KeyboardAdditional Notes: OpenGL 3.2+",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Dead Cells is a roguelike adventure title developed by Motion Twin.\n\n###Story\nNot much story is present in the game, as only bits of any information are given out to the players. The game takes place at a remote island, where the players take place of the Prisoner. The Prisoner does not speak, yet he can express confusion and frustration using his body language. The Prisoner is basically immortal, as, in case of death, his head disconnects itself from the Prisoner's body, and gets back to the game's starting area. \n\n###Gameplay\nThe game's heavily inspired by The Binding of Isaac, as stated by the developers.\n\nDead Cells features the procedurally generated environments that are typical for roguelike games, yet it puts a strong emphasis on exploration that is typically found in metroidvanias.\n\nThe players set out to explore the island where a prison was built. As the players come down into the dungeons of the island, they find various loot, fight dangerous creatures, collect armor, abilities, and power-ups. Upon death, the players lose all the loot they had on them. It is possible to find a shopkeep somewhere in the dungeons to purchase new equipment or have some rest. \n\nThe game uses death as a learning experience, as it randomizes the placement of enemies, so the players can't take multiple attempts to complete a level. The developers want the player to examine the enemy behavior and learn how to combat the enemies themselves.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDead Cells یک عنوان ماجراجویی سرکش است که توسط Motion Twin ساخته شده است.\n\n###داستان\nداستان چندانی در بازی وجود ندارد، زیرا تنها بخش‌هایی از اطلاعات به بازیکنان داده می‌شود. بازی در جزیره ای دور افتاده اتفاق می افتد، جایی که بازیکنان جای Prisoner را می گیرند. زندانی صحبت نمی کند، با این حال می تواند با استفاده از زبان بدن خود سردرگمی و ناامیدی را بیان کند. Prisoner اساساً جاودانه است، زیرا در صورت مرگ، سر او از بدن Prisoner جدا می شود و به منطقه شروع بازی باز می گردد. \n\n###بازی\nهمانطور که توسعه دهندگان گفته اند، بازی به شدت از The Binding of Isaac الهام گرفته شده است.\n\nDead Cells دارای محیط‌هایی است که به صورت رویه‌ای تولید می‌شوند که برای بازی‌های سرکش معمولی هستند، با این حال تأکید زیادی بر اکتشاف دارد که معمولاً در مترویدوانیا یافت می‌شود.\n\nبازیکنان برای کاوش در جزیره ای که در آن زندان ساخته شده بود، حرکت کردند. با پایین آمدن بازیکنان به سیاه چال های جزیره، غارت های مختلفی پیدا می کنند، با موجودات خطرناک مبارزه می کنند، زره ها، توانایی ها و قدرت ها را جمع آوری می کنند. پس از مرگ، بازیکنان تمام غارتی را که بر روی خود داشتند از دست می‌دهند. ممکن است در جایی در سیاه چال ها مغازه دار پیدا کنید تا تجهیزات جدید بخرید یا کمی استراحت کنید. \n\nاین بازی از مرگ به عنوان یک تجربه یادگیری استفاده می کند، زیرا قرار دادن دشمنان را تصادفی می کند، بنابراین بازیکنان نمی توانند چندین بار برای تکمیل یک سطح تلاش کنند. توسعه دهندگان از بازیکن می خواهند رفتار دشمن را بررسی کند و یاد بگیرد که چگونه با دشمنان خود مبارزه کند."
   }
 ]
