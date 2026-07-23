@@ -3655,5 +3655,58 @@
     },
     "description_en": "The Invincible is a first-person Sci-Fi thriller set in a retro-future timeline. Waking up as a space scientist on a hostile planet, you embark on a mysterious mission to find the missing crew of your spaceship. Survival is a matter of your correct choices, taken whilst uncovering the secrets of the planet, bigger than anyone thought.\n\nYou are a scientist onboard an interstellar scientific expedition, suddenly thrown into a life-or-death rescue mission. Landing on a planet Regis III you have to find the missing crew members using some advanced space equipment, whilst relying on your brains and instincts to survive on the planet which quickly occurs to be unwelcoming. Soon you’ll discover that Regis III holds terrifying secrets which are uncovered while you’re piecing together the fate of your crew. And as you delve deeper into the mystery, you realise that perhaps you are not alone, and that some places like this planet are better left untouched. But it’s too late to turn back.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشکست ناپذیر یک تریلر علمی تخیلی اول شخص است که در یک جدول زمانی یکپارچه‌سازی با آینده اتفاق می‌افتد. هنگامی که به عنوان یک دانشمند فضایی در یک سیاره متخاصم از خواب بیدار می شوید، ماموریتی مرموز را برای یافتن خدمه گمشده سفینه فضایی خود آغاز می کنید. بقا به انتخاب های صحیح شما بستگی دارد، در حالی که اسرار این سیاره را کشف می کنید، بزرگتر از آن چیزی که هر کسی فکر می کرد.\n\nشما یک دانشمند در یک اکتشاف علمی بین ستاره ای هستید که ناگهان در یک ماموریت نجات زندگی یا مرگ پرتاب می شوید. با فرود بر روی سیاره Regis III، باید با استفاده از تجهیزات فضایی پیشرفته، خدمه گمشده را پیدا کنید، در حالی که به مغز و غرایز خود برای زنده ماندن در این سیاره تکیه کنید، که به سرعت ناخوشایند است. به زودی متوجه خواهید شد که Regis III اسرار وحشتناکی را در خود نگه می‌دارد که زمانی که شما سرنوشت خدمه خود را جمع‌آوری می‌کنید، آشکار می‌شوند. و همانطور که عمیق‌تر در این راز کاوش می‌کنید، متوجه می‌شوید که شاید تنها نیستید و برخی مکان‌ها مانند این سیاره بهتر است دست نخورده باقی بمانند. اما برای برگشتن خیلی دیر است."
+  },
+  {
+    "id": 11312,
+    "name": "The Long Dark",
+    "background_image": "https://media.rawg.io/media/games/fd2/fd20a68d7ef195855588c937865dd0a7.jpg",
+    "rating": 3.91,
+    "metacritic": 76,
+    "released": "2014-09-22",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 5,
+    "developers": "Hinterland Studio",
+    "steam_link": "https://store.steampowered.com/app/305620/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256684323/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256684323/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/ec6/ec6966329b1852626b4344dddaae8004.jpg",
+      "https://media.rawg.io/media/screenshots/975/97520f90e93848ceb67dfbaca66e2930.jpg",
+      "https://media.rawg.io/media/screenshots/a69/a6934f9f986bc3564be6a649cda627e9.jpg",
+      "https://media.rawg.io/media/screenshots/724/7243b831d080cad4cb36bf1f9c96230b.jpg",
+      "https://media.rawg.io/media/screenshots/eb7/eb7f4c71da3bdea3c73d5c61f5df2984.jpg",
+      "https://media.rawg.io/media/screenshots/e9f/e9fc9907076ab0a3ba4c9052d0748bb5.jpg",
+      "https://media.rawg.io/media/games/fd2/fd20a68d7ef195855588c937865dd0a7.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP\nProcessor: Dual-Core Intel i5 CPU @ 2GHz+\nMemory: 4 GB RAM\nGraphics: Intel 4xxx Series w/ 512MB VRAM or better\nStorage: 7 GB available space\nSound Card: Any on-board chip will work.",
+      "recommended": "OS: Windows 7\nProcessor: Intel i7 CPU @ 2.6GHz or higher\nMemory: 8 GB RAM\nGraphics: nVidia GTX 555 w/ 1GB VRAM or better\nStorage: 7 GB available space\nSound Card: Ideally, something with Surround capabilities."
+    },
+    "description_en": "The Long Dark is a game about surviving in the unforgiving conditions of frozen North Canadian taiga. The Arctic wilderness may be breathtakingly beautiful, thanks to the game’s artful visual style, but it is also deadly. Low temperatures, hungry animals like wolves and bears, and starvation can easily kill your character. To stay alive, he will need to learn how to light a campfire, find shelter, care about his wounds, hunt for food and protect himself in an unfriendly environment. Many necessary items in the game, including some of the weapons, need to be crafted out of the junk that you can find in the woods and in abandoned buildings.\nIn the story mode, called Wintermute, you control a pilot, Will Mackenzie, who was hired by his ex-wife Astrid to deliver a mysterious cargo. Eventually, his plane crashed in the woods. Will is injured, and Astrid is missing, presumably lost somewhere in the wilderness. Your goal is to survive and to rescue your companion. Wintermute follows a linear plot and only allows you to explore a limited area. However, it is recommended to start with, since it serves as a sort of tutorial to the open-world sandbox mode. This is the most popular mode, in which you are not confined to the plot and can discover new areas.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Long Dark یک بازی در مورد زنده ماندن در شرایط نابخشوده تایگای یخ زده شمال کانادا است. طبیعت وحشی قطب شمال، به لطف سبک بصری هنرمندانه بازی، ممکن است به طرز نفس گیر زیبایی باشد، اما کشنده نیز هست. دمای پایین، حیوانات گرسنه مانند گرگ و خرس و گرسنگی می توانند به راحتی شخصیت شما را بکشند. برای زنده ماندن، او باید یاد بگیرد که چگونه آتش روشن کند، سرپناه پیدا کند، مراقب زخم هایش باشد، به دنبال غذا بگردد و از خود در یک محیط غیر دوستانه محافظت کند. بسیاری از موارد ضروری در بازی، از جمله برخی از سلاح‌ها، باید از زباله‌هایی ساخته شوند که می‌توانید در جنگل‌ها و ساختمان‌های متروکه پیدا کنید.\nدر حالت داستانی که Wintermute نام دارد، شما کنترل خلبانی به نام ویل مکنزی را دارید که توسط همسر سابقش آسترید برای تحویل محموله مرموز استخدام شده بود. در نهایت هواپیمای او در جنگل سقوط کرد. ویل مجروح شده است و آسترید گم شده است و احتمالاً جایی در بیابان گم شده است. هدف شما زنده ماندن و نجات همراه خود است. Wintermute یک طرح خطی را دنبال می کند و فقط به شما امکان می دهد یک منطقه محدود را کاوش کنید. با این حال، توصیه می شود با آن شروع کنید، زیرا به عنوان نوعی آموزش برای حالت sandbox جهان باز عمل می کند. این محبوب ترین حالت است که در آن شما محدود به طرح نیستید و می توانید مناطق جدیدی را کشف کنید."
   }
 ]
