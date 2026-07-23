@@ -1177,5 +1177,46 @@
     },
     "description_en": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.\n\nIn Forza Horizon 6, you will get to discover a scenic and breathtaking Japan, where you will build up your racing status to become a Legend at the Horizon Festival.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nForza Horizon 6 ورودی بعدی از سری بازی‌های رانندگی جهان باز است که مورد تحسین منتقدان قرار گرفته و جوایزی را دریافت کرده است. Forza Horizon 6 برای اولین بار در سال 2026 روی کنسول های Xbox Series X|S و رایانه های شخصی عرضه خواهد شد.\n\nدر Forza Horizon 6، ژاپن منظره و نفس گیر را کشف خواهید کرد، جایی که وضعیت مسابقه خود را برای تبدیل شدن به یک افسانه در جشنواره Horizon ایجاد خواهید کرد."
+  },
+  {
+    "id": 622492,
+    "name": "Forza Horizon 5",
+    "background_image": "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg",
+    "rating": 4.29,
+    "metacritic": null,
+    "released": "2021-11-08",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 15,
+    "developers": "Playground Games",
+    "steam_link": "https://store.steampowered.com/app/1551360/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5e2/5e2e7ccb084034da25d0b21b7c03c273.jpg",
+      "https://media.rawg.io/media/screenshots/6c6/6c69fe99ec23d08b2b0a62feb9d89c65.jpg",
+      "https://media.rawg.io/media/screenshots/32c/32c5651c381e6b628c5ac681601a036a.jpg",
+      "https://media.rawg.io/media/screenshots/312/3122a56932654c304a60e9ef762277a7.jpg",
+      "https://media.rawg.io/media/screenshots/04c/04c7be71d5fd1abace38c90aaa95529d.jpg",
+      "https://media.rawg.io/media/screenshots/797/7979f94d39181787ee248a423191563f.jpg",
+      "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 version 15063.0 or higher\nProcessor: Intel i5-4460 or AMD Ryzen 3 1200\nMemory: 8 GB RAM\nGraphics: NVidia GTX 970 OR AMD RX 470\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 110 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 version 15063.0 or higher\nProcessor: Intel i5-8400 or AMD Ryzen 5 1500X\nMemory: 16 GB RAM\nGraphics: NVidia GTX 1070 OR AMD RX 590\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 110 GB available space"
+    },
+    "description_en": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.\r\nExplore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano.\r\nImmerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.\r\nTake on awe-inspiring weather events like towering dust storms and intense tropical storms as Mexico’s unique, dynamic seasons change the world every week. Keep coming back for new events, challenges, collectibles, and rewards, and new areas to explore.\r\nTeam up with other players and enter the Horizon Arcade for a continuing series of fun, over-the-top challenges that keep you and your friends in the action and having fun with no menus, loading screens or lobbies.\r\nCreate your own expressions of fun with the new EventLab gameplay toolset including custom races, challenges, stunts, and new game modes. Customize your cars in more ways than ever before. Use the Gift Drops feature to share your custom creations.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nماجراجویی Horizon Ultimate شما در انتظار است! مناظر دنیای باز پر جنب و جوش و همیشه در حال تکامل مکزیک را با اقدامات رانندگی سرگرم کننده و بی حد و حصر در صدها خودروی برتر جهان کاوش کنید.\r\nدنیایی از کنتراست و زیبایی چشمگیر را کاوش کنید. بیابان‌های زنده، جنگل‌های سرسبز، شهرهای تاریخی، ویرانه‌های پنهان، سواحل بکر، دره‌های وسیع و آتشفشانی پوشیده از برف را کشف کنید.\r\nخود را در یک کمپین عمیق با صدها چالش غوطه ور کنید که به شما برای شرکت در فعالیت هایی که دوست دارید پاداش می دهد. با شخصیت های جدید آشنا شوید و نتایج ماموریت های Horizon Story را انتخاب کنید.\r\nرویدادهای آب و هوایی الهام‌بخش مانند طوفان‌های گرد و غبار و طوفان‌های شدید گرمسیری را تجربه کنید زیرا فصول منحصربه‌فرد و پویا مکزیک دنیا را هر هفته تغییر می‌دهند. برای رویدادهای جدید، چالش‌ها، کلکسیون‌ها و جوایز، و مناطق جدید برای کاوش دوباره برگردید.\r\nبا دیگر بازیکنان متحد شوید و وارد Horizon Arcade برای یک سری چالش‌های سرگرم‌کننده و فوق‌العاده شوید که شما و دوستانتان را بدون منو، صفحه‌های بارگذاری یا لابی در حال فعالیت و سرگرمی نگه می‌دارد.\r\nبا مجموعه ابزار گیم پلی EventLab جدید از جمله مسابقات سفارشی، چالش ها، شیرین کاری ها و حالت های بازی جدید، عبارات سرگرم کننده خود را ایجاد کنید. اتومبیل های خود را به روش های بیشتری نسبت به قبل سفارشی کنید. از ویژگی Gift Drops برای به اشتراک گذاشتن آثار سفارشی خود استفاده کنید."
   }
 ]
