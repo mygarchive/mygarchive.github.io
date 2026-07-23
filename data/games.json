@@ -481,5 +481,51 @@
     },
     "description_en": "Classified: France '44 Editions\nClassified: France '44 Overlord EditionThe Overlord Edition of Classified: France '44 contains:\nClassified: France '44\nClassified: France '44 - Season Pass\nThe Season Pass Includes:\nAll content to be released in 2024.\nDLC 1 - Guerrilla Pack (Out Now)\nDLC 2 - Agent Pack (to be released)\nDLC 3 - Talon Pack (to be released)\nDLC 4 - Devils Pack (to be released)\nEach DLC contains:\nTwo new Special Ops missions\nTwo new weapons or weapon variants\nOne new clothing set\nClassified: France '44 Deluxe EditionThe Deluxe Edition of Classified: France '44 contains:\nClassified: France '44 Base Game\nGuerrilla Pack\nExpand your arsenal and take the fight to the enemy with new Spec Ops missions and a brand new map in the Guerrilla Pack\nThe Guerrilla Pack contains:\nNew Map – “Church”\nTwo new Special Ops missions:\n• Tomb Raiders\n• Time to Kill\nTwo new weapon variants\n• Bren “Ambush”\n• Thompson “Boa”\nNew Clothing Set\n• Female Resistance “Guerrilla”\nAbout the GameClassified: France ‘44 is a new turn-based strategy game, set in World War II during the desperate months leading up to the Allied invasion of France in June 1944.\n\nTake charge of a special-ops team of Allied commandos and French resistance fighters. Recruit elite operatives to build your squad, then engage in a sweeping campaign of sabotage and destruction. Deal with competing factions to build the resistance network and strike at German targets deep in occupied territory. However, the more chaos you cause, t",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nطبقه بندی شده: فرانسه '44 نسخه\nطبقه بندی شده: فرانسه '44 نسخه Overlord نسخه Overlord از طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: فرانسه 44\nطبقه بندی شده: فرانسه '44 - پاس فصل\nSeason Pass شامل:\nتمامی مطالب در سال 2024 منتشر خواهد شد.\nDLC 1 - Guerrilla Pack (اکنون منتشر شد)\nDLC 2 - Agent Pack (در حال انتشار)\nDLC 3 - Talon Pack (در حال انتشار)\nDLC 4 - Devils Pack (در حال انتشار)\nهر DLC شامل:\nدو ماموریت جدید عملیات ویژه\nدو نوع سلاح یا سلاح جدید\nیک ست لباس جدید\nطبقه بندی شده: نسخه لوکس فرانسه '44 نسخه لوکس طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: بازی پایه فرانسه '44\nبسته چریکی\nزرادخانه خود را گسترش دهید و با ماموریت های جدید Spec Ops و یک نقشه کاملاً جدید در بسته Guerrilla به نبرد با دشمن بپردازید.\nبسته چریکی شامل:\nنقشه جدید - \"کلیسا\"\nدو ماموریت عملیات ویژه جدید:\n• مهاجمان مقبره\n• زمان کشتن\nدو نوع سلاح جدید\n• برن «کمین»\n• تامپسون «بوآ»\nست لباس جدید\n• مقاومت زن \"چرریک\"\nدرباره GameClassified: France ‘44 یک بازی استراتژی نوبتی جدید است که در جنگ جهانی دوم در طول ماه‌های ناامید منتهی به تهاجم متفقین به فرانسه در ژوئن 1944 اتفاق می‌افتد.\n\nمسئولیت یک تیم عملیات ویژه متشکل از کماندوهای متفقین و مبارزان مقاومت فرانسوی را بر عهده بگیرید. ماموران نخبه را برای ایجاد گروه خود استخدام کنید، سپس در یک کمپین گسترده خرابکاری و تخریب شرکت کنید. برای ایجاد شبکه مقاومت و حمله به اهداف آلمانی در اعماق سرزمین های اشغالی با جناح های رقیب برخورد کنید. با این حال، هر چه آشفتگی بیشتری ایجاد کنید، t"
+  },
+  {
+    "id": 986542,
+    "name": "Closer the Distance",
+    "background_image": "https://media.rawg.io/media/screenshots/787/7876c0fb3e74282639e33fabf233a15c.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2024-08-01",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 13,
+    "developers": "Osmotic Studios",
+    "steam_link": "https://store.steampowered.com/app/1991300/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d43/d43c345af0edbd0ef3152ef0ca054000.jpg",
+      "https://media.rawg.io/media/screenshots/9b2/9b22ebcfc75b78afb167b58d5ce07d36.jpg",
+      "https://media.rawg.io/media/screenshots/71e/71e7fbc4cf6a13a0dd61b4f9cfbd0ee8.jpg",
+      "https://media.rawg.io/media/screenshots/739/739dbc8d7749cdde9f96114481519772.jpg",
+      "https://media.rawg.io/media/screenshots/fc9/fc9ae90d829b6e72c04bbb3990aeddc9.jpg",
+      "https://media.rawg.io/media/screenshots/0dc/0dc5e915c7a37758c3ec2b92ed4d386e.jpg",
+      "https://media.rawg.io/media/screenshots/787/7876c0fb3e74282639e33fabf233a15c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-6600K\nMemory: 8 GB RAM\nGraphics: AMD Radeon r9 200\nDirectX: Version 11",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD Ryzen 7 2700\nMemory: 16 GB RAM\nGraphics: Nvidia GeForce RTX 2070\nDirectX: Version 11"
+    },
+    "description_en": "Closer the Distance is a deeply moving, slice-of-life sim that tells a story about the connections between family and friends in the face of tragedy. Following a fatal car accident, players take on the role of Angela, a young girl from the town of Yesterby, who finds herself watching over her loved ones as they navigate the grieving process. Using her ethereal ability to influence the townspeople she once knew, Angela’s choices will ultimately determine the fate of Yesterby.\nCloser the Distance combines several key gameplay features for an immersive playthrough. The game's compelling narrative is emotionally charged and highlights themes of empathy, community, friendship, grief, and closure. Choices-matter gameplay allows players to make decisions that affect the outcome of the story, making each playthrough unique. Closer the Distance offers something for everyone, and its emotional depth and engaging gameplay will leave players wanting more.\nCW: Closer the Distance deals with themes of death, illness and grief",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCloser the Distance یک سیم کارت عمیقا متحرک و تکه‌ای از زندگی است که داستانی در مورد ارتباط بین خانواده و دوستان در مواجهه با یک تراژدی را روایت می‌کند. پس از یک تصادف رانندگی مرگبار، بازیکنان نقش آنجلا، دختر جوانی از شهر Yesterby را بازی می‌کنند که متوجه می‌شود مراقب عزیزانش در حین حرکت در روند سوگواری هستند. انتخاب های آنجلا با استفاده از توانایی اثیری خود برای تأثیرگذاری بر مردم شهر که زمانی می شناخت، در نهایت سرنوشت Yesterby را تعیین می کند.\nCloser the Distance چندین ویژگی کلیدی گیم پلی را برای یک بازی همهجانبه ترکیب می کند. روایت قانع کننده بازی دارای بار احساسی است و مضامین همدلی، اجتماع، دوستی، اندوه و بسته شدن را برجسته می کند. گیم پلی Choices-matter به بازیکنان این امکان را می دهد که تصمیماتی بگیرند که بر نتیجه داستان تأثیر می گذارد و هر بازی را منحصر به فرد می کند. Closer the Distance چیزی را برای همه ارائه می دهد و عمق احساسی و گیم پلی جذاب آن باعث می شود بازیکنان بیشتر بخواهند.\nCW: Closer the Distance به موضوعات مرگ، بیماری و اندوه می پردازد"
   }
 ]
