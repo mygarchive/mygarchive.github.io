@@ -1014,5 +1014,46 @@
     },
     "description_en": "You play as a truck driver, whose primary task throughout the game is to deliver essential goods to Europe.\n\nThe actions of foreign drivers in the game are close to reality. It means that the computer does not only act following the rules of the road but also takes some other techniques taken from real life, for example, gives a sign that passes the driver to the main road.\n\nThe time in the game is slightly different from the real time (1 minute in the set corresponds to five-ten seconds of real time). The driver can drive in total for 11 hours, after that he needs to go to the nearest Parking to make a nine-hour rest. If you do not, the driver gradually begins to struggle with sleep and yawn. The screen becomes dark, and the player, in turn, loses control of the truck, what can quickly lead to an accident.\n\nIn the game, there are temporary and permanent road signs that limit the speed mode. The maximum speed of all trucks in the game is technically limited to 90 km/h by default (but it can be disabled in the game settings).",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما به عنوان یک راننده کامیون بازی می کنید که وظیفه اصلی او در طول بازی تحویل کالاهای ضروری به اروپا است.\n\nاقدامات رانندگان خارجی در بازی به واقعیت نزدیک است. این بدان معناست که رایانه نه تنها طبق قوانین جاده عمل می کند بلکه برخی از تکنیک های دیگر را نیز برگرفته از زندگی واقعی می گیرد، به عنوان مثال علامتی می دهد که راننده را به جاده اصلی منتقل می کند.\n\nزمان در بازی کمی با زمان واقعی متفاوت است (1 دقیقه در مجموعه مربوط به پنج تا ده ثانیه زمان واقعی است). راننده در مجموع می تواند 11 ساعت رانندگی کند و پس از آن باید به نزدیکترین پارکینگ برود تا 9 ساعت استراحت کند. اگر این کار را نکنید، راننده به تدریج شروع به مبارزه با خواب و خمیازه می کند. صفحه تاریک می شود و بازیکن نیز به نوبه خود کنترل کامیون را از دست می دهد که می تواند به سرعت منجر به تصادف شود.\n\nدر بازی علائم جاده ای موقت و دائمی وجود دارد که حالت سرعت را محدود می کند. حداکثر سرعت تمام کامیون های بازی به صورت پیش فرض از نظر فنی به 90 کیلومتر در ساعت محدود شده است (اما می توان آن را در تنظیمات بازی غیرفعال کرد)."
+  },
+  {
+    "id": 965258,
+    "name": "Expeditions: A MudRunner Game",
+    "background_image": "https://media.rawg.io/media/games/587/58781f4ab6f40a1bfa59f71e0e6573c4.jpg",
+    "rating": 3.38,
+    "metacritic": null,
+    "released": "2024-03-05",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 3,
+    "developers": "Saber Interactive",
+    "steam_link": "https://store.steampowered.com/app/2477340/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b50/b503740119fbbc1b9a6e099f6af790b8.jpg",
+      "https://media.rawg.io/media/screenshots/0e9/0e92a27ae57106bf6fe7734dd52d47d2.jpg",
+      "https://media.rawg.io/media/screenshots/db6/db67ebdc58409ab6c78e81991cbe5932.jpg",
+      "https://media.rawg.io/media/screenshots/7d5/7d5151d35a64e0f4f46ab8165dc2fcd9.jpg",
+      "https://media.rawg.io/media/screenshots/90e/90e0df23a1e6ce888309c9f8bfce3b27.jpg",
+      "https://media.rawg.io/media/screenshots/7d8/7d8ea8f93b24687be658507e8e299ba1.jpg",
+      "https://media.rawg.io/media/games/587/58781f4ab6f40a1bfa59f71e0e6573c4.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64-bit\nProcessor: Intel Core i3-9100 / AMD Ryzen 3 1300X\nMemory: 8 GB RAM\nGraphics: 2 GB VRAM, Nvidia GeForce GTX 660 / AMD Radeon R7 370\nDirectX: Version 11\nStorage: 20 GB available space\nAdditional Notes: 30 FPS in 1920x1080 with the &quot;Low&quot; preset",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64-bit\nProcessor: Intel Core i7-10700 / AMD Ryzen 5 5600X\nMemory: 16 GB RAM\nGraphics: 6 GB VRAM, Nvidia GeForce RTX 2060 / AMD Radeon RX 6800 XT\nDirectX: Version 11\nStorage: 20 GB available space\nAdditional Notes: 60 FPS in 1920x1080 with the &quot;Ultra&quot; preset"
+    },
+    "description_en": "Embark on ever-rewarding scientific expeditions as you adapt to nature's challenges and unravel the mysteries of uncharted lands. Venture into the vast wilderness of arid deserts and rugged forests to the steepest mountains, brimming with hidden treasures and forgotten ruins.\n\nLead research missions as you drive a variety of all-terrain vehicles through treacherous paths, using advanced technologies and high-tech tools to overcome obstacles. Build and manage your base and equip your vehicles with essential gadgets like drones or scanners to ensure your success in the wild. Hire a team of top-notch experts to improve your skills in the field, unlocking new possibilities for exploration.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر حالی که با چالش های طبیعت سازگار می شوید و اسرار سرزمین های ناشناخته را کشف می کنید، سفرهای علمی همیشه ارزشمند را آغاز کنید. به بیابان وسیع بیابان‌های خشک و جنگل‌های ناهموار تا شیب‌دارترین کوه‌ها، مملو از گنجینه‌های پنهان و خرابه‌های فراموش‌شده سفر کنید.\n\nبا استفاده از فناوری های پیشرفته و ابزارهای پیشرفته برای غلبه بر موانع، ماموریت های تحقیقاتی را رهبری کنید، زیرا انواع وسایل نقلیه سراسری را در مسیرهای خائنانه رانندگی می کنید. پایگاه خود را بسازید و مدیریت کنید و وسایل نقلیه خود را با ابزارهای ضروری مانند هواپیماهای بدون سرنشین یا اسکنر مجهز کنید تا موفقیت خود را در طبیعت تضمین کنید. تیمی از کارشناسان درجه یک را استخدام کنید تا مهارت‌های خود را در این زمینه بهبود بخشند و فرصت‌های جدیدی را برای اکتشاف باز کنند."
   }
 ]
