@@ -5540,5 +5540,41 @@
     },
     "description_en": "The eighth Call of Duty game overall is the sequel to Modern Warfare 2 and is set in an alternate reality of the modern era. In the campaign mode, the game continues the Modern Warfare storyline about an American spec ops squad Task Force 141 fighting Russian nationalists. \r\nThe player will control different characters on various military missions across the world. The protagonists from the previous part, Soap MacTavish and John Price, appear in certain missions but are sidelined by several new playable characters, most prominently, the Russian former Spetsnaz operative Yuri. Terrorist leader Vladimir Makarov, the villain of Modern Warfare 2, returns as well, and is trying to provoke the start of World War III. The player’s missions this time will be centered around protecting the West against Makarov’s attacks.\r\nThe game introduces a new Survival mode, in which the player repeals wave after wave of eternally respawning opponents. This mode allows for multiplayer co-op for two players. The traditional multiplayer mode was revised as well, adding a new reward mechanic, Pointstreaks, in which the player can choose between three sets of rules, called “strike packages”, to count his or her points.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهشتمین بازی Call of Duty به طور کلی دنباله‌ی Modern Warfare 2 است و در واقعیتی جایگزین از دوران مدرن جریان دارد. در حالت مبارزات انتخاباتی، بازی داستان جنگ مدرن را در مورد یک تیم عملیاتی آمریکایی به نام Task Force 141 ادامه می‌دهد که با ملی‌گرایان روسی می‌جنگد. \r\nبازیکن در ماموریت های نظامی مختلف در سراسر جهان شخصیت های مختلف را کنترل می کند. قهرمان‌های قسمت قبلی، Soap MacTavish و John Price، در ماموریت‌های خاصی ظاهر می‌شوند، اما توسط چندین شخصیت قابل بازی جدید کنار گذاشته می‌شوند که برجسته‌ترین آنها، یوری عامل سابق اسپتسناز روسی است. رهبر تروریست ها ولادیمیر ماکاروف، شرور جنگ مدرن 2 نیز بازمی گردد و تلاش می کند شروع جنگ جهانی سوم را تحریک کند. ماموریت های بازیکن این بار حول محور محافظت از غرب در برابر حملات ماکاروف خواهد بود.\r\nبازی حالت Survival جدیدی را معرفی می‌کند که در آن بازیکن موج به موج مخالفان ابدی بازپخش را لغو می‌کند. این حالت امکان همکاری چند نفره را برای دو بازیکن فراهم می کند. حالت سنتی چند نفره نیز اصلاح شد و مکانیک پاداش جدیدی به نام Pointstreaks اضافه شد که در آن بازیکن می‌تواند بین سه مجموعه قانون به نام «بسته‌های ضربه‌ای» برای شمارش امتیازات خود انتخاب کند."
+  },
+  {
+    "id": 5528,
+    "name": "Call of Duty: World at War",
+    "background_image": "https://media.rawg.io/media/games/da1/da15524e850ee9791b32973b748e08d5.jpg",
+    "rating": 3.96,
+    "metacritic": 83,
+    "released": "2008-11-11",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "esrb_rating": "+18",
+    "playtime": 8,
+    "developers": "Treyarch",
+    "steam_link": "https://store.steampowered.com/app/10090/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8a1/8a1f2cdaaaf8aa19441d890858d01d70.jpg",
+      "https://media.rawg.io/media/screenshots/afe/afe6afc104621713ea0c8c5c5dc17149.jpg",
+      "https://media.rawg.io/media/screenshots/b53/b535859c3a2a6f80f3c68398dbd39a79.jpg",
+      "https://media.rawg.io/media/screenshots/baf/baf3982d7d0b65c4e74a38386641b07e.jpg",
+      "https://media.rawg.io/media/screenshots/18d/18d0c96f64a6f2093a7097265b831ce9.jpg",
+      "https://media.rawg.io/media/screenshots/b7b/b7bac2bff127258d92a266dd6a9adef7.jpg",
+      "https://media.rawg.io/media/games/da1/da15524e850ee9791b32973b748e08d5.jpg"
+    ],
+    "requirements": {
+      "minimum": "Supported OS:  Windows XP/Vista/7                    \nProcessor: Pentium 4 @ 3 GHz/AMD 64 3200+                    \nMemory: 512 MB (1 GB for Vista)                    \nHard Drive: 8 GB Free                    \nDirectX version: DirectX 9.0c                    \nSound: on-board or better                      \nGraphics Card: 256 MB (nVidia GeForce 6600/ATI Radeon X1600)",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty: World at War is a first-person shooter set during World War II and based on several historical battles. The action switches between three playable characters and covers the Pacific Theater and Eastern Front. The story begins with U.S. Marine Private C. Miller who is captured by the Japanese and waits for execution. Later it jumps over war theaters and the timeline, skipping entire months.\r\nThe battles in World at War are quite realistic, with the maximum of two weapons you can carry plus hand grenades. AI allies fight alongside to you, and there's also a cover system that helps to restore health and complete stealthy missions. The variety of levels includes PBY missions, sniper tasks, and sea battles. \r\nWorld at War is the first game of the franchise to introduce Nazi Zombies mode - a cooperative mini-game where 2 to 4 players fight endless hordes of zombies. While the area cover in this mode is quite small, it was expanded by the World at War map packs.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: World at War یک بازی تیراندازی اول شخص است که در طول جنگ جهانی دوم و بر اساس چندین نبرد تاریخی ساخته شده است. این اکشن بین سه شخصیت قابل بازی سوئیچ می‌کند و تئاتر اقیانوس آرام و جبهه شرقی را پوشش می‌دهد. داستان با سرباز آمریکایی سی میلر شروع می شود که توسط ژاپنی ها دستگیر می شود و منتظر اعدام است. بعداً از روی تئاترهای جنگ و جدول زمانی پرش می کند و ماه های کامل را رد می کند.\r\nنبردها در World at War کاملا واقع گرایانه هستند، با حداکثر دو سلاح که می توانید همراه با نارنجک های دستی داشته باشید. متحدان هوش مصنوعی در کنار شما می جنگند و همچنین یک سیستم پوششی وجود دارد که به بازیابی سلامت و تکمیل ماموریت های مخفیانه کمک می کند. سطوح مختلف شامل ماموریت های PBY، وظایف تک تیرانداز و نبردهای دریایی است. \r\nWorld at War اولین بازی از این فرنچایز است که حالت زامبی های نازی را معرفی می کند - یک مینی بازی همکاری که در آن 2 تا 4 بازیکن با انبوهی از زامبی ها مبارزه می کنند. در حالی که پوشش منطقه در این حالت بسیار کوچک است، توسط بسته های نقشه World at War گسترش یافته است."
   }
 ]
