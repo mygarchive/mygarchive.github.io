@@ -4719,5 +4719,41 @@
     },
     "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did in the previous titles. Origins focuses on introducing various types of enemies that the players will have to learn about in order to defeat them.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه با تجدید نظر شدید است که به جای انیمیشن های از پیش تعیین شده مانند عناوین قبلی، بر مکانیک های جعبه ضربه ای تکیه دارد. Origins بر معرفی انواع مختلفی از دشمنان تمرکز دارد که بازیکنان برای شکست دادن آنها باید درباره آنها بیاموزند."
+  },
+  {
+    "id": 10064,
+    "name": "Assassin’s Creed Brotherhood",
+    "background_image": "https://media.rawg.io/media/games/116/116b93c6876a361a96b2eee3ee58ab13.jpg",
+    "rating": 4.28,
+    "metacritic": 88,
+    "released": "2010-11-16",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 16,
+    "developers": "Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/48190/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0d2/0d22156635a002c37ce9bf7d2769a6ee.jpg",
+      "https://media.rawg.io/media/screenshots/99b/99b3beb99beb663e807b959d2e310832.jpg",
+      "https://media.rawg.io/media/screenshots/ba1/ba178bf7bf726331a168427c1b6085cd.jpg",
+      "https://media.rawg.io/media/screenshots/2e5/2e5f45b6e46a0425e305ce98c4739fae.jpg",
+      "https://media.rawg.io/media/screenshots/c65/c659f0917ca7082c71ba824e7d34b37c.jpg",
+      "https://media.rawg.io/media/screenshots/60f/60ff8d39c22d907bda1165bc2b92bfc5.jpg",
+      "https://media.rawg.io/media/games/116/116b93c6876a361a96b2eee3ee58ab13.jpg"
+    ],
+    "requirements": {
+      "minimum": "Minimum\nOS: Windows® XP (32-64 bits) /Windows Vista®(32-64 bits)/Windows 7® (32-64 bits) \nProcessor: Intel Core® 2 Duo 1.8 GHZ or AMD Athlon X2 64 2.4GHZ\nMemory: 1.5 GB Windows® XP / 2 GB Windows Vista® - Windows 7®\nGraphics: 256 MB DirectX® 9.0–compliant card with Shader Model 3.0 or higher (see supported list*)\nDirectX®: 9.0\nHard Drive: 8 GB\nSound: DirectX 9.0 –compliant sound card\nPeripherals: Keyboard, mouse, optional controller\nSupported Video Cards: ATI® RADEON®  HD 2000/3000/4000/5000/6000 series, NVIDIA GeForce® 8/9/100/200/300/400/500 series\nNote* * This product does not support Windows® 98/ME/2000/NT\nRequires a Uplay account.",
+      "recommended": "Recommended\nOS: Windows® XP (32-64 bits) /Windows Vista®(32-64 bits)/Windows 7® (32-64 bits) \nProcessor: Intel Core® 2 Duo E6700 2.6 GHz or AMD Athlon 64 X2 6000+ or better\nMemory: 1.5 GB Windows® XP / 2 GB Windows Vista® - Windows 7®\nGraphics: GeForce 8800 GT or ATI Radeon HD 4700 or better\nDirectX®: 9.0\nHard Drive: 8 GB\nSound: 5.1 sound card\nPeripherals: Keyboard, mouse, joystick optional (Xbox 360® Controller for Windows recommended)\nSupported Video Cards: ATI® RADEON®  HD 2000/3000/4000/5000/6000 series, NVIDIA GeForce® 8/9/100/200/300/400/500 series\nNote* * This product does not support Windows® 98/ME/2000/NT\nRequires a Uplay account."
+    },
+    "description_en": "Digital Deluxe Edition2 Exclusive Single-Player Maps: The Trajan Market & The Aqueduct\n2 Multiplayer Characters:The Officer - Death's Finest Ally: Few have seen him. Even fewer have lived to tell about it. Fear is his friend, and Death is his ally.\nThe Harlequin - The Walking Nightmare: Behind the gaudy costume and twisted smile lies the soul of a merciless Assassin.img.padding {padding-right: 10px;}\n1 Ezio Skin - Helmschmied Drachen Armor: Fashioned by the Helmschmied Armory in 1489, only a few sets were completed due to the weight of the metal. Very few men proved strong enough to wear it.\n\nimg.padding {padding-right: 10px;}\nThe Original Codex Written by Altaïr: Take a closer look at the history of the Assassins and art of Assassin’s Creed Brotherhood.\nMultiplayer Characters Collectible Trading Cards: A set of trading cards featuring all the characters of Assassin's Creed Brotherhood Multiplayer, including their kill moves and biographies.\nMap of Rome\nAssassin’s Creed Lineage - The Complete Movie: Explore the events that revolve around Ezio’s father, Giovanni Auditore da Firenze, and gain insight on the Assassin’s Creed story and universe.\nMaking-Of Assassin’s Creed Brotherhood - Behind the Brotherhood: Go behind the scenes with the development team to learn about how the game was made and Ezio’s continuing story.\nGame Soundtrack: 22 songs from the original game soundtrack by Jesper Kyd.\nDigital Premium Edition content is only available via download\nAbout the GameLive and b",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDigital Deluxe Edition2 نقشه های انحصاری تک نفره: بازار تراژان و قنات\n2 شخصیت چند نفره: افسر - بهترین متحد مرگ: تعداد کمی او را دیده اند. حتی کمتر کسی زندگی کرده است که در مورد آن بگوید. ترس دوست اوست و مرگ متحد او.\nThe Harlequin - The Walking Nightmare: پشت لباس شیک و لبخند پیچ خورده روح یک قاتل بی رحم نهفته است.img.padding {padding-right: 10px;}\n1 Ezio Skin - Helmschmied Drachen Armor: در سال 1489 توسط Helmschmied Armory ساخته شد، تنها چند مجموعه به دلیل وزن فلز تکمیل شد. تعداد بسیار کمی از مردان به اندازه کافی قوی بودند که بتوانند آن را بپوشند.\n\nimg.padding {padding-right: 10px;}\nکدکس اصلی نوشته Altaïr: نگاهی دقیق تر به تاریخچه Assassins و هنر Assassin’s Creed Brotherhood بیندازید.\nکارت‌های بازرگانی جمع‌آوری‌شده شخصیت‌های چند نفره: مجموعه‌ای از کارت‌های معاملاتی شامل تمام شخصیت‌های Assassin's Creed Brotherhood Multiplayer، از جمله حرکت‌های کشتن و بیوگرافی آنها.\nنقشه رم\nAssassin’s Creed Lineage - The Complete Movie: رویدادهایی را که حول پدر اتزیو، جیووانی آدیتوره دا فیرنز می چرخد، کاوش کنید و در مورد داستان و جهان Assassin’s Creed اطلاعاتی کسب کنید.\nMaking-Of Assassin’s Creed Brotherhood - Behind the Brotherhood: با تیم سازنده به پشت صحنه بروید تا از نحوه ساخت بازی و ادامه داستان اتزیو مطلع شوید.\nموسیقی متن بازی: 22 آهنگ از موسیقی متن اصلی بازی توسط Jesper Kyd.\nمحتوای نسخه پرمیوم دیجیتال فقط از طریق دانلود در دسترس است\nدرباره GameLive و b"
   }
 ]
