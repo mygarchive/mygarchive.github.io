@@ -445,5 +445,41 @@
     },
     "description_en": "The Bergson family has watched over Mount Morta for generations as the guardians of the mystical mountain. They now face their most dangerous trial as a family.  Corruption has spread, morphing the once peaceful mountain into a violent and monster infested nightmare.\nExperience what it means to be in a family of heroes.  Take part in their journey, their struggles, and their victories!  Witness a love for eachother unmatched by even the gods themselves.  Fight through hordes of monsters unimaginable as you explore a mountain constantly in flux.  Gorgeous and breathtaking procedurally generated dungeons guarantee a unique experience every time you leave the safety of the Bergson’s house in pursuit of the truth behind the Corruption.\nKey Features:\n6 Playable Characters\nJohn, Mark, Linda, Joey, Kevin, and Lucy are all prepped and ready for the forthcoming fray.  Discover each family member’s unique fighting style and delve into their personalities and past.\nProcedurally Generated World\nEvery forest, dungeon, or temple you explore and skirmish through is procedurally to guarantee a unique experience every play through.\nMountain of Mystery\nDelve into the mountain and discover the mystical world of Morta.  Unearth why the Corruption has come to this seemly peaceful mountain.  Find lore scattered about giving glimpses into the lives of the mountain’s residents.\nPixel Art to A New Level\nA combination of hand painted pixel art and frame by frame animations partnered with modern lighti",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nخانواده برگسون چندین نسل به عنوان نگهبانان این کوه عرفانی بر کوه مورتا نظارت داشته اند. آنها اکنون به عنوان یک خانواده با خطرناک ترین محاکمه خود روبرو هستند.  فساد گسترش یافته و کوه زمانی آرام را به یک کابوس خشن و پر از هیولا تبدیل کرده است.\nمعنای حضور در خانواده قهرمانان را تجربه کنید.  در سفر، مبارزات و پیروزی های آنها شرکت کنید!  شاهد عشقی نسبت به یکدیگر باشید که حتی خود خدایان همتایی ندارند.  مبارزه با انبوهی از هیولاها غیرقابل تصور در حالی که کوهی را به طور مداوم در حال کاوش می کنید.  سیاه‌چال‌های زیبا و نفس‌گیر که به‌صورت رویه‌ای ایجاد شده‌اند، هر بار که امنیت خانه برگسون را به دنبال حقیقتی که در پس فساد وجود دارد را ترک می‌کنید، تجربه‌ای منحصر به فرد را تضمین می‌کند.\nویژگی های کلیدی:\n6 شخصیت قابل پخش\nجان، مارک، لیندا، جوی، کوین و لوسی همگی برای مسابقه پیش رو آماده و آماده هستند.  سبک مبارزه منحصر به فرد هر یک از اعضای خانواده را کشف کنید و به شخصیت و گذشته آنها بپردازید.\nدنیای رویه ای ایجاد شده\nهر جنگل، سیاه‌چال یا معبدی که در آن کاوش می‌کنید و در آن درگیری می‌کنید، از نظر رویه‌ای، تجربه‌ای منحصربه‌فرد را در هر بازی تضمین می‌کند.\nکوه رمز و راز\nدر کوه جستجو کنید و دنیای عرفانی مورتا را کشف کنید.  کشف کنید که چرا فساد به این کوه به ظاهر آرام آمده است.  افسانه های پراکنده ای را در مورد نگاه اجمالی به زندگی ساکنان کوه پیدا کنید.\nPixel Art به یک سطح جدید\nترکیبی از هنر پیکسلی نقاشی شده با دست و انیمیشن‌های فریم به فریم همراه با لایت مدرن"
+  },
+  {
+    "id": 978188,
+    "name": "Classified: France '44",
+    "background_image": "https://media.rawg.io/media/screenshots/f61/f615dddf5e239b6a3f692070bf6ed90c.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2024-03-05",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 29,
+    "developers": "Absolutely Games",
+    "steam_link": "https://store.steampowered.com/app/2085370/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0d4/0d48f464020df9f807f5b76f2f735f2b.jpg",
+      "https://media.rawg.io/media/screenshots/d9f/d9fa15b9b9004182df77c39f6803a0de.jpg",
+      "https://media.rawg.io/media/screenshots/041/041e938d65136a14cd0345ec937e901e.jpg",
+      "https://media.rawg.io/media/screenshots/0b2/0b27b046ed130fd674b984b1135da378.jpg",
+      "https://media.rawg.io/media/screenshots/7ba/7baf102d95a42c5d18dc7c92d63c1834.jpg",
+      "https://media.rawg.io/media/screenshots/a3b/a3bbb82bd6fcbb1776fa6536c52da061.jpg",
+      "https://media.rawg.io/media/screenshots/f61/f615dddf5e239b6a3f692070bf6ed90c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-6600 or AMD Ryzen 5 1600\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 660, 2 GB or AMD Radeon HD 7850, 2 GB or Intel Arc A380, 4 GB\nStorage: 35 GB available space\nAdditional Notes: Low 1080p @ 30 FPS",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-10600K or AMD Ryzen 5 3600XT\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 970, 4 GB or AMD Radeon R9 290X, 4 GB or Intel Arc A750, 8 GB\nStorage: 40 GB available space\nAdditional Notes: High 1080p @ 60 FPS"
+    },
+    "description_en": "Classified: France '44 Editions\nClassified: France '44 Overlord EditionThe Overlord Edition of Classified: France '44 contains:\nClassified: France '44\nClassified: France '44 - Season Pass\nThe Season Pass Includes:\nAll content to be released in 2024.\nDLC 1 - Guerrilla Pack (Out Now)\nDLC 2 - Agent Pack (to be released)\nDLC 3 - Talon Pack (to be released)\nDLC 4 - Devils Pack (to be released)\nEach DLC contains:\nTwo new Special Ops missions\nTwo new weapons or weapon variants\nOne new clothing set\nClassified: France '44 Deluxe EditionThe Deluxe Edition of Classified: France '44 contains:\nClassified: France '44 Base Game\nGuerrilla Pack\nExpand your arsenal and take the fight to the enemy with new Spec Ops missions and a brand new map in the Guerrilla Pack\nThe Guerrilla Pack contains:\nNew Map – “Church”\nTwo new Special Ops missions:\n• Tomb Raiders\n• Time to Kill\nTwo new weapon variants\n• Bren “Ambush”\n• Thompson “Boa”\nNew Clothing Set\n• Female Resistance “Guerrilla”\nAbout the GameClassified: France ‘44 is a new turn-based strategy game, set in World War II during the desperate months leading up to the Allied invasion of France in June 1944.\n\nTake charge of a special-ops team of Allied commandos and French resistance fighters. Recruit elite operatives to build your squad, then engage in a sweeping campaign of sabotage and destruction. Deal with competing factions to build the resistance network and strike at German targets deep in occupied territory. However, the more chaos you cause, t",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nطبقه بندی شده: فرانسه '44 نسخه\nطبقه بندی شده: فرانسه '44 نسخه Overlord نسخه Overlord از طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: فرانسه 44\nطبقه بندی شده: فرانسه '44 - پاس فصل\nSeason Pass شامل:\nتمامی مطالب در سال 2024 منتشر خواهد شد.\nDLC 1 - Guerrilla Pack (اکنون منتشر شد)\nDLC 2 - Agent Pack (در حال انتشار)\nDLC 3 - Talon Pack (در حال انتشار)\nDLC 4 - Devils Pack (در حال انتشار)\nهر DLC شامل:\nدو ماموریت جدید عملیات ویژه\nدو نوع سلاح یا سلاح جدید\nیک ست لباس جدید\nطبقه بندی شده: نسخه لوکس فرانسه '44 نسخه لوکس طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: بازی پایه فرانسه '44\nبسته چریکی\nزرادخانه خود را گسترش دهید و با ماموریت های جدید Spec Ops و یک نقشه کاملاً جدید در بسته Guerrilla به نبرد با دشمن بپردازید.\nبسته چریکی شامل:\nنقشه جدید - \"کلیسا\"\nدو ماموریت عملیات ویژه جدید:\n• مهاجمان مقبره\n• زمان کشتن\nدو نوع سلاح جدید\n• برن «کمین»\n• تامپسون «بوآ»\nست لباس جدید\n• مقاومت زن \"چرریک\"\nدرباره GameClassified: France ‘44 یک بازی استراتژی نوبتی جدید است که در جنگ جهانی دوم در طول ماه‌های ناامید منتهی به تهاجم متفقین به فرانسه در ژوئن 1944 اتفاق می‌افتد.\n\nمسئولیت یک تیم عملیات ویژه متشکل از کماندوهای متفقین و مبارزان مقاومت فرانسوی را بر عهده بگیرید. ماموران نخبه را برای ایجاد گروه خود استخدام کنید، سپس در یک کمپین گسترده خرابکاری و تخریب شرکت کنید. برای ایجاد شبکه مقاومت و حمله به اهداف آلمانی در اعماق سرزمین های اشغالی با جناح های رقیب برخورد کنید. با این حال، هر چه آشفتگی بیشتری ایجاد کنید، t"
   }
 ]
