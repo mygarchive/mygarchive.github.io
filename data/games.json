@@ -162,5 +162,56 @@
     },
     "description_en": "This game is often called an \"interactive film\" - because the proportion between the given story and the possibilities to influence the story is indeed somewhat different than in most games. The game develops between three points in the biography of the girl Jodie Holmes. In these three points, we find ourselves repeatedly. And in general, we see 16 years of her life, from 8 to 24 years.\nJodie from birth has a gift of communication with a disembodied being called Aiden. In this context, the Jodie-Aiden couple can capture people's consciousness, move objects, and even strangle people. At the same time, Jodie is periodically exposed to attacks of vague energies.\nHer parents are not her relatives, they give her to psychiatrists and refuse her. When the family of one of the psychiatrists perishes, Jodie, with the help of Ayden, establishes a connection with the deceased, she can let the living and the dead speak.\nThe CIA is interested in Jodie's abilities and makes her become an agent. She then instructs her on several missions, but Jodie realises that she is being used for criminal activities - and refuses to cooperate with the CIA. CIA agents do not leave her alone, and she destroys them.\nThe game has a lot of interpretations of what is happening in the world of the dead, different people use Jodi's forces in different ways. Jody herself also does not have a clear picture, she seeks and finds real parents, helps different people - but they rarely pay her the same.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین بازی اغلب \"فیلم تعاملی\" نامیده می شود - زیرا تناسب بین داستان داده شده و احتمالات تأثیرگذاری بر داستان در واقع تا حدودی با بیشتر بازی ها متفاوت است. بازی بین سه نقطه در زندگی نامه دختر جودی هلمز توسعه می یابد. در این سه نقطه، خود را به کرات می یابیم. و به طور کلی 16 سال از زندگی او را از 8 تا 24 سال می بینیم.\nجودی از بدو تولد استعداد ارتباط با موجودی بی‌جسم به نام آیدن را دارد. در این زمینه، زوج Jodie-Aiden می توانند هوشیاری افراد را به تصویر بکشند، اشیا را جابجا کنند و حتی افراد را خفه کنند. در همان زمان، جودی به طور دوره ای در معرض حملات انرژی های مبهم قرار می گیرد.\nپدر و مادرش از بستگانش نیستند، او را به روانپزشک می دهند و او را رد می کنند. هنگامی که خانواده یکی از روانپزشکان از بین می رود، جودی با کمک آیدن با فرد متوفی ارتباط برقرار می کند، او می تواند اجازه دهد زنده ها و مرده ها صحبت کنند.\nسیا به توانایی های جودی علاقه مند است و او را وادار به تبدیل شدن به یک مامور می کند. سپس او را در چندین ماموریت راهنمایی می کند، اما جودی متوجه می شود که از او برای فعالیت های مجرمانه استفاده می شود - و از همکاری با سیا امتناع می ورزد. ماموران سیا او را تنها نمی گذارند و او آنها را نابود می کند.\nبازی تعابیر زیادی از اتفاقات دنیای مردگان دارد، افراد مختلف به روش های مختلف از نیروهای جودی استفاده می کنند. خود جودی نیز تصویر روشنی ندارد ، او به دنبال والدین واقعی می گردد و به افراد مختلف کمک می کند - اما آنها به ندرت به او پول می دهند."
+  },
+  {
+    "id": 650621,
+    "name": "Blasphemous II",
+    "background_image": "https://media.rawg.io/media/games/73b/73bcfec00beec38a3d3527db4f9b8c53.jpg",
+    "rating": 4.19,
+    "metacritic": null,
+    "released": "2023-08-23",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 9,
+    "developers": "The Game Kitchen",
+    "steam_link": "https://store.steampowered.com/app/2114740/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/569/569546be856c3d4238dfccce857c7b94.jpg",
+      "https://media.rawg.io/media/screenshots/b5f/b5f0f921e124030fd3ab96d36fbf4210.jpg",
+      "https://media.rawg.io/media/screenshots/ff3/ff38c9dc809852035c1458fb34779826.jpg",
+      "https://media.rawg.io/media/screenshots/189/18947ab0b098207f77815c327ab5002c.jpg",
+      "https://media.rawg.io/media/screenshots/57e/57e6ad9110da0244a67ce700960adf1e.jpg",
+      "https://media.rawg.io/media/screenshots/dcf/dcf3e7b6ea2c96d8f7178ef1b00b91ea.jpg",
+      "https://media.rawg.io/media/games/73b/73bcfec00beec38a3d3527db4f9b8c53.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The Penitent One awakens as Blasphemous 2 joins him once again in an endless struggle against The Miracle. Dive into a perilous new world filled with mysteries and secrets to discover, and tear your way through monstrous foes that stand between you and your quest to end the cycle once and for all.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nزمانی که Blasphemous 2 بار دیگر در مبارزه ای بی پایان علیه The Miracle به او می پیوندد، The Penitent One بیدار می شود. در یک دنیای جدید خطرناک پر از رازها و اسرار برای کشف شیرجه بزنید، و راه خود را از میان دشمنان هیولایی که بین شما و تلاش شما برای پایان دادن به چرخه یک بار برای همیشه ایستاده‌اند، بگذرید."
   }
 ]
