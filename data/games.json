@@ -1055,5 +1055,51 @@
     },
     "description_en": "Embark on ever-rewarding scientific expeditions as you adapt to nature's challenges and unravel the mysteries of uncharted lands. Venture into the vast wilderness of arid deserts and rugged forests to the steepest mountains, brimming with hidden treasures and forgotten ruins.\n\nLead research missions as you drive a variety of all-terrain vehicles through treacherous paths, using advanced technologies and high-tech tools to overcome obstacles. Build and manage your base and equip your vehicles with essential gadgets like drones or scanners to ensure your success in the wild. Hire a team of top-notch experts to improve your skills in the field, unlocking new possibilities for exploration.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر حالی که با چالش های طبیعت سازگار می شوید و اسرار سرزمین های ناشناخته را کشف می کنید، سفرهای علمی همیشه ارزشمند را آغاز کنید. به بیابان وسیع بیابان‌های خشک و جنگل‌های ناهموار تا شیب‌دارترین کوه‌ها، مملو از گنجینه‌های پنهان و خرابه‌های فراموش‌شده سفر کنید.\n\nبا استفاده از فناوری های پیشرفته و ابزارهای پیشرفته برای غلبه بر موانع، ماموریت های تحقیقاتی را رهبری کنید، زیرا انواع وسایل نقلیه سراسری را در مسیرهای خائنانه رانندگی می کنید. پایگاه خود را بسازید و مدیریت کنید و وسایل نقلیه خود را با ابزارهای ضروری مانند هواپیماهای بدون سرنشین یا اسکنر مجهز کنید تا موفقیت خود را در طبیعت تضمین کنید. تیمی از کارشناسان درجه یک را استخدام کنید تا مهارت‌های خود را در این زمینه بهبود بخشند و فرصت‌های جدیدی را برای اکتشاف باز کنند."
+  },
+  {
+    "id": 955681,
+    "name": "Fabledom",
+    "background_image": "https://media.rawg.io/media/screenshots/264/26425212c60d7fa0472fdf93b1d57794.jpg",
+    "rating": 3.8,
+    "metacritic": null,
+    "released": "2023-04-13",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "Grenaa Games",
+    "steam_link": "https://store.steampowered.com/app/1651560/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/eee/eee117694879b01fd8312b02845a0d02.jpg",
+      "https://media.rawg.io/media/screenshots/8f1/8f181747a7d4a1be8d26bf7462fe74b3.jpg",
+      "https://media.rawg.io/media/screenshots/926/926552c89f353dadf2b6ae19a1eb8cb9.jpg",
+      "https://media.rawg.io/media/screenshots/e33/e331114045b81a1ee3a6eec618599166.jpg",
+      "https://media.rawg.io/media/screenshots/686/6863f64312863bbaab985ae82e85b4f8.jpg",
+      "https://media.rawg.io/media/screenshots/2c7/2c73eafafa1e2b739f59f98d441bfd54.jpg",
+      "https://media.rawg.io/media/screenshots/264/26425212c60d7fa0472fdf93b1d57794.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 64-bit\nProcessor: Intel Core i5 3470 @ 3.2 GHz | AMD FX 8120 @ 3.9 GHz\nMemory: 8 GB RAM\nGraphics: GTX 1060 / RX 580",
+      "recommended": "OS: Windows 10 64-bit\nProcessor: Intel Core i5 4690 @ 3.5 GHz | AMD Ryzen 5 1600x @ 3.6 GHz\nMemory: 16 GB RAM\nGraphics: GTX 1070 / RX VEGA-56"
+    },
+    "description_en": "Roadmap\nAbout the Game\nWelcome, your Highness! A vast land awaits your settlers and is ready to be colonized.\nFabledom offers an accessible and intuitive way of playing City builders, no excel sheets nor optimization is required to build yourself a kingdom.\nSet in a strange world where Fairytales became reality, you will witness the growth of your village; follow your citizens’ lives and watch the rise and fall of your relationships with the neighboring kingdoms.Features\nCollect Resources and Shape your Settlement\nFind the promised land, settle, and flourish! You will need every resource available to you to expand and thrive. Build and shape a city worthy of your future citizens!\nTales of trades, feuds and partnerships\nBuild your economy, exchange rare resources to grow and evolve. Fabledom offers numerous ways to interact with other kingdoms. How you will handle diplomacy will shape your progress.\nGet yourself a Queen or a King\nRomance will strongly shape the way you play and enjoy the game. Fabledom’s focus on love and candor will provide fresh city building mechanics.\nBuild an Army, elect your hero to protect & conquer\nChoose your champion, assemble your town watch and defend your Kingdom against vile neighbors and minions\nSweet & Laid Back in a Fairy tale World\nExperience the fairytale world filled with giants, witches, flying pigs and hidden secrets. Explore every nook and cranny of this magical world!\nFabledom is inspired by amazing games like:\nThe Settlers\nFoundation\nK",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنقشه راه\nدرباره بازی\nخوش آمدید، اعلیحضرت! سرزمین وسیعی در انتظار مهاجران شماست و آماده استعمار شدن است.\nFabledom روشی در دسترس و شهودی برای بازی سازندگان شهر ارائه می‌دهد، برای ساختن یک پادشاهی برای خود هیچ برگه اکسل یا بهینه‌سازی مورد نیاز نیست.\nدر دنیایی عجیب و غریب که در آن Fairytales به واقعیت تبدیل شد، شاهد رشد دهکده خود خواهید بود. زندگی شهروندان خود را دنبال کنید و رشد و سقوط روابط خود با پادشاهی های همسایه را تماشا کنید. ویژگی ها\nمنابع را جمع آوری کنید و تسویه حساب خود را شکل دهید\nسرزمین موعود را بیابید، ساکن شوید و شکوفا شوید! برای توسعه و پیشرفت به هر منبعی که در دسترس است نیاز دارید. شهری شایسته شهروندان آینده خود بسازید و شکل دهید!\nداستان های تجارت، دشمنی ها و شراکت ها\nاقتصاد خود را بسازید، منابع کمیاب را برای رشد و تکامل مبادله کنید. Fabledom راه های متعددی برای تعامل با پادشاهی های دیگر ارائه می دهد. نحوه برخورد با دیپلماسی، پیشرفت شما را شکل خواهد داد.\nبرای خود یک ملکه یا یک پادشاه بگیرید\nعاشقانه به شدت نحوه بازی و لذت بردن شما از بازی را شکل می دهد. تمرکز Fabledom بر عشق و صراحت، مکانیک های جدید ساختمان شهر را ارائه می دهد.\nیک ارتش بسازید، قهرمان خود را برای محافظت و تسخیر انتخاب کنید\nقهرمان خود را انتخاب کنید، ساعت شهر خود را جمع آوری کنید و از پادشاهی خود در برابر همسایگان و عوامل شرور دفاع کنید\nشیرین و آرام در دنیای افسانه\nدنیای افسانه ای پر از غول ها، جادوگران، خوک های پرنده و اسرار پنهان را تجربه کنید. هر گوشه و کنار این دنیای جادویی را کاوش کنید!\nFabledom از بازی های شگفت انگیزی الهام گرفته شده است مانند:\nشهرک نشینان\nبنیاد\nک"
   }
 ]
