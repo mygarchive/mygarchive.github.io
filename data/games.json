@@ -351,5 +351,48 @@
     },
     "description_en": "Make action your middle name as you rule the streets in Burnout™ Paradise Remastered. Tear up the town from hectic downtown avenues to wild mountain roads. Relive the high-octane stunts and wanton destruction of one of the greatest arcade-driving games ever!\nBurnout Paradise Remastered provides the ultimate driving playground for you and your friends to play online. This remaster includes all addons from the Year of Paradise, including the Big Surf Island update, meticulously recreated and ready to wreck in 4K on the PlayStation 4 Pro.\nOnline features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n1 player\nNetwork Players 2-8 - Full game requires PlayStation®Plus membership to access online multiplayer\n10GB minimum save size\nDUALSHOCK®4\nOnline Play (Optional)\nSoftware subject to license (us.playstation.com/softwarelicense). Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy). One-time license fee for play on account’s designated primary PS4™ system and other PS4™ systems when signed in with that account.\nConditions and restrictions apply. See https://www.ea.com/games/burnout/burnout-paradise-remastered/disclaimers for details.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهمانطور که در بازی Burnout™ Paradise Remastered بر خیابان ها حکمرانی می کنید، اقدام را به نام میانی خود تبدیل کنید. شهر را از خیابان های شلوغ مرکز شهر تا جاده های کوهستانی وحشی جدا کنید. شیرین کاری های با اکتان بالا و تخریب بی رویه یکی از بهترین بازی های رانندگی آرکید تا کنون را دوباره زنده کنید!\nبازی Burnout Paradise Remastered بهترین زمین بازی رانندگی را برای شما و دوستانتان برای بازی آنلاین فراهم می کند. این ریمستر شامل تمام افزونه‌های سال بهشت، از جمله به‌روزرسانی Big Surf Island است که به‌دقت بازسازی شده و آماده تخریب با کیفیت 4K در پلی‌استیشن 4 پرو است.\nویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n1 بازیکن\nPlayers Network 2-8 - بازی کامل به عضویت PlayStation®Plus برای دسترسی به چند نفره آنلاین نیاز دارد\nحداقل اندازه ذخیره 10 گیگابایت\nDUALSHOCK®4\nپخش آنلاین (اختیاری)\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy). هزینه مجوز یکباره برای بازی در سیستم اصلی PS4™ و سایر سیستم‌های PS4™ زمانی که با آن حساب وارد شوید.\nشرایط و محدودیت ها اعمال می شود. برای جزئیات بیشتر به https://www.ea.com/games/burnout/burnout-paradise-remastered/disclaimers مراجعه کنید."
+  },
+  {
+    "id": 22121,
+    "name": "Celeste",
+    "background_image": "https://media.rawg.io/media/games/594/59487800889ebac294c7c2c070d02356.jpg",
+    "rating": 4.37,
+    "metacritic": 91,
+    "released": "2018-01-25",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 6,
+    "developers": "Matt Makes Games, Extremely OK Games, Noel",
+    "steam_link": "https://store.steampowered.com/app/504230/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256682991/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256682991/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/587/5876e97af87c864b0d9cd19ca77568a5.jpg",
+      "https://media.rawg.io/media/screenshots/a1b/a1bb2c2268db77533c09e231bf032d9f.jpg",
+      "https://media.rawg.io/media/screenshots/031/031480a38e2e473baa13154acbbf4abc.jpg",
+      "https://media.rawg.io/media/screenshots/651/651e56fc12694d1381183df3b83fc4df.jpg",
+      "https://media.rawg.io/media/screenshots/5b1/5b13b67481ff4e20180aa509bc738e6a.jpg",
+      "https://media.rawg.io/media/screenshots/744/74446ff1bc5846c64bd3bc0bd2b0ccc3.jpg",
+      "https://media.rawg.io/media/games/594/59487800889ebac294c7c2c070d02356.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or newer\nProcessor: Intel Core i3 M380\nMemory: 2 GB RAM\nGraphics: Intel HD 4000\nDirectX: Version 10\nStorage: 400 MB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Celeste is a platformer about climbing a mountain, from the creators of TowerFall.\nExplore a sprawling mountain with over 500 levels bursting with secrets, across 8 unique areas. Unlock a hardcore Remix for each area, with completely new levels that will push your climbing skills to the limit.\nMadeline can air-dash and climb any surface to gain ground. Controls are simple and accessible, but super tight and expressive with layers of depth to master. Deaths are sudden and respawns are fast. You'll die a lot, but you'll learn something every time.\nMeet peculiar characters and climb through a personal story of breaking through your self-doubt to find yourself, set in the present-day Pacific Northwest. Uncover the mystery of the mountain's power and outrun your reflection on your journey to reach the top.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCeleste یک پلتفرمر در مورد بالا رفتن از یک کوه، از سازندگان TowerFall است.\nکوهی وسیع با بیش از 500 سطح پر از اسرار را در 8 منطقه منحصر به فرد کاوش کنید. یک ریمیکس هاردکور را برای هر منطقه باز کنید، با سطوح کاملاً جدید که مهارت‌های کوهنوردی شما را به حداکثر می‌رساند.\nMadeline می‌تواند برای به دست آوردن زمین از هر سطحی بالا برود. کنترل‌ها ساده و در دسترس هستند، اما بسیار محکم و گویا با لایه‌هایی از عمق برای تسلط. مرگ ها ناگهانی و بازپخش سریع هستند. شما خیلی خواهید مرد، اما هر بار چیزی یاد خواهید گرفت.\nبا شخصیت‌های عجیب و غریب آشنا شوید و از طریق داستان شخصی شکستن شک و تردید خود بالا بروید تا خودتان را پیدا کنید، واقع در شمال غربی اقیانوس آرام امروزی. رمز و راز قدرت کوه را کشف کنید و از بازتاب خود در سفر خود برای رسیدن به قله پیشی بگیرید."
   }
 ]
