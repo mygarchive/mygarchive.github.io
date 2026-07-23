@@ -1973,5 +1973,51 @@
     },
     "description_en": "This popular 2D puzzle-platformer creates the atmosphere of isolation, where the player alone can guide the nameless protagonist to his destination. Hostile environments and one-hit deaths may seem difficult, but the game implements a fair amount of checkpoints. The monochrome color palette showcases cartoony proportions of every living thing while making lack of details threatening. Limbo shows you exactly what you encounter, but never how it looks.\n\nLimbo uses the atmosphere and sound design of the horror genre while avoiding tropes of the modern horror games. The overarching theme and unique style compensated for the rather short game with an abrupt ending, making Limbo one of the most impactful games for the genre.\n\nThe simple controls and easy-to-pick-up mechanics help to make a clear distinction, which part of the stage players can interact with, and which part can lead to the quick death. Even though the game is in black and white, this separation is intuitive and natural, so the player would know exactly where to go or what to do.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین پلتفرم‌ساز معمایی دوبعدی محبوب، فضای انزوا را ایجاد می‌کند، جایی که بازیکن به تنهایی می‌تواند قهرمان بی‌نام را به مقصدش هدایت کند. محیط‌های خصمانه و مرگ‌های یک‌باره ممکن است دشوار به نظر برسند، اما بازی دارای تعداد قابل توجهی از نقاط بازرسی است. پالت رنگ تک رنگ نسبت های کارتونی هر موجود زنده را به نمایش می گذارد و در عین حال کمبود جزئیات را تهدید کننده می کند. Limbo دقیقاً به شما نشان می دهد که با چه چیزی روبرو می شوید، اما هرگز چگونه به نظر می رسد.\n\nLimbo از اتمسفر و طراحی صدای ژانر وحشت استفاده می کند و در عین حال از بازی های ترسناک مدرن دوری می کند. تم فراگیر و سبک منحصر به فرد، بازی نسبتاً کوتاه با پایانی ناگهانی را جبران کرد و Limbo را به یکی از تأثیرگذارترین بازی‌های این سبک تبدیل کرد.\n\nکنترل‌های ساده و مکانیک‌های آسان برای برداشتن به شما کمک می‌کند تا تمایز واضحی ایجاد کنید، کدام بخش از صحنه می‌تواند با آن تعامل داشته باشد و کدام بخش می‌تواند منجر به مرگ سریع شود. حتی اگر بازی سیاه و سفید است، این جداسازی بصری و طبیعی است، بنابراین بازیکن دقیقا می‌داند کجا برود یا چه کاری انجام دهد."
+  },
+  {
+    "id": 263548,
+    "name": "Little Misfortune",
+    "background_image": "https://media.rawg.io/media/games/669/6691144e293eebc308d86ca3c8317c5a.jpg",
+    "rating": 3.96,
+    "metacritic": 57,
+    "released": "2019-09-17",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "Killmonday Games",
+    "steam_link": "https://store.steampowered.com/app/714120/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d97/d97ef20d5803080c5cf0fb5ce238986f.jpg",
+      "https://media.rawg.io/media/screenshots/5fa/5fa132f9a9e675c91e812908e43ca84e.jpg",
+      "https://media.rawg.io/media/screenshots/730/7303a8ed721f3b5e96854b6dc35f146f.jpg",
+      "https://media.rawg.io/media/screenshots/079/0793c08070a0f9b2b398430199290134.jpg",
+      "https://media.rawg.io/media/screenshots/b90/b90b0993a4656f3746db52282269192d.jpg",
+      "https://media.rawg.io/media/screenshots/be4/be4a12d31ba3ad65a0620335742657c3.jpg",
+      "https://media.rawg.io/media/games/669/6691144e293eebc308d86ca3c8317c5a.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: Intel i5 Quad-Core\nMemory: 4 GB RAM\nGraphics: Intel HD 4000\nStorage: 3 GB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Little Misfortune is an interactive story, focused on exploration and characters, both sweet and dark, where your choices have consequences.\nStarring Misfortune Ramirez Hernandez, an imaginative 8-year-old, who seeks the prize of Eternal Happiness, as a gift to her Mommy. Led by her new friend, Mr. Voice, they venture into the woods, where mysteries are unraveled and a little bit of bad luck unfolds.\nSharing the same universe with the cult video game Fran Bow, created by the visionary dev-duo Killmonday Games.\n⦁\tYou may pet a doggy, a fishy, a wolfie, the Kraken, the kitty and the foxy.\n⦁\tVisit a pet cemetery with a shovel.\n⦁\tNow with real human voices: Hear Misfortune say some pretty cute things!\n⦁\tMissing children.\n⦁\tThere's a monster!\n⦁\tFall in love.\n⦁\tCommit petty crimes.\n⦁\tOriginal art by Natalia Martinsson.\n⦁\tOriginal soundtrack by Isak Martinsson.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبدبختی کوچک یک داستان تعاملی است که بر روی کاوش و شخصیت‌ها متمرکز شده است، چه شیرین و چه تاریک، که در آن انتخاب‌های شما پیامدهایی دارد.\nبا بازی بدبختی رامیرز هرناندز، یک دختر تخیلی 8 ساله، که به دنبال جایزه شادی ابدی، به عنوان هدیه به مادرش است. آنها به رهبری دوست جدیدش، آقای ویس، وارد جنگل می شوند، جایی که رازها آشکار می شود و کمی بدشانسی آشکار می شود.\nاشتراک‌گذاری یک جهان با بازی ویدیویی فرقه‌ای Fran Bow، ایجاد شده توسط دوتایی رویایی Killmonday Games.\n⦁ ممکن است سگی، ماهی، گرگ، کراکن، بچه گربه و روباه را نوازش کنید.\n⦁ با بیل از قبرستان حیوانات خانگی دیدن کنید.\n⦁ اکنون با صدای واقعی انسان: بشنوید که بدبختی چند چیز بسیار زیبا می گوید!\n⦁ گم شدن کودکان\n⦁ یک هیولا وجود دارد!\n⦁ عاشق شوید.\n⦁ ارتکاب جرایم کوچک.\n⦁ هنر اصلی توسط ناتالیا مارتینسون.\n⦁ موسیقی متن اصلی توسط ایسک مارتینسون."
   }
 ]
