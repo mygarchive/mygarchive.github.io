@@ -17,7 +17,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
-  // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی و سرعت فوق‌العاده
+  // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی
   const [visibleCount, setVisibleCount] = useState<number>(12);
 
   useEffect(() => {
@@ -43,19 +43,19 @@ export default function Home() {
       
       let fetchedData = null;
 
-      // 🚀 لایه اول: شاه‌راه اختصاصی کلادفلر شما
+      // 🚀 لایه اول: پروکسی اختصاصی
       try {
         const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
         const res = await fetch(proxyUrl, { cache: 'no-store' });
         if (res.ok) fetchedData = await res.json();
-      } catch (e) { console.warn("لایه ۱ (کلادفلر) ناموفق بود."); }
+      } catch (e) { console.warn("لایه ۱ ناموفق بود."); }
 
       // 🔄 لایه دوم پشتیبان: پروکسی CodeTabs
       if (!fetchedData) {
         try {
           const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
           if (res.ok) fetchedData = await res.json();
-        } catch (e) { console.warn("لایه ۲ (CodeTabs) ناموفق بود."); }
+        } catch (e) { console.warn("لایه ۲ ناموفق بود."); }
       }
 
       // 🔄 لایه سوم پشتیبان: پروکسی Corsproxy
@@ -63,18 +63,17 @@ export default function Home() {
         try {
           const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
           if (res.ok) fetchedData = await res.json();
-        } catch (e) { console.warn("لایه ۳ (Corsproxy) ناموفق بود."); }
+        } catch (e) { console.warn("لایه ۳ ناموفق بود."); }
       }
 
-      // 🔄 لایه چهارم: درخواست مستقیم (برای کاربرانی که وی‌پاین روشن دارند)
+      // 🔄 لایه چهارم: درخواست مستقیم
       if (!fetchedData) {
         try {
           const res = await fetch(targetUrl, { cache: 'no-store' });
           if (res.ok) fetchedData = await res.json();
-        } catch (e) { console.warn("لایه ۴ (مستقیم) ناموفق بود."); }
+        } catch (e) { console.warn("لایه ۴ ناموفق بود."); }
       }
 
-      // اعمال دیتای دریافت شده از اینترنت
       if (Array.isArray(fetchedData) && fetchedData.length > 0) {
         data = fetchedData;
       }
@@ -91,8 +90,7 @@ export default function Home() {
       setGenres(allGenres.sort());
       setLoading(false);
     } catch (err) {
-      console.error("خطا در لایه‌های پروکسی صفحه اصلی:", err);
-      // لایه آخر (آفلاین): دیتای لوکال هاردکد شده
+      console.error("خطا در دریافت داده‌ها:", err);
       if (Array.isArray(localGamesData)) {
         setGames(localGamesData);
         setFilteredGames(localGamesData);
@@ -103,17 +101,36 @@ export default function Home() {
 
   useEffect(() => {
     initData();
+  }, []);
+
+  // 📜 اصلاح هوشمند اسکرول بی‌نهایت
+  useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
 
-      // 📜 اسکرول بی‌نهایت: افزودن ۱۲ کارت جدید هنگام نزدیک شدن به انتهای صفحه
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) {
-        setVisibleCount((prev) => prev + 12);
+      // اگر کاربر به فاصله ۸۰۰ پیکسلی از انتهای صفحه رسید، ۱۲ تای بعدی را لود کن
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 800) {
+        setVisibleCount((prev) => {
+          if (prev < filteredGames.length) {
+            return prev + 12;
+          }
+          return prev;
+        });
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [filteredGames.length]);
+
+  // 🔍 بررسی خودکار: اگر ارتفاع کارت‌ها از ارتفاع مانیتور کمتر بود، کارت‌های بیشتری لود کن تا اسکرول فعال شود
+  useEffect(() => {
+    if (!loading && filteredGames.length > visibleCount) {
+      if (document.documentElement.scrollHeight <= window.innerHeight) {
+        setVisibleCount((prev) => prev + 12);
+      }
+    }
+  }, [visibleCount, filteredGames.length, loading]);
 
   useEffect(() => {
     let result = [...games];
@@ -139,7 +156,6 @@ export default function Home() {
     }
 
     setFilteredGames(result);
-    // 🔄 ریست کردن تعداد کارت‌های مرئی با تغییر فیلتر یا سرچ
     setVisibleCount(12);
   }, [selectedGenre, searchQuery, sortBy, games]);
 
@@ -190,7 +206,6 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6">
-            
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold" style={{ color: themeStyles.subText }}>
                 {darkMode ? 'تم تاریک' : 'تم روشن'}
@@ -259,58 +274,61 @@ export default function Home() {
           </div>
         </div>
 
-      {filteredGames.length === 0 ? (
-  <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
-) : (
-  /* 🖥️ بهینه‌سازی گرید برای نمایش منظم در تمام مانیتورها از جمله 2K و التراواید */
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
-    {filteredGames.slice(0, visibleCount).map((game) => (
-      <a 
-        href={`./game?id=${game.id}`} 
-        key={game.id} 
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
-        style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
-      >
-        {/* 🎬 تغییر به نسبت تصویر ۱۶:۹ استاندارد ویدیوگیم بدون کات خوردن یا مربعی شدن */}
-        <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
-          <img 
-            src={getOptimizedUrl(game.background_image, 400)} 
-            alt={game.name} 
-            loading="lazy"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
-            }}
-            className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
-          />
-        </div>
-        <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
-          <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
-            {game.name}
-          </h3>
-          
-          <div 
-            className="flex justify-between items-center pt-2.5 text-[11px]"
-            style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
-          >
-            <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
-              ⭐ {game.rating || '---'}
-            </span>
-            <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
+        {filteredGames.length === 0 ? (
+          <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
+            {filteredGames.slice(0, visibleCount).map((game) => (
+              <a 
+                href={`./game?id=${game.id}`} 
+                key={game.id} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
+                style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
+              >
+                <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
+                  <img 
+                    src={getOptimizedUrl(game.background_image, 400)} 
+                    alt={game.name} 
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
+                    }}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
+                  />
+                </div>
+                <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
+                  <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
+                    {game.name}
+                  </h3>
+                  
+                  <div 
+                    className="flex justify-between items-center pt-2.5 text-[11px]"
+                    style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
+                  >
+                    <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
+                      ⭐ {game.rating || '---'}
+                    </span>
+                    <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
           </div>
-        </div>
-      </a>
-    ))}
-  </div>
-)}
+        )}
+
+        {/* نمایش راهنمای بارگذاری بازی‌های بیشتر */}
+        {visibleCount < filteredGames.length && (
+          <div className="text-center py-8 text-xs font-bold" style={{ color: themeStyles.subText }}>
+            در حال بارگذاری بازی‌های بیشتر با اسکرول...
+          </div>
+        )}
+
       </div>
 
-      {/* 🌐 فوتر کشویی هوشمند دو زبانه و اتوماتیک */}
       <footer className="w-full mt-12 pb-6 flex flex-col items-center max-w-7xl mx-auto">
-        
-        {/* دکمه اصلی به زبان انگلیسی */}
         <button
           onClick={() => setIsFooterOpen(!isFooterOpen)}
           className="px-5 py-2.5 rounded-full text-xs font-bold shadow-sm transition duration-300 flex items-center gap-2 hover:scale-105 active:scale-95 font-mono"
@@ -323,7 +341,6 @@ export default function Home() {
           {isFooterOpen ? '🔼 Close Info' : '🔽 Contact & Disclaimer'}
         </button>
 
-        {/* باکس کشویی مات و انیمیشنی */}
         <div
           className={`w-full mt-4 rounded-2xl overflow-hidden transition-all duration-500 ease-in-out ${
             isFooterOpen ? 'max-h-[600px] opacity-100 p-6 border' : 'max-h-0 opacity-0 p-0 border-none'
@@ -334,14 +351,9 @@ export default function Home() {
             borderColor: themeStyles.border 
           }}
         >
-          {/* بخش دو ستونه اطلاعات */}
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8" dir="rtl">
-            
-            {/* سمت راست: متن سلب مسئولیت حقوقی دو زبانه و خودکار */}
             <div className="flex-1 text-right space-y-4">
               <h4 className="text-xs font-black text-purple-500 mb-1">⚖️ Disclaimer & Source / اطلاعات حقوقی</h4>
-              
-              {/* نسخه فارسی */}
               <p className="text-[12px] leading-6" style={{ color: themeStyles.subText }}>
                 این وب‌سایت یک آرشیو شخصی برای معرفی بازی‌های ویدیویی است. اطلاعات و تصاویر این آرشیو از منابع شخص ثالث مانند{' '}
                 <a 
@@ -355,8 +367,6 @@ export default function Home() {
                 به صورت کاملاً خودکار جمع‌آوری و دریافت می‌شوند. تمامی حقوق مربوط به بازی‌ها، تصاویر، لوگوها و علائم تجاری متعلق به سازندگان و ناشران اصلی بازی می‌باشد. 
                 در صورت وجود هرگونه درخواست حذف یا اصلاح محتوا، لطفاً از طریق راه‌های ارتباطی سایت اطلاع دهید.
               </p>
-
-              {/* نسخه انگلیسی */}
               <p className="text-[11px] leading-5 text-left font-mono opacity-75 pt-2 border-t border-dashed" style={{ color: themeStyles.subText, borderColor: themeStyles.border }} dir="ltr">
                 This website is a personal archive for video game presentation. All data and media are automatically fetched and collected from third-party platforms like{' '}
                 <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline font-bold">RAWG</a>. 
@@ -365,7 +375,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* سمت چپ: راه‌های ارتباطی با آیدی تنظیم‌شده شما */}
             <div className="flex flex-col items-center md:items-end gap-2 min-w-[150px]">
               <h4 className="text-xs font-black text-purple-500 mb-1 font-mono" dir="ltr">📬 Contact Me</h4>
               <div className="flex gap-3 mt-1">
@@ -378,18 +387,8 @@ export default function Home() {
                 >
                   Telegram
                 </a>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-green-600 hover:text-white"
-                  style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
-                >
-                   
-                </a>
               </div>
             </div>
-
           </div>
         
           <div 
@@ -397,16 +396,15 @@ export default function Home() {
             style={{ borderTop: `1px dashed ${themeStyles.border}`, color: themeStyles.subText }}
           >
             Developed with <span className="text-purple-500 animate-pulse">💜</span> by{' '}
-<a 
-  href="https://gemini.google.com" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="text-purple-500 font-bold hover:underline"
->
-  Gemini
-</a>
+            <a 
+              href="https://gemini.google.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-purple-500 font-bold hover:underline"
+            >
+              Gemini
+            </a>
           </div>
-
         </div>
       </footer>
 
