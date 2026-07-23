@@ -310,5 +310,46 @@
     },
     "description_en": "Guide two brothers on an epic fairy tale filled with discovery, loss, adventure, and mystery.\nWith their father suffering from a deadly illness, two brothers must bravely set out to find the “Water of Life,” the one cure that can save him. With no option for failure the brothers must rely on each other using their individual skills to protect one another and overcome the obstacles ahead in this unforgettable journey.\nA TIMELESS CLASSIC REMADE\nHailed by critics when it was originally released, Brothers: A Tale of Two Sons is back! Faithful to the gameplay and touching story from 2013, Brothers: A Tale of Two Sons Remake features rebuilt characters and landscapes based on the original and has been updated to the latest generation of graphics, performance, and gameplay. Paired with a re-recorded soundtrack with a live orchestra, prepare for an emotional experience that will take your adventure to all new heights.\nEMBARK ON A FANTASTICAL EPIC\nSolve puzzles, discover hidden stories, traverse dangerous locations, and fight deadly bosses. In single-player mode, navigate this story as both brothers in tandem or play in local co-op with a friend, each controlling one of the brothers as you play together.\nGET IMMERSED IN THE EMOTIONAL WORLD OF BROTHERS\nBrothers: A Tale of Two Sons is full of hidden details that reward those who seek them out. In addition to the original hidden treats and rich storyline, the remake has added new secrets to be discovered.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدو برادر را در یک افسانه حماسی پر از کشف، از دست دادن، ماجراجویی و رمز و راز راهنمایی کنید.\nدر حالی که پدرشان از یک بیماری کشنده رنج می برد، دو برادر باید شجاعانه به دنبال «آب زندگی» بروند، درمانی که می تواند او را نجات دهد. بدون هیچ گزینه ای برای شکست، برادران باید با استفاده از مهارت های فردی خود به یکدیگر اعتماد کنند تا از یکدیگر محافظت کنند و بر موانع پیش رو در این سفر فراموش نشدنی غلبه کنند.\nیک بازسازی کلاسیک بی انتها\nBrothers: A Tale of Two Sons در زمان انتشار اولیه مورد استقبال منتقدان قرار گرفت! وفادار به گیم پلی و داستان تاثیرگذار از سال 2013، Brothers: A Tale of Two Sons Remake دارای شخصیت ها و مناظر بازسازی شده بر اساس نسخه اصلی است و به آخرین نسل گرافیک، عملکرد و گیم پلی به روز شده است. همراه با یک موسیقی متن دوباره ضبط شده با یک ارکستر زنده، برای یک تجربه احساسی آماده شوید که ماجراجویی شما را به ارتفاعات جدید خواهد برد.\nوارد یک حماسه خارق العاده شوید\nپازل ها را حل کنید، داستان های پنهان را کشف کنید، از مکان های خطرناک عبور کنید و با رئیس های مرگبار مبارزه کنید. در حالت تک‌نفره، این داستان را به‌عنوان هر دو برادر در پشت سر هم هدایت کنید یا به صورت محلی با یک دوست بازی کنید و هر کدام یکی از برادران را در حین بازی کنترل می‌کنند.\nدر دنیای عاطفی برادران غوطه ور شوید\nBrothers: A Tale of Two Sons پر از جزئیات پنهان است که به کسانی که به دنبال آنها هستند پاداش می دهد. علاوه بر غذاهای مخفی اصلی و داستان غنی، بازسازی اسرار جدیدی برای کشف اضافه کرده است."
+  },
+  {
+    "id": 52215,
+    "name": "Burnout Paradise Remastered",
+    "background_image": "https://media.rawg.io/media/games/cb6/cb63a33e16f90fa6f008cc093239dad3.jpg",
+    "rating": 3.88,
+    "metacritic": 80,
+    "released": "2018-03-16",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 2,
+    "developers": "Electronic Arts, Criterion Games, Stellar Entertainment",
+    "steam_link": "https://store.steampowered.com/app/1238080/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/963/963f756a2ecb339281f2c99a68ff71dc.jpg",
+      "https://media.rawg.io/media/screenshots/bd0/bd0c68cd98ad4bfd41d1553178f20b40.jpg",
+      "https://media.rawg.io/media/screenshots/6ac/6acf7c4654443661c0e0fbacd7ec2d96.jpg",
+      "https://media.rawg.io/media/screenshots/615/6157de1cbab6d9c20dbc6fcc4d567dc9.jpg",
+      "https://media.rawg.io/media/screenshots/d47/d475ae8d3e0a8b30e1caf4774aae878e.jpg",
+      "https://media.rawg.io/media/screenshots/c1c/c1c97244af93480059802accb0a6e17c.jpg",
+      "https://media.rawg.io/media/games/cb6/cb63a33e16f90fa6f008cc093239dad3.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7, 8.1, 10 64-bit\nProcessor: Intel i3 2120 @ 3.3GHz or Phenom II X4 965 @ 3.40GHz\nMemory: 4 GB RAM\nGraphics: NVidia GT 450 or ATI Radeon HD 5750\nDirectX: Version 11\nStorage: 8 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel i5 3570K or AMD Ryzen 3 1300X\nMemory: 8 GB RAM\nGraphics: Nvidia GTX 750 Ti or AMD Radeon R7 265\nDirectX: Version 11\nStorage: 8 GB available space"
+    },
+    "description_en": "Make action your middle name as you rule the streets in Burnout™ Paradise Remastered. Tear up the town from hectic downtown avenues to wild mountain roads. Relive the high-octane stunts and wanton destruction of one of the greatest arcade-driving games ever!\nBurnout Paradise Remastered provides the ultimate driving playground for you and your friends to play online. This remaster includes all addons from the Year of Paradise, including the Big Surf Island update, meticulously recreated and ready to wreck in 4K on the PlayStation 4 Pro.\nOnline features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n1 player\nNetwork Players 2-8 - Full game requires PlayStation®Plus membership to access online multiplayer\n10GB minimum save size\nDUALSHOCK®4\nOnline Play (Optional)\nSoftware subject to license (us.playstation.com/softwarelicense). Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy). One-time license fee for play on account’s designated primary PS4™ system and other PS4™ systems when signed in with that account.\nConditions and restrictions apply. See https://www.ea.com/games/burnout/burnout-paradise-remastered/disclaimers for details.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهمانطور که در بازی Burnout™ Paradise Remastered بر خیابان ها حکمرانی می کنید، اقدام را به نام میانی خود تبدیل کنید. شهر را از خیابان های شلوغ مرکز شهر تا جاده های کوهستانی وحشی جدا کنید. شیرین کاری های با اکتان بالا و تخریب بی رویه یکی از بهترین بازی های رانندگی آرکید تا کنون را دوباره زنده کنید!\nبازی Burnout Paradise Remastered بهترین زمین بازی رانندگی را برای شما و دوستانتان برای بازی آنلاین فراهم می کند. این ریمستر شامل تمام افزونه‌های سال بهشت، از جمله به‌روزرسانی Big Surf Island است که به‌دقت بازسازی شده و آماده تخریب با کیفیت 4K در پلی‌استیشن 4 پرو است.\nویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n1 بازیکن\nPlayers Network 2-8 - بازی کامل به عضویت PlayStation®Plus برای دسترسی به چند نفره آنلاین نیاز دارد\nحداقل اندازه ذخیره 10 گیگابایت\nDUALSHOCK®4\nپخش آنلاین (اختیاری)\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy). هزینه مجوز یکباره برای بازی در سیستم اصلی PS4™ و سایر سیستم‌های PS4™ زمانی که با آن حساب وارد شوید.\nشرایط و محدودیت ها اعمال می شود. برای جزئیات بیشتر به https://www.ea.com/games/burnout/burnout-paradise-remastered/disclaimers مراجعه کنید."
   }
 ]
