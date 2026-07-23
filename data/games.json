@@ -4172,5 +4172,46 @@
     },
     "description_en": "Half-metal, half-human, half-crazyHeavily inspired by some of the all-time greats like Doom, Duke Nukem and Quake, with stunning cyberpunk visuals, Turbo Overkill is the most savage FPS ever released by Apogee. You play as half-metal, half-human, half-crazy Johnny Turbo, augmented with hidden arm rockets and a chainsaw that extends from your lower leg allowing you to kick-slice enemies wide open.\nIn this Blade Runner-meets-DOOM hellscape, Johnny returns to his hometown of Paradise and finds its entire population possessed by Syn, a rogue AI, and its army of augmented minions. Desperate for enough money to outrun his past mistakes, Johnny takes on the impossible job of destroying the greatest AI ever created. Rival bounty hunters want to claim the prize first. Nothing is easy in paradise.\nHero Time, wall-running, dashing and grappling hooks, oh myTurbo Overkill takes over-the-top to never-before-reached heights. Activate Hero Time(™), a new form of slow motion with a twist. Build incredible speed by wall-running and dashing. Slide on your chainsaw leg, eviscerating foes and opening up bosses for critical damage, and go car-surfing on the hoods of flying cars. Blast away with the Twin Magnums, which lock-on and instagib several foes, the Boomer Shotgun and its attached grenade launcher, or the Telefragger sniper rifle, which teleports Johnny inside an enemy before they explode from within. The FPS genre is about to get wild and fun again.\nRace through two dozen stages packed wi",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنیمه فلزی، نیمه انسان، نیمه دیوانه که به شدت از برخی از بزرگان تاریخ مانند Doom، Duke Nukem و Quake الهام گرفته شده است، با تصاویر سایبرپانک خیره کننده، Turbo Overkill وحشیانه ترین FPSی است که تا به حال توسط Apogee منتشر شده است. شما در نقش جانی توربو نیمه فلزی، نیمه انسان، نیمه دیوانه بازی می کنید که با موشک های بازوی مخفی و اره برقی که از ساق پای شما امتداد دارد، تقویت شده و به شما اجازه می دهد تا دشمنان را کاملاً باز کنید.\nدر این منظره جهنمی Blade Runner-Meets-DOOM، جانی به زادگاهش Paradise باز می گردد و متوجه می شود که تمام جمعیت آن توسط Syn، یک هوش مصنوعی سرکش، و ارتش مینیون های تقویت شده اش تسخیر شده اند. جانی که از پول کافی برای پیشی گرفتن از اشتباهات گذشته خود ناامید است، کار غیرممکنی را بر عهده می گیرد که بزرگترین هوش مصنوعی را که تا به حال ساخته شده است، نابود کند. شکارچیان جایزه رقیب می خواهند ابتدا جایزه را دریافت کنند. هیچ چیز در بهشت ​​آسان نیست.\nHero Time، قلاب‌های دویدن روی دیوار، قلاب‌های پرتحرک و گیر، oh myTurbo Overkill از بالاترین سطح به ارتفاعاتی می‌برد که قبلاً هرگز به آن نرسیده‌اید. Hero Time(™) را فعال کنید، شکل جدیدی از حرکت آهسته با چرخش. سرعت باورنکردنی را با دویدن روی دیوار و تند تند ایجاد کنید. روی پای اره برقی خود بلغزانید، دشمنان را از بین ببرید و کارفرمایان را برای آسیب های جدی باز کنید و روی کاپوت ماشین های پرنده به گشت و گذار بپردازید. با مگنوم‌های دوقلو، که چندین دشمن را قفل می‌کنند و آنها را درگیر می‌کنند، تفنگ ساچمه‌ای بومر و نارنجک‌انداز متصل به آن، یا تفنگ تک‌تیرانداز Telefragger، که جانی را قبل از اینکه از داخل منفجر شوند، به داخل دشمن منتقل می‌کند، منفجر شوید. ژانر FPS دوباره وحشی و سرگرم کننده می شود.\nمسابقه را از طریق دو دوجین مرحله بسته بندی شده wi"
+  },
+  {
+    "id": 704634,
+    "name": "Uncharted: Legacy of Thieves Collection",
+    "background_image": "https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg",
+    "rating": 4.46,
+    "metacritic": null,
+    "released": "2022-01-28",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 7,
+    "developers": "Naughty Dog, Iron Galaxy Studios",
+    "steam_link": "https://store.steampowered.com/app/1659420/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/587/5875f080a704a56dd4183a8e4c6a9dd5.jpg",
+      "https://media.rawg.io/media/screenshots/1d7/1d78e225fcda1198e4342537c5bfe68f.jpg",
+      "https://media.rawg.io/media/screenshots/15f/15f91df39355f11771fb11078d4c4418.jpg",
+      "https://media.rawg.io/media/screenshots/bbd/bbd31c27feac5d9f8380728adda9db03.jpg",
+      "https://media.rawg.io/media/screenshots/c96/c96b9b3a6a8155a5835f99c5a391cd31.jpg",
+      "https://media.rawg.io/media/screenshots/399/399c968a06e9d1fe42aa9a23d69f0d7f.jpg",
+      "https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 64-bit\nProcessor: Intel i5-4330, AMD Ryzen 3 1200\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 960 (4 GB), AMD R9 290X (4 GB)\nDirectX: Version 12\nStorage: 126 GB available space",
+      "recommended": "OS: Windows 10 64-bit\nProcessor: Intel i7-4770, AMD Ryzen 5 1500X\nMemory: 16 GB RAM\nGraphics: NVIDIA GTX 1060 (6 GB), AMD RX 570 (4 GB)\nDirectX: Version 12\nStorage: 126 GB available space"
+    },
+    "description_en": "Are You Ready To Seek Your Fortune?\r\n\r\nSeek your fortune and leave your mark on the map in the UNCHARTED: Legacy of Thieves Collection. Uncover the thrilling cinematic storytelling and the largest blockbuster action set pieces in the UNCHARTED franchise, packed with all the wit, cunning, and over the top moments of the beloved thieves – Nathan Drake and Chloe Frazer.\r\n\r\nIn an experience delivered by award winning developer Naughty Dog can, the UNCHARTED: Legacy of Thieves Collection includes the two critically-acclaimed, globe-trotting single player adventures from UNCHARTED™ 4: A Thief’s End and UNCHARTED™: The Lost Legacy. Each story is filled with laughs, drama, high octane combat, and a sense of wonder – remastered to be even more immersive.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nآیا برای جستجوی ثروت خود آماده هستید؟\r\n\r\nدر مجموعه UNCHARTED: Legacy of Thieves به دنبال ثروت خود باشید و نشان خود را روی نقشه بگذارید. داستان‌سرایی هیجان‌انگیز سینمایی و بزرگترین مجموعه‌های اکشن بلاک‌باستر در فرنچایز UNCHARTED، مملو از تمام شوخ طبعی، حیله‌گری، و برترین لحظات دزدان محبوب - ناتان دریک و کلوئی فریزر را کشف کنید.\r\n\r\nدر تجربه ای که توسط توسعه دهنده برنده جایزه Naughty Dog ارائه شده است، مجموعه UNCHARTED: Legacy of Thieves شامل دو ماجراجویی تک نفره تحسین شده و تحسین شده جهان از UNCHARTED™ 4: A Thief's End و UNCHARTED™: The Lost Legacy است. هر داستان مملو از خنده، درام، مبارزه با اکتان بالا و حس شگفتی است – بازسازی شده تا حتی بیشتر غوطه ور شود."
   }
 ]
