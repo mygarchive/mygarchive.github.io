@@ -2534,5 +2534,56 @@
     },
     "description_en": "You are a slugcat. The world around you is full of danger, and you must face it – alone. Separated from your family in a devastating flood, you must hunt for food and shelter between terrifying torrential downpours that threaten to drown all life. Climb through the ruins of an ancient civilization, evade the jaws of vicious predators, and discover new lands teeming with strange creatures and buried mysteries. Find your family before death finds you!\nInspired by the simplicity and aesthetics of 16-bit classics, this survival platformer requires fast-paced sneaking, both upon your own prey and past the jaws of hungry predators. Each ravenous foe in your path will be cunning, vicious and always on the hunt – eager to sink their teeth into you, or even each other. As a small, soft slugcat you must to rely on stealth and wit rather than force: learn the ecosystem and turn their strengths to your advantage. Maybe then you can survive… Rain World!\nSneak, climb, and pounce your way through a dynamic, ever-changing ecosystem of predators and prey\nExplore a vast world of over 1600 rooms, spanning 12 diverse regions filled with ancient secrets and undiscovered dangers\nNimble movements and procedurally generated animation gives slugcat a natural fluidity of movement and unique sense of weight\nIntense, primal predator encounters will challenge your reflexes\nLimited resources and the constant, impending threat of rain will test your nerve",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nتو یه تنبل هستی دنیای اطراف شما پر از خطر است و شما باید به تنهایی با آن روبرو شوید. در یک سیل ویرانگر از خانواده خود جدا شده اید، باید در میان باران های سیل آسای وحشتناکی که همه زندگی را تهدید می کند به دنبال غذا و سرپناه بگردید. از خرابه های یک تمدن باستانی بالا بروید، از آرواره های شکارچیان شرور فرار کنید و سرزمین های جدیدی را کشف کنید که مملو از موجودات عجیب و غریب و اسرار مدفون است. قبل از اینکه مرگ شما را پیدا کند خانواده خود را پیدا کنید!\nبا الهام از سادگی و زیبایی شناسی کلاسیک های 16 بیتی، این پلتفرمر بقا نیاز به دزدکی سریع دارد، هم بر روی طعمه خود و هم از کنار آرواره های شکارچیان گرسنه. هر دشمن درنده در مسیر شما حیله گر، شرور و همیشه در حال شکار خواهد بود - مشتاق فرو بردن دندان های خود در شما یا حتی یکدیگر است. به عنوان یک تنبل کوچک و نرم، باید به جای زور، به پنهان کاری و شوخ طبعی تکیه کنید: اکوسیستم را یاد بگیرید و نقاط قوت آنها را به نفع خود تبدیل کنید. شاید آن وقت بتوانید زنده بمانید... دنیای باران!\nدزدکی حرکت کنید، بالا بروید و از میان اکوسیستم پویا و همیشه در حال تغییر شکارچیان و طعمه ها عبور کنید.\nدنیای وسیعی از بیش از 1600 اتاق را کاوش کنید که شامل 12 منطقه متنوع پر از اسرار باستانی و خطرات کشف نشده است.\nحرکات زیرک و انیمیشنی که به صورت رویه ای ایجاد شده است، روانی طبیعی حرکت و حس وزن منحصر به فرد را به سگ تنه می دهد.\nبرخوردهای شدید و اولیه با شکارچیان، رفلکس های شما را به چالش می کشد\nمنابع محدود و تهدید دائمی و قریب الوقوع باران اعصاب شما را آزمایش می کند"
+  },
+  {
+    "id": 23738,
+    "name": "Ratatouille",
+    "background_image": "https://media.rawg.io/media/screenshots/041/0412a799c141fe81f72ed4b44e63e0c6.jpg",
+    "rating": 3.78,
+    "metacritic": null,
+    "released": "2007-06-26",
+    "genres": [
+      {
+        "id": 19,
+        "name": "Family",
+        "slug": "family"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 0,
+    "developers": "THQ, Asobo Studio, Heavy Iron Studios, small, Universomo, Helixe, Locomotive Games, (PSP), (mobile, J2ME), (PS2, Wii, GCN, Xbox, PC, OS X), (PS3, X360)",
+    "steam_link": "https://store.steampowered.com/app/4474960/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d2d/d2d370d8174e4047a15fc458c12dbaeb.jpg",
+      "https://media.rawg.io/media/screenshots/156/156c30a25d21b35bf271da8ce38e40cf.jpg",
+      "https://media.rawg.io/media/screenshots/ee2/ee2c13af20a2a29cea569c5d076db349.jpg",
+      "https://media.rawg.io/media/screenshots/a44/a4437b56979bd2ec759a031bab516e67.jpg",
+      "https://media.rawg.io/media/screenshots/c60/c603a1d4f2af4e6c3887f05c7d6835eb.jpg",
+      "https://media.rawg.io/media/screenshots/068/068d5bdefbeac451a7f726f8176951c4.jpg",
+      "https://media.rawg.io/media/screenshots/041/0412a799c141fe81f72ed4b44e63e0c6.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Players will relive all the film's most thrilling and hilarious moments as they assume the role of Remy, a young rat who dreams of becoming a great French chef, despite the obvious problem of being a rat!\nFrom the underground sewers to the bustling streets of Paris, players will dash, glide and slide through 6 action-packed, visually stunning worlds filled with dangerous enemies, intense heists and perilous missions. Players can go head-to-head with their friends in multiplayer mini-games or navigate their way through a sensational rat race that turns the culinary world of Paris upside down.\nSoftware subject to license (us.playstation.com/softwarelicense). Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازیکنان تمام هیجان‌انگیزترین و خنده‌دارترین لحظات فیلم را با ایفای نقش رمی، موش جوانی که علیرغم مشکل آشکار موش بودن، رویای تبدیل شدن به یک سرآشپز فرانسوی بزرگ را در سر می‌پروراند، تجربه خواهند کرد!\nاز فاضلاب‌های زیرزمینی گرفته تا خیابان‌های شلوغ پاریس، بازیکنان در 6 دنیای اکشن و بصری خیره‌کننده مملو از دشمنان خطرناک، دزدی‌های شدید و مأموریت‌های خطرناک به سرعت می‌روند، سر خوردن و سر خوردن. بازیکنان می‌توانند با دوستان خود در مینی‌بازی‌های چندنفره رودررو شوند یا مسیر خود را در مسابقه موش‌های هیجان‌انگیز که دنیای آشپزی پاریس را زیر و رو می‌کند، طی کنند.\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy)."
   }
 ]
