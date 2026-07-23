@@ -5078,5 +5078,41 @@
     },
     "description_en": "Assassin’s Creed Rogue is an action-adventure game developed by Ubisoft Sofia. It is the seventh game in the series, continues the story of Black Flag and serves as a prequel to Assassin's Creed 4. Its final mission is also a set up for Assassin's Creed Unity.\n\n###Plot\n The game's story takes place both in the past and the modern times. During the Seven Years' War, a young American assassin Shay Patrick Cormac trains with his old French friend. After an unsuccessful mission, Shay is disappointed by the Assassins Brotherhood and goes rogue.\n\nMeanwhile, in the present, a virus attacks Abstergo Entertainment servers. A major conspiracy is revealed by the player after fixing the servers.\n\n###Gameplay\nThe players can explore the northern part of North America - a frozen seashore of the Atlantic, the territory of the Apache, the Valley of Rivers, and New York, that got remade with respect to the real city of the eighteenth century. \n\nThe game features the same ship sailing mechanics as features in Assassin's Creed IV. It is essential for Shay to escape the Assassins he will encounter, minimize the casualties of his sailors, and destroy enemy ships. Shay's ship named \"Morrigan\" is well-adapted for sailing through the ice and the seas of the Atlantic. It is equipped with barrels of oil and Puckle guns.\n\nIn his inventory, Shay has several swords, an air gun, a pistol, and several grenades. The game rewards creative mission approaches and does not restrict the players in any manner.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin’s Creed Rogue یک بازی اکشن و ماجراجویی است که توسط یوبی سافت سوفیا ساخته شده است. این هفتمین بازی از این سری است، داستان Black Flag را ادامه می‌دهد و به عنوان پیش درآمد Assassin's Creed 4 عمل می‌کند. ماموریت نهایی آن نیز تنظیمی برای Assassin's Creed Unity است.\n\n###طرح\n داستان بازی هم در گذشته و هم در دوران مدرن اتفاق می افتد. در طول جنگ هفت ساله، یک قاتل آمریکایی، شای پاتریک کورماک، با دوست قدیمی فرانسوی خود تمرین می کند. پس از یک ماموریت ناموفق، شی از برادران قاتلان ناامید می شود و سرکش می شود.\n\nدر همین حال، در حال حاضر، یک ویروس به سرورهای Abstergo Entertainment حمله می کند. یک توطئه بزرگ توسط بازیکن پس از تعمیر سرورها فاش می شود.\n\n###بازی\nبازیکنان می توانند بخش شمالی آمریکای شمالی را کاوش کنند - ساحل یخ زده اقیانوس اطلس، قلمرو آپاچی، دره رودخانه ها و نیویورک، که با توجه به شهر واقعی قرن هجدهم بازسازی شده است. \n\nاین بازی دارای همان مکانیک قایقرانی با کشتی است که در Assassin's Creed IV وجود دارد. برای شی ضروری است که از دست قاتل هایی که با آنها روبرو می شود فرار کند، تلفات ملوانانش را به حداقل برساند و کشتی های دشمن را نابود کند. کشتی شای با نام \"موریگان\" برای عبور از یخ و دریاهای اقیانوس اطلس به خوبی سازگار است. مجهز به بشکه های نفت و تفنگ پاکل است.\n\nشای در فهرست موجودی خود چندین شمشیر، یک تفنگ بادی، یک تپانچه و چندین نارنجک دارد. بازی به رویکردهای ماموریت خلاقانه پاداش می دهد و به هیچ وجه بازیکنان را محدود نمی کند."
+  },
+  {
+    "id": 42895,
+    "name": "Assassin's Creed Syndicate",
+    "background_image": "https://media.rawg.io/media/games/9f1/9f189c639f70f91166df415811a8b525.jpg",
+    "rating": 3.66,
+    "metacritic": 74,
+    "released": "2015-10-23",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 22,
+    "developers": "Ubisoft Montreal, Ubisoft Quebec, Ubisoft Singapore",
+    "steam_link": "https://store.steampowered.com/app/368500/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/578/57836521fc9d7f0a5b743c5d3aabbac2.jpg",
+      "https://media.rawg.io/media/screenshots/240/2402b360498dc27ac594774a968e028f.jpg",
+      "https://media.rawg.io/media/screenshots/cdd/cdda74e097646eda1ae8c87c46942530.jpg",
+      "https://media.rawg.io/media/screenshots/6cb/6cb68bc408c6c0e4e0f1b2782ad03e86.jpg",
+      "https://media.rawg.io/media/screenshots/b90/b909dc646a468a33b1a5e9d97fb2b979.jpg",
+      "https://media.rawg.io/media/screenshots/82f/82fe6e74ec918f4c7c0df69cd991a04b.jpg",
+      "https://media.rawg.io/media/games/9f1/9f189c639f70f91166df415811a8b525.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1 or Windows 8.1 or Windows 10 (64bit versions)\nProcessor: Intel Core i5 2400s @ 2.5 GHz / AMD FX 6350 @ 3.9 GHz\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GTX 660 / AMD Radeon R9 270 (2GB VRAM with Shader Model 5.0)\nSound Card: DirectX Compatible Sound Card with latest drivers",
+      "recommended": "OS: Windows 7 SP1 or Windows 8.1 or Windows 10 (64bit versions)\nProcessor: Intel Core i7 3770 @ 3.5 GHz / AMD FX 8350 @ 4.0 GHz\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 760 (4GB) or the newer GTX 970 (4GB) / AMD Radeon R9 280X (3GB of VRAM) or better\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: *Technical Notice from the developer: For a recommended experience, the game requires a video card with at least 3GB of VRAM when playing at a full HD resolution. While we encourage you to fiddle with the advanced options to fully customize your gaming experience, please keep an eye out for the VRAM meter usage when you adjust these settings."
+    },
+    "description_en": "In 2015, the characters Shaun and Rebecca penetrate into one of the offices of \"Abstergo industries\", which is located in London, where they install bugs. There they find information that Abstergo looks through the life of British Assassins Jacob and Evie Frye, hoping to find a Piece of Eden hidden in London.\n\nIn the centre of the story of the past are the twin assassins Jacob and Evie Frye. They go to London to put their orders there and at the same time to find a Piece of Eden.\n\nHowever, a more exciting innovation in the mechanics of Syndicate was the harpoon. It is actively used during a secretive passage - harpoon allows you to change position and save time instantly.\n\nAnother important aspect of the game is the gang. You can spend money and resources not only on yourself but also on your allies. By investing in the development of Rooks, you will help them to sabotage the Gallows. Outside the story, the campaign begins classic Assassin's Creed: towers, the liberation of territories and a lot of third-party jobs.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر سال 2015، شخصیت‌های Shaun و Rebecca به یکی از دفاتر \"صنایع آبسترگو\" که در لندن قرار دارد، نفوذ می‌کنند و در آنجا باگ‌ها را نصب می‌کنند. در آنجا اطلاعاتی پیدا می‌کنند که Abstergo به زندگی آدمکش‌های بریتانیایی جیکوب و ایوی فرای نگاه می‌کند، به این امید که قطعه‌ای از عدن را در لندن پنهان کند.\n\nدر مرکز داستان گذشته، دو قاتل جاکوب و ایوی فرای قرار دارند. آنها به لندن می روند تا سفارشات خود را در آنجا بگذارند و در همان زمان قطعه ای از عدن را پیدا کنند.\n\nبا این حال، یک نوآوری هیجان انگیزتر در مکانیک Syndicate، هارپون بود. این به طور فعال در طول یک عبور مخفیانه استفاده می شود - هارپون به شما امکان می دهد موقعیت خود را تغییر دهید و فورا در زمان صرفه جویی کنید.\n\nیکی دیگر از جنبه های مهم بازی گروه است. شما می توانید پول و منابع را نه تنها برای خود، بلکه برای متحدان خود نیز خرج کنید. با سرمایه گذاری در توسعه Rooks، به آنها کمک می کنید تا Gallows را خراب کنند. خارج از داستان، کمپین Assassin's Creed کلاسیک را آغاز می کند: برج ها، آزادسازی مناطق و بسیاری از مشاغل شخص ثالث."
   }
 ]
