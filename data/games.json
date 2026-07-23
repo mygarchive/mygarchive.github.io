@@ -3991,5 +3991,46 @@
     },
     "description_en": "Eva Rosalyn and Neil Watts give people a chance to live their lives \"one more time\" - they are operators of the machine capable of penetrating into the human consciousness and rewriting memory, fulfilling unrealised dreams in minds.\nHowever, they do this only for those who are close to death, because such manipulation irreversibly cripples the body.\nTheir dying client now is old Johnny. First, doctors learn from his memory his past to find out why before his death he wants to fulfil such a strange desire - to go to the Moon.\nThen there is a strong story about meetings and partings, about promises and losses. It ends well, but only in the patient's memories.\nThe gameplay consists of the study of small locations, the solution of simple puzzles and long, saturated dialogues. All this becomes fascinating thanks to the elaborated plot.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاوا روزالین و نیل واتس به مردم فرصتی می دهند تا \"یک بار دیگر\" زندگی کنند - آنها اپراتورهای ماشینی هستند که قادر به نفوذ در آگاهی انسان هستند و حافظه را بازنویسی می کنند و رویاهای تحقق نیافته را در ذهن ها تحقق می بخشند.\nبا این حال، آنها این کار را فقط برای کسانی که نزدیک به مرگ هستند انجام می دهند، زیرا چنین دستکاری به طور غیرقابل برگشتی بدن را فلج می کند.\nمشتری در حال مرگ آنها اکنون جانی پیر است. اول، پزشکان از حافظه او گذشته او را یاد می گیرند تا دریابند که چرا قبل از مرگش می خواهد چنین آرزوی عجیبی را برآورده کند - رفتن به ماه.\nسپس یک داستان قوی در مورد ملاقات ها و جدایی ها، در مورد وعده ها و ضررها وجود دارد. به خوبی تمام می شود، اما فقط در خاطرات بیمار.\nگیم پلی بازی شامل مطالعه مکان های کوچک، حل پازل های ساده و دیالوگ های طولانی و اشباع شده است. همه اینها به لطف طرح مفصل جذاب می شود."
+  },
+  {
+    "id": 966221,
+    "name": "Tomb Raider I•II•III Remastered",
+    "background_image": "https://media.rawg.io/media/games/b29/b29e3d45d1501e94c79e813871acba7c.jpg",
+    "rating": 3.27,
+    "metacritic": null,
+    "released": "2024-02-13",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Aspyr Media, Crystal Dynamics",
+    "steam_link": "https://store.steampowered.com/search/?term=Tomb%20Raider%20I%E2%80%A2II%E2%80%A2III%20Remastered",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/523/523d7a32b58a81df2ebf40dd2310a648.jpg",
+      "https://media.rawg.io/media/screenshots/a7b/a7b9071bd7d03095a216f37d192db1cf.jpg",
+      "https://media.rawg.io/media/screenshots/a40/a400a2826a7dc97f7a012a3ee50623af.jpg",
+      "https://media.rawg.io/media/screenshots/134/1340c02c972cfbbf8f8be3c346ffb923.jpg",
+      "https://media.rawg.io/media/screenshots/37e/37e28550e8f7725fe2fe1d7765bff72c.jpg",
+      "https://media.rawg.io/media/screenshots/d76/d766f64f16a986726dd4a68955461006.jpg",
+      "https://media.rawg.io/media/games/b29/b29e3d45d1501e94c79e813871acba7c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS *: Windows 7 or later\nProcessor: Intel i3 3240 or AMD FX 4100\nMemory: 4 GB RAM\nGraphics: NVIDA GT730 or AMD R7 240\nDirectX: Version 12\nStorage: 5 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "Tomb Raider I-III Remastered Starring Lara Croft.\n\nPlay the Original Three Tomb Raider Adventures: For the first time ever, play the complete experience with all expansions and secret levels on modern platforms in this definitive collection.\n\nIncluded Game Titles\nTomb Raider I + The Unfinished Business Expansion\nTomb Raider II + The Gold Mask Expansion\nTomb Raider III + The Lost Artifact Expansion\n\nSolve Ancient Mysteries: Uncover treasures of the ancient world by solving puzzles and unraveling mysteries lost to the ravages of time.\n\nGlobe-trotting Adventure: Follow Lara Croft around the world and face off against deadly foes and dangerous myths.\n\nLovingly Restored: Experience the classics boasting upgraded graphics, with the option to switch to the original polygon look at any time.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nTomb Raider I-III Remastered با بازی لارا کرافت.\n\nبازی Original Three Tomb Raider Adventures: برای اولین بار، تجربه کامل را با تمام بسط ها و سطوح مخفی در پلتفرم های مدرن در این مجموعه قطعی بازی کنید.\n\nعناوین بازی گنجانده شده است\nTomb Raider I + The Unfinished Business Expansion\nTomb Raider II + گسترش ماسک طلا\nTomb Raider III + The Lost Artifact Expansion\n\nحل اسرار باستانی: گنجینه های دنیای باستان را با حل معماها و کشف اسرار از دست رفته در زمان نابودی کشف کنید.\n\nماجراجویی غواصی در جهان: لارا کرافت را در سراسر جهان دنبال کنید و با دشمنان مرگبار و اسطوره های خطرناک روبرو شوید.\n\nبا عشق بازیابی شده: کلاسیک ها را با گرافیک ارتقا یافته تجربه کنید، با این گزینه که در هر زمانی به ظاهر چند ضلعی اصلی بروید."
   }
 ]
