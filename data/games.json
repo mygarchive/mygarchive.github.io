@@ -5150,5 +5150,51 @@
     },
     "description_en": "The game takes place in Paris, during the Great French Revolution, from the capture of the Bastille in 1789 to the Thermidorian coup. Behind all action, there is an intrigue connected with the change of the Great Master of the Order of Templars. The game has a new assassin, Arno Victor Dorian.\nThe setting provides an abundance of locations - from Versailles to the Parisian multi-level catacombs.\nThe mission system is entirely different from the previous games of the series. In this game, there is a cooperative mode for a maximum of 4 people.\nParkour now allows you to climb walls without any troubles at all. A system of shelters and the ability to manipulate the crowd are added.\nThe player has an influence on the character improvement scenario.\nAn interesting detail - before the murder of the primary victim, her whole life flashes before the eyes of the assassin.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی در پاریس، در جریان انقلاب کبیر فرانسه، از تصرف باستیل در سال 1789 تا کودتای ترمیدوری اتفاق می افتد. در پس همه اقدامات، دسیسه ای وجود دارد که با تغییر استاد بزرگ نظم تمپلارها مرتبط است. بازی دارای یک قاتل جدید به نام آرنو ویکتور دوریان است.\nاین محیط مکان های فراوانی را فراهم می کند - از ورسای گرفته تا دخمه های چند سطحی پاریس.\nسیستم ماموریت کاملاً با بازی های قبلی این سری متفاوت است. در این بازی حالت تعاونی برای حداکثر 4 نفر وجود دارد.\nپارکور اکنون به شما امکان می دهد بدون هیچ مشکلی از دیوارها بالا بروید. سیستمی از پناهگاه ها و توانایی دستکاری جمعیت اضافه شده است.\nبازیکن در سناریوی بهبود شخصیت تاثیر دارد.\nیک جزئیات جالب - قبل از قتل قربانی اصلی، تمام زندگی او جلوی چشمان قاتل می گذرد."
+  },
+  {
+    "id": 437059,
+    "name": "Assassin's Creed Valhalla",
+    "background_image": "https://media.rawg.io/media/games/934/9346092ae11bf7582c883869468171cc.jpg",
+    "rating": 3.67,
+    "metacritic": 82,
+    "released": "2020-11-10",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/2208920/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/40d/40d4c5e37758450905c985918ab6ea11.jpg",
+      "https://media.rawg.io/media/screenshots/c5b/c5b052449f59eb31a0dcf01967d0715b.jpg",
+      "https://media.rawg.io/media/screenshots/0fa/0fab0247d40f79a2f35fe8143dc438ec.jpg",
+      "https://media.rawg.io/media/screenshots/50e/50efcd7fdd2967ddd73c9911985339dc.jpg",
+      "https://media.rawg.io/media/screenshots/4c4/4c4e1c1079b11760d07847f83cc1a2a8.jpg",
+      "https://media.rawg.io/media/screenshots/a07/a07f4c2dab611d69357f20f32435b1a2.jpg",
+      "https://media.rawg.io/media/games/934/9346092ae11bf7582c883869468171cc.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (versions 64 bits uniquement)\nProcessor: AMD Ryzen 3 1200 3.1 GHz / Intel Core i5-4460 3.2 GHz\nMemory: 8 GB RAM\nGraphics: AMD R9 380 /NVIDIA GeForce GTX 960\nDirectX: Version 12\nStorage: 160 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (versions 64 bits uniquement)\nProcessor: AMD Ryzen 5 1600 3.2 GHz / Intel Core i7-4790 3.6 GHz\nMemory: 8 GB RAM\nGraphics: AMD R9 380 /NVIDIA GeForce GTX 960\nDirectX: Version 12\nStorage: 160 GB available space"
+    },
+    "description_en": "Become Eivor, a mighty Viking raider and lead your clan from the harsh shores of Norway to a new home amid the lush farmlands of ninth-century England. Explore a beautiful, mysterious open world where you'll face brutal enemies, raid fortresses, build your clan's new settlement, and forge alliances to win glory and earn a place in Valhalla.\n\nEngland in the age of the Vikings is a fractured nation of petty lords and warring kingdoms. Beneath the chaos lies a rich and untamed land waiting for a new conqueror. Will it be you?",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه Eivor، یک مهاجم قدرتمند وایکینگ تبدیل شوید و قبیله خود را از سواحل خشن نروژ به یک خانه جدید در میان زمین‌های کشاورزی سرسبز انگلستان در قرن نهم هدایت کنید. دنیای باز زیبا و اسرارآمیز را کاوش کنید که در آن با دشمنان وحشیانه روبرو می شوید، به قلعه ها حمله می کنید، شهرک جدید قبیله خود را می سازید، و برای کسب شکوه و کسب جایگاهی در والهالا، اتحاد ایجاد می کنید.\n\nانگلستان در عصر وایکینگ ها ملتی از هم پاشیده از اربابان کوچک و پادشاهی های متخاصم است. در زیر هرج و مرج، سرزمینی غنی و رام نشده در انتظار یک فاتح جدید قرار دارد. آیا آن شما خواهید بود؟"
   }
 ]
