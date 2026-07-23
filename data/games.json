@@ -3831,5 +3831,63 @@
     },
     "description_en": "No description available.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
+  },
+  {
+    "id": 10082,
+    "name": "The Wild Eight",
+    "background_image": "https://media.rawg.io/media/screenshots/aa2/aa20b948cacf78b2be2f3b58812317c4.jpg",
+    "rating": 3.27,
+    "metacritic": null,
+    "released": "2016-07-12",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "HypeTrain Digital, Fntastic, Head, Eight Points",
+    "steam_link": "https://store.steampowered.com/app/526160/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256682798/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256682798/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/e7f/e7f124908c44f681116c9d5ba6b1daa6.jpg",
+      "https://media.rawg.io/media/screenshots/bb0/bb09d3f3a4a89b9a2602296e839b8e9a.jpg",
+      "https://media.rawg.io/media/screenshots/6ee/6ee3133201f60e2fbda28f742859cccd.jpg",
+      "https://media.rawg.io/media/screenshots/ac8/ac885175c3588ac15d1b3859f7f7e5d7.jpg",
+      "https://media.rawg.io/media/screenshots/b54/b5486bcce92bc7949c79591ae143ff1d.jpg",
+      "https://media.rawg.io/media/screenshots/f7d/f7de03135346a5f1c9723219a3820d53.jpg",
+      "https://media.rawg.io/media/screenshots/aa2/aa20b948cacf78b2be2f3b58812317c4.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 or higher 64bit\nProcessor: Intel Core i3 2.00 GHz or AMD equivalent\nMemory: 4 GB RAM\nGraphics: NVIDIA GeForce 450 or higher with 1GB Memory\nStorage: 1 GB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The Wild Eight is in a constant state of improvement, and it is not yet complete. If you are not ready for rare bugs and wipes, we recommend waiting for the full release. This does not mean that the game is unplayable or lacks features, it’s actually vice-versa! Right now The Wild Eight is fully enjoyable and has all main features such as the multiplayer, storyline and side quests. Buying the game and providing your feedback during Early Access will support us in improving the game. For more details check out our Early Access section above.\n***\nThe plane crash was only the beginning. Eight survivors are stranded in the middle of an unforgiving Alaska. Don’t let it consume you. Survive and live to tell the tale of The Wild Eight.\nIn The Wild Eight always keeping on the move is your only way to survive and find out what happened with this mysterious place. It doesn't pretend to be a realistic survival sim, but very challenging and fun game designed for both, a teamwork multiplayer and an immersive singleplayer experience.\nEXPLOREUncover the mystery behind the plane crash by following the quest lines and find all the anomalies that lie hidden in this snowy region. Follow the side quests to abandoned buildings, strange laboratories, facilities for unique loot and something out of this world!\n\nCOOPERATEJoin with other players online to take on the toughest of all the challenges.\n\nSURVIVEBrave new horizons in this beautiful, yet deadly random generated low-poly world. Warm your bod",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWild Eight در حال بهبود دائمی است و هنوز کامل نشده است. اگر برای باگ‌ها و پاک‌های نادر آماده نیستید، توصیه می‌کنیم منتظر انتشار کامل باشید. این بدان معنا نیست که بازی غیرقابل بازی یا فاقد ویژگی است، در واقع برعکس است! در حال حاضر The Wild Eight کاملاً لذت‌بخش است و تمام ویژگی‌های اصلی مانند چند نفره، خط داستانی و ماموریت‌های جانبی را دارد. خرید بازی و ارائه بازخورد خود در هنگام دسترسی زودهنگام، ما را در بهبود بازی حمایت می کند. برای جزئیات بیشتر، بخش دسترسی اولیه ما را در بالا بررسی کنید.\n***\nسقوط هواپیما تنها آغاز ماجرا بود. هشت بازمانده در وسط آلاسکای نابخشوده گیر افتاده اند. نگذارید شما را مصرف کند. زنده بمانید و زندگی کنید تا داستان The Wild Eight را بگویید.\nدر The Wild Eight همیشه در حال حرکت بودن تنها راه شما برای زنده ماندن و پیدا کردن آنچه در این مکان مرموز رخ داده است. این وانمود نمی‌کند که یک سیم‌کارت واقعی بقا است، اما بازی بسیار چالش برانگیز و سرگرم‌کننده است که برای هر دو، کار تیمی و تجربه تک‌نفره همهجانبه طراحی شده است.\nبا دنبال کردن خطوط جستجو، رمز و راز سقوط هواپیما را کشف کنید و تمام ناهنجاری‌های پنهان در این منطقه برفی را پیدا کنید. ماموریت های جانبی را به ساختمان های متروکه، آزمایشگاه های عجیب و غریب، امکانات برای غارت منحصر به فرد و چیزی خارج از این دنیا دنبال کنید!\n\nCOOPERATE به سایر بازیکنان آنلاین بپیوندید تا سخت ترین چالش ها را انجام دهید.\n\nSURVIVE افق های جدید را در این دنیای زیبا و در عین حال مرگبار تصادفی کم پلی تولید شده زنده کنید. بدنت را گرم کن"
   }
 ]
