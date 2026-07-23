@@ -3935,5 +3935,61 @@
     },
     "description_en": "A small town surrounded by war. The usual order is irrevocably violated, you have to survive, but you are not a soldier and certainly not a superhero.\r\nThe player controls a group of two to four civilians selected from twelve characters. The goal is simple - to survive the war.\r\nLater, new people can join the group. Characters need food, can get sick, freeze, die from wounds. Can run away with all the food stock.\r\nThe day is different from the night in everything. During the day we equip the shelter, repair and produce weapons and tools - from what can be found. In the afternoon we communicate with neighbours, sometimes with benefit. At night we go out for prey. The night harbours us but also harbours looters, often they are armed. Winter brings cold and freezes water, requires more health and firewood.\r\nDecisions that have to be made often have a moral dimension - can one rob an unarmed person if this is a matter of life and death for someone from the group?\r\nAs in life, events are seen as random and do not repeat from game to game. The same characters can behave very differently, and the siege can sometimes last twenty days, and sometimes eighty.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشهر کوچکی که اطراف آن را جنگ احاطه کرده است. نظم معمول به طور غیرقابل برگشت نقض می شود، شما باید زنده بمانید، اما شما یک سرباز و قطعا یک ابرقهرمان نیستید.\r\nبازیکن کنترل گروهی متشکل از دو تا چهار غیرنظامی را بر عهده دارد که از دوازده شخصیت انتخاب شده اند. هدف ساده است - زنده ماندن از جنگ.\r\nبعداً افراد جدید می توانند به گروه ملحق شوند. شخصیت ها به غذا نیاز دارند، می توانند بیمار شوند، یخ بزنند، از زخم ها بمیرند. می تواند با تمام موجودی غذا فرار کند.\r\nروز در همه چیز با شب متفاوت است. در طول روز ما پناهگاه را تجهیز می کنیم، سلاح و ابزار را تعمیر و تولید می کنیم - از آنچه می توان یافت. بعدازظهرها با همسایه ها ارتباط برقرار می کنیم، گاهی اوقات با سود. شب برای شکار بیرون می رویم. شب پناهگاه ماست، اما غارتگران را نیز در خود جای داده است، اغلب آنها مسلح هستند. زمستان سرما می آورد و آب را یخ می زند، به سلامتی و هیزم بیشتری نیاز دارد.\r\nتصمیماتی که باید گرفته شود اغلب جنبه اخلاقی دارند - آیا می توان از یک فرد غیرمسلح غارت کرد اگر این موضوع مرگ و زندگی فردی از گروه است؟\r\nمانند زندگی، رویدادها به صورت تصادفی دیده می شوند و از بازی به بازی دیگر تکرار نمی شوند. همین شخصیت ها می توانند بسیار متفاوت رفتار کنند و محاصره گاهی بیست روز و گاهی هشتاد روز طول می کشد."
+  },
+  {
+    "id": 13194,
+    "name": "To the Moon",
+    "background_image": "https://media.rawg.io/media/games/fae/faebf3c8cbf30db3f46bfbecf6ada3d6.jpg",
+    "rating": 4.29,
+    "metacritic": 81,
+    "released": "2011-01-10",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 4,
+    "developers": "X.D. Network, Freebird Games, GEORGIOS SYKIOTIS",
+    "steam_link": "https://store.steampowered.com/app/206440/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/70f/70f5fa1c3899762e56b9adb4387774ab.jpg",
+      "https://media.rawg.io/media/screenshots/1bd/1bda8e7d0605fcb53b04dd65a8142fb2.jpg",
+      "https://media.rawg.io/media/screenshots/10f/10f8b25899a1df26302ff370d88a8503.jpg",
+      "https://media.rawg.io/media/screenshots/a94/a9417397844a7366b7e9dd137f6920df.jpg",
+      "https://media.rawg.io/media/screenshots/3ad/3ad7540064a63ac6ba13f53699a6d4c8.jpg",
+      "https://media.rawg.io/media/screenshots/d83/d83402aeec45556951a8e3ab0f156fe3.jpg",
+      "https://media.rawg.io/media/games/fae/faebf3c8cbf30db3f46bfbecf6ada3d6.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10\nProcessor: Intel Core i5-12400F 2.5GHz\nMemory: 100 MB RAM\nGraphics: GTX 1060 3GB\nDirectX: Version 5.2\nStorage: 50 MB available space\nSound Card: none\nVR Support: none\nAdditional Notes: none",
+      "recommended": "OS: Windows 10\nProcessor: Intel Core i5-12400F 2.5GHz\nMemory: 100 MB RAM\nGraphics: GTX 1060 3GB\nDirectX: Version 5.2\nStorage: 50 MB available space\nSound Card: none\nVR Support: none\nAdditional Notes: none"
+    },
+    "description_en": "Eva Rosalyn and Neil Watts give people a chance to live their lives \"one more time\" - they are operators of the machine capable of penetrating into the human consciousness and rewriting memory, fulfilling unrealised dreams in minds.\nHowever, they do this only for those who are close to death, because such manipulation irreversibly cripples the body.\nTheir dying client now is old Johnny. First, doctors learn from his memory his past to find out why before his death he wants to fulfil such a strange desire - to go to the Moon.\nThen there is a strong story about meetings and partings, about promises and losses. It ends well, but only in the patient's memories.\nThe gameplay consists of the study of small locations, the solution of simple puzzles and long, saturated dialogues. All this becomes fascinating thanks to the elaborated plot.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاوا روزالین و نیل واتس به مردم فرصتی می دهند تا \"یک بار دیگر\" زندگی کنند - آنها اپراتورهای ماشینی هستند که قادر به نفوذ در آگاهی انسان هستند و حافظه را بازنویسی می کنند و رویاهای تحقق نیافته را در ذهن ها تحقق می بخشند.\nبا این حال، آنها این کار را فقط برای کسانی که نزدیک به مرگ هستند انجام می دهند، زیرا چنین دستکاری به طور غیرقابل برگشتی بدن را فلج می کند.\nمشتری در حال مرگ آنها اکنون جانی پیر است. اول، پزشکان از حافظه او گذشته او را یاد می گیرند تا دریابند که چرا قبل از مرگش می خواهد چنین آرزوی عجیبی را برآورده کند - رفتن به ماه.\nسپس یک داستان قوی در مورد ملاقات ها و جدایی ها، در مورد وعده ها و ضررها وجود دارد. به خوبی تمام می شود، اما فقط در خاطرات بیمار.\nگیم پلی بازی شامل مطالعه مکان های کوچک، حل پازل های ساده و دیالوگ های طولانی و اشباع شده است. همه اینها به لطف طرح مفصل جذاب می شود."
   }
 ]
