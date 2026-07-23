@@ -3790,5 +3790,46 @@
     },
     "description_en": "Jump into this action roguelite installment in the Prince of Persia series as you flow between death-defying platforming and acrobatic combat as the Prince himself. Battle through the capital city again and again with one goal – find a way to save Persia from a Hun invasion wielding dark magic.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه این قسمت اکشن سرکش در سری شاهزاده ایرانی بپرید و به عنوان خود شاهزاده بین پلتفرم های مرگبار و مبارزات آکروباتیک حرکت می کنید. بارها و بارها با یک هدف در پایتخت نبرد کنید - راهی برای نجات ایران از تهاجم هون ها که جادوی تاریکی دارد پیدا کنید."
+  },
+  {
+    "id": 35576,
+    "name": "The Simpsons: Hit & Run",
+    "background_image": "https://media.rawg.io/media/screenshots/d20/d20a46fb6d3b176b2613b2c234c710d5.jpg",
+    "rating": 4.08,
+    "metacritic": null,
+    "released": "2003-09-16",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Radical Entertainment",
+    "steam_link": "https://store.steampowered.com/search/?term=The%20Simpsons%3A%20Hit%20%26%20Run",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/16d/16d58b9217f9370af63042a56c8ab49d.jpg",
+      "https://media.rawg.io/media/screenshots/89a/89a499c13ab81e3821b36e2b07d6f17f.jpg",
+      "https://media.rawg.io/media/screenshots/554/5547a277569d5b0eed570ba60b811a7c.jpg",
+      "https://media.rawg.io/media/screenshots/c1f/c1f64353385703e26cbc9d7c7db877da.jpg",
+      "https://media.rawg.io/media/screenshots/48b/48b7260ca22902ce8c4bb4b477344986.jpg",
+      "https://media.rawg.io/media/screenshots/51a/51a7523bd13842fed69a8d92eb360b1a.jpg",
+      "https://media.rawg.io/media/screenshots/d20/d20a46fb6d3b176b2613b2c234c710d5.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
   }
 ]
