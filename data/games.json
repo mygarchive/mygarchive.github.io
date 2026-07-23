@@ -2988,5 +2988,51 @@
     },
     "description_en": "Spyro Reignited Trilogy is a collection that includes three remastered games from the Spyro franchise that were released in the late 1990s: Spyro the Dragon, Spyro 2: Ripto's Rage! and Spyro: Year of the Dragon\r\n\r\n###Plot\r\nThe plot of the game is identical to that of the three original games. They all follow Spyro, a small cutesy purple dragon, on his quest to save his dragon kin from various villains.\r\n\r\nThe games are set in the Dragon Kingdom, a fantasy world inhabited by sentient dragons. There are five dragon realms that used to co-exist peacefully. In the first game, the villain is Gnasty Gnorc (a gnome/orc half-blood), who magically turned all dragons into crystals. Spyro has to save them and defeat Gnorc. In the sequels, Spyro has to deal with other villains, such as Ripto the warlock, who tries to conquer the world, or Sorceress, who steals the dragons' eggs.\r\n\r\n###Gameplay\r\nThe player controls Spyro in a 3D environment from the third person view. Spyro can breathe fire to defeat his enemies. The dragon cannot actually fly, but he can glide long distances. A dragonfly companion named Sparx follows Spyro, helping him to pick up treasures and keep track of his health. To restore his health, Spyro can eat butterflies. The third game, Year of the Dragon, introduces other playable characters that can be unlocked by completing levels.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nSpyro Reignited Trilogy مجموعه ای است که شامل سه بازی بازسازی شده از فرنچایز Spyro است که در اواخر دهه 1990 منتشر شد: Spyro the Dragon، Spyro 2: Ripto's Rage! و Spyro: Year of the Dragon\r\n\r\n###طرح\r\nداستان بازی با سه بازی اصلی یکسان است. همه آنها به دنبال اسپایرو، یک اژدهای بنفش ناز کوچک، در تلاش برای نجات خویشاوندان اژدهاش از شرورهای مختلف هستند.\r\n\r\nبازی‌ها در پادشاهی اژدها، دنیایی فانتزی که توسط اژدهاهای باهوش زندگی می‌کنند، اتفاق می‌افتد. پنج قلمرو اژدها وجود دارد که قبلاً به صورت مسالمت آمیز وجود داشتند. در بازی اول، شخصیت شرور Gnasty Gnorc (یک گنوم/ارک نیمه‌خون) است که به طور جادویی همه اژدها را به کریستال تبدیل کرد. Spyro باید آنها را نجات دهد و Gnorc را شکست دهد. در دنباله ها، Spyro باید با شرورهای دیگری مانند Ripto the warlock که تلاش می کند جهان را تسخیر کند یا Sorceress که تخم های اژدها را می دزدد سر و کار داشته باشد.\r\n\r\n###بازی\r\nبازیکن Spyro را در یک محیط سه بعدی از نمای سوم شخص کنترل می کند. Spyro می تواند برای شکست دادن دشمنان خود آتش نفس بکشد. اژدها در واقع نمی تواند پرواز کند، اما می تواند مسافت های طولانی را سر بخورد. یک همراه سنجاقک به نام اسپارکس اسپایرو را دنبال می‌کند و به او کمک می‌کند تا گنج‌ها را جمع‌آوری کند و سلامتش را پیگیری کند. اسپایرو برای بازگرداندن سلامتی خود می تواند پروانه ها را بخورد. بازی سوم، Year of the Dragon، شخصیت‌های قابل بازی دیگری را معرفی می‌کند که با تکمیل سطوح می‌توان آن‌ها را باز کرد."
+  },
+  {
+    "id": 978073,
+    "name": "S.T.A.L.K.E.R.: Legends of the Zone Trilogy",
+    "background_image": "https://media.rawg.io/media/games/604/604c212bd07a3831d4404ee835ce7d09.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2024-03-06",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 0,
+    "developers": "GSC Game World",
+    "steam_link": "https://store.steampowered.com/search/?term=S.T.A.L.K.E.R.%3A%20Legends%20of%20the%20Zone%20Trilogy",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8b9/8b94a8d566884201f6a86e7c9d030d2a.jpg",
+      "https://media.rawg.io/media/games/604/604c212bd07a3831d4404ee835ce7d09.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Play the renowned survival and open-world classics with the original S.T.A.L.K.E.R. trilogy, now available on consoles for the first time.\n\nControl legendary stalkers and investigate the origins of the Zone, forging paths that can lead to different outcomes according to your actions and decisions.\n\nTest your mettle by exploring radioactive debris and anomalies and put your reflexes to the test in intense, tactical shootouts.\n\nSearch for the answers to the darkest mysteries that could cost you your sanity in sinister catacombs full of hungry mutants.\n\nTravel through vast locations filled with Eastern European atmosphere and reminiscent of the real-life Chornobyl Exclusion Zone: the city of Prypiat, the Nuclear Power Plant, the Jupiter plant and many others.\n\nFace the loneliness and desolation of these lands, the only company you'll have on your journey through this dark sci-fi setting.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا S.T.A.L.K.E.R اصلی، آثار کلاسیک معروف بقا و جهان باز را بازی کنید. سه گانه، اکنون برای اولین بار بر روی کنسول ها موجود است.\n\nاستالکرهای افسانه ای را کنترل کنید و منشاء Zone را بررسی کنید، مسیرهایی را ایجاد کنید که می تواند با توجه به اقدامات و تصمیمات شما به نتایج متفاوتی منجر شود.\n\nتوانایی خود را با کاوش در زباله‌های رادیواکتیو و ناهنجاری‌ها آزمایش کنید و رفلکس‌های خود را در تیراندازی‌های شدید و تاکتیکی آزمایش کنید.\n\nدر دخمه‌های شوم مملو از جهش یافته‌های گرسنه، به دنبال پاسخ تاریک‌ترین رازهایی باشید که می‌تواند به بهای سلامت عقل شما تمام شود.\n\nدر مکان‌های وسیع پر از فضای اروپای شرقی و یادآور منطقه محرومیتی چرنوبیل در زندگی واقعی سفر کنید: شهر پریپیات، نیروگاه هسته‌ای، نیروگاه مشتری و بسیاری دیگر.\n\nبا تنهایی و ویرانی این سرزمین ها روبرو شوید، تنها شرکتی که در سفر خود در این محیط تاریک علمی تخیلی خواهید داشت."
   }
 ]
