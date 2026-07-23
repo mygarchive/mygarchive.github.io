@@ -1396,5 +1396,49 @@
     },
     "description_en": "If war is the closest we get to hell on earth, it's because Earth harbours the worst of demons: humankind. In an isolated country ravaged by infighting, discover the secrets of your past and deal with the repercussions of a mysterious calamity.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاگر جنگ نزدیکترین فاصله ما به جهنم روی زمین است، به این دلیل است که زمین بدترین شیاطین را در خود جای داده است: نوع بشر. در یک کشور منزوی که توسط جنگ داخلی ویران شده است، اسرار گذشته خود را کشف کنید و با عواقب یک فاجعه مرموز مقابله کنید."
+  },
+  {
+    "id": 452645,
+    "name": "Hitman 3",
+    "background_image": "https://media.rawg.io/media/games/126/126fbd5ceacddc6ad16fc96e50b1265b.jpg",
+    "rating": 4.25,
+    "metacritic": 83,
+    "released": "2021-01-20",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "IO Interactive",
+    "steam_link": "https://store.steampowered.com/app/1829591/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6a2/6a20ed8b053178d5e86770f19a3fe81d.jpg",
+      "https://media.rawg.io/media/screenshots/d13/d136e10fc0a2c2df2e17463156be3c7a.jpg",
+      "https://media.rawg.io/media/screenshots/f0c/f0cb2afac7c971fdd788bd83c4d5127a.jpg",
+      "https://media.rawg.io/media/screenshots/a7d/a7dc5303b3ab52d5734253dc33f81000.jpg",
+      "https://media.rawg.io/media/games/126/126fbd5ceacddc6ad16fc96e50b1265b.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: OS 64-bit Windows 7\nProcessor: Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 660 / Radeon HD 7870\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: VR Minimal Requirements: CPU: Intel 6-core i7-8700 / AMD Ryzen 7 2700         GPU: NVIDIA RTX 2060 Super /  AMD 5700XT",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: OS 64-bit Windows 10\nProcessor: Intel CPU Core i7 4790 4 GHz\nMemory: 16 GB RAM\nGraphics: Nvidia GPU GeForce GTX 1070 / AMD GPU Radeon RX Vega 56 8GB\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: VR Minimal Requirements: CPU: Intel 6-core i7-8700 / AMD Ryzen 7 2700         GPU: NVIDIA RTX 2060 Super /  AMD 5700XT"
+    },
+    "description_en": "Agent 47 returns as a ruthless professional for the most important contracts of his entire career in HITMAN 3, the dramatic conclusion to the World of Assassination trilogy.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمامور 47 به عنوان یک حرفه ای بی رحم برای مهم ترین قراردادهای کل دوران حرفه ای خود در HITMAN 3 باز می گردد، پایانی دراماتیک برای سه گانه World of Assassination."
   }
 ]
