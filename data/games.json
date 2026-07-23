@@ -5037,5 +5037,46 @@
     },
     "description_en": "When a man has won all his battles and defeated his enemies; what is left for him to achieve? Ezio Auditore must leave his life behind in search of answers, In search of the truth.\nIn Assassin’s Creed® Revelations, master assassin Ezio Auditore walks in the footsteps of the legendary mentor Altair, on a journey of discovery and revelation. It is a perilous path – one that will take Ezio to Constantinople, the heart of the Ottoman Empire, where a growing army of Templars threatens to destabilize the region.\nIn addition to Ezio’s award-winning story, a refined and expanded online multiplayer experience returns with more modes, more maps and more characters, allowing you to test your assassin skills against others from around the world.\nKey Features:BECOME DEADLIER THAN EVER\nWield the lethal skills of a wiser, more efficient and deadlier Ezio. Swiftly eliminate your adversaries by deploying a new arsenal of weapons and abilities, such as enhanced free-running and hook blade combat. Experience new levels of gameplay customization with bomb crafting, and use heightened Eagle Vision to overcome your enemies and the environment.\nTEST YOUR SKILLS AGAINST THE BEST\nA critically acclaimed multiplayer experience gets even better, with   all-new team modes and infinite replay value.\nEXPERIENCE REVOLUTIONARY GAMEPLAY\nExplore the farthest reaches of the Animus as you uncover the mysteries of Desmond’s past while gaining insight into what the future might hold.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nوقتی مردی در تمام نبردهای خود پیروز شد و دشمنانش را شکست داد. چه چیزی برای او باقی می ماند تا به آن دست یابد؟ Ezio Auditore باید زندگی خود را در جستجوی پاسخ، در جستجوی حقیقت، پشت سر بگذارد.\nدر Assassin’s Creed® Revelations، قاتل استاد، Ezio Auditore، در رد پای مربی افسانه‌ای Altair، در سفری برای کشف و مکاشفه قدم می‌زند. این یک مسیر خطرناک است - مسیری که اتزیو را به قسطنطنیه، قلب امپراتوری عثمانی، جایی که ارتش در حال رشد تمپلارها تهدید به بی ثبات کردن منطقه می کند، خواهد برد.\nعلاوه بر داستان برنده جوایز اتزیو، یک تجربه چندنفره آنلاین پیشرفته و پیشرفته با حالت‌های بیشتر، نقشه‌های بیشتر و شخصیت‌های بیشتر بازمی‌گردد و به شما امکان می‌دهد مهارت‌های قاتل خود را در برابر دیگران از سراسر جهان آزمایش کنید.\nویژگی های کلیدی: مرگبارتر از همیشه شوید\nاز مهارت های کشنده اتزیو عاقل تر، کارآمدتر و کشنده تر استفاده کنید. با استقرار یک زرادخانه جدید از سلاح ها و توانایی ها، مانند مبارزه با دویدن آزاد و قلاب تیغه، به سرعت دشمنان خود را از بین ببرید. سطوح جدیدی از سفارشی سازی گیم پلی را با ساخت بمب تجربه کنید و از Eagle Vision تقویت شده برای غلبه بر دشمنان و محیط خود استفاده کنید.\nمهارت های خود را در برابر بهترین ها آزمایش کنید\nتجربه چند نفره مورد تحسین منتقدان، با حالت‌های تیمی کاملاً جدید و ارزش تکرار بی‌نهایت، حتی بهتر می‌شود.\nگیم پلی انقلابی را تجربه کنید\nدورترین نقاط Animus را کاوش کنید و اسرار گذشته دزموند را کشف کنید و در عین حال بینشی در مورد آنچه در آینده ممکن است داشته باشد به دست آورید."
+  },
+  {
+    "id": 17545,
+    "name": "Assassin’s Creed Rogue",
+    "background_image": "https://media.rawg.io/media/games/3c4/3c4a44ed99c87c56e0cdcfaaaf5c3628.jpg",
+    "rating": 3.72,
+    "metacritic": 74,
+    "released": "2014-11-11",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 12,
+    "developers": "Ubisoft, Ubisoft Kiev, Ubisoft Sofia",
+    "steam_link": "https://store.steampowered.com/app/311560/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/37d/37d2f487abad3fbfe73b355224e73522.jpg",
+      "https://media.rawg.io/media/screenshots/eac/eac7037fbcbbee5c2df5418ba367bcfc.jpg",
+      "https://media.rawg.io/media/screenshots/fbb/fbb236226c2490364ff457e92a048a00.jpg",
+      "https://media.rawg.io/media/screenshots/886/886b4aab77406fd49aea1c8b73849a9b.jpg",
+      "https://media.rawg.io/media/screenshots/483/483c515648d2521662ada949081897cb.jpg",
+      "https://media.rawg.io/media/screenshots/441/441d4493bdf5ee9d1b6703bceda074ea.jpg",
+      "https://media.rawg.io/media/games/3c4/3c4a44ed99c87c56e0cdcfaaaf5c3628.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1 or Windows 8/8.1 (64bit versions only)\nProcessor: Intel Core2Quad Q6600 @ 2.4 GHz or AMD Athlon II X4 620 @ 2.6 GHzH\nMemory: 2 GB RAM\nGraphics: nVidia GeForce GTS450 or AMD Radeon HD5670 (1024MB VRAM) or Intel HD4600\nDirectX: Version 11\nStorage: 12 GB available space\nSound Card: DirectX Compatible Sound Card with latest driver\nAdditional Notes: Supported Video Cards at time of release: NVIDIA GeForce GTS 450 or better, GeForce 500, 600, 700, 900 series / AMD Radeon HD 5670 or better, Radeon HD 6000, 7000, R7, R9 series /  Intel HD4600, HD5200 /  Note: Laptop versions of these cards may work but are NOT officially supported.",
+      "recommended": "OS: Windows 7 SP1 or Windows 8/8.1 (64bit versions only)\nProcessor: Intel Core i5 2400s @ 2.5 GHz or better / AMD FX-6100 @ 3.3 GHz or better\nGraphics: nVidia GeForce GTX 560Ti (1024 VRAM) or better / AMD Radeon HD 6870 (1024 VRAM) or better\nDirectX: Version 11\nStorage: 12 GB available space\nSound Card: DirectX Compatible Sound Card with latest driver"
+    },
+    "description_en": "Assassin’s Creed Rogue is an action-adventure game developed by Ubisoft Sofia. It is the seventh game in the series, continues the story of Black Flag and serves as a prequel to Assassin's Creed 4. Its final mission is also a set up for Assassin's Creed Unity.\n\n###Plot\n The game's story takes place both in the past and the modern times. During the Seven Years' War, a young American assassin Shay Patrick Cormac trains with his old French friend. After an unsuccessful mission, Shay is disappointed by the Assassins Brotherhood and goes rogue.\n\nMeanwhile, in the present, a virus attacks Abstergo Entertainment servers. A major conspiracy is revealed by the player after fixing the servers.\n\n###Gameplay\nThe players can explore the northern part of North America - a frozen seashore of the Atlantic, the territory of the Apache, the Valley of Rivers, and New York, that got remade with respect to the real city of the eighteenth century. \n\nThe game features the same ship sailing mechanics as features in Assassin's Creed IV. It is essential for Shay to escape the Assassins he will encounter, minimize the casualties of his sailors, and destroy enemy ships. Shay's ship named \"Morrigan\" is well-adapted for sailing through the ice and the seas of the Atlantic. It is equipped with barrels of oil and Puckle guns.\n\nIn his inventory, Shay has several swords, an air gun, a pistol, and several grenades. The game rewards creative mission approaches and does not restrict the players in any manner.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin’s Creed Rogue یک بازی اکشن و ماجراجویی است که توسط یوبی سافت سوفیا ساخته شده است. این هفتمین بازی از این سری است، داستان Black Flag را ادامه می‌دهد و به عنوان پیش درآمد Assassin's Creed 4 عمل می‌کند. ماموریت نهایی آن نیز تنظیمی برای Assassin's Creed Unity است.\n\n###طرح\n داستان بازی هم در گذشته و هم در دوران مدرن اتفاق می افتد. در طول جنگ هفت ساله، یک قاتل آمریکایی، شای پاتریک کورماک، با دوست قدیمی فرانسوی خود تمرین می کند. پس از یک ماموریت ناموفق، شی از برادران قاتلان ناامید می شود و سرکش می شود.\n\nدر همین حال، در حال حاضر، یک ویروس به سرورهای Abstergo Entertainment حمله می کند. یک توطئه بزرگ توسط بازیکن پس از تعمیر سرورها فاش می شود.\n\n###بازی\nبازیکنان می توانند بخش شمالی آمریکای شمالی را کاوش کنند - ساحل یخ زده اقیانوس اطلس، قلمرو آپاچی، دره رودخانه ها و نیویورک، که با توجه به شهر واقعی قرن هجدهم بازسازی شده است. \n\nاین بازی دارای همان مکانیک قایقرانی با کشتی است که در Assassin's Creed IV وجود دارد. برای شی ضروری است که از دست قاتل هایی که با آنها روبرو می شود فرار کند، تلفات ملوانانش را به حداقل برساند و کشتی های دشمن را نابود کند. کشتی شای با نام \"موریگان\" برای عبور از یخ و دریاهای اقیانوس اطلس به خوبی سازگار است. مجهز به بشکه های نفت و تفنگ پاکل است.\n\nشای در فهرست موجودی خود چندین شمشیر، یک تفنگ بادی، یک تپانچه و چندین نارنجک دارد. بازی به رویکردهای ماموریت خلاقانه پاداش می دهد و به هیچ وجه بازیکنان را محدود نمی کند."
   }
 ]
