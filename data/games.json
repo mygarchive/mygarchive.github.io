@@ -1546,5 +1546,61 @@
     },
     "description_en": "A COZY EXPLORATION PLATFORMER ADVENTUREILA’s beloved kitty, Coco, has mysteriously disappeared, and she’s determined to bring him back home! Explore a whimsical small open world as ILA, a spirited young witch-in-training flying on a magic Skatebroom. Uncover hidden stories, collect valuable items, and improve your magical flying abilities.GLIDE AROUND Have you ever dreamed of flying on a skateboard? Feel the wind as you glide effortlessly through the crisp mountain air on Ila’s magical skatebroom as you explore the enchanting island. The core mechanic focuses on the pure joy of movement. Master and upgrade your flying skills, soar to new heights and tackle thrilling platforming challenges along the way.DISCOVER THE STORY OF ILA AND THE ISLAND Dive into the rich lore of the island as you uncover ancient secrets and forgotten stories. Piece together the history of the land and its connection to Ila’s past, revealing surprising ties between her dreams and the mysteries of this enchanted place.FIND SECRET PLACES AND RELAXExplore ILA’s magical island at your own pace and relax. Find hidden nooks and uncovered treasures flying on your skatebroom. But also endulge yourself pausing and enjoying the view from high vantage points. Savor the serene beauty and tranquil freedom of the snow-covered landscape on your magical skatebroom.WITCHY CUSTOMIZATION Express your creativity by personalizing ILA’s appearance! Find special items around the island or collect coins to use at the magic sho",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ماجراجوی اکتشافی دنج، گربه مورد علاقه کوکو، کوکو، به طور مرموزی ناپدید شده است، و او مصمم است او را به خانه بازگرداند! دنیای باز کوچک عجیب و غریب را به عنوان ILA کاوش کنید، یک جادوگر جوان با روحیه که در حال آموزش است که روی یک Skatebroom جادویی پرواز می کند. داستان‌های پنهان را کشف کنید، آیتم‌های ارزشمند را جمع‌آوری کنید و توانایی‌های پرواز جادویی خود را بهبود ببخشید. هنگام کاوش در جزیره دلربا، در حالی که بدون زحمت در هوای مطبوع کوهستان در اتاق اسکیت جادویی ایلا می‌چرخید، باد را احساس کنید. مکانیک اصلی بر لذت ناب حرکت تمرکز می کند. مهارت‌های پروازی خود را به دست آورید و ارتقا دهید، به ارتفاعات جدید صعود کنید و در طول مسیر با چالش‌های هیجان‌انگیز پلتفرم روبه‌رو شوید. داستان ILA و جزیره را کشف کنید، با کشف اسرار باستانی و داستان‌های فراموش‌شده، در غنای غنی جزیره شیرجه بزنید. تاریخچه سرزمین و ارتباط آن با گذشته ایلا را کنار هم بچینید، و پیوندهای شگفت انگیزی را بین رویاهای او و اسرار این مکان مسحورآمیز آشکار کنید. مکان های مخفی را پیدا کنید و استراحت کنید جزیره جادویی ILA را با سرعت خود کاوش کنید و استراحت کنید. گوشه‌های پنهان و گنجینه‌های کشف‌شده‌ای را پیدا کنید که روی اسکیت‌روم شما پرواز می‌کنند. اما در عین حال به توقف و لذت بردن از منظره از نقطه‌های برتر بپردازید. زیبایی آرام و آزادی آرام منظره پوشیده از برف را در اتاق اسکیت جادویی خود بچشید. سفارشی سازی جادوگر خلاقیت خود را با شخصی سازی ظاهر ILA ابراز کنید! آیتم‌های ویژه‌ای را در اطراف جزیره پیدا کنید یا سکه‌هایی را جمع‌آوری کنید تا در شو جادویی استفاده کنید"
+  },
+  {
+    "id": 1450,
+    "name": "INSIDE",
+    "background_image": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg",
+    "rating": 4.38,
+    "metacritic": 87,
+    "released": "2016-06-28",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 4,
+    "developers": "Playdead",
+    "steam_link": "https://store.steampowered.com/app/3609750/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/3a0/3a049846766e09f8883badea6538e736.jpg",
+      "https://media.rawg.io/media/screenshots/b58/b58b50e9da6b409fd223912039c4cba7.jpg",
+      "https://media.rawg.io/media/screenshots/7d0/7d07f39a90bc1ed2dea7186580b49c7a.jpg",
+      "https://media.rawg.io/media/screenshots/411/4116e5d3ccdf2bdcf6e4ee4eedf7caa2.jpg",
+      "https://media.rawg.io/media/screenshots/e6b/e6b8b49e33a11f4ae875d1ce5b236cc8.jpg",
+      "https://media.rawg.io/media/screenshots/eb2/eb2b33954421291b98e2ae11fba72f7d.jpg",
+      "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7/10\nProcessor: Dual Core\nMemory: 512 MB RAM\nGraphics: Supported\nStorage: 10 MB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "INSIDE is a platform adventure game that transfers the atmosphere of a dystopic world. Players assume the role of a lonely boy, who walks through the monochromatic 2.5D environment and solves various puzzles. By the time main antagonists of the character pursue him throughout the whole world. The main storyline follows the unnamed boy through the in-game world locations including a forest, a farm, and a fictional laboratory, where experiments on bodies are held. The gameplay is divided into levels tied to each location. While completing them, the boy, controlled by players, has to swim, run, climb the obstacles and use his supernatural ability to control bodies with his special helmet. In the course of the travel, the protagonist also comes across a siren-like creature, who gives him gear for breathing underwater. The death occurs in several ways ranging from drowning to being shot with a tranquilizer dart. In addition to the basic ending, the storyline features an alternate one, which unlocks after collecting all the hidden glowing orbs.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nINSIDE یک بازی ماجراجویی پلتفرمی است که فضای یک دنیای دیستوپیک را منتقل می کند. بازیکنان نقش پسری تنها را بر عهده می گیرند که در محیط تک رنگ 2.5 بعدی قدم می زند و معماهای مختلف را حل می کند. زمانی که آنتاگونیست های اصلی شخصیت او را در سراسر جهان تعقیب می کنند. خط داستانی اصلی پسر ناشناس را در مکان‌های دنیای درون بازی از جمله جنگل، مزرعه و آزمایشگاه خیالی دنبال می‌کند که در آن آزمایش‌ها روی اجساد انجام می‌شود. گیم پلی به سطوح مرتبط با هر مکان تقسیم می شود. در حین تکمیل آنها، پسر که توسط بازیکنان کنترل می شود، باید شنا کند، بدود، از موانع بالا برود و از توانایی فوق طبیعی خود برای کنترل بدن با کلاه مخصوص خود استفاده کند. در طول سفر، قهرمان داستان با موجودی آژیر مانند روبرو می‌شود که به او وسایلی برای تنفس زیر آب می‌دهد. مرگ به روش های مختلفی از غرق شدن تا شلیک با دارت آرام بخش رخ می دهد. علاوه بر پایان اصلی، خط داستانی دارای یک پایان دیگر است که پس از جمع آوری تمام گوی های درخشان پنهان باز می شود."
   }
 ]
