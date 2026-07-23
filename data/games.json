@@ -2173,5 +2173,46 @@
     },
     "description_en": "NAIAD - A game about nature.\nImmerse yourself in a relaxing, minimalist, and colorful exploration adventure.\nFlow with Naiad across a mysterious river and interact with its fauna and flora to discover little secrets.\nEnjoy a wholesome experience with an original visual style.\nLearn to swim like a duck, dive like a fish, dash like a frog and meet other adorable friends like butterflies, rabbits, turtles, snakes, and crocodiles. Help them find their way and avoid obstacles.\nA journey in 16 episodes that will take you through beautiful and strange places like a spring, a forest, a cave, a lake, an orchard... until you reach the sea.\nDeveloped by a solo dev who has pampered every detail to create a very personal and unique game.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNAIAD - یک بازی در مورد طبیعت.\nخود را در یک ماجراجویی اکتشافی آرامش‌بخش، مینیمالیستی و رنگارنگ غرق کنید.\nبا نایاد از رودخانه ای مرموز عبور کنید و با جانوران و گیاهان آن تعامل داشته باشید تا اسرار کوچکی را کشف کنید.\nبا یک سبک بصری اصلی از یک تجربه مفید لذت ببرید.\nشنا کردن مانند یک اردک، شیرجه رفتن مانند یک ماهی، دویدن مانند قورباغه و ملاقات با دوستان شایان ستایش مانند پروانه ها، خرگوش ها، لاک پشت ها، مارها، و کروکودیل ها را بیاموزید. به آنها کمک کنید راه خود را پیدا کنند و از موانع دوری کنند.\nسفری در 16 قسمت که شما را از مکان های زیبا و عجیبی مانند چشمه، جنگل، غار، دریاچه، باغ میوه... می برد تا به دریا برسید.\nتوسط یک توسعه دهنده انفرادی ساخته شده است که تمام جزئیات را برای ایجاد یک بازی بسیار شخصی و منحصر به فرد ناز کرده است."
+  },
+  {
+    "id": 996587,
+    "name": "Ninja Gaiden 2 Black",
+    "background_image": "https://media.rawg.io/media/games/865/8658eee00be1f66861994e0c6a7260ed.jpg",
+    "rating": 3.59,
+    "metacritic": null,
+    "released": "2025-01-23",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+18",
+    "playtime": 22,
+    "developers": "KOEI TECMO GAMES CO",
+    "steam_link": "https://store.steampowered.com/app/3287520/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/f60/f60706d73411497b399eeadbe829f5f7.jpg",
+      "https://media.rawg.io/media/screenshots/23f/23f251a007f76d7ce05d852c80496f90.jpg",
+      "https://media.rawg.io/media/screenshots/1c0/1c004127ad784e3599cded26017f9271.jpg",
+      "https://media.rawg.io/media/screenshots/c4b/c4b038f681ecac42bbc467215fff0929.jpg",
+      "https://media.rawg.io/media/screenshots/cf4/cf4f66e559a85a043dc0f9517130cb35.jpg",
+      "https://media.rawg.io/media/screenshots/674/67476e8fd9d47d0ee7ea3018b190c7f7.jpg",
+      "https://media.rawg.io/media/games/865/8658eee00be1f66861994e0c6a7260ed.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10/11, 64bit\nProcessor: Intel® Core™ i5-8400以上, AMD Ryzen™ 5 3400G 以上\nMemory: 12 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1060 6GB以上, AMD Radeon™ RX 590 8GB以上  ※VRAM6GB以上必須\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 85 GB available space\nSound Card: 48000Hz、16bit、ステレオ\nAdditional Notes: SSD必須, 1280x720 60FPS (アップスケーリング「TSR」使用)、品質「軽量」",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10/11, 64bit\nProcessor: Intel® Core™ i7-8700 以上, AMD Ryzen™ 5 3600 XT 以上\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce® GTX1080 8GB以上, AMD Radeon™ RX 5700XT 8GB以上 ※VRAM8GB以上必須\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 85 GB available space\nSound Card: 48000Hz、16bit、ステレオ\nAdditional Notes: SSD必須, 1920x1080 60FPS (アップスケーリング「TSR」使用)、品質「標準」"
+    },
+    "description_en": "Take on the role of Ryu Hayabusa, a ninja who has inherited the legendary “Dragon Sword” and takes on battles across the world, in this graphic remaster of the popular high-speed ninja action title that returns after 15 years!1. The world of “NINJA GAIDEN 2” remastered with rich visuals!The stages, characters, effects, and lighting have been completely redesigned and remastered to provide realistic visuals. Unreal Engine 5 has been utilized to create stunning current-generation graphics, allowing players to immerse themselves more deeply in the story's world.2. High-speed x violent action further evolved with the latest graphic expressions!Gore elements such as dismemberment and blood have been remastered to enhance the action experience. Players can enjoy high-speed, violent action using a wide variety of weapons and techniques, including Japanese swords, shurikens, Kusari-gamas, and tonfas.\nNote: The dismemberment feature can be toggled on and off in the Options menu.3. Additional characters, mode for beginners, and elements from subsequent spin-off titles are also included!This remaster includes additional elements from spin-off titles released after the original. Players can control three additional characters: Momiji, Ayane, and Rachel. The game also includes \"HERO PLAY STYLE\" mode that provides automatic support in challenging situations, making it accessible for those who may not be confident in their action skills.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر این ریمستر گرافیکی عنوان اکشن پرسرعت نینجا که پس از 15 سال بازگشته است، نقش ریو هایابوسا، یک نینجا را بر عهده بگیرید که وارث افسانه‌ای «شمشیر اژدها» است و نبردهایی را در سرتاسر جهان آغاز می‌کند. دنیای \"NINJA GAIDEN 2\" با تصاویری غنی بازسازی شده است! مراحل، کاراکترها، جلوه ها و نورپردازی به طور کامل بازطراحی و بازسازی شده اند تا تصاویری واقع گرایانه ارائه کنند. از Unreal Engine 5 برای ایجاد گرافیک خیره کننده نسل فعلی استفاده شده است که به بازیکنان این امکان را می دهد تا عمیق تر در دنیای داستان غوطه ور شوند. اکشن خشن x با سرعت بالا با جدیدترین عبارات گرافیکی تکامل یافته است! عناصر گور مانند تجزیه و خون برای بهبود تجربه اکشن بازسازی شده اند. بازیکنان می توانند با استفاده از طیف گسترده ای از سلاح ها و تکنیک ها، از جمله شمشیرهای ژاپنی، شوریکن ها، کوساری-گاما و تونفا، از حرکات پرسرعت و خشونت آمیز لذت ببرند.\nتوجه: ویژگی تجزیه را می توان در منوی گزینه ها روشن و خاموش کرد. 3. کاراکترهای اضافی، حالت برای مبتدیان، و عناصری از عناوین اسپین آف بعدی نیز گنجانده شده است! این ریمستر شامل عناصر اضافی از عناوین اسپین آف منتشر شده پس از نسخه اصلی است. بازیکنان می توانند سه شخصیت اضافی را کنترل کنند: Momiji، Ayane و Rachel. این بازی همچنین دارای حالت «HERO PLAY STYLE» است که پشتیبانی خودکار را در موقعیت‌های چالش برانگیز ارائه می‌کند و برای کسانی که ممکن است به مهارت‌های اکشن خود مطمئن نباشند، قابل دسترسی است."
   }
 ]
