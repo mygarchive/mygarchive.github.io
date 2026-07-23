@@ -527,5 +527,41 @@
     },
     "description_en": "Closer the Distance is a deeply moving, slice-of-life sim that tells a story about the connections between family and friends in the face of tragedy. Following a fatal car accident, players take on the role of Angela, a young girl from the town of Yesterby, who finds herself watching over her loved ones as they navigate the grieving process. Using her ethereal ability to influence the townspeople she once knew, Angela’s choices will ultimately determine the fate of Yesterby.\nCloser the Distance combines several key gameplay features for an immersive playthrough. The game's compelling narrative is emotionally charged and highlights themes of empathy, community, friendship, grief, and closure. Choices-matter gameplay allows players to make decisions that affect the outcome of the story, making each playthrough unique. Closer the Distance offers something for everyone, and its emotional depth and engaging gameplay will leave players wanting more.\nCW: Closer the Distance deals with themes of death, illness and grief",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCloser the Distance یک سیم کارت عمیقا متحرک و تکه‌ای از زندگی است که داستانی در مورد ارتباط بین خانواده و دوستان در مواجهه با یک تراژدی را روایت می‌کند. پس از یک تصادف رانندگی مرگبار، بازیکنان نقش آنجلا، دختر جوانی از شهر Yesterby را بازی می‌کنند که متوجه می‌شود مراقب عزیزانش در حین حرکت در روند سوگواری هستند. انتخاب های آنجلا با استفاده از توانایی اثیری خود برای تأثیرگذاری بر مردم شهر که زمانی می شناخت، در نهایت سرنوشت Yesterby را تعیین می کند.\nCloser the Distance چندین ویژگی کلیدی گیم پلی را برای یک بازی همهجانبه ترکیب می کند. روایت قانع کننده بازی دارای بار احساسی است و مضامین همدلی، اجتماع، دوستی، اندوه و بسته شدن را برجسته می کند. گیم پلی Choices-matter به بازیکنان این امکان را می دهد که تصمیماتی بگیرند که بر نتیجه داستان تأثیر می گذارد و هر بازی را منحصر به فرد می کند. Closer the Distance چیزی را برای همه ارائه می دهد و عمق احساسی و گیم پلی جذاب آن باعث می شود بازیکنان بیشتر بخواهند.\nCW: Closer the Distance به موضوعات مرگ، بیماری و اندوه می پردازد"
+  },
+  {
+    "id": 990567,
+    "name": "Cronos: The New Dawn",
+    "background_image": "https://media.rawg.io/media/games/370/370a27962e860e9b01709ef3de60fffe.jpg",
+    "rating": 3.86,
+    "metacritic": null,
+    "released": "2025-09-04",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 6,
+    "developers": "Bloober Team",
+    "steam_link": "https://store.steampowered.com/app/2101960/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/34c/34c2a8ef2bb21a78924bdfc387d3d6df.jpg",
+      "https://media.rawg.io/media/games/370/370a27962e860e9b01709ef3de60fffe.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 x64\nProcessor: Intel Core i5-8400F, Intel Core I5-8600K | Amd Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1080, or AMD Radeon™ RX 5700-XT, or Intel® Arc™ A770\nDirectX: Version 12\nStorage: 30 GB available space\nSound Card: Windows compatible Audio Device",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 x64\nProcessor: Intel Core i7-10700K | Amd Ryzen 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce®RTX 3080, or AMD Radeon™ RX6800 -XT, or Intel® Arc™ B580 (allows for gameplay in 1080p)\nDirectX: Version 12\nStorage: 30 GB available space\nSound Card: Windows compatible Audio Device"
+    },
+    "description_en": "Cronos: The New Dawn is a pulse-pounding, third-person survival horror game where time is your deadliest weapon — and your worst enemy. Survive a brutal future, dive back in time, and stop nightmarish creatures from merging into unstoppable abominations.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCronos: The New Dawn یک بازی ترسناک و سوم شخص است که در آن زمان مرگبارترین سلاح و بدترین دشمن شماست. در آینده ای وحشیانه جان سالم به در ببرید، در زمان غواصی کنید و موجودات کابوس وار را از ادغام شدن در شرارت های غیرقابل توقف متوقف کنید."
   }
 ]
