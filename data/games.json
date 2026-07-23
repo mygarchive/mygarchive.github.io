@@ -4507,5 +4507,46 @@
     },
     "description_en": "A Plague Tale: Innocence, on PlayStation 4, Xbox One and PC, tells the grim story of two siblings fighting together for survival in the darkest hours of History. This new video game from Asobo Studio sends you on an emotional journey through the 14th century France, with gameplay combining adventure, action and stealth, supported by a compelling story. Follow the young Amicia and her little brother Hugo, who face the brutality of a ravaged world as they discover their purpose to expose a dark secret. On the run from the Inquisition's soldiers, surrounded by unstoppable swarms of rats incarnating the Black Death, Amicia and Hugo will learn to know and trust each other as they struggle for their lives against all odds.\r\n• An original, powerful tale following the trip of the young noble Amicia de Runes and her adorable yet smart brother Hugo\r\n• Survive a great, enigmatic danger in a brutal, unforgiving world. With the Black Plague appeared deadly swarms of rats, indiscriminately devouring everything in their path.\r\n• A seamless blend of adventure and stealth gameplay, deeply embedded in dark medieval mystery.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nA Plague Tale: Innocence، روی پلی‌استیشن 4، ایکس‌باکس وان و رایانه‌های شخصی، داستان تلخ دو خواهر و برادر را روایت می‌کند که با هم برای بقا در تاریک‌ترین ساعات تاریخ مبارزه می‌کنند. این بازی ویدیویی جدید از استودیوی Asobo شما را به سفری احساسی در قرن چهاردهم فرانسه می‌فرستد، با گیم‌پلی ترکیبی از ماجراجویی، اکشن و مخفی کاری که توسط داستانی جذاب پشتیبانی می‌شود. آمیشیا جوان و برادر کوچکش هوگو را دنبال کنید که با وحشیگری دنیای ویران شده روبرو می شوند و هدف خود را برای افشای یک راز تاریک کشف می کنند. در فرار از سربازان تفتیش عقاید، احاطه شده توسط انبوهی از موش های غیرقابل توقف که تجسم مرگ سیاه هستند، آمیشیا و هوگو یاد می گیرند که یکدیگر را بشناسند و به یکدیگر اعتماد کنند و در مقابل همه شانس ها برای زندگی خود مبارزه کنند.\r\n• داستانی بدیع و قدرتمند پس از سفر نجیب جوان آمیشیا دو رونز و برادر شایان ستایش و در عین حال باهوشش هوگو\r\n• در یک دنیای بی رحمانه و غیرقابل بخشش از یک خطر بزرگ و معمایی جان سالم به در ببرید. با طاعون سیاه، دسته‌های مرگبار موش‌ها ظاهر شدند که بی‌توجهی همه چیز را در مسیر خود می‌بلعیدند.\r\n• ترکیبی یکپارچه از گیم پلی ماجراجویی و مخفی کاری، عمیقاً در راز تاریک قرون وسطی جاسازی شده است."
+  },
+  {
+    "id": 616697,
+    "name": "A Plague Tale: Requiem",
+    "background_image": "https://media.rawg.io/media/games/cd0/cd074f3f6045297cda9ad077273c09b6.jpg",
+    "rating": 4.28,
+    "metacritic": null,
+    "released": "2022-10-17",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Asobo Studio",
+    "steam_link": "https://store.steampowered.com/app/1182900/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/91d/91d6977a6afce4626da170f96c3155f9.jpg",
+      "https://media.rawg.io/media/screenshots/5b9/5b91e9678850abd6234628ede2f513b9.jpg",
+      "https://media.rawg.io/media/screenshots/b46/b4660d1847f4046563962e18dafb0ba6_Tu4fBu4.jpg",
+      "https://media.rawg.io/media/screenshots/90b/90b362c09954a17a1c81c786ac671bce.jpg",
+      "https://media.rawg.io/media/screenshots/760/7600bab6853da1784d20223dedd797ec.jpg",
+      "https://media.rawg.io/media/screenshots/0a4/0a4cb5a8458b3a70f4ef7497cac19d31.jpg",
+      "https://media.rawg.io/media/games/cd0/cd074f3f6045297cda9ad077273c09b6.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 64 bits)\nProcessor: Intel Core i5-4690K (3.5 GHz)/AMD FX-8300 (3.3 GHz)\nMemory: 16 GB RAM\nGraphics: 4 GB, GeForce GTX 970/Radeon RX 590\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: 30 FPS, 1920x1080 in low. DirectX 12 Feature Level 12 and Shader Model 6.0 are needed.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 64 bits)\nProcessor: Intel Core i7-8700K (3.7 GHz) / AMD Ryzen 5 3600 (3.6 GHz)\nMemory: 16 GB RAM\nGraphics: 8 GB, GeForce RTX 3070/Radeon RX 6800 XT\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: 60 FPS, 1920x1080 in ultra. SSD storage is recommended."
+    },
+    "description_en": "Far across the sea, an island calls…\nEmbark on a heartrending journey into a brutal, breathtaking world twisted by supernatural forces.\n\nAfter escaping their devastated homeland, Amicia and Hugo travel far south, to new regions and vibrant cities. There, they attempt to start a new life and control Hugo’s curse.\n\nBut, when Hugo’s powers reawaken, death and destruction return in a flood of devouring rats. Forced to flee once more, the siblings place their hopes in a prophesized island that may hold the key to saving Hugo.\n\nDiscover the cost of saving those you love in a desperate struggle for survival. Strike from the shadows or unleash hell, overcoming foes and challenges with a variety of weapons, tools and unearthly powers.\n\n● Sequel to the award-winning adventure A Plague Tale: Innocence\n● A spectacular grounded tale twisted by supernatural forces\n● Use a variety of tools, sneak, fight, or unleash hell and rats\n● Stunning visuals combine with an enthralling score",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر آن سوی دریا، جزیره ای صدا می کند…\nسفری دلخراش را به دنیایی بی رحمانه و نفس گیر که توسط نیروهای ماوراء طبیعی پیچیده شده است، آغاز کنید.\n\nآمیسیا و هوگو پس از فرار از سرزمین ویران شده خود، به مناطق جنوبی و شهرهای پر جنب و جوش سفر می کنند. در آنجا، آنها سعی می کنند زندگی جدیدی را شروع کنند و نفرین هوگو را کنترل کنند.\n\nاما وقتی قدرت هوگو دوباره بیدار می شود، مرگ و ویرانی در سیل موش های بلعنده بازمی گردد. خواهران و برادران مجبور به فرار یک بار دیگر، امید خود را به جزیره ای پیشگویی می کنند که ممکن است کلید نجات هوگو را داشته باشد.\n\nهزینه نجات کسانی که دوستشان دارید را در یک مبارزه ناامیدکننده برای بقا کشف کنید. از سایه ها ضربه بزنید یا جهنم را آزاد کنید، با انواع سلاح ها، ابزارها و قدرت های غیرزمینی بر دشمنان و چالش ها غلبه کنید.\n\n● دنباله ماجراجویی برنده جایزه A Plague Tale: Innocence\n● یک داستان زمینی دیدنی که توسط نیروهای ماوراء طبیعی پیچ خورده است\n● از ابزارهای مختلف استفاده کنید، دزدکی حرکت کنید، بجنگید یا جهنم و موش ها را آزاد کنید\n● تصاویری خیره کننده با یک امتیاز جذاب ترکیب می شود"
   }
 ]
