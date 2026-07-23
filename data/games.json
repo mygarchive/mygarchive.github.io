@@ -828,5 +828,60 @@
     },
     "description_en": "Embark on an inspiring mission of human connection beyond the UCA. Sam—with companions by his side—sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected? Step by step, legendary game creator Hideo Kojima changes the world once again.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nماموریت الهام بخش ارتباط انسانی فراتر از UCA را آغاز کنید. سام - با همراهانش در کنارش - برای نجات بشریت از انقراض راهی سفر جدیدی می شود. به آنها بپیوندید تا در دنیایی که توسط دشمنان ماورایی محاصره شده است، موانع، و یک سوال ترسناک عبور می کنند: آیا باید به هم متصل می شدیم؟ گام به گام، هیدئو کوجیما، خالق افسانه ای بازی، جهان را بار دیگر تغییر می دهد."
+  },
+  {
+    "id": 996718,
+    "name": "Deathrun",
+    "background_image": "https://media.rawg.io/media/screenshots/934/934eb704e0505bc5157a79232182d048.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2025-01-25",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 59,
+        "name": "Massively Multiplayer",
+        "slug": "massively-multiplayer"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Inonia Games",
+    "steam_link": "https://store.steampowered.com/app/1591690/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/4a6/4a6e519a3fff14ac9394fe75b8f05a87.jpg",
+      "https://media.rawg.io/media/screenshots/47b/47be5c84f20a801cb6b654e24a5b6a2e.jpg",
+      "https://media.rawg.io/media/screenshots/f10/f107464ddba41b907f0dfdf51e40d429.jpg",
+      "https://media.rawg.io/media/screenshots/f27/f27e15c79e6b76210e17bb2577d6328c.jpg",
+      "https://media.rawg.io/media/screenshots/304/3049ab035fa6b6ad21b3bbd11c6ea310.jpg",
+      "https://media.rawg.io/media/screenshots/934/934eb704e0505bc5157a79232182d048.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Intel Core i5-6600K / AMD Ryzen 5 1400\nMemory: 4 GB RAM\nGraphics: NVIDIA GeForce RTX 2070 / AMD Radeon RX 5700 XT\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 1 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "Deathrun is a fun and exciting multiplayer game where you race through obstacle-filled courses in a battle-royale-style challenge! In this dynamic, cartoonish game, you must overcome deadly traps, dodge hazards, and outrun your opponents to be the last one standing!Built on Unreal Engine 5, Deathrun offers smooth animations and a vibrant visual style. With P2P network architecture, you can compete with friends and players worldwide, enjoying fast and stable matches.Dive into wild challenges, customize your character with a variety of outfits and accessories, and prove that you have what it takes to become the champion!Game Features:Cartoonish graphics on Unreal Engine 5: A bright and stylish visual world where every challenge looks amazing.P2P multiplayer: Engage in low-latency matches no matter where you or your opponents are.Character customization: Create your own unique look with tons of costume and accessory options.Exciting levels: Each arena is full of dynamic traps that will keep you on edge from start to finish.Regular updates: New levels, game modes, and cosmetic items are constantly added.Ready to race through deadly obstacles and become the best of the best? Join us in Deathrun and show what you’re made of!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDeathrun یک بازی چندنفره سرگرم کننده و هیجان انگیز است که در آن در یک چالش به سبک بتل رویال در مسیرهای پر از موانع مسابقه می دهید! در این بازی پویا و کارتونی، شما باید بر تله‌های مرگبار غلبه کنید، از خطرات دور بزنید و از حریفان خود پیشی بگیرید تا آخرین نفر باشید! Deathrun که بر روی Unreal Engine 5 ساخته شده، انیمیشن‌های روان و سبک بصری پر جنب و جوشی را ارائه می‌دهد. با معماری شبکه P2P، می‌توانید با دوستان و بازیکنان در سراسر جهان رقابت کنید، از مسابقات سریع و پایدار لذت ببرید. در چالش‌های وحشی شیرجه بزنید، شخصیت خود را با انواع لباس‌ها و لوازم جانبی شخصی‌سازی کنید، و ثابت کنید که آنچه را که برای قهرمان شدن لازم است دارید! ویژگی‌های بازی: گرافیک کارتونی در Unreal Engine 5: یک چالش روشن و شیک در دنیای بصری چندگانه. مسابقات با تأخیر کم مهم نیست که شما یا حریفان کجا هستید. سفارشی سازی شخصیت: با هزاران گزینه لباس و لوازم جانبی ظاهر منحصر به فرد خود را ایجاد کنید. سطوح هیجان انگیز: هر عرصه مملو از تله های پویا است که شما را از ابتدا تا انتها در لبه پیشرفت نگه می دارد. به روز رسانی های منظم: سطوح جدید، حالت های بازی، و آیتم های آرایشی و بهداشتی اضافه می شوند.آماده هستید که به طور مداوم به بهترین موانع مسابقه تبدیل شوید؟ به ما در Deathrun بپیوندید و نشان دهید که از چه چیزی ساخته شده اید!"
   }
 ]
