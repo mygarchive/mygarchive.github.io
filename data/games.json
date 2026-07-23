@@ -213,5 +213,61 @@
     },
     "description_en": "The Penitent One awakens as Blasphemous 2 joins him once again in an endless struggle against The Miracle. Dive into a perilous new world filled with mysteries and secrets to discover, and tear your way through monstrous foes that stand between you and your quest to end the cycle once and for all.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nزمانی که Blasphemous 2 بار دیگر در مبارزه ای بی پایان علیه The Miracle به او می پیوندد، The Penitent One بیدار می شود. در یک دنیای جدید خطرناک پر از رازها و اسرار برای کشف شیرجه بزنید، و راه خود را از میان دشمنان هیولایی که بین شما و تلاش شما برای پایان دادن به چرخه یک بار برای همیشه ایستاده‌اند، بگذرید."
+  },
+  {
+    "id": 5161,
+    "name": "Braid",
+    "background_image": "https://media.rawg.io/media/games/a5a/a5abaa1b5cc1567b026fa3aa9fbd828e.jpg",
+    "rating": 4.16,
+    "metacritic": 92,
+    "released": "2008-08-06",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 2,
+    "developers": "Hothead Games, Number None",
+    "steam_link": "https://store.steampowered.com/app/499180/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/fc6/fc6629f5ce1e1ddd44647a44fa73df3b.jpg",
+      "https://media.rawg.io/media/screenshots/4b4/4b4d4367723293933c2135870b616e0e.jpg",
+      "https://media.rawg.io/media/screenshots/da0/da0ec8e9366b7a7d324a757c235e4d3f.jpg",
+      "https://media.rawg.io/media/screenshots/085/08595d5008274e9c8d0b686088fdfe12.jpg",
+      "https://media.rawg.io/media/screenshots/8ef/8ef82a85c0e30a4696fa6b6313482bac.jpg",
+      "https://media.rawg.io/media/screenshots/ca1/ca1b87d1f42104bc4ad4debeee7d0c06.jpg",
+      "https://media.rawg.io/media/games/a5a/a5abaa1b5cc1567b026fa3aa9fbd828e.jpg"
+    ],
+    "requirements": {
+      "minimum": "Operating System: Microsoft® Windows® XP / Vista / 7                  \nProcessor: 1.4GHz or faster                    \nMemory: 768 MB or more                    \nHard Disk Space: 200 MB or more                    \nVideo Card: Pixel Shader 2.0                    \nDirectX® Version: DirectX® 9.0c                    \nController Support: Microsoft Xbox 360 Controller for Windows",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Braid is a traditional platform game with puzzle solving. The story follows the main character Tim on his way through twisted 2D levels. According to the storyline, Tim’s aim is to rescue the princess from a monster. In the course of the completion, players will be able to get some additional information about the protagonist’s relationship with the princess. Players control the protagonist as he climbs platforms, jumps on the enemies to defeat them and to collect keys to hidden quests and mosaic parts. Players have to lead Tim through 6 worlds, each based on an intriguing time mechanic, as Tim features the ability to rewind the original pace of time. For example, Time and Forgiveness world allows respawning Tim after his death by switching time back. To attend the last level, Tim must assemble the mosaic. The story ends in the world simply called “1”, where time flows in reverse and returns to the normal pace by rewinding. The last room of the final world contains Tim’s meeting with the princess, but, due to the time pace turned back, players face some unpredictable twists of the plot.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBraid یک بازی پلتفرم سنتی با حل پازل است. داستان شخصیت اصلی تیم را در مسیر خود در سطوح دوبعدی پیچ خورده دنبال می کند. طبق خط داستانی، هدف تیم نجات شاهزاده خانم از دست یک هیولا است. در طول تکمیل، بازیکنان می توانند اطلاعات بیشتری در مورد رابطه قهرمان داستان با شاهزاده خانم به دست آورند. بازیکنان هنگام بالا رفتن از سکوها، قهرمان داستان را کنترل می کنند، بر روی دشمنان می پرند تا آنها را شکست دهند و کلیدهای ماموریت های مخفی و قطعات موزاییک را جمع آوری کنند. بازیکنان باید تیم را در 6 جهان هدایت کنند، که هر کدام بر اساس مکانیک زمان جذاب است، زیرا تیم توانایی بازگرداندن سرعت اولیه زمان را دارد. به عنوان مثال، دنیای Time and Forgiveness اجازه می دهد تا تیم را پس از مرگش با تغییر زمان به عقب بازگرداند. برای حضور در آخرین سطح، تیم باید موزاییک را جمع کند. داستان در دنیایی به نام «1» به پایان می رسد، جایی که زمان برعکس جریان می یابد و با چرخش به عقب به سرعت عادی باز می گردد. آخرین اتاق دنیای آخر شامل ملاقات تیم با شاهزاده خانم است، اما به دلیل بازگشت سرعت زمان، بازیکنان با پیچش های غیرقابل پیش بینی داستان روبرو می شوند."
   }
 ]
