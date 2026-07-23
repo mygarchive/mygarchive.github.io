@@ -1877,5 +1877,45 @@
     },
     "description_en": "Last Day of June Special Launch Pack\nPurchase Ovosonico’s emotional watercolor adventure before September, the 15th 2017: you’ll be granted a 10% off discount and will get Brothers: A Tale Of Two Sons for FREE – a heart-touching journey and one of the most critically acclaimed adventures ever.\nThis special offer purchase includes two master pieces, respectively from the creative minds of Massimo Guarini (Murasaki Baby, Creative Director for Shadows of the Damned) and Josef Fares (A Way Out).\nMake sure to follow and wishlist Last Day of June on Steam to get notifications!\nAbout the Game\nJoin Carl and June on what begins as a magical outing to their favorite spot, and try to unlock the sequence of events that could save the day – and June’s life – in this cinematic experience that will compel you  to ask yourself: “What would I do to save the one I love?\"\n+ Polygon (US): 8.5/10\n+ EuroGamer (UK): RECOMMENDED\n+ Jeauxactu (FR): 8.5/10\n+ IGN (ES): 84/100\n+ Multiplayer (IT): 8.5/10\nLast Day of June is an interactive tale about love and loss, from an all-star team of creators - including critically acclaimed director Massimo Guarini (Murasaki Baby, Shadows of the Damned) & award-winning musician and record producer Steven Wilson, and featuring a collaboration with writer/director/animator Jess Cope (animator on “Frankenweenie”, director for Metallica’s “Here Comes Revenge” music video).\nA HEART-DRIVEN QUEST: Last Day of June is inspired by Steven Wilson’s haunting song “Drive Home.” ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبسته راه اندازی ویژه آخرین روز ژوئن\nماجراجویی احساسی آبرنگ Ovosonico را قبل از 15 سپتامبر 2017 بخرید: به شما 10 درصد تخفیف تعلق می گیرد و Brothers: A Tale Of Two Sons را به صورت رایگان دریافت می کنید - سفری دلخراش و یکی از تحسین شده ترین ماجراجویی های تاریخ.\nاین خرید پیشنهادی ویژه شامل دو قطعه اصلی به ترتیب از ذهن خلاق ماسیمو گوارینی (موراساکی بیبی، کارگردان خلاق Shadows of the Damned) و جوزف فارس (یک راه خروج) است.\nبرای دریافت اعلان‌ها حتما آخرین روز ژوئن را در Steam دنبال کنید و لیست علاقه مندی‌ها را دنبال کنید!\nدرباره بازی\nبه کارل و جون بپیوندید که به عنوان یک گردش جادویی به نقطه مورد علاقه‌شان آغاز می‌شود و سعی کنید توالی رویدادهایی را که می‌توانند روز و جان جون را نجات دهند، در این تجربه سینمایی که شما را وادار می‌کند از خود بپرسید: «برای نجات کسی که دوستش دارم، چه کار کنم؟»\n+ چند ضلعی (ایالات متحده): 8.5/10\n+ EuroGamer (بریتانیا): توصیه می شود\n+ Jeauxactu (FR): 8.5/10\n+ IGN (ES): 84/100\n+ چند نفره (IT): 8.5/10\nآخرین روز ژوئن داستانی تعاملی در مورد عشق و از دست دادن است، از یک تیم تمام ستاره از سازندگان - از جمله کارگردان تحسین شده ماسیمو گوارینی (بچه موراساکی، سایه های لعنتی) و موسیقیدان برنده جایزه و تهیه کننده رکورد، استیون ویلسون، و همراه با همکاری با نویسنده/کارگردان، کارگردان، نویسنده/کارگردان/کارگردان در فیلم Cool. موزیک ویدیوی \"Here Comes Revenge\" متالیکا).\nجست‌وجوی قلب‌محور: آخرین روز ژوئن با الهام از آهنگ جذاب استیون ویلسون \"Drive Home\" ساخته شده است."
+  },
+  {
+    "id": 605674,
+    "name": "Lies Of P",
+    "background_image": "https://media.rawg.io/media/games/458/45838becd01e929b6be8b88d655cebfc.jpg",
+    "rating": 4.17,
+    "metacritic": null,
+    "released": "2023-09-19",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 27,
+    "developers": "Round8 Studio",
+    "steam_link": "https://store.steampowered.com/app/1627720/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/333/3332c7015ad0c3042f10a128ab3b4f0a.jpg",
+      "https://media.rawg.io/media/screenshots/e54/e5441972762d7c97428c8ec8e1c57ab9.jpg",
+      "https://media.rawg.io/media/screenshots/caf/caf8b31c71fd30eeb53504b550fd6dbf.jpg",
+      "https://media.rawg.io/media/screenshots/6bf/6bf590df242e884b7d519f9fbe81e8b3.jpg",
+      "https://media.rawg.io/media/screenshots/f57/f5788075e970b835ff1b20f73ebf2ca4.jpg",
+      "https://media.rawg.io/media/games/458/45838becd01e929b6be8b88d655cebfc.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 64bit\nProcessor: AMD Ryzen 3 1200／Intel Core i5-7500\nMemory: 8 GB RAM\nGraphics: AMD Radeon RX 560 4GB / NVIDIA GeForce GTX 1050 Ti 4GB\nDirectX: Version 12",
+      "recommended": "OS: Windows 10 64bit\nProcessor: AMD Ryzen 5 3600 / Intel Core i7 8700\nMemory: 16 GB RAM\nGraphics: AMD Radeon RX 6700 / NVIDIA GeForce RTX 2060\nDirectX: Version 12"
+    },
+    "description_en": "You wake up at an abandoned train station in Krat, a city overwhelmed by madness and bloodlust. In front of you lies a single note that reads:\r\n\"Find Mr. Geppetto. He's here in the city.\"\r\nPlay as Pinocchio, a puppet mechanoid, and fight through everything in your path to find this mystery person. But don't expect any help along the way and don't make the mistake of trusting anyone.\r\nYou must always lie to others if you hope to become human.\r\nInspired by the familiar story of Pinocchio, Lies of P is an action souls-like game set in a cruel, dark Belle Époque world.\r\nAll of humanity is lost in a once beautiful city that has now become a living hell filled with unspeakable horrors.\r\nLies of P offers an elegant world filled with tension, deep combat system and a gripping story.\r\nGuide Pinocchio's and experience his unrelenting journey to become human.A Dark Fairytale RetoldThe timeless tale of Pinocchio has been reimagined with dark and striking visuals.\r\nSet in the fallen city of Krat, Pinnochio desperately fights to become human against all odds.Visual ConceptThe city of Krat was insipired by the Belle Époque Era in Europe (late 19th Century to the early 20th Century) and is the epitome of a collapsed city bereft of prosperity.'Lying' Quests and Multiple EndingsExperience interconnected procedural quests that play out depending on how you lie. These choices will then affect how the story ends.Weapon-Making SystemYou can combine weapons in a multitude of ways to create somethin",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما در یک ایستگاه قطار متروکه در کرات، شهری که غرق در جنون و خونخواهی است، از خواب بیدار می شوید. در مقابل شما یک یادداشت قرار دارد که در آن نوشته شده است:\r\n\"آقای ژپتو را پیدا کن. او اینجا در شهر است.\"\r\nدر نقش پینوکیو، یک مکانیک عروسکی بازی کنید و برای یافتن این شخص اسرارآمیز با همه چیز در مسیر خود مبارزه کنید. اما در این راه انتظار کمک نداشته باشید و این اشتباه را مرتکب نشوید که به کسی اعتماد کنید.\r\nهمیشه باید به دیگران دروغ بگویی اگر امیدواری انسان شوی.\r\nLies of P با الهام از داستان آشنای پینوکیو، یک بازی اکشن روح‌مانند است که در دنیای بی‌رحمانه و تاریک Belle Époque اتفاق می‌افتد.\r\nتمام بشریت در شهری زمانی زیبا گم شده است که اکنون به جهنمی پر از وحشت های غیرقابل وصف تبدیل شده است.\r\nLies of P دنیایی زیبا پر از تنش، سیستم مبارزه عمیق و داستانی جذاب را ارائه می دهد.\r\nپینوکیو را راهنمایی کنید و سفر بی امان او را برای تبدیل شدن به انسان تجربه کنید. بازگویی یک افسانه تاریک داستان جاودانه پینوکیو با تصاویری تاریک و خیره کننده دوباره تصور شده است.\r\nدر شهر سقوط کرده کرات، پینوکیو ناامیدانه می‌جنگد تا در برابر همه شانس‌ها تبدیل به انسان شود. مفهوم بصری شهر کرات الهام‌گرفته از دوران بل اپوک در اروپا (اواخر قرن نوزدهم تا اوایل قرن بیستم) است و مظهر یک شهر در حال فروپاشی و ثروتمندترین شهر است. Endings تلاش‌های رویه‌ای به هم پیوسته را تجربه کنید که بسته به نحوه دروغگویی شما انجام می‌شوند. سپس این انتخاب‌ها بر نحوه پایان داستان تأثیر می‌گذارند. سیستم ساخت سلاح می‌توانید سلاح‌ها را به روش‌های مختلف ترکیب کنید تا چیزی بسازید."
   }
 ]
