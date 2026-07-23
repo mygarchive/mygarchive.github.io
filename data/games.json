@@ -2019,5 +2019,46 @@
     },
     "description_en": "Little Misfortune is an interactive story, focused on exploration and characters, both sweet and dark, where your choices have consequences.\nStarring Misfortune Ramirez Hernandez, an imaginative 8-year-old, who seeks the prize of Eternal Happiness, as a gift to her Mommy. Led by her new friend, Mr. Voice, they venture into the woods, where mysteries are unraveled and a little bit of bad luck unfolds.\nSharing the same universe with the cult video game Fran Bow, created by the visionary dev-duo Killmonday Games.\n⦁\tYou may pet a doggy, a fishy, a wolfie, the Kraken, the kitty and the foxy.\n⦁\tVisit a pet cemetery with a shovel.\n⦁\tNow with real human voices: Hear Misfortune say some pretty cute things!\n⦁\tMissing children.\n⦁\tThere's a monster!\n⦁\tFall in love.\n⦁\tCommit petty crimes.\n⦁\tOriginal art by Natalia Martinsson.\n⦁\tOriginal soundtrack by Isak Martinsson.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبدبختی کوچک یک داستان تعاملی است که بر روی کاوش و شخصیت‌ها متمرکز شده است، چه شیرین و چه تاریک، که در آن انتخاب‌های شما پیامدهایی دارد.\nبا بازی بدبختی رامیرز هرناندز، یک دختر تخیلی 8 ساله، که به دنبال جایزه شادی ابدی، به عنوان هدیه به مادرش است. آنها به رهبری دوست جدیدش، آقای ویس، وارد جنگل می شوند، جایی که رازها آشکار می شود و کمی بدشانسی آشکار می شود.\nاشتراک‌گذاری یک جهان با بازی ویدیویی فرقه‌ای Fran Bow، ایجاد شده توسط دوتایی رویایی Killmonday Games.\n⦁ ممکن است سگی، ماهی، گرگ، کراکن، بچه گربه و روباه را نوازش کنید.\n⦁ با بیل از قبرستان حیوانات خانگی دیدن کنید.\n⦁ اکنون با صدای واقعی انسان: بشنوید که بدبختی چند چیز بسیار زیبا می گوید!\n⦁ گم شدن کودکان\n⦁ یک هیولا وجود دارد!\n⦁ عاشق شوید.\n⦁ ارتکاب جرایم کوچک.\n⦁ هنر اصلی توسط ناتالیا مارتینسون.\n⦁ موسیقی متن اصلی توسط ایسک مارتینسون."
+  },
+  {
+    "id": 973376,
+    "name": "Lost Records: Bloom & Rage",
+    "background_image": "https://media.rawg.io/media/games/54d/54d79ca74d26dcad1b96c4222e8830af.jpg",
+    "rating": 3.3,
+    "metacritic": null,
+    "released": "2025-02-17",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 7,
+    "developers": "DONTNOD Entertainment, DON'T NOD",
+    "steam_link": "https://store.steampowered.com/app/1902960/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/bad/badddc7252a2bbdc59f180c5b297a227.jpg",
+      "https://media.rawg.io/media/screenshots/e54/e547ef3417136a0e3f9cdd271839d3bd.jpg",
+      "https://media.rawg.io/media/screenshots/498/498a1df7712a778828b464ccae3ad720.jpg",
+      "https://media.rawg.io/media/screenshots/7b0/7b0207fce5eeb68c21d567863584c4b9.jpg",
+      "https://media.rawg.io/media/screenshots/e07/e075d5ccc49e84aeeadf36fd2973cfbc.jpg",
+      "https://media.rawg.io/media/screenshots/317/31724b99b01dbc66889d4c6cc3a53d67.jpg",
+      "https://media.rawg.io/media/games/54d/54d79ca74d26dcad1b96c4222e8830af.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10\nProcessor: Intel Core i7-2700K or AMD FX-8350\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 1050 Ti, 4GB or AMD Radeon RX 560, 4GB or Intel ARC A380, 6GB\nStorage: 48 GB available space",
+      "recommended": "OS: Windows 10\nProcessor: Intel Core i5-11400 or AMD Ryzen 5 5600X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 3080, 10 GB or AMD RX 6800XT, 16GB\nStorage: 48 GB available space"
+    },
+    "description_en": "The magical summer of 1995 is one of self-discovery and forging unbreakable bonds for high school friends Swann, Nora, Autumn, and Kat. 27 years of no contact later, fate reunites them to confront the long-buried secret that made them promise to never speak again.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nتابستان جادویی 1995 برای دوستان دبیرستانی Swann، Nora، Autumn و Kat برای خودیابی و ایجاد پیوندهای ناگسستنی است. 27 سال بعد از عدم تماس، سرنوشت آنها را دوباره به هم می پیوندد تا با رازی که مدت ها مدفون شده بود روبرو شوند که آنها را وادار می کرد قول دهند که دیگر صحبت نکنند."
   }
 ]
