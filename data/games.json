@@ -4796,5 +4796,41 @@
     },
     "description_en": "Assassin’s Creed is an action-adventure game that follows the confrontation of the Assassins and the Templars. It’s the first installment in the series, followed by several standalone titles and DLCs. Director’s Cut Edition is the extended version of Assassin’s Creed with more investigation options and several new missions. \n\nThe game’s world is split between the modernity and the time after the Third Crusade when the main action is set. You play as Desmond Miles, a descendant of an assassin named Altair Ibn-La'Ahad. You need to step into the war over the Apple of Eden. With the Animus machine Desmond’s mind is sent to the past and you take control of Altair. The game missions are in fact a series of assassinations you need to carry out.\n\nAssassin’s Creed is set in an open world with three main cities: Jerusalem, Acre, or Damascus. In every city you get information about your target and can complete side quests. You upgrade Altair with new weapons after each successful assassination. The protagonist is also very skillful and has the Eagle Vision ability to highlight all visible characters either they are targets, enemies, allies or neutrals. This option is only available when the health bar is full.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin’s Creed یک بازی اکشن ماجراجویی است که رویارویی Assassins و Templars را دنبال می کند. این اولین قسمت از این سری است و پس از آن چندین عنوان مستقل و DLC عرضه می شود. Director’s Cut Edition نسخه توسعه یافته Assassin’s Creed با گزینه های تحقیقاتی بیشتر و چندین ماموریت جدید است. \n\nدنیای بازی بین مدرنیته و زمان پس از سومین جنگ صلیبی که اکشن اصلی تنظیم می شود تقسیم شده است. شما در نقش دزموند مایلز، از نوادگان یک قاتل به نام الطیر بن لااحد بازی می کنید. شما باید وارد جنگ بر سر سیب عدن شوید. با دستگاه Animus ذهن دزموند به گذشته فرستاده می شود و شما کنترل Altair را به دست می گیرید. ماموریت های بازی در واقع مجموعه ای از ترورها هستند که باید انجام دهید.\n\nAssassin’s Creed در یک دنیای باز با سه شهر اصلی: اورشلیم، عکا یا دمشق اتفاق می‌افتد. در هر شهر اطلاعاتی در مورد هدف خود به دست می آورید و می توانید ماموریت های جانبی را تکمیل کنید. بعد از هر ترور موفق، Altair را با سلاح های جدید ارتقا می دهید. قهرمان داستان همچنین بسیار ماهر است و توانایی Eagle Vision را دارد تا تمام شخصیت‌های قابل مشاهده را برجسته کند، خواه هدف، دشمن، متحد یا خنثی باشند. این گزینه فقط زمانی در دسترس است که نوار سلامت پر باشد."
+  },
+  {
+    "id": 13305,
+    "name": "Assassin’s Creed III",
+    "background_image": "https://media.rawg.io/media/games/275/2759da6fcaa8f81f21800926168c85f6.jpg",
+    "rating": 3.75,
+    "metacritic": 80,
+    "released": "2012-10-30",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 22,
+    "developers": "Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/911400/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/078/0781f8511a92fa31fea44ad56d13f7a7.jpg",
+      "https://media.rawg.io/media/screenshots/044/0442a134b0bd6f703f84ca9905176f0f.jpg",
+      "https://media.rawg.io/media/screenshots/cf7/cf721a31dc4c6187c0715587d9dcaed5.jpg",
+      "https://media.rawg.io/media/screenshots/edd/edda41d9bd671c9556c392c7c48ff141.jpg",
+      "https://media.rawg.io/media/screenshots/b7b/b7b98bee0fd0ff1f1e79ba8fb94ff864.jpg",
+      "https://media.rawg.io/media/screenshots/b5e/b5e79ea8adddfd6886332fca2c93914d.jpg",
+      "https://media.rawg.io/media/games/275/2759da6fcaa8f81f21800926168c85f6.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows Vista® (SP2) / Windows® 7 (SP1) / Windows® 8\nProcessor: 2.60 GHz Intel® Core™2 Duo E8200 or 2.60 GHz AMD Athlon™ II X4 620 \nMemory: 2 GB\nGraphics: 512 MB DirectX® 10—compliant with Shader Model 4.0 or higher (see supported list)*\nDirectX®: 10\nHard Drive: 17 GB\nSound: DirectX 10—compliant (5.1 surround sound recommended)\nMultiplayer: 256 kbps or faster broadband connection\nPeripherals: Windows-compatible keyboard, mouse, optional controller (Xbox 360 Controller for Windows recommended)\n*Supported Video Cards at Time of Release:\n\nAMD Radeon™ HD 4850 / 5000 / 6000 / 7000 series\n\nNVIDIA® GeForce® 8800 GT / 9 / 200 / 400 / 500 / 600 series\n\nLaptop versions of these cards may work, but are not supported. These chipsets are the only ones that will run this game. For the most up-to-date minimum requirement listings, please visit the FAQ on our support website.\n\nRequires a Uplay Account",
+      "recommended": "OS: Windows Vista® (SP2) / Windows® 7 (SP1) / Windows® 8\nProcessor: 2.66 GHz Intel® Core™2 Quad Q9400 or 3.00 GHz AMD Phenom™ II X4 940\nMemory: 4 GB\nGraphics: 1024 MB DirectX® 10—compliant with Shader Model 5.0 or higher (see supported list)*\nDirectX®: 10 \nHard Drive: 17 GB\nSound: DirectX 10–compliant (5.1 surround sound recommended)\nMultiplayer: 256 kbps or faster broadband connection\nPeripherals: Windows-compatible keyboard, mouse, optional controller (Xbox 360 Controller for Windows recommended)\n*Supported Video Cards at Time of Release:\n\nAMD Radeon™ HD 4850 / 5000 / 6000 / 7000 series\n\nNVIDIA® GeForce® 8800 GT / 9 / 200 / 400 / 500 / 600 series\n\nLaptop versions of these cards may work, but are not supported. These chipsets are the only ones that will run this game. For the most up-to-date minimum requirement listings, please visit the FAQ on our support website.\n\nRequires a Uplay Account"
+    },
+    "description_en": "Assassin's Creed III is the fifth game of the series, preceded by the first chapter taking place in the time of the Third Crusade and by the Ezio trilogy, positioning itself in the times of the Italian Renaissance (1476-1499). It is the 3rd person action adventure with an accent on exploring and hunting\nDuring the new installment, the player is set to make way through the American Revolution, while being on both side of a conflict — our hero has English father and Mohawk mother, which tears him apart. Such conflicts serve as the leitmotif through the entirety of a game — not only we are choosing sides to fight on in the Civil War, but also we are facing the decisions of choosing Assassins' or Templar's side.\nAs it is common in the Assasin's Creed games, the gameplay concentrates profoundly around fighting the multiple enemies all at once, parkouring off walls and micro-management: selling resources, exchanging ships and so on. The Assassin's Creed III, however, highlights the hunting and simultaneous use of two weapons as the new in-game features.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed III پنجمین بازی از این سری است که قبل از آن فصل اول در زمان جنگ صلیبی سوم و سه گانه اتزیو اتفاق می افتد و خود را در زمان رنسانس ایتالیا (1476-1499) قرار می دهد. این اکشن ماجراجویی سوم شخص با تاکید بر کاوش و شکار است\nدر طول قسمت جدید، بازیکن قرار است راه خود را از طریق انقلاب آمریکا باز کند، در حالی که در هر دو طرف درگیری قرار دارد - قهرمان ما دارای پدر انگلیسی و مادر موهاوک است که او را از هم می پاشد. چنین درگیری‌هایی به‌عنوان موتیف کلیت یک بازی عمل می‌کنند - نه تنها ما طرف‌هایی را برای مبارزه در جنگ داخلی انتخاب می‌کنیم، بلکه با تصمیم‌گیری‌ها برای انتخاب سمت Assassins یا Templar نیز روبرو هستیم.\nهمانطور که در بازی‌های Assasin's Creed رایج است، گیم‌پلی بازی عمیقاً حول مبارزه با چندین دشمن به طور همزمان، پارکور کردن از دیوارها و مدیریت خرد متمرکز می‌شود: فروش منابع، تبادل کشتی و غیره. با این حال، Assassin's Creed III شکار و استفاده همزمان از دو سلاح را به عنوان ویژگی های جدید درون بازی برجسته می کند."
   }
 ]
