@@ -5576,5 +5576,41 @@
     },
     "description_en": "Call of Duty: World at War is a first-person shooter set during World War II and based on several historical battles. The action switches between three playable characters and covers the Pacific Theater and Eastern Front. The story begins with U.S. Marine Private C. Miller who is captured by the Japanese and waits for execution. Later it jumps over war theaters and the timeline, skipping entire months.\r\nThe battles in World at War are quite realistic, with the maximum of two weapons you can carry plus hand grenades. AI allies fight alongside to you, and there's also a cover system that helps to restore health and complete stealthy missions. The variety of levels includes PBY missions, sniper tasks, and sea battles. \r\nWorld at War is the first game of the franchise to introduce Nazi Zombies mode - a cooperative mini-game where 2 to 4 players fight endless hordes of zombies. While the area cover in this mode is quite small, it was expanded by the World at War map packs.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: World at War یک بازی تیراندازی اول شخص است که در طول جنگ جهانی دوم و بر اساس چندین نبرد تاریخی ساخته شده است. این اکشن بین سه شخصیت قابل بازی سوئیچ می‌کند و تئاتر اقیانوس آرام و جبهه شرقی را پوشش می‌دهد. داستان با سرباز آمریکایی سی میلر شروع می شود که توسط ژاپنی ها دستگیر می شود و منتظر اعدام است. بعداً از روی تئاترهای جنگ و جدول زمانی پرش می کند و ماه های کامل را رد می کند.\r\nنبردها در World at War کاملا واقع گرایانه هستند، با حداکثر دو سلاح که می توانید همراه با نارنجک های دستی داشته باشید. متحدان هوش مصنوعی در کنار شما می جنگند و همچنین یک سیستم پوششی وجود دارد که به بازیابی سلامت و تکمیل ماموریت های مخفیانه کمک می کند. سطوح مختلف شامل ماموریت های PBY، وظایف تک تیرانداز و نبردهای دریایی است. \r\nWorld at War اولین بازی از این فرنچایز است که حالت زامبی های نازی را معرفی می کند - یک مینی بازی همکاری که در آن 2 تا 4 بازیکن با انبوهی از زامبی ها مبارزه می کنند. در حالی که پوشش منطقه در این حالت بسیار کوچک است، توسط بسته های نقشه World at War گسترش یافته است."
+  },
+  {
+    "id": 25064,
+    "name": "Call of Duty 3",
+    "background_image": "https://media.rawg.io/media/games/8fa/8fa1dd3783c7c3042ca704b76c95dfa8.jpg",
+    "rating": 3.78,
+    "metacritic": 81,
+    "released": "2006-11-07",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Treyarch, Exakt Entertainment",
+    "steam_link": "https://store.steampowered.com/app/311210/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/22a/22ab34fe6daeb996fea1ad771f57e5c0.jpg",
+      "https://media.rawg.io/media/screenshots/99d/99d8f1284c412698f29958b82a80e8a7.jpg",
+      "https://media.rawg.io/media/screenshots/754/75445496cd5a7a9f6ed2ca955b5711fd.jpg",
+      "https://media.rawg.io/media/screenshots/3db/3dbccdeca80815aaabd6be4a43d6b728.jpg",
+      "https://media.rawg.io/media/screenshots/45f/45f6820d989a8fb934ef1f9a4a50d762.jpg",
+      "https://media.rawg.io/media/screenshots/b10/b10e7b699322d31f7fba21db24c2a1c3.jpg",
+      "https://media.rawg.io/media/games/8fa/8fa1dd3783c7c3042ca704b76c95dfa8.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty 3 delivers the intensity of being closer than ever to the\nfury of combat during the Normandy Breakout, the historic campaign that\nmade the liberation of Paris possible and brought the Allies a step\ncloser to Berlin. Through a seamless narrative that delivers the rush of\nunrelenting battle and breathtaking action, players assume the roles of\nfour ordinary Allied soldiers—American, British, Canadian and Polish—and\nare thrust onto an authentic, living battlefield for an unprecedented\nvariety of combat with advanced high-definition graphics, detailed\ncharacter animations and explosive on-screen action, providing the most\nimmersive and cinematically intense war experience ever.\n\nBranching Mission Paths – Next-generation level design provides\nmultiple attack routes that let players decide how to confront the\nenemy – flank an opponent, or hit him head-on. Each unique mission\npath requires special tactics, from sniping and demolition to all-out\nhead-on clashes.\n\nBattle Actions – An all-new close-quarters battle mechanic allows\nplayers to fight hand-to-hand, improvise explosive devices, and\nexecute a host of other battlefield situations that require cunning\nand rapid reflexes to survive.\n\nNowhere to Hide – Environmental physics allow players to destroy enemy\nsoft cover hideouts, forcing foes out in the open. But be wary,\nopponents can eliminate your protective cover as well.\n\nUtilizing the Wii Remote – Call of Duty 3 utilizes the precise\ncontrols of the Wii Remote control",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty 3 شدت نزدیک‌تر از همیشه را به شما ارائه می‌دهد\nخشم نبرد در جریان فرار نرماندی، کارزار تاریخی که\nآزادسازی پاریس را ممکن ساخت و متفقین را گام برداشت\nنزدیکتر به برلین از طریق یک روایت بدون درز که عجله از\nنبرد بی امان و اکشن نفس گیر، بازیکنان نقش ها را بر عهده می گیرند\nچهار سرباز معمولی متفقین - آمریکایی، انگلیسی، کانادایی و لهستانی - و\nبه یک میدان نبرد واقعی و زنده برای یک صحنه بی سابقه رانده می شوند\nانواع مبارزات با گرافیک پیشرفته با کیفیت بالا، با جزئیات\nانیمیشن‌های شخصیت‌ها و اکشن‌های انفجاری روی صفحه، بیشترین امکانات را ارائه می‌کنند\nتجربه جنگی همهجانبه و شدید سینمایی.\n\nBranching Mission Paths – طراحی سطح نسل بعدی فراهم می کند\nچندین مسیر حمله که به بازیکنان اجازه می دهد تصمیم بگیرند که چگونه با آن مقابله کنند\nدشمن - طرف مقابل حریف را بپوشانید یا او را به صورت سر در بیاورید. هر ماموریت منحصر به فرد\nمسیر نیاز به تاکتیک‌های خاصی دارد، از تیراندازی و تخریب تا همه‌جانبه\nدرگیری های رودررو\n\nاقدامات نبرد - یک مکانیک کاملاً جدید نبرد نزدیک به شما اجازه می دهد\nبازیکنان برای مبارزه تن به تن، ساخت وسایل انفجاری و\nانبوهی از موقعیت های میدان جنگ دیگر را که نیاز به حیله گری دارند، اجرا کنید\nو رفلکس های سریع برای زنده ماندن.\n\nجایی برای پنهان شدن نیست - فیزیک محیطی به بازیکنان اجازه می دهد دشمن را نابود کنند\nمخفیگاه های پوشش نرم، دشمنان را مجبور به بیرون رفتن در فضای باز می کند. اما مراقب باشید،\nحریفان می توانند پوشش محافظ شما را نیز از بین ببرند.\n\nاستفاده از کنترل از راه دور Wii – Call of Duty 3 از دقت استفاده می کند\nکنترل های کنترل از راه دور Wii"
   }
 ]
