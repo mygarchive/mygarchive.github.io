@@ -4914,5 +4914,46 @@
     },
     "description_en": "Introducing Assassin’s Creed® Liberation HD, the striking chapter of the pre-American Revolution Assassin’s Creed saga which arrives for the first time on HD consoles and PC. With improved gameplay, a deeper story, and HD graphics, Liberation is an immersive and full Assassin’s Creed experience.\nThe year is 1765. As the events leading up to the American Revolution heat up in the north, Spanish forces plan to take control of Louisiana in the south – but they have yet to reckon with Aveline, a deadly Assassin who will use every weapon and ability in her arsenal on her quest for freedom.  . Whether eliminating her enemies with her multiple assassinations technique or luring them into deadly traps using her tools, Aveline strikes mortal fear into the hearts of those who stand in her way.\nAs an Assassin, Aveline soon finds herself on an unforgettable journey that will take her from the crowded streets of New Orleans to voodoo-haunted swamps and ancient Mayan ruins. She will play a pivotal role in the turbulent New Orleans revolution and the beginning of a new nation. As she fights for freedom, not for herself, but for those whose life and hopes have been squashed.Key FeaturesAVELINE IS BACK\nAs Aveline, an Assassin of mixed French and African heritage, you must use your skill, instinct and weaponry – including a machete, poison-dart blowpipe, a whip and duelling pistols – to hunt down and eliminate your enemies.\nEXPERIENCE THE UN-UNITED STATES OF AMERICA\nFeast your eyes on a richly",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمعرفی Assassin’s Creed® Liberation HD، فصل خیره کننده حماسه Assassin’s Creed قبل از انقلاب آمریکا که برای اولین بار بر روی کنسول های HD و رایانه شخصی عرضه می شود. با گیم پلی بهبود یافته، داستان عمیق تر و گرافیک HD، Liberation یک تجربه همهجانبه و کامل Assassin’s Creed است.\nسال 1765 است. با داغ شدن رویدادهای منتهی به انقلاب آمریکا در شمال، نیروهای اسپانیایی قصد دارند کنترل لوئیزیانا در جنوب را به دست بگیرند - اما آنها هنوز با Aveline، یک قاتل مرگبار که از هر سلاح و توانایی موجود در زرادخانه خود در تلاش برای آزادی استفاده می کند، فکر نمی کنند.  . آولین چه دشمنانش را با تکنیک ترورهای چندگانه‌اش از بین ببرد و چه آنها را با ابزارهایش به دام‌های مرگبار بکشاند، ترسی فانی را در دل کسانی که در راه او قرار می‌گیرند، وارد می‌کند.\nبه عنوان یک قاتل، Aveline به زودی خود را در یک سفر فراموش نشدنی می بیند که او را از خیابان های شلوغ نیواورلئان به باتلاق های خالی از سکنه وودو و خرابه های باستانی مایا می برد. او نقشی محوری در انقلاب آشفته نیواورلئان و آغاز یک ملت جدید بازی خواهد کرد. همانطور که او برای آزادی می‌جنگد، نه برای خودش، بلکه برای کسانی که زندگی و امیدشان بر باد رفته است. ویژگی‌های کلیدی AVELINE بازگشته است\nبه عنوان Aveline، یک قاتل با میراث ترکیبی فرانسوی و آفریقایی، باید از مهارت، غریزه و سلاح های خود - از جمله قمه، لوله دارت سمی، شلاق و تپانچه های دوئل - برای شکار و از بین بردن دشمنان خود استفاده کنید.\nایالات متحده آمریکا را تجربه کنید\nجشن چشم خود را در غنی"
+  },
+  {
+    "id": 58616,
+    "name": "Assassin's Creed Odyssey",
+    "background_image": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
+    "rating": 3.97,
+    "metacritic": 85,
+    "released": "2018-10-05",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 31,
+    "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Montpellier, Ubisoft Shanghai, Ubisoft Quebec, Ubisoft Bucharest, Ubisoft Singapore, Ubisoft Kiev",
+    "steam_link": "https://store.steampowered.com/app/812140/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/412/412b1dd5c880b80d8404451d3ff44360.jpg",
+      "https://media.rawg.io/media/screenshots/9b5/9b59a790deab688ea923e0cd7b0cadbd_sNpbwUf.jpg",
+      "https://media.rawg.io/media/screenshots/b09/b09a53fb76ea832671599a5f287ab34a.jpg",
+      "https://media.rawg.io/media/screenshots/2f9/2f993667330526171e4056c0a0663437.jpg",
+      "https://media.rawg.io/media/screenshots/6d8/6d8c268dff506f890478e6a0a492858b.jpg",
+      "https://media.rawg.io/media/screenshots/588/5883818edafd22c8a2e1a45bf6fe07b1.jpg",
+      "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Assassin's Creed Odyssey is the twentieth game in its series. It is the earliest game in the Assassin's Creed universe chronology and the prequel to Assassin's Creed Origins.\n\n###Plot\nThe events of Assassin's Creed Odyssey's take place in the Classical Era of Ancient Greece, in 431 BC, before the Brotherhood of Assassins was even formed. The plot follows a fictionalized story of the Peloponnesian War between city-states of Sparta and Athens that left Greece devastated. The player can choose to control either a male (named Alexios) or female (named Kassandra) protagonist, both of them being descendants of the famous Spartan king Leonidas. The player enters the plot as a mercenary and can side with either Athens or its rival Sparta. There's also the frame story set in the contemporary age. Its protagonist is Layla Hassan, who was also the main character in the frame story of Assassin's Creed Origins.\n\n###Gameplay\nUnlike most earlier installments of Assassin's Creed, which put the emphasis solely on action, Odyssey has a strong role-playing element in it. Dialogue options and the non-linear plot allow the player to reach several alternate endings. The game also has a reputation system and multiple options for romancing, including same-sex romances. The combat system is similar to that in Origins with the addition of new skills. The game also reintroduces naval battles.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed Odyssey بیستمین بازی از مجموعه خود است. این اولین بازی در زمان‌شناسی دنیای Assassin's Creed و پیش درآمد Assassin's Creed Origins است.\n\n###طرح\nوقایع Assassin's Creed Odyssey's در دوران کلاسیک یونان باستان، در سال 431 قبل از میلاد، قبل از تشکیل گروه Brotherhood of Assassins رخ می دهد. خلاصه داستان داستانی تخیلی از جنگ پلوپونز بین دولت شهرهای اسپارتا و آتن است که یونان را ویران کرد. بازیکن می تواند یک قهرمان مرد (به نام الکسیوس) یا زن (به نام کاساندرا) را کنترل کند که هر دو از نوادگان پادشاه معروف اسپارتی، لئونیداس هستند. بازیکن به عنوان یک مزدور وارد نقشه می شود و می تواند طرف آتن یا رقیبش اسپارتا باشد. همچنین داستان قاب در عصر معاصر وجود دارد. شخصیت اصلی آن لیلا حسن است که شخصیت اصلی داستان قاب Assassin's Creed Origins نیز بود.\n\n###بازی\nبرخلاف اکثر قسمت‌های قبلی Assassin's Creed که تنها بر روی اکشن تاکید می‌کردند، Odyssey یک عنصر نقش‌آفرینی قوی در خود دارد. گزینه های گفتگو و طرح غیر خطی به بازیکن اجازه می دهد تا به چندین پایان متناوب برسد. این بازی همچنین دارای یک سیستم شهرت و گزینه های متعدد برای عاشقانه، از جمله عاشقانه های همجنس است. سیستم مبارزه با اضافه شدن مهارت های جدید مشابه سیستم Origins است. این بازی همچنین نبردهای دریایی را دوباره معرفی می کند."
   }
 ]
