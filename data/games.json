@@ -75,5 +75,51 @@
     },
     "description_en": "Among the Sleep is a first person horror adventure, in which you play a two year old child. After waking up in the middle of the night to mysterious sounds, you start exploring the dark looking for comfort.\nThe game explores horror through atmosphere and exploration, not with scores and combat systems. In Among the Sleep you’re vulnerable, scared, and trying to make sense of the world.\nController support: Works 100% with Xbox 360 controllers, might have some issues with Xbox One controllers. We are sorry about the inconvience.\nThe game will not get VR support.What people are saying\n\"More, please!\"\n- Kotaku\n\"[...] it more than succeeds in creating a wonderfully eerie atmosphere full of childlike anxiety, and along the way tackles a serious subject in a darkly poignant manner.\"\n- IGN\n\"Its depiction of a first-person horror told through the eyes and stumbling little legs of a two-year old is as intriguing as anything I've seen all year, and reminiscent of a time when games actively sought out new ways to play and new stories to tell.\"\n- Eurogamer",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAmong the Sleep یک ماجراجویی ترسناک اول شخص است که در آن نقش یک کودک دو ساله را بازی می کنید. پس از بیدار شدن در نیمه های شب با صداهای مرموز، شروع به کاوش در تاریکی به دنبال راحتی می کنید.\nبازی وحشت را از طریق جو و اکتشاف بررسی می کند، نه با امتیازات و سیستم های جنگی. در Among the Sleep شما آسیب پذیر هستید، می ترسید و سعی می کنید دنیا را درک کنید.\nپشتیبانی از کنترلر: 100٪ با کنترلرهای Xbox 360 کار می کند، ممکن است مشکلاتی با کنترلرهای Xbox One داشته باشد. ما بابت مشکل ایجاد شده متاسفیم.\nاین بازی از VR پشتیبانی نمی‌کند. مردم چه می‌گویند\n\"بیشتر لطفا!\"\n- کوتاکو\n«[...] بیش از آن در ایجاد یک فضای فوق‌العاده وهم‌آور و مملو از اضطراب کودکانه موفق است و در طول مسیر به یک موضوع جدی به شیوه‌ای تاریک و تلخ می‌پردازد.»\n- IGN\n\"تصویر یک ترسناک اول شخص که از طریق چشمان و پاهای کوچولوی دوساله روایت می شود، به همان اندازه جذاب است که من در طول سال دیده ام، و یادآور زمانی است که بازی ها فعالانه به دنبال راه های جدید بازی و داستان های جدید برای گفتن بودند.\"\n- یوروگیمر"
+  },
+  {
+    "id": 324997,
+    "name": "Baldur's Gate III",
+    "background_image": "https://media.rawg.io/media/games/699/69907ecf13f172e9e144069769c3be73.jpg",
+    "rating": 4.44,
+    "metacritic": 97,
+    "released": "2023-08-03",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 20,
+    "developers": "Larian Studios",
+    "steam_link": "https://store.steampowered.com/app/1086940/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a67/a676cdec0eadc42a133ac49e7f2e1aac.jpg",
+      "https://media.rawg.io/media/screenshots/705/705846f6583a6da009a0ae7fcdece36d.jpg",
+      "https://media.rawg.io/media/screenshots/d29/d29b1d2726d69432d2b4180a79b9ee9d.jpg",
+      "https://media.rawg.io/media/screenshots/ed1/ed19ec8ce43f9dd3553df4a6d9301f61.jpg",
+      "https://media.rawg.io/media/screenshots/6c8/6c8983d658a4a24dc8eb9d2f88f1dabf.jpg",
+      "https://media.rawg.io/media/screenshots/92c/92cbe16a795afbc9d9837ed9eae4f22b.jpg",
+      "https://media.rawg.io/media/games/699/69907ecf13f172e9e144069769c3be73.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\r\n\r\nOS: Windows 7 SP1 64-bit\r\n\r\nProcessor: Intel i5-4690 / AMD FX 4350\r\n\r\nMemory: 8 GB RAM\r\n\r\nGraphics: Nvidia GTX 780 / AMD Radeon R9 280X\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 150 GB available space\r\n\r\nAdditional Notes: Default API is Vulkan 1.1. Directx11 API also provided. The minimum requirements might decrease over the course of Early Access, as performance improves.",
+      "recommended": "Requires a 64-bit processor and operating system\r\n\r\nOS: Windows 10 64-bit\r\n\r\nProcessor: Intel i7 4770k / AMD Ryzen 5 1500X\r\n\r\nMemory: 16 GB RAM\r\n\r\nGraphics: Nvidia GTX 1060 6GB / AMD RX580\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 150 GB available space\r\n\r\nAdditional Notes: Default API is Vulkan 1.1. Directx11 API also provided. The recommended requirements might decrease over the course of Early Access, as performance improves."
+    },
+    "description_en": "Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.\r\n\r\nMysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.\r\n\r\nFrom the creators of Divinity: Original Sin 2 comes a next-generation RPG, set in the world of Dungeons and Dragons.\r\n\r\nChoose from a wide selection of D&D races and classes, or play as an origin character with a hand-crafted background. Adventure, loot, battle and romance as you journey through the Forgotten Realms and beyond. Play alone, and select your companions carefully, or as a party of up to four in multiplayer.\r\n\r\nAbducted, infected, lost. You are turning into a monster, but as the corruption inside you grows, so does your power. That power may help you to survive, but there will be a price to pay, and more than any ability, the bonds of trust that you build within your party could be your greatest strength. Caught in a conflict between devils, deities, and sinister otherworldly forces, you will determine the fate of the Forgotten Realms together.\r\n\r\nForged with the new Divinity 4.0 engine, Baldur’s Gate 3 gives you unprecedented freedom to explore, experiment, and interact with a world that reacts to your choices. A grand, cinematic narrative brings you closer to your characters than ever before, as you venture through our ",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمهمانی خود را جمع کنید و در داستانی از مشارکت و خیانت، فداکاری و بقا و فریب قدرت مطلق به قلمروهای فراموش شده بازگردید.\r\n\r\nتوانایی های اسرارآمیز در درون شما بیدار می شوند که از یک انگل Mind Flayer که در مغز شما کاشته شده است، استخراج شده است. مقاومت کنید و تاریکی را بر علیه خود برگردانید. یا فساد را در آغوش بگیرید و به شر نهایی تبدیل شوید.\r\n\r\nاز سوی سازندگان Divinity: Original Sin 2 یک RPG نسل بعدی ارائه می شود که در دنیای سیاه چال ها و اژدها اتفاق می افتد.\r\n\r\nاز میان طیف گسترده ای از مسابقات و کلاس های D&D انتخاب کنید، یا به عنوان یک شخصیت اصلی با پس زمینه ای دست ساز بازی کنید. ماجراجویی، غارت، نبرد و عاشقانه در حین سفر در قلمروهای فراموش شده و فراتر از آن. به تنهایی بازی کنید و همراهان خود را با دقت انتخاب کنید یا به عنوان یک مهمانی تا چهار نفر در چند نفره.\r\n\r\nربوده شده، آلوده، گم شده است. شما در حال تبدیل شدن به یک هیولا هستید، اما با افزایش فساد درون شما، قدرت شما نیز افزایش می یابد. این قدرت ممکن است به شما کمک کند بقا کنید، اما باید بهایی پرداخت کنید، و بیش از هر توانایی، پیوندهای اعتمادی که در حزب خود ایجاد می کنید می تواند بزرگترین قدرت شما باشد. گرفتار درگیری بین شیاطین، خدایان و نیروهای شوم ماورایی، سرنوشت قلمروهای فراموش شده را با هم تعیین خواهید کرد.\r\n\r\nBaldur’s Gate 3 که با موتور جدید Divinity 4.0 ساخته شده است، آزادی بی‌سابقه‌ای برای کاوش، آزمایش و تعامل با دنیایی به شما می‌دهد که به انتخاب‌های شما واکنش نشان می‌دهد. یک روایت بزرگ و سینمایی شما را بیش از هر زمان دیگری به شخصیت‌هایتان نزدیک می‌کند، همانطور که از طریق ما جسارت می‌کنید."
   }
 ]
