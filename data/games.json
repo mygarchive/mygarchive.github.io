@@ -5196,5 +5196,41 @@
     },
     "description_en": "Become Eivor, a mighty Viking raider and lead your clan from the harsh shores of Norway to a new home amid the lush farmlands of ninth-century England. Explore a beautiful, mysterious open world where you'll face brutal enemies, raid fortresses, build your clan's new settlement, and forge alliances to win glory and earn a place in Valhalla.\n\nEngland in the age of the Vikings is a fractured nation of petty lords and warring kingdoms. Beneath the chaos lies a rich and untamed land waiting for a new conqueror. Will it be you?",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه Eivor، یک مهاجم قدرتمند وایکینگ تبدیل شوید و قبیله خود را از سواحل خشن نروژ به یک خانه جدید در میان زمین‌های کشاورزی سرسبز انگلستان در قرن نهم هدایت کنید. دنیای باز زیبا و اسرارآمیز را کاوش کنید که در آن با دشمنان وحشیانه روبرو می شوید، به قلعه ها حمله می کنید، شهرک جدید قبیله خود را می سازید، و برای کسب شکوه و کسب جایگاهی در والهالا، اتحاد ایجاد می کنید.\n\nانگلستان در عصر وایکینگ ها ملتی از هم پاشیده از اربابان کوچک و پادشاهی های متخاصم است. در زیر هرج و مرج، سرزمینی غنی و رام نشده در انتظار یک فاتح جدید قرار دارد. آیا آن شما خواهید بود؟"
+  },
+  {
+    "id": 845261,
+    "name": "Assassin's Creed Mirage",
+    "background_image": "https://media.rawg.io/media/games/fbd/fbd0128013b7965904be571e75fb30c0.jpg",
+    "rating": 3.37,
+    "metacritic": null,
+    "released": "2023-10-05",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Bordeaux",
+    "steam_link": "https://store.steampowered.com/app/3035570/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/214/2144e4a308f6df915a0ce6b9c6b0536a.jpg",
+      "https://media.rawg.io/media/screenshots/a8d/a8d22377af727e1404c96022b1333095.jpg",
+      "https://media.rawg.io/media/screenshots/935/9357652d65a3d714426a22ef44e0f0da.jpg",
+      "https://media.rawg.io/media/screenshots/2b0/2b0a877f30e8113f0e99b41ee3781d56.jpg",
+      "https://media.rawg.io/media/screenshots/6ce/6cecbbd2a905d94f8f64dd932a3e32d7.jpg",
+      "https://media.rawg.io/media/screenshots/59d/59d2671c96228757abe81f38749918ff.jpg",
+      "https://media.rawg.io/media/games/fbd/fbd0128013b7965904be571e75fb30c0.jpg"
+    ],
+    "requirements": {
+      "minimum": "最低配置:\n需要 64 位处理器和操作系统\n操作系统: Windows 10/11\n处理器: INTEL® Core™ i7-4790K (INTEL® Core™ i5-8400 for Intel® ARC™ with Rebar) / Ryzen™ 5 1600\n内存: 8 GB RAM\n显卡: Intel® Arc™ A380 (6 GB) / NVIDIA® GeForce® GTX 1060 (6 GB) / AMD Radeon™ RX 570 (4 GB)\nDirectX 版本: 12\n存储空间: 需要 40 GB 可用空间\n支持 VR: N/A\n附注事项: Video Preset: Low / Target: 30 fps",
+      "recommended": "推荐配置:\n需要 64 位处理器和操作系统\n操作系统: Windows 10/11\n处理器: Intel® Core™ i7-8700K / AMD Ryzen™ 5 3600\n内存: 16 GB RAM\n显卡: Intel® Arc™ A750 (8 GB) / NVIDIA® GeForce® GTX 1660 Ti (6 GB) / AMD Radeon™ RX 5600 XT (6 GB)\nDirectX 版本: 12\n存储空间: 需要 40 GB 可用空间\n支持 VR: N/A\n附注事项: Video Preset: High / Target: 60 fps"
+    },
+    "description_en": "Experience the story of Basim, a cunning street thief seeking answers and justice as he navigates the bustling streets of ninth–century Baghdad.\r\n\r\nIn Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking answers and justice. Join an ancient organization and come to understand a new creed – one that will change Basim’s fate in ways he never could have imagined.\r\n\r\nParkour seamlessly through the city and leverage the largest assortment of tools to date, and stealthily take down targets with more visceral assassinations than ever before.\r\n\r\nDiscover a narrative-driven action-adventure experience that follows the transformation of a defiant young man into a refined Master Assassin with a conflicted destiny.\r\n\r\nJourney to Alamut, the legendary home of the Assassins who laid the foundations of the Creed in this heartfelt homage to the game that started it all.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان باسیم، یک دزد خیابانی حیله گر که در جستجوی پاسخ و عدالت است، در حالی که در خیابان های شلوغ بغداد قرن نهم حرکت می کند، تجربه کنید.\r\n\r\nدر Assassin's Creed Mirage، شما باسیم، یک دزد خیابانی حیله گر با دیدهای کابوس وار به دنبال پاسخ و عدالت هستید. به یک سازمان باستانی بپیوندید و عقیده جدیدی را درک کنید - اعتقادی که سرنوشت باسیم را به گونه‌ای تغییر می‌دهد که او هرگز تصورش را نمی‌کرد.\r\n\r\nپارکور به‌طور یکپارچه در شهر انجام می‌شود و از بزرگترین مجموعه ابزارهای تا به امروز استفاده می‌کند، و به طور مخفیانه اهدافی را با ترورهای احشایی بیشتر از همیشه از بین ببرید.\r\n\r\nیک تجربه اکشن ماجراجویی مبتنی بر روایت را کشف کنید که به دنبال تبدیل یک مرد جوان سرکش به یک استاد قاتل با سرنوشتی متضاد است.\r\n\r\nسفر به الموت، خانه افسانه ای Assassins که پایه های Creed را در این ادای احترام صمیمانه به بازی که همه چیز را آغاز کرد، بنا نهادند."
   }
 ]
