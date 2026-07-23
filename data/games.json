@@ -4420,5 +4420,51 @@
     },
     "description_en": "Wolfenstein 2: The New Colossus is a singleplayer FPS developed by MachineGames. It is the third installment in the rebooted series.\n\nSet in the alternate 1961 where Nazi Germany won World War II, the game picks up right at the end of Wolfenstein: The New Order. After sustaining heavy injuries in the battle with Wilhelm \"Deathshead\" Strasse, BJ Blaskowicz orders a nuclear strike on Deathshead's compound in order to cripple the Nazi war machine, but he is evacuated by his comrades before the rocket launch. Blaskowicz falls unconscious for 5 months and is woken up by a Nazi attack. The player has to repel the attack and end the Nazi reign over America once and for all.\n\nThe New Colossus features several stealth-action elements, just like the previous title in the series. There are some major differences in the mechanics: now BJ can modify his weaponry on-the-go, dual wield two different weapons at the same time. The cover system makes a comeback. The Protagonist doesn't stick to cover, leaning out of it instead.\n\nThe game offers a linear storyline, but the player is free to complete side-missions in any order they like. Completing these missions is rewarded with new weapon upgrades.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWolfenstein 2: The New Colossus یک FPS تک نفره است که توسط MachineGames توسعه یافته است. این سومین قسمت از سری ریبوت شده است.\n\nدر سال 1961، جایی که آلمان نازی در جنگ جهانی دوم پیروز شد، بازی درست در پایان Wolfenstein: The New Order شروع می شود. پس از تحمل جراحات سنگین در نبرد با ویلهلم \"دث هد\" استراسه، بی جی بلاسکوویچ دستور حمله هسته ای به محوطه دث هد را می دهد تا ماشین جنگی نازی ها را فلج کند، اما قبل از پرتاب موشک توسط همرزمانش تخلیه می شود. بلاسکوویچ به مدت 5 ماه بیهوش می شود و با حمله نازی ها از خواب بیدار می شود. بازیکن باید حمله را دفع کند و یک بار برای همیشه به سلطنت نازی ها بر آمریکا پایان دهد.\n\nNew Colossus دارای چندین عنصر اکشن مخفی کاری است، درست مانند عنوان قبلی این سری. تفاوت‌های عمده‌ای در مکانیک وجود دارد: اکنون BJ می‌تواند سلاح‌های خود را در حین حرکت تغییر دهد و همزمان دو سلاح مختلف را به کار گیرد. سیستم پوشش باز می گردد. Protagonist به پوشش نمی چسبد، به جای آن به بیرون خم می شود.\n\nبازی یک خط داستانی خطی ارائه می دهد، اما بازیکن آزاد است تا ماموریت های جانبی را به هر ترتیبی که دوست دارد انجام دهد. تکمیل این ماموریت ها با ارتقاء سلاح های جدید پاداش می گیرد."
+  },
+  {
+    "id": 879565,
+    "name": "Wuchang: Fallen Feathers",
+    "background_image": "https://media.rawg.io/media/games/bce/bcee4b00b58e05d52b8bb032ff7117f4.jpg",
+    "rating": 3.58,
+    "metacritic": null,
+    "released": "2025-07-23",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 22,
+    "developers": "Leenzee Games, Leenzee",
+    "steam_link": "https://store.steampowered.com/app/2277560/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/e48/e486257ceb5b6659c8fd7325fa395014.jpg",
+      "https://media.rawg.io/media/screenshots/1ac/1ac388907adbdb166212e9e6278a0e73.jpg",
+      "https://media.rawg.io/media/screenshots/084/0843b1e473dfc121fa2728574d64cfb0.jpg",
+      "https://media.rawg.io/media/screenshots/7e3/7e3998e4e5b585c3a5056b725b9fd83d.jpg",
+      "https://media.rawg.io/media/screenshots/f47/f47daafc0b6ab2fe8e4bfc4ff6e1c96b.jpg",
+      "https://media.rawg.io/media/screenshots/e24/e24fe0075512c746086fde50bf0a996c.jpg",
+      "https://media.rawg.io/media/games/bce/bcee4b00b58e05d52b8bb032ff7117f4.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows10 64bit\nProcessor: Intel Core i5-8400/AMD Ryzen 5 1600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1060 6GB/AMD Radeon RX 580 8GB\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: HDD Supported, SSD Recommended. The above specifications were tested with DLSS/FSR enabled.",
+      "recommended": "OS: Windows10/11 64bit\nProcessor: Intel Core i7-9700/AMD Ryzen 5 5500\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2070/AMD Radeon RX 5700 XT/INTEL Arc A750\nDirectX: Version 12\nStorage: 60 GB available space\nAdditional Notes: SSD Required. The above specifications were tested with DLSS/FSR enabled."
+    },
+    "description_en": "Set in the chaotic final years of the Ming Dynasty, WUCHANG: Fallen Feathers is an exploration of the hauntingly beautiful landscapes of imperial China and the battle against mysterious forces that transform a grim reality to supernatural horror.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان فیلم WUCHANG: Fallen Feathers در سال‌های پایانی پر هرج و مرج سلسله مینگ اتفاق می‌افتد، کاوشی در مناظر بسیار زیبای امپراتوری چین و نبرد با نیروهای اسرارآمیز که واقعیتی تلخ را به وحشت فراطبیعی تبدیل می‌کنند."
   }
 ]
