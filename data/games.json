@@ -3228,5 +3228,51 @@
     },
     "description_en": "Streets of Rage, known as Bare Knuckle (ベア・ナックル Bea Nakkuru) in Japan, is a trilogy of beat 'em up games developed and published by SEGA in the 1990s.\n\nFamously known for its non stop action and electronic dance influenced music - scored by Yuzo Koshiro and Motohiro Kawashima - the series has gained the status of cult classic throughout the years. It is considered one of the best beat 'em up series of all time. After many years, Axel and Blaze are finally picking up the fight where they left.\n\nFeaturing hand-drawn visuals from the team behind 2017’s gorgeous Wonder Boy: The Dragon’s Trap remake, Streets of Rage 4 builds upon the classic trilogy’s gameplay with new mechanics, a fresh story and a gauntlet of dangerous stages with a serious crime problem. Streets of Rage 4 recalls classic gameplay but it stands as an entirely original arcade-style romp thanks to the expertise of Guard Crush Games and Dotemu.\n\nWhether players gang up with a friend or clean up the city solo, Streets of Rage 4 is a skull-bashing, chicken-chomping delight all set to a thumping soundtrack sure to get your blood pumping.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nStreets of Rage که با نام Bare Knuckle (ベア・ナックル Bea Nakkuru) در ژاپن شناخته می شود، سه گانه ای از بازی های beat'em up است که توسط SEGA در دهه 1990 ساخته و منتشر شد.\n\nاین سریال که به‌خاطر اکشن بدون توقف و موسیقی متاثر از رقص الکترونیکی معروف است - که توسط یوزو کوشیرو و موتوهیرو کاواشیما نوازندگی می‌شود - در طول سال‌ها وضعیت کلاسیک کالت را به دست آورده است. این سریال به عنوان یکی از بهترین سریال های beat'em up در تمام دوران در نظر گرفته می شود. پس از سال‌ها، اکسل و بلیز بالاخره مبارزه را از جایی که ترک کردند آغاز کردند.\n\nStreets of Rage 4 با تصاویری دست‌کش‌شده از تیم پشت‌بازسازی شگفت‌انگیز Wonder Boy: The Dragon’s Trap در سال 2017، بر اساس گیم‌پلی این سه‌گانه کلاسیک با مکانیک‌های جدید، داستانی تازه و مجموعه‌ای از مراحل خطرناک با یک مشکل جدی جرم و جنایت ساخته شده است. Streets of Rage 4 گیم‌پلی کلاسیک را به یاد می‌آورد، اما به لطف تخصص Guard Crush Games و Dotemu، به‌عنوان یک بازی کاملاً بدیع در سبک آرکید است.\n\nچه بازیکنان با یک دوست جمع شوند و چه به صورت انفرادی شهر را پاکسازی کنند، Streets of Rage 4 یک لذت جمجمه‌برانگیز و دلخراش است که با یک موسیقی متن تند و تیز تنظیم شده است که مطمئناً خون شما را به جریان می‌اندازد."
+  },
+  {
+    "id": 6773,
+    "name": "Sunset Overdrive",
+    "background_image": "https://media.rawg.io/media/games/c2e/c2eb6021a2596644b437e943612af25c.jpg",
+    "rating": 3.9,
+    "metacritic": 82,
+    "released": "2014-10-28",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 4,
+    "developers": "Insomniac Games, Blind Squirrel Games",
+    "steam_link": "https://store.steampowered.com/app/847370/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/eed/eed52d90c4e5f3998e968ed19ff501b5.jpg",
+      "https://media.rawg.io/media/screenshots/def/def81c60a54ad7448f30fab2c3a6d0f5.jpg",
+      "https://media.rawg.io/media/screenshots/cd6/cd60c74ec29b7d1e73e8aa15a4f237c6.jpg",
+      "https://media.rawg.io/media/screenshots/33e/33ec02c0a55fbd2c96ceae8f4c549a1f.jpg",
+      "https://media.rawg.io/media/screenshots/4b3/4b3a4eeebecc7b9d00812ff3e19aa202.jpg",
+      "https://media.rawg.io/media/screenshots/36d/36d0ccb00e7c101323da9274ea77a2ab.jpg",
+      "https://media.rawg.io/media/games/c2e/c2eb6021a2596644b437e943612af25c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 8 or higher\nProcessor: Intel Core i5 3470 @ 3.0hz || AMD-FX-6300\nMemory: 8 GB RAM\nGraphics: Geforce 750 Ti || AMD Radeon R7 260X\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5 4690 @ 3.5hz || AMD-FX-8350\nMemory: 8 GB RAM\nGraphics: Geforce 970 or Geforce GTX 1060 || AMD Radeon R9 290x or Radeon RX 480\nStorage: 30 GB available space"
+    },
+    "description_en": "2027, the metropolis of Sun City.\n\nThe city is full of creatures, savage, aggressive and insane - these creatures were just ordinary townspeople a short while ago, but they abused the energy drink produced by Fizzco, in which something was wrong with the recipe. In general, loyal consumers mutated into monsters and now nothing can be done with them, only to kill everyone.\n\nThe protagonist (by the way, who worked at Fizzco) is not constrained by any laws of physics, can move around the city in any direction, run on walls and wires, jump like a kangaroo and so on. This is not parkour, it's just complete freedom of movement. He also has a \"guidance system\" that shows him the way.\n\nIn addition to the hero, several groups and singles of varying degrees of eccentricity are fighting monsters in the city. Monsters also do not belong to the same type. Monsters are many, they are very different and extremely unusual - there are, for example, creatures fused with water cannons or a bucket from an excavator. The hero's weapon is even more diverse than the monsters. Various weapons rush vinyl records, throw bowling balls, shoot teddy bears with pieces of TNT in their paws and this is not the whole list.\n\nThe game has about fifty amps to move the hero and defeat the monsters.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n2027، کلان شهر سان سیتی.\n\nشهر پر است از موجودات، وحشی، تهاجمی و دیوانه - این موجودات مدتی پیش فقط مردم عادی شهر بودند، اما از نوشیدنی انرژی‌زای تولید شده توسط Fizzco سوء استفاده کردند که در آن دستور غذا اشتباه بود. به طور کلی، مصرف کنندگان وفادار به هیولا تبدیل شدند و اکنون هیچ کاری نمی توان با آنها انجام داد، فقط برای کشتن همه.\n\nقهرمان داستان (به هر حال، که در Fizzco کار می کرد) توسط هیچ قانون فیزیک محدود نمی شود، می تواند در شهر در هر جهت حرکت کند، روی دیوارها و سیم ها بدود، مانند کانگورو بپرد و غیره. این پارکور نیست، فقط آزادی کامل حرکت است. او همچنین «سیستم راهنمایی» دارد که راه را به او نشان می دهد.\n\nعلاوه بر قهرمان، چندین گروه و مجرد با درجات مختلف عجیب و غریب در حال مبارزه با هیولاها در شهر هستند. هیولاها نیز متعلق به یک نوع نیستند. هیولاها بسیار زیاد هستند، آنها بسیار متفاوت و بسیار غیرمعمول هستند - به عنوان مثال، موجوداتی وجود دارند که با توپ های آب یا یک سطل از یک بیل مکانیکی ترکیب شده اند. سلاح قهرمان حتی از هیولاها نیز متنوع تر است. اسلحه‌های مختلف به رکوردهای وینیل هجوم می‌آورند، توپ‌های بولینگ را پرتاب می‌کنند، با تکه‌هایی از TNT در پنجه‌هایشان به خرس‌های عروسکی شلیک می‌کنند و این تمام فهرست نیست.\n\nبازی حدود پنجاه آمپر برای حرکت دادن قهرمان و شکست دادن هیولاها دارد."
   }
 ]
