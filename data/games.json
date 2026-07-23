@@ -1648,5 +1648,51 @@
     },
     "description_en": "Bring your favorite co-op partner and together step into the shoes of May and Cody. As the couple is going through a divorce, through unknown means their minds are transported into two dolls which their daughter, Rose, made to represent them. Now they must reluctantly find a way to get back into their bodies, a quest which takes them through the most wild, unexpected and fantastical journey imaginable.\r\n\r\nIt Takes Two further builds on Hazelight’s proven track record of making rich and engaging co-op experiences. While developing It Takes Two it has been the team’s number one priority to truly merge story and gameplay. Allowing both to influence each other guarantees a game that is as engaging to play as it is compelling to experience.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشریک تعاونی مورد علاقه خود را بیاورید و با هم وارد کفش های می و کودی شوید. از آنجایی که این زوج طلاق می گذرانند، از طریق راه های نامعلومی ذهن آنها به دو عروسک منتقل می شود که دخترشان، رز، برای نمایندگی آنها ساخته است. اکنون آنها باید با اکراه راهی برای بازگشت به بدن خود پیدا کنند، تلاشی که آنها را در وحشیانه ترین، غیرمنتظره ترین و خارق العاده ترین سفری که قابل تصور است می برد.\r\n\r\nIt Takes Two بیشتر بر اساس سابقه اثبات شده Hazelight در ایجاد تجربیات مشارکتی غنی و جذاب است. در حین توسعه It Takes Two، ادغام واقعی داستان و گیم پلی اولویت اول تیم بوده است. اجازه دادن به هر دوی آنها برای تأثیرگذاری بر یکدیگر، تضمین کننده یک بازی است که به همان اندازه که برای بازی جذاب است، تجربه آن جذاب است."
+  },
+  {
+    "id": 962137,
+    "name": "Jusant",
+    "background_image": "https://media.rawg.io/media/games/6fc/6fcd3a3192df9abeb281f6e936fc1b80.jpg",
+    "rating": 3.99,
+    "metacritic": null,
+    "released": "2023-10-30",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "DONTNOD Entertainment, DON'T NOD",
+    "steam_link": "https://store.steampowered.com/app/1977170/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/9e0/9e0728837e54d478651cd9ae9079fb50.jpg",
+      "https://media.rawg.io/media/screenshots/b48/b48085d25221cac4b073b4d7d9546f0b.jpg",
+      "https://media.rawg.io/media/screenshots/59c/59c5fbfae1c2cea930968568e8153702.jpg",
+      "https://media.rawg.io/media/screenshots/285/285d72dd95589e5b7602a1a6f35676ad.jpg",
+      "https://media.rawg.io/media/screenshots/713/71395a40e98bf7414c7501acb7ff3bb5.jpg",
+      "https://media.rawg.io/media/screenshots/5cd/5cd6d9a35f231f252fba209ff51aa587.jpg",
+      "https://media.rawg.io/media/games/6fc/6fcd3a3192df9abeb281f6e936fc1b80.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-6700 (4 * 3400), AMD Ryzen 5 1500X (4 * 3500) or equivalent\nMemory: 8 GB RAM\nGraphics: GeForce GTX 1050 Ti (4096 MB), Radeon RX 570 (8192 MB)\nStorage: 15 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-10700 (8 * 2900), AMD Ryzen 7 3700X (8 * 3600) or equivalent\nMemory: 8 GB RAM\nGraphics: Geforce RTX 2060 Super (6144 MB), Radeon RX 5700 (8192 MB)\nStorage: 15 GB available space"
+    },
+    "description_en": "Enjoy meditative vibes in Jusant, an action-puzzle climbing game. Scale an immeasurably tall tower and ascend to new heights alongside your watery companion. Master your climbing tools, find your way up through diverse biomes, and piece together the tower’s past.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر جوسانت، یک بازی کوهنوردی اکشن-پازلی، از هیجانات مراقبه لذت ببرید. از یک برج بی‌اندازه بلند بالا بروید و در کنار همراه آبکی خود به ارتفاعات جدید صعود کنید. بر ابزارهای کوهنوردی خود مسلط شوید، راه خود را از طریق بیوم های متنوع پیدا کنید و گذشته برج را کنار هم بچینید."
   }
 ]
