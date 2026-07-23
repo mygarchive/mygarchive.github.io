@@ -1694,5 +1694,53 @@
     },
     "description_en": "Enjoy meditative vibes in Jusant, an action-puzzle climbing game. Scale an immeasurably tall tower and ascend to new heights alongside your watery companion. Master your climbing tools, find your way up through diverse biomes, and piece together the tower’s past.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر جوسانت، یک بازی کوهنوردی اکشن-پازلی، از هیجانات مراقبه لذت ببرید. از یک برج بی‌اندازه بلند بالا بروید و در کنار همراه آبکی خود به ارتفاعات جدید صعود کنید. بر ابزارهای کوهنوردی خود مسلط شوید، راه خود را از طریق بیوم های متنوع پیدا کنید و گذشته برج را کنار هم بچینید."
+  },
+  {
+    "id": 13856,
+    "name": "Katana ZERO",
+    "background_image": "https://media.rawg.io/media/games/d37/d37e110ddcc0bd52d99f0f647b737a0a.jpg",
+    "rating": 4.39,
+    "metacritic": 83,
+    "released": "2019-04-17",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Askiisoft",
+    "steam_link": "https://store.steampowered.com/app/460950/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256679092/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256679092/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d4e/d4e033c1b504f7df5fb234287e28e990.jpg",
+      "https://media.rawg.io/media/screenshots/bc9/bc9fd02f32749fe15581bf8b692d7814.jpg",
+      "https://media.rawg.io/media/screenshots/3cc/3cc5aec6ba38ff277ac0d0be4573ec62.jpg",
+      "https://media.rawg.io/media/screenshots/5d1/5d154940b0b5fb5d3e99ff3c6d4f9b9e.jpg",
+      "https://media.rawg.io/media/screenshots/18b/18b9df6ba9fac61589376c96735e5a02.jpg",
+      "https://media.rawg.io/media/screenshots/f48/f48df10956744670bbd6cf7f14c5b511.jpg",
+      "https://media.rawg.io/media/games/d37/d37e110ddcc0bd52d99f0f647b737a0a.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 and above\nProcessor: 1.2 ghz\nMemory: 4 GB RAM\nGraphics: 512 mb video memory\nDirectX: Version 10\nStorage: 200 MB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Katana ZERO is a fast paced neo-noir action platformer, focusing on tight, instant-death acrobatic combat, and a dark 80's neon aesthetic. Aided with your trusty katana, the time manipulation drug Chronos and the rest of your assassin's arsenal, fight your way through a fractured city, and take back what's rightfully yours.\nRun, sneak, walljump, grapple hook, roll, slash bullets, toss pottery, and slow down time to complete levels.\nNo procedural generation. No backtracking. No metroidvania gimmicks or item collection. Every level is a unique and lovingly designed challenge to overcome.\nA rich story filled with unique characters, all tied into the gameplay and level design.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nKatana ZERO یک پلتفرمر اکشن نئو نوآر سریع است که بر روی مبارزات آکروباتیک مرگ فوری و سخت و زیبایی نئون تاریک دهه 80 تمرکز دارد. با کمک کاتانای قابل اعتماد خود، داروی دستکاری زمان Chronos و بقیه زرادخانه قاتل خود، در یک شهر شکسته مبارزه کنید و آنچه را که حق دارید پس بگیرید.\nبدوید، دزدکی حرکت کنید، وال پرش کنید، قلاب دست و پنجه نرم کنید، بغلتانید، گلوله ها را برش دهید، ظروف سفالی پرتاب کنید و زمان را برای تکمیل سطوح کاهش دهید.\nبدون تولید رویه ای بدون عقب نشینی هیچ حیله یا مجموعه آیتمی مترویدوانیا وجود ندارد. هر سطح یک چالش منحصر به فرد و عاشقانه طراحی شده برای غلبه بر آن است.\nداستانی غنی پر از شخصیت‌های منحصربه‌فرد که همگی به گیم‌پلی و طراحی سطح گره خورده‌اند."
   }
 ]
