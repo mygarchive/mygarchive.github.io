@@ -1218,5 +1218,52 @@
     },
     "description_en": "Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars.\r\nExplore a world of striking contrast and beauty. Discover living deserts, lush jungles, historic cities, hidden ruins, pristine beaches, vast canyons and a towering snow-capped volcano.\r\nImmerse yourself in a deep campaign with hundreds of challenges that reward you for engaging in the activities you love. Meet new characters and choose the outcomes of their Horizon Story missions.\r\nTake on awe-inspiring weather events like towering dust storms and intense tropical storms as Mexico’s unique, dynamic seasons change the world every week. Keep coming back for new events, challenges, collectibles, and rewards, and new areas to explore.\r\nTeam up with other players and enter the Horizon Arcade for a continuing series of fun, over-the-top challenges that keep you and your friends in the action and having fun with no menus, loading screens or lobbies.\r\nCreate your own expressions of fun with the new EventLab gameplay toolset including custom races, challenges, stunts, and new game modes. Customize your cars in more ways than ever before. Use the Gift Drops feature to share your custom creations.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nماجراجویی Horizon Ultimate شما در انتظار است! مناظر دنیای باز پر جنب و جوش و همیشه در حال تکامل مکزیک را با اقدامات رانندگی سرگرم کننده و بی حد و حصر در صدها خودروی برتر جهان کاوش کنید.\r\nدنیایی از کنتراست و زیبایی چشمگیر را کاوش کنید. بیابان‌های زنده، جنگل‌های سرسبز، شهرهای تاریخی، ویرانه‌های پنهان، سواحل بکر، دره‌های وسیع و آتشفشانی پوشیده از برف را کشف کنید.\r\nخود را در یک کمپین عمیق با صدها چالش غوطه ور کنید که به شما برای شرکت در فعالیت هایی که دوست دارید پاداش می دهد. با شخصیت های جدید آشنا شوید و نتایج ماموریت های Horizon Story را انتخاب کنید.\r\nرویدادهای آب و هوایی الهام‌بخش مانند طوفان‌های گرد و غبار و طوفان‌های شدید گرمسیری را تجربه کنید زیرا فصول منحصربه‌فرد و پویا مکزیک دنیا را هر هفته تغییر می‌دهند. برای رویدادهای جدید، چالش‌ها، کلکسیون‌ها و جوایز، و مناطق جدید برای کاوش دوباره برگردید.\r\nبا دیگر بازیکنان متحد شوید و وارد Horizon Arcade برای یک سری چالش‌های سرگرم‌کننده و فوق‌العاده شوید که شما و دوستانتان را بدون منو، صفحه‌های بارگذاری یا لابی در حال فعالیت و سرگرمی نگه می‌دارد.\r\nبا مجموعه ابزار گیم پلی EventLab جدید از جمله مسابقات سفارشی، چالش ها، شیرین کاری ها و حالت های بازی جدید، عبارات سرگرم کننده خود را ایجاد کنید. اتومبیل های خود را به روش های بیشتری نسبت به قبل سفارشی کنید. از ویژگی Gift Drops برای به اشتراک گذاشتن آثار سفارشی خود استفاده کنید."
+  },
+  {
+    "id": 49353,
+    "name": "FRAMED Collection",
+    "background_image": "https://media.rawg.io/media/games/c68/c689b61ea646f219c4609073eb41626f.jpg",
+    "rating": 3.9,
+    "metacritic": 79,
+    "released": "2018-05-16",
+    "genres": [
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "Loveshack Entertainment",
+    "steam_link": "https://store.steampowered.com/app/322450/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256699333/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256699333/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b77/b77eb13a452cb5ee81e37849d5a8c83b.jpg",
+      "https://media.rawg.io/media/screenshots/6d8/6d80e0b8229ba839a3e94e685dcdd6e0.jpg",
+      "https://media.rawg.io/media/screenshots/12d/12ddfd155c58dfa5d716aca851f74861.jpg",
+      "https://media.rawg.io/media/screenshots/47b/47b77345957d7f51ac1146aad660130b.jpg",
+      "https://media.rawg.io/media/screenshots/270/270d5c1ecb69162fb5ae93e5fb94f0df.jpg",
+      "https://media.rawg.io/media/games/c68/c689b61ea646f219c4609073eb41626f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP+\nMemory: 2 GB RAM\nGraphics: 512MB\nStorage: 2 GB available space",
+      "recommended": "OS: Windows 7+\nMemory: 4 GB RAM\nGraphics: 1GB\nStorage: 2 GB available space"
+    },
+    "description_en": "The FRAMED Collection is a double-issue dosage of the groundbreaking noir-puzzle games that uniquely play like a comic book, FRAMED and FRAMED 2.\nChange the Order, Change the Outcome\nRather than take direct control of a character, the FRAMED Collection has you re-arranging the panels of a comic book and altering the sequence of events, in order to change the outcome of each page in the story.\nElegant mechanics based around re-arranging panels of a comic book to change the outcome of each scene\nUnique hand-drawn aesthetic with silhouetted characters\nFully-scored with smooth live jazz\nIncredibly fluid and lifelike animation\nBeautiful and mysterious settings\nCats and dogs for those bored with just humans\nCompletely overhauled experience for Steam players\nCigarettes and Defenestration\nThanks to our previous success we are now able to bring the collected compilation of the classic panel-switching games, along with some new, unique features to Steam! The games have been completely overhauled and redesigned for Steam, and given that extra love and care needed that we know connoisseurs of great taste demand.\nSo sit back, pour out a glass of your favourite tipple, and settle into the smooth jazzy tones of the multi-award winning games in the FRAMED Collection.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه FRAMED یک دوز دو نسخه ای از بازی های پازل نوآر پیشگامانه است که به طور منحصر به فرد مانند یک کتاب کمیک، FRAMED و FRAMED 2 بازی می کنند.\nترتیب را تغییر دهید، نتیجه را تغییر دهید\nبه جای کنترل مستقیم یک شخصیت، مجموعه FRAMED به شما اجازه می‌دهد که پانل‌های یک کتاب کمیک را مجدداً تنظیم کنید و توالی رویدادها را تغییر دهید تا نتیجه هر صفحه از داستان را تغییر دهید.\nمکانیک های زیبا بر اساس تنظیم مجدد پانل های یک کتاب کمیک برای تغییر نتیجه هر صحنه\nزیبایی شناسی منحصر به فرد با دست طراحی شده با شخصیت های شبح شده\nبه طور کامل با موسیقی جاز زنده روان\nانیمیشنی فوق العاده روان و واقعی\nتنظیمات زیبا و مرموز\nگربه‌ها و سگ‌ها برای کسانی که حوصله انسان‌ها را ندارند\nتجربه کاملاً بازسازی شده برای بازیکنان Steam\nسیگار و دفاع\nبه لطف موفقیت قبلی‌مان، اکنون می‌توانیم مجموعه‌ای از بازی‌های کلاسیک تعویض پنل را به همراه برخی ویژگی‌های جدید و منحصربه‌فرد به Steam بیاوریم! بازی‌ها به‌طور کامل برای Steam بازنگری و طراحی شده‌اند، و با توجه به عشق و مراقبت بیشتری که ما علاقه‌مندان به طعم و مزه را می‌شناسیم، نیاز داریم.\nپس بنشینید، یک لیوان از لقمه مورد علاقه خود را بریزید و به آهنگ‌های جازی نرم بازی‌های برنده چند جایزه در مجموعه FRAMED بنشینید."
   }
 ]
