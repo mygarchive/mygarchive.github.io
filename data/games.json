@@ -973,5 +973,46 @@
     },
     "description_en": "An unusual fishing RPG with a sinister undercurrent. Catch more than 125 deep sea denizens and pack them into your cargo hold for maximum profit. Dredge the seabed for valuables and relics. Get acquainted with the locals of Greater Marrow, just one of dozens of islands in the archipelago.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک RPG ماهیگیری غیرمعمول با یک جریان زیرزمینی شوم. بیش از 125 ساکن در اعماق دریا را بگیرید و برای حداکثر سود در انبار بار خود بسته بندی کنید. بستر دریا را برای اشیاء قیمتی و آثار باستانی لایروبی کنید. با مردم محلی مرو بزرگ، تنها یکی از ده ها جزیره در مجمع الجزایر، آشنا شوید."
+  },
+  {
+    "id": 9609,
+    "name": "Euro Truck Simulator 2",
+    "background_image": "https://media.rawg.io/media/games/1f5/1f5ddf7199f2778ff83663b93b5cb330.jpg",
+    "rating": 4.12,
+    "metacritic": 79,
+    "released": "2012-10-19",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 12,
+    "developers": "SCS Software",
+    "steam_link": "https://store.steampowered.com/app/227300/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b2d/b2d31ffd798cee4b23dd034158587ca0.jpg",
+      "https://media.rawg.io/media/screenshots/a79/a79fbc93bac511577d8bb215fd52bd9f.jpg",
+      "https://media.rawg.io/media/screenshots/1bf/1bfe9fcd75b92ed0a26440f227ff69fd.jpg",
+      "https://media.rawg.io/media/screenshots/333/333b9f5fcb327f454abb924d86ccbf0c.jpg",
+      "https://media.rawg.io/media/screenshots/620/620dfa8450097061977b63308ea7f7f7.jpg",
+      "https://media.rawg.io/media/screenshots/7fd/7fd8e6dd4574ad0465392f1af0961125.jpg",
+      "https://media.rawg.io/media/games/1f5/1f5ddf7199f2778ff83663b93b5cb330.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: Dual core CPU 2.4 GHz\nMemory: 4 GB RAM\nGraphics: GeForce GTS 450-class (Intel HD 4000)\nHard Drive: 3 GB available space",
+      "recommended": "OS: Windows 7/8.1/10 64-bit\nProcessor: Quad core CPU 3.0 GHz\nMemory: 6 GB RAM\nGraphics: GeForce GTX 760-class (2 GB)\nHard Drive: 3 GB available space"
+    },
+    "description_en": "You play as a truck driver, whose primary task throughout the game is to deliver essential goods to Europe.\n\nThe actions of foreign drivers in the game are close to reality. It means that the computer does not only act following the rules of the road but also takes some other techniques taken from real life, for example, gives a sign that passes the driver to the main road.\n\nThe time in the game is slightly different from the real time (1 minute in the set corresponds to five-ten seconds of real time). The driver can drive in total for 11 hours, after that he needs to go to the nearest Parking to make a nine-hour rest. If you do not, the driver gradually begins to struggle with sleep and yawn. The screen becomes dark, and the player, in turn, loses control of the truck, what can quickly lead to an accident.\n\nIn the game, there are temporary and permanent road signs that limit the speed mode. The maximum speed of all trucks in the game is technically limited to 90 km/h by default (but it can be disabled in the game settings).",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما به عنوان یک راننده کامیون بازی می کنید که وظیفه اصلی او در طول بازی تحویل کالاهای ضروری به اروپا است.\n\nاقدامات رانندگان خارجی در بازی به واقعیت نزدیک است. این بدان معناست که رایانه نه تنها طبق قوانین جاده عمل می کند بلکه برخی از تکنیک های دیگر را نیز برگرفته از زندگی واقعی می گیرد، به عنوان مثال علامتی می دهد که راننده را به جاده اصلی منتقل می کند.\n\nزمان در بازی کمی با زمان واقعی متفاوت است (1 دقیقه در مجموعه مربوط به پنج تا ده ثانیه زمان واقعی است). راننده در مجموع می تواند 11 ساعت رانندگی کند و پس از آن باید به نزدیکترین پارکینگ برود تا 9 ساعت استراحت کند. اگر این کار را نکنید، راننده به تدریج شروع به مبارزه با خواب و خمیازه می کند. صفحه تاریک می شود و بازیکن نیز به نوبه خود کنترل کامیون را از دست می دهد که می تواند به سرعت منجر به تصادف شود.\n\nدر بازی علائم جاده ای موقت و دائمی وجود دارد که حالت سرعت را محدود می کند. حداکثر سرعت تمام کامیون های بازی به صورت پیش فرض از نظر فنی به 90 کیلومتر در ساعت محدود شده است (اما می توان آن را در تنظیمات بازی غیرفعال کرد)."
   }
 ]
