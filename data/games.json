@@ -4078,5 +4078,53 @@
     },
     "description_en": "Play the next series of Tomb Raider adventures in this remastered collection of the Darkness Trilogy.\nIncluded Game Titles:\n\nTomb Raider: The Last Revelation – Lara Croft discovers the lost tomb of the Egyptian God Set, unwittingly unleashing him and fulfilling an ancient prophecy—one that plunges mankind into darkness.\n\nTomb Raider: Chronicles – Following the events of The Last Revelation, Lara Croft is buried in an Egyptian tomb and is presumed dead. At her memorial, those closest to her reminisce about secrets from her past.\n\nTomb Raider: The Angel of Darkness – Accused of murder, Lara becomes a fugitive on the run, while uncovering a sinister conspiracy involving alchemical experiments and the search for ancient artifacts.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسری بعدی ماجراهای Tomb Raider را در این مجموعه بازسازی شده از Darkness Trilogy بازی کنید.\nعناوین بازی شامل:\n\nTomb Raider: The Last Revelation - لارا کرافت مقبره گمشده ست خدای مصری را کشف می کند، ناخواسته او را آزاد می کند و یک پیشگویی باستانی را محقق می کند - پیشگویی که بشر را در تاریکی فرو می برد.\n\nTomb Raider: Chronicles - پس از وقایع The Last Revelation، لارا کرافت در یک مقبره مصری دفن شد و فرض بر این است که مرده است. در مراسم یادبود او، نزدیکترین افراد به او اسرار گذشته او را به یاد می آورند.\n\nTomb Raider: The Angel of Darkness - متهم به قتل، لارا در حال فرار تبدیل به یک فراری می شود، در حالی که کشف یک توطئه شوم شامل آزمایش های کیمیاگری و جستجوی مصنوعات باستانی است."
+  },
+  {
+    "id": 29236,
+    "name": "Tunic",
+    "background_image": "https://media.rawg.io/media/games/2c1/2c1984e128ac48b89953ed4de4904a3b.jpg",
+    "rating": 4.11,
+    "metacritic": 86,
+    "released": "2022-03-16",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 5,
+    "developers": "ISOMETRICORP Games, Andrew Shouldice",
+    "steam_link": "https://store.steampowered.com/app/553420/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686619/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256686619/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/f3a/f3af1430520c5817fb32a9b31079ba42.jpg",
+      "https://media.rawg.io/media/screenshots/9ab/9abe19979b369315878128bc47e1409e.jpg",
+      "https://media.rawg.io/media/screenshots/51b/51b07b3c7a87b7ff6b1d82a0d12870ae.jpg",
+      "https://media.rawg.io/media/screenshots/588/588e8bbcfba1398d0763494cbb2720f0.jpg",
+      "https://media.rawg.io/media/screenshots/cd0/cd0d4757f282e1fddb4a533fc89bac45.jpg",
+      "https://media.rawg.io/media/screenshots/04f/04f9806eb6d2000129737b881c1408ef.jpg",
+      "https://media.rawg.io/media/games/2c1/2c1984e128ac48b89953ed4de4904a3b.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: Intel i5 Quad-Core\nMemory: 4 GB RAM\nStorage: 1 GB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Explore a land filled with lost legends, ancient powers, and ferocious monsters in TUNIC, an isometric action game about a small fox on a big adventure. Stranded on a mysterious beach, armed with only your own curiosity, you will confront colossal beasts, collect strange and powerful items, and unravel long-lost secrets.\n\nExplore a hostile and intricately-connected world of shady forests, sprawling ruins, and labyrinthine catacombs\nFight mighty bosses deep beneath the earth, high above the clouds, and in places stranger still\nCollect the missing manual pages, bursting with hints and original full-colour illustrations\nDiscover hidden treasures to help you on your way\nUnearth secret relics, secret techniques, secret puzzles, and… listen, there’s a lot of secrets!\nFeaturing sound design by Power Up Audio (Celeste, Darkest Dungeon, Subnautica: Below Zero)\nAnd an original soundtrack by Lifeformed (Dustforce, Double Fine Adventure)\n\nKeep your wits about you and be brave, little fox!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسرزمینی پر از افسانه های گمشده، قدرت های باستانی و هیولاهای وحشی را در TUNIC کاوش کنید، یک بازی اکشن ایزومتریک درباره یک روباه کوچک در یک ماجراجویی بزرگ. در ساحلی اسرارآمیز، تنها با کنجکاوی خود مسلح شده اید، با جانوران عظیم الجثه روبرو می شوید، اقلام عجیب و غریب و قدرتمندی را جمع آوری می کنید و رازهای گمشده را کشف خواهید کرد.\n\nدنیایی خصمانه و به هم پیوسته از جنگل‌های سایه‌دار، خرابه‌های گسترده، و دخمه‌های هزارتویی را کاوش کنید.\nبا رئیس‌های قدرتمند در اعماق زمین، بالای ابرها و در مکان‌های غریبه‌تر مبارزه کنید\nصفحات دستی گمشده را جمع آوری کنید، پر از نکات و تصاویر تمام رنگی اصلی\nگنجینه های پنهان را کشف کنید تا به شما در راه خود کمک کنند\nبقایای مخفیانه، تکنیک های مخفی، پازل های مخفی، و ... گوش کنید، رازهای زیادی وجود دارد!\nبا طراحی صدا توسط Power Up Audio (Celeste، Darkest Dungeon، Subnautica: Below Zero)\nو یک موسیقی متن اصلی توسط Lifeformed (Dustforce، Double Fine Adventure)\n\nعقلت را حفظ کن و شجاع باش، روباه کوچولو!"
   }
 ]
