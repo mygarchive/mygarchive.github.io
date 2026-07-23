@@ -705,5 +705,46 @@
     },
     "description_en": "A deadly virus is spreading across Los Angeles, California, turning its inhabitants into ravenous zombies. The city is in quarantine and the military have retreated. Bitten, infected, but more than just immune, you learn to harness the zombie inside. Only you, and the handful of other swaggering fellows who happen to be resistant to the pathogen, holds the future of LA (and humanity), in the balance. As you uncover the truth behind the outbreak you’ll discover who – or what – you are. Survive, evolve, save the world – just another day in LA! The much-loved zombie saga is back with a unique formula of horror, dark humor and over the top zombie-slaying, spanning an epic pulp adventure. Dead Island 2 is a thrilling First-Person Action RPG that takes players across a brand-new playground. Stylish, vibrant and flooded with zombie infection, explore iconic, gore-drenched Los Angeles. Meet larger-than-life characters. Slay countless foes in exquisitely bloody detail. And evolve to become the ultimate Zombie Slayer. See you in HELL-A!",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ویروس کشنده در سراسر لس آنجلس، کالیفرنیا در حال گسترش است و ساکنان آن را به زامبی های درنده تبدیل می کند. شهر در قرنطینه است و ارتش عقب نشینی کرده است. گزیده شده، آلوده، اما بیش از اینکه فقط مصون باشید، یاد می گیرید که زامبی درون خود را مهار کنید. فقط شما، و تعداد انگشت شماری از افراد متکبر دیگر که اتفاقاً در برابر پاتوژن مقاوم هستند، آینده لس آنجلس (و بشریت) را در تعادل نگه می دارید. همانطور که حقیقت را در پس شیوع بیماری کشف می کنید، متوجه خواهید شد که چه کسی هستید - یا چیست. زنده بمانید، تکامل پیدا کنید، جهان را نجات دهید - فقط یک روز دیگر در لس آنجلس! حماسه زامبی بسیار دوست داشتنی با فرمول منحصر به فرد ترسناک، طنز تاریک و زامبی کشی، که یک ماجراجویی حماسی را در بر می گیرد، بازگشته است. Dead Island 2 یک نقش آفرینی اکشن اول شخص هیجان انگیز است که بازیکنان را به یک زمین بازی کاملاً جدید می برد. شیک، پر جنب و جوش و مملو از عفونت زامبی‌ها، لس‌آنجلس نمادین و غرق در غرق شدن را کاوش کنید. با شخصیت های بزرگتر از زندگی آشنا شوید. دشمنان بی شماری را با جزئیات بسیار خونین بکشید. و برای تبدیل شدن به زامبی کش نهایی تکامل پیدا کنید. می بینمت در HELL-A!"
+  },
+  {
+    "id": 984308,
+    "name": "Dead Rising Deluxe Remaster",
+    "background_image": "https://media.rawg.io/media/screenshots/37b/37b5993a45d6114a3eb44d9705dd76e6.jpg",
+    "rating": 4,
+    "metacritic": null,
+    "released": "2024-09-18",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 14,
+    "developers": "Capcom",
+    "steam_link": "https://store.steampowered.com/app/2527390/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7b5/7b5241e5f868b08d68b29d8f0680483b.jpg",
+      "https://media.rawg.io/media/screenshots/fe5/fe5f41b667137e79d7509f63b053fa64.jpg",
+      "https://media.rawg.io/media/screenshots/d31/d31180f967d4127b1357d08159c4fbaa.jpg",
+      "https://media.rawg.io/media/screenshots/c28/c2852efd2a2f11fc23803177b2482af5.jpg",
+      "https://media.rawg.io/media/screenshots/003/003410cee75998f324fdde0945366ff0.jpg",
+      "https://media.rawg.io/media/screenshots/6f2/6f21e9174b3c5d602c406345492e95aa.jpg",
+      "https://media.rawg.io/media/screenshots/37b/37b5993a45d6114a3eb44d9705dd76e6.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64bit)  / Windows 11 (64bit)\nProcessor: Intel Core i7-6700 / AMD Ryzen 5 3400G\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1060 (6GB) / AMD Radeon RX 580\nDirectX: Version 12\nNetwork: Broadband Internet connection",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64bit)  / Windows 11 (64bit)\nProcessor: Intel Core i7-8700 / AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1070Ti / AMD Radeon RX 5700\nDirectX: Version 12\nNetwork: Broadband Internet connection\nAdditional Notes: NVIDIA GeForce RTX 3080 or AMD Radeon RX 6900 XT required to support 4K/60fps."
+    },
+    "description_en": "Dead Rising returns with a complete graphical overhaul! This isn't just a simple HD port, but a \"Deluxe Remaster\"!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی Dead Rising با یک بازنگری کامل گرافیکی بازمی گردد! این فقط یک پورت HD ساده نیست، بلکه یک \"Deluxe Remaster\" است!"
   }
 ]
