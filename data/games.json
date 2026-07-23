@@ -4254,5 +4254,46 @@
     },
     "description_en": "Raised on the streets of Kolkata India and haunted by visions of her own death, Haroona struggles to understand her mysterious innate abilities to manipulate the unseen. A mentor soon helps Haroona hone her gifts, teaches her to access the mysterious hidden dimension known as The Fold and propels her on a journey to unlock the mysteries of this new realm",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nهارونا که در خیابان‌های کلکته هند بزرگ شده و با رؤیاهایی از مرگ خود تسخیر شده است، تلاش می‌کند تا توانایی‌های مرموز ذاتی خود را برای دستکاری نادیده‌ها درک کند. یک مربی به زودی به هارونا کمک می کند تا هدایای خود را افزایش دهد، به او می آموزد که به بعد پنهان اسرارآمیز معروف به The Fold دسترسی پیدا کند و او را به سفری سوق می دهد تا اسرار این قلمرو جدید را باز کند."
+  },
+  {
+    "id": 1758,
+    "name": "Valiant Hearts: The Great War",
+    "background_image": "https://media.rawg.io/media/games/39a/39a8aa7798b685f9625e857bc394259d.jpg",
+    "rating": 4.36,
+    "metacritic": 80,
+    "released": "2014-06-24",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 6,
+    "developers": "Ubisoft Montpellier",
+    "steam_link": "https://store.steampowered.com/app/260230/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1b3/1b3a6647d125f3341490246de3b1750e.jpg",
+      "https://media.rawg.io/media/screenshots/d45/d45b1d73b64b06f243fabe569dbf0373.jpg",
+      "https://media.rawg.io/media/screenshots/1d8/1d879a1e21271e448e21ccac14abb16b.jpg",
+      "https://media.rawg.io/media/screenshots/ff2/ff24c694fcf5c6bfb924a59546b4cebb.jpg",
+      "https://media.rawg.io/media/screenshots/022/0227a35a562068fef3af43fa1e05e9d5.jpg",
+      "https://media.rawg.io/media/screenshots/1be/1bef5c158eaa26247d45e50be9a00c50.jpg",
+      "https://media.rawg.io/media/games/39a/39a8aa7798b685f9625e857bc394259d.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Valiant Hearts is a sidescroller adventure with a significant amount of attention paid to artwork and historical authenticity. While being not so demanding on a software side, it was released on the mobile platforms as well as on the big consoles. Such variety of platforms, however, limits the gameplay peculiarities that can be featured within a game. \nThe player takes a role of one of four characters on the Belgian, American, French and German side of the Great War conflict — World War I. During the game they need to solve puzzles, watch animated cutscenes, fight enemies and do military races. \nValiant Hearts is thus telling four stories simultaneously and ties them up in the end and throughout a fabula, while being historically correct when it is crucial. The game has received the Best Narrative awards and the Games for Change awards for such a plot-twists.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدل‌های شجاع یک ماجراجویی جانبی است که توجه زیادی به آثار هنری و اصالت تاریخی دارد. در حالی که از نظر نرم افزاری چندان تقاضایی نداشت، اما در پلتفرم های موبایل و همچنین کنسول های بزرگ منتشر شد. با این حال، چنین تنوعی از پلتفرم ها، ویژگی های گیم پلی را که می توان در یک بازی به نمایش گذاشت، محدود می کند. \nبازیکن نقش یکی از چهار شخصیت در طرف بلژیکی، آمریکایی، فرانسوی و آلمانی جنگ بزرگ - جنگ جهانی اول را بر عهده می‌گیرد. در طول بازی آنها باید معماها را حل کنند، صحنه‌های متحرک را تماشا کنند، با دشمنان بجنگند و مسابقات نظامی انجام دهند. \nبنابراین، Valiant Hearts چهار داستان را به طور همزمان بیان می کند و آنها را در پایان و در سرتاسر یک افسانه به هم پیوند می زند، در حالی که از نظر تاریخی درست در زمانی که حیاتی است. این بازی جوایز بهترین روایت و جوایز Games for Change را برای چنین پیچش های داستانی دریافت کرده است."
   }
 ]
