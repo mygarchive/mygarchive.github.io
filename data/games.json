@@ -3314,5 +3314,51 @@
     },
     "description_en": "An atmospheric adventure with highspeed movement inspired by skateboarding games. Surf over a surreal landscape of waves on your Hoversword and unveil a lost ocean teeming with life. From the visionary artist behind ABZÛ, The Pathless, and Journey, and featuring a beautiful score by Austin Wintory.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ماجراجویی جوی با حرکت پرسرعت با الهام از بازی های اسکیت بورد. بر روی منظره ای سورئال از امواج در هاورزورد خود گشت و گذار کنید و از اقیانوس گمشده پر از زندگی پرده برداری کنید. از هنرمند رویایی پشت ABZÛ، The Pathless، و Journey، و موسیقی زیبای آستین وینتوری."
+  },
+  {
+    "id": 980748,
+    "name": "Tales of Kenzera: ZAU",
+    "background_image": "https://media.rawg.io/media/screenshots/09a/09a7148fe2e1408b223351339575406b.jpg",
+    "rating": 4.11,
+    "metacritic": null,
+    "released": "2024-04-23",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Surgent Studios",
+    "steam_link": "https://store.steampowered.com/app/2316580/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0bb/0bbc68d5a90eec274445cb1c9cb9f9b0.jpg",
+      "https://media.rawg.io/media/screenshots/483/4838d95afe032aaf10d1d6fa39f605c6.jpg",
+      "https://media.rawg.io/media/screenshots/ff7/ff72203d4b07e1e5d3a1ba8da85138ad.jpg",
+      "https://media.rawg.io/media/screenshots/118/118adb779ef1f936bb32f851da54a75e.jpg",
+      "https://media.rawg.io/media/screenshots/f13/f13e9f1dc559123339c5b059e5f6784e.jpg",
+      "https://media.rawg.io/media/screenshots/46e/46e7274152f94da5c5edd5160de58e92.jpg",
+      "https://media.rawg.io/media/screenshots/09a/09a7148fe2e1408b223351339575406b.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel i7 7700 / AMD Ryzen 2600\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 1060 6GB / AMD RX 580 8GB\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 30 GB available space\nSound Card: DirectX Compatible\nAdditional Notes: These specs allow for the game to be played in 1920x1080 at 60 FPS with graphics setting &quot;Lowest&quot;",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel i7 7700 / AMD Ryzen 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA GTX 1070 8GB / AMD RX Vega-56 8 GB\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 30 GB available space\nSound Card: DirectX Compatible\nAdditional Notes: These specs allow for the game to be played in 1920x1080 at 60 FPS with graphics setting &quot;Standard&quot;"
+    },
+    "description_en": "\nWield the dance of the shaman. Reclaim your father’s spirit.\nA grieving boy begins to read a Bantu tale written by his late father. Adventure into the beautiful and treacherous lands of Kenzera as Zau, a young shaman who bargains with the God of death to bring his Baba back from darkness.\nWith your cosmic powers and untried courage, you advance into unknown mythological lands. Once bursting with life, Kenzera is now rife with lost ancestral spirits. As Zau advances toward his goal, 3 mighty beings lie in wait, fearsome in their strength yet somehow strangely familiar. Will you embrace the dance of the shaman?\nKEY FEATURES:\nCrafted by Surgent Studios, the entertainment studio founded by actor Abubakar Salim (Assassin's Creed: Origins, Raised by Wolves) and published by EA Originals, Tales of Kenzera™: ZAU takes you on a thrilling emotional journey inspired by the rich myths of Bantu cultures.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nرقص شمن را به کار بگیرید. روح پدرت را باز پس بگیر\nپسری غمگین شروع به خواندن داستان بانتو می کند که توسط پدر مرحومش نوشته شده است. در نقش زائو، شمن جوانی که با خدای مرگ چانه می‌زند تا بابای خود را از تاریکی بازگرداند، در سرزمین‌های زیبا و خائن کنزرا ماجراجویی کنید.\nبا قدرت های کیهانی و شجاعت آزمایش نشده خود، به سرزمین های اساطیری ناشناخته پیش می روید. Kenzera که زمانی پر از زندگی بود، اکنون مملو از روح های از دست رفته اجدادی است. همانطور که زائو به سمت هدف خود پیش می رود، 3 موجود قدرتمند در کمین نشسته اند که از نظر قدرت ترسناک و در عین حال به طرز عجیبی آشنا هستند. آیا رقص شمن را در آغوش خواهید گرفت؟\nویژگی های کلیدی:\nساخته شده توسط Surgent Studios، استودیوی سرگرمی که توسط بازیگر Abubakar Salim (Assassin's Creed: Origins, Raised by Wolves) تأسیس شده و توسط EA Originals، Tales of Kenzera™ منتشر شده است: ZAU شما را به یک سفر احساسی هیجان انگیز با الهام از اسطوره های غنی فرهنگ های بانتو می برد."
   }
 ]
