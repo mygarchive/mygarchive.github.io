@@ -4589,5 +4589,46 @@
     },
     "description_en": "A Quiet Place: The Road Ahead is a single-player horror adventure game inspired by the critically acclaimed blockbuster movie franchise. Survive in silence.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nA Quiet Place: The Road Ahead یک بازی ماجراجویی ترسناک تک نفره است که از مجموعه فیلم های پرفروش تحسین شده الهام گرفته شده است. در سکوت زنده بمان"
+  },
+  {
+    "id": 19274,
+    "name": "Assassin’s Creed Chronicles: India",
+    "background_image": "https://media.rawg.io/media/games/e99/e9969ab76756fe041aaa72cdeb768649.jpg",
+    "rating": 3.15,
+    "metacritic": 63,
+    "released": "2016-01-12",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Ubisoft, Climax Studios",
+    "steam_link": "https://store.steampowered.com/app/359610/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/270/2705efbd0c3ff98bf61589a4418e2b8d.jpg",
+      "https://media.rawg.io/media/screenshots/000/00042367dff2429b53975165cf2b2e2e.jpg",
+      "https://media.rawg.io/media/screenshots/3f5/3f54967f3adbe3a0db6646c404aeb4f4.jpg",
+      "https://media.rawg.io/media/screenshots/436/4369d4a34dcb425a1b7fd98bd73c598e.jpg",
+      "https://media.rawg.io/media/screenshots/e67/e67c61fe1b91edaa025f2a579281c232.jpg",
+      "https://media.rawg.io/media/screenshots/0f6/0f6f6f5550b4d24d735b8307095e1751.jpg",
+      "https://media.rawg.io/media/games/e99/e9969ab76756fe041aaa72cdeb768649.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1 or Windows 8 or Windows 8.1 (32/64bit versions)\nProcessor: Intel Core 2 Duo E8200 @ 2.6 GHz or AMD Athlon II X2 240 @ 2.8 GHz\nMemory: 2 GB RAM\nGraphics: nVidia GeForce GTS450 or AMD Radeon HD5770 (1024MB VRAM with Shader Model 5.0)\nDirectX: Version 10\nStorage: 4 GB available space\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: Video Drivers: nVidia GeForce 347.52 and AMD Catalyst Omega 14.12",
+      "recommended": "OS: Windows 7 SP1 or Windows 8 or Windows 8.1 (32/64bit versions)\nProcessor: Intel Core i3 2105 @ 3.1 GHz or AMD Phenom II X4 955 @ 3.2 GHz\nMemory: 4 GB RAM\nGraphics: nVidia GeForce GTX 470 or AMD Radeon HD5870 or better (1024MB VRAM with Shader Model 5.0)\nDirectX: Version 10\nStorage: 4 GB available space\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: Video Drivers: nVidia GeForce 347.52 and AMD Catalyst Omega 14.12.    Supported video cards at the time of release: nVidia GeForce GTS 450 or better, GTX 500, GTX 600, GTX 700 series; AMD Radeon HD5770 or better, Radeon HD6000, HD7000, R7 200, R9 200 series    Note: Laptop versions of these cards may work but are NOT officially supported."
+    },
+    "description_en": "Embody Arbaaz in his quest for retribution through a colourful depiction of 19th century Colonial India in 2.5D stealth gameplay.\n• Travel across an amazing 19th-century India and its legendary landmarks\nDiscover an exquisite depiction of Colonial India thanks to a palette of vibrant colours. Zip-line across the streets of Amritsar, hide in the shadows of the palace, and hunt legendary artifacts, following in the footsteps of Alexander the Great.\n• Experience the thrill of being a stealthy assassin\nAs a smart and charming Assassin, use new subterfuges to disguise and to loot. Discover all-new Assassin’s gear such as the talwar (curved sword) and chakram (circular throwing weapon) to deal great damage and interact with the environment.\n• Showcase your fighting talents with the new double kill move, helix strike, or silent takedown. Be more agile than ever in even more platforming levels, and escape through the destructible environments of the squares and bazaars, leaving a trail of chaos in your wake.\n• Discover a brand-new challenge mode\nUnlock various challenge rooms: your skills and abilities will be pushed to their limits through a complex sequence of obstacle course. Beat the score to collect artifacts, fulfill special contracts and assassinate in an exciting new game experience!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nارباز را در تلاش خود برای انتقام از طریق تصویری رنگارنگ از هند مستعمره قرن نوزدهم در گیم پلی مخفیانه 2.5 بعدی تجسم کنید.\n• در سراسر هند شگفت انگیز قرن نوزدهمی و مکان های دیدنی افسانه ای آن سفر کنید\nبه لطف پالت رنگ‌های زنده، تصویری بدیع از هند مستعمره را کشف کنید. زیپ لاین در سراسر خیابان های آمریتسار، در سایه های قصر پنهان شوید و آثار باستانی افسانه ای را دنبال کنید و به دنبال اسکندر مقدونی باشید.\n• هیجان یک قاتل مخفی بودن را تجربه کنید\nبه‌عنوان یک قاتل باهوش و جذاب، برای پنهان کردن و غارت از روش‌های فریبکاری جدید استفاده کنید. ابزار کاملاً جدید Assassin مانند تالوار (شمشیر خمیده) و چاکرام (اسلحه پرتاب دایره‌ای) را برای وارد کردن آسیب بزرگ و تعامل با محیط کشف کنید.\n• استعدادهای رزمی خود را با حرکت کشتن دوگانه جدید، ضربه مارپیچ، یا حذف بی‌صدا به نمایش بگذارید. حتی در سطوح پلتفرم بیشتر از همیشه چابک تر باشید و از محیط های تخریب پذیر میدان ها و بازارها فرار کنید و دنباله ای از هرج و مرج را در پی خود باقی بگذارید.\n• یک حالت چالش کاملاً جدید را کشف کنید\nقفل اتاق‌های چالش مختلف را باز کنید: مهارت‌ها و توانایی‌های شما از طریق یک توالی پیچیده از مسیر موانع به حد خود رسیده است. برای جمع آوری مصنوعات، انجام قراردادهای خاص و ترور در یک تجربه بازی جدید و هیجان انگیز، امتیاز را شکست دهید!"
   }
 ]
