@@ -2101,5 +2101,41 @@
     },
     "description_en": "Marvel's Spider-Man 2 is a 2023 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment. It is based on the Marvel Comics character Spider-Man, and features a narrative inspired by its long-running comic book mythology which is also derived from various adaptations in other media. It is the third entry in the Marvel's Spider-Man series, acting as a sequel to Marvel's Spider-Man (2018) and a follow-up to Marvel's Spider-Man: Miles Morales (2020). The plot follows Peter Parker and Miles Morales as they come into conflict with Kraven the Hunter, who transforms New York City into a hunting ground for super-powered individuals; and with the extraterrestrial Venom symbiote, which bonds itself to Parker and negatively influences him, threatening to destroy his personal relationships.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMarvel's Spider-Man 2 یک بازی اکشن ماجراجویی است که در سال ۲۰۲۳ توسط Insomniac Games توسعه یافته و توسط Sony Interactive Entertainment منتشر شده است. این فیلم بر اساس شخصیت مرد عنکبوتی مارول کامیکس ساخته شده است و روایتی الهام گرفته از اسطوره کتاب های مصور طولانی مدت آن است که از اقتباس های مختلف در رسانه های دیگر نیز گرفته شده است. این سومین ورودی از مجموعه مرد عنکبوتی مارول است که به عنوان دنباله مرد عنکبوتی مارول (2018) و دنباله‌ای بر مرد عنکبوتی مارول: مایلز مورالز (2020) عمل می‌کند. خلاصه داستان پیتر پارکر و مایلز مورالس را دنبال می کند که با کرایون شکارچی درگیر می شوند که شهر نیویورک را به شکار افراد فوق العاده تبدیل می کند. و با سمبیوت فرازمینی ونوم که خود را به پارکر پیوند می زند و بر او تأثیر منفی می گذارد و تهدید به نابودی روابط شخصی او می کند."
+  },
+  {
+    "id": 961198,
+    "name": "Metal Gear Solid Delta: Snake Eater",
+    "background_image": "https://media.rawg.io/media/games/1c0/1c0548b761f7c4e4c0da71172b3362bf.jpg",
+    "rating": 3.71,
+    "metacritic": null,
+    "released": "2025-08-28",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Virtuos Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Metal%20Gear%20Solid%20Delta%3A%20Snake%20Eater",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/00f/00f9a78414c515018deaefe9690fd019.jpg",
+      "https://media.rawg.io/media/screenshots/f79/f7969e2faf11c8c70281d7011941ebe3.jpg",
+      "https://media.rawg.io/media/screenshots/c19/c19a5ad99038d1097d7f2c09f942ebc9.jpg",
+      "https://media.rawg.io/media/screenshots/e87/e87444aeff03a7322440dd7f2a3c01e3.jpg",
+      "https://media.rawg.io/media/screenshots/2bd/2bd7630c420d07f8dcbed81319ab0299.jpg",
+      "https://media.rawg.io/media/screenshots/972/972811deb820b886c173147a16151df7.jpg",
+      "https://media.rawg.io/media/games/1c0/1c0548b761f7c4e4c0da71172b3362bf.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Discover the origin story of iconic military operative Snake and begin to unravel the plot of the legendary Metal Gear series. Metal Gear Solid Delta: Snake Eater brings unprecedented new graphics, immersive stealth action gameplay and sounds to its riveting story as players once again return to the world of Metal Gear.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان منشا مامور نظامی نمادین Snake را کشف کنید و شروع به باز کردن داستان سری افسانه‌ای Metal Gear کنید. Metal Gear Solid Delta: Snake Eater گرافیک جدید بی‌سابقه، گیم‌پلی اکشن مخفیانه همه‌جانبه و صداها را به داستان جذاب خود می‌آورد تا بازیکنان بار دیگر به دنیای متال گیر بازگردند."
   }
 ]
