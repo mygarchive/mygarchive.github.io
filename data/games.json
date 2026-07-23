@@ -2137,5 +2137,41 @@
     },
     "description_en": "Discover the origin story of iconic military operative Snake and begin to unravel the plot of the legendary Metal Gear series. Metal Gear Solid Delta: Snake Eater brings unprecedented new graphics, immersive stealth action gameplay and sounds to its riveting story as players once again return to the world of Metal Gear.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان منشا مامور نظامی نمادین Snake را کشف کنید و شروع به باز کردن داستان سری افسانه‌ای Metal Gear کنید. Metal Gear Solid Delta: Snake Eater گرافیک جدید بی‌سابقه، گیم‌پلی اکشن مخفیانه همه‌جانبه و صداها را به داستان جذاب خود می‌آورد تا بازیکنان بار دیگر به دنیای متال گیر بازگردند."
+  },
+  {
+    "id": 755216,
+    "name": "Naiad (itch)",
+    "background_image": "https://media.rawg.io/media/screenshots/ae6/ae68005f11200b3f324f4c904e2761a8.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2022-10-13",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Slinde",
+    "steam_link": "https://store.steampowered.com/search/?term=Naiad%20(itch)",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d0b/d0b40fe85f7d1a5bfb7ad75a5a9b0525.jpg",
+      "https://media.rawg.io/media/screenshots/b1c/b1c8aed0faa590f86799508141971fac.jpg",
+      "https://media.rawg.io/media/screenshots/584/584f0094aa7a20e5ab3061420d9543b9.jpg",
+      "https://media.rawg.io/media/screenshots/8f2/8f2e971d34b1ba88a63ac8742cd7f10d.jpg",
+      "https://media.rawg.io/media/screenshots/802/8026978b3a8a25124e47f3c06b085b9a.jpg",
+      "https://media.rawg.io/media/screenshots/0a3/0a3c138031cdd40297acbcd8631e92a7.jpg",
+      "https://media.rawg.io/media/screenshots/ae6/ae68005f11200b3f324f4c904e2761a8.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "NAIAD - A game about nature.\nImmerse yourself in a relaxing, minimalist, and colorful exploration adventure.\nFlow with Naiad across a mysterious river and interact with its fauna and flora to discover little secrets.\nEnjoy a wholesome experience with an original visual style.\nLearn to swim like a duck, dive like a fish, dash like a frog and meet other adorable friends like butterflies, rabbits, turtles, snakes, and crocodiles. Help them find their way and avoid obstacles.\nA journey in 16 episodes that will take you through beautiful and strange places like a spring, a forest, a cave, a lake, an orchard... until you reach the sea.\nDeveloped by a solo dev who has pampered every detail to create a very personal and unique game.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNAIAD - یک بازی در مورد طبیعت.\nخود را در یک ماجراجویی اکتشافی آرامش‌بخش، مینیمالیستی و رنگارنگ غرق کنید.\nبا نایاد از رودخانه ای مرموز عبور کنید و با جانوران و گیاهان آن تعامل داشته باشید تا اسرار کوچکی را کشف کنید.\nبا یک سبک بصری اصلی از یک تجربه مفید لذت ببرید.\nشنا کردن مانند یک اردک، شیرجه رفتن مانند یک ماهی، دویدن مانند قورباغه و ملاقات با دوستان شایان ستایش مانند پروانه ها، خرگوش ها، لاک پشت ها، مارها، و کروکودیل ها را بیاموزید. به آنها کمک کنید راه خود را پیدا کنند و از موانع دوری کنند.\nسفری در 16 قسمت که شما را از مکان های زیبا و عجیبی مانند چشمه، جنگل، غار، دریاچه، باغ میوه... می برد تا به دریا برسید.\nتوسط یک توسعه دهنده انفرادی ساخته شده است که تمام جزئیات را برای ایجاد یک بازی بسیار شخصی و منحصر به فرد ناز کرده است."
   }
 ]
