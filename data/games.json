@@ -2481,5 +2481,58 @@
     },
     "description_en": "Built4racers |\n\nThis is Project Motor Racing\n\nReplicating the challenge and sensory overload of professional-level race cars with all the uncompromising passion of big-time motorsport, Project Motor Racing blends 20 years’ worth of racing simulator know-how into one unforgettable racing experience.\n\nAll the passion, beauty & intensity of pro motorsport merging the most iconic cars & circuits with a new benchmark in handling performance.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBuilt4racers |\n\nاین Project Motor Racing است\n\nProject Motor Racing با تکرار چالش و بار بیش از حد حسی ماشین‌های مسابقه‌ای در سطح حرفه‌ای با تمام شور و اشتیاق سازش ناپذیر ورزش‌های موتوری بزرگ، 20 سال دانش شبیه‌ساز مسابقه را در یک تجربه مسابقه‌ای فراموش‌نشدنی ترکیب می‌کند.\n\nتمام اشتیاق، زیبایی و شدت موتوراسپرت حرفه ای که نمادین ترین خودروها و مدارها را با معیاری جدید در عملکرد هندلینگ ادغام می کند."
+  },
+  {
+    "id": 82,
+    "name": "Rain World",
+    "background_image": "https://media.rawg.io/media/screenshots/ca0/ca0ad22b04fbee26188c02be4d03ab52.jpg",
+    "rating": 3.86,
+    "metacritic": 66,
+    "released": "2017-03-27",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 1,
+    "developers": "Adult Swim, Videocult",
+    "steam_link": "https://store.steampowered.com/app/312520/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256680866/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256680866/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/3e9/3e957860d89f2c90410a7acb0fccee48.jpg",
+      "https://media.rawg.io/media/screenshots/a8f/a8f89f4ed033f6f8deb5102c62ab68cc.jpg",
+      "https://media.rawg.io/media/screenshots/acb/acb117f85d2a3c9787f11174723bf612.jpg",
+      "https://media.rawg.io/media/screenshots/c04/c04ab8a3d0f415c52f1b639c20891c24.jpg",
+      "https://media.rawg.io/media/screenshots/403/40379c92a66a400ae54426df0e0278c2.jpg",
+      "https://media.rawg.io/media/screenshots/718/718808e45b853e592bfb71a00521b743.jpg",
+      "https://media.rawg.io/media/screenshots/ca0/ca0ad22b04fbee26188c02be4d03ab52.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 64-bit\nProcessor: Dual Core 2.4 Ghz\nMemory: 2 GB RAM",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "You are a slugcat. The world around you is full of danger, and you must face it – alone. Separated from your family in a devastating flood, you must hunt for food and shelter between terrifying torrential downpours that threaten to drown all life. Climb through the ruins of an ancient civilization, evade the jaws of vicious predators, and discover new lands teeming with strange creatures and buried mysteries. Find your family before death finds you!\nInspired by the simplicity and aesthetics of 16-bit classics, this survival platformer requires fast-paced sneaking, both upon your own prey and past the jaws of hungry predators. Each ravenous foe in your path will be cunning, vicious and always on the hunt – eager to sink their teeth into you, or even each other. As a small, soft slugcat you must to rely on stealth and wit rather than force: learn the ecosystem and turn their strengths to your advantage. Maybe then you can survive… Rain World!\nSneak, climb, and pounce your way through a dynamic, ever-changing ecosystem of predators and prey\nExplore a vast world of over 1600 rooms, spanning 12 diverse regions filled with ancient secrets and undiscovered dangers\nNimble movements and procedurally generated animation gives slugcat a natural fluidity of movement and unique sense of weight\nIntense, primal predator encounters will challenge your reflexes\nLimited resources and the constant, impending threat of rain will test your nerve",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nتو یه تنبل هستی دنیای اطراف شما پر از خطر است و شما باید به تنهایی با آن روبرو شوید. در یک سیل ویرانگر از خانواده خود جدا شده اید، باید در میان باران های سیل آسای وحشتناکی که همه زندگی را تهدید می کند به دنبال غذا و سرپناه بگردید. از خرابه های یک تمدن باستانی بالا بروید، از آرواره های شکارچیان شرور فرار کنید و سرزمین های جدیدی را کشف کنید که مملو از موجودات عجیب و غریب و اسرار مدفون است. قبل از اینکه مرگ شما را پیدا کند خانواده خود را پیدا کنید!\nبا الهام از سادگی و زیبایی شناسی کلاسیک های 16 بیتی، این پلتفرمر بقا نیاز به دزدکی سریع دارد، هم بر روی طعمه خود و هم از کنار آرواره های شکارچیان گرسنه. هر دشمن درنده در مسیر شما حیله گر، شرور و همیشه در حال شکار خواهد بود - مشتاق فرو بردن دندان های خود در شما یا حتی یکدیگر است. به عنوان یک تنبل کوچک و نرم، باید به جای زور، به پنهان کاری و شوخ طبعی تکیه کنید: اکوسیستم را یاد بگیرید و نقاط قوت آنها را به نفع خود تبدیل کنید. شاید آن وقت بتوانید زنده بمانید... دنیای باران!\nدزدکی حرکت کنید، بالا بروید و از میان اکوسیستم پویا و همیشه در حال تغییر شکارچیان و طعمه ها عبور کنید.\nدنیای وسیعی از بیش از 1600 اتاق را کاوش کنید که شامل 12 منطقه متنوع پر از اسرار باستانی و خطرات کشف نشده است.\nحرکات زیرک و انیمیشنی که به صورت رویه ای ایجاد شده است، روانی طبیعی حرکت و حس وزن منحصر به فرد را به سگ تنه می دهد.\nبرخوردهای شدید و اولیه با شکارچیان، رفلکس های شما را به چالش می کشد\nمنابع محدود و تهدید دائمی و قریب الوقوع باران اعصاب شما را آزمایش می کند"
   }
 ]
