@@ -3274,5 +3274,45 @@
     },
     "description_en": "2027, the metropolis of Sun City.\n\nThe city is full of creatures, savage, aggressive and insane - these creatures were just ordinary townspeople a short while ago, but they abused the energy drink produced by Fizzco, in which something was wrong with the recipe. In general, loyal consumers mutated into monsters and now nothing can be done with them, only to kill everyone.\n\nThe protagonist (by the way, who worked at Fizzco) is not constrained by any laws of physics, can move around the city in any direction, run on walls and wires, jump like a kangaroo and so on. This is not parkour, it's just complete freedom of movement. He also has a \"guidance system\" that shows him the way.\n\nIn addition to the hero, several groups and singles of varying degrees of eccentricity are fighting monsters in the city. Monsters also do not belong to the same type. Monsters are many, they are very different and extremely unusual - there are, for example, creatures fused with water cannons or a bucket from an excavator. The hero's weapon is even more diverse than the monsters. Various weapons rush vinyl records, throw bowling balls, shoot teddy bears with pieces of TNT in their paws and this is not the whole list.\n\nThe game has about fifty amps to move the hero and defeat the monsters.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n2027، کلان شهر سان سیتی.\n\nشهر پر است از موجودات، وحشی، تهاجمی و دیوانه - این موجودات مدتی پیش فقط مردم عادی شهر بودند، اما از نوشیدنی انرژی‌زای تولید شده توسط Fizzco سوء استفاده کردند که در آن دستور غذا اشتباه بود. به طور کلی، مصرف کنندگان وفادار به هیولا تبدیل شدند و اکنون هیچ کاری نمی توان با آنها انجام داد، فقط برای کشتن همه.\n\nقهرمان داستان (به هر حال، که در Fizzco کار می کرد) توسط هیچ قانون فیزیک محدود نمی شود، می تواند در شهر در هر جهت حرکت کند، روی دیوارها و سیم ها بدود، مانند کانگورو بپرد و غیره. این پارکور نیست، فقط آزادی کامل حرکت است. او همچنین «سیستم راهنمایی» دارد که راه را به او نشان می دهد.\n\nعلاوه بر قهرمان، چندین گروه و مجرد با درجات مختلف عجیب و غریب در حال مبارزه با هیولاها در شهر هستند. هیولاها نیز متعلق به یک نوع نیستند. هیولاها بسیار زیاد هستند، آنها بسیار متفاوت و بسیار غیرمعمول هستند - به عنوان مثال، موجوداتی وجود دارند که با توپ های آب یا یک سطل از یک بیل مکانیکی ترکیب شده اند. سلاح قهرمان حتی از هیولاها نیز متنوع تر است. اسلحه‌های مختلف به رکوردهای وینیل هجوم می‌آورند، توپ‌های بولینگ را پرتاب می‌کنند، با تکه‌هایی از TNT در پنجه‌هایشان به خرس‌های عروسکی شلیک می‌کنند و این تمام فهرست نیست.\n\nبازی حدود پنجاه آمپر برای حرکت دادن قهرمان و شکست دادن هیولاها دارد."
+  },
+  {
+    "id": 961195,
+    "name": "Sword of the Sea",
+    "background_image": "https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg",
+    "rating": 4.23,
+    "metacritic": null,
+    "released": "2025-08-19",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Giant Squid",
+    "steam_link": "https://store.steampowered.com/app/2453160/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/672/672d672665b59a86e5b72c386ec1f1bd.jpg",
+      "https://media.rawg.io/media/screenshots/abc/abcee683426b0793bfb7aea0aad40048_wuJFQKs.jpg",
+      "https://media.rawg.io/media/screenshots/db8/db803e11f56fda140feb8a46068a8804.jpg",
+      "https://media.rawg.io/media/screenshots/bf8/bf8a70f3148955579a39805152f14b91.jpg",
+      "https://media.rawg.io/media/screenshots/9b2/9b209114e60a94a27e4122861c2f4110.jpg",
+      "https://media.rawg.io/media/games/96b/96bb45a0f2d767dc62f44ae77f5a2387.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-9400 or AMD Ryzen 5 2600, Requires a CPU with the AVX2 instruction set\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce GTX 1070, 8GB or AMD Radeon RX 5600, 6GB or Intel Arc B570\nDirectX: Version 12\nStorage: 15 GB available space\nSound Card: Any\nVR Support: No\nAdditional Notes: Full DualSense controller support- disable Steam Input",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 11\nProcessor: Intel Core i5-12600K or AMD Ryzen 7 5700X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2080 Ti, 11GB or AMD Radeon VII, 16GB or Intel Arc B580\nDirectX: Version 12\nStorage: 15 GB available space\nSound Card: Any\nVR Support: No\nAdditional Notes: Full DualSense controller support- disable Steam Input"
+    },
+    "description_en": "An atmospheric adventure with highspeed movement inspired by skateboarding games. Surf over a surreal landscape of waves on your Hoversword and unveil a lost ocean teeming with life. From the visionary artist behind ABZÛ, The Pathless, and Journey, and featuring a beautiful score by Austin Wintory.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ماجراجویی جوی با حرکت پرسرعت با الهام از بازی های اسکیت بورد. بر روی منظره ای سورئال از امواج در هاورزورد خود گشت و گذار کنید و از اقیانوس گمشده پر از زندگی پرده برداری کنید. از هنرمند رویایی پشت ABZÛ، The Pathless، و Journey، و موسیقی زیبای آستین وینتوری."
   }
 ]
