@@ -46,47 +46,6 @@
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCyberpunk 2077 یک بازی علمی تخیلی است که بر اساس بازی نقش آفرینی Cyberpunk 2020 ساخته شده است.\r\n\r\n###تنظیم\r\nداستان بازی در سال 2077 در یک کلان شهر خیالی آینده نگر در شهر شب در کالیفرنیا اتفاق می افتد. در دنیای بازی، تقویت‌کننده‌های سایبرنتیک توسعه‌یافته وجود دارد که قدرت، چابکی و حافظه افراد را افزایش می‌دهد. این شهر توسط شرکت ها اداره می شود. بسیاری از مشاغل توسط ربات ها تصاحب می شود و بسیاری از مردم فقیر و بی خانمان باقی می مانند. شهر شب دارای عالم اموات خروشان است که بازارهای سیاه، جراحان زیرزمینی، فروشندگان مواد مخدر و باندهای خیابانی فراوان است.\r\n\r\n###شخصیت ها\r\nقهرمان اصلی کاملاً قابل تنظیم است، از جمله جنسیت و ظاهرش، و با نام مستعار V. او یک مزدور زیرزمینی است که برای پیمانکاران مختلف \"تجارت کثیف\" انجام می دهد. یکی از همراهان NPC به نام جکی در اوایل بازی به قهرمان داستان می‌پیوندد و همراهان مختلف دیگری ممکن است در مأموریت‌های خاصی به بازیکن ملحق شوند. با این حال، بازی هیچ حزب و سیستم همراهی ندارد.\r\n\r\n###بازی\r\nبازیکن V را از دید اول شخص کنترل می کند و از نمای سوم شخص فقط برای کات سین ها استفاده می شود. قهرمان می تواند با پای پیاده یا با استفاده از وسایل نقلیه مختلف در سراسر شهر سفر کند، به شیوه ای که برخی ناظران با سری GTA مقایسه می کنند. گزینه‌های زیادی برای سفارشی‌سازی کاراکتر وجود دارد، از جمله سه کلاس کاراکتر، و انواع تقویت‌کننده‌هایی که V می‌تواند برای افزایش توانایی‌های خود نصب کند."
   },
   {
-    "id": 846303,
-    "name": "Cyberpunk 2077: Phantom Liberty",
-    "background_image": "https://media.rawg.io/media/games/062/06285b425e61623530c5430f20e5d222.jpg",
-    "rating": 4.72,
-    "metacritic": 79,
-    "released": "2023-09-26",
-    "genres": [
-      {
-        "id": 2,
-        "name": "Shooter",
-        "slug": "shooter"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+18",
-    "playtime": 36,
-    "developers": "CD PROJEKT RED",
-    "steam_link": "https://store.steampowered.com/app/2138330/",
-    "trailer_url": "",
-    "youtube_videos": [
-      "https://www.youtube.com/watch?v=sJbexcm4Trk&t=2s"
-    ],
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/80f/80fae78e5c12be23386e1f68786c8b4b.jpg",
-      "https://media.rawg.io/media/screenshots/078/078cfcc88982199f6e1bc6de24279593.jpg",
-      "https://media.rawg.io/media/screenshots/da5/da5c912366c9ca2ca282f55ecd3b33c2.jpg",
-      "https://media.rawg.io/media/screenshots/fc1/fc10d7ec161911a3bb3409cd0599db05.jpg",
-      "https://media.rawg.io/media/screenshots/1de/1def44eac50c83de5d3a0dffbe52b5f9.jpg"
-    ],
-    "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 10\nProcessor: Core i7-6700 or Ryzen 5 1600\nMemory: 12 GB RAM\nGraphics: GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380\nDirectX: Version 12\nStorage: 35 GB available space\nAdditional Notes: Attention: see upcoming change to the requirements. Storage: 35 GB SSD. In this game you will encounter a variety of visual effects that may provide seizures or loss of consciousness in a minority of people. If you or someone you know experiences any of the above symptoms while playing, stop and seek medical attention immediately.",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 10\nProcessor: Core i7-12700 or Ryzen 7 7800X3D\nMemory: 16 GB RAM\nGraphics: GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770\nDirectX: Version 12\nStorage: 35 GB available space\nAdditional Notes: Storage: 35 GB SSD"
-    },
-    "description_en": "Phantom Liberty is a new spy-thriller adventure for Cyberpunk 2077. When the orbital shuttle of the President of the New United States of America is shot down over the deadliest district of Night City, there’s only one person who can save her — you. Become V, a cyberpunk for hire, and dive deep into a tangled web of espionage and political intrigue, unraveling a story that connects the highest echelons of power with the brutal world of black-market mercenaries.\n\nInfiltrate Dogtown, a city-within-a-city run by a trigger-happy militia and ruled by a leader with an iron fist. With the help of NUSA sleeper agent Solomon Reed (Idris Elba) and the support of Johnny Silverhand (Keanu Reeves), unravel a web of shattered loyalties and use your every skill to survive in a fractured world of desperate hustlers, shadowy netrunners, and ruthless mercenaries. Built with the power of next-gen hardware in mind, Phantom Liberty offers brand-new gameplay mechanics, nail-biting courier jobs, gigs, and missions — and a thrilling main quest where freedom and loyalty always come at a price.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nPhantom Liberty یک ماجراجویی جاسوسی-هیجان‌انگیز جدید برای Cyberpunk 2077 است. هنگامی که شاتل مداری رئیس‌جمهور ایالات متحده جدید آمریکا بر فراز مرگبارترین منطقه شهر شب سرنگون می‌شود، تنها یک نفر می‌تواند او را نجات دهد - شما. تبدیل به V، یک سایبرپانک برای استخدام شوید، و در اعماق شبکه‌ای از جاسوسی و دسیسه‌های سیاسی غوطه‌ور شوید و داستانی را باز کنید که بالاترین رده‌های قدرت را با دنیای بی‌رحمانه مزدوران بازار سیاه مرتبط می‌کند.\n\nبه داگ‌تاون نفوذ کنید، شهری در درون شهر که توسط یک شبه‌نظامی شاد اداره می‌شود و توسط یک رهبر با مشت آهنین اداره می‌شود. با کمک مامور خواب NUSA سولومون رید (ادریس البا) و حمایت جانی سیلورهند (کیانو ریوز)، شبکه ای از وفاداری های درهم شکسته را باز کنید و از تمام مهارت های خود برای زنده ماندن در دنیایی متلاشی شده از افراد ناامید، نترونرهای سایه دار و مزدوران بی رحم استفاده کنید. Phantom Liberty که با در نظر گرفتن قدرت سخت‌افزار نسل بعدی ساخته شده است، مکانیک‌های گیم‌پلی کاملاً جدید، مشاغل پیک جویدنی، کنسرت‌ها و مأموریت‌ها را ارائه می‌دهد - و یک تلاش اصلی هیجان‌انگیز که در آن آزادی و وفاداری همیشه بهایی دارد."
-  },
-  {
     "id": 1010949,
     "name": "Forza Horizon 6",
     "background_image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
