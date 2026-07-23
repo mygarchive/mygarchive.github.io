@@ -4295,5 +4295,44 @@
     },
     "description_en": "Valiant Hearts is a sidescroller adventure with a significant amount of attention paid to artwork and historical authenticity. While being not so demanding on a software side, it was released on the mobile platforms as well as on the big consoles. Such variety of platforms, however, limits the gameplay peculiarities that can be featured within a game. \nThe player takes a role of one of four characters on the Belgian, American, French and German side of the Great War conflict — World War I. During the game they need to solve puzzles, watch animated cutscenes, fight enemies and do military races. \nValiant Hearts is thus telling four stories simultaneously and ties them up in the end and throughout a fabula, while being historically correct when it is crucial. The game has received the Best Narrative awards and the Games for Change awards for such a plot-twists.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدل‌های شجاع یک ماجراجویی جانبی است که توجه زیادی به آثار هنری و اصالت تاریخی دارد. در حالی که از نظر نرم افزاری چندان تقاضایی نداشت، اما در پلتفرم های موبایل و همچنین کنسول های بزرگ منتشر شد. با این حال، چنین تنوعی از پلتفرم ها، ویژگی های گیم پلی را که می توان در یک بازی به نمایش گذاشت، محدود می کند. \nبازیکن نقش یکی از چهار شخصیت در طرف بلژیکی، آمریکایی، فرانسوی و آلمانی جنگ بزرگ - جنگ جهانی اول را بر عهده می‌گیرد. در طول بازی آنها باید معماها را حل کنند، صحنه‌های متحرک را تماشا کنند، با دشمنان بجنگند و مسابقات نظامی انجام دهند. \nبنابراین، Valiant Hearts چهار داستان را به طور همزمان بیان می کند و آنها را در پایان و در سرتاسر یک افسانه به هم پیوند می زند، در حالی که از نظر تاریخی درست در زمانی که حیاتی است. این بازی جوایز بهترین روایت و جوایز Games for Change را برای چنین پیچش های داستانی دریافت کرده است."
+  },
+  {
+    "id": 608549,
+    "name": "Victoria 3",
+    "background_image": "https://media.rawg.io/media/games/61b/61b069e98f2e901050e687f7699997db.jpg",
+    "rating": 3.74,
+    "metacritic": null,
+    "released": "2022-10-25",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 6,
+    "developers": "Paradox Development Studio, Paradox Interactive",
+    "steam_link": "https://store.steampowered.com/app/529340/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/ab0/ab09a8f2b2a8ed663d3209c844c530fa.jpg",
+      "https://media.rawg.io/media/screenshots/3e9/3e9c359c1a22d0e2293cc3b4c2f71e98.jpg",
+      "https://media.rawg.io/media/screenshots/274/274e16284db8fae093b81d8933fc0395.jpg",
+      "https://media.rawg.io/media/screenshots/940/9403547aca8ebd144ae08b344bb3e6c1.jpg",
+      "https://media.rawg.io/media/games/61b/61b069e98f2e901050e687f7699997db.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows® 10 Home 64 Bit\nProcessor: Intel® Core™ i3-3250 or AMD® FX 8370 (AVX support required)\nMemory: 8 GB RAM\nGraphics: Nvidia® GeForce™ GTX 660 (2GB) or AMD® R7 370 (2GB) or Intel® HD Graphics 630 or AMD Radeon™ Vega 8\nStorage: 10 GB available space",
+      "recommended": "OS: Windows® 10 64 Bit or Windows® 11\nProcessor: Intel® Core™ i5-6600K or AMD® Ryzen 5 2600X (AVX support required)\nMemory: 16 GB RAM\nGraphics: Nvidia® GeForce™ GTX 1660 (6GB) or AMD® RX 590 (8GB)\nStorage: 10 GB available space"
+    },
+    "description_en": "SHAPE A GRAND TOMORROW\nParadox Development Studio invites you to build your ideal society in the tumult of the exciting and transformative 19th century. Balance the competing interests in your society and earn your place in the sun in Victoria 3, one of the most anticipated games in Paradox’s history.\nTHE ULTIMATE SOCIETY SIMULATOR\nLead dozens of world nations from 1836-1936. Agrarian or Industrial, Traditional or Radical, Peaceful or Expansionist... the choice is yours.\nDetailed population groups with their own economic needs and political desires.\nReform your government and constitution to take advantage of new social innovations, or preserve the stability of your nation by holding fast to tradition in the face of revolutionaries.\nResearch transformative new technology or ideas to improve your national situation.\nDEEP ECONOMIC SYSTEM\nExpand your industry to take advantage of lucrative goods, taxing the profits to improve national prosperity.\nImport cheap raw materials to cover your basic needs while finding new markets for your finished goods.\nSecure vital goods to fuel your advanced economy and control the fate of empires.\nBalance employing available labor force with the needs for new types of workers.\nPLAY ON A GRAND STAGE\nUse your diplomatic wiles to weave a tangled global web of pacts, relations, alliances, and rivalries to secure your diplomatic position on the world stage.\nEmploy threats, military prowess and bluffs to persuade enemies to back down in conflicts.\nIncre",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک فردای بزرگ را شکل دهید\nاستودیوی توسعه پارادوکس از شما دعوت می کند تا جامعه ایده آل خود را در هیاهوی هیجان انگیز و متحول کننده قرن 19 بسازید. بین علایق رقیب در جامعه خود تعادل برقرار کنید و در Victoria 3، یکی از موردانتظارترین بازی‌های تاریخ پارادوکس، جایگاه خود را در آفتاب به دست آورید.\nشبیه ساز نهایی جامعه\nده ها کشور جهان را از 1836-1936 رهبری کرد. ارضی یا صنعتی، سنتی یا رادیکال، صلح طلب یا توسعه طلب... انتخاب با شماست.\nگروه های جمعیتی دقیق با نیازهای اقتصادی و تمایلات سیاسی خود.\nحکومت و قانون اساسی خود را اصلاح کنید تا از نوآوری های اجتماعی جدید بهره ببرید، یا با پایبندی به سنت در مواجهه با انقلابیون، ثبات ملت خود را حفظ کنید.\nبرای بهبود وضعیت ملی خود، در مورد فناوری یا ایده های متحول کننده جدید تحقیق کنید.\nسیستم اقتصادی عمیق\nصنعت خود را گسترش دهید تا از کالاهای پرسود استفاده کنید و از سود مالیات بگیرید تا رونق ملی را بهبود بخشید.\nمواد خام ارزان قیمت را وارد کنید تا نیازهای اولیه خود را تامین کنید و در عین حال بازارهای جدیدی برای کالاهای نهایی خود پیدا کنید.\nکالاهای حیاتی را ایمن کنید تا اقتصاد پیشرفته خود را تقویت کنید و سرنوشت امپراتوری ها را کنترل کنید.\nایجاد تعادل بین استخدام نیروی کار موجود با نیاز به انواع جدید کارگران.\nدر یک صحنه بزرگ بازی کنید\nاز ترفندهای دیپلماتیک خود برای ایجاد یک شبکه جهانی درهم از پیمان ها، روابط، اتحادها و رقابت ها استفاده کنید تا موقعیت دیپلماتیک خود را در صحنه جهانی تضمین کنید.\nبرای متقاعد کردن دشمنان به عقب نشینی در درگیری ها، از تهدیدها، قدرت نظامی و بلوف استفاده کنید.\nافزایش"
   }
 ]
