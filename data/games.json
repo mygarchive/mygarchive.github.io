@@ -2342,5 +2342,59 @@
     },
     "description_en": "A brand-new side-scrolling entry to the NINJA GAIDEN series from the team behind Blasphemous, NINJA GAIDEN: Ragebound redefines the classic platformer saga in a spectacular, thrilling and challenging ninja adventure.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک ورودی کاملاً جدید به سری NINJA GAIDEN از تیم پشتیبان Blasphemous، NINJA GAIDEN: Ragebound حماسه پلتفرمر کلاسیک را در یک ماجراجویی تماشایی، هیجان انگیز و چالش برانگیز نینجا تعریف می کند."
+  },
+  {
+    "id": 850702,
+    "name": "Pacific Drive",
+    "background_image": "https://media.rawg.io/media/games/43e/43e69395a05af3b4d44ef3a7d50925b2.jpg",
+    "rating": 3.78,
+    "metacritic": null,
+    "released": "2024-02-21",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Ironwood Studio, Ironwood Studios",
+    "steam_link": "https://store.steampowered.com/app/1458140/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c7f/c7f2ac601ba7221e2ef0a4e4534fe1f6.jpg",
+      "https://media.rawg.io/media/screenshots/a59/a59d8471b75467d845eb7daa39983b9f.jpg",
+      "https://media.rawg.io/media/screenshots/04d/04d222a965f053a8e8668e58b2d6b60c.jpg",
+      "https://media.rawg.io/media/screenshots/33f/33f4780718eba761d1d4b5b16b476af0.jpg",
+      "https://media.rawg.io/media/games/43e/43e69395a05af3b4d44ef3a7d50925b2.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5 8600\nMemory: 16 GB RAM\nGraphics: Nvidia GTX 1060 6GB\nDirectX: Version 12\nStorage: 18 GB available space\nAdditional Notes: Requires a 64-bit processor and operating system",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-10600k\nMemory: 16 GB RAM\nGraphics: Nvidia RTX 2080/3070\nDirectX: Version 12\nStorage: 18 GB available space\nAdditional Notes: Requires a 64-bit processor and operating system"
+    },
+    "description_en": "Pacific Drive is a run-based, first-person driving survival game. Your car is your only companion as you navigate a surreal and anomaly-filled reimagining of the Pacific Northwest. Structured as a “road-like”, each excursion into the wilderness brings unique and strange challenges, as you restore and upgrade your car from an abandoned garage that acts as your home base. With the car as your lifeline, you’ll unravel a long-forgotten mystery as you make your way to the heart of the Olympic Exclusion Zone.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nPacific Drive یک بازی بقا در رانندگی اول شخص است. ماشین شما تنها همراه شماست در حالی که در یک تصویر سورئال و پر از ناهنجاری از شمال غربی اقیانوس آرام حرکت می کنید. با ساختاری «جاده‌مانند»، هر گشت و گذار در بیابان چالش‌های منحصر به فرد و عجیبی را به همراه دارد، زیرا ماشین خود را از یک گاراژ متروکه که به عنوان پایگاه خانه شما عمل می‌کند، بازسازی و ارتقا می‌دهید. با ماشین به عنوان راه نجات شما، در حالی که به سمت قلب منطقه محرومیت المپیک می روید، یک راز فراموش شده را کشف خواهید کرد."
   }
 ]
