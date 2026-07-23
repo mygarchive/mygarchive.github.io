@@ -2214,5 +2214,46 @@
     },
     "description_en": "Take on the role of Ryu Hayabusa, a ninja who has inherited the legendary “Dragon Sword” and takes on battles across the world, in this graphic remaster of the popular high-speed ninja action title that returns after 15 years!1. The world of “NINJA GAIDEN 2” remastered with rich visuals!The stages, characters, effects, and lighting have been completely redesigned and remastered to provide realistic visuals. Unreal Engine 5 has been utilized to create stunning current-generation graphics, allowing players to immerse themselves more deeply in the story's world.2. High-speed x violent action further evolved with the latest graphic expressions!Gore elements such as dismemberment and blood have been remastered to enhance the action experience. Players can enjoy high-speed, violent action using a wide variety of weapons and techniques, including Japanese swords, shurikens, Kusari-gamas, and tonfas.\nNote: The dismemberment feature can be toggled on and off in the Options menu.3. Additional characters, mode for beginners, and elements from subsequent spin-off titles are also included!This remaster includes additional elements from spin-off titles released after the original. Players can control three additional characters: Momiji, Ayane, and Rachel. The game also includes \"HERO PLAY STYLE\" mode that provides automatic support in challenging situations, making it accessible for those who may not be confident in their action skills.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر این ریمستر گرافیکی عنوان اکشن پرسرعت نینجا که پس از 15 سال بازگشته است، نقش ریو هایابوسا، یک نینجا را بر عهده بگیرید که وارث افسانه‌ای «شمشیر اژدها» است و نبردهایی را در سرتاسر جهان آغاز می‌کند. دنیای \"NINJA GAIDEN 2\" با تصاویری غنی بازسازی شده است! مراحل، کاراکترها، جلوه ها و نورپردازی به طور کامل بازطراحی و بازسازی شده اند تا تصاویری واقع گرایانه ارائه کنند. از Unreal Engine 5 برای ایجاد گرافیک خیره کننده نسل فعلی استفاده شده است که به بازیکنان این امکان را می دهد تا عمیق تر در دنیای داستان غوطه ور شوند. اکشن خشن x با سرعت بالا با جدیدترین عبارات گرافیکی تکامل یافته است! عناصر گور مانند تجزیه و خون برای بهبود تجربه اکشن بازسازی شده اند. بازیکنان می توانند با استفاده از طیف گسترده ای از سلاح ها و تکنیک ها، از جمله شمشیرهای ژاپنی، شوریکن ها، کوساری-گاما و تونفا، از حرکات پرسرعت و خشونت آمیز لذت ببرند.\nتوجه: ویژگی تجزیه را می توان در منوی گزینه ها روشن و خاموش کرد. 3. کاراکترهای اضافی، حالت برای مبتدیان، و عناصری از عناوین اسپین آف بعدی نیز گنجانده شده است! این ریمستر شامل عناصر اضافی از عناوین اسپین آف منتشر شده پس از نسخه اصلی است. بازیکنان می توانند سه شخصیت اضافی را کنترل کنند: Momiji، Ayane و Rachel. این بازی همچنین دارای حالت «HERO PLAY STYLE» است که پشتیبانی خودکار را در موقعیت‌های چالش برانگیز ارائه می‌کند و برای کسانی که ممکن است به مهارت‌های اکشن خود مطمئن نباشند، قابل دسترسی است."
+  },
+  {
+    "id": 996616,
+    "name": "Ninja Gaiden 4",
+    "background_image": "https://media.rawg.io/media/games/9e8/9e8752c9e8ee0b5030b2851558506ecb.jpg",
+    "rating": 3.97,
+    "metacritic": null,
+    "released": "2025-10-21",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 15,
+    "developers": "Platinum Games, Koei Tecmo, Team NINJA, KOEI TECMO GAMES CO",
+    "steam_link": "https://store.steampowered.com/app/2627260/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/37d/37d894bf527d60bebc2cff247a089edd.jpg",
+      "https://media.rawg.io/media/screenshots/187/187770306b3a9c8c213f6466b6a98150.jpg",
+      "https://media.rawg.io/media/screenshots/dbb/dbb5cd233d7c7d16a730dc5f8086ae0f.jpg",
+      "https://media.rawg.io/media/screenshots/226/2264ac83319e15c83b124f74f1963501.jpg",
+      "https://media.rawg.io/media/screenshots/19f/19f46b5df915490431d4296e643e8f8c.jpg",
+      "https://media.rawg.io/media/screenshots/c7a/c7af343eaac76d861e9d1cb304441bea.jpg",
+      "https://media.rawg.io/media/games/9e8/9e8752c9e8ee0b5030b2851558506ecb.jpg"
+    ],
+    "requirements": {
+      "minimum": "最低配置:\n操作系统: Windows® 10/11, 64bit\n处理器: Intel® Core™ i5-8400 or AMD Ryzen™ 5 3400G\n内存: 16 GB RAM\n显卡: NVIDIA® GeForce® GTX 1060 (VRAM 6GB) or ​ AMD Radeon™ RX 590(VRAM 8GB)\nDirectX 版本: 12\n存储空间: 需要 100 GB 可用空间\n声卡: 16bit 48kHz ステレオ\n附注事项: SSD Required. ​  1080p / 30FPS​  FSR quality &quot;Low&quot;​ Object Quality &quot;Low&quot;",
+      "recommended": "推荐配置:\n操作系统: Windows® 10/11, 64bit\n处理器: Intel® Core™ i5-10400 or AMD Ryzen™ 5 3600\n内存: 16 GB RAM\n显卡: NVIDIA® GeForce® RTX 2060 Super(VRAM 8GB) or AMD Radeon™ RX 5700XT(VRAM 8GB)\nDirectX 版本: 12\n存储空间: 需要 100 GB 可用空间\n声卡: 16bit 48kHz ステレオ\n附注事项: SSD Required. ​  1080p / 60FPS ​ FSR Quality &quot;Middle&quot;​ Object Quality &quot;Middle&quot;"
+    },
+    "description_en": "The definitive ninja hack & slash franchise returns with NINJA GAIDEN 4! Embark on a cutting-edge adventure where legacy meets innovation in this high-octane blend of style and no-holds-barred combat.\n\nReturn of the Legend: Experience a return to the intense, high-speed combat that established NINJA GAIDEN as a premier action game series. Prepare for a legacy reborn with captivating style for a new generation of players.\n\nEpic Hack and Slash Combat, Evolved: NINJA GAIDEN 4 fuses Team NINJA’s tempered combat philosophy with the stylish, dynamic action gameplay of PlatinumGames. Engage in visually stunning combat that rewards precision and strategy. Use Bloodbind Ninjutsu to transform your weapons and unleash devastation upon your enemies, alongside legacy techniques like the Izuna Drop and Flying Swallow. The legendary Ryu Hayabusa also returns with a revamped yet familiar set of tools to master.  With a customizable player experience, NINJA GAIDEN 4 will push action game veterans to their limits while allowing newcomers to enjoy a heart-pounding adventure full of twists and turns.\n\nAn Ancient Enemy Returns: An endless rain of miasma hangs over a near-future Tokyo in the wake of an ancient enemy’s resurrection. The fate of the city lies in the hands of young ninja prodigy, Yakumo. Fighting his way through cybernetic ninja soldiers and otherworldly creatures, Yakumo must reconcile a destiny he shares with the legendary Ryu Hayabusa himself and free Tokyo from the ancient curse ",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nفرنچایز قطعی هک و اسلش نینجا با NINJA GAIDEN 4 بازمی گردد! وارد یک ماجراجویی پیشرفته شوید که در آن میراث با نوآوری در این ترکیب سبک با اکتان بالا و نبردهای بدون محدودیت روبرو می شود.\n\nReturn of the Legend: بازگشت به نبردهای شدید و پرسرعت را تجربه کنید که NINJA GAIDEN را به عنوان یک سری بازی اکشن برتر معرفی کرد. آماده شدن برای میراثی که با سبکی فریبنده برای نسل جدیدی از بازیکنان متولد شده است.\n\nمبارزه حماسی با هک اند اسلش، تکامل یافته: NINJA GAIDEN 4 فلسفه رزمی معتدل Team NINJA را با گیم پلی اکشن شیک و پویا PlatinumGames ترکیب می کند. در نبردهای بصری خیره کننده شرکت کنید که به دقت و استراتژی پاداش می دهد. از Bloodbind Ninjutsu برای تغییر دادن سلاح های خود و ایجاد ویرانی بر دشمنان خود، در کنار تکنیک های قدیمی مانند Izuna Drop و Flying Swallow استفاده کنید. Ryu Hayabusa افسانه‌ای نیز با مجموعه‌ای از ابزارهای اصلاح‌شده و در عین حال آشنا بازمی‌گردد.  NINJA GAIDEN 4 با تجربه بازیکنی قابل تنظیم، کهنه‌سربازان بازی‌های اکشن را به محدودیت‌های خود سوق می‌دهد و در عین حال به تازه‌واردها اجازه می‌دهد از یک ماجراجویی دلخراش و پر از پیچ و خم لذت ببرند.\n\nبازگشت یک دشمن باستانی: در پی رستاخیز یک دشمن باستانی، باران بی پایان میاسما بر فراز توکیویی در آینده نزدیک است. سرنوشت شهر در دستان اعجوبه نینجای جوان، یاکومو است. یاکومو در راه مبارزه با سربازان سایبرنتیک نینجا و موجودات ماورایی، باید سرنوشتی را که با خود ریو هایابوسا افسانه ای مشترک است آشتی دهد و توکیو را از نفرین باستانی آزاد کند."
   }
 ]
