@@ -394,5 +394,56 @@
     },
     "description_en": "Celeste is a platformer about climbing a mountain, from the creators of TowerFall.\nExplore a sprawling mountain with over 500 levels bursting with secrets, across 8 unique areas. Unlock a hardcore Remix for each area, with completely new levels that will push your climbing skills to the limit.\nMadeline can air-dash and climb any surface to gain ground. Controls are simple and accessible, but super tight and expressive with layers of depth to master. Deaths are sudden and respawns are fast. You'll die a lot, but you'll learn something every time.\nMeet peculiar characters and climb through a personal story of breaking through your self-doubt to find yourself, set in the present-day Pacific Northwest. Uncover the mystery of the mountain's power and outrun your reflection on your journey to reach the top.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCeleste یک پلتفرمر در مورد بالا رفتن از یک کوه، از سازندگان TowerFall است.\nکوهی وسیع با بیش از 500 سطح پر از اسرار را در 8 منطقه منحصر به فرد کاوش کنید. یک ریمیکس هاردکور را برای هر منطقه باز کنید، با سطوح کاملاً جدید که مهارت‌های کوهنوردی شما را به حداکثر می‌رساند.\nMadeline می‌تواند برای به دست آوردن زمین از هر سطحی بالا برود. کنترل‌ها ساده و در دسترس هستند، اما بسیار محکم و گویا با لایه‌هایی از عمق برای تسلط. مرگ ها ناگهانی و بازپخش سریع هستند. شما خیلی خواهید مرد، اما هر بار چیزی یاد خواهید گرفت.\nبا شخصیت‌های عجیب و غریب آشنا شوید و از طریق داستان شخصی شکستن شک و تردید خود بالا بروید تا خودتان را پیدا کنید، واقع در شمال غربی اقیانوس آرام امروزی. رمز و راز قدرت کوه را کشف کنید و از بازتاب خود در سفر خود برای رسیدن به قله پیشی بگیرید."
+  },
+  {
+    "id": 14211,
+    "name": "Children of Morta",
+    "background_image": "https://media.rawg.io/media/games/434/43431e04f0cd5419a3d8e31a5c8c3d5d.jpg",
+    "rating": 3.92,
+    "metacritic": 80,
+    "released": "2019-09-03",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 4,
+    "developers": "Dead Mage",
+    "steam_link": "https://store.steampowered.com/app/330020/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8f4/8f433871dc905a5d5fb88798a952f23f.jpg",
+      "https://media.rawg.io/media/screenshots/b0e/b0ecc325187acc8480b4f24695c65d56.jpg",
+      "https://media.rawg.io/media/screenshots/ef6/ef62a471fa80744fda40bc327405c345.jpg",
+      "https://media.rawg.io/media/screenshots/553/5532d5ad9032965419b22675edba4082.jpg",
+      "https://media.rawg.io/media/screenshots/263/26312f73c9ff9fcb84832508e3d3ba69.jpg",
+      "https://media.rawg.io/media/screenshots/555/5552d13432d7ccb548589578543e48df.jpg",
+      "https://media.rawg.io/media/games/434/43431e04f0cd5419a3d8e31a5c8c3d5d.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP and up\nProcessor: Intel Core Duo or faster\nMemory: 1 GB RAM\nGraphics: Dedicated video card recommended\nStorage: 900 MB available space",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The Bergson family has watched over Mount Morta for generations as the guardians of the mystical mountain. They now face their most dangerous trial as a family.  Corruption has spread, morphing the once peaceful mountain into a violent and monster infested nightmare.\nExperience what it means to be in a family of heroes.  Take part in their journey, their struggles, and their victories!  Witness a love for eachother unmatched by even the gods themselves.  Fight through hordes of monsters unimaginable as you explore a mountain constantly in flux.  Gorgeous and breathtaking procedurally generated dungeons guarantee a unique experience every time you leave the safety of the Bergson’s house in pursuit of the truth behind the Corruption.\nKey Features:\n6 Playable Characters\nJohn, Mark, Linda, Joey, Kevin, and Lucy are all prepped and ready for the forthcoming fray.  Discover each family member’s unique fighting style and delve into their personalities and past.\nProcedurally Generated World\nEvery forest, dungeon, or temple you explore and skirmish through is procedurally to guarantee a unique experience every play through.\nMountain of Mystery\nDelve into the mountain and discover the mystical world of Morta.  Unearth why the Corruption has come to this seemly peaceful mountain.  Find lore scattered about giving glimpses into the lives of the mountain’s residents.\nPixel Art to A New Level\nA combination of hand painted pixel art and frame by frame animations partnered with modern lighti",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nخانواده برگسون چندین نسل به عنوان نگهبانان این کوه عرفانی بر کوه مورتا نظارت داشته اند. آنها اکنون به عنوان یک خانواده با خطرناک ترین محاکمه خود روبرو هستند.  فساد گسترش یافته و کوه زمانی آرام را به یک کابوس خشن و پر از هیولا تبدیل کرده است.\nمعنای حضور در خانواده قهرمانان را تجربه کنید.  در سفر، مبارزات و پیروزی های آنها شرکت کنید!  شاهد عشقی نسبت به یکدیگر باشید که حتی خود خدایان همتایی ندارند.  مبارزه با انبوهی از هیولاها غیرقابل تصور در حالی که کوهی را به طور مداوم در حال کاوش می کنید.  سیاه‌چال‌های زیبا و نفس‌گیر که به‌صورت رویه‌ای ایجاد شده‌اند، هر بار که امنیت خانه برگسون را به دنبال حقیقتی که در پس فساد وجود دارد را ترک می‌کنید، تجربه‌ای منحصر به فرد را تضمین می‌کند.\nویژگی های کلیدی:\n6 شخصیت قابل پخش\nجان، مارک، لیندا، جوی، کوین و لوسی همگی برای مسابقه پیش رو آماده و آماده هستند.  سبک مبارزه منحصر به فرد هر یک از اعضای خانواده را کشف کنید و به شخصیت و گذشته آنها بپردازید.\nدنیای رویه ای ایجاد شده\nهر جنگل، سیاه‌چال یا معبدی که در آن کاوش می‌کنید و در آن درگیری می‌کنید، از نظر رویه‌ای، تجربه‌ای منحصربه‌فرد را در هر بازی تضمین می‌کند.\nکوه رمز و راز\nدر کوه جستجو کنید و دنیای عرفانی مورتا را کشف کنید.  کشف کنید که چرا فساد به این کوه به ظاهر آرام آمده است.  افسانه های پراکنده ای را در مورد نگاه اجمالی به زندگی ساکنان کوه پیدا کنید.\nPixel Art به یک سطح جدید\nترکیبی از هنر پیکسلی نقاشی شده با دست و انیمیشن‌های فریم به فریم همراه با لایت مدرن"
   }
 ]
