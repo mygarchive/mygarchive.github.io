@@ -5232,5 +5232,41 @@
     },
     "description_en": "Experience the story of Basim, a cunning street thief seeking answers and justice as he navigates the bustling streets of ninth–century Baghdad.\r\n\r\nIn Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking answers and justice. Join an ancient organization and come to understand a new creed – one that will change Basim’s fate in ways he never could have imagined.\r\n\r\nParkour seamlessly through the city and leverage the largest assortment of tools to date, and stealthily take down targets with more visceral assassinations than ever before.\r\n\r\nDiscover a narrative-driven action-adventure experience that follows the transformation of a defiant young man into a refined Master Assassin with a conflicted destiny.\r\n\r\nJourney to Alamut, the legendary home of the Assassins who laid the foundations of the Creed in this heartfelt homage to the game that started it all.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان باسیم، یک دزد خیابانی حیله گر که در جستجوی پاسخ و عدالت است، در حالی که در خیابان های شلوغ بغداد قرن نهم حرکت می کند، تجربه کنید.\r\n\r\nدر Assassin's Creed Mirage، شما باسیم، یک دزد خیابانی حیله گر با دیدهای کابوس وار به دنبال پاسخ و عدالت هستید. به یک سازمان باستانی بپیوندید و عقیده جدیدی را درک کنید - اعتقادی که سرنوشت باسیم را به گونه‌ای تغییر می‌دهد که او هرگز تصورش را نمی‌کرد.\r\n\r\nپارکور به‌طور یکپارچه در شهر انجام می‌شود و از بزرگترین مجموعه ابزارهای تا به امروز استفاده می‌کند، و به طور مخفیانه اهدافی را با ترورهای احشایی بیشتر از همیشه از بین ببرید.\r\n\r\nیک تجربه اکشن ماجراجویی مبتنی بر روایت را کشف کنید که به دنبال تبدیل یک مرد جوان سرکش به یک استاد قاتل با سرنوشتی متضاد است.\r\n\r\nسفر به الموت، خانه افسانه ای Assassins که پایه های Creed را در این ادای احترام صمیمانه به بازی که همه چیز را آغاز کرد، بنا نهادند."
+  },
+  {
+    "id": 471025,
+    "name": "Avowed",
+    "background_image": "https://media.rawg.io/media/games/3d3/3d33abf32d9fb92b9f242917abe276ba.jpg",
+    "rating": 3.25,
+    "metacritic": null,
+    "released": "2025-02-18",
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 9,
+    "developers": "Obsidian Entertainment",
+    "steam_link": "https://store.steampowered.com/app/2457220/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/ac3/ac3579b4cbc333f2b18ee552027093bb.jpg",
+      "https://media.rawg.io/media/screenshots/100/1006c41b4aba7ab83b5cb5bdbb37ca2c.jpg",
+      "https://media.rawg.io/media/screenshots/287/2877abf64cdbfe978aab512d45031729.jpg",
+      "https://media.rawg.io/media/screenshots/c37/c37345ff1a95b341137fcafd0ad7179f.jpg",
+      "https://media.rawg.io/media/screenshots/675/67578060d4231329e6ec9574e528fae8.jpg",
+      "https://media.rawg.io/media/screenshots/4a1/4a1f99895c69ff14d756c9ee44514552.jpg",
+      "https://media.rawg.io/media/games/3d3/3d33abf32d9fb92b9f242917abe276ba.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 with updates\nProcessor: AMD Ryzen 5 2600 / Intel i5-8400\nMemory: 16 GB RAM\nGraphics: AMD RX 5700 / Nvidia GTX 1070 / Intel Arc A580\nDirectX: Version 12\nStorage: 75 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 with updates\nProcessor: AMD Ryzen 5 5600X / Intel i7-10700K\nMemory: 16 GB RAM\nGraphics: Graphics: AMD RX 6800 XT / Nvidia RTX 3080\nDirectX: Version 12\nStorage: 75 GB available space"
+    },
+    "description_en": "Welcome to the Living Lands, a mysterious island filled with adventure and danger.\nSet in the fictional world of Eora that was first introduced to players in the Pillars of Eternity franchise, Avowed is a first-person fantasy action RPG from the award-winning team at Obsidian Entertainment.\nYou are the envoy of Aedyr, a distant land, sent to investigate rumors of a spreading plague throughout the Living Lands - an island full of mysteries and secrets, danger and adventure, and choices and consequences, and untamed wilderness. You discover a personal connection to the Living Lands and an ancient secret that threatens to destroy everything. Can you save this unknown frontier and your soul from the forces threatening to tear them asunder?",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه سرزمین های زنده خوش آمدید، جزیره ای اسرارآمیز پر از ماجراجویی و خطر.\nدر دنیای خیالی Eora که برای اولین بار در فرنچایز Pillars of Eternity به بازیکنان معرفی شد، Avowed یک نقش آفرینی اکشن فانتزی اول شخص از تیم برنده جایزه در Obsidian Entertainment است.\nشما فرستاده آدیر هستید، سرزمینی دور، که برای بررسی شایعات شیوع طاعون در سرتاسر سرزمین های زنده فرستاده شده اید - جزیره ای پر از اسرار و اسرار، خطر و ماجراجویی، و انتخاب ها و عواقب، و بیابان رام نشده. شما یک ارتباط شخصی با سرزمین های زنده و یک راز باستانی کشف می کنید که همه چیز را تهدید می کند. آیا می توانید این مرز ناشناخته و روح خود را از نیروهایی که آنها را تهدید به پاره کردن آنها می کنند نجات دهید؟"
   }
 ]
