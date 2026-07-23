@@ -1142,5 +1142,40 @@
     },
     "description_en": "The fourth game in the post-apocalyptic action RPG series from Bethesda studious brings players back to the retro-future. After customizing the facial features of the character, players will be admitted to the Vault 111 with their family, and tricked into entering the cryogenic capsule. After the rude awakening after the unknown amount of time has passed, the child is separated from the parents and the loving partner is killed in front of them – the main quest is settled. Now there’s only the giant open world to explore. Fallout 4 introduces the mechanics of settlement building, where players can build their own little town. Gathering material for crafting and building brings more “survival” elements into the old formula. Within their own settlements, players will be able to build all needed utilities, from storage spaces to power armor stations. Visual upgrade from the previous game brings life to what used to be brown wastelands, now filled with details and color.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nچهارمین بازی از سری اکشن RPG پسا آخرالزمانی از Bethesda studious، بازیکنان را به آینده‌ای قدیمی بازمی‌گرداند. پس از شخصی سازی ویژگی های صورت شخصیت، بازیکنان به همراه خانواده خود در Vault 111 پذیرفته می شوند و با فریب وارد کپسول برودتی می شوند. پس از بیداری گستاخانه پس از گذشت مدت زمان نامعلوم، کودک از والدین جدا می شود و شریک عشق در مقابل آنها کشته می شود - تلاش اصلی حل می شود. اکنون فقط جهان باز غول پیکر برای کشف وجود دارد. Fallout 4 مکانیک های شهرک سازی را معرفی می کند، جایی که بازیکنان می توانند شهر کوچک خود را بسازند. جمع آوری مواد برای صنایع دستی و ساخت، عناصر \"بقا\" بیشتری را به فرمول قدیمی وارد می کند. در شهرک‌های خود، بازیکنان می‌توانند تمام ابزارهای مورد نیاز، از فضاهای ذخیره‌سازی گرفته تا ایستگاه‌های زرهی نیرو را بسازند. ارتقاء بصری بازی قبلی، زندگی را به زمین‌های بایر قهوه‌ای که اکنون پر از جزئیات و رنگ است، می‌بخشد."
+  },
+  {
+    "id": 1010949,
+    "name": "Forza Horizon 6",
+    "background_image": "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg",
+    "rating": 4.42,
+    "metacritic": null,
+    "released": "2026-05-19",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Playground Games",
+    "steam_link": "https://store.steampowered.com/app/2483190/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a93/a93f2a8ec0d112b5514cfdea70e02941.jpg",
+      "https://media.rawg.io/media/screenshots/e55/e552184cae79bdccfe6fc4e0bef0eff6.jpg",
+      "https://media.rawg.io/media/screenshots/4b3/4b31d3f63fd0f14775cb9aa9c867f546.jpg",
+      "https://media.rawg.io/media/screenshots/b6c/b6ce385dcbc719779964af47d9f15010.jpg",
+      "https://media.rawg.io/media/screenshots/aa4/aa41094e34080e189ad219b7d4da23cd.jpg",
+      "https://media.rawg.io/media/games/d74/d744a3b0f6f0f0bc63f5ceb9b5e63230.jpeg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Forza Horizon 6 is the next entry in the critically acclaimed and award-winning series of open world driving games. Forza Horizon 6 will launch first on Xbox Series X|S consoles and PC in 2026.\n\nIn Forza Horizon 6, you will get to discover a scenic and breathtaking Japan, where you will build up your racing status to become a Legend at the Horizon Festival.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nForza Horizon 6 ورودی بعدی از سری بازی‌های رانندگی جهان باز است که مورد تحسین منتقدان قرار گرفته و جوایزی را دریافت کرده است. Forza Horizon 6 برای اولین بار در سال 2026 روی کنسول های Xbox Series X|S و رایانه های شخصی عرضه خواهد شد.\n\nدر Forza Horizon 6، ژاپن منظره و نفس گیر را کشف خواهید کرد، جایی که وضعیت مسابقه خود را برای تبدیل شدن به یک افسانه در جشنواره Horizon ایجاد خواهید کرد."
   }
 ]
