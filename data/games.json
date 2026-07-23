@@ -2621,5 +2621,51 @@
     },
     "description_en": "The original creators of Little Nightmares™ & Little Nightmares™ II have returned to take you on a more terrifying journey than ever before. In this co-op horror adventure game, you play as a brother & sister who go through hell to rescue their missing friends. Exploring by boat and on land, you must use your wits to survive, work together to escape the hellish island, and the dark secret that haunts you.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسازندگان اصلی Little Nightmares™ & Little Nightmares™ II بازگشته اند تا شما را به سفری وحشتناک تر از همیشه ببرند. در این بازی ماجراجویی ترسناک co-op، شما به عنوان یک برادر و خواهر بازی می کنید که برای نجات دوستان گم شده خود از جهنم عبور می کنند. با کاوش با قایق و روی زمین، باید از عقل خود برای زنده ماندن استفاده کنید، برای فرار از جزیره جهنمی و راز تاریکی که شما را آزار می دهد، با هم کار کنید."
+  },
+  {
+    "id": 1015342,
+    "name": "Samson",
+    "background_image": "https://media.rawg.io/media/games/89d/89dd76fda9a181482f32fc02f3f63164.jpeg",
+    "rating": 1.91,
+    "metacritic": null,
+    "released": "2026-04-08",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "https://store.steampowered.com/app/3634520/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c57/c575ee5852944e6e15a0b785fb250bd1.jpg",
+      "https://media.rawg.io/media/screenshots/c94/c94479592f0b10bbe306d1f550acaae9.jpg",
+      "https://media.rawg.io/media/screenshots/33c/33cb745561eee38fe72403f480ef26ce.jpg",
+      "https://media.rawg.io/media/screenshots/b7d/b7d351a134e1a5dc12f75fadab809d52.jpg",
+      "https://media.rawg.io/media/screenshots/08c/08cfabf1b982c4e33fc3b4eca2d1a0df.jpg",
+      "https://media.rawg.io/media/screenshots/e36/e36cd150036ae2f46e57221ba5eaa9be.jpg",
+      "https://media.rawg.io/media/games/89d/89dd76fda9a181482f32fc02f3f63164.jpeg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Samson returns to Tyndalston, a city that shaped him hard, where every fight is close and every escape is earned. He owes dangerous people more than he can pay, and they’re using his sister to force his hand. The clock is ticking. The only way out is through anyone who stands in his way.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسامسون به Tyndalston باز می گردد، شهری که او را به سختی شکل داد، جایی که هر مبارزه نزدیک است و هر فراری به دست می آید. او بیش از آنچه که بتواند بپردازد به افراد خطرناک بدهکار است و آنها از خواهرش برای زور زدن دست او استفاده می کنند. تیک تاک ساعت است. تنها راه نجات از طریق هر کسی است که در راه او ایستاده است."
   }
 ]
