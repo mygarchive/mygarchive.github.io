@@ -8102,5 +8102,46 @@
     },
     "description_en": "Flow with Naiad across a mysterious river and interact with its fauna and flora to discover little secrets. Enjoy a wholesome experience with an original visual style.Learn to swim like a duck, dive like a fish, dash like a frog and meet other adorable friends like butterflies, rabbits, turtles, snakes, and crocodiles. Help them find their way and avoid obstacles.A journey in 16 episodes that will take you through beautiful and strange places like a spring, a forest, a cave, a lake, an orchard... until you reach the sea.Developed by a solo dev who has pampered every detail to create a very personal and unique game.\nTake a refreshing and serene swim where you can explore a peaceful river at your own pace.Embark on an emotional journey of growth to reach the sea. Play with friendly and adorable animals and make flowers sprout as you sing.Beautiful visuals and sound design helps you feel like you're diving underwater and flowing among floating leaves and flowers. In each zone you will discover new animals and little secrets, with different atmosphere and music as the day progresses.\nJoin little Naiad on an adventure to protect nature from certain humans who try to take advantage of the river and pollute it.Will you be able to guide and help the animals find their way?",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا نایاد از رودخانه ای مرموز عبور کنید و با جانوران و گیاهان آن تعامل داشته باشید تا اسرار کوچکی را کشف کنید. از یک تجربه مفید با سبک بصری اصیل لذت ببرید. شنا کردن مانند اردک، شیرجه رفتن مانند ماهی، دویدن مانند قورباغه و دیدار با دوستان شایان ستایش مانند پروانه ها، خرگوش ها، لاک پشت ها، مارها و تمساح ها را بیاموزید. به آنها کمک کنید راه خود را پیدا کنند و از موانع دوری کنند. سفری در 16 قسمت که شما را در مکان های زیبا و عجیبی مانند چشمه، جنگل، غار، دریاچه، باغ میوه ... تا رسیدن به دریا می برد. توسط یک توسعه دهنده انفرادی که تمام جزئیات را برای ایجاد یک بازی بسیار شخصی و منحصر به فرد طراحی کرده است.\nیک شنای با طراوت و آرام داشته باشید، جایی که می توانید رودخانه ای آرام را با سرعت خود کاوش کنید. برای رسیدن به دریا، یک سفر احساسی رشد را آغاز کنید. با حیوانات دوست‌داشتنی و دوست‌داشتنی بازی کنید و هنگام آواز خواندن، گل‌ها را جوانه بزنید. طراحی زیبا و بصری صدا به شما کمک می‌کند احساس کنید در زیر آب شیرجه می‌زنید و در میان برگ‌ها و گل‌های شناور در جریان هستید. در هر منطقه شما حیوانات جدید و اسرار کوچک را با فضا و موسیقی متفاوت در طول روز کشف خواهید کرد.\nبه نایاد کوچولو در یک ماجراجویی بپیوندید تا از طبیعت در برابر انسان های خاصی که سعی در سوء استفاده از رودخانه و آلوده کردن آن دارند محافظت کنید. آیا می توانید به حیوانات کمک کنید تا راه خود را پیدا کنند؟"
+  },
+  {
+    "id": 5265,
+    "name": "Need For Speed Carbon",
+    "background_image": "https://media.rawg.io/media/games/35f/35f815a22c4678b4fe76073f0f56df8e.jpg",
+    "rating": 3.95,
+    "metacritic": 77,
+    "released": "2006-10-30",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 20,
+    "developers": "Electronic Arts Black Box, Rovio Mobile",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20For%20Speed%20Carbon",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/2a7/2a791437591cc550259f913b0bd22749.jpg",
+      "https://media.rawg.io/media/screenshots/6d7/6d7a74dbaa11a6034cec0c6644b4f543.jpg",
+      "https://media.rawg.io/media/screenshots/8e4/8e4c5536af6c3843f0839d094235abe5.jpg",
+      "https://media.rawg.io/media/screenshots/d78/d78c5f85f81b1fb8fbb69fd64fc0ec7f.jpg",
+      "https://media.rawg.io/media/screenshots/04e/04e66530954f5f6ef8addacfeb66d9f6.jpg",
+      "https://media.rawg.io/media/screenshots/a2d/a2d8b0dd41b45dc24dd356bd87e25e1b.jpg",
+      "https://media.rawg.io/media/games/35f/35f815a22c4678b4fe76073f0f56df8e.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Need for Speed™ Carbon takes handheld racing to a whole new level with all-new crew-based gameplay and an exclusive east coast open-world city. Settle an ongoing turf war by building an unstoppable crew, winning races against your fiercest rivals, and outwitting the cops. How you choose and manage your crew will be the difference between victory and defeat. The city is yours for the taking with Need for Speed™ Carbon, the ultimate in handheld racing.\nSoftware subject to license (us.playstation.com/softwarelicense).  Online activity subject to Terms of Services and User Agreement (www.sonyenteretainmentnetwork.com/terms-of-service).\n© 2009 Electronic Arts Inc. Trademarks belong to their respective owners. All rights reserved.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed™ Carbon مسابقات دستی را با گیم پلی کاملاً جدید مبتنی بر خدمه و یک شهر جهان باز انحصاری ساحل شرقی به سطح جدیدی می برد. با ساختن یک خدمه غیرقابل توقف، برنده شدن در رقابت‌ها در برابر سرسخت‌ترین رقبای خود، و فریب دادن پلیس‌ها، یک جنگ مداوم در چمن را حل کنید. نحوه انتخاب و مدیریت خدمه خود تفاوت بین پیروزی و شکست خواهد بود. این شهر با Need for Speed™ Carbon، بهترین بازی در مسابقات دستی، متعلق به شماست.\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense).  فعالیت آنلاین مشمول شرایط خدمات و قرارداد کاربر (www.sonyenteretainmentnetwork.com/terms-of-service).\n© 2009 Electronic Arts Inc. علائم تجاری متعلق به صاحبان مربوطه می باشد. تمامی حقوق محفوظ است."
   }
 ]
