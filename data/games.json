@@ -8626,5 +8626,46 @@
     },
     "description_en": "Need for Speed: Underground 2 is a cross-platform racing video game and the eighth installment in the popular Need for Speed driving game series published and developed by Electronic Arts. Released in 2004, it is the direct sequel to Need for Speed: Underground, and is part of the Need for Speed series, available on Microsoft Windows, Game Boy Advance, GameCube, PlayStation 2, Xbox, PlayStation Portable, Nintendo DS and mobile phones. Like its predecessor, it was also commercially successful, breaking sales records in the United Kingdom.\nThe game entails tuning cars for street races, resuming the Need for Speed: Underground storyline. Need for Speed: Underground 2 provides several new features, such as a broader customization, new methods of selecting races, the \"explore\" mode (similar to the Midnight Club series, in a large city known as \"Bayview\"). The City Center was based on Philadelphia, Beacon Hill was based on Beverly Hills and Coal Harbor was based on Camden, New Jersey, and Bayview as a whole is a microcosm of the west coast of the United States. Underground 2 also introduces several SUVs, which could be customized as extensively as other Underground 2 vehicles and used to race against other SUV racers. Brooke Burke is the voice of Rachel Teller, the person who guides the player throughout the game.\nThe game has been ported to PlayStation Portable, under the title of Need for Speed: Underground Rivals. The Nintendo DS port introduces a new feature in which the player",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed: Underground 2 یک بازی ویدئویی مسابقه ای چند پلتفرمی و هشتمین قسمت از سری بازی های رانندگی محبوب Need for Speed ​​است که توسط Electronic Arts منتشر و توسعه یافته است. این بازی که در سال 2004 منتشر شد، دنباله مستقیم Need for Speed: Underground است و بخشی از سری Need for Speed ​​است که در Microsoft Windows، Game Boy Advance، GameCube، PlayStation 2، Xbox، PlayStation Portable، Nintendo DS و تلفن های همراه موجود است. مانند سلف خود، از نظر تجاری نیز موفق بود و رکوردهای فروش را در بریتانیا شکست.\nاین بازی مستلزم تنظیم ماشین‌ها برای مسابقات خیابانی، از سرگیری داستان Need for Speed: Underground است. Need for Speed: Underground 2 چندین ویژگی جدید مانند سفارشی سازی گسترده تر، روش های جدید انتخاب مسابقات، حالت \"کاوش\" (مشابه سری Midnight Club، در شهری بزرگ به نام \"Bayview\") ارائه می دهد. مرکز شهر در فیلادلفیا، بیکن هیل در بورلی هیلز و بندر زغال سنگ در کامدن، نیوجرسی، و Bayview به عنوان یک کل جهان کوچکی از سواحل غربی ایالات متحده است. Underground 2 همچنین چندین SUV را معرفی می کند که می توانند به طور گسترده مانند سایر وسایل نقلیه Underground 2 سفارشی شوند و برای مسابقه با سایر خودروهای SUV استفاده شوند. Brooke Burke صدای ریچل تلر است، شخصی که بازیکن را در طول بازی راهنمایی می کند.\nاین بازی تحت عنوان Need for Speed: Underground Rivals برای PlayStation Portable پورت شده است. پورت Nintendo DS یک ویژگی جدید را معرفی می کند که در آن پخش کننده"
+  },
+  {
+    "id": 19633,
+    "name": "Need For Speed: Hot Pursuit",
+    "background_image": "https://media.rawg.io/media/games/367/367463d43c2a1465f27e830b5b1334ee.jpg",
+    "rating": 3.86,
+    "metacritic": 86,
+    "released": "2010-11-16",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 3,
+    "developers": "Electronic Arts, Criterion Games",
+    "steam_link": "https://store.steampowered.com/app/1328660/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/fcd/fcd2de939064eff5a8b6b53cca256e07.jpg",
+      "https://media.rawg.io/media/screenshots/a40/a4083dff4da425436f28daa91059914d.jpg",
+      "https://media.rawg.io/media/screenshots/ece/ece127829ebfd354e1c7044d3695c3b4.jpg",
+      "https://media.rawg.io/media/screenshots/49a/49a5c4ada5939dd932096907757629e3.jpg",
+      "https://media.rawg.io/media/screenshots/970/9707821ac12b01f8ae0d605a8472d464.jpg",
+      "https://media.rawg.io/media/screenshots/a4b/a4b9988573b5c5750b7d55c4b565ddef.jpg",
+      "https://media.rawg.io/media/games/367/367463d43c2a1465f27e830b5b1334ee.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP SP3, Windows XP 64-bit SP2, Windows Vista SP2 (32- or 64-bit), or Windows 7 (32- or 64-bit). (Not Supported - Windows 95, Windows 98, Windows ME, Windows NT 4.0, and Windows 2000 are not supported.)\nProcessor: Intel Core® 2 Duo 2.0 GHZ or AMD Athlon X2 64 2.4GHZ; 1.5 GB Windows® XP / 2 GB Windows Vista® - Windows 7®\nMemory: 1GB (XP), 1.5GB (Vista), 1.5 GB (Windows 7)\nHard Disk Space: 8 GB free hard disk space.  Additional space required for DirectX 9.0c installation and for saved games\nVideo Card: DirectX® 9.0c Compatible 3D-accelerated 256 MB video card with Shader Model 3.0* or higher\nSound Card: DirectX 9.0c Compatible Sound Card\nDVD-ROM: 8X speed DVD-ROM drive (Disc Users only)\nOnline Gameplay: Broadband connection for online activation and online gameplay - 512 Kbps or faster\nDirect X®: DirectX 9.0c",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Need For Speed: Hot Pursuit is an arcade racing game, where you complete missions switching between a police officer and a racer. While the goal is the same - to reach the finish first, the game allows trying another side of races as you need to stop a lawbreaker in the police part of the game.\nUnlike typical racing titles, Hot Pursuit follows the principle that \"all is fair.\" That's why both sides have special tools to stop the opponent. You can throw spikes on the road or use turbo acceleration to break away from the pursuit. Police can block the road and summon a helicopter for help from above. \nAdditionally, Hot Pursuit features a new Autolog social system. With it, you can compete with your friends and see the statistics on every race. The system compares your results with your friends' ones and notifies you every time your record is beaten.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed For Speed: Hot Pursuit یک بازی مسابقه ای آرکید است که در آن ماموریت ها را با جابجایی بین یک افسر پلیس و یک مسابقه دهنده تکمیل می کنید. در حالی که هدف یکسان است - برای اولین بار رسیدن به پایان، بازی اجازه می دهد تا طرف دیگری از مسابقات را امتحان کنید زیرا باید یک قانون شکن را در بخش پلیس بازی متوقف کنید.\nبر خلاف عناوین معمولی مسابقه ای، Hot Pursuit از این اصل پیروی می کند که \"همه چیز منصفانه است\". به همین دلیل است که هر دو طرف ابزار خاصی برای متوقف کردن حریف دارند. شما می توانید سنبله ها را در جاده پرتاب کنید یا از شتاب توربو برای دور شدن از تعقیب استفاده کنید. پلیس می تواند جاده را مسدود کند و یک هلیکوپتر را برای کمک از بالا احضار کند. \nعلاوه بر این، Hot Pursuit دارای یک سیستم اجتماعی جدید Autolog است. با آن می توانید با دوستان خود به رقابت بپردازید و آمار هر مسابقه را مشاهده کنید. این سیستم نتایج شما را با نتایج دوستانتان مقایسه می کند و هر بار که رکورد شما شکسته می شود به شما اطلاع می دهد."
   }
 ]
