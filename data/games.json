@@ -7069,5 +7069,46 @@
     },
     "description_en": "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfill a deeply personal quest. \r\n\r\nHis vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… And teach his son to do the same. This startling reimagining of God of War deconstructs the core elements that defined the series—satisfying combat; breathtaking scale; and a powerful narrative—and fuses them anew. \r\n\r\nKratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son. \r\n\r\nFrom the marble and columns of ornate Olympus to the gritty forests, mountains, and caves of Pre-Viking Norse lore, this is a distinctly new realm with its own pantheon of creatures, monsters, and gods. With an added emphasis on discovery and exploration, the world will draw players in to explore every inch of God of War’s breathtakingly threatening landscape—by far the largest in the franchise. \r\n\r\nWith an over the shoulder free camera that brings the player closer to the action than ever before, fights in God of War mirror the pantheon of Norse creatures Kratos will face: grand, gritty, and grueling. A new main weapon and new abilities retain the defining ",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین یک شروع جدید برای کریتوس است. او که به عنوان مردی خارج از سایه خدایان زندگی می‌کند، همراه با پسرش آترئوس وارد وحشی اسکاندیناوی می‌شود و برای انجام یک تلاش عمیقاً شخصی مبارزه می‌کند. \r\n\r\nکریتوس انتقامش از خدایان المپوس را سالها پشت سر گذاشت و اکنون به عنوان یک مرد در قلمرو خدایان نورس و هیولاها زندگی می کند. در این دنیای خشن و نابخشودنی است که او باید برای زنده ماندن بجنگد... و به پسرش بیاموزد که همین کار را انجام دهد. این بازسازی شگفت‌انگیز از God of War، عناصر اصلی را که سریال را تعریف می‌کردند، تجزیه می‌کند - نبرد رضایت‌بخش. مقیاس نفس گیر; و یک روایت قدرتمند - و آنها را از نو ترکیب می کند. \r\n\r\nکریتوس دوباره پدر شد. به عنوان مربی و محافظ آترئوس، پسری که مصمم است احترام خود را به دست آورد، او مجبور می شود با خشمی که مدت هاست او را تعریف کرده است کنار بیاید و آن را کنترل کند، در حالی که با پسرش در دنیای بسیار خطرناکی زندگی می کند. \r\n\r\nاز سنگ مرمر و ستون‌های المپ پرآذین گرفته تا جنگل‌های شنی، کوه‌ها، و غارهای افسانه‌های اسکاندیناوی پیش از وایکینگ‌ها، این یک قلمرو کاملاً جدید با موجودات، هیولاها و خدایان خاص خود است. با تأکید بیشتر بر اکتشاف و اکتشاف، جهان بازیکنان را برای کاوش در هر اینچ از مناظر خیره‌کننده God of War جذب می‌کند - تا حد زیادی بزرگترین در این فرنچایز. \r\n\r\nبا یک دوربین بدون روی شانه که بازیکن را بیش از هر زمان دیگری به اکشن نزدیک می کند، مبارزات در خدای جنگ آینه ای از پانتئون موجودات اسکاندیناوی کریتوس است: بزرگ، سنگدل و طاقت فرسا. یک سلاح اصلی جدید و توانایی‌های جدید تعیین کننده هستند"
+  },
+  {
+    "id": 677164,
+    "name": "Grand Theft Auto: The Trilogy – The Definitive Edition",
+    "background_image": "https://media.rawg.io/media/games/051/0518bc19ba710a13d58620723ef8b3f7.jpg",
+    "rating": 2.08,
+    "metacritic": null,
+    "released": "2021-11-11",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Grove Street Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Grand%20Theft%20Auto%3A%20The%20Trilogy%20%E2%80%93%20The%20Definitive%20Edition",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6c6/6c69946798770b365a22f890f751699d.jpg",
+      "https://media.rawg.io/media/screenshots/4f0/4f055de374819f1e3b16de2c75e4c424.jpg",
+      "https://media.rawg.io/media/screenshots/9ed/9ed734cfcfde5d5fac5674797b7460f7_0QbSFOy.jpg",
+      "https://media.rawg.io/media/screenshots/7bc/7bc800df881ab69a5c6d4722939867c5.jpg",
+      "https://media.rawg.io/media/screenshots/f24/f247e18b2d3634004a5d2b68fbf56ccf.jpg",
+      "https://media.rawg.io/media/screenshots/c09/c0971c7a3c579f76f047efb52d317d6c.jpg",
+      "https://media.rawg.io/media/games/051/0518bc19ba710a13d58620723ef8b3f7.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Three iconic cities, three epic stories. Play the genre-defining classics of the original Grand Theft Auto Trilogy: Grand Theft Auto III, Grand Theft Auto: Vice City and Grand Theft Auto: San Andreas updated for a new generation, now with across-the-board enhancements including brilliant new lighting and environmental upgrades, with high-resolution textures, increased draw distances, Grand Theft Auto V-style controls and targeting, and much more, bringing these beloved worlds to life with all new levels of detail.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسه شهر نمادین، سه داستان حماسی. کلاسیک‌های تعیین‌کننده ژانر سه‌گانه اصلی Grand Theft Auto: Grand Theft Auto III، Grand Theft Auto: Vice City و Grand Theft Auto: San Andreas به‌روزرسانی شده برای نسل جدید، اکنون با پیشرفت‌های سراسری از جمله نورپردازی جدید و به‌روزرسانی‌های محیطی، با بافت‌های با وضوح بالا، افزایش فاصله‌های کششی، افزایش فاصله‌های کششی، افزایش فاصله‌های کششی، افزایش فاصله‌ها و کنترل‌های بیشتر در جهان سطوح جدید جزئیات"
   }
 ]
