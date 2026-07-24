@@ -7230,5 +7230,53 @@
     },
     "description_en": "Heavy Rain is an interactive drama telling the story of the investigation of a serial murder’s case. Players assume roles of four people – Ethan Mars, Norman Jayden, Madison Paige, and Scott Shelby – somehow involved in the case of Origami Killer, who is used to leave his victims alone, marked with origami figures. It soon reveals that all Origami Killer’s murders are connected with weather changes (actually heavy rains). In the course of the completion, players will follow the characters on their way to the key of the murderer’s mystery. Heavy Rain is an unusual action-adventure game. All four main characters are controlled from the third-person perspective with only several buttons, as the interaction with the environment is usually done by activating on-screen prompts like holding the trigger, pushing a button, positioning the stick, or all in one. The gameplay consists of multiple scenes, which affect the further in-game progress by the players’ choice and create a branching storyline that can lead to various endings including the death of certain main characters.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nباران شدید یک درام تعاملی است که داستان تحقیق در مورد یک قتل زنجیره ای را روایت می کند. بازیکنان نقش چهار نفر - ایتان مارس، نورمن جیدن، مدیسون پیج و اسکات شلبی را بر عهده می‌گیرند - به نوعی درگیر پرونده قاتل اوریگامی هستند که برای تنها گذاشتن قربانیانش با فیگورهای اوریگامی استفاده می‌شود. به زودی نشان می دهد که تمام قتل های قاتل اوریگامی با تغییرات آب و هوایی (در واقع باران های شدید) مرتبط است. در طول تکمیل، بازیکنان شخصیت‌ها را در راه رسیدن به کلید رمز و راز قاتل دنبال می‌کنند. Heavy Rain یک بازی اکشن ماجراجویی غیرمعمول است. هر چهار شخصیت اصلی از منظر سوم شخص تنها با چندین دکمه کنترل می‌شوند، زیرا تعامل با محیط معمولاً با فعال کردن اعلان‌های روی صفحه مانند نگه داشتن ماشه، فشار دادن یک دکمه، قرار دادن چوب یا همه در یک انجام می‌شود. گیم پلی شامل صحنه های متعددی است که با انتخاب بازیکنان بر پیشرفت بیشتر در بازی تاثیر می گذارد و یک خط داستانی منشعب ایجاد می کند که می تواند به پایان های مختلفی از جمله مرگ برخی از شخصیت های اصلی منجر شود."
+  },
+  {
+    "id": 12536,
+    "name": "Hellblade: Senua's Sacrifice",
+    "background_image": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
+    "rating": 4.22,
+    "metacritic": 83,
+    "released": "2017-08-07",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "Ninja Theory",
+    "steam_link": "https://store.steampowered.com/app/414340/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686495/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256686495/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/662/66282cb9d0c743ca5d8cb8a1585c8207.jpg",
+      "https://media.rawg.io/media/screenshots/ab2/ab28d353366cb9ed674758a25a3763e7.jpg",
+      "https://media.rawg.io/media/screenshots/e43/e4362535f3d105d23315c5780ed67f8b.jpg",
+      "https://media.rawg.io/media/screenshots/567/567f1353c4163e59236450ea29136b51.jpg",
+      "https://media.rawg.io/media/screenshots/d83/d83116e14bfdfeb89a530334072c3051.jpg",
+      "https://media.rawg.io/media/screenshots/261/2616c962157e03b5adae8686427aaa18.jpg",
+      "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7, 8, 10\r\n\r\nProcessor: Intel i5 3570K / AMD FX-8350\r\n\r\nMemory: 8 GB RAM\r\n\r\nGraphics: GTX 770 with 2GB VRAM / Radeon R9 280X 3GB\r\n\r\nDirectX: Version 11\r\n\r\nStorage: 30 GB available space\r\n\r\nAdditional Notes: Minimum spec screen resolution: 1280x720",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "A dark fantasy game that takes inspiration from Scandinavian and Celtic folklore, Hellblade is set in a gritty barbarian world full of weird wooden structures and creepily masked enemies. \r\n\r\nThe player assumes the role of Senua, a traumatized female warrior from the Pict tribe. She suffers from a growing psychosis after her lover Dillion was brutally murdered by Vikings. Carrying his severed head, Senua sets out to Helheim, the underworld of the dead, to bring her lover's soul back. Her grim and bloody journey mirrors her descent into madness. It becomes increasingly difficult for her (and, thus, the player) to tell fact from fantasy, as she hears voices in her head and sees hallucinations. \r\n\r\nWhen not fighting her enemies, Senua has to solve puzzles to move forward. This is where her distorted perception actually comes out handy, enabling her to \"focus\" and see what regular people can not. The ghostly voices, recorded using the binaural method to create an eery effect, also help to guide Senua or to warn her about dangers. All of Senua movements, expressions and reactions were recorded through motion capture to make them more realistic and emotional.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nHellblade یک بازی فانتزی تاریک که از فولکلور اسکاندیناوی و سلتیک الهام گرفته است، در یک دنیای وحشیانه پر از سازه‌های چوبی عجیب و غریب و دشمنانی که به طرز وحشتناکی نقاب دارند می‌گذرد. \r\n\r\nبازیکن نقش Senua، یک زن جنگجوی آسیب دیده از قبیله Pict را بر عهده می گیرد. او پس از قتل وحشیانه معشوقش دیلیون توسط وایکینگ ها از روان پریشی رنج می برد. سنوا با حمل سر بریده خود به هلهایم، دنیای اموات مردگان می رود تا روح معشوقش را بازگرداند. سفر تلخ و خونین او آینه هبوط او به جنون است. تشخیص واقعیت از روی خیال برای او (و بنابراین، بازیکن) به طور فزاینده ای دشوار می شود، زیرا صداهایی را در سرش می شنود و توهم می بیند. \r\n\r\nوقتی سنوا با دشمنانش مبارزه نمی‌کند، باید پازل‌هایی را حل کند تا به جلو برود. اینجاست که ادراک تحریف شده او در واقع مفید است و او را قادر می‌سازد تا \"تمرکز\" کند و ببیند که مردم عادی چه چیزی را نمی‌توانند ببینند. صداهای شبح مانند، ضبط شده با استفاده از روش دو گوش برای ایجاد یک اثر ترسناک، همچنین به راهنمایی Senua یا هشدار دادن به او در مورد خطرات کمک می کند. تمام حرکات، عبارات و واکنش های Senua از طریق موشن کپچر ثبت شد تا آنها را واقعی تر و احساسی تر کند."
   }
 ]
