@@ -6350,5 +6350,48 @@
     },
     "description_en": "YOU ARE THE SUPER WEAPON IN A MEDIEVAL WAR AGAINST HELL",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما سلاح فوق العاده در جنگ قرون وسطایی علیه جهنم هستید"
+  },
+  {
+    "id": 2454,
+    "name": "DOOM (2016)",
+    "background_image": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg",
+    "rating": 4.38,
+    "metacritic": 85,
+    "released": "2016-05-12",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 10,
+    "developers": "Bethesda Softworks, id Software, Panic Button, Tango Gameworks, Escalation Studios, Certain Affinity, Digital Domain, BattleCry Studios",
+    "steam_link": "https://store.steampowered.com/search/?term=DOOM%20(2016)",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256677412/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256677412/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/353/353c1e834e7da7d6ceaa6beaff529c29.jpg",
+      "https://media.rawg.io/media/screenshots/e50/e50f822107b8cc6af57aa21d76524149.jpg",
+      "https://media.rawg.io/media/screenshots/ae9/ae9e9f7bfe19c63bd16151f81f81a7ed.jpg",
+      "https://media.rawg.io/media/screenshots/14e/14e33eccb109558b0524761340ff2023.jpg",
+      "https://media.rawg.io/media/screenshots/45d/45d16955ac9e90141b726684a07db02a.jpg",
+      "https://media.rawg.io/media/screenshots/b77/b77629938389a41160d3b2a56eaed568.jpg",
+      "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows7,Windows8,Windows10\nProcessor: Intel cpu i3\nMemory: 4 GB RAM\nGraphics: GTX 650\nStorage: 2 GB available space\nSound Card: Realtek",
+      "recommended": "OS: Windows7,Windows8,Windows10\nProcessor: Intel cpu i5\nMemory: 8 GB RAM\nGraphics: GTX 770\nStorage: 4 GB available space\nSound Card: Realtek"
+    },
+    "description_en": "Return of the classic FPS, Doom (2016) acts as a reboot of the series and brings back the Doomslayer, protagonist of the original Doom games. In order to solve the energy crisis, humanity learned to harvest the energy from Hell, and when something went wrong and a demon invasion has started, it’s up to the player to control the Doomslayer and destroy the evil.\n\nDoom is a fast-paced game that restores the concept of instant health packs and leaves the player against armies of Hell with no cover, no health regeneration, or help from anyone. After damaging monsters enough, they will start glowing, which will allow players to perform glory kills to restore some health. While exploring the levels, players will come across secrets, collectible items, or upgrade points for the weapons and armor. The single-player campaign silent protagonist has a noticeable personality. He gets visibly annoyed and angry in his actions during expository cutscenes and forces his way through the game. Multiplayer maps gather players in Deathmatch/”king-of-the-hill” type game modes, with all the weapons from the single-player campaign.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازگشت FPS کلاسیک، Doom (2016) به عنوان راه‌اندازی مجدد این سری عمل می‌کند و Doomslayer، شخصیت اصلی بازی‌های Doom را بازمی‌گرداند. برای حل بحران انرژی، بشریت یاد گرفت که انرژی را از جهنم برداشت کند، و وقتی مشکلی پیش آمد و حمله شیطان آغاز شد، این به بازیکن بستگی دارد که Doomslayer را کنترل کند و شیطان را نابود کند.\n\nDoom یک بازی سریع است که مفهوم بسته های سلامتی فوری را بازیابی می کند و بازیکن را در مقابل ارتش های جهنم بدون پوشش، بدون بازسازی سلامتی یا کمک کسی رها می کند. پس از آسیب کافی به هیولاها، آنها شروع به درخشش می کنند، که به بازیکنان اجازه می دهد تا برای بازگرداندن سلامتی، قتل های شکوهی انجام دهند. در حین کاوش در سطوح، بازیکنان با اسرار، آیتم های کلکسیونی یا امتیاز ارتقاء سلاح ها و زره ها روبرو می شوند. قهرمان بی صدا کمپین تک نفره شخصیت قابل توجهی دارد. او در حین کات سین های نمایشی به طرز آشکاری از کارهایش آزرده و عصبانی می شود و مجبور می شود در بازی راه بیفتد. نقشه های چند نفره بازیکنان را در حالت های بازی Deathmatch/\"King-of-the-hill\" با تمام سلاح های کمپین تک نفره جمع آوری می کند."
   }
 ]
