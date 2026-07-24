@@ -9126,5 +9126,41 @@
     },
     "description_en": "NEW IN THE DEFINITIVE EDITION\n• Packed with new and additional content: New areas, new secrets, new abilities, more story sequences, multiple difficulty modes, full backtracking support and much more!\n• Discover Naru’s past in two brand new environments.\n• Master two powerful new abilities – Dash and Light Burst.\n• Find new secret areas and explore Nibel faster by teleporting between Spirit Wells.\nThe forest of Nibel is dying. After a powerful storm sets a series of devastating events in motion, Ori must journey to find courage and confront a dark nemesis to save the forest of Nibel. “Ori and the Blind Forest” tells the tale of a young orphan destined for heroics, through a visually stunning Action-Platformer crafted by Moon Studios. Featuring hand-painted artwork, meticulously animated character performance, a fully orchestrated score and dozens of new features in the Definitive Edition, “Ori and the Blind Forest” explores a deeply emotional story about love and sacrifice, and the hope that exists in us all.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجدید در نسخه قطعی\n• مملو از محتوای جدید و اضافی: مناطق جدید، اسرار جدید، توانایی های جدید، توالی داستان بیشتر، حالت های دشواری چندگانه، پشتیبانی کامل از عقب نشینی و بسیاری موارد دیگر!\n• گذشته نارو را در دو محیط کاملاً جدید کشف کنید.\n• تسلط بر دو توانایی جدید قدرتمند - Dash و Light Burst.\n• مناطق مخفی جدید را پیدا کنید و با انتقال از راه دور بین Spirit Wells، نیبل را سریعتر کشف کنید.\nجنگل نیبل در حال مرگ است. پس از وقوع یک طوفان قدرتمند مجموعه ای از حوادث ویرانگر را به راه می اندازد، اوری باید برای یافتن شجاعت و مقابله با دشمن تاریک برای نجات جنگل نیبل سفر کند. «Ori and the Blind Forest» داستان یک یتیم جوان را روایت می‌کند که مقصد آن قهرمانی است، از طریق یک Action-Platformer از لحاظ بصری خیره‌کننده که توسط استودیو مون ساخته شده است. «Ori and the Blind Forest» با آثار هنری نقاشی شده با دست، اجرای شخصیت‌های متحرک با دقت، موسیقی کاملاً هماهنگ و ده‌ها ویژگی جدید در نسخه قطعی، داستانی عمیقاً احساسی درباره عشق و فداکاری و امیدی را که در همه ما وجود دارد را بررسی می‌کند."
+  },
+  {
+    "id": 52998,
+    "name": "Grand Theft Auto",
+    "background_image": "https://media.rawg.io/media/games/786/786f9a212646c793ccbad196cba2cf36.jpg",
+    "rating": 3.86,
+    "metacritic": null,
+    "released": "1997-10-21",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 1,
+    "developers": "DMA Design, Visual Sciences, Tarantula Studios",
+    "steam_link": "https://store.steampowered.com/app/3240220/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8f5/8f577f88855945518d24edf59dba9dff.jpg",
+      "https://media.rawg.io/media/screenshots/aab/aabcb87421c5e3f5af4ac39d62b01eae.jpg",
+      "https://media.rawg.io/media/screenshots/311/31181ab4311854dcccb0da8dcb25a8d1.jpg",
+      "https://media.rawg.io/media/screenshots/ab1/ab1f0c435afa5678392dae0da2db484e.jpg",
+      "https://media.rawg.io/media/screenshots/9b7/9b7995efbe72ca11c11bdc0101c69eae.jpg",
+      "https://media.rawg.io/media/screenshots/afb/afbe0f8a33778e5434155eaf9b97076b.jpg",
+      "https://media.rawg.io/media/games/786/786f9a212646c793ccbad196cba2cf36.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Grand Theft Auto is an action-adventure game with an isometric view, the first installment of the Grand Theft Auto series.\r\n\r\n###Location and plot\r\nThe game takes place in 3 different cities, each one resembling real-life counterparts such as Miami, New York City and San Francisco. The world of the game is only restricted by traveling from one city to another, while the cities themselves are free to explore. The plot is expressed in the form of various missions, where the playable character receives general instructions through a phone call, or otherwise. \r\n\r\n###Gameplay\r\nEach mission in the game has a set goal of in-game points, awarded for successful completion of mission’s requirements, and sometimes causing mayhem for the sake of it. Completion of these missions allows the player to move on to more difficult tasks, and eventually, another chapter in other cities. The player often has to steal vehicles, sell them for profit, perform roadkills and escape the police, as the number of attempts for each mission is limited.\r\n\r\n###Graphics and reception\r\nThe game features a simplistic style for graphics, sacrificing different animations and sprites in favor of just being fun to play. At the time of release, in late 1997-1998, Grand Theft Auto offered unique arcade gameplay with an open world, where players could do anything they wanted, which, of course, was the key to overwhelming success of the game.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nGrand Theft Auto یک بازی اکشن ماجراجویی با نمای ایزومتریک، اولین قسمت از سری Grand Theft Auto است.\r\n\r\n###موقعیت و طرح\r\nبازی در 3 شهر مختلف اتفاق می افتد که هر کدام شبیه همتایان واقعی مانند میامی، نیویورک و سانفرانسیسکو هستند. دنیای بازی تنها با سفر از شهری به شهر دیگر محدود می‌شود، در حالی که خود شهرها آزاد هستند. طرح در قالب ماموریت های مختلفی بیان می شود، جایی که شخصیت قابل بازی دستورالعمل های کلی را از طریق تماس تلفنی یا موارد دیگر دریافت می کند. \r\n\r\n###بازی\r\nهر ماموریت در بازی دارای هدف مشخصی از امتیازات درون بازی است که برای انجام موفقیت آمیز الزامات ماموریت و گاهی اوقات باعث ایجاد ضرب و شتم به خاطر آن می شود. انجام این ماموریت ها به بازیکن این امکان را می دهد که به سمت کارهای دشوارتر و در نهایت فصلی دیگر در شهرهای دیگر برود. بازیکن اغلب مجبور است وسایل نقلیه را بدزدد، آنها را برای سود بفروشد، جاده کشی کند و از دست پلیس فرار کند، زیرا تعداد تلاش برای هر ماموریت محدود است.\r\n\r\n###گرافیک و پذیرایی\r\nاین بازی دارای سبکی ساده برای گرافیک است و انیمیشن ها و اسپریت های مختلف را قربانی سرگرمی بودن بازی می کند. در زمان انتشار، در اواخر سال‌های 1997-1998، Grand Theft Auto گیم‌پلی آرکید منحصربه‌فردی را با دنیای باز ارائه کرد، جایی که بازیکنان می‌توانستند هر کاری را که می‌خواهند انجام دهند، که البته کلید موفقیت قاطع بازی بود."
   }
 ]
