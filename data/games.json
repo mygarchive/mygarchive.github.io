@@ -8503,5 +8503,46 @@
     },
     "description_en": "Shift is the thirteenth Need for Speed game. It is considered one of the most hardcore installments of the series. Unlike many of its predecessors, it is oriented towards the actual driving simulation rather than arcade racing.\n\n###Gameplay\nThe creators of Shift aimed to realistically imitate the driving experience, making the game harder than an average NFS game. However, Shift automatically adjusts the difficulty depending on the player's experience and skills. Before the player enters the career, he or she has to complete a test drive at the famous Brands Hatch track to familiarize the game with his or her driving abilities. \n\n###Cars\nNeed for Speed: Shift offers a roster of more than 60 vehicles. As in most Need for Speed games, the player starts with a small amount of money and only a handful of available vehicles. To unlock and purchase better cars, the player has to win races. The cars in Need for Speed: Shift consists of four classes called \"tiers\". The lowest tier contains the cheapest and slowest cars, while supercars from manufacturers like Lamborghini and Bugatti belong to the higher tiers. \n\nThe game also has a detailed modification system. The player can customize not only the car's look but also its important details like tires and aerodynamics.\n\n###Tracks\nAs the player progresses, he or she may unlock new levels. Some of them are based on real-life tracks of Formula One fame, including Spa-Francorchamps, Nurburgring, Silverstone and Laguna Seca. Others are pur",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nShift سیزدهمین بازی Need for Speed ​​است. این یکی از هاردکورترین قسمت های این سری به حساب می آید. بر خلاف بسیاری از پیشینیان خود، به سمت شبیه سازی واقعی رانندگی به جای مسابقات آرکید گرایش دارد.\n\n###بازی\nهدف سازندگان Shift تقلید واقع بینانه از تجربه رانندگی بود که بازی را سخت تر از یک بازی متوسط NFS کرد. با این حال، Shift به طور خودکار سختی را بسته به تجربه و مهارت بازیکن تنظیم می کند. قبل از اینکه بازیکن وارد حرفه شود، باید یک تست درایو در پیست معروف Brands Hatch انجام دهد تا بازی را با توانایی های رانندگی خود آشنا کند. \n\n###ماشین ها\nNeed for Speed: Shift فهرستی از بیش از 60 وسیله نقلیه را ارائه می دهد. مانند اکثر بازی‌های Need for Speed، بازیکن با مقدار کمی پول و فقط تعداد انگشت شماری وسایل نقلیه در دسترس شروع می‌کند. برای باز کردن و خرید ماشین های بهتر، بازیکن باید در مسابقات برنده شود. اتومبیل‌های Need for Speed: Shift از چهار کلاس به نام‌های «سطوح» تشکیل شده است. پایین‌ترین طبقه شامل ارزان‌ترین و کندترین خودروها است، در حالی که سوپراسپرت‌های تولیدکنندگانی مانند لامبورگینی و بوگاتی به طبقات بالاتر تعلق دارند. \n\nبازی همچنین دارای سیستم اصلاح دقیق است. بازیکن می تواند نه تنها ظاهر خودرو، بلکه جزئیات مهم آن مانند لاستیک ها و آیرودینامیک را نیز سفارشی کند.\n\n###آهنگ\nبا پیشرفت بازیکن، ممکن است سطوح جدیدی را باز کند. برخی از آنها بر اساس آهنگ های واقعی فرمول یک، از جمله Spa-Francorchamps، Nurburgring، Silverstone و Laguna Seca هستند. دیگران خالص هستند"
+  },
+  {
+    "id": 4385,
+    "name": "Need for Speed: The Run",
+    "background_image": "https://media.rawg.io/media/games/824/8244583f6d39dda76b0fce7a516d1425.jpg",
+    "rating": 3.75,
+    "metacritic": 66,
+    "released": "2011-11-15",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 6,
+    "developers": "Electronic Arts Black Box",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20for%20Speed%3A%20The%20Run",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b90/b90b876b3fdc28befd11887c945185cf.jpg",
+      "https://media.rawg.io/media/screenshots/6bb/6bb95aa7ee293a27dd4fd13b246b33dd.jpg",
+      "https://media.rawg.io/media/screenshots/710/710001211c96301b21f2510dd7a168d1.jpg",
+      "https://media.rawg.io/media/screenshots/6e8/6e8fc8e8bf082f41c6039de492cb4dca.jpg",
+      "https://media.rawg.io/media/screenshots/ac7/ac7f449f1d0e9364fd9527f7d2c19396.jpg",
+      "https://media.rawg.io/media/screenshots/286/286e2fe12519f5900ead9341d7485fb1.jpg",
+      "https://media.rawg.io/media/games/824/8244583f6d39dda76b0fce7a516d1425.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "• From the Golden Gate to the Empire State — Compete in The Run, an illicit race across the most iconic and treacherous roads from San Francisco to New York.\n• You are Jack's Competitive Edge —  Keep Jack one step ahead of the dangers from his dark past, both inside and outside the car. It's up to you to get Jack to New York in one piece and ahead of the competition.\n• Compete in High Octane Multi-Player Racing — Pick a playlist and compete for supremacy across the United States.  Join up with your friends online to earn exclusive in-game rewards.\n1 player\nSIXAXIS Motion Sensitive\nDUALSHOCK®3\nNetwork Features\nNetwork Players 2-8\nSoftware subject to license (us.playstation.com/softwarelicense). Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n© 2011 Electronic Arts Inc.  EA, the EA logo, Need for Speed, the Need for Speed logo, the stylized ‘N’ icon, NEED FOR SPEED THE RUN, and the NEED FOR SPEED THE RUN logo are trademarks of Electronic Arts Inc. The names, designs, and logos of all products are the property of their respective owners and used by permission.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n• از گلدن گیت تا امپایر استیت - در The Run رقابت کنید، مسابقه ای غیرقانونی در نمادین ترین و خائنانه ترین جاده ها از سانفرانسیسکو به نیویورک.\n• شما مزیت رقابتی جک هستید — جک را یک قدم جلوتر از خطرات گذشته تاریک او چه در داخل و چه در خارج از ماشین نگه دارید. این به شما بستگی دارد که جک را در یک قطعه و جلوتر از رقابت به نیویورک برسانید.\n• در مسابقه چند نفره با اکتان بالا رقابت کنید — یک لیست پخش انتخاب کنید و برای برتری در سراسر ایالات متحده رقابت کنید.  برای کسب جوایز انحصاری درون بازی با دوستان خود به صورت آنلاین بپیوندید.\n1 بازیکن\nSIXAXIS Motion Sensitive\nDUALSHOCK®3\nویژگی های شبکه\nپخش کننده های شبکه 2-8\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n© 2011 Electronic Arts."
   }
 ]
