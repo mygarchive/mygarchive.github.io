@@ -6869,5 +6869,46 @@
     },
     "description_en": "Project Athia is the culmination of Luminous Productions’ philosophy to create a completely new and fresh gaming experiences that fuses together the latest technologies with art. With the PlayStation 5, their vision truly comes to life, and with Project Athia you can look forward to being transported to a vast and detailed world filled with beauty and dismay.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nProject Athia نقطه اوج فلسفه Luminous Productions برای ایجاد یک تجربه بازی کاملاً جدید و تازه است که آخرین فناوری ها را با هنر ترکیب می کند. با پلی استیشن 5، چشم انداز آنها واقعاً زنده می شود و با Project Athia می توانید منتظر انتقال به دنیایی وسیع و با جزئیات پر از زیبایی و وحشت باشید."
+  },
+  {
+    "id": 43242,
+    "name": "Gears of War: Ultimate Edition",
+    "background_image": "https://media.rawg.io/media/games/49f/49f35940fbb28a00c4e10d7c7ef44de4.jpg",
+    "rating": 4.07,
+    "metacritic": 78,
+    "released": "2015-08-25",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Epic Games, The Coalition",
+    "steam_link": "https://store.steampowered.com/search/?term=Gears%20of%20War%3A%20Ultimate%20Edition",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0b8/0b860d149420381cce3bae95c9aace97.jpg",
+      "https://media.rawg.io/media/screenshots/ecc/eccd052bf6295d34abd2f055b73d965d.jpg",
+      "https://media.rawg.io/media/screenshots/3f4/3f4fe935e2f03842dc227f4993461d82.jpg",
+      "https://media.rawg.io/media/screenshots/714/7148a9f085f59f0a241ee58b97733baf.jpg",
+      "https://media.rawg.io/media/screenshots/f1c/f1cc5e47b7d34b029d2a90e9baf66c59.jpg",
+      "https://media.rawg.io/media/screenshots/3d4/3d4d2ec9fac50cfb68669cf650ca2e0b.jpg",
+      "https://media.rawg.io/media/games/49f/49f35940fbb28a00c4e10d7c7ef44de4.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Gears of War: Ultimate Edition is a third-person shooter developed by Epic Games. It is the first part of the original Gears of War trilogy.\n\n###Plot\nGears of War takes place on a planet called Sera, that is much like Earth. The radioactive fluid that was later named Imulsion became a potent energy source after the scientists found a way to use it. This substance caused mutations to the wildlife that lived in caves. 14 years later, after several wars, the Coalition of Ordered Governments is the only human government on the planet. \n\nYou play as Marcus, who gets back in the army after four-year imprisonment for disobeying his commanding officer to save his own father.\n\n###Gameplay\nGears Of War revolves around third-person combat and the usage of cover by the player. When the player is hit, the Crimson Omen is displayed on the screen. A crimson red sign that is used as the player's health indicator. To regenerate health, the players have to hide behind cover.\n\nThe game's story is divided into 5 acts that can be played both in singleplayer or in co-op mode. A multiplayer mode is also present in the game.\n\n###Multiplayer\nPlayers battle each other in 5v5 matches. All matches can be played in Ranked mode, where one's progress is tracked or create custom lobbies for your friends.\n\n###Ultimate Edition features\nUltimate Edition is a remastered version of the game, which includes new cutscenes, refined graphics, all DLCs and tweaked multiplayer.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nGears of War: Ultimate Edition یک بازی تیراندازی سوم شخص است که توسط Epic Games ساخته شده است. این اولین قسمت از سه گانه اصلی Gears of War است.\n\n###طرح\nGears of War در سیاره‌ای به نام Sera اتفاق می‌افتد که بسیار شبیه زمین است. مایع رادیواکتیو که بعدها Imulsion نام گرفت، پس از یافتن راهی برای استفاده از آن توسط دانشمندان، به یک منبع انرژی قوی تبدیل شد. این ماده باعث ایجاد جهش در حیات وحشی شد که در غارها زندگی می کردند. 14 سال بعد، پس از چندین جنگ، ائتلاف دولت های منظم تنها دولت انسانی روی کره زمین است. \n\nشما در نقش مارکوس بازی می کنید که پس از چهار سال زندان به دلیل نافرمانی از افسر فرمانده خود برای نجات پدرش به ارتش باز می گردد.\n\n###بازی\nGears Of War حول محور مبارزات سوم شخص و استفاده از پوشش توسط بازیکن می چرخد. با ضربه زدن به بازیکن، Crimson Omen روی صفحه نمایش داده می شود. علامت قرمز زرشکی که به عنوان نشانگر سلامت بازیکن استفاده می شود. برای احیای سلامتی، بازیکنان باید پشت پوشش پنهان شوند.\n\nداستان بازی به 5 عمل تقسیم می شود که هم به صورت تک نفره و هم به صورت کوآپ قابل بازی است. حالت چند نفره نیز در بازی وجود دارد.\n\n###چند نفره\nبازیکنان در مسابقات 5 در 5 با یکدیگر می جنگند. همه مسابقات را می توان در حالت رتبه بندی بازی کرد، جایی که پیشرفت فرد ردیابی می شود یا لابی های سفارشی برای دوستان خود ایجاد می کند.\n\n###ویژگی های Ultimate Edition\nUltimate Edition یک نسخه بازسازی شده از بازی است که شامل کات سین های جدید، گرافیک پیشرفته، تمام DLC ها و چند نفره بهینه شده است."
   }
 ]
