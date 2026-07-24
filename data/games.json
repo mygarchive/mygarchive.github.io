@@ -7325,5 +7325,50 @@
     },
     "description_en": "No description available.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
+  },
+  {
+    "id": 966906,
+    "name": "Horizon Forbidden West Complete Edition",
+    "background_image": "https://media.rawg.io/media/games/ebd/ebda55ee4922cbbc1c15d41cf3845519.jpg",
+    "rating": 4.27,
+    "metacritic": null,
+    "released": "2023-10-06",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 17,
+    "developers": "Guerrilla Games, Nixxes software",
+    "steam_link": "https://store.steampowered.com/app/2420110/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/bd2/bd29d990ea3c10bb1f54edba73cce0a0.jpg",
+      "https://media.rawg.io/media/screenshots/271/27113e5ab0334f11fef340eb244c3791.jpg",
+      "https://media.rawg.io/media/screenshots/2ca/2ca36ead889762377b36d8b46e6c0b69.jpg",
+      "https://media.rawg.io/media/screenshots/010/010b81aac339370b998cf5611093136c_FNrNgpJ.jpg",
+      "https://media.rawg.io/media/screenshots/2b6/2b6a0a900177290dad466a3deaffe17a.jpg",
+      "https://media.rawg.io/media/games/ebd/ebda55ee4922cbbc1c15d41cf3845519.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 64-bit (version 1909 or higher)\nProcessor: Intel Core i3-8100 or AMD Ryzen 3 1300X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1650 4GB or AMD Radeon RX 5500XT 4GB\nStorage: 150 GB available space\nAdditional Notes: 150GB SSD Space",
+      "recommended": "OS: Windows 10 64-bit (version 1909 or higher)\nProcessor: Intel Core i5-8600 or AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 3060 or AMD Radeon RX 5700\nStorage: 150 GB available space\nAdditional Notes: 150GB SSD Space"
+    },
+    "description_en": "Join Aloy as she braves the Forbidden West, a deadly frontier that conceals mysterious new threats.\r\n\r\nThis Complete Edition allows you to enjoy the critically acclaimed Horizon Forbidden West™ in its entirety with bonus content, including the Burning Shores story expansion that picks up after the main game.\r\n\r\nBrave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.\r\n\r\nA majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America\r\n\r\nConfront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.\r\n\r\nUnravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past… one that will change Aloy forever.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه Aloy بپیوندید تا در غرب ممنوعه شجاعت کند، مرزی مرگبار که تهدیدهای مرموز جدید را پنهان می کند.\r\n\r\nاین نسخه کامل به شما امکان می‌دهد تا از بازی تحسین‌شده Horizon Forbidden West™ به طور کامل با محتوای جایزه لذت ببرید، از جمله بسط داستان Burning Shores که بعد از بازی اصلی شروع می‌شود.\r\n\r\nدر دنیای باز گسترده شجاع باشید - سرزمین های دور، دشمنان جدید، فرهنگ های غنی و شخصیت های خیره کننده را کشف کنید.\r\n\r\nمرزی باشکوه - جنگل‌های سرسبز، شهرهای غرق‌شده و کوه‌های سر به فلک کشیده آمریکای آینده را کاوش کنید.\r\n\r\nبا خطرات جدید مقابله کنید - با استفاده از سلاح ها، تجهیزات و تله های ساخته شده از قطعات نجات یافته، در نبردهای استراتژیک علیه ماشین های عظیم و دشمنان انسانی سوار شده شرکت کنید.\r\n\r\nاسرار شگفت انگیز را کشف کنید - راز فروپاشی قریب الوقوع زمین را کشف کنید و قفل یک فصل پنهان در گذشته باستان را باز کنید ... فصلی که آلوی را برای همیشه تغییر خواهد داد."
   }
 ]
