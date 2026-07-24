@@ -7890,5 +7890,48 @@
     },
     "description_en": "No description available.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
+  },
+  {
+    "id": 28201,
+    "name": "Metro Exodus",
+    "background_image": "https://media.rawg.io/media/games/152/152e788b7504aa2753c86dae912fb34c.jpg",
+    "rating": 4.16,
+    "metacritic": 81,
+    "released": "2019-02-13",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "4A Games",
+    "steam_link": "https://store.steampowered.com/app/412020/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686919/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256686919/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/90e/90ec2c2aadeb403083788066224fa9c7.jpg",
+      "https://media.rawg.io/media/screenshots/dba/dbae2235379fde39c2758004033d1b2a.jpg",
+      "https://media.rawg.io/media/screenshots/b37/b377f2607a8298a04e4be00db53f7ee9.jpg",
+      "https://media.rawg.io/media/screenshots/54c/54cce0b0341719481381ad57e47c2176.jpg",
+      "https://media.rawg.io/media/screenshots/e19/e199c2f6f5a3343ffb277724ed18d5a0.jpg",
+      "https://media.rawg.io/media/screenshots/220/220609ce00e2cd65af0adf2b78039522.jpg",
+      "https://media.rawg.io/media/games/152/152e788b7504aa2753c86dae912fb34c.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Metro Exodus is the third installment in the Metro series. It is based on the series of post-apocalyptic novels by Russian writer Dmitry Glukhovsky. The game is the sequel to Metro: Last Light and is set two years after its ending.\r\n\r\n###Plot\r\nExodus takes place in the year 2036 in post-apocalyptic Russia. According to the Metro universe backstory, in 2013 the planet was devastated by a total nuclear war. The atomic bombing left many parts of the Earth's surface uninhabitable due to high radiation rates, dangerous mutated monsters, and anomalies abound. The last remnants of humanity survive by hiding in the subway tunnels (hence the name of the series). The main protagonist is Artyom, a former dweller of Moscow Metro. Together with his wife Anna, he escaped the capital to search for survivors in the Russian Far East (thus making the “Redemption” ending of the Last Light the series' canon). \r\n\r\n###Gameplay\r\nThe player controls Artyom from the first person view. Exodus introduces the sandbox open-world, although the game combines it with the traditional linear levels. Unlike in previous games, Exodus is set mostly outside the subway system. Thus, the game also introduces the weather, the day and night cycle and the change of seasons. The player explores the Russian wilderness during and after the nuclear winter and rides a steam locomotive named Aurora through Siberia.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMetro Exodus سومین قسمت از مجموعه مترو است. این بر اساس مجموعه ای از رمان های پسا آخرالزمانی نویسنده روسی دیمیتری گلوخوفسکی است. این بازی دنباله‌ای برای Metro: Last Light است و دو سال پس از پایان آن روایت می‌شود.\r\n\r\n###طرح\r\nExodus در سال 2036 در روسیه پسا آخرالزمانی اتفاق می افتد. بر اساس پیشینه دنیای مترو، در سال 2013 این سیاره توسط یک جنگ هسته ای کامل ویران شد. بمباران اتمی بسیاری از بخش‌های سطح زمین را به دلیل نرخ تشعشعات بالا، هیولاهای جهش یافته خطرناک و ناهنجاری‌های فراوان غیرقابل سکونت کرد. آخرین بقایای بشریت با پنهان شدن در تونل های مترو زنده می مانند (از این رو نام سریال). شخصیت اصلی آرتیوم، ساکن سابق مترو مسکو است. او به همراه همسرش آنا از پایتخت گریخت تا به دنبال بازماندگان در خاور دور روسیه بگردد (بنابراین پایان «رستگاری» آخرین نور را به عنوان قانون سریال تبدیل کرد). \r\n\r\n###بازی\r\nبازیکن آرتیوم را از دید اول شخص کنترل می کند. Exodus دنیای باز sandbox را معرفی می کند، اگرچه بازی آن را با سطوح خطی سنتی ترکیب می کند. برخلاف بازی‌های قبلی، Exodus بیشتر در خارج از سیستم مترو قرار دارد. بدین ترتیب بازی آب و هوا، چرخه روز و شب و تغییر فصل را نیز معرفی می کند. بازیکن در طول زمستان هسته ای و پس از آن در بیابان روسیه کاوش می کند و سوار یک لوکوموتیو بخار به نام Aurora از طریق سیبری می شود."
   }
 ]
