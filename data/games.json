@@ -8793,5 +8793,46 @@
     },
     "description_en": "Assetto Corsa EVO raises the bar of realism that has made the franchise one of the most popular driving simulations of the last decade even higher.As with its predecessor, Assetto Corsa EVO will include cars from different classes spanning across years of motoring history. From road cars, classics, hypercars, and race cars. The most iconic representation of the automotive and motorsport world. Each vehicle is reproduced through Kunos in-house physics and graphic engine simulating mechanical, electronic, and aerodynamic performance, combined with the fidelity of the circuits created using Laserscan technology.In Early Access 1 you will be able to experience a range of vehicles, tracks and game modes that will evolve on the road to our full 1.0 launch.With the launch of a new KUNOS Simulazioni proprietary, high-performance photorealistic engine, VR and triple screen support have become first-class features and the new mathematical model meticulously simulates asphalt performance in different dynamic weather conditions that guarantees an authentic and realistic experience which will redefine the standards that have made Assetto Corsa globally renowned. Early Access 1 – Vehicle Content•         Abarth 695 Biposto•         Alfa Romeo Giulia GTAm•         Alfa Romeo Junior Elettrica Veloce•         Alpine A110 S•         Alpine A290_β Concept•         Audi RS 3 Sportback•         BMW M2 CS Racing•         BMW M4 CSL•         Chevrolet Camaro ZL1•         Ferrari 296 GTB•         Fe",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssetto Corsa EVO سطح واقع‌گرایی را بالا می‌برد که این فرنچایز را به یکی از محبوب‌ترین شبیه‌سازی‌های رانندگی در دهه گذشته حتی بالاتر می‌برد. Assetto Corsa EVO مانند مدل قبلی خود شامل خودروهایی از کلاس‌های مختلف می‌شود که در طول سال‌ها تاریخ رانندگی را شامل می‌شود. از ماشین های جاده ای، کلاسیک، هایپرکار و ماشین های مسابقه ای. نمادین ترین نماد دنیای خودرو و موتوراسپرت. هر وسیله نقلیه از طریق فیزیک داخلی و موتور گرافیکی Kunos که عملکرد مکانیکی، الکترونیکی و آیرودینامیک را شبیه‌سازی می‌کند، همراه با وفاداری مدارهای ایجاد شده با استفاده از فناوری لیزر اسکن تولید می‌شود. در دسترسی زودهنگام 1 شما قادر خواهید بود طیف وسیعی از وسایل نقلیه، مسیرها و حالت‌های بازی را تجربه کنید که در مسیر راه‌اندازی کامل SimulazihUN OS جدید ما تکامل خواهند یافت. موتور فوتورئالیستی اختصاصی با کارایی بالا، VR و پشتیبانی از صفحه نمایش سه گانه به ویژگی های درجه یک تبدیل شده اند و مدل ریاضی جدید به طور دقیق عملکرد آسفالت را در شرایط آب و هوایی مختلف پویا شبیه سازی می کند که تضمین کننده یک تجربه واقعی و واقعی است که استانداردهایی را که Assetto Corsa را در سطح جهانی شهرت کرده است، بازتعریف کند. دسترسی اولیه 1 – محتوای خودرو•         Abarth 695 Biposto•         Alfa Romeo Giulia GTAm•         Alfa Romeo Junior Elettrica Veloce•          Alpine A110 S•  مفهومی•         Audi RS 3 Sportback•         BMW M2 CS Racing•          BMW M4 CSL•                                                                  شورولت کامارو ZL1•          فراری ۲۹۶ GTB•         Fe"
+  },
+  {
+    "id": 4234,
+    "name": "Devil May Cry HD Collection",
+    "background_image": "https://media.rawg.io/media/games/13a/13a97b75b6e6b999901f6dd6fda47848.jpg",
+    "rating": 4.22,
+    "metacritic": 70,
+    "released": "2012-03-22",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 4,
+    "developers": "Capcom",
+    "steam_link": "https://store.steampowered.com/app/631510/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5ec/5ec2134c4452f0f7bc4c166b00e2f687_kNyAl76.jpg",
+      "https://media.rawg.io/media/screenshots/29a/29a8abad7fdc8f4d66a3cff5e32d21b9.jpg",
+      "https://media.rawg.io/media/screenshots/89f/89fb6e0f7300cfab3486b4ef1009c942.jpg",
+      "https://media.rawg.io/media/screenshots/e44/e44e7f4213c54db248b2e354da20e058.jpg",
+      "https://media.rawg.io/media/screenshots/c9a/c9aec0c9fcd8d07f32c1a521803caf20.jpg",
+      "https://media.rawg.io/media/screenshots/24e/24e4f963e8686056520d8adfe9bee75d.jpg",
+      "https://media.rawg.io/media/games/13a/13a97b75b6e6b999901f6dd6fda47848.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: WINDOWS® 7 (64bit)\nProcessor: Intel® Core™ i3 series (dual-core) or AMD equivalent or better\nMemory: 4 GB RAM\nGraphics: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x\nDirectX: Version 9.0\nStorage: 12 GB available space\nSound Card: DirectSound (DirectX® 9.0c or better)\nAdditional Notes: *Recommended Controller Xbox 360 Controller (Windows®7/8/8.1) Xbox One Wireless Controller (Windows®10) \n\n*Internet connection required for game activation.  \n\n*Non-multi-thread supported CPUs are not guaranteed to operate correctly.",
+      "recommended": "OS: WINDOWS®10  (64bit)\nProcessor: Intel® Core™ i7 3770 3.4GHz or AMD equivalent or better\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 960\nDirectX: Version 11\nStorage: 12 GB available space\nSound Card: DirectSound (DirectX® 9.0c or better)\nAdditional Notes: *Recommended Controller\n Xbox 360 Controller (Windows®7/8/8.1)\n Xbox One Wireless Controller (Windows®10)\n\n *Internet connection required for game activation."
+    },
+    "description_en": "The popular stylish action games Devil May Cry, Devil May Cry 2, and Devil May Cry 3 Special Edition return in one collection! As Dante, the ultimate devil hunter, you'll join forces with appealing characters such as Trish, Lady, and Lucia and enjoy incredible action for the first time in blistering 60fps.\nDevil May Cry: The first appearance of Dante, the ultimate devil hunter! With the blood of a legendary demon warrior flowing through his veins, Dante takes on the king of the underworld, Mundus.\nDevil May Cry 2: Dance with the devil. Set decades after the first game, this sequel adds moves like the wall run and Rain Storm, bringing Dante's action to the next level of stylishness. The bonus mode Bloody Palace also makes its debut.\nDevil May Cry 3 Special Edition: This prequel to the first Devil May Cry introduces Vergil, Dante's twin brother. Customize your game style by selecting from various styles to level up and gain new moves and abilities.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی‌های اکشن شیک محبوب Devil May Cry، Devil May Cry 2 و Devil May Cry 3 Special Edition در یک مجموعه بازمی‌گردند! به عنوان دانته، شکارچی نهایی شیطان، با شخصیت‌های جذابی مانند تریش، لیدی و لوسیا به نیروها می‌پیوندید و برای اولین بار با سرعت 60 فریم در ثانیه از اکشن‌های باورنکردنی لذت خواهید برد.\nDevil May Cry: اولین حضور دانته، شکارچی نهایی شیطان! با جریان خون یک جنگجوی شیطان افسانه ای در رگ هایش، دانته با پادشاه جهان اموات، موندوس روبرو می شود.\nDevil May Cry 2: Dance with the devil. دهه‌ها پس از اولین بازی، این دنباله حرکاتی مانند اجرای دیوار و طوفان باران را اضافه می‌کند و اکشن دانته را به سطح بعدی شیک می‌رساند. حالت جایزه Bloody Palace نیز اولین خود را دارد.\nDevil May Cry 3 Special Edition: این پیش درآمد اولین Devil May Cry، Vergil، برادر دوقلوی دانته را معرفی می کند. سبک بازی خود را با انتخاب از سبک های مختلف برای ارتقاء سطح و به دست آوردن حرکات و توانایی های جدید سفارشی کنید."
   }
 ]
