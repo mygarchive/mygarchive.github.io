@@ -7278,5 +7278,52 @@
     },
     "description_en": "A dark fantasy game that takes inspiration from Scandinavian and Celtic folklore, Hellblade is set in a gritty barbarian world full of weird wooden structures and creepily masked enemies. \r\n\r\nThe player assumes the role of Senua, a traumatized female warrior from the Pict tribe. She suffers from a growing psychosis after her lover Dillion was brutally murdered by Vikings. Carrying his severed head, Senua sets out to Helheim, the underworld of the dead, to bring her lover's soul back. Her grim and bloody journey mirrors her descent into madness. It becomes increasingly difficult for her (and, thus, the player) to tell fact from fantasy, as she hears voices in her head and sees hallucinations. \r\n\r\nWhen not fighting her enemies, Senua has to solve puzzles to move forward. This is where her distorted perception actually comes out handy, enabling her to \"focus\" and see what regular people can not. The ghostly voices, recorded using the binaural method to create an eery effect, also help to guide Senua or to warn her about dangers. All of Senua movements, expressions and reactions were recorded through motion capture to make them more realistic and emotional.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nHellblade یک بازی فانتزی تاریک که از فولکلور اسکاندیناوی و سلتیک الهام گرفته است، در یک دنیای وحشیانه پر از سازه‌های چوبی عجیب و غریب و دشمنانی که به طرز وحشتناکی نقاب دارند می‌گذرد. \r\n\r\nبازیکن نقش Senua، یک زن جنگجوی آسیب دیده از قبیله Pict را بر عهده می گیرد. او پس از قتل وحشیانه معشوقش دیلیون توسط وایکینگ ها از روان پریشی رنج می برد. سنوا با حمل سر بریده خود به هلهایم، دنیای اموات مردگان می رود تا روح معشوقش را بازگرداند. سفر تلخ و خونین او آینه هبوط او به جنون است. تشخیص واقعیت از روی خیال برای او (و بنابراین، بازیکن) به طور فزاینده ای دشوار می شود، زیرا صداهایی را در سرش می شنود و توهم می بیند. \r\n\r\nوقتی سنوا با دشمنانش مبارزه نمی‌کند، باید پازل‌هایی را حل کند تا به جلو برود. اینجاست که ادراک تحریف شده او در واقع مفید است و او را قادر می‌سازد تا \"تمرکز\" کند و ببیند که مردم عادی چه چیزی را نمی‌توانند ببینند. صداهای شبح مانند، ضبط شده با استفاده از روش دو گوش برای ایجاد یک اثر ترسناک، همچنین به راهنمایی Senua یا هشدار دادن به او در مورد خطرات کمک می کند. تمام حرکات، عبارات و واکنش های Senua از طریق موشن کپچر ثبت شد تا آنها را واقعی تر و احساسی تر کند."
+  },
+  {
+    "id": 989802,
+    "name": "Horizon Zero Dawn Remastered",
+    "background_image": "https://media.rawg.io/media/screenshots/e9c/e9cfcfafdf44b339edf6a9a07b8faed9.jpg",
+    "rating": 4.39,
+    "metacritic": null,
+    "released": "2024-10-31",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 5,
+    "developers": "Guerrilla Games, Nixxes software",
+    "steam_link": "https://store.steampowered.com/app/2561580/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/24c/24c7a1d89229448f6c0e0d79a05d7e5c.jpg",
+      "https://media.rawg.io/media/screenshots/856/856257407fee5824ea417e6c35e43ba8.jpg",
+      "https://media.rawg.io/media/screenshots/e9c/e9cfcfafdf44b339edf6a9a07b8faed9.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit (version 1909 or higher)\nProcessor: Intel Core i3-8100 or AMD Ryzen 3 1300X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1650 4GB or AMD Radeon RX 5500 XT 4GB\nStorage: 135 GB available space\nAdditional Notes: 135GB SSD Space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit (version 1909 or higher)\nProcessor: Intel Core i5-8600 or AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 3060 or AMD Radeon RX 5700\nStorage: 135 GB available space\nAdditional Notes: 135GB SSD Space"
+    },
+    "description_en": "No description available.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
   }
 ]
