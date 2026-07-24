@@ -6647,5 +6647,48 @@
     },
     "description_en": "Far Cry 3 is absolute madness. Being the third instalment of the franchise, it has a unique plot. Playing as Jason Brody, you will understand what it is like, to be a Rambo. Vacation on Rook Islands with your friends and family quickly turned into a complete nightmare after Vaas Montenegro kidnapping everyone from the party. Jason manages to escape the cruel pirate lord with a little help from a native supporter called Dennis. Now Brody has to save all his friends and get out of the island.\r\n\r\nTo help Jason save his friends, he will need to learn new skills. Hunting animals, crafting new weapons or different abilities in killing pirates. Skill tree has plenty to offer for the player. There are all kinds of firearms for any player, from a knife to a grenade launcher. This mechanic adds pure madness for the game process, making it very fun, fluent and full of adrenaline. Stunning views of the island, excellent surroundings and a great story make Far Cry 3 an absolute fun to play.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 3 یک جنون مطلق است. به عنوان قسمت سوم این فرنچایز، داستان منحصر به فردی دارد. با بازی در نقش جیسون برودی، متوجه خواهید شد که رمبو بودن چگونه است. پس از اینکه Vaas Montenegro همه را از مهمانی ربوده بود، تعطیلات در جزایر روک با دوستان و خانواده خود به سرعت به یک کابوس کامل تبدیل شد. جیسون با کمک کمی از طرفدار بومی به نام دنیس موفق می شود از ارباب دزدان دریایی ظالم فرار کند. حالا برودی باید همه دوستانش را نجات دهد و از جزیره خارج شود.\r\n\r\nبرای کمک به جیسون برای نجات دوستانش، او باید مهارت های جدیدی را بیاموزد. شکار حیوانات، ساخت سلاح های جدید یا توانایی های مختلف در کشتن دزدان دریایی. درخت مهارت چیزهای زیادی برای ارائه به بازیکن دارد. انواع سلاح گرم برای هر بازیکنی وجود دارد، از چاقو گرفته تا نارنجک انداز. این مکانیک جنون خالص را به روند بازی اضافه می کند و آن را بسیار سرگرم کننده، روان و پر از آدرنالین می کند. مناظر خیره کننده جزیره، محیطی عالی و داستانی عالی، بازی Far Cry 3 را به یک سرگرمی مطلق تبدیل کرده است."
+  },
+  {
+    "id": 23585,
+    "name": "Far Cry 5",
+    "background_image": "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg",
+    "rating": 3.72,
+    "metacritic": 80,
+    "released": "2018-03-27",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 19,
+    "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Toronto, Ubisoft Shanghai, Ubisoft Kiev, Red Storm",
+    "steam_link": "https://store.steampowered.com/app/552520/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686149/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256686149/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5cf/5cf8e7fd61723cdd8f2673be38fa96d7.jpg",
+      "https://media.rawg.io/media/screenshots/f10/f103b8facce20a692c632e92d75cb7dc.jpg",
+      "https://media.rawg.io/media/screenshots/a75/a7559b87154002909f338f36ae4cf584.jpg",
+      "https://media.rawg.io/media/screenshots/954/9543c597ffd856a12d9b0bd82733a370.jpg",
+      "https://media.rawg.io/media/screenshots/406/40613f69f9f3b7ed28cf46cc55a9b06a.jpg",
+      "https://media.rawg.io/media/screenshots/0ce/0ce9665ddbe8aef0086af7528ae44980.jpg",
+      "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Far Cry 5 is an open-world adventure first-person shooter developed by Ubisoft Montreal. It is the fifth main installment in the series.\n\nWelcome to Hope County, Montana, where a violent religious doomsday cult appeared. You play as a junior deputy sheriff who gets trapped in the Hope County as all the ways out the county are now patrolled with cultists and all external communication is cut off. It is your job to free the county of cultists.\n\nFor the first time in the series, the game features a character creation screen. A wide range of weaponry which varies from pistols to grenade launchers is available to the player. Various vehicles are also at your exposal: cars, planes, helicopters, and so on. \n\nThe game puts a strong emphasis on building the resistance to the cultists. Players have to recruit the locals in order to have more fighters and gain reputation.\n\nA welcome addition to the game is the so-called Guns For Hire system. It allows the players to choose one of the comrades that will follow them anywhere. For example, hiring a sniper will help the player spot enemy targets in the distance.\n\nThe whole game can be played in both singleplayer and co-op modes.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 5 یک بازی تیراندازی اول شخص ماجراجویی جهان باز است که توسط Ubisoft Montreal توسعه یافته است. این پنجمین قسمت اصلی این مجموعه است.\n\nبه شهرستان هوپ، مونتانا، جایی که یک فرقه مذهبی خشونت آمیز روز رستاخیز ظاهر شد، خوش آمدید. شما به عنوان یک معاون کلانتر بازی می کنید که در Hope County گرفتار می شود، زیرا همه راه های خروج از این شهرستان با فرقه ها در حال گشت زنی است و تمام ارتباطات خارجی قطع شده است. این وظیفه شماست که شهرستان را از وجود فرقه ها آزاد کنید.\n\nبرای اولین بار در این سری، بازی دارای صفحه نمایش شخصیت پردازی است. طیف وسیعی از تسلیحات که از تپانچه تا نارنجک انداز متفاوت است در دسترس بازیکن است. وسایل نقلیه مختلفی نیز در معرض دید شما هستند: اتومبیل، هواپیما، هلیکوپتر و غیره. \n\nاین بازی تاکید زیادی بر ایجاد مقاومت در برابر فرقه‌ها دارد. بازیکنان برای داشتن مبارزان بیشتر و کسب شهرت باید افراد محلی را به خدمت بگیرند.\n\nیکی از مواردی که به بازی اضافه شده، سیستم موسوم به Guns For Hire است. به بازیکنان این امکان را می دهد که یکی از رفقای خود را انتخاب کنند که آنها را در هر کجا دنبال می کند. به عنوان مثال، استخدام یک تک تیرانداز به بازیکن کمک می کند تا اهداف دشمن را در دوردست تشخیص دهد.\n\nکل بازی را می توان در دو حالت تک نفره و کوآپ بازی کرد."
   }
 ]
