@@ -7786,5 +7786,38 @@
     },
     "description_en": "One person is all that stands between humanity and the greatest threat it’s ever faced. Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect™ Legendary Edition. Includes single-player base content and DLC from Mass Effect, Mass Effect 2, and Mass Effect 3, plus promo weapons, armors, and packs - all remastered and optimized for 4k Ultra HD.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک نفر تمام چیزی است که بین بشریت و بزرگترین تهدیدی که تاکنون با آن مواجه شده است قرار دارد. با نسخه افسانه ای Mass Effect™ افسانه فرمانده شپرد را در سه گانه بسیار تحسین شده Mass Effect دوباره زنده کنید. شامل محتوای پایه تک‌نفره و DLC از Mass Effect، Mass Effect 2 و Mass Effect 3، به‌علاوه سلاح‌های تبلیغاتی، زره‌ها و بسته‌ها - همگی بازسازی‌شده و بهینه‌سازی شده برای 4k Ultra HD."
+  },
+  {
+    "id": 715061,
+    "name": "Max Payne 1",
+    "background_image": "https://media.rawg.io/media/screenshots/723/723eabbecf2e5d264c825e34f3693204.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2021-12-25",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Kuzzy",
+    "steam_link": "https://store.steampowered.com/search/?term=Max%20Payne%201",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/42b/42b1f5341662c514fe534bbe12a6ca11.jpg",
+      "https://media.rawg.io/media/screenshots/c19/c192487dce97756331ec7da0c68c95bb.jpg",
+      "https://media.rawg.io/media/screenshots/3f4/3f4fd9b3b731e5a53b8b09f3eb643447.jpg",
+      "https://media.rawg.io/media/screenshots/723/723eabbecf2e5d264c825e34f3693204.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Deli Yürek Modu Nerdeyse Her 2000 Li Oynamıştır . Ve Bu Oyun Bir Vazgeçilmezdir . Hem Normal Max Payne Hemde Deli yürek modlu",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDeli Yürek Modu Nerdeyse Her 2000 Li Oynamıştır . وه بو اویون بیر وازگچیلمزدیر . Hem Normal Max Payne Hemde Deli yürek modlu"
   }
 ]
