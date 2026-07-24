@@ -7189,5 +7189,46 @@
     },
     "description_en": "<strong>PLEASE NOTE:  Microsoft no longer supports creating Games for Windows-LIVE accounts within Grand Theft Auto IV. You can create an account through account.xbox.com and then log into your account in game. </strong><br/><br/>This standalone retail title spans three distinct stories, interwoven to create one of the most unique and engaging single-player experiences of this generation.<br/><br/>\t\t\t\t\t\t\t\t\t\t\t\tThis definitive Grand Theft Auto bundle boasts hundreds of hours of single-player gameplay; a full suite of open-world multiplayer game types limited only by players’ creativity; dozens of eclectic radio stations with hours of music and original dialogue",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n<strong>لطفاً توجه داشته باشید: مایکروسافت دیگر از ایجاد بازی‌ها برای حساب‌های Windows-LIVE در Grand Theft Auto IV پشتیبانی نمی‌کند. می توانید از طریق account.xbox.com یک حساب کاربری ایجاد کنید و سپس وارد حساب کاربری خود در بازی شوید. </strong><br/><br/>این عنوان خرده فروشی مستقل شامل سه داستان متمایز است که در هم تنیده شده اند تا یکی از منحصر به فردترین و جذاب ترین تجربه های تک نفره این نسل را ایجاد کنند.<br/><br/> این بسته نهایی Grand Theft Auto صدها ساعت گیم پلی تک نفره را به رخ می کشد. مجموعه ای کامل از انواع بازی های چند نفره جهان باز که فقط با خلاقیت بازیکنان محدود شده است. ده ها ایستگاه رادیویی التقاطی با ساعت ها موسیقی و دیالوگ های اصلی"
+  },
+  {
+    "id": 2743,
+    "name": "Heavy Rain",
+    "background_image": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg",
+    "rating": 4.12,
+    "metacritic": 80,
+    "released": "2010-02-17",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Quantic Dream",
+    "steam_link": "https://store.steampowered.com/app/960910/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/2a0/2a0abc877b38468c38b12608e8f4e6e9.jpg",
+      "https://media.rawg.io/media/screenshots/1ce/1cea6b99424718659971772dcd34365c.jpg",
+      "https://media.rawg.io/media/screenshots/a5b/a5b869636cb34edcc92cacc598d1a6ef.jpg",
+      "https://media.rawg.io/media/screenshots/daa/daa642d6610d252281237fd7e769e598.jpg",
+      "https://media.rawg.io/media/screenshots/949/949962605a08b75f58a7b0f4fbe4511b.jpg",
+      "https://media.rawg.io/media/screenshots/1ea/1ea689dd2ef1cbef6d9bc04562e739e9.jpg",
+      "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7 or later (64 bit)\nProcessor: Intel Core i5-4430 @ 3.0 GHz or AMD FX-6300 @ 3.5 GHz\nMemory: 4 GB RAM\nGraphics: Nvidia GeForce GTX 660 with 2GB VRAM or AMD Radeon HD 7870 with 2GB VRAM\nDirectX: Version 11\nStorage: 35 GB available space\nAdditional Notes: 720p, 30 FPS",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 7 or later (64 bit)\nProcessor: Intel Core i5-6600K @ 3.5GHz or AMD Ryzen 3 1300X @ 3.4GHz\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 970 with 4GB VRAM or AMD Radeon R9 390 with 4GB VRAM\nDirectX: Version 11\nStorage: 35 GB available space\nAdditional Notes: 1080p, 60 FPS"
+    },
+    "description_en": "Heavy Rain is an interactive drama telling the story of the investigation of a serial murder’s case. Players assume roles of four people – Ethan Mars, Norman Jayden, Madison Paige, and Scott Shelby – somehow involved in the case of Origami Killer, who is used to leave his victims alone, marked with origami figures. It soon reveals that all Origami Killer’s murders are connected with weather changes (actually heavy rains). In the course of the completion, players will follow the characters on their way to the key of the murderer’s mystery. Heavy Rain is an unusual action-adventure game. All four main characters are controlled from the third-person perspective with only several buttons, as the interaction with the environment is usually done by activating on-screen prompts like holding the trigger, pushing a button, positioning the stick, or all in one. The gameplay consists of multiple scenes, which affect the further in-game progress by the players’ choice and create a branching storyline that can lead to various endings including the death of certain main characters.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nباران شدید یک درام تعاملی است که داستان تحقیق در مورد یک قتل زنجیره ای را روایت می کند. بازیکنان نقش چهار نفر - ایتان مارس، نورمن جیدن، مدیسون پیج و اسکات شلبی را بر عهده می‌گیرند - به نوعی درگیر پرونده قاتل اوریگامی هستند که برای تنها گذاشتن قربانیانش با فیگورهای اوریگامی استفاده می‌شود. به زودی نشان می دهد که تمام قتل های قاتل اوریگامی با تغییرات آب و هوایی (در واقع باران های شدید) مرتبط است. در طول تکمیل، بازیکنان شخصیت‌ها را در راه رسیدن به کلید رمز و راز قاتل دنبال می‌کنند. Heavy Rain یک بازی اکشن ماجراجویی غیرمعمول است. هر چهار شخصیت اصلی از منظر سوم شخص تنها با چندین دکمه کنترل می‌شوند، زیرا تعامل با محیط معمولاً با فعال کردن اعلان‌های روی صفحه مانند نگه داشتن ماشه، فشار دادن یک دکمه، قرار دادن چوب یا همه در یک انجام می‌شود. گیم پلی شامل صحنه های متعددی است که با انتخاب بازیکنان بر پیشرفت بیشتر در بازی تاثیر می گذارد و یک خط داستانی منشعب ایجاد می کند که می تواند به پایان های مختلفی از جمله مرگ برخی از شخصیت های اصلی منجر شود."
   }
 ]
