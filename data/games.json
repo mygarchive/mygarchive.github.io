@@ -6237,5 +6237,46 @@
     },
     "description_en": "Command & Conquer Generals Zero Hour brings you closer to the enemy than ever before. Engage opposing forces at hot spots around the globe as you match strategies and arsenals against the new masterminds of modern war.\nArsenal. Unleash the next generation of 3D new units and 20 new upgrades including China's ECM Tank, GLA's BattleBus and the USA's Spectre Gunship.\nMissions. Take on 15 new missions and make tomorrow's headlines. Root out a splinter cell in Cairo, steal deadly toxins from a U.S. lab and more.\nGenerals. Match strategies and arsenals against 9 enemy commanders with unpredictable personalities and tactics.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Generals Zero Hour شما را بیش از هر زمان دیگری به دشمن نزدیک می کند. نیروهای مخالف را در نقاط داغ در سراسر جهان درگیر کنید، زیرا استراتژی ها و زرادخانه ها را با مغز متفکران جدید جنگ مدرن مطابقت می دهید.\nآرسنال نسل بعدی واحدهای جدید سه بعدی و 20 ارتقای جدید از جمله تانک ECM چین، BattleBus GLA و Spectre Gunship ایالات متحده را آزاد کنید.\nماموریت ها 15 ماموریت جدید را انجام دهید و تیتر اخبار فردا شوید. یک سلول انشعابی را در قاهره ریشه کن کنید، سموم کشنده را از یک آزمایشگاه ایالات متحده بدزدید و موارد دیگر.\nژنرال ها استراتژی ها و زرادخانه ها را با 9 فرمانده دشمن با شخصیت ها و تاکتیک های غیرقابل پیش بینی مسابقه دهید."
+  },
+  {
+    "id": 326251,
+    "name": "Deathloop",
+    "background_image": "https://media.rawg.io/media/games/018/01857c5ff9579c48fa8bd76b4d83a946.jpg",
+    "rating": 3.96,
+    "metacritic": 88,
+    "released": "2021-09-14",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "Arkane Studios",
+    "steam_link": "https://store.steampowered.com/app/1252330/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/115/1150f954fe98f1b0913540b37d4d9815.jpg",
+      "https://media.rawg.io/media/screenshots/271/271c92208b15bd69af75fb9d8bd63fe8.jpg",
+      "https://media.rawg.io/media/screenshots/b9a/b9a8f300bfa3e90dcf0e4600b41cff12.jpg",
+      "https://media.rawg.io/media/screenshots/4b1/4b1a2ee4267624067fb3e61deb469bd8.jpg",
+      "https://media.rawg.io/media/screenshots/6d8/6d8eb3cd202eb20a57ab925455b9d6e2.jpg",
+      "https://media.rawg.io/media/screenshots/ca7/ca7e88fbfebe19d34f6b916835c8901b.jpg",
+      "https://media.rawg.io/media/games/018/01857c5ff9579c48fa8bd76b4d83a946.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: 64 bit Windows 10 version 1909 or higher\nProcessor: Intel Core i5-8400 @ 2.80GHz or AMD Ryzen 5 1600\nMemory: 12 GB RAM\nGraphics: Nvidia GTX 1060 (6GB) or AMD Radeon RX 580 (8GB)\nDirectX: Version 12\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: 64 bit Windows 10 version 1909 or higher\nProcessor: Intel Core i7-9700K @ 3.60GHz or AMD Ryzen 7 2700X\nMemory: 16 GB RAM\nGraphics: Nvidia RTX 2060 (6GB) or AMD Radeon RX 5700 (8GB)\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 30 GB available space"
+    },
+    "description_en": "“DEATHLOOP” transports players to the lawless island of Blackreef in an eternal struggle between two extraordinary assassins. Explore stunning environments and meticulously designed levels in an immersive gameplay experience that lets you approach every situation any way you like. Hunt down targets all over the island in an effort to put an end to the cycle once and for all, and remember, if at first you don’t succeed… die, die again.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n\"DEATHLOOP\" بازیکنان را در یک مبارزه ابدی بین دو قاتل خارق العاده به جزیره بی قانون Blackreef منتقل می کند. محیط‌های خیره‌کننده و سطوح با طراحی دقیق را در یک تجربه گیم‌پلی همه‌جانبه کاوش کنید که به شما امکان می‌دهد به هر موقعیتی که دوست دارید نزدیک شوید. در تلاش برای پایان دادن به چرخه یک بار برای همیشه، اهداف را در سراسر جزیره شکار کنید، و به یاد داشته باشید، اگر در ابتدا موفق نشدید ... بمیرید، دوباره بمیرید."
   }
 ]
