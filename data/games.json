@@ -9320,5 +9320,46 @@
     },
     "description_en": "Revisit the game that set a new bar for single-player narrative storytelling with The Last of Us™ and explore a ravaged and hardened world, where every action has a brutal consequence for Joel and Ellie.\n\nExperience the emotional storytelling and unforgettable characters in The Last of Us™, winner of over 200 Game of the Year awards.\n\nIn a ravaged civilization, where infected and hardened survivors run rampant, Joel, a weary protagonist, is hired to smuggle 14-year-old Ellie out of a military quarantine zone. However, what starts as a small job soon transforms into a brutal cross-country journey.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی را که نوار جدیدی را برای روایت داستان تک نفره با The Last of Us ایجاد می کند، مرور کنید و دنیایی ویران شده و سخت را کشف کنید، جایی که هر اقدامی عواقبی بی رحمانه برای جوئل و الی دارد.\n\nداستان سرایی احساسی و شخصیت های فراموش نشدنی را در The Last of Us™، برنده بیش از 200 جایزه بهترین بازی سال، تجربه کنید.\n\nدر یک تمدن ویران شده، جایی که بازماندگان آلوده و سخت‌گیر بیداد می‌کنند، جوئل، قهرمان خسته، استخدام می‌شود تا الی 14 ساله را از یک منطقه قرنطینه نظامی به بیرون قاچاق کند. با این حال، چیزی که به عنوان یک شغل کوچک شروع می شود، به زودی به یک سفر بی رحمانه بین کشور تبدیل می شود."
+  },
+  {
+    "id": 972403,
+    "name": "The Last of Us Part II Remastered",
+    "background_image": "https://media.rawg.io/media/games/d09/d099b508a1cfb5bd2f2928b50e0784a5.jpg",
+    "rating": 4.53,
+    "metacritic": null,
+    "released": "2024-01-19",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 33,
+    "developers": "Naughty Dog, Iron Galaxy Studios, Nixxes software",
+    "steam_link": "https://store.steampowered.com/app/2531310/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6dc/6dc21b83139e586dd56755b352b921c5.jpg",
+      "https://media.rawg.io/media/screenshots/2c7/2c7cd6b1257f8a07b01c8889a2b14a9d.jpg",
+      "https://media.rawg.io/media/screenshots/51d/51d6d1591c47886b09c12544b6b1dc82.jpg",
+      "https://media.rawg.io/media/screenshots/4f6/4f6921b263dcbe0a6ad58d4e2f5f15e8.jpg",
+      "https://media.rawg.io/media/screenshots/5b6/5b6ca3d7560717089b6a52b5b5ce83ac.jpg",
+      "https://media.rawg.io/media/screenshots/e2b/e2bf9482bb198af39cd6ac7431e7e1a7.jpg",
+      "https://media.rawg.io/media/games/d09/d099b508a1cfb5bd2f2928b50e0784a5.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64-bit (version 1909 or higher)\nProcessor: Intel Core i3-8100, AMD Ryzen 3 1300X\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1650, AMD Radeon RX 5500XT\nStorage: 150 GB available space\nAdditional Notes: SSD Required",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10/11 64-bit (version 1909 or higher)\nProcessor: Intel Core i5-8600, AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 3060, AMD Radeon RX 5700\nStorage: 150 GB available space\nAdditional Notes: SSD Required"
+    },
+    "description_en": "Play the winner of over 300 Game of the Year awards, now remastered for the PlayStation®5 console. Experience for the first time or relive Ellie and Abby’s story with graphical enhancements, new gameplay modes like the roguelike survival experience No Return, full DualSense™ wireless controller integration, and more.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبرنده بیش از 300 جایزه بهترین بازی سال را بازی کنید که اکنون برای کنسول PlayStation®5 بازسازی شده است. برای اولین بار داستان الی و ابی را با پیشرفت‌های گرافیکی، حالت‌های گیم‌پلی جدید مانند تجربه بقا بدون بازگشت، ادغام کامل کنترلر بی‌سیم DualSense™ و موارد دیگر تجربه کنید."
   }
 ]
