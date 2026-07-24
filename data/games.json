@@ -8143,5 +8143,44 @@
     },
     "description_en": "Need for Speed™ Carbon takes handheld racing to a whole new level with all-new crew-based gameplay and an exclusive east coast open-world city. Settle an ongoing turf war by building an unstoppable crew, winning races against your fiercest rivals, and outwitting the cops. How you choose and manage your crew will be the difference between victory and defeat. The city is yours for the taking with Need for Speed™ Carbon, the ultimate in handheld racing.\nSoftware subject to license (us.playstation.com/softwarelicense).  Online activity subject to Terms of Services and User Agreement (www.sonyenteretainmentnetwork.com/terms-of-service).\n© 2009 Electronic Arts Inc. Trademarks belong to their respective owners. All rights reserved.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed™ Carbon مسابقات دستی را با گیم پلی کاملاً جدید مبتنی بر خدمه و یک شهر جهان باز انحصاری ساحل شرقی به سطح جدیدی می برد. با ساختن یک خدمه غیرقابل توقف، برنده شدن در رقابت‌ها در برابر سرسخت‌ترین رقبای خود، و فریب دادن پلیس‌ها، یک جنگ مداوم در چمن را حل کنید. نحوه انتخاب و مدیریت خدمه خود تفاوت بین پیروزی و شکست خواهد بود. این شهر با Need for Speed™ Carbon، بهترین بازی در مسابقات دستی، متعلق به شماست.\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense).  فعالیت آنلاین مشمول شرایط خدمات و قرارداد کاربر (www.sonyenteretainmentnetwork.com/terms-of-service).\n© 2009 Electronic Arts Inc. علائم تجاری متعلق به صاحبان مربوطه می باشد. تمامی حقوق محفوظ است."
+  },
+  {
+    "id": 364806,
+    "name": "Need for Speed Heat",
+    "background_image": "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg",
+    "rating": 3.26,
+    "metacritic": 73,
+    "released": "2019-11-08",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Ghost Games",
+    "steam_link": "https://store.steampowered.com/app/1222680/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/731/731803fc6121a78115353fafc132b73c.jpg",
+      "https://media.rawg.io/media/screenshots/428/42821428f8e0976fbb3a8321082f3860.jpg",
+      "https://media.rawg.io/media/screenshots/507/5079d3009e36676ee01c477f3b32b29b.jpg",
+      "https://media.rawg.io/media/screenshots/a4b/a4b029bad9b59d1f0bbdcb56407cbb7a.jpg",
+      "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: FX-6350 or Equivalent; Core i5-3570 or Equivalent\nMemory: 8 GB RAM\nGraphics: AMD: Radeon 7970/Radeon R9 280x or Equivalent; NVIDIA: GeForce GTX 760 or Equivalent\nDirectX: Version 11\nStorage: 50 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Ryzen 3 1300X or Equivalent; Core i7-4790 or Equivalent\nMemory: 16 GB RAM\nGraphics: AMD: Radeon RX 480 or Equivalent; NVIDIA: GeForce GTX 1060 or Equivalent\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 50 GB available space"
+    },
+    "description_en": "Hustle by day and risk it all by night in Need for Speed™ Heat, a thrilling race experience that pits you against a city’s rogue police force as you battle your way into street racing’s elite.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر Need for Speed™ Heat، یک تجربه مسابقه هیجان انگیز که شما را در مقابل نیروهای پلیس سرکش شهر قرار می دهد و در طول شب همه چیز را به خطر می اندازد."
   }
 ]
