@@ -5732,5 +5732,48 @@
     },
     "description_en": "Call of Duty 2 is a first-person shooter, a second installment in the Call of Duty series.\n\n###Plot and location\nThe game is set during one of the most troubling periods of the 20 century: the 2nd World War. The player can take command of various soldiers from Allied armies, and take part in various campaigns in Europe and Africa. The three playable campaigns focus on the Soviet, American and British soldiers fighting the Axis, each encompassing traditional battlegrounds such as Stalingrad, El Alamein and Hill 400.\n\n###Gameplay\nCall of Duty 2 focuses on combining realism and entertainment in warfare simulation. The playable character can carry two firearms, unique for each country, utilizing each of them in different situations. UI has been changed drastically, removing the visible health bar and overhauling compass HUD. The difficulty system can provide a cinematic experience while keeping the gameplay realistic - on Veteran, each bullet can be fatal.\n\n###Visuals and other features\nThe game boasts a refined graphics engine, with smooth textures, good performance, and stunning effects. Explosions and falling buildings, bullets flying and artillery blasting the ground, every detail is done to ensure the immersion on the battlegrounds of World War II. Multiplayer features include different playing modes, up to 64 players fighting in different locations and using a variety of American, British, Soviet and German weapons.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty 2 یک بازی تیراندازی اول شخص است که دومین قسمت از سری Call of Duty است.\n\n###قطعه و مکان\nداستان بازی در یکی از دردسرسازترین دوره های قرن بیستم اتفاق می افتد: جنگ جهانی دوم. بازیکن می تواند فرماندهی سربازان مختلف ارتش متفقین را بر عهده بگیرد و در مبارزات مختلف در اروپا و آفریقا شرکت کند. این سه کمپین قابل پخش بر روی سربازان شوروی، آمریکایی و بریتانیایی تمرکز می‌کنند که با محور می‌جنگند، که هر کدام شامل میدان‌های نبرد سنتی مانند استالینگراد، العلمین و تپه 400 است.\n\n###بازی\nCall of Duty 2 بر روی ترکیب واقع گرایی و سرگرمی در شبیه سازی جنگ تمرکز دارد. شخصیت قابل بازی می تواند دو اسلحه گرم، منحصر به فرد برای هر کشور حمل کند و از هر یک از آنها در موقعیت های مختلف استفاده کند. رابط کاربری به شدت تغییر کرده است و نوار سلامت قابل مشاهده را حذف کرده و HUD قطب نما را بازسازی کرده است. سیستم سختی می‌تواند تجربه‌ای سینمایی را ارائه دهد و در عین حال گیم‌پلی را واقع‌بینانه نگه می‌دارد - در Veteran، هر گلوله می‌تواند کشنده باشد.\n\n###تصویر و ویژگی های دیگر\nاین بازی دارای یک موتور گرافیکی پیشرفته، با بافت های صاف، عملکرد خوب و جلوه های خیره کننده است. انفجارها و سقوط ساختمان ها، پرواز گلوله ها و انفجار توپخانه روی زمین، تمام جزئیات برای اطمینان از غوطه ور شدن در میدان های جنگ جهانی دوم انجام می شود. ویژگی های چند نفره شامل حالت های مختلف بازی، مبارزه تا 64 بازیکن در مکان های مختلف و استفاده از انواع سلاح های آمریکایی، بریتانیایی، شوروی و آلمانی است."
+  },
+  {
+    "id": 906,
+    "name": "Call of Duty: Black Ops III",
+    "background_image": "https://media.rawg.io/media/games/fd6/fd6a1eecd3ec0f875f1924f3656b7dd9.jpg",
+    "rating": 3.27,
+    "metacritic": 73,
+    "released": "2015-11-06",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 16,
+    "developers": "Raven Software, Treyarch, Beenox, Nerve Software, XPEC Entertainment, XPEC",
+    "steam_link": "https://store.steampowered.com/app/311210/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256672764/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256672764/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/320/32019fd3760123a5ded9937f43ad0318.jpg",
+      "https://media.rawg.io/media/screenshots/000/000880b0f1eeabbdf8a86779f75f25ac.jpg",
+      "https://media.rawg.io/media/screenshots/bc1/bc1ab01319be2e0b7f7ba3dff80fe780.jpg",
+      "https://media.rawg.io/media/screenshots/80f/80f79bf7e27e69824dc1a7e04bc8e766.jpg",
+      "https://media.rawg.io/media/screenshots/ca8/ca89a641e6362e800d96da99b8ac93e0.jpg",
+      "https://media.rawg.io/media/screenshots/aa0/aa08b684dca3f104305c92002b9ce5da.jpg",
+      "https://media.rawg.io/media/games/fd6/fd6a1eecd3ec0f875f1924f3656b7dd9.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 64-Bit / Windows 8 64-Bit / Windows 8.1 64-Bit\nProcessor: Intel® Core™ i3-530 @ 2.93 GHz / AMD Phenom™ II X4 810 @ 2.60 GHz\nMemory: 6 GB RAM\nGraphics: NVIDIA® GeForce® GTX 470 @ 1GB / ATI® Radeon™ HD 6970 @ 1GB\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 100 GB available space\nSound Card: DirectX Compatible",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Call of Duty Black Ops III is a science fiction first-person shooter, the twelfth game in the whole Call of Duty franchise and the third chapter in the Black Ops series. The action begins in 2065, 40 years after the events of the second part, so the game has several historical references. However, the game is not a direct sequel to the previous Black Ops game. Players are offered to assume the role of a CIA special unit trooper trying to get along with the new artificial intelligence DNI (Direct Neural Interface) system and to solve mysteries hidden in it. The whole gameplay is divided into three usual for Black Ops series game modes: Campaign, Multiplayer, and Zombies. The single-player campaign can be also completed in a squad (up to four members). Players are able to choose proper equipment and even customize the character before starting another mission. After the completion, each level could be replayed in a “realistic” difficulty or in a “Nightmares” mode (regular enemies are replaced with zombies).",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty Black Ops III یک بازی تیراندازی اول شخص علمی تخیلی، دوازدهمین بازی در کل فرنچایز Call of Duty و فصل سوم از سری Black Ops است. اکشن در سال 2065، 40 سال پس از وقایع قسمت دوم آغاز می شود، بنابراین بازی دارای چندین مرجع تاریخی است. با این حال، این بازی دنباله مستقیم بازی قبلی Black Ops نیست. به بازیکنان پیشنهاد می شود که نقش یک سرباز واحد ویژه سیا را بر عهده بگیرند که تلاش می کند با سیستم جدید هوش مصنوعی DNI (رابط عصبی مستقیم) کنار بیاید و اسرار پنهان در آن را حل کند. کل گیم پلی بازی به سه حالت معمول برای سری Black Ops تقسیم می شود: Campaign، Multiplayer و Zombies. کمپین تک نفره را می توان در یک تیم (حداکثر چهار نفر) نیز تکمیل کرد. بازیکنان می توانند تجهیزات مناسب را انتخاب کنند و حتی شخصیت را قبل از شروع ماموریت دیگر شخصی سازی کنند. پس از اتمام، هر سطح را می توان در یک دشواری \"واقع گرایانه\" یا در حالت \"کابوس\" (دشمنان معمولی با زامبی ها جایگزین می شوند) بازی کرد."
   }
 ]
