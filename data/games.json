@@ -7860,5 +7860,35 @@
     },
     "description_en": "Max Payne 2: The Fall of Max Payne is a third-person shooter, serving as a direct sequel to the first game. The player follows the story of an NYPD detective, tasked with resolving crimes and answering many questions of its predecessor’s story. The game is set in noir tones, providing with main character’s monologues and various cutscenes.\nThe titular protagonist, Max Payne, is a traumatized officer of the police. After the first game’s events, Max is once again involved in the bloody conflicts of the mafia, with its drama, romance, and bitterness. The game offers its players various game mechanics for maximum replayability. For instance, the difficulty of each level adapts to how you play overall, with enemies dealing less damage and painkillers being more effective if the player has died too many times. The series’s feature mechanic, Bullet Time, is also present in the game, allowing players to plan their movements and save precious ammunition during the slowed time. \nThe game’s physics engine allows the players to experience the most fearsome battles hand-to-hand, with the realistic destruction of surroundings, cinematographic kills, and dramatic deaths. Max Payne 2 also features a game editor, with user-created modifications serving as a tool to further enhance every playthrough.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMax Payne 2: The Fall of Max Payne یک بازی تیراندازی سوم شخص است که به عنوان دنباله مستقیم بازی اول عمل می کند. بازیکن داستان یک کارآگاه NYPD را دنبال می کند که وظیفه دارد جنایات را حل کند و به بسیاری از سؤالات داستان قبلی خود پاسخ دهد. بازی با آهنگ‌های نوآر ساخته می‌شود و مونولوگ‌های شخصیت اصلی و کات سین‌های مختلف را ارائه می‌کند.\nمکس پین، قهرمان اصلی داستان، یک افسر آسیب دیده پلیس است. پس از وقایع بازی اول، مکس بار دیگر درگیر درگیری های خونین مافیا با درام، عاشقانه و تلخی آن می شود. این بازی مکانیک های مختلف بازی را برای حداکثر قابلیت پخش به بازیکنان خود ارائه می دهد. به عنوان مثال، دشواری هر سطح با نحوه بازی شما در کل تطبیق می‌یابد، به طوری که دشمنان آسیب کمتری وارد می‌کنند و اگر بازیکن بارها مرده باشد، داروهای مسکن مؤثرتر خواهد بود. مکانیک ویژگی سری، Bullet Time نیز در بازی حضور دارد و به بازیکنان اجازه می‌دهد تا حرکات خود را برنامه‌ریزی کنند و مهمات گرانبها را در زمان کند ذخیره کنند. \nموتور فیزیک بازی به بازیکنان این امکان را می‌دهد تا ترسناک‌ترین نبردها را با تخریب واقعی محیط، کشتارهای سینمایی و مرگ‌های دراماتیک تجربه کنند. Max Payne 2 همچنین دارای یک ویرایشگر بازی است، با تغییرات ایجاد شده توسط کاربر به عنوان ابزاری برای بهبود بیشتر هر بازی."
+  },
+  {
+    "id": 255823,
+    "name": "Max Payne 3: The Complete Edition",
+    "background_image": "https://media.rawg.io/media/screenshots/4eb/4eb5a5bcc8f2df12f1ccad3456822a3c.jpg",
+    "rating": 3.8,
+    "metacritic": null,
+    "released": "2013-05-11",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "Rockstar Games",
+    "steam_link": "https://store.steampowered.com/search/?term=Max%20Payne%203%3A%20The%20Complete%20Edition",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/4eb/4eb5a5bcc8f2df12f1ccad3456822a3c.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
   }
 ]
