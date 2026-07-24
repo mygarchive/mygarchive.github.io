@@ -8344,5 +8344,46 @@
     },
     "description_en": "No description available.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
+  },
+  {
+    "id": 5611,
+    "name": "Need for Speed: ProStreet",
+    "background_image": "https://media.rawg.io/media/games/269/269cd0c0a196e87ece216b534813df50.jpg",
+    "rating": 3.54,
+    "metacritic": 72,
+    "released": "2007-11-14",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 1,
+    "developers": "Electronic Arts Black Box",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20for%20Speed%3A%20ProStreet",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/4a3/4a307d35da30a24ac41a52b667a4ef66.jpg",
+      "https://media.rawg.io/media/screenshots/825/82559725015d6a03abae547c64d30f4b.jpg",
+      "https://media.rawg.io/media/screenshots/b55/b55da96e691674deeb50c41316a8a12a.jpg",
+      "https://media.rawg.io/media/screenshots/8ca/8cac9aa9f79c08d832fa9a495b12f25c.jpg",
+      "https://media.rawg.io/media/screenshots/3c4/3c4058cbee9fc0dccc20646808fe6b86.jpg",
+      "https://media.rawg.io/media/screenshots/907/90749a3cde312ca3043dfe8e31123e1f.jpg",
+      "https://media.rawg.io/media/games/269/269cd0c0a196e87ece216b534813df50.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Compete at the highest level of street racing with Need for Speed™: ProStreet. It's no longer good enough to simply rule your local neighborhood; in ProStreet, you need to dominate on a global stage. Build the ultimate battle machine, take it to multi-disciplinary showdowns and pit your skills and reputation against the world's best street racers.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا Need for Speed™: ProStreet در بالاترین سطح مسابقات خیابانی رقابت کنید. دیگر به اندازه کافی خوب نیست که به سادگی بر محله محلی خود حکومت کنید. در ProStreet، باید در صحنه جهانی تسلط داشته باشید. ماشین نبرد نهایی را بسازید، آن را به مسابقات چند رشته ای ببرید و مهارت ها و شهرت خود را در برابر بهترین مسابقه های خیابانی جهان قرار دهید."
   }
 ]
