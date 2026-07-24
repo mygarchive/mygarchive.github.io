@@ -9085,5 +9085,46 @@
     },
     "description_en": "Lucy wakes up from a human experiment and gets trapped in a city covered with zombies. She must survive nightly zombie waves and communicate with a group of survivors to escape from the isolated area.\nKey features\nSurvive, exploring a vast island where everything is interactive and covered with zombies.\n- Build and upgrade bases using materials obtained by cutting down trees, mining up stones and collecting artifacts.\n- Get food through hunting and farming, cook and eat.\n- Build fortresses and traps to guide zombie movements to defend the flocking zombie waves.\n- Collect various items, weapons and costumes while searching the house.\n- Create various items and equipment through crafting to survive from zombies and harsh environments.\n- Find clues through the journals and escape the island.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nلوسی از یک آزمایش انسانی بیدار می شود و در شهری پوشیده از زامبی ها به دام می افتد. او باید از امواج شبانه زامبی جان سالم به در ببرد و با گروهی از بازماندگان برای فرار از منطقه ایزوله ارتباط برقرار کند.\nویژگی های کلیدی\nزنده بمانید، جزیره ای وسیع را کاوش کنید که در آن همه چیز تعاملی است و با زامبی پوشیده شده است.\n- ساخت و ارتقاء پایگاه ها با استفاده از مواد به دست آمده از قطع درختان، استخراج سنگ و جمع آوری مصنوعات.\n- از طریق شکار و کشاورزی غذا تهیه کنید، بپزید و بخورید.\n- قلعه ها و تله ها را برای هدایت حرکات زامبی ها بسازید تا از امواج زامبی هجوم آورند.\n- هنگام جستجوی خانه، آیتم ها، سلاح ها و لباس های مختلف را جمع آوری کنید.\n- برای زنده ماندن از زامبی ها و محیط های خشن، آیتم ها و تجهیزات مختلف را از طریق کاردستی ایجاد کنید.\n- سرنخ هایی را از طریق مجلات پیدا کنید و از جزیره فرار کنید."
+  },
+  {
+    "id": 17959,
+    "name": "Ori and the Blind Forest: Definitive Edition",
+    "background_image": "https://media.rawg.io/media/games/04a/04a7e7e185fb51493bdcbe1693a8b3dc.jpg",
+    "rating": 4.42,
+    "metacritic": 88,
+    "released": "2016-04-27",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 6,
+    "developers": "Moon Studios",
+    "steam_link": "https://store.steampowered.com/app/387290/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a5d/a5df71a9c11f8b94ea8aaf81d3daac82.jpg",
+      "https://media.rawg.io/media/screenshots/999/9994adb2d2b31749c40a5cbfd7f2b8f8.jpg",
+      "https://media.rawg.io/media/screenshots/016/0165f9be40790dad6833e075690464fa.jpg",
+      "https://media.rawg.io/media/screenshots/145/1454bae6ad3827d8d471c3648c500b63.jpg",
+      "https://media.rawg.io/media/screenshots/c0e/c0e7f1ca14d1b48d364f867f320275e3.jpg",
+      "https://media.rawg.io/media/screenshots/c46/c46540669db0a243275f8be0351244e1.jpg",
+      "https://media.rawg.io/media/games/04a/04a7e7e185fb51493bdcbe1693a8b3dc.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7\nProcessor: Intel Core 2 Duo E4500 @ 2.2GHz or AMD Athlon 64 X2 5600+ @ 2.8 GHz\nMemory: 4 GB RAM\nGraphics: GeForce 240 GT or Radeon HD 6570 – 1024 MB (1 gig)\nDirectX: Version 9.0c\nStorage: 11 GB available space",
+      "recommended": "OS: Windows 7\nProcessor: Intel Core i5 2300 or AMD FX6120\nMemory: 4 GB RAM\nGraphics: GeForce GTX 550 Ti or Radeon HD 6770\nDirectX: Version 11\nStorage: 11 GB available space"
+    },
+    "description_en": "NEW IN THE DEFINITIVE EDITION\n• Packed with new and additional content: New areas, new secrets, new abilities, more story sequences, multiple difficulty modes, full backtracking support and much more!\n• Discover Naru’s past in two brand new environments.\n• Master two powerful new abilities – Dash and Light Burst.\n• Find new secret areas and explore Nibel faster by teleporting between Spirit Wells.\nThe forest of Nibel is dying. After a powerful storm sets a series of devastating events in motion, Ori must journey to find courage and confront a dark nemesis to save the forest of Nibel. “Ori and the Blind Forest” tells the tale of a young orphan destined for heroics, through a visually stunning Action-Platformer crafted by Moon Studios. Featuring hand-painted artwork, meticulously animated character performance, a fully orchestrated score and dozens of new features in the Definitive Edition, “Ori and the Blind Forest” explores a deeply emotional story about love and sacrifice, and the hope that exists in us all.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجدید در نسخه قطعی\n• مملو از محتوای جدید و اضافی: مناطق جدید، اسرار جدید، توانایی های جدید، توالی داستان بیشتر، حالت های دشواری چندگانه، پشتیبانی کامل از عقب نشینی و بسیاری موارد دیگر!\n• گذشته نارو را در دو محیط کاملاً جدید کشف کنید.\n• تسلط بر دو توانایی جدید قدرتمند - Dash و Light Burst.\n• مناطق مخفی جدید را پیدا کنید و با انتقال از راه دور بین Spirit Wells، نیبل را سریعتر کشف کنید.\nجنگل نیبل در حال مرگ است. پس از وقوع یک طوفان قدرتمند مجموعه ای از حوادث ویرانگر را به راه می اندازد، اوری باید برای یافتن شجاعت و مقابله با دشمن تاریک برای نجات جنگل نیبل سفر کند. «Ori and the Blind Forest» داستان یک یتیم جوان را روایت می‌کند که مقصد آن قهرمانی است، از طریق یک Action-Platformer از لحاظ بصری خیره‌کننده که توسط استودیو مون ساخته شده است. «Ori and the Blind Forest» با آثار هنری نقاشی شده با دست، اجرای شخصیت‌های متحرک با دقت، موسیقی کاملاً هماهنگ و ده‌ها ویژگی جدید در نسخه قطعی، داستانی عمیقاً احساسی درباره عشق و فداکاری و امیدی را که در همه ما وجود دارد را بررسی می‌کند."
   }
 ]
