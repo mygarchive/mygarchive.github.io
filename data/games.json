@@ -8968,5 +8968,35 @@
     },
     "description_en": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily.\n\nFight to survive in this dangerous and unforgiving era, with action brought to life by the authentic realism and rich storytelling that the critically acclaimed Mafia series is known for.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمنشأ جنایات سازمان‌یافته را در مافیا: کشور قدیمی کشف کنید، داستانی خشن اوباش که در دنیای اموات وحشیانه سیسیل دهه 1900 اتفاق می‌افتد.\n\nبرای زنده ماندن در این دوران خطرناک و نابخشودنی بجنگید، با عملی که با رئالیسم معتبر و داستان‌گویی غنی که مجموعه مافیایی که مورد تحسین منتقدان قرار گرفته است، زنده می‌شود."
+  },
+  {
+    "id": 103715,
+    "name": "Mixtape",
+    "background_image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
+    "rating": 4,
+    "metacritic": null,
+    "released": "2026-05-07",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "---",
+    "steam_link": "https://store.steampowered.com/app/2582320/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
   }
 ]
