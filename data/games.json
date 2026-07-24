@@ -6828,5 +6828,46 @@
     },
     "description_en": "THE DIGITAL APEX EDITION\nTHE DIGITAL APEX EDITION\nALL ADDITIONAL DIGITAL CONTENT FOR FAR CRY PRIMAL:\nLEGEND OF THE MAMMOTH: 3 extra missions.\nDrink from the shaman's cup to play as the largest animal in Oros, the almighty mammoth. Feel your power as you stomp your enemies and defend your herd from other beasts and humans.\nA NEW WEAPON, THE BLOOD SHASTI CLUB: A bloodstained cudgel of bone and teeth wielded by Ull, the vicious leader of the Udam.\n4 ENHANCEMENT PACKS that offers early access to rare resources and unique customization options.THE SABRETOOTH PACK: early access to animal hides for crafting + change a selection of the sabretooth tigers in Oros to the ferocious Flame Fang Sabretooths.THE OWL PACK: early access to resources for crafting + decorate your arms with unique Wenja tribal paint + change the appearance of your owl companion, give him the dark feathers of a raging storm cloud.THE MAMMOTH PACK: early access to an endurance-boosting recipe + change a selection of the mammoths in Oros to the mysterious Ash Back Mammoths.THE BOMB PACK: early access to 2 extra string bags to increase your odds of survival.\nAbout the GameThe award-winning Far Cry franchise that stormed the tropics and the Himalayas now enters the original fight for humanity’s survival with its innovative open-world sandbox gameplay, bringing together massive beasts, breathtaking environments, and unpredictable savage encounters.\nWelcome to the Stone Age, a time of extreme danger and limitless advent",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDIGITAL APEX EDITION\nDIGITAL APEX EDITION\nتمام محتوای دیجیتالی اضافی برای FAR CRY PRIMAL:\nLEGEND OF THE MAMMOTH: 3 ماموریت اضافی.\nاز جام شمن بنوشید تا به عنوان بزرگترین حیوان اوروس، ماموت قادر مطلق، بازی کنید. وقتی دشمنان خود را زیر پا می گذارید و از گله خود در برابر سایر جانوران و انسان ها دفاع می کنید، قدرت خود را احساس کنید.\nیک اسلحه جدید، باشگاه شستی خون: یک چاقو استخوان و دندان آغشته به خون که توسط اول، رهبر شرور اودام به کار می رود.\n4 بسته تقویتی که دسترسی زودهنگام به منابع کمیاب و گزینه‌های سفارشی‌سازی منحصربه‌فرد را ارائه می‌دهد. بسته سابرتوث: دسترسی زودهنگام به پوست حیوانات برای کاردستی + منتخبی از ببرهای سابرتوت در Oros را به دندان‌های خشن شعله‌ای نیش تغییر دهید. بسته جغد: دسترسی اولیه به منابع ظاهری منحصربه‌فرد شما را با تغییر کاردستی تزئین می‌کنیم. همدم، پرهای تیره ابر طوفانی خشمگین را به او بدهید. بسته ماموت: دسترسی زودهنگام به یک دستور العمل تقویت کننده استقامت + منتخبی از ماموت های اوروس را به ماموت های اسرارآمیز Ash Back تغییر دهید. بسته بمب: دسترسی زودهنگام به 2 کیسه رشته اضافی برای افزایش شانس بقا.\nدرباره فرنچایز GameThe برنده جایزه Far Cry که مناطق استوایی و هیمالیا را هجوم آورد، اکنون با گیم پلی نوآورانه sandbox جهان باز خود وارد مبارزه اصلی برای بقای بشریت می شود که جانوران عظیم، محیط های نفس گیر و برخوردهای وحشیانه غیرقابل پیش بینی را گرد هم می آورد.\nبه عصر حجر خوش آمدید، زمان خطرات شدید و ظهور بی حد و حصر"
+  },
+  {
+    "id": 452636,
+    "name": "Forspoken",
+    "background_image": "https://media.rawg.io/media/games/3a0/3a074a80d9a45e82aff7532f0162628e.jpg",
+    "rating": 2.21,
+    "metacritic": 64,
+    "released": "2023-01-24",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 12,
+    "developers": "Luminous Productions",
+    "steam_link": "https://store.steampowered.com/app/1680880/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/586/58687db64486e82810c868b1ba8e6cff.jpg",
+      "https://media.rawg.io/media/screenshots/a85/a85af7d8289384b020e6f45e72b9a332.jpg",
+      "https://media.rawg.io/media/screenshots/58c/58c1830c37ebda8a6047eee051eba1ea.jpg",
+      "https://media.rawg.io/media/screenshots/8ad/8adef562579fdf6f75a41bb96d9c71b4.jpg",
+      "https://media.rawg.io/media/screenshots/5ea/5eaa5990d6eecb676e6fc303470ac413.jpg",
+      "https://media.rawg.io/media/screenshots/c32/c32bcf58fe2e03f4f604db63fb6e3a70_Mjju86I.jpg",
+      "https://media.rawg.io/media/games/3a0/3a074a80d9a45e82aff7532f0162628e.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64-bit (After November 2019 Update) or Windows® 11 64-bit\nProcessor: AMD Ryzen™ 5 1600 (3.7GHz or better) / Intel® Core™ i7-3770 (3.7GHz or better)\nMemory: 16 GB RAM\nGraphics: AMD Radeon™ RX 5500 XT 8GB / NVIDIA® GeForce® GTX 1060 6 GB VRAM\nDirectX: Version 12\nStorage: 150 GB available space\nAdditional Notes: 720p 30fps",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64-bit (After November 2019 Update) or Windows® 11 64-bit\nProcessor: AMD Ryzen™5 3600 (3.7 GHz or better) / Intel® Core™ i7-8700K (3.7GHz or better)\nMemory: 24 GB RAM\nGraphics: AMD Radeon™ RX 6700 XT 12GB / NVIDIA® GeForce® RTX 3070 8 GB VRAM\nDirectX: Version 12\nStorage: 150 GB available space\nAdditional Notes: 1440p 30fps, SSD 150GB"
+    },
+    "description_en": "Project Athia is the culmination of Luminous Productions’ philosophy to create a completely new and fresh gaming experiences that fuses together the latest technologies with art. With the PlayStation 5, their vision truly comes to life, and with Project Athia you can look forward to being transported to a vast and detailed world filled with beauty and dismay.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nProject Athia نقطه اوج فلسفه Luminous Productions برای ایجاد یک تجربه بازی کاملاً جدید و تازه است که آخرین فناوری ها را با هنر ترکیب می کند. با پلی استیشن 5، چشم انداز آنها واقعاً زنده می شود و با Project Athia می توانید منتظر انتقال به دنیایی وسیع و با جزئیات پر از زیبایی و وحشت باشید."
   }
 ]
