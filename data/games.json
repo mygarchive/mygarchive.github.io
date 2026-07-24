@@ -6951,5 +6951,51 @@
     },
     "description_en": "Experience the origins of one of gaming’s most acclaimed franchises like never before. Featuring 4K resolution, up to 120 FPS support, and the ultimate multiplayer experience with cross-progression and cross-play, across all platforms, this is the definitive way to experience the game that started it all.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمنشا یکی از تحسین‌شده‌ترین فرنچایزهای بازی را بی‌سابقه تجربه کنید. با داشتن رزولوشن 4K، پشتیبانی تا 120 FPS، و تجربه نهایی چند نفره با پیشرفت متقابل و بازی متقابل، در همه پلتفرم‌ها، این راهی قطعی برای تجربه بازی است که همه چیز را آغاز کرد."
+  },
+  {
+    "id": 638650,
+    "name": "Ghost of Tsushima Director's Cut",
+    "background_image": "https://media.rawg.io/media/games/193/193c9fe23ca026914fdf41d551ff3df9.jpg",
+    "rating": 4.58,
+    "metacritic": null,
+    "released": "2021-08-20",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 4,
+    "developers": "Sucker Punch Productions",
+    "steam_link": "https://store.steampowered.com/app/2215430/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1cd/1cdf1d9089d53f415a97bf1c35a15b0d.jpg",
+      "https://media.rawg.io/media/screenshots/b7e/b7efca7c5c4489a13a19e6d1ced1a50d.jpg",
+      "https://media.rawg.io/media/screenshots/738/738d80f1a79b15b4374aeb5e855d5dbf.jpg",
+      "https://media.rawg.io/media/screenshots/d51/d517f8bad0e83cef487e21bbb58e1012.jpg",
+      "https://media.rawg.io/media/screenshots/97e/97e69ff05e89c0f77e3d5b01798a945b.jpg",
+      "https://media.rawg.io/media/screenshots/81e/81ea0e76c5d671735410f29b1fb934ee.jpg",
+      "https://media.rawg.io/media/games/193/193c9fe23ca026914fdf41d551ff3df9.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Explore the brand new Iki Island, plus PS5-specific enhancements like DualSense haptic feedback, Japanese lip sync, and more.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجزیره جدید Iki، به‌علاوه پیشرفت‌های ویژه PS5 مانند بازخورد لمسی DualSense، همگام‌سازی لب ژاپنی، و موارد دیگر را کاوش کنید."
   }
 ]
