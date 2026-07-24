@@ -6519,5 +6519,51 @@
     },
     "description_en": "Pre-Order BonusPre-order the Standard Edition now to get the exclusive Hero of Harran Bundle, which contains:- Ultimate Survivor Outfit\n- Harran Combat Knife (+ Upgradable Blueprint)\n- The Follower Crossbow (+ Upgradable Blueprint)\n- In Jade’s Memory Pistol (+ Upgradable Blueprint)\n- Castor Woods Patrol\nDeluxe EditionTake your Dying Light: The Beast experience to another level with the Deluxe Edition. You'll receive the Official Soundtrack, wallpapers, and the Castor Woods Prepper Bundle, as well as a detailed tourist map that highlights locations worth exploring.INCLUDES:\n– Official Soundtrack\n– Wallpaper Pack\n– Castor Woods Tourist Map\n– Castor Woods Prepper Bundle\n– Castor Woods Prepper Outfit\n– Survivalist SMG\n– Roadhog\nEditions\nAbout the GameGet ready for a unique blend of open world and action survival horror with Dying Light: The Beast.You are Kyle Crane. After being captured by the Baron and enduring his painful experiments for years, you escape. But now, a battle rages inside you: zombie DNA clashes with human, and you struggle to control the beast within. You want revenge... but first you must tame it. It's your only option.Once you enter the zombie-infested Castor Woods, every battle will be a fight for survival… especially when night falls. Play as Kyle Crane, a hero with the DNA of both man and beast. Freely switch between two playstyles and face a fierce conflict that lead to the acceptance of the monster within.\nPush the brutality of Dying Light’s combat to the",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجایزه پیش‌سفارش را اکنون نسخه استاندارد را سفارش دهید تا قهرمان انحصاری Harran Bundle را دریافت کنید که شامل موارد زیر است: - Ultimate Survivor Outfit\n- چاقوی رزمی هاران (+ طرح اولیه قابل ارتقا)\n- کمان پولادی دنبال کننده (+ طرح اولیه قابل ارتقا)\n- In Jade's Memory Pistol (+ طرح اولیه قابل ارتقا)\n- گشت کاستور وودز\nنسخه Deluxe تجربه Dying Light: The Beast خود را با نسخه Deluxe به سطح دیگری ببرید. شما موسیقی متن رسمی، تصاویر پس زمینه، و مجموعه آماده سازی کاستور وودز، و همچنین یک نقشه توریستی دقیق را دریافت خواهید کرد که مکان هایی را که ارزش کاوش را دارند برجسته می کند. شامل:\n- موسیقی متن رسمی\n- بسته کاغذ دیواری\n– نقشه گردشگری کاستور وودز\n– بسته نرم افزاری کاستور وودز\n– لباس Prepper Castor Woods\n– Survivalist SMG\n- رودهوگ\nنسخه ها\nدرباره بازی با Dying Light: The Beast برای ترکیبی منحصر به فرد از جهان باز و ترسناک بقای اکشن آماده شوید. شما کایل کرین هستید. پس از اسیر شدن توسط بارون و تحمل آزمایش های دردناک او برای سال ها، شما فرار می کنید. اما اکنون، نبردی در درون شما جریان دارد: DNA زامبی با انسان درگیر می شود و شما برای کنترل جانور درون مبارزه می کنید. میخوای انتقام بگیری...ولی اول باید رامش کنی. این تنها گزینه شماست. هنگامی که وارد کاستور وودز پر از زامبی می شوید، هر نبردی برای بقا خواهد بود... به خصوص زمانی که شب فرا می رسد. نقش کایل کرین، قهرمانی با DNA انسان و حیوان را بازی کنید. آزادانه بین دو سبک بازی جابجا شوید و با یک درگیری شدید روبرو شوید که منجر به پذیرش هیولای درون می شود.\nوحشیانه مبارزه Dying Light را به سمت خود فشار دهید"
+  },
+  {
+    "id": 58758,
+    "name": "Dying Light 2 Stay Human",
+    "background_image": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg",
+    "rating": 3.64,
+    "metacritic": 77,
+    "released": "2022-02-04",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 23,
+    "developers": "Techland",
+    "steam_link": "https://store.steampowered.com/app/534380/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a6c/a6cd4af9ecd1ea130a311282356ddb6d.jpg",
+      "https://media.rawg.io/media/screenshots/7a3/7a38cd42c25abb2a360248af3585188a.jpg",
+      "https://media.rawg.io/media/screenshots/a79/a79aeabc63bd59054ad43315cd6a0cb5.jpg",
+      "https://media.rawg.io/media/screenshots/a4f/a4f3717dbbacf77a20588a639c4c9859.jpg",
+      "https://media.rawg.io/media/screenshots/48e/48e3a39421c945b36f56671b03c5ffa7.jpg",
+      "https://media.rawg.io/media/screenshots/45e/45e9e52b9a45e54d25e11d7c5cec1c13.jpg",
+      "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC"
+    },
+    "description_en": "Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. \r\n\r\nIn this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDying Light 2 یک چشم انداز منحصر به فرد پسا آخرالزمانی از عصر تاریک مدرن را زنده می کند - یک واقعیت وحشیانه، تاریک و نابخشودنی که در آن به همان اندازه احتمال دارد که توسط افراد آلوده به دست یک انسان از بین برید. \r\n\r\nدر این دنیای خسته، تفکر سریع، توانایی‌های استثنایی پارکور و مهارت‌های جنگی وحشیانه تنها چیزهایی هستند که به شما اجازه می‌دهند در تاریکی شیرجه بزنید و زنده بیرون بیایید. از نظر اخلاقی تصمیمات خاکستری بگیرید و شاهد باشید که چگونه بر جهان در سطوح مختلف تأثیر می گذارد، تغییر شهر را شکل می دهد و در نهایت سرنوشت آن را تعیین می کند."
   }
 ]
