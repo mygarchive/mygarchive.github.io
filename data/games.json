@@ -5818,5 +5818,46 @@
     },
     "description_en": "Thirteenth in a row the main game of the series Call of Duty\n\nThe single player campaign of this game takes action far beyond our planet. Earthlings do not have enough resources, they go after them to other planets, organize colonies, but at some point the inhabitants of the colony on Mars begin to fight for independence from Earth.\n\n###New conditions and mechanics\nNew conditions bring new gameplay mechanics into the game, such as zero-gravity environments. Players have a boost pack, and a grappling hook, which allow players to move in these zero-gravity environments easily, they can visit different planets, satellites and asteroids in the solar system.\n\nBoth space combat and the \"boot-on-the-ground\" gameplay are available in the game as its key focuses.\n\nThe player controls Captain Nick Reyes, a Tier 1 Special Operations pilot, engaged in aerial combat with enemies using his transforming fighter, the Jackal.\n\nRetribution is a central hub of the game’s world. In Retribution, you can view your progression and start main campaign missions. There are also group of secondary quests called \"Ship Assaults\" which gives cosmetic and customization items, upgrades to the Jackal, and some new story details.\n\nHero also has a wrist computer, which allows him to hack into enemies' gadgets and machines.\n\n###Multiplayer\nThe «Combat Rigs» is a major overhaul to the class system introduced in Infinite Warfare. Like a Specialist system in Black Ops III, there are six rigs: Warfighter, Merc, FTL",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسیزدهمین بازی اصلی سری Call of Duty\n\nکمپین تک نفره این بازی بسیار فراتر از سیاره ما عمل می کند. زمینی ها منابع کافی ندارند، آنها به دنبال آنها به سیارات دیگر می روند، مستعمرات را سازماندهی می کنند، اما در مقطعی ساکنان مستعمره در مریخ شروع به مبارزه برای استقلال از زمین می کنند.\n\n###شرایط و مکانیک جدید\nشرایط جدید مکانیک های گیم پلی جدیدی مانند محیط های با جاذبه صفر را وارد بازی می کند. بازیکنان دارای یک بسته تقویتی و یک قلاب گیر هستند که به بازیکنان اجازه می دهد در این محیط های گرانش صفر به راحتی حرکت کنند، آنها می توانند از سیارات، ماهواره ها و سیارک های مختلف در منظومه شمسی بازدید کنند.\n\nهم مبارزات فضایی و هم گیم پلی «بوت روی زمین» به عنوان محورهای اصلی بازی در دسترس هستند.\n\nبازیکن کنترل کاپیتان Nick Reyes، خلبان Tier 1 Special Operations را بر عهده دارد که با استفاده از جنگنده تغییردهنده خود، Jackal، درگیر نبرد هوایی با دشمنان است.\n\nRetribution مرکز اصلی دنیای بازی است. در Retribution می توانید پیشرفت خود را مشاهده کرده و ماموریت های اصلی کمپین را شروع کنید. همچنین گروهی از ماموریت‌های ثانویه به نام «حمله کشتی» وجود دارد که آیتم‌های آرایشی و شخصی‌سازی، ارتقاء شغال و برخی جزئیات داستان جدید را ارائه می‌دهد.\n\nهیرو همچنین یک کامپیوتر مچی دارد که به او اجازه می دهد تا ابزارها و ماشین های دشمنان را هک کند.\n\n###چند نفره\n«Combat Rigs» یک تغییر اساسی در سیستم کلاسی است که در Infinite Warfare معرفی شده است. مانند یک سیستم تخصصی در Black Ops III، شش ریگ وجود دارد: Warfighter، Merc، FTL."
+  },
+  {
+    "id": 983212,
+    "name": "Call of Duty: Black Ops 6",
+    "background_image": "https://media.rawg.io/media/games/e89/e89f9a409bce5d36873f65ea9659c36e.jpg",
+    "rating": 3.83,
+    "metacritic": null,
+    "released": "2024-10-24",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Raven Software, Treyarch, Infinity Ward, Beenox, Sledgehammer Games, High Moon Studios, Activision Shanghai, Demonware",
+    "steam_link": "https://store.steampowered.com/app/4384550/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a34/a34cddc45e00e0f848df621c7357e5db.jpg",
+      "https://media.rawg.io/media/screenshots/994/994ac82a6dc28e2abf5e1f06fa49b7fe.jpg",
+      "https://media.rawg.io/media/screenshots/735/735c25b748097c3454e9cd87f8d1a0e2.jpg",
+      "https://media.rawg.io/media/screenshots/546/546de96bebda6cb7f73fa018f18556e9.jpg",
+      "https://media.rawg.io/media/screenshots/707/70778379dfaf16c64996827ad67940f8.jpg",
+      "https://media.rawg.io/media/screenshots/cfc/cfc9e6d7fd59b628626839460e1329a0.jpg",
+      "https://media.rawg.io/media/games/e89/e89f9a409bce5d36873f65ea9659c36e.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows®  10 64 Bit (latest update)\nProcessor: AMD Ryzen™ 5 1400 or Intel® Core™ i5-6600\nMemory: 8 GB RAM\nGraphics: AMD Radeon™ RX 470, NVIDIA® GeForce® GTX 960 or Intel® Arc™ A580\nDirectX: Version 12\nNetwork: Broadband Internet connection\nAdditional Notes: SSD with 128 GB available space at launch",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64 Bit (latest update) or Windows® 11 64 Bit (latest update)\nProcessor: AMD Ryzen™ 5 1600X or Intel® Core™ i7-6700K\nMemory: 12 GB RAM\nGraphics: AMD Radeon RX 6600XT or NVIDIA GeForce GTX 1080Ti / RTX 3060\nDirectX: Version 12\nNetwork: Broadband Internet connection\nAdditional Notes: SSD with 128 GB available space at launch"
+    },
+    "description_en": "Initial Intel: Campaign: The Black Ops 6 Campaign takes players to a new point in time – the early 1990s. In true Black Ops fashion, the fictional story builds on the history of the time, thrusting you into a strange and clandestine conspiracy where a shadowy force has infiltrated the U.S. government. Anyone who resists is branded as a traitor, forcing players to go rogue for the first time to fight the very machine that created them. Nothing is what it seems, and the truth may be hard to fathom, drawing you ever deeper into intrigue, distrust, and mind-bending psychological revelations. This is true, signature Black Ops style.\n\nInitial Intel: Multiplayer: Offering a massive amount of content at launch, expect 16 brand new Multiplayer maps on Day One, including 12 Core 6v6 maps and four small-sized Strike maps, the latter of which are unique, stand-alone locations designed to be played in 2v2 or Face Off 6v6 matches. Multiplayer is also where you’ll test your skills and learn how to move like an action hero, with innovations like Omnimovement – allowing you to sprint, slide and dive in any direction – as well as Intelligent Movement (sprinting, mantling, and crouch assists allowing you to focus on achieving incredible and complex maneuvers with ease), increased enemy hit zones, an incredible lineup of gear, HUD optimizations, and the return of Theatre Mode and Classic Prestige!\n\nAll designed to ensure this game is the ultimate Black Ops Multiplayer experience.\n\nInitial Intel:",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nInitial Intel: Campaign: کمپین Black Ops 6 بازیکنان را به نقطه جدیدی از زمان می برد - اوایل دهه 1990. در مد واقعی Black Ops، داستان تخیلی بر اساس تاریخ آن زمان است و شما را وارد یک توطئه عجیب و مخفیانه می کند که در آن یک نیروی سایه به دولت ایالات متحده نفوذ کرده است. هر کسی که مقاومت کند به عنوان یک خائن شناخته می شود و بازیکنان را مجبور می کند برای اولین بار برای مبارزه با همان ماشینی که آنها را ایجاد کرده است سرکشی کنند. هیچ چیز آنطور که به نظر می رسد نیست، و درک حقیقت ممکن است سخت باشد، و شما را بیش از پیش به دسیسه، بی اعتمادی و افشاگری های روانشناختی آزاردهنده می کشاند. این درست است، سبک امضای Black Ops.\n\nInitial Intel: Multiplayer: با ارائه حجم انبوهی از محتوا در هنگام راه‌اندازی، انتظار 16 نقشه چندنفره کاملاً جدید را در روز اول داشته باشید، شامل 12 نقشه Core 6v6 و چهار نقشه Strike با اندازه کوچک، که دومی مکان‌های منحصربه‌فرد و مستقلی هستند که برای بازی در مسابقات 2v2 یا Face Off 6v6 طراحی شده‌اند. بازی چند نفره همچنین جایی است که مهارت‌های خود را آزمایش می‌کنید و یاد می‌گیرید که چگونه مانند یک قهرمان اکشن حرکت کنید، با نوآوری‌هایی مانند Omnimovement - که به شما امکان می‌دهد به سرعت، سر خوردن و شیرجه رفتن در هر جهتی بپیچید - و همچنین حرکت هوشمند (دوی سرعت، منتینگ و کمک‌های خمیده به شما امکان می‌دهد روی دستیابی به مانورهای فوق‌العاده دشمن با خطوط مانورهای باورنکردنی و پیچیده تمرکز کنید). تجهیزات، بهینه سازی HUD، و بازگشت حالت تئاتر و کلاسیک پرستیژ!\n\nهمه چیز طراحی شده تا اطمینان حاصل شود که این بازی تجربه نهایی Black Ops Multiplayer است.\n\nاینتل اولیه:"
   }
 ]
