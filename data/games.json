@@ -9034,5 +9034,56 @@
     },
     "description_en": "Capcom’s newest IP—PRAGMATA. An all-new Science Fiction action adventure with its own unique hacking twist!\nIt is the near future, and protagonists Hugh and his android companion Diana, must work together as they make their way through the cold lunar research station.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجدیدترین IP Capcom—PRAGMATA. یک ماجراجویی اکشن علمی تخیلی کاملاً جدید با پیچ و تاب هک منحصر به فرد خود!\nاین آینده نزدیک است، و قهرمانان داستان، هیو و همراه اندرویدی اش دایانا، باید با هم کار کنند تا راه خود را از طریق ایستگاه تحقیقاتی سرد قمری طی کنند."
+  },
+  {
+    "id": 485191,
+    "name": "Night of the Dead",
+    "background_image": "https://media.rawg.io/media/screenshots/235/2354b04ae4ef1956c760f844f497c7bb.jpg",
+    "rating": 2.09,
+    "metacritic": null,
+    "released": "2020-08-28",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 2,
+    "developers": "jacktostudios",
+    "steam_link": "https://store.steampowered.com/app/1377380/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c4a/c4a9ec569900fd57fcb4278285fdcefa.jpg",
+      "https://media.rawg.io/media/screenshots/e37/e3711a3e4cb1b9bfec85bb964e8bfe3f.jpg",
+      "https://media.rawg.io/media/screenshots/394/394c539f46a7e0d59295c5c6607c09c9.jpg",
+      "https://media.rawg.io/media/screenshots/e28/e2876d6d98a1ca20775731b6e4f8575d.jpg",
+      "https://media.rawg.io/media/screenshots/948/948f373bcc5b4e83c69803fe8a0d3ee8.jpg",
+      "https://media.rawg.io/media/screenshots/ff7/ff726a39d1108571a028eb476b58a50b.jpg",
+      "https://media.rawg.io/media/screenshots/235/2354b04ae4ef1956c760f844f497c7bb.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7/8/10 64-bit\nProcessor: 3.2 GHz Quad Core Processor or better\nMemory: 8 GB RAM\nGraphics: GeForce® GTX 960 or better\nDirectX: Version 11\nStorage: 16 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Intel® Core™ i5-9600K / AMD Ryzen™ 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1660 TI\nStorage: 16 GB available space"
+    },
+    "description_en": "Lucy wakes up from a human experiment and gets trapped in a city covered with zombies. She must survive nightly zombie waves and communicate with a group of survivors to escape from the isolated area.\nKey features\nSurvive, exploring a vast island where everything is interactive and covered with zombies.\n- Build and upgrade bases using materials obtained by cutting down trees, mining up stones and collecting artifacts.\n- Get food through hunting and farming, cook and eat.\n- Build fortresses and traps to guide zombie movements to defend the flocking zombie waves.\n- Collect various items, weapons and costumes while searching the house.\n- Create various items and equipment through crafting to survive from zombies and harsh environments.\n- Find clues through the journals and escape the island.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nلوسی از یک آزمایش انسانی بیدار می شود و در شهری پوشیده از زامبی ها به دام می افتد. او باید از امواج شبانه زامبی جان سالم به در ببرد و با گروهی از بازماندگان برای فرار از منطقه ایزوله ارتباط برقرار کند.\nویژگی های کلیدی\nزنده بمانید، جزیره ای وسیع را کاوش کنید که در آن همه چیز تعاملی است و با زامبی پوشیده شده است.\n- ساخت و ارتقاء پایگاه ها با استفاده از مواد به دست آمده از قطع درختان، استخراج سنگ و جمع آوری مصنوعات.\n- از طریق شکار و کشاورزی غذا تهیه کنید، بپزید و بخورید.\n- قلعه ها و تله ها را برای هدایت حرکات زامبی ها بسازید تا از امواج زامبی هجوم آورند.\n- هنگام جستجوی خانه، آیتم ها، سلاح ها و لباس های مختلف را جمع آوری کنید.\n- برای زنده ماندن از زامبی ها و محیط های خشن، آیتم ها و تجهیزات مختلف را از طریق کاردستی ایجاد کنید.\n- سرنخ هایی را از طریق مجلات پیدا کنید و از جزیره فرار کنید."
   }
 ]
