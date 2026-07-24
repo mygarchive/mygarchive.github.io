@@ -6434,5 +6434,39 @@
     },
     "description_en": "As the DOOM Slayer, you return to find Earth has suffered a demonic invasion. Raze Hell and discover the Slayer’s origins and his enduring mission to rip and tear…until it is done.\n\nExperience the ultimate combination of speed and power as you battle your way across dimensions with the next leap in push-forward, first-person combat.\nSlayer Threat Level at Maximum\n\nArmed with a shoulder-mounted flamethrower, retractable wrist-mounted blade, upgraded guns and mods, and abilities like the Double Dash, you're faster, stronger, and more versatile than ever.\nUnholy Trinity\n\nTake what you need from your enemies: Glory kill for extra health, incinerate for armor, and chainsaw demons to stock up on ammo to become the ultimate demon-slayer.\n\nBATTLEMODE is the new 2 versus 1 multiplayer experience built from the ground up at id Software. A fully-armed DOOM Slayer faces off against two player-controlled demons, duking it in a best-of-five round match of intense first-person combat. BATTLEMODE launches with 6 handcrafted maps and 5 playable demons – the Marauder, Archvile, Revenant, Mancubus and Pain Elemental.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عنوان قاتل DOOM، شما برمی‌گردید و متوجه می‌شوید که زمین مورد تهاجم اهریمنی قرار گرفته است. جهنم را با خاک یکسان کنید و منشأ قاتل و ماموریت پایدار او برای پاره کردن و پاره کردن… تا زمانی که این کار انجام شود را کشف کنید.\n\nبا جهش بعدی در نبرد اول شخص و هل دادن به جلو، ترکیب نهایی سرعت و قدرت را تجربه کنید.\nسطح تهدید قاتل در حداکثر\n\nمجهز به شعله افکن روی شانه، تیغه مچ دست جمع شونده، اسلحه ها و مدهای ارتقا یافته و توانایی هایی مانند دابل داش، سریع تر، قوی تر و همه کاره تر از همیشه هستید.\nتثلیث نامقدس\n\nآنچه را که نیاز دارید از دشمنان خود بگیرید: Glory kill برای سلامتی بیشتر، سوزاندن برای زره، و شیاطین اره برقی برای ذخیره مهمات برای تبدیل شدن به قاتل نهایی شیطان.\n\nBATTLEMODE تجربه چند نفره 2 در مقابل 1 است که از ابتدا در id Software ساخته شده است. یک DOOM Slayer کاملاً مسلح با دو شیاطین که توسط بازیکن کنترل می‌شوند روبرو می‌شود و آن را در یک مسابقه بهترین از پنج دور مبارزه‌ی شدید اول شخص دوخته می‌کند. BATTLEMODE با 6 نقشه دست ساز و 5 شیطان قابل بازی - Marauder، Archvile، Revenant، Mancubus و Pain Elemental راه اندازی می شود."
+  },
+  {
+    "id": 274764,
+    "name": "Dragon Age: The Veilguard",
+    "background_image": "https://media.rawg.io/media/games/4c5/4c5a391237b78ea96aeff8206f63d3f5.jpg",
+    "rating": 2.79,
+    "metacritic": null,
+    "released": "2024-10-31",
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "BioWare",
+    "steam_link": "https://store.steampowered.com/app/1845910/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d8d/d8d822cf4ff3adcd4c7787d9ef8d8546.jpg",
+      "https://media.rawg.io/media/screenshots/562/562bbc50fd35d9d837434c23d7eb1d88.jpg",
+      "https://media.rawg.io/media/screenshots/1d0/1d06009c2fd8bd0192d93fe151655e45.jpg",
+      "https://media.rawg.io/media/screenshots/579/57995799eb47c61d672a64ea808f7d9a.jpg",
+      "https://media.rawg.io/media/games/4c5/4c5a391237b78ea96aeff8206f63d3f5.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The Dread Wolf Rises\nI suspect you have questions.\n\nThe world of Dragon Age needs a new hero – someone who can take on the evil forces threatening Thedas. Get a first look at some of the new locations you’ll discover and the factions fighting by your side in the next chapter of Dragon Age.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nگرگ ترسناک برمی خیزد\nمن گمان می کنم که شما سوالاتی دارید.\n\nدنیای Dragon Age به یک قهرمان جدید نیاز دارد - کسی که بتواند با نیروهای شیطانی تهدید کننده Thedas مقابله کند. در فصل بعدی Dragon Age ابتدا به برخی از مکان‌های جدیدی که کشف خواهید کرد و گروه‌هایی که در کنار شما می‌جنگند، نگاه کنید."
   }
 ]
