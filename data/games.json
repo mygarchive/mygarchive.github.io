@@ -7974,5 +7974,46 @@
     },
     "description_en": "It is the sequel to the game Metro 2033. Both games are based on the world of Dmitry Glukhovsky's novel Metro 2033 - in post-apocalyptic Moscow, in the tunnels of subway lines groups of very different people survive. And not only people. There are mutated people there, and mutated animals. They are distinguished by unusual abilities, but even more - behaviour strategies. In the struggle for the remnants of resources, all these beings spend their gloomy days.\nAll characters use unusual and unexpected means for life and war. Something is created from the remnants of a past, normal life, something has already appeared in a new, changed world.\nLocations are struck by an unusual synthesis of the ruins of a known world and traces of a catastrophe.\nFrom the previous game Metro: Last Light differs, according to general opinion, by careful work on the remarks and shortcomings of the previous game. The set of weapons is significantly expanded, the technologies of Metro 2033 have become more developed.\nThe game has two fundamentally different endings and five additions.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین عاقبت بازی Metro 2033 است. هر دو بازی بر اساس دنیای رمان مترو 2033 دیمیتری گلوخوفسکی ساخته شده اند - در مسکوی پسا آخرالزمانی، در تونل های خطوط مترو گروه هایی از افراد بسیار متفاوت زنده می مانند. و نه تنها مردم. در آنجا افراد جهش یافته و حیوانات جهش یافته وجود دارند. آنها با توانایی های غیر معمول متمایز می شوند، اما حتی بیشتر - استراتژی های رفتاری. در مبارزه برای بقایای منابع، همه این موجودات روزهای غم انگیز خود را می گذرانند.\nهمه شخصیت ها از وسایل غیرمعمول و غیرمنتظره برای زندگی و جنگ استفاده می کنند. چیزی از بقایای یک زندگی عادی گذشته ایجاد شده است، چیزی قبلاً در دنیای جدید و تغییر یافته ظاهر شده است.\nمکان ها با ترکیب غیرمعمول ویرانه های یک جهان شناخته شده و آثار یک فاجعه تحت تأثیر قرار می گیرند.\nبا بازی قبلی Metro: Last Light، طبق نظر عمومی، با کار دقیق روی نکات و کاستی های بازی قبلی متفاوت است. مجموعه سلاح ها به طور قابل توجهی گسترش یافته است، فناوری های مترو 2033 توسعه یافته تر شده اند.\nاین بازی دارای دو پایان اساسی متفاوت و پنج اضافه است."
+  },
+  {
+    "id": 3603,
+    "name": "Metro 2033 Redux",
+    "background_image": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
+    "rating": 4.1,
+    "metacritic": 88,
+    "released": "2014-08-25",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 6,
+    "developers": "Deep Silver, 4A Games, Fishlabs Entertainment",
+    "steam_link": "https://store.steampowered.com/app/286690/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/432/432cf94eb1f25d7415f05def5d18cedc.jpg",
+      "https://media.rawg.io/media/screenshots/82c/82cb9461b5ad0ebdb6edc4b3acdfb731.jpg",
+      "https://media.rawg.io/media/screenshots/b95/b957aad3c646822893fe084ae6bf7652.jpg",
+      "https://media.rawg.io/media/screenshots/8f5/8f5ebd97e68dd1e16d008c7be452afd7.jpg",
+      "https://media.rawg.io/media/screenshots/dd5/dd59314b82f1d7eb3631a6fa54af3072.jpg",
+      "https://media.rawg.io/media/screenshots/19b/19b46c6f0cb02c9e3791d15d8da4bbf1.jpg",
+      "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows Vista, 7 or 8 (64-bit only)\nProcessor: Dual Core CPU (2.2+ GHz Dual Core CPU or better)\nMemory: 2 GB RAM\nGraphics: DirectX 10, Shader Model 4 compliant graphics cards (GeForce 8800 GT 512 MB, GeForce GTS 250, etc)\nDirectX: Version 10\nStorage: 10 GB available space\nAdditional Notes: 64-bit only",
+      "recommended": "OS: Windows 7 or 8 (64-bit only)\nProcessor: Any Quad Core or 3.0+ GHz Dual Core CPU\nMemory: 4 GB RAM\nGraphics: DirectX 11 compliant graphics card (GeForce GTX 480 and above)\nDirectX: Version 11\nStorage: 10 GB available space\nAdditional Notes: 64-bit only"
+    },
+    "description_en": "Metro 2033 Redux is a rebuilt extended version of the original post-apocalyptic first-person action shooter Metro 2033. The game saved its pace and atmosphere of the gone world and except numerous technical issues, added several survival elements to the gameplay. The main plot is based on Dmitry Glukhovsky’s book Metro 2033. According to the storyline, the Earth was devastated by the nuclear war, and only a few people were able to survive hiding in the underground warehouses. Players assume the role of Artem, 20-year-old inhabitant of Moscow underground, whose aim is to learn more about the anomalies called the Dark Ones. With the remastered version of the game developers added some visual effects: new high-quality textures, shaders, dynamic light and weather (on the surface) systems. The gameplay was also extended with various realistic features like bots’ intelligence and collectible resources count. Within the game, players face two new difficulty settings (Survival and Spartan), which are expected to improve the gaming experience.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMetro 2033 Redux یک نسخه توسعه یافته بازسازی شده از بازی اکشن اکشن اول شخص پسا آخرالزمانی Metro 2033 است. بازی سرعت و فضای دنیای رفته را حفظ کرد و به جز مسائل فنی متعدد، چندین عنصر بقا را به گیم پلی اضافه کرد. طرح اصلی بر اساس کتاب مترو 2033 دیمیتری گلوخوفسکی است. طبق داستان، زمین در اثر جنگ هسته‌ای ویران شده بود و تنها چند نفر توانستند در انبارهای زیرزمینی پنهان شوند. بازیکنان نقش آرتم، 20 ساله ساکن زیرزمینی مسکو را بر عهده می گیرند، که هدفش کسب اطلاعات بیشتر در مورد ناهنجاری هایی به نام Dark Ones است. توسعه دهندگان با نسخه بازسازی شده بازی برخی جلوه های بصری را اضافه کردند: بافت های جدید با کیفیت بالا، سایه بان ها، نور پویا و سیستم های آب و هوا (روی سطح). گیم پلی بازی همچنین با ویژگی های واقعی مختلف مانند هوش ربات ها و تعداد منابع کلکسیونی گسترش یافت. در داخل بازی، بازیکنان با دو تنظیمات سختی جدید (Survival و Spartan) روبرو می شوند که انتظار می رود تجربه بازی را بهبود بخشد."
   }
 ]
