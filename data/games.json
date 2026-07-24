@@ -6565,5 +6565,46 @@
     },
     "description_en": "Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. \r\n\r\nIn this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDying Light 2 یک چشم انداز منحصر به فرد پسا آخرالزمانی از عصر تاریک مدرن را زنده می کند - یک واقعیت وحشیانه، تاریک و نابخشودنی که در آن به همان اندازه احتمال دارد که توسط افراد آلوده به دست یک انسان از بین برید. \r\n\r\nدر این دنیای خسته، تفکر سریع، توانایی‌های استثنایی پارکور و مهارت‌های جنگی وحشیانه تنها چیزهایی هستند که به شما اجازه می‌دهند در تاریکی شیرجه بزنید و زنده بیرون بیایید. از نظر اخلاقی تصمیمات خاکستری بگیرید و شاهد باشید که چگونه بر جهان در سطوح مختلف تأثیر می گذارد، تغییر شهر را شکل می دهد و در نهایت سرنوشت آن را تعیین می کند."
+  },
+  {
+    "id": 19560,
+    "name": "Far Cry",
+    "background_image": "https://media.rawg.io/media/games/2ee/2eef5ed5e82c28d1299ecc2a0e60f2cb.jpg",
+    "rating": 3.9,
+    "metacritic": 89,
+    "released": "2004-03-22",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 1,
+    "developers": "Ubisoft, Crytek",
+    "steam_link": "https://store.steampowered.com/app/552520/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/38b/38b5f39e5fdbb92c1c7ce3794bda4427.jpg",
+      "https://media.rawg.io/media/screenshots/86d/86d51467fdeb636f7553551d06f2bb80.jpg",
+      "https://media.rawg.io/media/screenshots/cb9/cb985b4422419dea14ce3b08ceab379a.jpg",
+      "https://media.rawg.io/media/screenshots/056/05620d449113a3d25ae67cb8404bec26.jpg",
+      "https://media.rawg.io/media/screenshots/243/24359310312bc8215b367b9c9dd01432.jpg",
+      "https://media.rawg.io/media/screenshots/842/84218e4c5eed83835bd49585fe4340ad.jpg",
+      "https://media.rawg.io/media/games/2ee/2eef5ed5e82c28d1299ecc2a0e60f2cb.jpg"
+    ],
+    "requirements": {
+      "minimum": "Supported OS: Windows® 2000/XP (only)\nProcessor: AMD Athlon™ 1 GHz or Pentium® III 1 GHz\nMemory: 256 MB\nGraphics: 64 MB DirectX® 9.0b-compliant graphics card (see supported list*)\nSound: DirectX 9.0b compliant PCI card (Sound Blaster Audigy series recommended)\nDirectX: DirectX 9.0b or higher\nHard Disk Space: 4 GB  \nMultiplay: Broadband with 64 Kbps upstream (512 Kbps upstream to host 8 players) \nMouse/Keyboard: Windows compatible mouse and keyboard required",
+      "recommended": "Supported OS: Windows 2000/XP (only)\nProcessor: AMD Athlon 2-3 GHz or Pentium 4 2-3 GHz\nMemory: 512-1024 MB\nSound: Sound Blaster® Audigy® series (see supported list*)\nGraphics: 128 MB GeForce™ 4 128 MB to GeForce FX 5950; ATI Radeon 9500-9800 XT\n*Supported video cards at time of retail release: NVIDIA GeForce 2/3/4/FX families ( NVIDIA based cards must have ForceWare drivers 53.03 or later; GeForce 2 and GeForce 4 MX cards do not support all graphics features). ATI Radeon 8500/9000 families (ATI Radeon 9500-9800 XT recommended; ATI-based cards must have Catalyst drivers 3.9 or higher). Laptop models of the listed cards are not fully supported. For an up-to-date list of supported chipsets, video cards, and operating systems, please visit the FAQ for this game at: http://support.ubi.com."
+    },
+    "description_en": "The game that started the popular Far Cry series. The player assumes the role of Jack Carver, a former special forces operative who became a ferryman. The protagonist was hired by a journalist Valerie Constantine to escort her to a remote Pacific island. Soon after they arrived, the boat was attacked, and Valerie went missing. Now Carver is stranded on an archipelago covered by tropical rainforests, which are hiding an abandoned Japanese warship, a secret lab, and an active volcano. On a search for Valerie, he will fight a gang of mercenaries and discover the monstrous experiments that are carried out on this islands. \r\nCarver eventually gains access to a variety of firearms. He’s also equipped with binoculars that allow him to see and even hear the enemies from far away. Stealth and detection are the central aspects of the Far Cry gameplay. The lush vegetation in the jungle offers perfect cover, so both Carver and his opponents can hide and sneak behind each other’s backs. The design and huge size of levels allow for a variety of routes and approaches to complete each mission, with use of stealth, surprise attacks, sniping, or another tactic of your choice.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی که شروع کننده سری محبوب Far Cry بود. بازیکن نقش جک کارور، یک مامور سابق نیروهای ویژه را بر عهده می گیرد که کشتی بان شد. قهرمان داستان توسط یک روزنامه نگار والری کنستانتین استخدام شد تا او را تا یک جزیره دورافتاده اقیانوس آرام اسکورت کند. بلافاصله پس از رسیدن آنها، قایق مورد حمله قرار گرفت و والری ناپدید شد. اکنون کارور در مجمع‌الجزایری تحت پوشش جنگل‌های بارانی استوایی، که یک کشتی جنگی رها شده ژاپنی، یک آزمایشگاه مخفی و یک آتشفشان فعال را پنهان کرده است، سرگردان شده است. در جستجوی والری، او با گروهی از مزدوران مبارزه می کند و آزمایشات هیولایی که در این جزایر انجام می شود را کشف می کند. \r\nکارور در نهایت به انواع سلاح های گرم دسترسی پیدا می کند. او همچنین مجهز به دوربین دوچشمی است که به او اجازه می دهد تا دشمنان را از دور ببیند و حتی بشنود. مخفی کاری و تشخیص جنبه های اصلی گیم پلی Far Cry هستند. پوشش گیاهی سرسبز جنگل پوشش کاملی را ارائه می دهد، بنابراین هم کارور و هم حریفانش می توانند پنهان شوند و پشت سر یکدیگر پنهان شوند. طراحی و اندازه عظیم سطوح، مسیرها و رویکردهای مختلفی را برای تکمیل هر ماموریت با استفاده از مخفی کاری، حملات غافلگیرانه، تک تیراندازی یا تاکتیک های دیگر مورد نظر شما امکان پذیر می کند."
   }
 ]
