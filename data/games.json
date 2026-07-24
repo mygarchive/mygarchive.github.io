@@ -8712,5 +8712,40 @@
     },
     "description_en": "Experience the moving tale of a young woman and her lifelong bond with a magnificent wolf as they embark on a thrilling adventure through a rapidly dying world.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان تکان دهنده یک زن جوان و پیوند مادام العمر او با یک گرگ باشکوه را در حالی که آنها وارد یک ماجراجویی هیجان انگیز در دنیایی به سرعت در حال مرگ می شوند، تجربه کنید."
+  },
+  {
+    "id": 1004298,
+    "name": "007 First Light",
+    "background_image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
+    "rating": 4.45,
+    "metacritic": null,
+    "released": "2026-05-27",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 0,
+    "developers": "IO Interactive",
+    "steam_link": "https://store.steampowered.com/app/3768760/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/09a/09a91ae875c2d3cc9b0d7aa73ea816bd.jpg",
+      "https://media.rawg.io/media/screenshots/234/234ec23a3478d26f066a65cf9910ec1f.jpg",
+      "https://media.rawg.io/media/screenshots/21f/21f4b318f2611d8d23dc3cbb1c3be746.jpg",
+      "https://media.rawg.io/media/screenshots/897/897d1301c75982af1489b193c8b08a1d.jpg",
+      "https://media.rawg.io/media/screenshots/490/490ccae2dcd56af896bda49422bdf5c0.jpg",
+      "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.\n\nFeaturing a wholly original Bond origin story, players will step into the shoes of the world's favorite Secret Agent to earn their 00 status.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n007 First Light یک بازی ویدیویی کاملاً جدید جیمز باند است که توسط IO Interactive توسعه و منتشر شده است.\n\nبا داشتن داستان کاملاً اصلی باند، بازیکنان به جای مامور مخفی مورد علاقه جهان قدم می گذارند تا وضعیت 00 خود را به دست آورند."
   }
 ]
