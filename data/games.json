@@ -5900,5 +5900,46 @@
     },
     "description_en": "The iconic Black Ops series is back with Call of Duty®: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty®: Black Ops.\n\nBlack Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.\n\nAs elite operatives, you will follow the trail of a shadowy figure named Perseus who is on a mission to destabilize the global balance of power and change the course of history. Descend into the dark center of this global conspiracy alongside iconic characters Woods, Mason and Hudson and a new cast of operatives attempting to stop a plot decades in the making.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه نمادین Black Ops با Call of Duty®: Black Ops Cold War بازگشته است - دنباله مستقیم نسخه اصلی و مورد علاقه طرفداران Call of Duty®: Black Ops.\n\nBlack Ops Cold War طرفداران را به اعماق نبرد ژئوپلیتیک ناپایدار جنگ سرد در اوایل دهه 1980 می کشاند. در کمپین تک‌نفره جذاب، که در آن بازیکنان با شخصیت‌های تاریخی و حقایق سخت روبرو می‌شوند، هیچ‌چیز آنطور که به نظر می‌رسد نیست، زیرا در سراسر جهان از طریق مکان‌های نمادین مانند برلین شرقی، ویتنام، ترکیه، مقر KGB شوروی و غیره می‌جنگند.\n\nشما به عنوان عوامل نخبه، دنباله‌روی شخصیتی پنهان به نام پرسئوس را دنبال خواهید کرد که در ماموریت بی‌ثبات کردن تعادل جهانی قدرت و تغییر مسیر تاریخ است. به مرکز تاریک این توطئه جهانی در کنار شخصیت‌های نمادین وودز، میسون و هادسون و گروه جدیدی از عواملی که در تلاش برای متوقف کردن طرحی که دهه‌ها در حال ساخت است، فرود بیایید."
+  },
+  {
+    "id": 791636,
+    "name": "Call of Duty: Modern Warfare II",
+    "background_image": "https://media.rawg.io/media/games/1af/1af8edc7491c6d9d0776fc423d93548d.jpg",
+    "rating": 3.81,
+    "metacritic": null,
+    "released": "2022-10-22",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 10,
+    "developers": "Raven Software, Treyarch, Infinity Ward, Beenox, Sledgehammer Games, High Moon Studios, Toys for Bob, Activision Shanghai, Demonware, Demonware Softwarehaus",
+    "steam_link": "https://store.steampowered.com/app/3595230/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/81c/81c2f27b74bb7acacd3301688ad90921.jpg",
+      "https://media.rawg.io/media/screenshots/b08/b083168860ac3c2f0bc7889a55eac3fc.jpg",
+      "https://media.rawg.io/media/screenshots/21a/21a54df8468ede0d3127d6ef65f4e6ca.jpg",
+      "https://media.rawg.io/media/screenshots/d09/d09544c92fe0b28c0ebccc27c5bd3b44.jpg",
+      "https://media.rawg.io/media/screenshots/c45/c458355dce0fd186ff0fbeb3f043029e.jpg",
+      "https://media.rawg.io/media/screenshots/536/5366fc6e7ab0b00e57a22dbf2ba3801b.jpg",
+      "https://media.rawg.io/media/games/1af/1af8edc7491c6d9d0776fc423d93548d.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64 Bit (latest update)\nProcessor: Intel® Core™ i3-6100 / Core™ i5-2500K or AMD Ryzen™ 3 1200\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 960 or AMD Radeon™ RX 470 - DirectX 12.0 compatible system\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 125 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64 Bit (latest update) or Windows® 11 64 Bit (latest update)\nProcessor: Intel® Core™ i5-6600K / Core™ i7-4770 or AMD Ryzen™ 5 1400\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1060 or AMD Radeon™ RX 580 - DirectX 12.0 compatible system or Intel® Arc™ A770\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 125 GB available space"
+    },
+    "description_en": "Welcome to the new era of Call of Duty®.\r\n\r\nCall of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عصر جدید Call of Duty® خوش آمدید.\r\n\r\nCall of Duty®: Modern Warfare® II بازیکنان را وارد یک درگیری جهانی بی‌سابقه می‌کند که شامل بازگشت اپراتورهای نمادین Task Force 141 می‌شود. از عملیات‌های تاکتیکی نفوذی در مقیاس کوچک و مخاطرات بالا گرفته تا مأموریت‌های بسیار طبقه‌بندی شده، بازیکنان در کنار دوستان خود در یک تجربه واقعاً فراگیر مستقر خواهند شد."
   }
 ]
