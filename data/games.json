@@ -6787,5 +6787,46 @@
     },
     "description_en": "Dive into a transformed vibrant post-apocalyptic Hope County, Montana, 17 years after a global nuclear catastrophe.\r\nJoin fellow survivors and lead the fight against the dangerous new threat the Highwaymen, and their ruthless leaders The Twins, as they seek to take over the last remaining resources. \r\n\r\nFIGHT FOR SURVIVAL IN A POST-APOCALYPTIC WORLD\r\n• Take up arms on your own or with a friend in two player co-op in an unpredictable and transformed world\r\n\r\nCOLLIDE AGAINST TWO ALL NEW VILLAINS\r\n• Recruit an eclectic cast of Guns and Fangs for Hire and form alliances to fight by your side against the Highwaymen's unruly leaders The Twins\r\n\r\nBUILD UP YOUR HOMEBASE AND THE SURVIVORS\r\n• Recruit Specialists to upgrade your homebase, who will help unlock all new features including crafting weapons, gear and more\r\n\r\nBATTLE FOR RESOURCES IN HOPE COUNTY AND BEYOND\r\n• Engage the Highwaymen in Turf Wars and venture on Expeditions to memorable locations across the USA",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n17 سال پس از یک فاجعه هسته‌ای جهانی، به یک منطقه پر جنب و جوش پسا آخرالزمانی هوپ کانتی، مونتانا، شیرجه بزنید.\r\nبه بازماندگان همکار بپیوندید و مبارزه با تهدید جدید خطرناک بزرگراه‌ها و رهبران بی‌رحم آنها دوقلوها را رهبری کنید، زیرا آنها به دنبال تصاحب آخرین منابع باقی مانده هستند. \r\n\r\nبرای بقا در دنیای پسا آخرالزمانی مبارزه کنید\r\n• در دنیایی غیرقابل پیش‌بینی و دگرگون شده، به تنهایی یا با یک دوست در همکاری دو نفره دست به اسلحه بردارید.\r\n\r\nبرخورد با دو شرور جدید\r\n• گروهی متشکل از اسلحه‌ها و نیش‌ها را استخدام کنید و اتحادهایی تشکیل دهید تا در کنارتان با رهبران سرکش بزرگراه، The Twins مبارزه کنید.\r\n\r\nخانه و بازماندگان خود را بسازید\r\n• متخصصانی را برای ارتقای پایگاه اصلی خود استخدام کنید، که به باز کردن همه ویژگی‌های جدید از جمله ساخت سلاح، تجهیزات و غیره کمک می‌کنند.\r\n\r\nنبرد برای منابع در منطقه امید و فراتر از آن\r\n• بزرگراه‌ها را در جنگ‌های چمن مشارکت دهید و در اکسپدیشن‌ها به مکان‌های به یاد ماندنی در سراسر ایالات متحده سفر کنید."
+  },
+  {
+    "id": 2767,
+    "name": "Far Cry Primal",
+    "background_image": "https://media.rawg.io/media/games/119/119bb59e64c7956171a33df0d35aee6b.jpg",
+    "rating": 3.58,
+    "metacritic": 74,
+    "released": "2016-02-23",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 9,
+    "developers": "Ubisoft",
+    "steam_link": "https://store.steampowered.com/app/371660/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c18/c182c1cf1ddfff6cda75cf753059d2fe.jpg",
+      "https://media.rawg.io/media/screenshots/3a0/3a03f997c58b60cc25509ff9adb2b1d3.jpg",
+      "https://media.rawg.io/media/screenshots/e3d/e3d418f38dec51c3a4361393a33a2287.jpg",
+      "https://media.rawg.io/media/screenshots/6db/6dbbecb3835280dda31d98775c3877a3.jpg",
+      "https://media.rawg.io/media/screenshots/e9d/e9d638c485334165529ba481f898efb5.jpg",
+      "https://media.rawg.io/media/screenshots/44b/44b319c7eccb85d41b03ca408f99bb43.jpg",
+      "https://media.rawg.io/media/games/119/119bb59e64c7956171a33df0d35aee6b.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7, Windows 8.1, Windows 10 (64-bit versions only)\nProcessor: Intel Core i3-550 | AMD Phenom II X4 955 or equivalent\nMemory: 4 GB RAM\nGraphics: NVIDIA GeForce GTX 460 (1GB VRAM) | AMD Radeon HD 5770 (1GB VRAM) or equivalent\nStorage: 20 GB available space\nAdditional Notes: Windows-compatible keyboard, mouse, headset, optional controller. Supported Video Cards at Time of Release: AMD Radeon™ HD 5770 (1 GB VRAM) or better, HD 7000 / 200  / 300 / Fury X series, NVIDIA® GeForce® GTX 460 (1 GB VRAM) or better, GTX 500 / 600 / 700 / 900 / TITAN series. Note: This product supports 64-bit operating systems only. Laptop versions of these cards may work, but are not officially supported. For the most up-to-date requirement listings, please visit the FAQ on our support website at support.ubi.com. HIGH SPEED INTERNET ACCESS AND A VALID UPLAY ACCOUNT REQUIRED TO ACTIVATE THE GAME AFTER INSTALLATION, TO AUTHENTICATE YOUR SYSTEM AND CONTINUE GAMEPLAY AFTER ANY RE-ACTIVATION, TO ACCESS ONLINE FEATURES AND TO UNLOCK EXCLUSIVE CONTENT. SUCH CONTENT MAY ONLY BE UNLOCKED ONE SINGLE TIME WITH A UNIQUE KEY. YOU MUST BE AT LEAST 13 TO CREATE A UPLAY ACCOUNT WITHOUT PARENTAL CONSENT. UBISOFT MAY CANCEL ACCESS TO ONE OR MORE SPECIFIC ONLINE FEATURES UPON 30-DAYS PRIOR NOTICE, PUBLISHED AT www.farcrygame.com.",
+      "recommended": "OS: Windows 7, Windows 8.1, Windows 10 (64-bit versions only)\nProcessor: Intel Core i7-2600K | AMD FX-8350 or equivalent\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 780 | AMD Radeon R9 280X or equivalent\nStorage: 20 GB available space\nAdditional Notes: Windows-compatible keyboard, mouse, headset, optional controller. Supported Video Cards at Time of Release: AMD Radeon™ HD 5770 (1 GB VRAM) or better, HD 7000 / 200  / 300 / Fury X series, NVIDIA® GeForce® GTX 460 (1 GB VRAM) or better, GTX 500 / 600 / 700 / 900 / TITAN series. Note: This product supports 64-bit operating systems only. Laptop versions of these cards may work, but are not officially supported. For the most up-to-date requirement listings, please visit the FAQ on our support website at support.ubi.com. HIGH SPEED INTERNET ACCESS AND A VALID UPLAY ACCOUNT REQUIRED TO ACTIVATE THE GAME AFTER INSTALLATION, TO AUTHENTICATE YOUR SYSTEM AND CONTINUE GAMEPLAY AFTER ANY RE-ACTIVATION, TO ACCESS ONLINE FEATURES AND TO UNLOCK EXCLUSIVE CONTENT. SUCH CONTENT MAY ONLY BE UNLOCKED ONE SINGLE TIME WITH A UNIQUE KEY. YOU MUST BE AT LEAST 13 TO CREATE A UPLAY ACCOUNT WITHOUT PARENTAL CONSENT. UBISOFT MAY CANCEL ACCESS TO ONE OR MORE SPECIFIC ONLINE FEATURES UPON 30-DAYS PRIOR NOTICE, PUBLISHED AT www.farcrygame.com."
+    },
+    "description_en": "THE DIGITAL APEX EDITION\nTHE DIGITAL APEX EDITION\nALL ADDITIONAL DIGITAL CONTENT FOR FAR CRY PRIMAL:\nLEGEND OF THE MAMMOTH: 3 extra missions.\nDrink from the shaman's cup to play as the largest animal in Oros, the almighty mammoth. Feel your power as you stomp your enemies and defend your herd from other beasts and humans.\nA NEW WEAPON, THE BLOOD SHASTI CLUB: A bloodstained cudgel of bone and teeth wielded by Ull, the vicious leader of the Udam.\n4 ENHANCEMENT PACKS that offers early access to rare resources and unique customization options.THE SABRETOOTH PACK: early access to animal hides for crafting + change a selection of the sabretooth tigers in Oros to the ferocious Flame Fang Sabretooths.THE OWL PACK: early access to resources for crafting + decorate your arms with unique Wenja tribal paint + change the appearance of your owl companion, give him the dark feathers of a raging storm cloud.THE MAMMOTH PACK: early access to an endurance-boosting recipe + change a selection of the mammoths in Oros to the mysterious Ash Back Mammoths.THE BOMB PACK: early access to 2 extra string bags to increase your odds of survival.\nAbout the GameThe award-winning Far Cry franchise that stormed the tropics and the Himalayas now enters the original fight for humanity’s survival with its innovative open-world sandbox gameplay, bringing together massive beasts, breathtaking environments, and unpredictable savage encounters.\nWelcome to the Stone Age, a time of extreme danger and limitless advent",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDIGITAL APEX EDITION\nDIGITAL APEX EDITION\nتمام محتوای دیجیتالی اضافی برای FAR CRY PRIMAL:\nLEGEND OF THE MAMMOTH: 3 ماموریت اضافی.\nاز جام شمن بنوشید تا به عنوان بزرگترین حیوان اوروس، ماموت قادر مطلق، بازی کنید. وقتی دشمنان خود را زیر پا می گذارید و از گله خود در برابر سایر جانوران و انسان ها دفاع می کنید، قدرت خود را احساس کنید.\nیک اسلحه جدید، باشگاه شستی خون: یک چاقو استخوان و دندان آغشته به خون که توسط اول، رهبر شرور اودام به کار می رود.\n4 بسته تقویتی که دسترسی زودهنگام به منابع کمیاب و گزینه‌های سفارشی‌سازی منحصربه‌فرد را ارائه می‌دهد. بسته سابرتوث: دسترسی زودهنگام به پوست حیوانات برای کاردستی + منتخبی از ببرهای سابرتوت در Oros را به دندان‌های خشن شعله‌ای نیش تغییر دهید. بسته جغد: دسترسی اولیه به منابع ظاهری منحصربه‌فرد شما را با تغییر کاردستی تزئین می‌کنیم. همدم، پرهای تیره ابر طوفانی خشمگین را به او بدهید. بسته ماموت: دسترسی زودهنگام به یک دستور العمل تقویت کننده استقامت + منتخبی از ماموت های اوروس را به ماموت های اسرارآمیز Ash Back تغییر دهید. بسته بمب: دسترسی زودهنگام به 2 کیسه رشته اضافی برای افزایش شانس بقا.\nدرباره فرنچایز GameThe برنده جایزه Far Cry که مناطق استوایی و هیمالیا را هجوم آورد، اکنون با گیم پلی نوآورانه sandbox جهان باز خود وارد مبارزه اصلی برای بقای بشریت می شود که جانوران عظیم، محیط های نفس گیر و برخوردهای وحشیانه غیرقابل پیش بینی را گرد هم می آورد.\nبه عصر حجر خوش آمدید، زمان خطرات شدید و ظهور بی حد و حصر"
   }
 ]
