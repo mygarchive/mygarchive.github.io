@@ -6157,5 +6157,46 @@
     },
     "description_en": "An expansion to Command & Conquer: Red Alert 3 that can be played without the original game. Uprising features additional campaigns for three factions: the Allies, the Soviets, and the Empire of the Rising Sun. The plot continues the events of Red Alert 3, making Allied victory in previous game canon.\nThe Soviet Union fights for its very existence because Allied corporation FutureTech is developing a weapon that can freeze time. Its leaders want to erase Soviet Russia from the history once and forever. The war in Allied-occupied Japan continues, as there are still pockets of resistance that Allies have to suppress, and there are two Russian generals taking over parts of the Empire. There's also a standalone campaign that reveals the origins of Yuriko Omega, a Japanese girl with psionic abilities, and follows her as she becomes a commando for the Empire, and later a prisoner of the Allies.\n\nUnlike some of the previous games in the series, Red Alert 3 – Uprising allows no multiplayer modes, neither cooperative nor competitive.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک بسط Command & Conquer: Red Alert 3 که بدون بازی اصلی قابل بازی است. Uprising شامل کمپین های اضافی برای سه جناح است: متفقین، شوروی و امپراتوری خورشید در حال طلوع. داستان به وقایع Red Alert 3 ادامه می‌دهد و باعث پیروزی متحدین در بازی قبلی می‌شود.\nاتحاد جماهیر شوروی برای موجودیت خود مبارزه می کند زیرا شرکت متفقین FutureTech در حال توسعه سلاحی است که می تواند زمان را منجمد کند. رهبران آن می خواهند روسیه شوروی را یک بار و برای همیشه از تاریخ پاک کنند. جنگ در ژاپن تحت اشغال متفقین همچنان ادامه دارد، زیرا هنوز نقاط مقاومتی وجود دارد که متفقین باید آنها را سرکوب کنند، و دو ژنرال روسی در حال تصرف بخش‌هایی از امپراتوری هستند. همچنین یک کمپین مستقل وجود دارد که منشأ یوریکو امگا، یک دختر ژاپنی با توانایی‌های روانی را نشان می‌دهد، و او را دنبال می‌کند تا کماندویی برای امپراتوری و بعداً اسیر متفقین شود.\n\nبرخلاف برخی از بازی‌های قبلی این سری، Red Alert 3 – Uprising هیچ حالت چند نفره، نه همکاری و نه رقابتی را امکان‌پذیر نمی‌کند."
+  },
+  {
+    "id": 19345,
+    "name": "Command & Conquer: Red Alert 3",
+    "background_image": "https://media.rawg.io/media/games/776/776e601c2c37f50bb11f9054f54c60da.jpg",
+    "rating": 3.99,
+    "metacritic": 82,
+    "released": "2008-01-01",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Electronic Arts, Electronic Arts Los Angeles",
+    "steam_link": "https://store.steampowered.com/app/17480/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7f5/7f5f416a9a1198ce00ab1fa87719006f.jpg",
+      "https://media.rawg.io/media/screenshots/67c/67c0e6ac1f4205fe89156d42711c96be.jpg",
+      "https://media.rawg.io/media/screenshots/f0a/f0aabd7adf74150678105fec45b831de.jpg",
+      "https://media.rawg.io/media/screenshots/417/417b70f7f3ebec1898cb235d446b6794.jpg",
+      "https://media.rawg.io/media/screenshots/878/878e228d9e2a7d49d6ec0a6fb7920bc6.jpg",
+      "https://media.rawg.io/media/screenshots/3fb/3fbeea57de94e944731f4284478a041c.jpg",
+      "https://media.rawg.io/media/games/776/776e601c2c37f50bb11f9054f54c60da.jpg"
+    ],
+    "requirements": {
+      "minimum": "Supported OS: Microsoft Windows® XP SP2, Windows Vista (32-bit)                    \nProcessor: Any Intel Core Duo machine; XP: Intel Pentium 4 2.2 GHz or better, AMD Athlon XP 2100+ or better; Vista: Intel Pentium 4 2.6 GHz or better, AMD Athlon XP 2800+ or better                    \nMemory: 1 GB RAM                    \nGraphics: DirectX® 9.0c compatible video card, NVIDIA GeForce 6800 or better, ATI Radeon X800 or better                    \nHard Drive: At least 10 GB of free space                    \nSound: DirectX® 9.0c compatible sound card (Yamaha Xwave-512 is not supported)                    \nMultiplayer: 2 - 6 players with optional voice support, network or Internet connection required (Cable, DSL or faster connection).                    INTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. TO ACCESS ONLINE FEATURES, YOU MUST REGISTER ONLINE. ONLY ONE REGISTRATION IS AVAILABLE PER GAME.  EA ONLINE TERMS &amp; CONDITIONS AND FEATURE UPDATES CAN BE FOUND AT WWW.EA.COM. YOU MUST BE 13+ TO REGISTER WITH EA ONLINE.                     EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON WWW.EA.COM.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Command & Conquer Red Alert 3 is a real-time strategy game set during an alternate scenario of World War II. In the game the United States confronted the USSR. To provide their victory, the Soviets went back in time and changed the future. As a result, the third power appears - the Empire of the Rising Sun, and all three forces get involved in a new war. All factions in the game are playable and provide different playstyles. While the Soviet army is suitable for a fast-paced expansion, the Japanese side focuses on technological progress. The US keep the medium position.\n\nIn Red Alert 3 you need to build a base and develop technology to create weapons. The main difference from other RTS is that the campaign in the game is fully cooperative, played either with a friend online or with an AI teammate. The game also features Naval Warfare mode with facilities built on water and various marine units. Additionally, each country has 15 unique abilities to use during battles.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Red Alert 3 یک بازی استراتژیک بلادرنگ است که در یک سناریوی جایگزین از جنگ جهانی دوم تنظیم شده است. در این بازی، ایالات متحده با اتحاد جماهیر شوروی روبرو شد. اتحاد جماهیر شوروی برای ارائه پیروزی خود، به گذشته بازگشت و آینده را تغییر داد. در نتیجه، قدرت سوم ظاهر می شود - امپراتوری خورشید در حال طلوع، و هر سه نیرو درگیر یک جنگ جدید می شوند. تمام گروه های بازی قابل بازی هستند و سبک های مختلف بازی را ارائه می دهند. در حالی که ارتش شوروی برای توسعه سریع مناسب است، طرف ژاپنی بر پیشرفت تکنولوژی تمرکز می کند. ایالات متحده جایگاه متوسط ​​را حفظ می کند.\n\nدر Red Alert 3 باید پایگاهی بسازید و فناوری ساخت سلاح را توسعه دهید. تفاوت اصلی با سایر RTS این است که کمپین در بازی کاملاً مشارکتی است، یا با یک دوست آنلاین یا با یک هم تیمی هوش مصنوعی بازی می شود. این بازی همچنین دارای حالت Naval Warfare با امکانات ساخته شده بر روی آب و واحدهای دریایی مختلف است. علاوه بر این، هر کشور دارای 15 توانایی منحصر به فرد برای استفاده در طول نبردها است."
   }
 ]
