@@ -9484,5 +9484,46 @@
     },
     "description_en": "The Walking Dead: Michonne - A Telltale Miniseries stars the iconic, blade-wielding character from Robert Kirkman's best-selling comic books. Haunted by her past, and coping with unimaginable loss and regret, the story explores Michonne's absence between issues #126 and #139 of the comic book. In this three part miniseries, players will discover what took Michonne away from Rick, Ezekiel, and the rest of her trusted group… and what brought her back.\n***Save 20% on additional episodes in The Walking Dead: Michonne by purchasing the Season Pass [Episodes 2-3 bundle] via in-app in the 'Episodes' menu***\nMinimum specs:\nGPU: Adreno 300 series, Mali-T600 series, PowerVR SGX544, or Tegra 4\nCPU: Dual core 1.2GHz\nMemory: 1GB\n- - - -\nExamples of supported devices include:\n- Galaxy S5 and up\n- HTC One (M7)\n- LG G2/G2 Mini and up\n- Motorola Moto X\nExamples of unsupported devices include:\n- Galaxy Tab 4 and below\n- Galaxy S5 Mini and below\n- Nexus 7 2012\n- Droid RAZR",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Walking Dead: Michonne - A Telltale Miniseries شخصیت نمادین و تیغه‌ای از کتاب‌های کمیک پرفروش رابرت کرکمن را بازی می‌کند. این داستان که توسط گذشته اش تسخیر شده است و با فقدان و پشیمانی غیرقابل تصور کنار آمده است، غیبت میکن را در بین شماره های 126 و 139 کتاب کمیک بررسی می کند. در این مینی‌سریال سه قسمتی، بازیکنان متوجه خواهند شد که چه چیزی میشون را از ریک، ازکیل و بقیه گروه مورد اعتمادش دور کرده است... و چه چیزی او را بازگردانده است.\n***با خرید Season Pass [بسته اپیزودهای 2-3] از طریق درون برنامه در منوی «Episodes»، 20% در قسمت‌های اضافی در The Walking Dead: Michonne صرفه‌جویی کنید.\nحداقل مشخصات:\nپردازنده گرافیکی: سری Adreno 300، سری Mali-T600، PowerVR SGX544 یا Tegra 4\nCPU: دو هسته ای 1.2 گیگاهرتز\nحافظه: 1 گیگابایت\n-----\nنمونه هایی از دستگاه های پشتیبانی شده عبارتند از:\n- Galaxy S5 و بالاتر\n- HTC One (M7)\n- LG G2/G2 Mini و بالاتر\n- Motorola Moto X\nنمونه هایی از دستگاه های پشتیبانی نشده عبارتند از:\n- Galaxy Tab 4 و پایین تر\n- Galaxy S5 Mini و پایین تر\n- Nexus 7 2012\n- Droid RAZR"
+  },
+  {
+    "id": 58783,
+    "name": "The Walking Dead: The Final Season",
+    "background_image": "https://media.rawg.io/media/games/6c1/6c1eecf30e3c34e79bbf86698b1e6515.jpg",
+    "rating": 4.18,
+    "metacritic": 78,
+    "released": "2018-08-13",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 10,
+    "developers": "Telltale Games",
+    "steam_link": "https://store.steampowered.com/app/866800/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7ee/7eed9d158d259b9d3193e3b59cb4a166.jpg",
+      "https://media.rawg.io/media/screenshots/bf0/bf005e1c6c65258eb4ac2456e6ed09c0.jpg",
+      "https://media.rawg.io/media/screenshots/012/012d51458f76a79208a0a83e23ad103f.jpg",
+      "https://media.rawg.io/media/screenshots/bd1/bd125b513e2ad757a5e45ba4fa4ec250.jpg",
+      "https://media.rawg.io/media/screenshots/377/377029c25b59b5eca25593038b0776b6.jpg",
+      "https://media.rawg.io/media/screenshots/66c/66c828b63cd7a19e095955e9b1e5dca6.jpg",
+      "https://media.rawg.io/media/games/6c1/6c1eecf30e3c34e79bbf86698b1e6515.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7 64Bit Service Pack 1\nProcessor: Intel Core 2 Duo 2.8GHz\nMemory: 3 GB RAM\nGraphics: Nvidia GeForce GTS 450 2GB\nDirectX: Version 11\nStorage: 15 GB available space\nSound Card: DirectX 11 sound device\nAdditional Notes: Not Recommended for Intel integrated graphics",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 7 64Bit Service Pack 1\nProcessor: Intel Core i5-2500K\nMemory: 3 GB RAM\nGraphics: Nvidia GeForce GTX 960\nDirectX: Version 11\nStorage: 15 GB available space\nSound Card: DirectX 11 sound device"
+    },
+    "description_en": "Clementine, now a fierce and capable survivor, has reached the final chapter in her journey. After years on the road facing threats both living and dead, a secluded school might finally be her chance for a home. But protecting it will mean sacrifice. Clem must build a life and become a leader while still watching over AJ, an orphaned boy and the closest thing to family she has left. In this gripping and emotional final season, you will define your relationships, fight the undead, and determine how Clementine’s story ends.\n● Emotional, Gut-Wrenching Story - See Clementine’s journey through to the end. As she builds a new life, you will have to grapple with new types of choices and live with the consequences as AJ looks on, learning from your every move.\n● More Control, More Tension - A new over-the-shoulder camera system, greater freedom to explore detailed environments, and scenes of unscripted combat capture the fear of living in a world overrun by the undead. All this creates the most engaging The Walking Dead game yet.\n● Striking New Visual Style - The all-new Graphic Black art style rips the ink from the pages of the Eisner Award-winning comic book series and brings the world of The Walking Dead to life like never before.\nIncludes access to all 4 episodes (Episode 1 available at launch, Episodes 2-4 coming soon).",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nکلمنتین که اکنون یک بازمانده خشن و توانا است، به آخرین فصل سفر خود رسیده است. پس از سال‌ها سفر در جاده‌ای که با تهدیدهایی هم زنده و هم مرده مواجه بود، یک مدرسه منزوی ممکن است سرانجام فرصتی برای او برای خانه باشد. اما حفاظت از آن به معنای فداکاری خواهد بود. کلم باید زندگی بسازد و رهبر شود در حالی که هنوز مراقب ای جی، یک پسر یتیم و نزدیکترین چیزی که به خانواده اش باقی مانده است. در این فصل پایانی جذاب و احساسی، شما روابط خود را مشخص خواهید کرد، با مردگان مردگان مبارزه خواهید کرد و تعیین خواهید کرد که داستان کلمنتین چگونه به پایان می رسد.\n● داستان احساسی و دلخراش - سفر کلمنتاین را تا پایان ببینید. همانطور که او یک زندگی جدید می سازد، شما باید با انواع جدیدی از انتخاب ها دست و پنجه نرم کنید و با عواقب آن زندگی کنید، همانطور که AJ به نظر می رسد و از هر حرکت شما درس می گیرد.\n● کنترل بیشتر، تنش بیشتر - یک سیستم دوربین جدید روی شانه، آزادی بیشتر برای کاوش در محیط‌های دقیق، و صحنه‌های نبرد بدون فیلمنامه ترس از زندگی در دنیایی که توسط مردگان تحت سلطه است را به تصویر می‌کشد. همه اینها جذاب ترین بازی The Walking Dead را ایجاد می کند.\n● سبک بصری جدید - سبک کاملاً جدید Graphic Black جوهر را از صفحات مجموعه کتاب های مصور برنده جایزه Eisner جدا می کند و دنیای The Walking Dead را مانند قبل زنده می کند.\nشامل دسترسی به تمام 4 قسمت (قسمت 1 در زمان راه اندازی در دسترس است، قسمت 2-4 به زودی)."
   }
 ]
