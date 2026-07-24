@@ -7414,5 +7414,40 @@
     },
     "description_en": "Join machine hunter Aloy as she leads a colorful crew of heroes through the lush wilderness on a quest to save the world and learn the secrets of her past. Dive into boundless adventure, customize to your heart’s content, and take on action-packed battles solo or with friends in co-op.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه شکارچی ماشین آلوی بپیوندید تا خدمه ای از قهرمانان رنگارنگ را در بیابان سرسبز در تلاش برای نجات جهان و یادگیری رازهای گذشته خود هدایت کند. در ماجراجویی بی حد و حصر شیرجه بزنید، مطابق با دلخواه خود آن را سفارشی کنید و نبردهای پر اکشن را به صورت انفرادی یا با دوستان خود به صورت تعاونی انجام دهید."
+  },
+  {
+    "id": 667649,
+    "name": "Indika",
+    "background_image": "https://media.rawg.io/media/games/adf/adf16f490ed67a7b01586b8ef37e827e.jpg",
+    "rating": 3.97,
+    "metacritic": null,
+    "released": "2024-05-02",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "+18",
+    "playtime": 5,
+    "developers": "Odd Meter",
+    "steam_link": "https://store.steampowered.com/app/1373960/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/8c5/8c55d389726c86a7493a239477209aac.jpg",
+      "https://media.rawg.io/media/screenshots/4b5/4b5a47eaf14f43962f40a5056447449a.jpg",
+      "https://media.rawg.io/media/screenshots/87c/87c721d0caa98fa21e8aac56f4ce8b8a.jpg",
+      "https://media.rawg.io/media/screenshots/bc1/bc1b29c5b91d6a37ed26dc094a82bc5f.jpg",
+      "https://media.rawg.io/media/screenshots/dc9/dc9d37206c1036b789214590d4965fa0.jpg",
+      "https://media.rawg.io/media/games/adf/adf16f490ed67a7b01586b8ef37e827e.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64-bit)\nProcessor: AMD Ryzen 5 3600 (6 core with 3,5 Ghz) or Intel i5-10400F (6 core with 2,9 Ghz)\nMemory: 16 GB RAM\nGraphics: Radeon RX580 (8GB) or Nvidia GTX 1660 (6GB) or Intel Arc A750 (8GB)\nDirectX: Version 11\nStorage: 50 GB available space\nAdditional Notes: SSD (Preferred), HDD (Supported). Framerate might drop in graphics-intensive scenes. Ultrawide screen supported.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (64-bit)\nProcessor: AMD Ryzen 5 3600 (6 core with 3,5 Ghz) or Intel i5-10400F (6 core with 2,9 Ghz)\nMemory: 16 GB RAM\nGraphics: Radeon 6700xt (12GB) or Nvidia RTX 3060 TI (8GB) or Intel Arc A770 (16GB)\nDirectX: Version 12\nStorage: 50 GB available space\nAdditional Notes: SSD. Framerate might drop in graphics-intensive scenes. Ultrawide screen supported."
+    },
+    "description_en": "- The game is set in alternative Russia of the 19th century. Gloomy and sinister, at the same time enchanting world.\n\n- Gameplay focuses on the story unusual for the genre. The tedious and confusing \"Russian-style\" tale, presented in an unexpected arthouse style.\n\n- Controlling two characters, you go on a difficult journey, solving either puzzles or psychological problems of the heroes.\n\nSTORY\n\nA young nun, full of doubts and seditious thoughts, is expelled from the monastery, accused of obsession. She goes to the city, watching as a terrible shaggy creature walks on her heels. On the way, she meets a surprisingly devout fugitive convict, who convinces her to go with him to the holy elder, who is hiding a miraculous artifact, which should solve all her problems.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n- بازی در روسیه جایگزین قرن نوزدهم جریان دارد. دنیای غم انگیز و شوم و در عین حال مسحور کننده.\n\n- گیم پلی بر روی داستان غیرعادی برای ژانر تمرکز دارد. داستان خسته کننده و گیج کننده \"به سبک روسی\"، ارائه شده در سبک غیرمنتظره خانه هنری.\n\n- با کنترل دو شخصیت، به یک سفر دشوار می روید، یا معماها یا مشکلات روانی قهرمانان را حل می کنید.\n\nداستان\n\nراهبه جوانی پر از تردید و افکار فتنه انگیز به اتهام وسواس از صومعه اخراج می شود. او به شهر می رود و شاهد راه رفتن یک موجود پشمالو وحشتناک روی پاشنه های او است. در راه، او با یک محکوم فراری به طرز شگفت‌انگیزی ملاقات می‌کند که او را متقاعد می‌کند تا با او نزد پیر مقدس برود، که مصنوع معجزه آسایی را پنهان کرده است، که باید همه مشکلات او را حل کند."
   }
 ]
