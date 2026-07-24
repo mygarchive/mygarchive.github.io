@@ -8667,5 +8667,50 @@
     },
     "description_en": "Need For Speed: Hot Pursuit is an arcade racing game, where you complete missions switching between a police officer and a racer. While the goal is the same - to reach the finish first, the game allows trying another side of races as you need to stop a lawbreaker in the police part of the game.\nUnlike typical racing titles, Hot Pursuit follows the principle that \"all is fair.\" That's why both sides have special tools to stop the opponent. You can throw spikes on the road or use turbo acceleration to break away from the pursuit. Police can block the road and summon a helicopter for help from above. \nAdditionally, Hot Pursuit features a new Autolog social system. With it, you can compete with your friends and see the statistics on every race. The system compares your results with your friends' ones and notifies you every time your record is beaten.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed For Speed: Hot Pursuit یک بازی مسابقه ای آرکید است که در آن ماموریت ها را با جابجایی بین یک افسر پلیس و یک مسابقه دهنده تکمیل می کنید. در حالی که هدف یکسان است - برای اولین بار رسیدن به پایان، بازی اجازه می دهد تا طرف دیگری از مسابقات را امتحان کنید زیرا باید یک قانون شکن را در بخش پلیس بازی متوقف کنید.\nبر خلاف عناوین معمولی مسابقه ای، Hot Pursuit از این اصل پیروی می کند که \"همه چیز منصفانه است\". به همین دلیل است که هر دو طرف ابزار خاصی برای متوقف کردن حریف دارند. شما می توانید سنبله ها را در جاده پرتاب کنید یا از شتاب توربو برای دور شدن از تعقیب استفاده کنید. پلیس می تواند جاده را مسدود کند و یک هلیکوپتر را برای کمک از بالا احضار کند. \nعلاوه بر این، Hot Pursuit دارای یک سیستم اجتماعی جدید Autolog است. با آن می توانید با دوستان خود به رقابت بپردازید و آمار هر مسابقه را مشاهده کنید. این سیستم نتایج شما را با نتایج دوستانتان مقایسه می کند و هر بار که رکورد شما شکسته می شود به شما اطلاع می دهد."
+  },
+  {
+    "id": 961206,
+    "name": "Neva",
+    "background_image": "https://media.rawg.io/media/games/5eb/5eb783656623aa13d6fc65e470dd5dba.jpg",
+    "rating": 4.35,
+    "metacritic": null,
+    "released": "2024-10-14",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 5,
+    "developers": "Nomada Studio",
+    "steam_link": "https://store.steampowered.com/app/2420660/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7de/7deaff1818f5ae1d6ecb72f35a8ec2c1.jpg",
+      "https://media.rawg.io/media/screenshots/bc1/bc12059ecdcb9709f4bc4b35b5c18856_FSPEIVC.jpg",
+      "https://media.rawg.io/media/screenshots/f89/f899364f64e83da38f552e3fea16b125_6Wh2aAv.jpg",
+      "https://media.rawg.io/media/screenshots/8d9/8d944744ce9fc7d307a008de166ae051.jpg",
+      "https://media.rawg.io/media/screenshots/4f5/4f53dea6cdd1b50ff5dd035ffcb04a57.jpg",
+      "https://media.rawg.io/media/games/5eb/5eb783656623aa13d6fc65e470dd5dba.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 x64 Bit\nProcessor: Intel Core i5-4570T / AMD FX-4350\nMemory: 8 GB RAM\nGraphics: GeForce GTX 650 (1024 MB) / Radeon HD 7750 (1024 MB) / Intel UHD Graphics 620\nDirectX: Version 11\nStorage: 15 GB available space\nAdditional Notes: Low Quality setting, in 720p, producing 120 FPS",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 x64 Bit\nProcessor: Intel Core i5-6600K / AMD FX-8370\nMemory: 8 GB RAM\nGraphics: GeForce GTX 1050 Ti (4096 MB) / Radeon RX 470 (4096 MB)\nDirectX: Version 12\nStorage: 15 GB available space\nAdditional Notes: High Quality setting, in 1080p, producing 120 FPS"
+    },
+    "description_en": "Experience the moving tale of a young woman and her lifelong bond with a magnificent wolf as they embark on a thrilling adventure through a rapidly dying world.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان تکان دهنده یک زن جوان و پیوند مادام العمر او با یک گرگ باشکوه را در حالی که آنها وارد یک ماجراجویی هیجان انگیز در دنیایی به سرعت در حال مرگ می شوند، تجربه کنید."
   }
 ]
