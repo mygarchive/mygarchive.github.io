@@ -8305,5 +8305,44 @@
     },
     "description_en": "Need for Speed Payback is an action-driving racing game and the twenty-third part of the NFS franchise. \n\n###Gameplay\nDespite the trend made by NFS' before Payback features an offline mode. The game is set in a fictional city named Fortune Valley. The player can choose between the three individuals to represent. The title features a real car — a total of 74 ones, and crafting system — many car parts can be tuned according to the player's liking. \nThere is a total of five challenges types: Race, Drift, Off-Road, Drag, and Runner. All the modes share the goal — to reach the finish. However, the initial purpose is altered depending on the race — sometimes one has to drift his way to the finish line, somewhere the manual transmission turns one, and the gear switching comes to be mandatory.\n\n###Plot\nPayback is one of few NFS' to feature ongoing narrative — the story of this one emphasizes the revenge theme. Three characters — Tyler, Mac, and Jess — are trying to avenge Lina who betrayed the crew from the very start.  Each member of the gang has its unique abilities — Jess, for instance, is professional intel gatherer, so she plays a role of inside agent all the time. Guys, on the other hand, are more into races, so they do the dirty job in the trio.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed ​​Payback یک بازی مسابقه ای اکشن رانندگی و بیست و سومین قسمت از سری NFS است. \n\n###بازی\nبا وجود روند ایجاد شده توسط NFS، قبل از Payback دارای یک حالت آفلاین است. داستان بازی در شهری خیالی به نام Fortune Valley می گذرد. بازیکن می تواند از بین سه نفر برای نمایندگی یکی را انتخاب کند. این عنوان دارای یک ماشین واقعی است – در مجموع 74 دستگاه، و سیستم کاردستی – بسیاری از قطعات خودرو را می توان بر اساس میل بازیکن تنظیم کرد. \nدر مجموع پنج نوع چالش وجود دارد: مسابقه، دریفت، آفرود، درگ و دونده. همه حالت‌ها هدف مشترک دارند - رسیدن به پایان. با این حال، هدف اولیه بسته به مسابقه تغییر می‌کند - گاهی اوقات فرد باید مسیر خود را به خط پایان برساند، جایی که گیربکس دستی یک می‌شود و تعویض دنده اجباری می‌شود.\n\n###طرح\nPayback یکی از معدود NFS هایی است که دارای روایت مداوم است – داستان این یکی بر موضوع انتقام تأکید دارد. سه شخصیت - تایلر، مک و جس - سعی دارند انتقام لینا را بگیرند که از همان ابتدا به خدمه خیانت کرد.  هر یک از اعضای باند توانایی های منحصر به فرد خود را دارد - به عنوان مثال، جس، جمع آوری اطلاعات حرفه ای است، بنابراین او همیشه نقش یک مامور داخلی را بازی می کند. از طرف دیگر، بچه ها بیشتر به مسابقات علاقه دارند، بنابراین آنها کار کثیف را در سه نفر انجام می دهند."
+  },
+  {
+    "id": 31412,
+    "name": "Need for Speed: Porsche Unleashed",
+    "background_image": "https://media.rawg.io/media/games/236/236b79a5c51ed6bf59dffd2d24df30cc.jpg",
+    "rating": 4.24,
+    "metacritic": 78,
+    "released": "2000-01-01",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 36,
+    "developers": "Electronic Arts Canada, Eden Games, Eden Studios, Pocketeers",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20for%20Speed%3A%20Porsche%20Unleashed",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0b2/0b2b70b84f732d725b3bae74b88c5521.jpg",
+      "https://media.rawg.io/media/screenshots/f82/f82ba7370235059568083d71f689095d.jpg",
+      "https://media.rawg.io/media/screenshots/d72/d72441659d02a20465fe2779f01032b3.jpg",
+      "https://media.rawg.io/media/screenshots/870/870b7b5622180d592612302bdb028a6d.jpg",
+      "https://media.rawg.io/media/games/236/236b79a5c51ed6bf59dffd2d24df30cc.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "No description available.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n"
   }
 ]
