@@ -9361,5 +9361,61 @@
     },
     "description_en": "Play the winner of over 300 Game of the Year awards, now remastered for the PlayStation®5 console. Experience for the first time or relive Ellie and Abby’s story with graphical enhancements, new gameplay modes like the roguelike survival experience No Return, full DualSense™ wireless controller integration, and more.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبرنده بیش از 300 جایزه بهترین بازی سال را بازی کنید که اکنون برای کنسول PlayStation®5 بازسازی شده است. برای اولین بار داستان الی و ابی را با پیشرفت‌های گرافیکی، حالت‌های گیم‌پلی جدید مانند تجربه بقا بدون بازگشت، ادغام کامل کنترلر بی‌سیم DualSense™ و موارد دیگر تجربه کنید."
+  },
+  {
+    "id": 909785,
+    "name": "The Lost Village",
+    "background_image": "https://media.rawg.io/media/screenshots/9e3/9e343ba6fdb2699b398bb372bb257d4f.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2023-01-14",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 3,
+    "developers": "FunYoo Games",
+    "steam_link": "https://store.steampowered.com/app/1963040/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1a1/1a11fd827841cffc3a72cfe9d57110e0.jpg",
+      "https://media.rawg.io/media/screenshots/7b2/7b2eec0e397cf97debb74727de859e12.jpg",
+      "https://media.rawg.io/media/screenshots/d64/d64164871366ff4096cbfb6a160f259f.jpg",
+      "https://media.rawg.io/media/screenshots/26a/26a2208a2935af6f92b1e9718bf6ca80.jpg",
+      "https://media.rawg.io/media/screenshots/9b6/9b61c5cae0e929956e06b778a4388177.jpg",
+      "https://media.rawg.io/media/screenshots/9da/9da92a5c0df9988125a007a6f8d4b014.jpg",
+      "https://media.rawg.io/media/screenshots/9e3/9e343ba6fdb2699b398bb372bb257d4f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 64 bit\nProcessor: AMD A10 7850K, Intel i3-2000\nMemory: 4 GB RAM\nGraphics: Radeon R9 280, Geforce GTX 960\nDirectX: Version 9.0\nStorage: 3 GB available space",
+      "recommended": "OS: Windows 10 64 bit\nProcessor: AMD R3 3100, Intel i7 7700K\nMemory: 8 GB RAM\nGraphics: Radeon R9 390X, Geforce GTX 1060\nDirectX: Version 11\nStorage: 3 GB available space"
+    },
+    "description_en": "Update NotesWe will update English Version in 2 month.\nAbout the GameAbout the game\nThe Lost Village is a unique 3D SIM game. You will perform as the son of the former Master, build a village on a beautiful but empty mountain, travel the journey to be the top faction in this world. Lead your followers and pupils, collect resources, build facilities, gradually develop and grow. Recruit more people, exercise their abilities, then enter the ancestral memory illusion. Fight against unusual enemies, acquire treasures and knowledge. You will learn the hard work of being a Master, in the meanwhile, feel the proudness of seeing your village prospers again from zero!\nBuild your village as you will\nYou will assign different tasks for your followers of various personalities and talents. Let them collect resources, build, work, relax – and exercise! Manage them properly, do not forget to let them take a break, even enjoy a tea time or play a Go game. Try to arrange your buildings nicely, make your village beautiful the way you like.\nDesign a battle route\nThe performance of battles in The Lost Village differs from others. The illusional domain is a time and space with great danger as well as opportunities. The enemies do not intend to let you pass easily. You will be using your “Spiritual Tiles” to settle a route in the air, for your pupils to walk on and get to the end, sometimes travel more in the domain for more loot. Although you will not control the combat moves, you need to choose a",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه روز رسانی یادداشت ها ما نسخه انگلیسی را در عرض 2 ماه به روز خواهیم کرد.\nدرباره بازی درباره بازی\nدهکده گمشده یک بازی منحصر به فرد سیم کارت سه بعدی است. شما به عنوان پسر استاد سابق اجرا خواهید کرد، دهکده ای را بر روی یک کوه زیبا اما خالی می سازید، سفر را طی می کنید تا برترین جناح در این جهان باشید. پیروان و شاگردان خود را رهبری کنید، منابع را جمع آوری کنید، امکانات بسازید، به تدریج رشد کنید و رشد کنید. افراد بیشتری را استخدام کنید، توانایی های آنها را تمرین کنید، سپس وارد توهم حافظه اجدادی شوید. مبارزه با دشمنان غیر معمول، به دست آوردن گنجینه ها و دانش. شما کار سخت استاد بودن را یاد خواهید گرفت، در این میان، افتخار دیدن رونق دوباره روستای خود را از صفر احساس کنید!\nدهکده خود را همانطور که می خواهید بسازید\nشما وظایف مختلفی را برای پیروان خود با شخصیت ها و استعدادهای مختلف تعیین خواهید کرد. بگذارید منابع را جمع آوری کنند، بسازند، کار کنند، استراحت کنند - و ورزش کنند! آنها را به درستی مدیریت کنید، فراموش نکنید که به آنها اجازه استراحت بدهید، حتی از صرف چای لذت ببرید یا یک بازی Go انجام دهید. سعی کنید ساختمان های خود را به خوبی چیدمان کنید، روستای خود را آنطور که دوست دارید زیبا کنید.\nیک مسیر نبرد طراحی کنید\nعملکرد نبردها در دهکده گمشده با بقیه متفاوت است. حوزه توهم، زمان و مکان با خطرات و فرصت های بزرگ است. دشمنان قصد ندارند شما را به راحتی عبور دهند. شما از \"کاشی های معنوی\" خود برای قرار دادن مسیری در هوا استفاده خواهید کرد، تا مردمک چشمانتان در آن راه بروند و به انتها برسند، گاهی اوقات برای غارت بیشتر در حوزه سفر می کنند. اگرچه شما حرکات رزمی را کنترل نخواهید کرد، باید یک را انتخاب کنید"
   }
 ]
