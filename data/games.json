@@ -7449,5 +7449,51 @@
     },
     "description_en": "- The game is set in alternative Russia of the 19th century. Gloomy and sinister, at the same time enchanting world.\n\n- Gameplay focuses on the story unusual for the genre. The tedious and confusing \"Russian-style\" tale, presented in an unexpected arthouse style.\n\n- Controlling two characters, you go on a difficult journey, solving either puzzles or psychological problems of the heroes.\n\nSTORY\n\nA young nun, full of doubts and seditious thoughts, is expelled from the monastery, accused of obsession. She goes to the city, watching as a terrible shaggy creature walks on her heels. On the way, she meets a surprisingly devout fugitive convict, who convinces her to go with him to the holy elder, who is hiding a miraculous artifact, which should solve all her problems.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n- بازی در روسیه جایگزین قرن نوزدهم جریان دارد. دنیای غم انگیز و شوم و در عین حال مسحور کننده.\n\n- گیم پلی بر روی داستان غیرعادی برای ژانر تمرکز دارد. داستان خسته کننده و گیج کننده \"به سبک روسی\"، ارائه شده در سبک غیرمنتظره خانه هنری.\n\n- با کنترل دو شخصیت، به یک سفر دشوار می روید، یا معماها یا مشکلات روانی قهرمانان را حل می کنید.\n\nداستان\n\nراهبه جوانی پر از تردید و افکار فتنه انگیز به اتهام وسواس از صومعه اخراج می شود. او به شهر می رود و شاهد راه رفتن یک موجود پشمالو وحشتناک روی پاشنه های او است. در راه، او با یک محکوم فراری به طرز شگفت‌انگیزی ملاقات می‌کند که او را متقاعد می‌کند تا با او نزد پیر مقدس برود، که مصنوع معجزه آسایی را پنهان کرده است، که باید همه مشکلات او را حل کند."
+  },
+  {
+    "id": 975393,
+    "name": "Indiana Jones and the Great Circle",
+    "background_image": "https://media.rawg.io/media/games/824/824c0f8d6a591ef5828d7546664fc87c.jpg",
+    "rating": 4.28,
+    "metacritic": null,
+    "released": "2024-12-09",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 12,
+    "developers": "Machine Games",
+    "steam_link": "https://store.steampowered.com/app/2677660/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b6f/b6f0808b67a59fc6688ce24cb4aef713.jpg",
+      "https://media.rawg.io/media/screenshots/0a8/0a800dc468026cb728431a2b4be7a532.jpg",
+      "https://media.rawg.io/media/screenshots/88c/88c412fcd0ab93c4fa28b3e0d450c2d3.jpg",
+      "https://media.rawg.io/media/screenshots/f3f/f3f76608c88c8e54a4aee9895c5ea2c0.jpg",
+      "https://media.rawg.io/media/screenshots/6d2/6d22d9550fd4d9d5320632b1547ac7b5.jpg",
+      "https://media.rawg.io/media/screenshots/754/75483a45f8849af9577e49387e8cc4f6.jpg",
+      "https://media.rawg.io/media/games/824/824c0f8d6a591ef5828d7546664fc87c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-10700K @ 3.8 GHz or better or AMD Ryzen 5 3600 @ 3.6 GHz or better\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 2060 SUPER 8 GB or AMD Radeon RX 6600 8 GB or Intel Arc A580\nStorage: 120 GB available space\nAdditional Notes: SSD required; GPU Hardware Ray Tracing Required; Graphic Preset: Low / Resolution: 1080p (Native) / Target FPS: 60",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-12700K @ 3.6 GHz or better or AMD Ryzen 7 7700 @ 3.8 GHz or better\nMemory: 32 GB RAM\nGraphics: NVIDIA GeForce RTX 3080Ti 12 GB or AMD Radeon RX 7700XT 12 GB\nStorage: 120 GB available space\nAdditional Notes: SSD required; GPU Hardware Ray Tracing Required; Graphic Preset: High / Resolution: 1440p (Native) / Target FPS: 60"
+    },
+    "description_en": "Uncover one of history’s greatest mysteries in a first-person, single-player adventure. The year is 1937, sinister forces are scouring the globe for the secret to an ancient power connected to the Great Circle, and only one person can stop them - Indiana Jones™.\n\nLive the adventure as Indy in a thrilling story full of exploration, immersive action, and intriguing puzzles. As the brilliant archaeologist – famed for his keen intellect, cunning resourcefulness, and trademark humor – you will travel the world in a race against enemy forces to discover the secrets to one of the greatest mysteries of all time.\n\nTravel from the halls of Marshall College to the heart of the Vatican, the pyramids of Egypt, the sunken temples of Sukhothai, and beyond. When a break-in in the dead of night ends in a confrontation with a mysterious colossal man, you must set out to discover the world-shattering secret behind the theft of a seemingly unimportant artifact. Forging new alliances and facing familiar enemies, you’ll engage with intriguing characters, use guile and wits to solve ancient riddles, and survive intense set-pieces.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیکی از بزرگترین اسرار تاریخ را در یک ماجراجویی اول شخص و تک نفره کشف کنید. سال 1937 است، نیروهای شوم در حال جست و جوی کره زمین برای راز قدرت باستانی متصل به دایره بزرگ هستند، و تنها یک نفر می تواند آنها را متوقف کند - ایندیانا جونز™.\n\nماجراجویی را به عنوان ایندی در داستانی هیجان انگیز پر از اکتشاف، اکشن همه جانبه و پازل های جذاب زندگی کنید. به‌عنوان باستان‌شناس درخشان – که به دلیل هوش تیز، تدبیر حیله‌گر و شوخ طبعی‌اش مشهور است – در مسابقه‌ای با نیروهای دشمن به سراسر جهان سفر خواهید کرد تا اسرار یکی از بزرگترین اسرار تمام دوران را کشف کنید.\n\nاز سالن‌های کالج مارشال به قلب واتیکان، اهرام مصر، معابد غرق‌شده سوکوتای و فراتر از آن سفر کنید. هنگامی که یک حمله در تاریکی شب به رویارویی با یک مرد عظیم الجثه مرموز ختم می شود، شما باید به دنبال کشف راز مخرب جهان در پس دزدی یک مصنوع به ظاهر بی اهمیت باشید. با ایجاد اتحادهای جدید و رویارویی با دشمنان آشنا، با شخصیت‌های جذاب درگیر می‌شوید، از نیرنگ و هوش برای حل معماهای باستانی استفاده می‌کنید و از مجموعه‌های سخت جان سالم به در می‌برید."
   }
 ]
