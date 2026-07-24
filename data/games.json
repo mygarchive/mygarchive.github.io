@@ -8544,5 +8544,46 @@
     },
     "description_en": "• From the Golden Gate to the Empire State — Compete in The Run, an illicit race across the most iconic and treacherous roads from San Francisco to New York.\n• You are Jack's Competitive Edge —  Keep Jack one step ahead of the dangers from his dark past, both inside and outside the car. It's up to you to get Jack to New York in one piece and ahead of the competition.\n• Compete in High Octane Multi-Player Racing — Pick a playlist and compete for supremacy across the United States.  Join up with your friends online to earn exclusive in-game rewards.\n1 player\nSIXAXIS Motion Sensitive\nDUALSHOCK®3\nNetwork Features\nNetwork Players 2-8\nSoftware subject to license (us.playstation.com/softwarelicense). Online features require an account and are subject to terms of service and applicable privacy policy (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n© 2011 Electronic Arts Inc.  EA, the EA logo, Need for Speed, the Need for Speed logo, the stylized ‘N’ icon, NEED FOR SPEED THE RUN, and the NEED FOR SPEED THE RUN logo are trademarks of Electronic Arts Inc. The names, designs, and logos of all products are the property of their respective owners and used by permission.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n• از گلدن گیت تا امپایر استیت - در The Run رقابت کنید، مسابقه ای غیرقانونی در نمادین ترین و خائنانه ترین جاده ها از سانفرانسیسکو به نیویورک.\n• شما مزیت رقابتی جک هستید — جک را یک قدم جلوتر از خطرات گذشته تاریک او چه در داخل و چه در خارج از ماشین نگه دارید. این به شما بستگی دارد که جک را در یک قطعه و جلوتر از رقابت به نیویورک برسانید.\n• در مسابقه چند نفره با اکتان بالا رقابت کنید — یک لیست پخش انتخاب کنید و برای برتری در سراسر ایالات متحده رقابت کنید.  برای کسب جوایز انحصاری درون بازی با دوستان خود به صورت آنلاین بپیوندید.\n1 بازیکن\nSIXAXIS Motion Sensitive\nDUALSHOCK®3\nویژگی های شبکه\nپخش کننده های شبکه 2-8\nنرم افزار مشمول مجوز (us.playstation.com/softwarelicense). ویژگی‌های آنلاین نیاز به یک حساب دارند و مشمول شرایط خدمات و خط‌مشی رازداری قابل اجرا هستند (playstationnetwork.com/terms-of-service & playstationnetwork.com/privacy-policy).\n© 2011 Electronic Arts."
+  },
+  {
+    "id": 5615,
+    "name": "Need For Speed Undercover",
+    "background_image": "https://media.rawg.io/media/games/4ad/4ad6ab9cfe8146224330598a4a62fb14.jpg",
+    "rating": 3.21,
+    "metacritic": 65,
+    "released": "2008-11-18",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 2,
+    "developers": "Electronic Arts Black Box",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20For%20Speed%20Undercover",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b81/b81554a2ec8e3bbd9f65ccd5f9a6bd20.jpg",
+      "https://media.rawg.io/media/screenshots/7a4/7a487b007498d0fa04a88dc65d223a19.jpg",
+      "https://media.rawg.io/media/screenshots/6fc/6fc4c14537710a2a4fa919bd45c27865.jpg",
+      "https://media.rawg.io/media/screenshots/858/858bb0fd61458a51d25cba6b1a900623.jpg",
+      "https://media.rawg.io/media/screenshots/617/61718a120b719d4d26e5bcd5183741e4.jpg",
+      "https://media.rawg.io/media/screenshots/9e4/9e46948ba3ffa83088e3d83565763fbe.jpg",
+      "https://media.rawg.io/media/games/4ad/4ad6ab9cfe8146224330598a4a62fb14.jpg"
+    ],
+    "requirements": {
+      "minimum": "Supported OS: Microsoft Windows® Windows XP (SP2), Windows Vista\nProcessor: Intel Pentium® 4 or equivalent, 3.0 GHz or faster\nMemory: 5XP: 512 MB RAM / Vista: 1 GB RAM\nGraphics: 128 MB or more, NVIDIA GeForce (6600 or better); ATI Radeon (9500 or better); Intel G45 Express Chipset\nDrivers: DirectX® 9.0c (included) and latest video drivers\nHard Drive: 6.0 GB free space \nSound: DirectX 9.0c compatible sound card INTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. TO ACCESS ONLINE FEATURES, YOU MUST REGISTER ONLINE. ONLY ONE REGISTRATION IS AVAILABLE PER GAME. EA ONLINE TERMS &amp; CONDITIONS AND FEATURE UPDATES CAN BE FOUND AT WWW.EA.COM. YOU MUST BE 13+ TO REGISTER WITH EA ONLINE.                     EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON WWW.EA.COM.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Need For Speed Undercover is a racing game and the twelfth installment in the twenty-four-title long series of the same name.\n\n###Gameplay \nAlmost every Need For Speed game features the same gameplay features, and Undercover is no different. There is an open world which is permitted to discover at any time in contrary with, for instance, Most Wanted, where the environment was zoned, and the locations opened as the story progressed.\nThe car collisions system has become more realistic compared to the previous parts of the game, but damage remained cosmetic only with no impact on performance. However, the car may be destroyed in Highway Battle — one of the game mods. \nThe title features some RPG elements — wheelman points, which grants the player access to bonus levels and car parts. \nThe police in the game are traced by the bar at the top of the screen varying between Busted and Evade modes. The capturing of the player results in the checkpoint restart.\n\n###Plot \nThe game's title suggests the protagonist role in the story — he is an undercover police agent given a task to infiltrate the group of street-racers to expose them to arrest. The background behind the races is taking down the criminal gangs and cliques. During the narrative player is faced with some dilemmas demanding a hard choice of him on which side to take.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed For Speed ​​Undercover یک بازی مسابقه ای و دوازدهمین قسمت از مجموعه بیست و چهار عنوانی طولانی به همین نام است.\n\n###بازی \nتقریباً همه بازی‌های Need For Speed دارای ویژگی‌های گیم‌پلی یکسانی هستند و Undercover تفاوتی ندارد. یک دنیای باز وجود دارد که در هر زمان مجاز به کشف آن است، بر خلاف، به عنوان مثال، Most Wanted، جایی که محیط منطقه بندی شده است، و مکان ها با پیشرفت داستان باز می شوند.\nسیستم برخورد اتومبیل در مقایسه با قسمت‌های قبلی بازی واقعی‌تر شده است، اما آسیب فقط بدون تأثیر بر عملکرد ظاهری باقی مانده است. با این حال، ماشین ممکن است در نبرد بزرگراه - یکی از مدهای بازی - نابود شود. \nاین عنوان دارای برخی از عناصر RPG است - امتیازات چرخدار، که به بازیکن اجازه دسترسی به سطوح جایزه و قطعات ماشین را می دهد. \nپلیس در بازی توسط نوار بالای صفحه که بین حالت های Busted و Evade متفاوت است، ردیابی می شوند. گرفتن بازیکن منجر به راه اندازی مجدد ایست بازرسی می شود.\n\n###طرح \nعنوان بازی حاکی از نقش قهرمان داستان است - او یک مامور پلیس مخفی است که وظیفه دارد به گروهی از مسابقات خیابانی نفوذ کند تا آنها را در معرض دستگیری قرار دهد. پس‌زمینه این رقابت‌ها، از بین بردن باندها و دسته‌های جنایتکار است. در طول روایت، بازیکن با معضلاتی مواجه می‌شود که از او می‌خواهد به سختی انتخاب کند که کدام طرف را انتخاب کند."
   }
 ]
