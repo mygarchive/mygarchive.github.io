@@ -5941,5 +5941,41 @@
     },
     "description_en": "Welcome to the new era of Call of Duty®.\r\n\r\nCall of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عصر جدید Call of Duty® خوش آمدید.\r\n\r\nCall of Duty®: Modern Warfare® II بازیکنان را وارد یک درگیری جهانی بی‌سابقه می‌کند که شامل بازگشت اپراتورهای نمادین Task Force 141 می‌شود. از عملیات‌های تاکتیکی نفوذی در مقیاس کوچک و مخاطرات بالا گرفته تا مأموریت‌های بسیار طبقه‌بندی شده، بازیکنان در کنار دوستان خود در یک تجربه واقعاً فراگیر مستقر خواهند شد."
+  },
+  {
+    "id": 647552,
+    "name": "Call of Duty: Vanguard",
+    "background_image": "https://media.rawg.io/media/games/fa8/fa870a46d5e3e8cb1fa0a5e4f798ff2a.jpg",
+    "rating": 3.1,
+    "metacritic": null,
+    "released": "2021-11-05",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 9,
+    "developers": "Raven Software, Treyarch, Beenox, Sledgehammer Games, High Moon Studios, Demonware",
+    "steam_link": "https://store.steampowered.com/app/1985820/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d54/d5470b33405540e706fb88d7a6839423.jpg",
+      "https://media.rawg.io/media/screenshots/901/9014b4029c14b10c6da8e82bd2243a89.jpg",
+      "https://media.rawg.io/media/screenshots/804/804142981ebbfc036ce244f7f99cdf2f.jpg",
+      "https://media.rawg.io/media/screenshots/492/49283a70b6528ecbdd5052fa908edbfb.jpg",
+      "https://media.rawg.io/media/screenshots/aa4/aa41ad0e64d21aec5b9148a7e3ffc665.jpg",
+      "https://media.rawg.io/media/screenshots/96a/96a921b48df8876883e9b3b545bf7607.jpg",
+      "https://media.rawg.io/media/games/fa8/fa870a46d5e3e8cb1fa0a5e4f798ff2a.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64 Bit (latest update)\nProcessor: Intel Core i3-4340 or AMD FX-6300\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 960 or AMD Radeon RX 470\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 36 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Window 10 64 Bit (latest update) or Windows 11 64 Bit (latest update)\nProcessor: Intel Core i5-2500k or AMD Ryzen 5 1600X\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce GTX 1060 or AMD Radeon RX 580\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 177 GB available space"
+    },
+    "description_en": "Rise on every front: Dogfight over the Pacific, airdrop over France, defend Stalingrad with a sniper’s precision and blast through enemies in North Africa.\r\n\r\nExperience influential battles of World War II as you fight for victory across multiple theaters of war. The Call of Duty®: Vanguard campaign will immerse you in a deeply engaging and gripping character-driven narrative experience featuring combat on an unparalleled global scale, while also telling the harrowing stories of those who turned the tides of war and changed history forever.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر هر جبهه ای قیام کنید: سگ جنگی بر فراز اقیانوس آرام، فرود هواپیما بر فراز فرانسه، دفاع از استالینگراد با دقت تک تیرانداز و انفجار در میان دشمنان در شمال آفریقا.\r\n\r\nنبردهای تاثیرگذار جنگ جهانی دوم را در حالی که برای پیروزی در چندین صحنه جنگ می جنگید، تجربه کنید. کمپین Call of Duty®: Vanguard شما را در یک تجربه داستانی شخصیت محور عمیقاً درگیر کننده و جذاب غوطه ور می کند که شامل نبرد در مقیاس جهانی بی نظیر است، در عین حال داستان های دلخراش کسانی را که جزر و مد جنگ را تغییر دادند و تاریخ را برای همیشه تغییر دادند، بیان می کند."
   }
 ]
