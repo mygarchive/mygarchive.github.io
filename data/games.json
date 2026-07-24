@@ -6393,5 +6393,46 @@
     },
     "description_en": "Return of the classic FPS, Doom (2016) acts as a reboot of the series and brings back the Doomslayer, protagonist of the original Doom games. In order to solve the energy crisis, humanity learned to harvest the energy from Hell, and when something went wrong and a demon invasion has started, it’s up to the player to control the Doomslayer and destroy the evil.\n\nDoom is a fast-paced game that restores the concept of instant health packs and leaves the player against armies of Hell with no cover, no health regeneration, or help from anyone. After damaging monsters enough, they will start glowing, which will allow players to perform glory kills to restore some health. While exploring the levels, players will come across secrets, collectible items, or upgrade points for the weapons and armor. The single-player campaign silent protagonist has a noticeable personality. He gets visibly annoyed and angry in his actions during expository cutscenes and forces his way through the game. Multiplayer maps gather players in Deathmatch/”king-of-the-hill” type game modes, with all the weapons from the single-player campaign.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازگشت FPS کلاسیک، Doom (2016) به عنوان راه‌اندازی مجدد این سری عمل می‌کند و Doomslayer، شخصیت اصلی بازی‌های Doom را بازمی‌گرداند. برای حل بحران انرژی، بشریت یاد گرفت که انرژی را از جهنم برداشت کند، و وقتی مشکلی پیش آمد و حمله شیطان آغاز شد، این به بازیکن بستگی دارد که Doomslayer را کنترل کند و شیطان را نابود کند.\n\nDoom یک بازی سریع است که مفهوم بسته های سلامتی فوری را بازیابی می کند و بازیکن را در مقابل ارتش های جهنم بدون پوشش، بدون بازسازی سلامتی یا کمک کسی رها می کند. پس از آسیب کافی به هیولاها، آنها شروع به درخشش می کنند، که به بازیکنان اجازه می دهد تا برای بازگرداندن سلامتی، قتل های شکوهی انجام دهند. در حین کاوش در سطوح، بازیکنان با اسرار، آیتم های کلکسیونی یا امتیاز ارتقاء سلاح ها و زره ها روبرو می شوند. قهرمان بی صدا کمپین تک نفره شخصیت قابل توجهی دارد. او در حین کات سین های نمایشی به طرز آشکاری از کارهایش آزرده و عصبانی می شود و مجبور می شود در بازی راه بیفتد. نقشه های چند نفره بازیکنان را در حالت های بازی Deathmatch/\"King-of-the-hill\" با تمام سلاح های کمپین تک نفره جمع آوری می کند."
+  },
+  {
+    "id": 58777,
+    "name": "DOOM Eternal",
+    "background_image": "https://media.rawg.io/media/games/3ea/3ea3c9bbd940b6cb7f2139e42d3d443f.jpg",
+    "rating": 4.37,
+    "metacritic": 86,
+    "released": "2020-03-19",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 12,
+    "developers": "Bethesda Softworks, id Software, Bethesda Game Studios, Panic Button, Virtuos, Nerve Software",
+    "steam_link": "https://store.steampowered.com/app/782330/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/e60/e605ef79d45fcde4afcdbbe8783b7755.jpg",
+      "https://media.rawg.io/media/screenshots/65d/65db880d23d8d9afe59da1a0f4fbc9d1_s0rkn1r.jpg",
+      "https://media.rawg.io/media/screenshots/bb4/bb448b8a9aa51ff3e620d3d4c292214b.jpg",
+      "https://media.rawg.io/media/screenshots/922/922d1b5f0231cf8b0eaa4b78f3935434.jpg",
+      "https://media.rawg.io/media/screenshots/311/311c4a0364dd23e2ccaabe0fef29f467_U6b7UNM.jpg",
+      "https://media.rawg.io/media/screenshots/32a/32abc47d857fffc485b86dcd56cbe3c7.jpg",
+      "https://media.rawg.io/media/games/3ea/3ea3c9bbd940b6cb7f2139e42d3d443f.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "As the DOOM Slayer, you return to find Earth has suffered a demonic invasion. Raze Hell and discover the Slayer’s origins and his enduring mission to rip and tear…until it is done.\n\nExperience the ultimate combination of speed and power as you battle your way across dimensions with the next leap in push-forward, first-person combat.\nSlayer Threat Level at Maximum\n\nArmed with a shoulder-mounted flamethrower, retractable wrist-mounted blade, upgraded guns and mods, and abilities like the Double Dash, you're faster, stronger, and more versatile than ever.\nUnholy Trinity\n\nTake what you need from your enemies: Glory kill for extra health, incinerate for armor, and chainsaw demons to stock up on ammo to become the ultimate demon-slayer.\n\nBATTLEMODE is the new 2 versus 1 multiplayer experience built from the ground up at id Software. A fully-armed DOOM Slayer faces off against two player-controlled demons, duking it in a best-of-five round match of intense first-person combat. BATTLEMODE launches with 6 handcrafted maps and 5 playable demons – the Marauder, Archvile, Revenant, Mancubus and Pain Elemental.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عنوان قاتل DOOM، شما برمی‌گردید و متوجه می‌شوید که زمین مورد تهاجم اهریمنی قرار گرفته است. جهنم را با خاک یکسان کنید و منشأ قاتل و ماموریت پایدار او برای پاره کردن و پاره کردن… تا زمانی که این کار انجام شود را کشف کنید.\n\nبا جهش بعدی در نبرد اول شخص و هل دادن به جلو، ترکیب نهایی سرعت و قدرت را تجربه کنید.\nسطح تهدید قاتل در حداکثر\n\nمجهز به شعله افکن روی شانه، تیغه مچ دست جمع شونده، اسلحه ها و مدهای ارتقا یافته و توانایی هایی مانند دابل داش، سریع تر، قوی تر و همه کاره تر از همیشه هستید.\nتثلیث نامقدس\n\nآنچه را که نیاز دارید از دشمنان خود بگیرید: Glory kill برای سلامتی بیشتر، سوزاندن برای زره، و شیاطین اره برقی برای ذخیره مهمات برای تبدیل شدن به قاتل نهایی شیطان.\n\nBATTLEMODE تجربه چند نفره 2 در مقابل 1 است که از ابتدا در id Software ساخته شده است. یک DOOM Slayer کاملاً مسلح با دو شیاطین که توسط بازیکن کنترل می‌شوند روبرو می‌شود و آن را در یک مسابقه بهترین از پنج دور مبارزه‌ی شدید اول شخص دوخته می‌کند. BATTLEMODE با 6 نقشه دست ساز و 5 شیطان قابل بازی - Marauder، Archvile، Revenant، Mancubus و Pain Elemental راه اندازی می شود."
   }
 ]
