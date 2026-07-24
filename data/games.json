@@ -5859,5 +5859,46 @@
     },
     "description_en": "Initial Intel: Campaign: The Black Ops 6 Campaign takes players to a new point in time – the early 1990s. In true Black Ops fashion, the fictional story builds on the history of the time, thrusting you into a strange and clandestine conspiracy where a shadowy force has infiltrated the U.S. government. Anyone who resists is branded as a traitor, forcing players to go rogue for the first time to fight the very machine that created them. Nothing is what it seems, and the truth may be hard to fathom, drawing you ever deeper into intrigue, distrust, and mind-bending psychological revelations. This is true, signature Black Ops style.\n\nInitial Intel: Multiplayer: Offering a massive amount of content at launch, expect 16 brand new Multiplayer maps on Day One, including 12 Core 6v6 maps and four small-sized Strike maps, the latter of which are unique, stand-alone locations designed to be played in 2v2 or Face Off 6v6 matches. Multiplayer is also where you’ll test your skills and learn how to move like an action hero, with innovations like Omnimovement – allowing you to sprint, slide and dive in any direction – as well as Intelligent Movement (sprinting, mantling, and crouch assists allowing you to focus on achieving incredible and complex maneuvers with ease), increased enemy hit zones, an incredible lineup of gear, HUD optimizations, and the return of Theatre Mode and Classic Prestige!\n\nAll designed to ensure this game is the ultimate Black Ops Multiplayer experience.\n\nInitial Intel:",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nInitial Intel: Campaign: کمپین Black Ops 6 بازیکنان را به نقطه جدیدی از زمان می برد - اوایل دهه 1990. در مد واقعی Black Ops، داستان تخیلی بر اساس تاریخ آن زمان است و شما را وارد یک توطئه عجیب و مخفیانه می کند که در آن یک نیروی سایه به دولت ایالات متحده نفوذ کرده است. هر کسی که مقاومت کند به عنوان یک خائن شناخته می شود و بازیکنان را مجبور می کند برای اولین بار برای مبارزه با همان ماشینی که آنها را ایجاد کرده است سرکشی کنند. هیچ چیز آنطور که به نظر می رسد نیست، و درک حقیقت ممکن است سخت باشد، و شما را بیش از پیش به دسیسه، بی اعتمادی و افشاگری های روانشناختی آزاردهنده می کشاند. این درست است، سبک امضای Black Ops.\n\nInitial Intel: Multiplayer: با ارائه حجم انبوهی از محتوا در هنگام راه‌اندازی، انتظار 16 نقشه چندنفره کاملاً جدید را در روز اول داشته باشید، شامل 12 نقشه Core 6v6 و چهار نقشه Strike با اندازه کوچک، که دومی مکان‌های منحصربه‌فرد و مستقلی هستند که برای بازی در مسابقات 2v2 یا Face Off 6v6 طراحی شده‌اند. بازی چند نفره همچنین جایی است که مهارت‌های خود را آزمایش می‌کنید و یاد می‌گیرید که چگونه مانند یک قهرمان اکشن حرکت کنید، با نوآوری‌هایی مانند Omnimovement - که به شما امکان می‌دهد به سرعت، سر خوردن و شیرجه رفتن در هر جهتی بپیچید - و همچنین حرکت هوشمند (دوی سرعت، منتینگ و کمک‌های خمیده به شما امکان می‌دهد روی دستیابی به مانورهای فوق‌العاده دشمن با خطوط مانورهای باورنکردنی و پیچیده تمرکز کنید). تجهیزات، بهینه سازی HUD، و بازگشت حالت تئاتر و کلاسیک پرستیژ!\n\nهمه چیز طراحی شده تا اطمینان حاصل شود که این بازی تجربه نهایی Black Ops Multiplayer است.\n\nاینتل اولیه:"
+  },
+  {
+    "id": 481910,
+    "name": "Call of Duty: Black Ops Cold War",
+    "background_image": "https://media.rawg.io/media/games/6b1/6b14dc4cc1785e396580c69165e55d2d.jpg",
+    "rating": 3.8,
+    "metacritic": 76,
+    "released": "2020-11-13",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 11,
+    "developers": "Raven Software, Treyarch, Beenox, Sledgehammer Games, High Moon Studios, Activision Shanghai",
+    "steam_link": "https://store.steampowered.com/app/1985810/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/937/937d0162549b56e2e8516495014cdff6.jpg",
+      "https://media.rawg.io/media/screenshots/569/569d36684151bda3840db81ecabdaffb.jpg",
+      "https://media.rawg.io/media/screenshots/fff/fffff525947dc0a6e2f46eb54cb89e73.jpg",
+      "https://media.rawg.io/media/screenshots/21c/21ceeef3724285298cad89d0f4a7b3e2.jpg",
+      "https://media.rawg.io/media/screenshots/c9d/c9d4eaea4140e49a3e65c189bd72cefd.jpg",
+      "https://media.rawg.io/media/screenshots/546/5461854d824b4587e90ac5f96b7af45f.jpg",
+      "https://media.rawg.io/media/games/6b1/6b14dc4cc1785e396580c69165e55d2d.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64-bit (v.1803 or higher)\nProcessor: Intel® Core™ i3-4340 or AMD FX-6300*\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 670 / NVIDIA® GeForce® GTX 1650 or AMD Radeon™ HD 7950\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 175 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64-bit (latest update)\nProcessor: Intel® Core™ i5-2500K or AMD Ryzen™ R5 1600X Processor\nMemory: 12 GB RAM\nGraphics: NVIDIA® GeForce® GTX 970 / NVIDIA® GeForce® GTX 1660 Super or AMD Radeon™ R9 390 / AMD Radeon™ RX 580\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 175 GB available space"
+    },
+    "description_en": "The iconic Black Ops series is back with Call of Duty®: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty®: Black Ops.\n\nBlack Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.\n\nAs elite operatives, you will follow the trail of a shadowy figure named Perseus who is on a mission to destabilize the global balance of power and change the course of history. Descend into the dark center of this global conspiracy alongside iconic characters Woods, Mason and Hudson and a new cast of operatives attempting to stop a plot decades in the making.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه نمادین Black Ops با Call of Duty®: Black Ops Cold War بازگشته است - دنباله مستقیم نسخه اصلی و مورد علاقه طرفداران Call of Duty®: Black Ops.\n\nBlack Ops Cold War طرفداران را به اعماق نبرد ژئوپلیتیک ناپایدار جنگ سرد در اوایل دهه 1980 می کشاند. در کمپین تک‌نفره جذاب، که در آن بازیکنان با شخصیت‌های تاریخی و حقایق سخت روبرو می‌شوند، هیچ‌چیز آنطور که به نظر می‌رسد نیست، زیرا در سراسر جهان از طریق مکان‌های نمادین مانند برلین شرقی، ویتنام، ترکیه، مقر KGB شوروی و غیره می‌جنگند.\n\nشما به عنوان عوامل نخبه، دنباله‌روی شخصیتی پنهان به نام پرسئوس را دنبال خواهید کرد که در ماموریت بی‌ثبات کردن تعادل جهانی قدرت و تغییر مسیر تاریخ است. به مرکز تاریک این توطئه جهانی در کنار شخصیت‌های نمادین وودز، میسون و هادسون و گروه جدیدی از عواملی که در تلاش برای متوقف کردن طرحی که دهه‌ها در حال ساخت است، فرود بیایید."
   }
 ]
