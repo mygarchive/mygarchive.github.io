@@ -6085,5 +6085,41 @@
     },
     "description_en": "Command & Conquer 3: Tiberium Wars is a real-time strategy game developed by EA Los Angeles. It is the third game in the Tiberium sub-series and continues the plot of Tiberian Sun.\n\n###Plot\nThe year is 2047, 17 years after the events of the Firestorm Expansion pack. The Brotherhood of Nod unexpectedly turns off the Global Defence Initiative's missile shield and destroys the Philadelphia orbital station. Most of the GDI's leaders are dead in one move, with the Brotherhood planning to take on the east coast of the United States. The game follows the events of the Third Tiberian War.\n\n###Gameplay\nIn Command & Conquer 3: Tiberium Wars the players spectate the action on the battlefield and give orders to their units. The main objective is to destroy the enemies base.\n\nLike in the previous games, the core building for the formation of your army is the mobile command center, which is placed on the default starting position on every map of the game, yet it is possible to move it freely around the level. Each building type works as a technological tree where new units can be built only if a specific set of buildings were put up by the player. Every unit can be countered by another, thanks to a rock, paper, scissors game designing philosophy. Three factions are present in the game, with every one of them differing in their units, buildings, style, and gameplay.\n\n1v1 and 2v2 multiplayer modes are also available with the addition of an ELO ranking system.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer 3: Tiberium Wars یک بازی استراتژیک بلادرنگ است که توسط EA Los Angeles ساخته شده است. این سومین بازی از سری فرعی Tiberium است و داستان Tiberian Sun را ادامه می دهد.\n\n###طرح\nسال 2047 است، 17 سال پس از وقایع بسته گسترش Firestorm. Brotherhood of Nod به طور غیر منتظره ای سپر موشکی ابتکار عمل جهانی دفاع را خاموش می کند و ایستگاه مداری فیلادلفیا را نابود می کند. اکثر رهبران GDI در یک حرکت جان خود را از دست داده اند و اخوان المسلمین در حال برنامه ریزی برای حمله به سواحل شرقی ایالات متحده است. این بازی وقایع جنگ سوم تیبری را دنبال می کند.\n\n###بازی\nدر Command & Conquer 3: Tiberium Wars بازیکنان اکشن را در میدان نبرد تماشا می‌کنند و به واحدهای خود دستور می‌دهند. هدف اصلی از بین بردن پایگاه دشمنان است.\n\nمانند بازی های قبلی، ساختمان اصلی برای تشکیل ارتش شما مرکز فرماندهی متحرک است که در موقعیت شروع پیش فرض در هر نقشه بازی قرار می گیرد، با این حال امکان جابجایی آزادانه آن در سطح وجود دارد. هر نوع ساختمان به عنوان یک درخت تکنولوژیک عمل می کند که در آن واحدهای جدید تنها در صورتی می توانند ساخته شوند که مجموعه خاصی از ساختمان ها توسط بازیکن ساخته شده باشد. به لطف فلسفه طراحی بازی سنگ، کاغذ، قیچی می توان با هر واحد دیگری مقابله کرد. سه جناح در بازی حضور دارند که هر کدام در واحدها، ساختمان ها، سبک و گیم پلی خود متفاوت هستند.\n\nحالت های چند نفره 1v1 و 2v2 نیز با اضافه شدن سیستم رتبه بندی ELO در دسترس هستند."
+  },
+  {
+    "id": 19466,
+    "name": "Command & Conquer 4: Tiberian Twilight",
+    "background_image": "https://media.rawg.io/media/games/2ea/2ea117c364906de9f569876a5dff5eae.jpg",
+    "rating": 2.44,
+    "metacritic": 64,
+    "released": "2010-03-16",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 2,
+    "developers": "Electronic Arts Los Angeles",
+    "steam_link": "https://store.steampowered.com/app/47700/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/6b5/6b54067e17218079b9cbcc28f304e159.jpg",
+      "https://media.rawg.io/media/screenshots/f38/f38fbd97bf43a023ca5f0594eb61b37f.jpg",
+      "https://media.rawg.io/media/screenshots/6c0/6c066a82f37fa3e6e834dd1d1c7ee0ad.jpg",
+      "https://media.rawg.io/media/screenshots/853/85393a2b666b180cae75ca574fa8f17b.jpg",
+      "https://media.rawg.io/media/screenshots/dd3/dd323423b2d91b88981ae2aed15e7204.jpg",
+      "https://media.rawg.io/media/screenshots/a0c/a0c3fa3491596c7aa97504dafd911522.jpg",
+      "https://media.rawg.io/media/games/2ea/2ea117c364906de9f569876a5dff5eae.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP SP3, Windows Vista SP1, or Windows 7\nProcessor: Intel Core 2 or better, AMD 64 X2 or better\nMemory: 1 GB (1.5 GB Vista and Windows 7)\nHard Drive: At least 10 GB of free space\nGraphics: 256 MB (SM 3.0) - Nvidia GeForce 6800 or better, ATI Radeon X1600 or better\nSound: DirectX 9.0c compatible sound card\nDirectX®: DirectX 9.0c",
+      "recommended": "Processor: Intel Core 2 Duo 2.6 GHz; AMD Athlon 64 X2 Dual-Core 5600+\nMemory: 2GB\nGraphics: 256 MB (SM 3.0) - Nvidia GeForce 8800 or better, ATI X1900 or better"
+    },
+    "description_en": "Behold disciples of Nod, for the end is soon upon us. Electronic Arts’ award-winning and best-selling Tiberium saga is coming to a powerful conclusion with Command & Conquer 4, which will introduce a multitude of innovations to the classic fast and fluid Command & Conquer gameplay, while retaining the core compulsions that fans have come to love over the series’ history.\nIt is the year 2062 and humanity is at the brink of extinction. Tiberium, the mysterious, alien crystalline structure that has infested Earth for decades and served as the primary reason for years of relentless conflict between the Global Defense Initiative (GDI) and the Brotherhood of Nod, is close to rendering the planet uninhabitable. Mankind is on the verge of extinction when Kane, Nod’s prophetic leader, emerges from seclusion to deliver GDI the message that he has developed a system that could control Tiberium and harness its power. But he cannot build this \"Tiberium Control Network\" without GDI’s cooperation. Thus, the two opposing factions – GDI and Nod – inevitably find themselves in desperation for the same cause: to stop Tiberium from extinguishing mankind.\nAfter 15 years, the network is nearly complete, Tiberium is under strict control and our revitalized, newly terraformed planet is on the cusp of a new age of prosperity and progress. It is then that the world’s citizens begin to seriously ponder why Kane chose to help, and what will he want in return. These questions and more lead to the dramati",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشاگردان نود را ببینید، زیرا پایان به زودی در راه است. حماسه Tiberium برنده جوایز و پرفروش Electronic Arts با Command & Conquer 4 به پایان قدرتمندی می‌رسد که نوآوری‌های زیادی را در گیم‌پلی سریع و روان کلاسیک Command & Conquer معرفی می‌کند، در حالی که اجبارهای اصلی را که طرفداران در طول تاریخ این سری دوست داشته‌اند، حفظ می‌کند.\nسال 2062 است و بشریت در آستانه انقراض است. تیبریوم، ساختار کریستالی اسرارآمیز و بیگانه که برای چندین دهه زمین را هجوم آورده و به عنوان دلیل اصلی سال ها درگیری بی امان بین ابتکار دفاع جهانی (GDI) و برادری نود بوده است، نزدیک است که این سیاره را غیرقابل سکونت کند. وقتی کین، رهبر پیشگوی نود، از گوشه نشینی بیرون می آید تا این پیام را به GDI برساند که سیستمی را توسعه داده است که می تواند Tiberium را کنترل کند و قدرت آن را مهار کند، بشر در آستانه انقراض است. اما او نمی تواند این «شبکه کنترل Tiberium» را بدون همکاری GDI بسازد. بنابراین، دو جناح مخالف - GDI و Nod - به ناچار خود را در استیصال یک هدف می‌بینند: جلوگیری از نابودی نوع بشر توسط Tiberium.\nپس از 15 سال، شبکه تقریباً کامل شده است، تیبریوم تحت کنترل شدید است و سیاره احیا شده و تازه شکل‌گرفته ما در آستانه عصر جدیدی از شکوفایی و پیشرفت است. پس از آن است که شهروندان جهان به طور جدی به این فکر می کنند که چرا کین کمک را انتخاب کرد و در ازای آن چه می خواهد. این سوالات و موارد دیگر منجر به دراماتی می شود"
   }
 ]
