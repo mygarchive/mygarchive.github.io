@@ -6049,5 +6049,41 @@
     },
     "description_en": "MultiplayerNote: As of June 2014, our friends at GameSpy have ended all hosted game services, which will affect the online multiplayer aspect of this game. Because of technical challenges and concerns, EA does not have a solution to keep these services up and running at this time, and online services for this game and other EA games on the GameSpy platform have ended.\nAbout the GameIn the name of Kane! The Command & Conquer™ series continues to thrive with Command & Conquer™ 3: Kane’s Wrath. As the expansion pack to the critically-acclaimed and fan favorite, Command & Conquer 3 Tiberium Wars™, this Real-time Strategy (RTS) game returns to the Tiberium Universe with Kane at the center of an epic new single player campaign spanning 20 years – from the rebirth of the Brotherhood of Nod after the Second Tiberium War through the dramatic events of the Third Tiberium War and beyond.  This story will be told through a new set of high-definition, live action video sequences starring a celebrity cast including Joe Kucan, playing the megalomaniac leader of the Brotherhood of Nod, alongside new talent Natasha Henstridge and Carl Lumbly.  With your help, Commander, the Dark Messiah may rise again!\nUnprecedented Multi-decade Campaign – Kane returns as the centerpiece of an epic new single-player campaign. Experience a new story that spans 20 years – from the rebirth of the Brotherhood of Nod after the Second Tiberium War through the dramatic events of the Third Tiberium War and beyond. Fa",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMultiplayerNote: از ژوئن 2014، دوستان ما در GameSpy تمام خدمات میزبانی بازی را پایان دادند، که بر جنبه چند نفره آنلاین این بازی تأثیر می گذارد. به دلیل چالش ها و نگرانی های فنی، EA در حال حاضر راه حلی برای فعال نگه داشتن این سرویس ها ندارد و خدمات آنلاین این بازی و سایر بازی های EA در پلتفرم GameSpy به پایان رسیده است.\nدرباره بازی به نام کین! سری Command & Conquer™ با Command & Conquer™ 3: Kane's Wrath به پیشرفت خود ادامه می دهد. این بازی استراتژی بی‌درنگ (RTS) به‌عنوان بسته الحاقی برای بازی مورد علاقه منتقدان و طرفداران، Command & Conquer 3 Tiberium Wars، با کین در مرکز یک کمپین تک‌نفره جدید حماسی که ۲۰ سال را در بر می‌گیرد – از تولد دوباره وقایع Brotherhood of the Warhirium تا جنگ درام Tiber و درام Tiber و درام جنگی Tiber، به دنیای Tiberium بازمی‌گردد. فراتر از  این داستان از طریق مجموعه جدیدی از سکانس‌های ویدئویی با کیفیت بالا و اکشن زنده با بازی بازیگران مشهوری از جمله جو کوکان، نقش رهبر بزرگ برادران نود، در کنار استعدادهای جدید ناتاشا هنستریج و کارل لومبلی روایت می‌شود.  با کمک شما، فرمانده، مسیح تاریک ممکن است دوباره برخیزد!\nکمپین چند دهه ای بی سابقه – کین به عنوان محور اصلی یک کمپین تک نفره جدید حماسی بازمی گردد. داستان جدیدی را تجربه کنید که 20 سال را در بر می گیرد - از تولد دوباره برادری نود پس از جنگ دوم تیبریوم تا وقایع دراماتیک جنگ سوم تیبریوم و پس از آن. فا"
+  },
+  {
+    "id": 19701,
+    "name": "Command & Conquer 3: Tiberium Wars",
+    "background_image": "https://media.rawg.io/media/games/7f9/7f9b2bb1d1ce5ad5ccc51a3e95d1aa1b.jpg",
+    "rating": 4.06,
+    "metacritic": 85,
+    "released": "2007-11-13",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Electronic Arts Los Angeles",
+    "steam_link": "https://store.steampowered.com/app/24790/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/49d/49de4451dc277c79f9a9a7a118726b0c.jpg",
+      "https://media.rawg.io/media/screenshots/a04/a04605d5b3cc9d6a439ba040bc50d8b5.jpg",
+      "https://media.rawg.io/media/screenshots/008/0086187dca5337f0e0914d5f8eefd5ac.jpg",
+      "https://media.rawg.io/media/screenshots/f60/f6050a158debed4724540046062ac678.jpg",
+      "https://media.rawg.io/media/screenshots/349/34902f2e731e3950d35103465e8c2fcd.jpg",
+      "https://media.rawg.io/media/screenshots/99d/99d9f3cf2950d19ce3cfc8b655787dc4.jpg",
+      "https://media.rawg.io/media/games/7f9/7f9b2bb1d1ce5ad5ccc51a3e95d1aa1b.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP/Vista\nProcessor: 2GHz AMD Athlon™ processor or equivalent\nMemory: 512MB RAM \nGraphics: ATI Radeon 8500 or Nvidia GeForce 4 or higher video card\nHard Drive: 8GB\nSound: DirectX 9.0c-compatible sound card\nOther Requirements: Internet service required to access online features, Broadband modem required for 3 to 8 players and voice support\nINTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. TO ACCESS ONLINE FEATURES, YOU MUST REGISTER ONLINE. ONLY ONE REGISTRATION IS AVAILABLE PER GAME. EA ONLINE TERMS &amp; CONDITIONS AND FEATURE UPDATES CAN BE FOUND AT WWW.EA.COM. YOU MUST BE 13+ TO REGISTER WITH EA ONLINE. EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON WWW.EA.COM.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Command & Conquer 3: Tiberium Wars is a real-time strategy game developed by EA Los Angeles. It is the third game in the Tiberium sub-series and continues the plot of Tiberian Sun.\n\n###Plot\nThe year is 2047, 17 years after the events of the Firestorm Expansion pack. The Brotherhood of Nod unexpectedly turns off the Global Defence Initiative's missile shield and destroys the Philadelphia orbital station. Most of the GDI's leaders are dead in one move, with the Brotherhood planning to take on the east coast of the United States. The game follows the events of the Third Tiberian War.\n\n###Gameplay\nIn Command & Conquer 3: Tiberium Wars the players spectate the action on the battlefield and give orders to their units. The main objective is to destroy the enemies base.\n\nLike in the previous games, the core building for the formation of your army is the mobile command center, which is placed on the default starting position on every map of the game, yet it is possible to move it freely around the level. Each building type works as a technological tree where new units can be built only if a specific set of buildings were put up by the player. Every unit can be countered by another, thanks to a rock, paper, scissors game designing philosophy. Three factions are present in the game, with every one of them differing in their units, buildings, style, and gameplay.\n\n1v1 and 2v2 multiplayer modes are also available with the addition of an ELO ranking system.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer 3: Tiberium Wars یک بازی استراتژیک بلادرنگ است که توسط EA Los Angeles ساخته شده است. این سومین بازی از سری فرعی Tiberium است و داستان Tiberian Sun را ادامه می دهد.\n\n###طرح\nسال 2047 است، 17 سال پس از وقایع بسته گسترش Firestorm. Brotherhood of Nod به طور غیر منتظره ای سپر موشکی ابتکار عمل جهانی دفاع را خاموش می کند و ایستگاه مداری فیلادلفیا را نابود می کند. اکثر رهبران GDI در یک حرکت جان خود را از دست داده اند و اخوان المسلمین در حال برنامه ریزی برای حمله به سواحل شرقی ایالات متحده است. این بازی وقایع جنگ سوم تیبری را دنبال می کند.\n\n###بازی\nدر Command & Conquer 3: Tiberium Wars بازیکنان اکشن را در میدان نبرد تماشا می‌کنند و به واحدهای خود دستور می‌دهند. هدف اصلی از بین بردن پایگاه دشمنان است.\n\nمانند بازی های قبلی، ساختمان اصلی برای تشکیل ارتش شما مرکز فرماندهی متحرک است که در موقعیت شروع پیش فرض در هر نقشه بازی قرار می گیرد، با این حال امکان جابجایی آزادانه آن در سطح وجود دارد. هر نوع ساختمان به عنوان یک درخت تکنولوژیک عمل می کند که در آن واحدهای جدید تنها در صورتی می توانند ساخته شوند که مجموعه خاصی از ساختمان ها توسط بازیکن ساخته شده باشد. به لطف فلسفه طراحی بازی سنگ، کاغذ، قیچی می توان با هر واحد دیگری مقابله کرد. سه جناح در بازی حضور دارند که هر کدام در واحدها، ساختمان ها، سبک و گیم پلی خود متفاوت هستند.\n\nحالت های چند نفره 1v1 و 2v2 نیز با اضافه شدن سیستم رتبه بندی ELO در دسترس هستند."
   }
 ]
