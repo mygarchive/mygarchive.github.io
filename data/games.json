@@ -6690,5 +6690,51 @@
     },
     "description_en": "Far Cry 5 is an open-world adventure first-person shooter developed by Ubisoft Montreal. It is the fifth main installment in the series.\n\nWelcome to Hope County, Montana, where a violent religious doomsday cult appeared. You play as a junior deputy sheriff who gets trapped in the Hope County as all the ways out the county are now patrolled with cultists and all external communication is cut off. It is your job to free the county of cultists.\n\nFor the first time in the series, the game features a character creation screen. A wide range of weaponry which varies from pistols to grenade launchers is available to the player. Various vehicles are also at your exposal: cars, planes, helicopters, and so on. \n\nThe game puts a strong emphasis on building the resistance to the cultists. Players have to recruit the locals in order to have more fighters and gain reputation.\n\nA welcome addition to the game is the so-called Guns For Hire system. It allows the players to choose one of the comrades that will follow them anywhere. For example, hiring a sniper will help the player spot enemy targets in the distance.\n\nThe whole game can be played in both singleplayer and co-op modes.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 5 یک بازی تیراندازی اول شخص ماجراجویی جهان باز است که توسط Ubisoft Montreal توسعه یافته است. این پنجمین قسمت اصلی این مجموعه است.\n\nبه شهرستان هوپ، مونتانا، جایی که یک فرقه مذهبی خشونت آمیز روز رستاخیز ظاهر شد، خوش آمدید. شما به عنوان یک معاون کلانتر بازی می کنید که در Hope County گرفتار می شود، زیرا همه راه های خروج از این شهرستان با فرقه ها در حال گشت زنی است و تمام ارتباطات خارجی قطع شده است. این وظیفه شماست که شهرستان را از وجود فرقه ها آزاد کنید.\n\nبرای اولین بار در این سری، بازی دارای صفحه نمایش شخصیت پردازی است. طیف وسیعی از تسلیحات که از تپانچه تا نارنجک انداز متفاوت است در دسترس بازیکن است. وسایل نقلیه مختلفی نیز در معرض دید شما هستند: اتومبیل، هواپیما، هلیکوپتر و غیره. \n\nاین بازی تاکید زیادی بر ایجاد مقاومت در برابر فرقه‌ها دارد. بازیکنان برای داشتن مبارزان بیشتر و کسب شهرت باید افراد محلی را به خدمت بگیرند.\n\nیکی از مواردی که به بازی اضافه شده، سیستم موسوم به Guns For Hire است. به بازیکنان این امکان را می دهد که یکی از رفقای خود را انتخاب کنند که آنها را در هر کجا دنبال می کند. به عنوان مثال، استخدام یک تک تیرانداز به بازیکن کمک می کند تا اهداف دشمن را در دوردست تشخیص دهد.\n\nکل بازی را می توان در دو حالت تک نفره و کوآپ بازی کرد."
+  },
+  {
+    "id": 463723,
+    "name": "Far Cry 6",
+    "background_image": "https://media.rawg.io/media/games/5dd/5dd4d2dd986d2826800bc37fff64aa4f.jpg",
+    "rating": 3.36,
+    "metacritic": 75,
+    "released": "2021-10-07",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Toronto, Ubisoft Shanghai, Ubisoft Kyiv, Ubisoft Berlin",
+    "steam_link": "https://store.steampowered.com/app/2369390/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/ad7/ad783ee0056da2ef308cc45253e17d66.jpg",
+      "https://media.rawg.io/media/screenshots/a05/a0581502c8d0e4acff3c4e05bae66537.jpg",
+      "https://media.rawg.io/media/screenshots/045/045a251b50baeac32d9b9edf2364a4e2.jpg",
+      "https://media.rawg.io/media/screenshots/eb3/eb3b3c0318ef705910b6406c36f24f10.jpg",
+      "https://media.rawg.io/media/screenshots/ec8/ec869cac48bf0a6a71da03cc5948e49e.jpg",
+      "https://media.rawg.io/media/screenshots/4ee/4ee0eead77909a1860fb8dda8e005e51.jpg",
+      "https://media.rawg.io/media/games/5dd/5dd4d2dd986d2826800bc37fff64aa4f.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 version or newer, 64-bit versions)\nProcessor: AMD Ryzen 3 1200 @ 3. GHz or Intel Core i5-4460 @ 3.1 GHz (AVX, AVX2 and SSE 4.2 support required)\nMemory: 8 GB RAM\nGraphics: AMD RX 460 (4 GB) or NVIDIA GeForce GTX 960 (4 GB)\nDirectX: Version 12\nStorage: 170 GB available space\nAdditional Notes: Please note that the minimum requirement for running the HD Texture Pack for Far Cry 6 is 12GB of VRAM. For 4K configurations, you will need 16GB of VRAM.   If you download and run the HD Texture Pack with lower VRAM capabilities, you will encounter performance issues while playing.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 version or newer, 64-bit versions)\nProcessor: AMD Ryzen 5 3600X @ 3.8 GHz or Intel Core i7-7700 @ 3.6 GHz (AVX, AVX2 and SSE 4.2 support required)\nMemory: 16 GB RAM\nGraphics: AMD RX Vega 64 (8 GB) or NVIDIA GeForce GTX 1080 (8 GB)\nDirectX: Version 12\nStorage: 170 GB available space\nAdditional Notes: Please note that the minimum requirement for running the HD Texture Pack for Far Cry 6 is 12GB of VRAM. For 4K configurations, you will need 16GB of VRAM.   If you download and run the HD Texture Pack with lower VRAM capabilities, you will encounter performance issues while playing."
+    },
+    "description_en": "Welcome to Yara, a tropical paradise frozen in time. As the dictator of Yara, Anton Castillo is intent on restoring his nation back to its former glory by any means, with his son, Diego, following in his bloody footsteps. Their oppressive rule has ignited a revolution.\n\nJOIN THE REVOLUTION\nPlay as Dani Rojas, a local Yaran, and become a guerrilla fighter to liberate your nation.\n\nYARA TORN APART\nFight against Anton's troops in the largest Far Cry playground to date across jungles, beaches, and Esperanza, the capital city of Yara.\n\nGUERRILLA FIREPOWER\nEmploy makeshift weapons, vehicles, and animal companions to burn Anton's ruthless regime to the ground.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه یارا خوش آمدید، بهشت ​​استوایی که در زمان یخ زده است. به عنوان دیکتاتور یارا، آنتون کاستیلو قصد دارد کشورش را به هر وسیله ای به شکوه سابق خود بازگرداند، با پسرش دیگو که ردپای خونین او را دنبال می کند. حکومت ظالمانه آنها شعله ور انقلاب شده است.\n\nبه انقلاب بپیوندید\nدر نقش Dani Rojas، یاران محلی بازی کنید و به یک مبارز چریکی تبدیل شوید تا ملت خود را آزاد کنید.\n\nیارا پاره شد\nدر بزرگترین زمین بازی Far Cry تا به امروز در جنگل‌ها، سواحل و اسپرانزا، پایتخت یارا، با نیروهای آنتون مبارزه کنید.\n\nنیروی آتش چریکی\nاز سلاح های موقت، وسایل نقلیه و همراهان حیوانات استفاده کنید تا رژیم بی رحم آنتون را به خاک بسپارید."
   }
 ]
