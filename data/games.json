@@ -7612,5 +7612,46 @@
     },
     "description_en": "Life is Strange: Before the Storm returns with remastered visuals across characters & environments.\n\nSet three years before ‘Life is Strange’, you play as sixteen-year old Chloe Price who forms an unlikely friendship with Rachel Amber, a beautiful and popular girl destined for success.\n\nWhen Rachel learns a secret about her family that threatens to destroy her world, it is her newfound friendship with Chloe that gives her the strength to carry on.\nNo longer alone the girls must confront each other's demons and together, find a way to overcome them.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nLife is Strange: Before the Storm با تصاویری بازسازی شده در شخصیت ها و محیط ها بازگردد.\n\nسه سال قبل از \"زندگی عجیب است\"، شما در نقش کلویی پرایس شانزده ساله بازی می کنید که دوستی بعید با ریچل آمبر، دختری زیبا و محبوب که برای موفقیت تعیین شده است، تشکیل می دهد.\n\nوقتی ریچل از رازی در مورد خانواده اش مطلع می شود که دنیایش را تهدید می کند، دوستی تازه یافته او با کلویی است که به او قدرت ادامه دادن می دهد.\nدیگر تنها دختران باید با شیاطین یکدیگر مقابله کنند و با هم راهی برای غلبه بر آنها بیابند."
+  },
+  {
+    "id": 983211,
+    "name": "Life is Strange: Double Exposure",
+    "background_image": "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg",
+    "rating": 3.02,
+    "metacritic": null,
+    "released": "2024-10-29",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 14,
+    "developers": "Deck Nine Games",
+    "steam_link": "https://store.steampowered.com/app/1874000/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/97f/97f60c5c224324f64229567311eacf7b.jpg",
+      "https://media.rawg.io/media/screenshots/8b3/8b35944e21c893e3734ce77c10913049.jpg",
+      "https://media.rawg.io/media/screenshots/e34/e34fd80c14d2bc4cfa43c1a32f79c133.jpg",
+      "https://media.rawg.io/media/screenshots/337/337cc83f9cf803f122d264f4f8887437.jpg",
+      "https://media.rawg.io/media/screenshots/b61/b61f40b27debe656eaedc45dc185ded5.jpg",
+      "https://media.rawg.io/media/screenshots/8f8/8f8d980b43d16d1c79846d6d9a69b7c8.jpg",
+      "https://media.rawg.io/media/games/279/279a4377b3499615155908764e297e1c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i5-2400 / AMD FX-6300\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce GTX 960, 4 GB / AMD Radeon RX 470, 4GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 30fps. SSD Recommended.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 / 11 64-bit\nProcessor: Intel Core i7-7700K / AMD Ryzen 5 3600\nMemory: 12 GB RAM\nGraphics: NVIDIA GeForce RTX 2080 Super, 8GB / AMD Radeon RX 6700 XT, 12GB\nDirectX: Version 12\nStorage: 25 GB available space\nAdditional Notes: 1080p @ 60fps. SSD Recommended."
+    },
+    "description_en": "Max Caulfield, photographer-in-residence at the prestigious Caledon University, discovers her closest new friend, Safi, dead in the snow.\nMurdered.\nTo save her, Max tries to Rewind time - a power she’s not used in years... instead, Max opens the way to a parallel timeline where Safi is still alive, and still in danger!\nMax realizes the killer will soon strike again - in both versions of reality.\nWith her new power to Shift between two timelines - can Max solve and prevent the same murder?",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمکس کالفیلد، عکاس مقیم دانشگاه معتبر کالدون، نزدیک‌ترین دوست جدیدش، سافی را می‌یابد که در برف مرده است.\nبه قتل رسید.\nمکس برای نجات او سعی می‌کند زمان را به عقب برگرداند - قدرتی که سال‌ها از آن استفاده نمی‌کرد... در عوض، مکس راه را به یک جدول زمانی موازی باز می‌کند که در آن Safi هنوز زنده است، و هنوز در خطر است!\nمکس متوجه می شود که قاتل به زودی دوباره حمله خواهد کرد - در هر دو نسخه واقعیت.\nمکس با قدرت جدیدش برای جابجایی بین دو خط زمانی - آیا مکس می تواند همان قتل را حل کند و از آن جلوگیری کند؟"
   }
 ]
