@@ -9443,5 +9443,46 @@
     },
     "description_en": "When family is all you have left…how far will you go to protect it?\nAfter society was ripped apart by undead hands, pockets of civilization emerge from the chaos. But at what cost? Can the living be trusted on this new frontier?\n\nAs Javier, a young man determined to find the family taken from him, you meet a young girl who has experienced her own unimaginable loss. Her name is Clementine, and your fates are bound together in a story where every choice you make could be your last.\nDownload Episode One of The Walking Dead: A New Frontier, a five part episodic game series from the creators of The Wolf Among Us, Batman - The Telltale Series, and Tales from the Borderlands.\n",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nوقتی خانواده تنها چیزی است که برای شما باقی مانده است... تا کجا می خواهید از آن محافظت کنید؟\nپس از اینکه جامعه توسط دستان مرده از هم پاشید، جیب های تمدن از هرج و مرج بیرون می آیند. اما به چه قیمتی؟ آیا می توان به زندگان در این مرز جدید اعتماد کرد؟\n\nهمانطور که خاویر، مرد جوانی که مصمم به یافتن خانواده ای است که از او گرفته شده است، با دختر جوانی آشنا می شوید که فقدان غیرقابل تصور خود را تجربه کرده است. نام او کلمنتاین است و سرنوشت شما در داستانی به هم گره خورده است که هر انتخابی که می کنید می تواند آخرین انتخاب شما باشد.\nدانلود قسمت اول The Walking Dead: A New Frontier یک سری بازی اپیزودیک پنج قسمتی از سازندگان The Wolf Among Us، Batman - The Telltale Series و Tales from the Borderlands."
+  },
+  {
+    "id": 223331,
+    "name": "The Walking Dead: Michonne",
+    "background_image": "https://media.rawg.io/media/games/b30/b30d472a13528007721f4a236b04ae7f.jpg",
+    "rating": 3.35,
+    "metacritic": 66,
+    "released": "2016-02-22",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Telltale Games",
+    "steam_link": "https://store.steampowered.com/app/429570/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/25d/25db0dba7cd414fcb66b336db381077a.jpg",
+      "https://media.rawg.io/media/screenshots/c94/c947f2ba21d6d5ff19adcaeeb07f4cf8.jpg",
+      "https://media.rawg.io/media/screenshots/bea/bea0dfbf04e6c56fc94424f4ea93bf2c.jpg",
+      "https://media.rawg.io/media/screenshots/2aa/2aa3df9415486b2b022499061334cd52.jpg",
+      "https://media.rawg.io/media/screenshots/d3d/d3d1432de142ea1cd0e77275dc53596f.jpg",
+      "https://media.rawg.io/media/screenshots/10b/10b0efd77650c9287cc05b0a8d5296f3.jpg",
+      "https://media.rawg.io/media/games/b30/b30d472a13528007721f4a236b04ae7f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP Service Pack 3\nProcessor: Core 2 Duo 2GHz or equivalent\nMemory: 3 GB RAM\nGraphics: ATI or NVIDIA card w/512 MB RAM\nDirectX: Version 9.0\nStorage: 3 GB available space\nSound Card: Direct X 9.0c sound device\nAdditional Notes: Not Recommended for Intel integrated graphics",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "The Walking Dead: Michonne - A Telltale Miniseries stars the iconic, blade-wielding character from Robert Kirkman's best-selling comic books. Haunted by her past, and coping with unimaginable loss and regret, the story explores Michonne's absence between issues #126 and #139 of the comic book. In this three part miniseries, players will discover what took Michonne away from Rick, Ezekiel, and the rest of her trusted group… and what brought her back.\n***Save 20% on additional episodes in The Walking Dead: Michonne by purchasing the Season Pass [Episodes 2-3 bundle] via in-app in the 'Episodes' menu***\nMinimum specs:\nGPU: Adreno 300 series, Mali-T600 series, PowerVR SGX544, or Tegra 4\nCPU: Dual core 1.2GHz\nMemory: 1GB\n- - - -\nExamples of supported devices include:\n- Galaxy S5 and up\n- HTC One (M7)\n- LG G2/G2 Mini and up\n- Motorola Moto X\nExamples of unsupported devices include:\n- Galaxy Tab 4 and below\n- Galaxy S5 Mini and below\n- Nexus 7 2012\n- Droid RAZR",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Walking Dead: Michonne - A Telltale Miniseries شخصیت نمادین و تیغه‌ای از کتاب‌های کمیک پرفروش رابرت کرکمن را بازی می‌کند. این داستان که توسط گذشته اش تسخیر شده است و با فقدان و پشیمانی غیرقابل تصور کنار آمده است، غیبت میکن را در بین شماره های 126 و 139 کتاب کمیک بررسی می کند. در این مینی‌سریال سه قسمتی، بازیکنان متوجه خواهند شد که چه چیزی میشون را از ریک، ازکیل و بقیه گروه مورد اعتمادش دور کرده است... و چه چیزی او را بازگردانده است.\n***با خرید Season Pass [بسته اپیزودهای 2-3] از طریق درون برنامه در منوی «Episodes»، 20% در قسمت‌های اضافی در The Walking Dead: Michonne صرفه‌جویی کنید.\nحداقل مشخصات:\nپردازنده گرافیکی: سری Adreno 300، سری Mali-T600، PowerVR SGX544 یا Tegra 4\nCPU: دو هسته ای 1.2 گیگاهرتز\nحافظه: 1 گیگابایت\n-----\nنمونه هایی از دستگاه های پشتیبانی شده عبارتند از:\n- Galaxy S5 و بالاتر\n- HTC One (M7)\n- LG G2/G2 Mini و بالاتر\n- Motorola Moto X\nنمونه هایی از دستگاه های پشتیبانی نشده عبارتند از:\n- Galaxy Tab 4 و پایین تر\n- Galaxy S5 Mini و پایین تر\n- Nexus 7 2012\n- Droid RAZR"
   }
 ]
