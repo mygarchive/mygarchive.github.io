@@ -8061,5 +8061,46 @@
     },
     "description_en": "Refreshing look of Mirror’s Edge made this first-person action platformer recognizable even by people who have never played it before. The City of the “utopian” society is highly monitored by the totalitarian military groups. \nPlayers will take control of the female protagonist, named Faith, a specially trained Runner, master of parkour that delivers physical documents in the city, where every form of communication is watched. Her sister is framed for murder, and Faith must follow the clues to the identity of the murderer, with only lead being a note saying Icarus.\nDistinct visuals of the game form the bright white city, which Faith has to navigate through, jumping across rooftops, running on walls and climbing scaffolding. Color-coded elements of the environment guiding players as to where they can progress. Special attention to the camera that will bob up in down in accordance with the movement, trying to recreate the actual vision, and not a fixed video feed. Even though Mirror’s Edge has a combat system, it’s not the main focus, which makes it scarce.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nظاهر تازه Mirror’s Edge باعث شد تا این پلتفرمر اکشن اول شخص حتی برای افرادی که قبلاً آن را بازی نکرده‌اند قابل تشخیص باشد. شهر جامعه «آرمان شهر» به شدت توسط گروه های نظامی تمامیت خواه تحت نظارت است. \nبازیکنان کنترل قهرمان زن به نام Faith را در دست خواهند گرفت، یک دونده آموزش دیده مخصوص، استاد پارکور که اسناد فیزیکی را در شهر ارائه می دهد، جایی که هر نوع ارتباطی در آن مشاهده می شود. خواهرش به قتل متهم می‌شود و فیث باید سرنخ‌هایی را برای شناسایی قاتل دنبال کند، و تنها سرب یادداشتی است که می‌گوید ایکاروس.\nجلوه‌های بصری متمایز بازی، شهر سفید روشن را تشکیل می‌دهد، که Faith باید از میان آن عبور کند، از پشت بام‌ها بپرد، روی دیوارها بدود و از داربست بالا برود. عناصر رنگی محیطی که بازیکنان را به جایی که می توانند پیشرفت کنند راهنمایی می کند. توجه ویژه به دوربینی که مطابق با حرکت بالا می رود و سعی می کند دید واقعی را بازسازی کند و نه یک فید ویدیویی ثابت. با وجود اینکه Mirror’s Edge دارای یک سیستم جنگی است، تمرکز اصلی آن نیست و همین امر آن را کمیاب می‌کند."
+  },
+  {
+    "id": 994399,
+    "name": "NAIAD",
+    "background_image": "https://media.rawg.io/media/screenshots/73c/73c631998634f865a0c64db77d55af97.jpg",
+    "rating": 0,
+    "metacritic": null,
+    "released": "2024-12-10",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 4,
+    "developers": "HiWarp",
+    "steam_link": "https://store.steampowered.com/app/1813860/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/dde/dded991af82589a81f3ef6ff006761ce.jpg",
+      "https://media.rawg.io/media/screenshots/e56/e569804d7db805f6b8616f2d1cce5cf4.jpg",
+      "https://media.rawg.io/media/screenshots/008/0087a48d4088d8e948bf205c98d77fd8.jpg",
+      "https://media.rawg.io/media/screenshots/45d/45d733a505c22b5873c72e67ce70446b.jpg",
+      "https://media.rawg.io/media/screenshots/cb3/cb3373288f465484d5e37734ec2217f5.jpg",
+      "https://media.rawg.io/media/screenshots/c9e/c9e0017c0db810f0243d51c34623955b.jpg",
+      "https://media.rawg.io/media/screenshots/73c/73c631998634f865a0c64db77d55af97.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS *: Windows 7 SP1+ (or later)\nProcessor: Intel or AMD Dual Core at 2 GHz (or better)\nMemory: 4 GB RAM\nGraphics: Intel Graphics 4400 or better\nDirectX: Version 11\nStorage: 1 GB available space\nAdditional Notes: Gamepad Controller Recommended",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5, Ryzen 5\nMemory: 8 GB RAM\nGraphics: NVIDIA 970 GTX, Radeon RX 580\nDirectX: Version 11\nStorage: 2 GB available space\nAdditional Notes: Gamepad Controller Recommended"
+    },
+    "description_en": "Flow with Naiad across a mysterious river and interact with its fauna and flora to discover little secrets. Enjoy a wholesome experience with an original visual style.Learn to swim like a duck, dive like a fish, dash like a frog and meet other adorable friends like butterflies, rabbits, turtles, snakes, and crocodiles. Help them find their way and avoid obstacles.A journey in 16 episodes that will take you through beautiful and strange places like a spring, a forest, a cave, a lake, an orchard... until you reach the sea.Developed by a solo dev who has pampered every detail to create a very personal and unique game.\nTake a refreshing and serene swim where you can explore a peaceful river at your own pace.Embark on an emotional journey of growth to reach the sea. Play with friendly and adorable animals and make flowers sprout as you sing.Beautiful visuals and sound design helps you feel like you're diving underwater and flowing among floating leaves and flowers. In each zone you will discover new animals and little secrets, with different atmosphere and music as the day progresses.\nJoin little Naiad on an adventure to protect nature from certain humans who try to take advantage of the river and pollute it.Will you be able to guide and help the animals find their way?",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبا نایاد از رودخانه ای مرموز عبور کنید و با جانوران و گیاهان آن تعامل داشته باشید تا اسرار کوچکی را کشف کنید. از یک تجربه مفید با سبک بصری اصیل لذت ببرید. شنا کردن مانند اردک، شیرجه رفتن مانند ماهی، دویدن مانند قورباغه و دیدار با دوستان شایان ستایش مانند پروانه ها، خرگوش ها، لاک پشت ها، مارها و تمساح ها را بیاموزید. به آنها کمک کنید راه خود را پیدا کنند و از موانع دوری کنند. سفری در 16 قسمت که شما را در مکان های زیبا و عجیبی مانند چشمه، جنگل، غار، دریاچه، باغ میوه ... تا رسیدن به دریا می برد. توسط یک توسعه دهنده انفرادی که تمام جزئیات را برای ایجاد یک بازی بسیار شخصی و منحصر به فرد طراحی کرده است.\nیک شنای با طراوت و آرام داشته باشید، جایی که می توانید رودخانه ای آرام را با سرعت خود کاوش کنید. برای رسیدن به دریا، یک سفر احساسی رشد را آغاز کنید. با حیوانات دوست‌داشتنی و دوست‌داشتنی بازی کنید و هنگام آواز خواندن، گل‌ها را جوانه بزنید. طراحی زیبا و بصری صدا به شما کمک می‌کند احساس کنید در زیر آب شیرجه می‌زنید و در میان برگ‌ها و گل‌های شناور در جریان هستید. در هر منطقه شما حیوانات جدید و اسرار کوچک را با فضا و موسیقی متفاوت در طول روز کشف خواهید کرد.\nبه نایاد کوچولو در یک ماجراجویی بپیوندید تا از طبیعت در برابر انسان های خاصی که سعی در سوء استفاده از رودخانه و آلوده کردن آن دارند محافظت کنید. آیا می توانید به حیوانات کمک کنید تا راه خود را پیدا کنند؟"
   }
 ]
