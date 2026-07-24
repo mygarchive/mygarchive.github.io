@@ -5977,5 +5977,41 @@
     },
     "description_en": "Rise on every front: Dogfight over the Pacific, airdrop over France, defend Stalingrad with a sniper’s precision and blast through enemies in North Africa.\r\n\r\nExperience influential battles of World War II as you fight for victory across multiple theaters of war. The Call of Duty®: Vanguard campaign will immerse you in a deeply engaging and gripping character-driven narrative experience featuring combat on an unparalleled global scale, while also telling the harrowing stories of those who turned the tides of war and changed history forever.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر هر جبهه ای قیام کنید: سگ جنگی بر فراز اقیانوس آرام، فرود هواپیما بر فراز فرانسه، دفاع از استالینگراد با دقت تک تیرانداز و انفجار در میان دشمنان در شمال آفریقا.\r\n\r\nنبردهای تاثیرگذار جنگ جهانی دوم را در حالی که برای پیروزی در چندین صحنه جنگ می جنگید، تجربه کنید. کمپین Call of Duty®: Vanguard شما را در یک تجربه داستانی شخصیت محور عمیقاً درگیر کننده و جذاب غوطه ور می کند که شامل نبرد در مقیاس جهانی بی نظیر است، در عین حال داستان های دلخراش کسانی را که جزر و مد جنگ را تغییر دادند و تاریخ را برای همیشه تغییر دادند، بیان می کند."
+  },
+  {
+    "id": 983210,
+    "name": "Clair Obscur: Expedition 33",
+    "background_image": "https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg",
+    "rating": 4.46,
+    "metacritic": null,
+    "released": "2025-04-24",
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 26,
+    "developers": "Sundial Interactive, Sandfall Interactive",
+    "steam_link": "https://store.steampowered.com/app/1903340/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/1e4/1e4dcb884c03242be7dab30fad77d7b2.jpg",
+      "https://media.rawg.io/media/screenshots/22c/22c350e84e9f320b389cdabf0c213f7f.jpg",
+      "https://media.rawg.io/media/screenshots/d8c/d8ce62f48218d47440c1859366860562.jpg",
+      "https://media.rawg.io/media/screenshots/72d/72da1f6013eb7b3f10c624dfeb3dd578.jpg",
+      "https://media.rawg.io/media/screenshots/16b/16bca296df99c20d6d54d67b2e6ad71b.jpg",
+      "https://media.rawg.io/media/screenshots/7bb/7bb0c8b67c9add59d1a13ebb7da790b1.jpg",
+      "https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg"
+    ],
+    "requirements": {
+      "minimum": "Мінімальні:\nПотребує 64-бітних процесора та операційної системи\nОС: Windows 10\nПроцесор: Intel Core i7-8700K / AMD Ryzen 5 1600X\nОперативна пам’ять: 8 GB ОП\nВідеокарта: NVIDIA GeForce GTX 1060 6 GB / AMD Radeon RX 5600 XT 6 GB / Intel Arc A380 6 GB\nDirectX: версії 12\nМісце на диску: 55 GB доступного місця\nДодаткові примітки: SSD required. Minimum specs allow for 1080p 30FPS low settings gameplay.",
+      "recommended": "Рекомендовані:\nПотребує 64-бітних процесора та операційної системи\nОС: Windows 11\nПроцесор: Intel Core i7-12700K / AMD Ryzen 7 5800X\nОперативна пам’ять: 16 GB ОП\nВідеокарта: NVIDIA GeForce RTX 3060 Ti 8 GB / AMD Radeon RX 6800 XT 16 GB\nDirectX: версії 12\nМісце на диску: 55 GB доступного місця\nДодаткові примітки: SSD required. Recommended specs allow for 1080p 60FPS high settings gameplay."
+    },
+    "description_en": "Once a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone of that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow she’ll wake and paint “33.” And tomorrow we depart on our final mission - Destroy the Paintress, so she can never paint death again.\n\nWe are Expedition 33.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک بار در سال، نقاش از خواب بیدار می شود و روی یکپارچه خود نقاشی می کند. شماره نفرین شده اش را نقاشی می کند. و همه در آن سن به سیگار تبدیل می شوند و محو می شوند. سال به سال این عدد کاهش می یابد و تعداد بیشتری از ما پاک می شویم. فردا بیدار می شود و \"33\" را نقاشی می کند. و فردا ما به ماموریت نهایی خود می رویم - نقاش را نابود کنید، تا دیگر هرگز نتواند مرگ را نقاشی کند.\n\nما اکسپدیشن 33 هستیم."
   }
 ]
