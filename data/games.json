@@ -7370,5 +7370,49 @@
     },
     "description_en": "Join Aloy as she braves the Forbidden West, a deadly frontier that conceals mysterious new threats.\r\n\r\nThis Complete Edition allows you to enjoy the critically acclaimed Horizon Forbidden West™ in its entirety with bonus content, including the Burning Shores story expansion that picks up after the main game.\r\n\r\nBrave an expansive open world – discover distant lands, new enemies, rich cultures and striking characters.\r\n\r\nA majestic frontier – explore the lush forests, sunken cities and towering mountains of a far-future America\r\n\r\nConfront new dangers – engage in strategic battles against enormous machines and mounted human enemies by using weapons, gear and traps crafted from salvaged parts.\r\n\r\nUnravel startling mysteries – uncover the secret behind Earth’s imminent collapse and unlock a hidden chapter in the ancient past… one that will change Aloy forever.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه Aloy بپیوندید تا در غرب ممنوعه شجاعت کند، مرزی مرگبار که تهدیدهای مرموز جدید را پنهان می کند.\r\n\r\nاین نسخه کامل به شما امکان می‌دهد تا از بازی تحسین‌شده Horizon Forbidden West™ به طور کامل با محتوای جایزه لذت ببرید، از جمله بسط داستان Burning Shores که بعد از بازی اصلی شروع می‌شود.\r\n\r\nدر دنیای باز گسترده شجاع باشید - سرزمین های دور، دشمنان جدید، فرهنگ های غنی و شخصیت های خیره کننده را کشف کنید.\r\n\r\nمرزی باشکوه - جنگل‌های سرسبز، شهرهای غرق‌شده و کوه‌های سر به فلک کشیده آمریکای آینده را کاوش کنید.\r\n\r\nبا خطرات جدید مقابله کنید - با استفاده از سلاح ها، تجهیزات و تله های ساخته شده از قطعات نجات یافته، در نبردهای استراتژیک علیه ماشین های عظیم و دشمنان انسانی سوار شده شرکت کنید.\r\n\r\nاسرار شگفت انگیز را کشف کنید - راز فروپاشی قریب الوقوع زمین را کشف کنید و قفل یک فصل پنهان در گذشته باستان را باز کنید ... فصلی که آلوی را برای همیشه تغییر خواهد داد."
+  },
+  {
+    "id": 984635,
+    "name": "Lego Horizon Adventures",
+    "background_image": "https://media.rawg.io/media/games/f94/f9431c36820b13201397c25d197e030a.jpg",
+    "rating": 3.37,
+    "metacritic": null,
+    "released": "2024-11-14",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "esrb_rating": "+10",
+    "playtime": 12,
+    "developers": "Guerrilla Games, Studio Gobo",
+    "steam_link": "https://store.steampowered.com/app/2428810/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/47b/47b9800ebe44ef81c4853a71e3f91edb.jpg",
+      "https://media.rawg.io/media/screenshots/948/948f745a9648895d6ec664ec7e3d0d13.jpg",
+      "https://media.rawg.io/media/screenshots/876/8767d0bf21d94f3a2bf312e1b8ccfe6a.jpg",
+      "https://media.rawg.io/media/screenshots/1c7/1c7c0d13b15b2e70614351c7b68d7353.jpg",
+      "https://media.rawg.io/media/games/f94/f9431c36820b13201397c25d197e030a.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-8400 / AMD Ryzen 5 2600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce GTX 1650 / AMD Radeon RX 580\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-10600K / AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce RTX 3070 / AMD Radeon RX 6800\nStorage: 30 GB available space"
+    },
+    "description_en": "Join machine hunter Aloy as she leads a colorful crew of heroes through the lush wilderness on a quest to save the world and learn the secrets of her past. Dive into boundless adventure, customize to your heart’s content, and take on action-packed battles solo or with friends in co-op.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه شکارچی ماشین آلوی بپیوندید تا خدمه ای از قهرمانان رنگارنگ را در بیابان سرسبز در تلاش برای نجات جهان و یادگیری رازهای گذشته خود هدایت کند. در ماجراجویی بی حد و حصر شیرجه بزنید، مطابق با دلخواه خود آن را سفارشی کنید و نبردهای پر اکشن را به صورت انفرادی یا با دوستان خود به صورت تعاونی انجام دهید."
   }
 ]
