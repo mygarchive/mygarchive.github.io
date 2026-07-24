@@ -8888,5 +8888,46 @@
     },
     "description_en": "Dispatch is a superhero workplace comedy where choices matter. Manage a dysfunctional team of misfit heroes and strategize who to send to emergencies around the city, all while balancing office politics, personal relationships, and your own quest to become a hero.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDispatch یک کمدی ابرقهرمانی در محل کار است که در آن انتخاب ها اهمیت دارند. یک تیم ناکارآمد از قهرمانان نامتناسب را مدیریت کنید و استراتژی بفرستید که چه کسانی را به مواقع اضطراری در سراسر شهر بفرستید، در حالی که بین سیاست اداری، روابط شخصی و تلاش خود برای تبدیل شدن به یک قهرمان تعادل برقرار کنید."
+  },
+  {
+    "id": 906547,
+    "name": "Hogwarts Legacy",
+    "background_image": "https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg",
+    "rating": 3.91,
+    "metacritic": null,
+    "released": "2023-02-10",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 30,
+    "developers": "Avalanche Software, Portkey Games",
+    "steam_link": "https://store.steampowered.com/app/990080/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/723/7230cc1be966c19d2470a19d277b31e9.jpg",
+      "https://media.rawg.io/media/screenshots/8d4/8d43231c67e82914891ac81c4a413d12.jpg",
+      "https://media.rawg.io/media/screenshots/9c4/9c48270e9f6b1cdc6e2fa92c0f7a1da8.jpg",
+      "https://media.rawg.io/media/screenshots/057/057e7fffd4798fdb336e6aaca40204ba.jpg",
+      "https://media.rawg.io/media/screenshots/f35/f35c6bcc541808298288ba49e50c37d5.jpg",
+      "https://media.rawg.io/media/screenshots/fc6/fc6f976e1dd7225e4818b9f553ed23c0.jpg",
+      "https://media.rawg.io/media/games/044/044b2ee023930ca138deda151f40c18c.jpg"
+    ],
+    "requirements": {
+      "minimum": "Minimi:\nRichiede un processore e un sistema operativo a 64 bit\nSistema operativo: 64-bit Windows 10\nProcessore: Intel Core i5-6600 (3.3Ghz) or AMD Ryzen 5 1400 (3.2Ghz)\nMemoria: 16 GB di RAM\nScheda video: NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB\nDirectX: Versione 12\nMemoria: 85 GB di spazio disponibile\nNote aggiuntive: SSD (Preferred), HDD (Supported), 720p/30 fps, Low Quality Settings",
+      "recommended": "Consigliati:\nRichiede un processore e un sistema operativo a 64 bit\nSistema operativo: 64-bit Windows 10\nProcessore: Intel Core i7-8700 (3.2Ghz) or AMD Ryzen 5 3600 (3.6 Ghz)\nMemoria: 16 GB di RAM\nScheda video: NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT or INTEL Arc A770\nDirectX: Versione 12\nMemoria: 85 GB di spazio disponibile\nNote aggiuntive: SSD, 1080p/60 fps, High Quality Settings"
+    },
+    "description_en": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Embark on a journey through familiar and new locations as you explore and discover fantastic beasts, customize your character and craft potions, master spell casting, upgrade talents, and become the wizard you want to be.\r\n\r\nExperience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. You have received a late acceptance to the Hogwarts School of Witchcraft and Wizardry and soon discover that you are no ordinary student: you possess an unusual ability to perceive and master Ancient Magic. Only you can decide if you will protect this secret for the good of all, or yield to the temptation of more sinister magic.\r\n\r\nDiscover the feeling of living at Hogwarts as you make allies, battle Dark wizards, and ultimately decide the fate of the wizarding world. Your legacy is what you make of it.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمیراث هاگوارتز یک بازی RPG اکشن و جهان باز است که برای اولین بار در کتاب های هری پاتر معرفی شد. اکنون می توانید کنترل اکشن را به دست بگیرید و در مرکز ماجراجویی خود در دنیای جادوگری قرار بگیرید. با کاوش و کشف جانوران خارق العاده، شخصی سازی شخصیت و معجون های صنایع دستی، مهارت در ریخته گری طلسم، ارتقای استعدادها و تبدیل شدن به جادوگری که می خواهید باشید، سفری را در مکان های آشنا و جدید آغاز کنید.\r\n\r\nهاگوارتز را در دهه 1800 تجربه کنید. شخصیت شما دانش آموزی است که کلید یک راز باستانی را در دست دارد که تهدید می کند دنیای جادوگران را از هم بپاشد. شما دیر در مدرسه جادوگری و جادوگری هاگوارتز پذیرفته شده اید و به زودی متوجه می شوید که دانش آموز معمولی نیستید: توانایی غیرعادی در درک و تسلط بر جادوی باستانی دارید. فقط شما می توانید تصمیم بگیرید که آیا از این راز به نفع همه محافظت می کنید یا تسلیم وسوسه جادوی شوم می شوید.\r\n\r\nاحساس زندگی در هاگوارتز را در حالی که متحد می شوید، با جادوگران تاریک می جنگید و در نهایت سرنوشت دنیای جادوگران را تعیین می کنید، کشف کنید. میراث شما همان چیزی است که از آن می سازید."
   }
 ]
