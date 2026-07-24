@@ -7033,5 +7033,41 @@
     },
     "description_en": "Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world. Together, Kratos and Atreus venture deep into the Nine Realms in search of answers as Asgardian forces prepare for war.\r\n \r\nAlong the way they will explore stunning, mythical landscapes, gather allies from across the realms, and face fearsome enemies in the form of Norse gods and monsters. As the threat of Ragnarök grows ever closer, Kratos and Atreus find themselves choosing between the safety of their family and the safety of the realms...",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nکریتوس و آترئوس باید در جستجوی پاسخ به هر یک از نه قلمرو سفر کنند و برای نبرد پیشگویی شده ای که جهان را به پایان خواهد رساند آماده می شوند. کریتوس و آترئوس با هم به اعماق نه قلمرو می‌روند و در جستجوی پاسخ‌هایی هستند که نیروهای آسگاردی برای جنگ آماده می‌شوند.\r\n \r\nدر طول مسیر، آنها مناظر افسانه ای و خیره کننده را کاوش می کنند، متحدانی را از سراسر قلمروها جمع می کنند و با دشمنان ترسناکی به شکل خدایان و هیولاهای نورس روبرو می شوند. با نزدیک‌تر شدن تهدید راگناروک، کریتوس و آترئوس متوجه می‌شوند که بین امنیت خانواده‌شان و امنیت قلمروها انتخاب می‌کنند..."
+  },
+  {
+    "id": 58175,
+    "name": "God of War (2018)",
+    "background_image": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+    "rating": 4.54,
+    "metacritic": 94,
+    "released": "2018-04-20",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 15,
+    "developers": "Santa Monica Studio",
+    "steam_link": "https://store.steampowered.com/search/?term=God%20of%20War%20(2018)",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d68/d6868e5f7bce66e326bd48b11ba24b13.jpeg",
+      "https://media.rawg.io/media/screenshots/928/928cdaf4ae204f202d177bbd65e911b3.jpeg",
+      "https://media.rawg.io/media/screenshots/a54/a549a06ebe89c570cabb57308c4c42a5.jpeg",
+      "https://media.rawg.io/media/screenshots/f02/f0279f8199da3e91134078e737e5fbcf.jpg",
+      "https://media.rawg.io/media/screenshots/e87/e87c57660c7c37fe973c6dd6ebcc1ac6.jpeg",
+      "https://media.rawg.io/media/screenshots/5b7/5b7280fe437c39d3ce501a867c46a998.jpeg",
+      "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)\nDirectX: Version 11\nStorage: 70 GB available space\nAdditional Notes: DirectX feature level 11_1 required",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Intel i5-6600k (4 core 3.5 GHz) or AMD Ryzen 5 2400 G (4 core 3.6 GHz)\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)\nDirectX: Version 11\nStorage: 70 GB available space\nAdditional Notes: DirectX feature level 11_1 required"
+    },
+    "description_en": "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfill a deeply personal quest. \r\n\r\nHis vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… And teach his son to do the same. This startling reimagining of God of War deconstructs the core elements that defined the series—satisfying combat; breathtaking scale; and a powerful narrative—and fuses them anew. \r\n\r\nKratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son. \r\n\r\nFrom the marble and columns of ornate Olympus to the gritty forests, mountains, and caves of Pre-Viking Norse lore, this is a distinctly new realm with its own pantheon of creatures, monsters, and gods. With an added emphasis on discovery and exploration, the world will draw players in to explore every inch of God of War’s breathtakingly threatening landscape—by far the largest in the franchise. \r\n\r\nWith an over the shoulder free camera that brings the player closer to the action than ever before, fights in God of War mirror the pantheon of Norse creatures Kratos will face: grand, gritty, and grueling. A new main weapon and new abilities retain the defining ",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین یک شروع جدید برای کریتوس است. او که به عنوان مردی خارج از سایه خدایان زندگی می‌کند، همراه با پسرش آترئوس وارد وحشی اسکاندیناوی می‌شود و برای انجام یک تلاش عمیقاً شخصی مبارزه می‌کند. \r\n\r\nکریتوس انتقامش از خدایان المپوس را سالها پشت سر گذاشت و اکنون به عنوان یک مرد در قلمرو خدایان نورس و هیولاها زندگی می کند. در این دنیای خشن و نابخشودنی است که او باید برای زنده ماندن بجنگد... و به پسرش بیاموزد که همین کار را انجام دهد. این بازسازی شگفت‌انگیز از God of War، عناصر اصلی را که سریال را تعریف می‌کردند، تجزیه می‌کند - نبرد رضایت‌بخش. مقیاس نفس گیر; و یک روایت قدرتمند - و آنها را از نو ترکیب می کند. \r\n\r\nکریتوس دوباره پدر شد. به عنوان مربی و محافظ آترئوس، پسری که مصمم است احترام خود را به دست آورد، او مجبور می شود با خشمی که مدت هاست او را تعریف کرده است کنار بیاید و آن را کنترل کند، در حالی که با پسرش در دنیای بسیار خطرناکی زندگی می کند. \r\n\r\nاز سنگ مرمر و ستون‌های المپ پرآذین گرفته تا جنگل‌های شنی، کوه‌ها، و غارهای افسانه‌های اسکاندیناوی پیش از وایکینگ‌ها، این یک قلمرو کاملاً جدید با موجودات، هیولاها و خدایان خاص خود است. با تأکید بیشتر بر اکتشاف و اکتشاف، جهان بازیکنان را برای کاوش در هر اینچ از مناظر خیره‌کننده God of War جذب می‌کند - تا حد زیادی بزرگترین در این فرنچایز. \r\n\r\nبا یک دوربین بدون روی شانه که بازیکن را بیش از هر زمان دیگری به اکشن نزدیک می کند، مبارزات در خدای جنگ آینه ای از پانتئون موجودات اسکاندیناوی کریتوس است: بزرگ، سنگدل و طاقت فرسا. یک سلاح اصلی جدید و توانایی‌های جدید تعیین کننده هستند"
   }
 ]
