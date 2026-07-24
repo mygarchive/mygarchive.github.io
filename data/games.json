@@ -9233,5 +9233,46 @@
     },
     "description_en": "Resident Evil Requiem is the ninth title in the mainline Resident Evil series.\n\nPrepare to escape death in a heart-stopping experience that will chill you to your core.\n\nTechnological advancements combined with the development team's depth of experience combine in a story with rich characters and gameplay that's more immersive than ever before.\n\nA new era of survival horror begins in 2026. Requiem for the dead. Nightmare for the living.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nResident Evil Requiem نهمین عنوان از سری اصلی Resident Evil است.\n\nبرای فرار از مرگ در تجربه‌ای شگفت‌انگیز که شما را تا اعماق قلبتان آرام می‌کند، آماده شوید.\n\nپیشرفت‌های فناوری همراه با عمق تجربه تیم توسعه، در داستانی با شخصیت‌های غنی و گیم‌پلی که بیش از هر زمان دیگری غوطه‌ورتر است، ترکیب می‌شود.\n\nدوره جدیدی از وحشت بقا در سال 2026 آغاز می شود. مرثیه ای برای مردگان. کابوس برای زنده ها"
+  },
+  {
+    "id": 1003477,
+    "name": "RoadCraft",
+    "background_image": "https://media.rawg.io/media/screenshots/3fe/3febd8ee05c17174484eb5df99e477ac.jpg",
+    "rating": 3.73,
+    "metacritic": null,
+    "released": "2025-05-20",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 8,
+    "developers": "Saber Interactive",
+    "steam_link": "https://store.steampowered.com/app/2104890/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/f32/f3207dbcb8faf5be2be65ea1f3d102a5.jpg",
+      "https://media.rawg.io/media/screenshots/c58/c58b2114678a11a8ac73611fcb4c6bbc.jpg",
+      "https://media.rawg.io/media/screenshots/852/85230db4540f273207841ddbaf37d597.jpg",
+      "https://media.rawg.io/media/screenshots/a56/a565b24f70e0ad128486c44d7b5be751.jpg",
+      "https://media.rawg.io/media/screenshots/703/7030fdcce2fc747cba819f235ac4a65e.jpg",
+      "https://media.rawg.io/media/screenshots/d18/d187eabe288c88be223bb6da178b0e5d.jpg",
+      "https://media.rawg.io/media/screenshots/3fe/3febd8ee05c17174484eb5df99e477ac.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (18362 min)/11 64-bit\nProcessor: AMD Ryzen 5 1500X / Intel Core i5-8400\nMemory: 8 GB RAM\nGraphics: 6 GB VRAM, AMD Radeon RX 590 / Nvidia GeForce GTX 1060 / Intel ARC A580\nStorage: 40 GB available space\nAdditional Notes: SSD required / 30 FPS in 1920x1080 with &quot;Low&quot; preset.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (18362 min)/11 64-bit\nProcessor: AMD Ryzen 7 5800X / Intel Core i5-12600K\nMemory: 16 GB RAM\nGraphics: 8 GB VRAM, AMD Radeon RX 6600 XT / Nvidia GeForce RTX 3060 / Intel ARC B580\nStorage: 40 GB available space\nAdditional Notes: SSD required. 60 FPS in 1920x1080 with the &quot;High&quot; preset."
+    },
+    "description_en": "REBUILD EDITIONGet the Rebuild Edition of RoadCraft and receive the following content:   The base game The Rebuild Expansion, which includes 2 maps filled with new contracts, activities, and utility vehicles *The Invictus Type A, a powerful and unique scout vehicle, available at launch ** * Content coming after the game's release. More information coming soon.**Available on release.\nAbout the GameAs the leader of a company specialized in restoring sites devastated by natural disasters, use your construction machinery to restart the local industry. Clear debris and faulty equipment, rebuild roads and bridges damaged by weather, and much more! You run a disaster recovery company, specialized in restoring sites devastated by natural disasters. Numerous tasks await you and your heavy machinery as you work to restart the local industry: clearing debris, replacing faulty equipment, rebuilding roads and bridges damaged by bad weather, deploying resource convoys to produce new reconstruction materials, and much more!Experience a new generation of simulation with the brand new engine developed by Saber Interactive, the creators of MudRunner and SnowRunner. Handle each object with realistic physics, accounting for their mass and size. Interact with elements like sand, wood, and asphalt. Reshape the terrain and ease the movement of your vehicles thanks to your newly-built roads.Each machine has its own behavior. Use your bulldozer to clear obstructions, your heavy transporter to carry m",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nREBUILD EDITION نسخه بازسازی RoadCraft را دریافت کنید و محتوای زیر را دریافت کنید: بازی پایه The Rebuild Expansion، که شامل 2 نقشه پر از قراردادها، فعالیت‌ها و وسایل نقلیه کاربردی جدید است *Invictus Type A، یک وسیله نقلیه پیشاهنگ قدرتمند و منحصربه‌فرد، موجود در هنگام راه‌اندازی ** * محتوای بعد از انتشار بازی. اطلاعات بیشتر به زودی.**در زمان انتشار موجود است.\nدرباره بازی به عنوان رهبر یک شرکت متخصص در بازسازی مکان های ویران شده توسط بلایای طبیعی، از ماشین آلات ساخت و ساز خود برای راه اندازی مجدد صنعت محلی استفاده کنید. زباله ها و تجهیزات معیوب را پاک کنید، جاده ها و پل های آسیب دیده از آب و هوا را بازسازی کنید و خیلی چیزهای دیگر! شما یک شرکت بازیابی بلایای طبیعی را اداره می کنید که متخصص در بازسازی مکان های ویران شده توسط بلایای طبیعی است. هنگام کار برای راه اندازی مجدد صنعت محلی، وظایف متعددی در انتظار شما و ماشین آلات سنگین شماست: پاکسازی زباله ها، جایگزینی تجهیزات معیوب، بازسازی جاده ها و پل های آسیب دیده در اثر آب و هوای بد، استقرار کاروان های منابع برای تولید مواد بازسازی جدید، و خیلی بیشتر! هر جسم را با فیزیک واقع گرایانه مدیریت کنید و جرم و اندازه آنها را در نظر بگیرید. با عناصری مانند ماسه، چوب و آسفالت تعامل داشته باشید. به لطف جاده های تازه ساخته شده خود، زمین را تغییر شکل دهید و حرکت وسایل نقلیه خود را آسان کنید. هر دستگاه رفتار خاص خود را دارد. از بولدوزر خود برای پاک کردن موانع، از حمل و نقل سنگین خود برای حمل متر استفاده کنید"
   }
 ]
