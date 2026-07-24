@@ -6606,5 +6606,46 @@
     },
     "description_en": "The game that started the popular Far Cry series. The player assumes the role of Jack Carver, a former special forces operative who became a ferryman. The protagonist was hired by a journalist Valerie Constantine to escort her to a remote Pacific island. Soon after they arrived, the boat was attacked, and Valerie went missing. Now Carver is stranded on an archipelago covered by tropical rainforests, which are hiding an abandoned Japanese warship, a secret lab, and an active volcano. On a search for Valerie, he will fight a gang of mercenaries and discover the monstrous experiments that are carried out on this islands. \r\nCarver eventually gains access to a variety of firearms. He’s also equipped with binoculars that allow him to see and even hear the enemies from far away. Stealth and detection are the central aspects of the Far Cry gameplay. The lush vegetation in the jungle offers perfect cover, so both Carver and his opponents can hide and sneak behind each other’s backs. The design and huge size of levels allow for a variety of routes and approaches to complete each mission, with use of stealth, surprise attacks, sniping, or another tactic of your choice.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی که شروع کننده سری محبوب Far Cry بود. بازیکن نقش جک کارور، یک مامور سابق نیروهای ویژه را بر عهده می گیرد که کشتی بان شد. قهرمان داستان توسط یک روزنامه نگار والری کنستانتین استخدام شد تا او را تا یک جزیره دورافتاده اقیانوس آرام اسکورت کند. بلافاصله پس از رسیدن آنها، قایق مورد حمله قرار گرفت و والری ناپدید شد. اکنون کارور در مجمع‌الجزایری تحت پوشش جنگل‌های بارانی استوایی، که یک کشتی جنگی رها شده ژاپنی، یک آزمایشگاه مخفی و یک آتشفشان فعال را پنهان کرده است، سرگردان شده است. در جستجوی والری، او با گروهی از مزدوران مبارزه می کند و آزمایشات هیولایی که در این جزایر انجام می شود را کشف می کند. \r\nکارور در نهایت به انواع سلاح های گرم دسترسی پیدا می کند. او همچنین مجهز به دوربین دوچشمی است که به او اجازه می دهد تا دشمنان را از دور ببیند و حتی بشنود. مخفی کاری و تشخیص جنبه های اصلی گیم پلی Far Cry هستند. پوشش گیاهی سرسبز جنگل پوشش کاملی را ارائه می دهد، بنابراین هم کارور و هم حریفانش می توانند پنهان شوند و پشت سر یکدیگر پنهان شوند. طراحی و اندازه عظیم سطوح، مسیرها و رویکردهای مختلفی را برای تکمیل هر ماموریت با استفاده از مخفی کاری، حملات غافلگیرانه، تک تیراندازی یا تاکتیک های دیگر مورد نظر شما امکان پذیر می کند."
+  },
+  {
+    "id": 4161,
+    "name": "Far Cry 3",
+    "background_image": "https://media.rawg.io/media/games/15c/15c95a4915f88a3e89c821526afe05fc.jpg",
+    "rating": 4.26,
+    "metacritic": 88,
+    "released": "2012-11-28",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 16,
+    "developers": "Ubisoft, Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/220240/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/98e/98e4c2a0c3e84b3d2718f8801bba0fcc.jpg",
+      "https://media.rawg.io/media/screenshots/87e/87e9ca5542b3e8da43d488c9252e20fe.jpg",
+      "https://media.rawg.io/media/screenshots/0a9/0a9ff8bbfa49024159bcd884ce7128c3.jpg",
+      "https://media.rawg.io/media/screenshots/971/971d3582a42ede482b9d90b47b50ac32.jpg",
+      "https://media.rawg.io/media/screenshots/174/174333d080f475d5718219ef6e01d3f4.jpg",
+      "https://media.rawg.io/media/screenshots/03d/03dcdb4292bcc6ccc2719c88202f4965.jpg",
+      "https://media.rawg.io/media/games/15c/15c95a4915f88a3e89c821526afe05fc.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS:Windows XP, Windows Vista and Windows 7\nProcessor:Intel Core®2 Duo E6700 @ 2.6 GHz or AMD Athlon64 X2 6000+ @ 3.0Ghz or better\nMemory:4 GB RAM\nGraphics:512MB Video RAM (1GB Video RAM), DirectX9c (DirectX11) Shader Model 3.0 (Shader Model 5.0)\nDirectX®:9.0c\nHard Drive:15 GB HD space\nSound:DirectX Compatible  (Recommended Surround Sound 5.1 capable)\nOther Requirements:Broadband Internet connection\nAdditional:*Supported Video Cards at Time of Release: AMD Radeon™ HD 2900 / 3000 / 4000 / 5000 / 6000 / 7000 series, NVIDIA® GeForce® 8800 GTX / 9 / 200 / 400 / 500 / 600 series. Laptop versions of these cards may work, but are not supported. These chipsets are the only ones that will run this game. For the most up-to-date minimum requirement listings, please visit the FAQ on our support website at http://support.ubi.com.\nRequires a UPlay account",
+      "recommended": "Memory:4 GB RAM\nGraphics:512MB Video RAM (1GB Video RAM), DirectX9c (DirectX11) Shader Model 3.0 (Shader Model 5.0)\nDirectX®:11\nHard Drive:15 GB HD space\nSound:DirectX Compatible  (Recommended Surround Sound 5.1 capable)\nOther Requirements:Broadband Internet connection\nAdditional:*Supported Video Cards at Time of Release: AMD Radeon™ HD 2900 / 3000 / 4000 / 5000 / 6000 / 7000 series, NVIDIA® GeForce® 8800 GTX / 9 / 200 / 400 / 500 / 600 series. Laptop versions of these cards may work, but are not supported. These chipsets are the only ones that will run this game. For the most up-to-date minimum requirement listings, please visit the FAQ on our support website at http://support.ubi.com.\nRequires a UPlay account"
+    },
+    "description_en": "Far Cry 3 is absolute madness. Being the third instalment of the franchise, it has a unique plot. Playing as Jason Brody, you will understand what it is like, to be a Rambo. Vacation on Rook Islands with your friends and family quickly turned into a complete nightmare after Vaas Montenegro kidnapping everyone from the party. Jason manages to escape the cruel pirate lord with a little help from a native supporter called Dennis. Now Brody has to save all his friends and get out of the island.\r\n\r\nTo help Jason save his friends, he will need to learn new skills. Hunting animals, crafting new weapons or different abilities in killing pirates. Skill tree has plenty to offer for the player. There are all kinds of firearms for any player, from a knife to a grenade launcher. This mechanic adds pure madness for the game process, making it very fun, fluent and full of adrenaline. Stunning views of the island, excellent surroundings and a great story make Far Cry 3 an absolute fun to play.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 3 یک جنون مطلق است. به عنوان قسمت سوم این فرنچایز، داستان منحصر به فردی دارد. با بازی در نقش جیسون برودی، متوجه خواهید شد که رمبو بودن چگونه است. پس از اینکه Vaas Montenegro همه را از مهمانی ربوده بود، تعطیلات در جزایر روک با دوستان و خانواده خود به سرعت به یک کابوس کامل تبدیل شد. جیسون با کمک کمی از طرفدار بومی به نام دنیس موفق می شود از ارباب دزدان دریایی ظالم فرار کند. حالا برودی باید همه دوستانش را نجات دهد و از جزیره خارج شود.\r\n\r\nبرای کمک به جیسون برای نجات دوستانش، او باید مهارت های جدیدی را بیاموزد. شکار حیوانات، ساخت سلاح های جدید یا توانایی های مختلف در کشتن دزدان دریایی. درخت مهارت چیزهای زیادی برای ارائه به بازیکن دارد. انواع سلاح گرم برای هر بازیکنی وجود دارد، از چاقو گرفته تا نارنجک انداز. این مکانیک جنون خالص را به روند بازی اضافه می کند و آن را بسیار سرگرم کننده، روان و پر از آدرنالین می کند. مناظر خیره کننده جزیره، محیطی عالی و داستانی عالی، بازی Far Cry 3 را به یک سرگرمی مطلق تبدیل کرده است."
   }
 ]
