@@ -7148,5 +7148,46 @@
     },
     "description_en": "Rockstar Games went bigger, since their previous installment of the series. You get the complicated and realistic world-building from Liberty City of GTA4 in the setting of lively and diverse Los Santos, from an old fan favorite GTA San Andreas. 561 different vehicles (including every transport you can operate) and the amount is rising with every update. \nSimultaneous storytelling from three unique perspectives: \nFollow Michael, ex-criminal living his life of leisure away from the past, Franklin, a kid that seeks the better future, and Trevor, the exact past Michael is trying to run away from. \nGTA Online will provide a lot of additional challenge even for the experienced players, coming fresh from the story mode. Now you will have other players around that can help you just as likely as ruin your mission. Every GTA mechanic up to date can be experienced by players through the unique customizable character, and community content paired with the leveling system tends to keep everyone busy and engaged.\n\nEspañol\nRockstar Games se hizo más grande desde su entrega anterior de la serie. Obtienes la construcción del mundo complicada y realista de Liberty City de GTA4 en el escenario de Los Santos, un viejo favorito de los fans, GTA San Andreas. 561 vehículos diferentes (incluidos todos los transportes que puede operar) y la cantidad aumenta con cada actualización.\nNarración simultánea desde tres perspectivas únicas:\nSigue a Michael, ex-criminal que vive su vida de ocio lejos del pas",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nRockstar Games از قسمت قبلی این سری بزرگتر شد. شما دنیای پیچیده و واقعی را از شهر آزادی GTA4 در محیط پر جنب و جوش و متنوع لوس سانتوس، از GTA San Andreas مورد علاقه طرفداران قدیمی دریافت می کنید. 561 وسیله نقلیه مختلف (از جمله هر حمل و نقلی که می توانید استفاده کنید) و با هر به روز رسانی مقدار آن افزایش می یابد. \nداستان سرایی همزمان از سه منظر منحصر به فرد: \nدنبال مایکل، جنایتکار سابق، زندگی فراغت خود به دور از گذشته، فرانکلین، کودکی که به دنبال آینده بهتر است، و تروور، همان گذشته ای که مایکل سعی دارد از آن فرار کند را دنبال کنید. \nGTA Online چالش‌های اضافی زیادی را حتی برای بازیکنان باتجربه فراهم می‌کند که تازه از حالت داستانی می‌آیند. حالا شما بازیکنان دیگری را در اطراف خواهید داشت که می توانند به شما کمک کنند تا ماموریت خود را خراب کنید. هر مکانیک GTA به‌روز می‌تواند توسط بازیکنان از طریق شخصیت منحصربه‌فرد قابل شخصی‌سازی تجربه شود، و محتوای انجمن همراه با سیستم سطح‌بندی همه را مشغول و درگیر می‌کند.\n\nاسپانیا\nراک استار گیمز سری قبلی را شروع کرد. ساخت‌وساز جهانی پیچیده و واقعی شهر لیبرتی در GTA4 در سناریو لوس سانتوس، یکی از محبوب‌ترین طرفداران لس، GTA San Andreas. 561 vehículos diferentes (شامل todos los transportes que puede operar) y la cantidad aumenta con cada actualización.\nNarración simultánea desde tres perspectivas únicas:\nSigue a Michael، جنایتکار سابق que vive su vida de ocio lejos del pas"
+  },
+  {
+    "id": 378578,
+    "name": "Grand Theft Auto IV: Complete Edition",
+    "background_image": "https://media.rawg.io/media/screenshots/e59/e59cc96f38cc93af5a396173878018d7.jpg",
+    "rating": 4.58,
+    "metacritic": 95,
+    "released": "2010-10-27",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+18",
+    "playtime": 0,
+    "developers": "Rockstar Toronto",
+    "steam_link": "https://store.steampowered.com/app/12210/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c82/c8278ac80481cf297730fbecac162428.jpg",
+      "https://media.rawg.io/media/screenshots/f1d/f1d10446805403a28b374fbd0f4bcc89.jpg",
+      "https://media.rawg.io/media/screenshots/1a6/1a6aa2235c187a2849e21db5cf8bfa07.jpg",
+      "https://media.rawg.io/media/screenshots/ce5/ce534ab69b8e122e0e466a1b0d15f33c.jpg",
+      "https://media.rawg.io/media/screenshots/0c7/0c71726d8be588e7c6b20795d1b81c25.jpeg",
+      "https://media.rawg.io/media/screenshots/cfc/cfc33207ca709e50d5e49e8987b85e7b.jpg",
+      "https://media.rawg.io/media/screenshots/e59/e59cc96f38cc93af5a396173878018d7.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "<strong>PLEASE NOTE:  Microsoft no longer supports creating Games for Windows-LIVE accounts within Grand Theft Auto IV. You can create an account through account.xbox.com and then log into your account in game. </strong><br/><br/>This standalone retail title spans three distinct stories, interwoven to create one of the most unique and engaging single-player experiences of this generation.<br/><br/>\t\t\t\t\t\t\t\t\t\t\t\tThis definitive Grand Theft Auto bundle boasts hundreds of hours of single-player gameplay; a full suite of open-world multiplayer game types limited only by players’ creativity; dozens of eclectic radio stations with hours of music and original dialogue",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n<strong>لطفاً توجه داشته باشید: مایکروسافت دیگر از ایجاد بازی‌ها برای حساب‌های Windows-LIVE در Grand Theft Auto IV پشتیبانی نمی‌کند. می توانید از طریق account.xbox.com یک حساب کاربری ایجاد کنید و سپس وارد حساب کاربری خود در بازی شوید. </strong><br/><br/>این عنوان خرده فروشی مستقل شامل سه داستان متمایز است که در هم تنیده شده اند تا یکی از منحصر به فردترین و جذاب ترین تجربه های تک نفره این نسل را ایجاد کنند.<br/><br/> این بسته نهایی Grand Theft Auto صدها ساعت گیم پلی تک نفره را به رخ می کشد. مجموعه ای کامل از انواع بازی های چند نفره جهان باز که فقط با خلاقیت بازیکنان محدود شده است. ده ها ایستگاه رادیویی التقاطی با ساعت ها موسیقی و دیالوگ های اصلی"
   }
 ]
