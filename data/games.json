@@ -7933,5 +7933,46 @@
     },
     "description_en": "Metro Exodus is the third installment in the Metro series. It is based on the series of post-apocalyptic novels by Russian writer Dmitry Glukhovsky. The game is the sequel to Metro: Last Light and is set two years after its ending.\r\n\r\n###Plot\r\nExodus takes place in the year 2036 in post-apocalyptic Russia. According to the Metro universe backstory, in 2013 the planet was devastated by a total nuclear war. The atomic bombing left many parts of the Earth's surface uninhabitable due to high radiation rates, dangerous mutated monsters, and anomalies abound. The last remnants of humanity survive by hiding in the subway tunnels (hence the name of the series). The main protagonist is Artyom, a former dweller of Moscow Metro. Together with his wife Anna, he escaped the capital to search for survivors in the Russian Far East (thus making the “Redemption” ending of the Last Light the series' canon). \r\n\r\n###Gameplay\r\nThe player controls Artyom from the first person view. Exodus introduces the sandbox open-world, although the game combines it with the traditional linear levels. Unlike in previous games, Exodus is set mostly outside the subway system. Thus, the game also introduces the weather, the day and night cycle and the change of seasons. The player explores the Russian wilderness during and after the nuclear winter and rides a steam locomotive named Aurora through Siberia.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMetro Exodus سومین قسمت از مجموعه مترو است. این بر اساس مجموعه ای از رمان های پسا آخرالزمانی نویسنده روسی دیمیتری گلوخوفسکی است. این بازی دنباله‌ای برای Metro: Last Light است و دو سال پس از پایان آن روایت می‌شود.\r\n\r\n###طرح\r\nExodus در سال 2036 در روسیه پسا آخرالزمانی اتفاق می افتد. بر اساس پیشینه دنیای مترو، در سال 2013 این سیاره توسط یک جنگ هسته ای کامل ویران شد. بمباران اتمی بسیاری از بخش‌های سطح زمین را به دلیل نرخ تشعشعات بالا، هیولاهای جهش یافته خطرناک و ناهنجاری‌های فراوان غیرقابل سکونت کرد. آخرین بقایای بشریت با پنهان شدن در تونل های مترو زنده می مانند (از این رو نام سریال). شخصیت اصلی آرتیوم، ساکن سابق مترو مسکو است. او به همراه همسرش آنا از پایتخت گریخت تا به دنبال بازماندگان در خاور دور روسیه بگردد (بنابراین پایان «رستگاری» آخرین نور را به عنوان قانون سریال تبدیل کرد). \r\n\r\n###بازی\r\nبازیکن آرتیوم را از دید اول شخص کنترل می کند. Exodus دنیای باز sandbox را معرفی می کند، اگرچه بازی آن را با سطوح خطی سنتی ترکیب می کند. برخلاف بازی‌های قبلی، Exodus بیشتر در خارج از سیستم مترو قرار دارد. بدین ترتیب بازی آب و هوا، چرخه روز و شب و تغییر فصل را نیز معرفی می کند. بازیکن در طول زمستان هسته ای و پس از آن در بیابان روسیه کاوش می کند و سوار یک لوکوموتیو بخار به نام Aurora از طریق سیبری می شود."
+  },
+  {
+    "id": 3604,
+    "name": "Metro: Last Light Redux",
+    "background_image": "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg",
+    "rating": 4.13,
+    "metacritic": 76,
+    "released": "2014-08-25",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 7,
+    "developers": "Deep Silver, 4A Games, Fishlabs Entertainment",
+    "steam_link": "https://store.steampowered.com/app/287390/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/111/11118bdcf7cd62d35f63826c79983e16.jpg",
+      "https://media.rawg.io/media/screenshots/11b/11b420a51d555aad055e37916b112fd1.jpg",
+      "https://media.rawg.io/media/screenshots/7ba/7ba241860b68b0a5fe0cda616bde2596.jpg",
+      "https://media.rawg.io/media/screenshots/9d3/9d3b567749527447580bcb9df1c894bb.jpg",
+      "https://media.rawg.io/media/screenshots/97d/97dd78e4e9051b1529313480789b63ab.jpg",
+      "https://media.rawg.io/media/screenshots/0d2/0d26738855784b7997b1569fa4979400.jpg",
+      "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows Vista, 7 or 8 (64-bit only)\nProcessor: Dual Core CPU (2.2+ GHz Dual Core CPU or better)\nMemory: 2 GB RAM\nGraphics: DirectX 10, Shader Model 4 compliant graphics cards (GeForce 8800 GT 512 MB, GeForce GTS 250, etc)\nDirectX: Version 10\nStorage: 10 GB available space\nAdditional Notes: 64-bit only",
+      "recommended": "OS: Windows 7 or 8 (64-bit only)\nProcessor: Any Quad Core or 3.0+ GHz Dual Core CPU\nMemory: 4 GB RAM\nGraphics: DirectX 11 compliant graphics card (GeForce GTX 480 and above)\nDirectX: Version 11\nStorage: 10 GB available space\nAdditional Notes: (64-bit only)"
+    },
+    "description_en": "It is the sequel to the game Metro 2033. Both games are based on the world of Dmitry Glukhovsky's novel Metro 2033 - in post-apocalyptic Moscow, in the tunnels of subway lines groups of very different people survive. And not only people. There are mutated people there, and mutated animals. They are distinguished by unusual abilities, but even more - behaviour strategies. In the struggle for the remnants of resources, all these beings spend their gloomy days.\nAll characters use unusual and unexpected means for life and war. Something is created from the remnants of a past, normal life, something has already appeared in a new, changed world.\nLocations are struck by an unusual synthesis of the ruins of a known world and traces of a catastrophe.\nFrom the previous game Metro: Last Light differs, according to general opinion, by careful work on the remarks and shortcomings of the previous game. The set of weapons is significantly expanded, the technologies of Metro 2033 have become more developed.\nThe game has two fundamentally different endings and five additions.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین عاقبت بازی Metro 2033 است. هر دو بازی بر اساس دنیای رمان مترو 2033 دیمیتری گلوخوفسکی ساخته شده اند - در مسکوی پسا آخرالزمانی، در تونل های خطوط مترو گروه هایی از افراد بسیار متفاوت زنده می مانند. و نه تنها مردم. در آنجا افراد جهش یافته و حیوانات جهش یافته وجود دارند. آنها با توانایی های غیر معمول متمایز می شوند، اما حتی بیشتر - استراتژی های رفتاری. در مبارزه برای بقایای منابع، همه این موجودات روزهای غم انگیز خود را می گذرانند.\nهمه شخصیت ها از وسایل غیرمعمول و غیرمنتظره برای زندگی و جنگ استفاده می کنند. چیزی از بقایای یک زندگی عادی گذشته ایجاد شده است، چیزی قبلاً در دنیای جدید و تغییر یافته ظاهر شده است.\nمکان ها با ترکیب غیرمعمول ویرانه های یک جهان شناخته شده و آثار یک فاجعه تحت تأثیر قرار می گیرند.\nبا بازی قبلی Metro: Last Light، طبق نظر عمومی، با کار دقیق روی نکات و کاستی های بازی قبلی متفاوت است. مجموعه سلاح ها به طور قابل توجهی گسترش یافته است، فناوری های مترو 2033 توسعه یافته تر شده اند.\nاین بازی دارای دو پایان اساسی متفاوت و پنج اضافه است."
   }
 ]
