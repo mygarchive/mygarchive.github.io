@@ -9162,5 +9162,41 @@
     },
     "description_en": "Grand Theft Auto is an action-adventure game with an isometric view, the first installment of the Grand Theft Auto series.\r\n\r\n###Location and plot\r\nThe game takes place in 3 different cities, each one resembling real-life counterparts such as Miami, New York City and San Francisco. The world of the game is only restricted by traveling from one city to another, while the cities themselves are free to explore. The plot is expressed in the form of various missions, where the playable character receives general instructions through a phone call, or otherwise. \r\n\r\n###Gameplay\r\nEach mission in the game has a set goal of in-game points, awarded for successful completion of mission’s requirements, and sometimes causing mayhem for the sake of it. Completion of these missions allows the player to move on to more difficult tasks, and eventually, another chapter in other cities. The player often has to steal vehicles, sell them for profit, perform roadkills and escape the police, as the number of attempts for each mission is limited.\r\n\r\n###Graphics and reception\r\nThe game features a simplistic style for graphics, sacrificing different animations and sprites in favor of just being fun to play. At the time of release, in late 1997-1998, Grand Theft Auto offered unique arcade gameplay with an open world, where players could do anything they wanted, which, of course, was the key to overwhelming success of the game.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nGrand Theft Auto یک بازی اکشن ماجراجویی با نمای ایزومتریک، اولین قسمت از سری Grand Theft Auto است.\r\n\r\n###موقعیت و طرح\r\nبازی در 3 شهر مختلف اتفاق می افتد که هر کدام شبیه همتایان واقعی مانند میامی، نیویورک و سانفرانسیسکو هستند. دنیای بازی تنها با سفر از شهری به شهر دیگر محدود می‌شود، در حالی که خود شهرها آزاد هستند. طرح در قالب ماموریت های مختلفی بیان می شود، جایی که شخصیت قابل بازی دستورالعمل های کلی را از طریق تماس تلفنی یا موارد دیگر دریافت می کند. \r\n\r\n###بازی\r\nهر ماموریت در بازی دارای هدف مشخصی از امتیازات درون بازی است که برای انجام موفقیت آمیز الزامات ماموریت و گاهی اوقات باعث ایجاد ضرب و شتم به خاطر آن می شود. انجام این ماموریت ها به بازیکن این امکان را می دهد که به سمت کارهای دشوارتر و در نهایت فصلی دیگر در شهرهای دیگر برود. بازیکن اغلب مجبور است وسایل نقلیه را بدزدد، آنها را برای سود بفروشد، جاده کشی کند و از دست پلیس فرار کند، زیرا تعداد تلاش برای هر ماموریت محدود است.\r\n\r\n###گرافیک و پذیرایی\r\nاین بازی دارای سبکی ساده برای گرافیک است و انیمیشن ها و اسپریت های مختلف را قربانی سرگرمی بودن بازی می کند. در زمان انتشار، در اواخر سال‌های 1997-1998، Grand Theft Auto گیم‌پلی آرکید منحصربه‌فردی را با دنیای باز ارائه کرد، جایی که بازیکنان می‌توانستند هر کاری را که می‌خواهند انجام دهند، که البته کلید موفقیت قاطع بازی بود."
+  },
+  {
+    "id": 430,
+    "name": "Grand Theft Auto: Vice City",
+    "background_image": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg",
+    "rating": 4.44,
+    "metacritic": 94,
+    "released": "2002-10-27",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 2,
+    "developers": "Rockstar North",
+    "steam_link": "https://store.steampowered.com/app/1546990/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/dfd/dfd73edec49df98ca9cd6736eeba1049.jpg",
+      "https://media.rawg.io/media/screenshots/41b/41bab662e69407ebdea4f9c2620ea964.jpg",
+      "https://media.rawg.io/media/screenshots/866/8669e298a904fce58ba84ab0a9205c01.jpg",
+      "https://media.rawg.io/media/screenshots/579/57946b3f520595bf96c77e9c36ea5a9a.jpg",
+      "https://media.rawg.io/media/screenshots/8d8/8d84dcd621ea9cc54ffec9ab6040f799.jpg",
+      "https://media.rawg.io/media/screenshots/bd2/bd2b4586b6acabf7ee39400d3ad5fa66.jpg",
+      "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Microsoft® Windows® 2000/XP\nProcessor: 800 MHz Intel Pentium III or 800 MHz AMD Athlon or 1.2GHz Intel Celeron or 1.2 GHz AMD Duron processor\nMemory: 128 MB of RAM\nGraphics: 32 MB video card with DirectX 9.0 compatible drivers (&quot;GeForce&quot; or better)\nDirectX Version: Microsoft DirectX® 9.0\nHard Drive: 915 MB of free hard disk space (+ 635 MB if video card does NOT support DirectX Texture Compression)\nSound Card: Sound Card with DirectX 9.0\nProcessor: Intel Pentium IV or AMD Athlon XP processor 256(+) MB of RAM\nMemory: 1.55 GB of free hard disk space(+ 635 MB if video card does NOT support DirectX Texture Compression)\nGraphics: 64(+) MB video card with DirectX 9.0 compatible drivers (&quot;GeForce 3&quot; / &quot;Radeon 8500&quot; or better with DirectX Texture Compression support)",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Grand Theft Auto: Vice City is a third-person shooter with an open world. The game is set in a fictional city during the 1980’s and exhibits a unique design of locations, people, and objects, resembling the real world’s counterparts of Vice City, mainly Miami, FL. GTA: Vice City is a fourth game of the series, following Grand Theft Auto III.\r\n\r\nThe main character is introduced as Tommy Vercetti, an Italian-American mobster who works for a wealthy crime family. Throughout the story, the player will observe as the protagonist rises the ranks, sometimes making decisions of questionable nobility or profit. Our goal as a player is to ensure that Vercetti becomes the boss of all of Vice City’s mafia, and various story characters will help us or prevent us from achieving this goal.\r\n\r\nThe worlds of Grand Theft Auto series have long been worked upon and have been done in much detail, and Vice City is no different. The people on the sidewalks, the stylish cars and neon light clubs, the sky-high buildings and lively piers and beaches, everything will bring nostalgic feelings to those of players, whose eyes have seen the glory of this time. The gameplay, however, bears little difference from its predecessor, continuing the trend of big guns, explosions, and cop chases.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nGrand Theft Auto: Vice City یک بازی تیراندازی سوم شخص با دنیای باز است. این بازی در یک شهر خیالی در دهه 1980 می گذرد و طراحی منحصر به فردی از مکان ها، افراد و اشیاء را به نمایش می گذارد که شبیه همتایان دنیای واقعی Vice City، عمدتاً میامی، فلوریدا است. GTA: Vice City چهارمین بازی از این سری است که پس از Grand Theft Auto III ساخته شده است.\r\n\r\nشخصیت اصلی به عنوان تامی ورسیتی، یک تبهکار ایتالیایی-آمریکایی معرفی می شود که برای یک خانواده جنایتکار ثروتمند کار می کند. در طول داستان، بازیکن مشاهده می‌کند که قهرمان در رتبه‌ها بالا می‌رود و گاهی اوقات تصمیم‌هایی با اشراف یا سود مشکوک می‌گیرد. هدف ما به عنوان یک بازیکن این است که اطمینان حاصل کنیم که Vercetti رئیس تمام مافیای Vice City می شود و شخصیت های داستانی مختلف به ما کمک می کنند یا ما را از رسیدن به این هدف باز می دارند.\r\n\r\nدنیاهای سری Grand Theft Auto مدتهاست که روی آنها کار شده و با جزئیات زیاد انجام شده است و Vice City هم تفاوتی ندارد. مردم در پیاده روها، ماشین های شیک و کلوپ های نور نئون، ساختمان های مرتفع و اسکله ها و سواحل پر جنب و جوش، همه چیز حس نوستالژیک را برای بازیکنانی که چشمانشان شکوه این دوران را دیده است، به ارمغان می آورد. با این حال، گیم پلی بازی تفاوت کمی با نسخه قبلی خود دارد و روند اسلحه های بزرگ، انفجارها و تعقیب و گریز پلیس را ادامه می دهد."
   }
 ]
