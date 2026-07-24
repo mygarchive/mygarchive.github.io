@@ -8015,5 +8015,51 @@
     },
     "description_en": "Metro 2033 Redux is a rebuilt extended version of the original post-apocalyptic first-person action shooter Metro 2033. The game saved its pace and atmosphere of the gone world and except numerous technical issues, added several survival elements to the gameplay. The main plot is based on Dmitry Glukhovsky’s book Metro 2033. According to the storyline, the Earth was devastated by the nuclear war, and only a few people were able to survive hiding in the underground warehouses. Players assume the role of Artem, 20-year-old inhabitant of Moscow underground, whose aim is to learn more about the anomalies called the Dark Ones. With the remastered version of the game developers added some visual effects: new high-quality textures, shaders, dynamic light and weather (on the surface) systems. The gameplay was also extended with various realistic features like bots’ intelligence and collectible resources count. Within the game, players face two new difficulty settings (Survival and Spartan), which are expected to improve the gaming experience.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMetro 2033 Redux یک نسخه توسعه یافته بازسازی شده از بازی اکشن اکشن اول شخص پسا آخرالزمانی Metro 2033 است. بازی سرعت و فضای دنیای رفته را حفظ کرد و به جز مسائل فنی متعدد، چندین عنصر بقا را به گیم پلی اضافه کرد. طرح اصلی بر اساس کتاب مترو 2033 دیمیتری گلوخوفسکی است. طبق داستان، زمین در اثر جنگ هسته‌ای ویران شده بود و تنها چند نفر توانستند در انبارهای زیرزمینی پنهان شوند. بازیکنان نقش آرتم، 20 ساله ساکن زیرزمینی مسکو را بر عهده می گیرند، که هدفش کسب اطلاعات بیشتر در مورد ناهنجاری هایی به نام Dark Ones است. توسعه دهندگان با نسخه بازسازی شده بازی برخی جلوه های بصری را اضافه کردند: بافت های جدید با کیفیت بالا، سایه بان ها، نور پویا و سیستم های آب و هوا (روی سطح). گیم پلی بازی همچنین با ویژگی های واقعی مختلف مانند هوش ربات ها و تعداد منابع کلکسیونی گسترش یافت. در داخل بازی، بازیکنان با دو تنظیمات سختی جدید (Survival و Spartan) روبرو می شوند که انتظار می رود تجربه بازی را بهبود بخشد."
+  },
+  {
+    "id": 2354,
+    "name": "Mirror's Edge Catalyst",
+    "background_image": "https://media.rawg.io/media/games/257/257c497aa4060f4a697ccbf5e99ec230.jpg",
+    "rating": 3.5,
+    "metacritic": 72,
+    "released": "2016-06-07",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 3,
+    "developers": "Electronic Arts, Electronic Arts DICE",
+    "steam_link": "https://store.steampowered.com/app/1233570/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/5f0/5f029f2d7bfeee881bc75d418a608754.jpg",
+      "https://media.rawg.io/media/screenshots/209/209797f01170ddadaa0f9a3d5b363b6d.jpg",
+      "https://media.rawg.io/media/screenshots/731/731fd619e3a4f7538c50f6f55aa4319c.jpg",
+      "https://media.rawg.io/media/screenshots/373/373bed1e1a427745254e535e440b5599.jpg",
+      "https://media.rawg.io/media/screenshots/426/4263d64d1ab0f5ab3cfb36f5197e6a30.jpg",
+      "https://media.rawg.io/media/screenshots/5a9/5a9cb83e92e3cf335bb6a495f837a9c8.jpg",
+      "https://media.rawg.io/media/games/257/257c497aa4060f4a697ccbf5e99ec230.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 7 64-Bit (use the latest Service Pack)\nProcessor: Intel i3-3250 / AMD FX-6350. (Note: Mirror's Edge Catalyst requires at least 4 logical cores to run)\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce® GTX 650 Ti 2GB or better / AMD Radeon™ R9 270x or better\nStorage: 25 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-Bit (use the latest Service Pack)\nProcessor: Intel Core i7-3770 at 3.4 GHz / AMD FX-8350 at 4.0 GHz\nMemory: 16 GB RAM\nGraphics: NVIDIA GeForce® GTX 970 4GB or better / AMD Radeon™ R9 280x 3GB or better\nStorage: 25 GB available space"
+    },
+    "description_en": "Mirror's Edge Catalyst is the second part in the Mirror's Edge series. Like its predecessor, it is based around parkour simulation.\n\n###Plot\nThe game is set in the near future that is depicted as a cyberpunk dystopia. The story takes place in the city of Glass that is ruled by mega-corporations. Faith, the protagonist of the original game, returns in Catalyst. She is a Runner, a person who specializes in illegal delivery. Early in the game, Faith steals a valuable hard drive from a corporation. After reading its data, she learns about the Reflection project that will allow the corporations to control every resident in Glass.\n\n###Gameplay\nThe game combines platforming, parkour, and puzzles in the vein of Portal series. The player controls Faith from the first person view as she runs and leaps across the rooftops of Glass. Puzzle-like level design requires her to use pipes, wires, and ledges to get to her destination. Precision timing is important to perform jumps, slides, and rushes in a seamless flow.\n\nThe combat system in Catalyst changed dramatically. Unlike in the original game, Faith cannot use guns. She can fight in hand-to-hand combat but usually has to avoid enemies.\n\n###Style\nLike its predecessor, Catalyst is notable for its minimalist use of colors. Glass is mostly shining white and dark blue, while the occasional use of other colors signifies something important. The game is accompanied by the cold, atmospheric electronic soundtrack by Solar Fields.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nMirror's Edge Catalyst دومین قسمت از سری Mirror's Edge است. مانند مدل قبلی خود، بر پایه شبیه سازی پارکور است.\n\n###طرح\nاین بازی در آینده ای نزدیک اتفاق می افتد که به عنوان یک دیستوپیا سایبرپانک به تصویر کشیده می شود. داستان در شهر شیشه ای اتفاق می افتد که توسط شرکت های بزرگ اداره می شود. Faith، قهرمان اصلی بازی، در Catalyst بازمی گردد. او یک دونده است، فردی که در زایمان غیرقانونی متخصص است. در اوایل بازی، Faith یک هارد دیسک ارزشمند را از یک شرکت می‌دزدد. پس از خواندن داده های آن، او در مورد پروژه Reflection می آموزد که به شرکت ها اجازه می دهد تا هر ساکن در گلس را کنترل کنند.\n\n###بازی\nاین بازی ترکیبی از پلتفرمینگ، پارکور و معماها در مجموعه پورتال است. بازیکن Faith را از دید اول شخص در حالی که می دود و از پشت بام شیشه می پرد کنترل می کند. طراحی سطح پازل مانند او را ملزم به استفاده از لوله ها، سیم ها و تاقچه ها برای رسیدن به مقصد می کند. زمان‌بندی دقیق برای انجام پرش‌ها، لغزش‌ها و راش‌ها در یک جریان یکپارچه مهم است.\n\nسیستم مبارزه در Catalyst به طور چشمگیری تغییر کرد. برخلاف بازی اصلی، Faith نمی تواند از اسلحه استفاده کند. او می تواند در نبرد تن به تن بجنگد اما معمولا باید از دشمنان دوری کند.\n\n###سبک\nهمانند نسخه قبلی خود، Catalyst به دلیل استفاده مینیمالیستی از رنگ ها قابل توجه است. شیشه عمدتاً به رنگ سفید و آبی تیره می درخشد، در حالی که استفاده گهگاهی از رنگ های دیگر نشان دهنده چیز مهمی است. این بازی با موسیقی متن الکترونیکی سرد و جوی توسط Solar Fields همراه است."
   }
 ]
