@@ -6910,5 +6910,46 @@
     },
     "description_en": "Gears of War: Ultimate Edition is a third-person shooter developed by Epic Games. It is the first part of the original Gears of War trilogy.\n\n###Plot\nGears of War takes place on a planet called Sera, that is much like Earth. The radioactive fluid that was later named Imulsion became a potent energy source after the scientists found a way to use it. This substance caused mutations to the wildlife that lived in caves. 14 years later, after several wars, the Coalition of Ordered Governments is the only human government on the planet. \n\nYou play as Marcus, who gets back in the army after four-year imprisonment for disobeying his commanding officer to save his own father.\n\n###Gameplay\nGears Of War revolves around third-person combat and the usage of cover by the player. When the player is hit, the Crimson Omen is displayed on the screen. A crimson red sign that is used as the player's health indicator. To regenerate health, the players have to hide behind cover.\n\nThe game's story is divided into 5 acts that can be played both in singleplayer or in co-op mode. A multiplayer mode is also present in the game.\n\n###Multiplayer\nPlayers battle each other in 5v5 matches. All matches can be played in Ranked mode, where one's progress is tracked or create custom lobbies for your friends.\n\n###Ultimate Edition features\nUltimate Edition is a remastered version of the game, which includes new cutscenes, refined graphics, all DLCs and tweaked multiplayer.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nGears of War: Ultimate Edition یک بازی تیراندازی سوم شخص است که توسط Epic Games ساخته شده است. این اولین قسمت از سه گانه اصلی Gears of War است.\n\n###طرح\nGears of War در سیاره‌ای به نام Sera اتفاق می‌افتد که بسیار شبیه زمین است. مایع رادیواکتیو که بعدها Imulsion نام گرفت، پس از یافتن راهی برای استفاده از آن توسط دانشمندان، به یک منبع انرژی قوی تبدیل شد. این ماده باعث ایجاد جهش در حیات وحشی شد که در غارها زندگی می کردند. 14 سال بعد، پس از چندین جنگ، ائتلاف دولت های منظم تنها دولت انسانی روی کره زمین است. \n\nشما در نقش مارکوس بازی می کنید که پس از چهار سال زندان به دلیل نافرمانی از افسر فرمانده خود برای نجات پدرش به ارتش باز می گردد.\n\n###بازی\nGears Of War حول محور مبارزات سوم شخص و استفاده از پوشش توسط بازیکن می چرخد. با ضربه زدن به بازیکن، Crimson Omen روی صفحه نمایش داده می شود. علامت قرمز زرشکی که به عنوان نشانگر سلامت بازیکن استفاده می شود. برای احیای سلامتی، بازیکنان باید پشت پوشش پنهان شوند.\n\nداستان بازی به 5 عمل تقسیم می شود که هم به صورت تک نفره و هم به صورت کوآپ قابل بازی است. حالت چند نفره نیز در بازی وجود دارد.\n\n###چند نفره\nبازیکنان در مسابقات 5 در 5 با یکدیگر می جنگند. همه مسابقات را می توان در حالت رتبه بندی بازی کرد، جایی که پیشرفت فرد ردیابی می شود یا لابی های سفارشی برای دوستان خود ایجاد می کند.\n\n###ویژگی های Ultimate Edition\nUltimate Edition یک نسخه بازسازی شده از بازی است که شامل کات سین های جدید، گرافیک پیشرفته، تمام DLC ها و چند نفره بهینه شده است."
+  },
+  {
+    "id": 1002694,
+    "name": "Gears of War: Reloaded",
+    "background_image": "https://media.rawg.io/media/games/213/213248f2ede0b914431446123b291cc0.jpg",
+    "rating": 2.79,
+    "metacritic": null,
+    "released": "2025-08-26",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 0,
+    "developers": "The Coalition",
+    "steam_link": "https://store.steampowered.com/app/2523720/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/e33/e33c99ce906cd7ce0d74e1b4fe9a7b80.jpg",
+      "https://media.rawg.io/media/screenshots/1ed/1edcf8b73d638be8381baebe69c2ab91.jpg",
+      "https://media.rawg.io/media/screenshots/6a7/6a7e8b8a08b8b3425c4e949960da5d3a.jpg",
+      "https://media.rawg.io/media/screenshots/abc/abcd8fc161cff428cd9be16a54160e8d.jpg",
+      "https://media.rawg.io/media/screenshots/8a4/8a42506f60b173284e3310fdd9672fe7.jpg",
+      "https://media.rawg.io/media/screenshots/633/63363f879ad9514264c41dd3c18b4a37.jpg",
+      "https://media.rawg.io/media/games/213/213248f2ede0b914431446123b291cc0.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows10 - 19H2\nProcessor: AMD Ryzen 3 (Four-Core) or Intel i5 Skylake \nMemory: 8 GB RAM\nGraphics: AMD Radeon RX 480  / RX 5300 or Nvidia GeForce GTX 1650 / 1050 Ti or Intel(R) Arc(TM) A380\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 70 GB available space\nSound Card: Windows compatible audio device",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 – 22H2   Windows 11 - 24H2\nProcessor: AMD Ryzen 5 (Six-Cores) or Intel i5 Coffee Lake\nMemory: 8 GB RAM\nGraphics: AMD Radeon RX 5600 or NVIDIA GeForce GTX 1070 / GTX 1660 Ti / RTX  2070 or Intel A580\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 70 GB available space\nSound Card: Windows compatible audio device"
+    },
+    "description_en": "Experience the origins of one of gaming’s most acclaimed franchises like never before. Featuring 4K resolution, up to 120 FPS support, and the ultimate multiplayer experience with cross-progression and cross-play, across all platforms, this is the definitive way to experience the game that started it all.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمنشا یکی از تحسین‌شده‌ترین فرنچایزهای بازی را بی‌سابقه تجربه کنید. با داشتن رزولوشن 4K، پشتیبانی تا 120 FPS، و تجربه نهایی چند نفره با پیشرفت متقابل و بازی متقابل، در همه پلتفرم‌ها، این راهی قطعی برای تجربه بازی است که همه چیز را آغاز کرد."
   }
 ]
