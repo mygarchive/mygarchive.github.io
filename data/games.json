@@ -8264,5 +8264,46 @@
     },
     "description_en": "Need for Speed: Most Wanted - A Criterion Game is an open world racing game and it is the nineteenth entry in the famous racing series. This is a reboot of the game with the same title released in 2005. \nIn the game players have to select a car and compete against other racers in various events like Sprint races, Circuit, races and Speed runs. There is also an Ambush races mode, where players have to escape from the police as fast as possible. Like in the original Need for Speed: Most Wanted game, cops can start to pursue the player during the race and as well as in the original players have to compete against other racers and if succeeded they instantly get their cars. The game takes place in a regular city called Fairhaven, which has a beach and an industrial district as well as the main highway. \nThe game was praised for those who are fans of Burnout series, especially because of its way of races where there is a start and finish of the race but players have an option to choose which way they want to go.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed: Most Wanted - A Criterion یک بازی مسابقه ای جهان باز است و نوزدهمین ورودی از سری معروف مسابقه ای است. این یک ریبوت از بازی با همین عنوان است که در سال 2005 منتشر شد. \nدر بازی، بازیکنان باید یک ماشین را انتخاب کنند و در رویدادهای مختلف مانند مسابقات اسپرینت، مدار، مسابقات و سرعت دویدن با دیگر مسابقه‌دهنده‌ها رقابت کنند. حالت مسابقه کمین نیز وجود دارد که در آن بازیکنان باید با بیشترین سرعت ممکن از دست پلیس فرار کنند. مانند بازی اصلی Need for Speed: Most Wanted، پلیس‌ها می‌توانند در طول مسابقه شروع به تعقیب بازیکن کنند و همچنین در بازی‌های اصلی، بازیکنان باید با دیگر مسابقه‌دهنده‌ها رقابت کنند و در صورت موفقیت، فوراً ماشین‌های خود را دریافت می‌کنند. بازی در شهری معمولی به نام Fairhaven اتفاق می افتد که دارای ساحل و منطقه صنعتی و همچنین بزرگراه اصلی است. \nاین بازی برای کسانی که از طرفداران سری Burnout هستند ستایش شد، به خصوص به دلیل نحوه مسابقات آن که در آن شروع و پایان مسابقه وجود دارد اما بازیکنان این گزینه را دارند که انتخاب کنند به کدام سمت می‌خواهند بروند."
+  },
+  {
+    "id": 23702,
+    "name": "Need for Speed Payback",
+    "background_image": "https://media.rawg.io/media/games/a57/a57e3c73ca46cbf55b526c828e3545c0.jpg",
+    "rating": 3.2,
+    "metacritic": 61,
+    "released": "2017-11-07",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      },
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade"
+      }
+    ],
+    "esrb_rating": "+13",
+    "playtime": 4,
+    "developers": "Ghost Games",
+    "steam_link": "https://store.steampowered.com/app/1262580/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/89b/89be0bf0f0017be3a70a111d93ef9e30.jpg",
+      "https://media.rawg.io/media/screenshots/deb/deb7c6a4552c8d9c2e179857e95d3252.jpg",
+      "https://media.rawg.io/media/screenshots/f38/f3842d7a5d70c7081070c92b42380417.jpg",
+      "https://media.rawg.io/media/screenshots/552/552f7191975c14272f05ea72f8639fc0.jpg",
+      "https://media.rawg.io/media/screenshots/6e3/6e384e02ad3ced021ed63f075cb9f627.jpg",
+      "https://media.rawg.io/media/screenshots/f7a/f7a8ccc55a21f453bc8216593a5411e4.jpg",
+      "https://media.rawg.io/media/games/a57/a57e3c73ca46cbf55b526c828e3545c0.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 7 or later\nProcessor: Intel i3 6300 @ 3.8GHz or AMD FX 8150 @ 3.6GHz with 4 hardware threads\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce® GTX 750 Ti or AMD Radeon™ HD 7850 or equivalent DX11 compatible GPU with 2GB of memory\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 30 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 10 or later\nProcessor: Intel i5 4690K @ 3.5GHz or AMD FX 8350 @ 4.0GHz with 4 hardware threads\nMemory: 8 GB RAM\nGraphics: AMD Radeon™ RX 480 4GB, NVIDIA GeForce® GTX 1060 6GB or equivalent DX11 compatible GPU with 4GB of memory\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 30 GB available space"
+    },
+    "description_en": "Need for Speed Payback is an action-driving racing game and the twenty-third part of the NFS franchise. \n\n###Gameplay\nDespite the trend made by NFS' before Payback features an offline mode. The game is set in a fictional city named Fortune Valley. The player can choose between the three individuals to represent. The title features a real car — a total of 74 ones, and crafting system — many car parts can be tuned according to the player's liking. \nThere is a total of five challenges types: Race, Drift, Off-Road, Drag, and Runner. All the modes share the goal — to reach the finish. However, the initial purpose is altered depending on the race — sometimes one has to drift his way to the finish line, somewhere the manual transmission turns one, and the gear switching comes to be mandatory.\n\n###Plot\nPayback is one of few NFS' to feature ongoing narrative — the story of this one emphasizes the revenge theme. Three characters — Tyler, Mac, and Jess — are trying to avenge Lina who betrayed the crew from the very start.  Each member of the gang has its unique abilities — Jess, for instance, is professional intel gatherer, so she plays a role of inside agent all the time. Guys, on the other hand, are more into races, so they do the dirty job in the trio.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nNeed for Speed ​​Payback یک بازی مسابقه ای اکشن رانندگی و بیست و سومین قسمت از سری NFS است. \n\n###بازی\nبا وجود روند ایجاد شده توسط NFS، قبل از Payback دارای یک حالت آفلاین است. داستان بازی در شهری خیالی به نام Fortune Valley می گذرد. بازیکن می تواند از بین سه نفر برای نمایندگی یکی را انتخاب کند. این عنوان دارای یک ماشین واقعی است – در مجموع 74 دستگاه، و سیستم کاردستی – بسیاری از قطعات خودرو را می توان بر اساس میل بازیکن تنظیم کرد. \nدر مجموع پنج نوع چالش وجود دارد: مسابقه، دریفت، آفرود، درگ و دونده. همه حالت‌ها هدف مشترک دارند - رسیدن به پایان. با این حال، هدف اولیه بسته به مسابقه تغییر می‌کند - گاهی اوقات فرد باید مسیر خود را به خط پایان برساند، جایی که گیربکس دستی یک می‌شود و تعویض دنده اجباری می‌شود.\n\n###طرح\nPayback یکی از معدود NFS هایی است که دارای روایت مداوم است – داستان این یکی بر موضوع انتقام تأکید دارد. سه شخصیت - تایلر، مک و جس - سعی دارند انتقام لینا را بگیرند که از همان ابتدا به خدمه خیانت کرد.  هر یک از اعضای باند توانایی های منحصر به فرد خود را دارد - به عنوان مثال، جس، جمع آوری اطلاعات حرفه ای است، بنابراین او همیشه نقش یک مامور داخلی را بازی می کند. از طرف دیگر، بچه ها بیشتر به مسابقات علاقه دارند، بنابراین آنها کار کثیف را در سه نفر انجام می دهند."
   }
 ]
