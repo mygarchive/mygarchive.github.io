@@ -8467,5 +8467,41 @@
     },
     "description_en": "Shift 2: Unleashed (Unleashed) Need for Speed: Shift. The sequel expands on many aspects that were introduced in the original.\n\nThe game offers 148 cars from 36 manufacturers and 35 different tracks on which players can compete in several types of races.\n\nThe game is not overloaded with plot details, not directly related to car racing. The main character is a novice racer who wants to become a champion - and that’s it!\n\nThe same approach is seen in many other characteristics of the game. In particular, in the organization of management and in the system of admission to the following levels. Much has been done in these things easier than one might have expected. You need to control different cars in different ways, in full dependence on engine power, front or rear wheel drive, as well as on tuned systems installed on the car, parts and corresponding settings. Even one detail can significantly change the ride.\n\nThe racetracks in the game do not always repeat their real prototypes. However, all changes in the configuration of the tracks are undertaken in order to make the game more interesting.\n\n###Innovations\nAmong the main innovations of the game are: an in-helmet camera, a hot dog.\n\n'Helmet-camera' - allowing you to observe the game through the eyes of a car pilot. The image of this camera, respectively, is completely dependent on the movement of the pilot's head during the race. The camera shakes, tilts when cornering, jerks forward in collisions. And if the car goes at high",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nShift 2: Unleashed (Unleashed) Need for Speed: Shift. عاقبت جنبه های بسیاری را که در نسخه اصلی معرفی شده بود گسترش می دهد.\n\nاین بازی 148 اتومبیل از 36 سازنده و 35 مسیر مختلف را ارائه می دهد که بازیکنان می توانند در آنها در چندین نوع مسابقه با هم رقابت کنند.\n\nبازی مملو از جزئیات داستان نیست و مستقیماً به مسابقات اتومبیلرانی مربوط نمی شود. شخصیت اصلی یک مسابقه دهنده مبتدی است که می خواهد قهرمان شود - و همین!\n\nهمین رویکرد در بسیاری از ویژگی های دیگر بازی نیز دیده می شود. به ویژه در سازمان مدیریت و در نظام پذیرش در مقاطع زیر. کارهای زیادی در این موارد انجام شده است که ساده تر از آن چیزی است که ممکن است تصور شود. شما باید ماشین های مختلف را به روش های مختلف کنترل کنید، کاملا وابسته به قدرت موتور، محرک چرخ های جلو یا عقب، و همچنین به سیستم های تنظیم شده نصب شده روی ماشین، قطعات و تنظیمات مربوطه. حتی یک جزئیات می تواند به طور قابل توجهی سواری را تغییر دهد.\n\nمسیرهای مسابقه در بازی همیشه نمونه های اولیه واقعی خود را تکرار نمی کنند. با این حال، تمام تغییرات در پیکربندی مسیرها به منظور جذابتر کردن بازی انجام شده است.\n\n###نوآوری ها\nاز جمله نوآوری های اصلی بازی می توان به موارد زیر اشاره کرد: دوربین درون کلاه ایمنی، هات داگ.\n\n\"دوربین کلاه ایمنی\" - به شما امکان می دهد بازی را از چشم یک خلبان ماشین مشاهده کنید. تصویر این دوربین به ترتیب کاملا وابسته به حرکت سر خلبان در طول مسابقه است. دوربین می لرزد، در هنگام پیچیدن کج می شود، در هنگام برخورد به سمت جلو حرکت می کند. و اگر ماشین در اوج باشد"
+  },
+  {
+    "id": 19400,
+    "name": "Need for Speed: Shift",
+    "background_image": "https://media.rawg.io/media/games/22b/22b61e8391b252cbd9be3317709cc68d.jpg",
+    "rating": 3.57,
+    "metacritic": 83,
+    "released": "2009-09-15",
+    "genres": [
+      {
+        "id": 1,
+        "name": "Racing",
+        "slug": "racing"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 2,
+    "developers": "Electronic Arts, Slightly Mad Studios",
+    "steam_link": "https://store.steampowered.com/search/?term=Need%20for%20Speed%3A%20Shift",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/c09/c093ec250ee2203090aeb4c1bbd84f5c.jpg",
+      "https://media.rawg.io/media/screenshots/757/7570133de03328c208dd63e0749fe3d0.jpg",
+      "https://media.rawg.io/media/screenshots/372/372d6002d6a82d19e0a02ea193b460d1.jpg",
+      "https://media.rawg.io/media/screenshots/cae/caec82732ee3eb0d751ee285344dcec2.jpg",
+      "https://media.rawg.io/media/screenshots/b16/b16448116bc8f396148e7b6579ea0181.jpg",
+      "https://media.rawg.io/media/screenshots/c71/c71bc463d525c376e131719acc711c78.jpg",
+      "https://media.rawg.io/media/games/22b/22b61e8391b252cbd9be3317709cc68d.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP (Service Pack 3) / Windows Vista (Service Pack 2) / Windows 7\nProcessor: 1.6GHz Intel Core2 or faster/AMD X2 3800+ or faster\nMemory: (Windows XP) 1 GB RAM; (Windows Vista/Windows 7) 1.5 GB RAM\nGraphics: 256 MB Video Card, with support for Pixel Shader 3.0*\nDirectX®: DirectX 9.0c compatible\nHard Drive: 6 GB\nSound: DirectX 9.0c compatible\nController Support: USB Steering Wheel/Dual Analog Gamepad\nOnline Multiplayer: 512 Kbps or faster; 2-8 players\nINTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. TO ACCESS ONLINE FEATURES, YOU MUST REGISTER ONLINE. ONLY ONE REGISTRATION IS AVAILABLE PER GAME. EA ONLINE TERMS &amp; CONDITIONS AND FEATURE UPDATES CAN BE FOUND AT WWW.EA.COM. YOU MUST BE 13+ TO REGISTER WITH EA ONLINE. EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON WWW.EA.COM.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Shift is the thirteenth Need for Speed game. It is considered one of the most hardcore installments of the series. Unlike many of its predecessors, it is oriented towards the actual driving simulation rather than arcade racing.\n\n###Gameplay\nThe creators of Shift aimed to realistically imitate the driving experience, making the game harder than an average NFS game. However, Shift automatically adjusts the difficulty depending on the player's experience and skills. Before the player enters the career, he or she has to complete a test drive at the famous Brands Hatch track to familiarize the game with his or her driving abilities. \n\n###Cars\nNeed for Speed: Shift offers a roster of more than 60 vehicles. As in most Need for Speed games, the player starts with a small amount of money and only a handful of available vehicles. To unlock and purchase better cars, the player has to win races. The cars in Need for Speed: Shift consists of four classes called \"tiers\". The lowest tier contains the cheapest and slowest cars, while supercars from manufacturers like Lamborghini and Bugatti belong to the higher tiers. \n\nThe game also has a detailed modification system. The player can customize not only the car's look but also its important details like tires and aerodynamics.\n\n###Tracks\nAs the player progresses, he or she may unlock new levels. Some of them are based on real-life tracks of Formula One fame, including Spa-Francorchamps, Nurburgring, Silverstone and Laguna Seca. Others are pur",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nShift سیزدهمین بازی Need for Speed ​​است. این یکی از هاردکورترین قسمت های این سری به حساب می آید. بر خلاف بسیاری از پیشینیان خود، به سمت شبیه سازی واقعی رانندگی به جای مسابقات آرکید گرایش دارد.\n\n###بازی\nهدف سازندگان Shift تقلید واقع بینانه از تجربه رانندگی بود که بازی را سخت تر از یک بازی متوسط NFS کرد. با این حال، Shift به طور خودکار سختی را بسته به تجربه و مهارت بازیکن تنظیم می کند. قبل از اینکه بازیکن وارد حرفه شود، باید یک تست درایو در پیست معروف Brands Hatch انجام دهد تا بازی را با توانایی های رانندگی خود آشنا کند. \n\n###ماشین ها\nNeed for Speed: Shift فهرستی از بیش از 60 وسیله نقلیه را ارائه می دهد. مانند اکثر بازی‌های Need for Speed، بازیکن با مقدار کمی پول و فقط تعداد انگشت شماری وسایل نقلیه در دسترس شروع می‌کند. برای باز کردن و خرید ماشین های بهتر، بازیکن باید در مسابقات برنده شود. اتومبیل‌های Need for Speed: Shift از چهار کلاس به نام‌های «سطوح» تشکیل شده است. پایین‌ترین طبقه شامل ارزان‌ترین و کندترین خودروها است، در حالی که سوپراسپرت‌های تولیدکنندگانی مانند لامبورگینی و بوگاتی به طبقات بالاتر تعلق دارند. \n\nبازی همچنین دارای سیستم اصلاح دقیق است. بازیکن می تواند نه تنها ظاهر خودرو، بلکه جزئیات مهم آن مانند لاستیک ها و آیرودینامیک را نیز سفارشی کند.\n\n###آهنگ\nبا پیشرفت بازیکن، ممکن است سطوح جدیدی را باز کند. برخی از آنها بر اساس آهنگ های واقعی فرمول یک، از جمله Spa-Francorchamps، Nurburgring، Silverstone و Laguna Seca هستند. دیگران خالص هستند"
   }
 ]
