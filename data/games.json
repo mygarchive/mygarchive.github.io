@@ -6198,5 +6198,44 @@
     },
     "description_en": "Command & Conquer Red Alert 3 is a real-time strategy game set during an alternate scenario of World War II. In the game the United States confronted the USSR. To provide their victory, the Soviets went back in time and changed the future. As a result, the third power appears - the Empire of the Rising Sun, and all three forces get involved in a new war. All factions in the game are playable and provide different playstyles. While the Soviet army is suitable for a fast-paced expansion, the Japanese side focuses on technological progress. The US keep the medium position.\n\nIn Red Alert 3 you need to build a base and develop technology to create weapons. The main difference from other RTS is that the campaign in the game is fully cooperative, played either with a friend online or with an AI teammate. The game also features Naval Warfare mode with facilities built on water and various marine units. Additionally, each country has 15 unique abilities to use during battles.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Red Alert 3 یک بازی استراتژیک بلادرنگ است که در یک سناریوی جایگزین از جنگ جهانی دوم تنظیم شده است. در این بازی، ایالات متحده با اتحاد جماهیر شوروی روبرو شد. اتحاد جماهیر شوروی برای ارائه پیروزی خود، به گذشته بازگشت و آینده را تغییر داد. در نتیجه، قدرت سوم ظاهر می شود - امپراتوری خورشید در حال طلوع، و هر سه نیرو درگیر یک جنگ جدید می شوند. تمام گروه های بازی قابل بازی هستند و سبک های مختلف بازی را ارائه می دهند. در حالی که ارتش شوروی برای توسعه سریع مناسب است، طرف ژاپنی بر پیشرفت تکنولوژی تمرکز می کند. ایالات متحده جایگاه متوسط ​​را حفظ می کند.\n\nدر Red Alert 3 باید پایگاهی بسازید و فناوری ساخت سلاح را توسعه دهید. تفاوت اصلی با سایر RTS این است که کمپین در بازی کاملاً مشارکتی است، یا با یک دوست آنلاین یا با یک هم تیمی هوش مصنوعی بازی می شود. این بازی همچنین دارای حالت Naval Warfare با امکانات ساخته شده بر روی آب و واحدهای دریایی مختلف است. علاوه بر این، هر کشور دارای 15 توانایی منحصر به فرد برای استفاده در طول نبردها است."
+  },
+  {
+    "id": 978295,
+    "name": "Command & Conquer Generals Zero Hour",
+    "background_image": "https://media.rawg.io/media/screenshots/cfd/cfdfdc3f6bf2753e3767d8731f947243.jpg",
+    "rating": 4,
+    "metacritic": null,
+    "released": "2024-03-07",
+    "genres": [
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 1,
+    "developers": "Electronic Arts Los Angeles",
+    "steam_link": "https://store.steampowered.com/app/2732960/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/23e/23e2d6eec30fcac77adbb8f030c638f8.jpg",
+      "https://media.rawg.io/media/screenshots/ac5/ac5756e9ba74c60d3cf3d739a917fa17.jpg",
+      "https://media.rawg.io/media/screenshots/7ca/7cae6439aec8a0ca9d3b94b8a8c3faad.jpg",
+      "https://media.rawg.io/media/screenshots/b67/b67024d277ee551384266f773f6ebaa6.jpg",
+      "https://media.rawg.io/media/screenshots/cfd/cfdfdc3f6bf2753e3767d8731f947243.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10\nProcessor: 2.2 GHz Intel or AMD CPU\nMemory: 1 GB RAM\nGraphics: GeForce 4+/ Radeon 8500\nStorage: 3 GB available space",
+      "recommended": "OS: Windows 10\nProcessor: 2.2 GHz Intel or AMD CPU\nMemory: 1 GB RAM\nGraphics: GeForce 4+/ Radeon 8500\nStorage: 3 GB available space"
+    },
+    "description_en": "Command & Conquer Generals Zero Hour brings you closer to the enemy than ever before. Engage opposing forces at hot spots around the globe as you match strategies and arsenals against the new masterminds of modern war.\nArsenal. Unleash the next generation of 3D new units and 20 new upgrades including China's ECM Tank, GLA's BattleBus and the USA's Spectre Gunship.\nMissions. Take on 15 new missions and make tomorrow's headlines. Root out a splinter cell in Cairo, steal deadly toxins from a U.S. lab and more.\nGenerals. Match strategies and arsenals against 9 enemy commanders with unpredictable personalities and tactics.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Generals Zero Hour شما را بیش از هر زمان دیگری به دشمن نزدیک می کند. نیروهای مخالف را در نقاط داغ در سراسر جهان درگیر کنید، زیرا استراتژی ها و زرادخانه ها را با مغز متفکران جدید جنگ مدرن مطابقت می دهید.\nآرسنال نسل بعدی واحدهای جدید سه بعدی و 20 ارتقای جدید از جمله تانک ECM چین، BattleBus GLA و Spectre Gunship ایالات متحده را آزاد کنید.\nماموریت ها 15 ماموریت جدید را انجام دهید و تیتر اخبار فردا شوید. یک سلول انشعابی را در قاهره ریشه کن کنید، سموم کشنده را از یک آزمایشگاه ایالات متحده بدزدید و موارد دیگر.\nژنرال ها استراتژی ها و زرادخانه ها را با 9 فرمانده دشمن با شخصیت ها و تاکتیک های غیرقابل پیش بینی مسابقه دهید."
   }
 ]
