@@ -7571,5 +7571,46 @@
     },
     "description_en": "The award winning Life is Strange series continues with a long-awaited sequel from DONTNOD Entertainment.\r\n\r\nTwo brothers Sean and Daniel Diaz, 16 and 9, are forced to run away from home after a tragic incident in Seattle. In fear of the police, Sean & Daniel head to Mexico while attempting to conceal a sudden and mysterious supernatural power.\r\n\r\nLife on the road is tough and now totally responsible for his much younger brother, Sean begins to realise that his decisions will impact their lives forever…\r\n\r\nEpisode 1 will be available on September 27th 2018.  Episodes 2-5 will be available at later dates.  \r\n\r\nComplete Season includes Episode 1 and the Episode 2-5 bundle. Episodes 2-5 available upon release.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه برنده جایزه Life is Strange با دنباله ای از DONTNOD Entertainment که مدت ها منتظرش بودیم ادامه دارد.\r\n\r\nدو برادر شان و دانیل دیاز 16 و 9 ساله پس از یک حادثه غم انگیز در سیاتل مجبور به فرار از خانه می شوند. در ترس از پلیس، شان و دانیل به مکزیک می روند و در حال تلاش برای پنهان کردن یک قدرت ماوراء طبیعی ناگهانی و مرموز هستند.\r\n\r\nزندگی در جاده سخت است و اکنون کاملاً مسئول برادر کوچکترش است، شان شروع به درک می کند که تصمیمات او برای همیشه زندگی آنها را تحت تأثیر قرار می دهد…\r\n\r\nقسمت 1 در 27 سپتامبر 2018 در دسترس خواهد بود. قسمت های 2 تا 5 در تاریخ های بعدی در دسترس خواهند بود.  \r\n\r\nفصل کامل شامل قسمت 1 و بسته اپیزود 2-5 است. قسمت 2-5 پس از انتشار در دسترس است."
+  },
+  {
+    "id": 573126,
+    "name": "Life is Strange: Before the Storm Remastered",
+    "background_image": "https://media.rawg.io/media/games/eb9/eb961e6867ef44ec96493d032e8e8fba.jpg",
+    "rating": 3.38,
+    "metacritic": null,
+    "released": "2022-02-01",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "DONTNOD Entertainment, Deck Nine",
+    "steam_link": "https://store.steampowered.com/app/1265930/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/a92/a9216453a68c1036fb61937b975c7db6.jpg",
+      "https://media.rawg.io/media/screenshots/9e4/9e492cc7366941bee757652a2fd5ee3d.jpg",
+      "https://media.rawg.io/media/screenshots/51e/51e9324fbf70c2aed9bd2e79ef791426.jpg",
+      "https://media.rawg.io/media/screenshots/1d2/1d2d75351bcef3ec41c2503e940fb09b.jpg",
+      "https://media.rawg.io/media/screenshots/4b3/4b3e90d80204918bd9c6e319673e9570.jpg",
+      "https://media.rawg.io/media/screenshots/61b/61ba738e9d59ccac9d38fa52d3cdf32c_KpReGpR.jpg",
+      "https://media.rawg.io/media/games/eb9/eb961e6867ef44ec96493d032e8e8fba.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD Phenom II X4 965, 3.2 GHz /  Intel Core i3-2100, 3.1 GHz\nMemory: 4 GB RAM\nGraphics: Radeon R7 250x, 1 GB / GeForce GTX 460, 1 GB\nDirectX: Version 11\nStorage: 23 GB available space\nAdditional Notes: 720p / 30fps / Low settings",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: AMD FX-4350, 4.2 GHz /  Intel Core i3-4130, 3.4 GHz\nMemory: 4 GB RAM\nGraphics: Radeon RX 560, 2 GB / GeForce GTX 1050, 2 GB\nDirectX: Version 11\nStorage: 23 GB available space\nAdditional Notes: 1080p / 60fps / High settings"
+    },
+    "description_en": "Life is Strange: Before the Storm returns with remastered visuals across characters & environments.\n\nSet three years before ‘Life is Strange’, you play as sixteen-year old Chloe Price who forms an unlikely friendship with Rachel Amber, a beautiful and popular girl destined for success.\n\nWhen Rachel learns a secret about her family that threatens to destroy her world, it is her newfound friendship with Chloe that gives her the strength to carry on.\nNo longer alone the girls must confront each other's demons and together, find a way to overcome them.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nLife is Strange: Before the Storm با تصاویری بازسازی شده در شخصیت ها و محیط ها بازگردد.\n\nسه سال قبل از \"زندگی عجیب است\"، شما در نقش کلویی پرایس شانزده ساله بازی می کنید که دوستی بعید با ریچل آمبر، دختری زیبا و محبوب که برای موفقیت تعیین شده است، تشکیل می دهد.\n\nوقتی ریچل از رازی در مورد خانواده اش مطلع می شود که دنیایش را تهدید می کند، دوستی تازه یافته او با کلویی است که به او قدرت ادامه دادن می دهد.\nدیگر تنها دختران باید با شیاطین یکدیگر مقابله کنند و با هم راهی برای غلبه بر آنها بیابند."
   }
 ]
