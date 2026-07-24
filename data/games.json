@@ -8929,5 +8929,44 @@
     },
     "description_en": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Embark on a journey through familiar and new locations as you explore and discover fantastic beasts, customize your character and craft potions, master spell casting, upgrade talents, and become the wizard you want to be.\r\n\r\nExperience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. You have received a late acceptance to the Hogwarts School of Witchcraft and Wizardry and soon discover that you are no ordinary student: you possess an unusual ability to perceive and master Ancient Magic. Only you can decide if you will protect this secret for the good of all, or yield to the temptation of more sinister magic.\r\n\r\nDiscover the feeling of living at Hogwarts as you make allies, battle Dark wizards, and ultimately decide the fate of the wizarding world. Your legacy is what you make of it.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمیراث هاگوارتز یک بازی RPG اکشن و جهان باز است که برای اولین بار در کتاب های هری پاتر معرفی شد. اکنون می توانید کنترل اکشن را به دست بگیرید و در مرکز ماجراجویی خود در دنیای جادوگری قرار بگیرید. با کاوش و کشف جانوران خارق العاده، شخصی سازی شخصیت و معجون های صنایع دستی، مهارت در ریخته گری طلسم، ارتقای استعدادها و تبدیل شدن به جادوگری که می خواهید باشید، سفری را در مکان های آشنا و جدید آغاز کنید.\r\n\r\nهاگوارتز را در دهه 1800 تجربه کنید. شخصیت شما دانش آموزی است که کلید یک راز باستانی را در دست دارد که تهدید می کند دنیای جادوگران را از هم بپاشد. شما دیر در مدرسه جادوگری و جادوگری هاگوارتز پذیرفته شده اید و به زودی متوجه می شوید که دانش آموز معمولی نیستید: توانایی غیرعادی در درک و تسلط بر جادوی باستانی دارید. فقط شما می توانید تصمیم بگیرید که آیا از این راز به نفع همه محافظت می کنید یا تسلیم وسوسه جادوی شوم می شوید.\r\n\r\nاحساس زندگی در هاگوارتز را در حالی که متحد می شوید، با جادوگران تاریک می جنگید و در نهایت سرنوشت دنیای جادوگران را تعیین می کنید، کشف کنید. میراث شما همان چیزی است که از آن می سازید."
+  },
+  {
+    "id": 987515,
+    "name": "Mafia: The Old Country",
+    "background_image": "https://media.rawg.io/media/games/e0f/e0fc6554b6c0b5cd95037858898a1cc8.jpg",
+    "rating": 3.82,
+    "metacritic": null,
+    "released": "2025-08-08",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 16,
+    "developers": "Hangar 13",
+    "steam_link": "https://store.steampowered.com/app/1941540/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/13a/13a0c30f914cc2e22c5de76e1a4b284a.jpg",
+      "https://media.rawg.io/media/screenshots/737/7372ff1ea81052012c59c999cc8ef072.jpg",
+      "https://media.rawg.io/media/screenshots/77f/77f3574b2c78d8685c40cf67b4384b2b.jpg",
+      "https://media.rawg.io/media/screenshots/6d4/6d4df2db0867a330630db150095f2064.jpg",
+      "https://media.rawg.io/media/games/e0f/e0fc6554b6c0b5cd95037858898a1cc8.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 10 / 11\nProcessor: AMD Ryzen 7 2700X / Intel Core i7-9700K \nMemory: 16 GB RAM\nGraphics: AMD Radeon RX 5700 XT / NVIDIA RTX 2070\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: Requires a 64-bit processor and operating system.  Requires SSD ;  Graphic Preset: Medium  ;  Resolution: 1080p",
+      "recommended": "OS: Windows 10 / 11\nProcessor: AMD Ryzen 7 5800X / Intel Core i7-12700K\nMemory: 32 GB RAM\nGraphics: AMD Radeon RX 6950 XT / NVIDIA RTX 3080 Ti\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: Requires a 64-bit processor and operating system.  Requires SSD ; Graphic Preset: High ; Resolution: 1440p"
+    },
+    "description_en": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily.\n\nFight to survive in this dangerous and unforgiving era, with action brought to life by the authentic realism and rich storytelling that the critically acclaimed Mafia series is known for.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمنشأ جنایات سازمان‌یافته را در مافیا: کشور قدیمی کشف کنید، داستانی خشن اوباش که در دنیای اموات وحشیانه سیسیل دهه 1900 اتفاق می‌افتد.\n\nبرای زنده ماندن در این دوران خطرناک و نابخشودنی بجنگید، با عملی که با رئالیسم معتبر و داستان‌گویی غنی که مجموعه مافیایی که مورد تحسین منتقدان قرار گرفته است، زنده می‌شود."
   }
 ]
