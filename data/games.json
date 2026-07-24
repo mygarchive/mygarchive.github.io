@@ -7735,5 +7735,56 @@
     },
     "description_en": "Part one of the Mafia crime saga - 1930s, Lost Heaven, IL\nRe-made from the ground up, rise through the ranks of the Mafia during the Prohibition era of organized crime. After a run-in with the mob, cab driver Tommy Angelo is thrust into a deadly underworld. Initially uneasy about falling in with the Salieri crime family, Tommy soon finds that the rewards are too big to ignore.\n\nPlay a Mob Movie:\nLive the life of a Prohibition-era gangster and rise through the ranks of the Mafia.\n\nLost Heaven, IL:\n\nRecreated 1930's cityscape, filled with interwar architecture, cars and culture to see, hear and interact with.\n\nRe-Made Classic:\nFaithfully recreated, with expanded story, gameplay and original score. This is the Mafia you remembered and much more.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nقسمت اول حماسه جنایت مافیا - دهه 1930، بهشت گمشده، IL\nدوباره ساخته شده از زمین به بالا، از طریق صفوف مافیا در دوران ممنوعیت جنایات سازمان یافته بالا بروید. پس از درگیری با اوباش، راننده تاکسی تامی آنجلو به یک عالم اموات کشنده رانده می شود. تامی که در ابتدا از درگیر شدن با خانواده جنایتکار سالیری ناراحت بود، به زودی متوجه می‌شود که پاداش آن‌قدر بزرگ است که نمی‌توان آن را نادیده گرفت.\n\nپخش یک فیلم اوباش:\nزندگی یک گانگستر دوران ممنوعیت را داشته باشید و در صفوف مافیا قرار بگیرید.\n\nبهشت گمشده، IL:\n\nمنظره شهری دهه 1930 بازسازی شده، مملو از معماری بین جنگ‌ها، ماشین‌ها و فرهنگ برای دیدن، شنیدن و تعامل.\n\nکلاسیک دوباره ساخته شده:\nوفادارانه بازسازی شده، با داستان گسترده، گیم پلی و امتیاز اصلی. این مافیایی است که شما به یاد داشتید و خیلی چیزهای دیگر."
+  },
+  {
+    "id": 516111,
+    "name": "Mass Effect: Legendary Edition",
+    "background_image": "https://media.rawg.io/media/games/64e/64e2a77f37ddc48d102127234af99886.jpg",
+    "rating": 4.57,
+    "metacritic": 88,
+    "released": "2021-05-14",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 12,
+    "developers": "BioWare, EA Swiss",
+    "steam_link": "https://store.steampowered.com/app/1328670/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/dfc/dfc2297daea764355a7fa2771d173703.jpg",
+      "https://media.rawg.io/media/screenshots/e4d/e4dae9c803e11cde07423bec1a324c0e.jpg",
+      "https://media.rawg.io/media/screenshots/09b/09b34e452541b996ee6bba894710407d.jpg",
+      "https://media.rawg.io/media/screenshots/e84/e84539cca8f01e475ca8537440e6bfa7.jpg",
+      "https://media.rawg.io/media/screenshots/8d7/8d7c186df52bc6395164d5d174338886.jpg",
+      "https://media.rawg.io/media/screenshots/dad/dade4bdbac873f7e6afa4b749810a957.jpg",
+      "https://media.rawg.io/media/games/64e/64e2a77f37ddc48d102127234af99886.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "One person is all that stands between humanity and the greatest threat it’s ever faced. Relive the legend of Commander Shepard in the highly acclaimed Mass Effect trilogy with the Mass Effect™ Legendary Edition. Includes single-player base content and DLC from Mass Effect, Mass Effect 2, and Mass Effect 3, plus promo weapons, armors, and packs - all remastered and optimized for 4k Ultra HD.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک نفر تمام چیزی است که بین بشریت و بزرگترین تهدیدی که تاکنون با آن مواجه شده است قرار دارد. با نسخه افسانه ای Mass Effect™ افسانه فرمانده شپرد را در سه گانه بسیار تحسین شده Mass Effect دوباره زنده کنید. شامل محتوای پایه تک‌نفره و DLC از Mass Effect، Mass Effect 2 و Mass Effect 3، به‌علاوه سلاح‌های تبلیغاتی، زره‌ها و بسته‌ها - همگی بازسازی‌شده و بهینه‌سازی شده برای 4k Ultra HD."
   }
 ]
