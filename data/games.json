@@ -9581,5 +9581,46 @@
     },
     "description_en": "Now Titanfall 2 has a full-scale story campaign. The main plot is the confrontation of the people's Militia against the IMC Corporation, which seeks to destroy the rebels of the Frontier, a region of star systems that will allow them to get control over their resources.\r\n\r\nYou play as Jack Cooper, a soldier who dreams of becoming an elite pilot with advanced technology and a personal Titan - a fighting machine. Captain Tai Lastimosa trained Cooper and prepared for his candidacy. During the task of finding the missing Major Anderson, who had the information about the plans of the IMC. The entire squad of Cooper, including Lastimosa, dies in the attack of IMC mercenaries. The Captain gives his Titan to Cooper.\r\n\r\nAs the first part of the game, it is a first-person shooter in which you can control the pilot and exoskeleton \"Titan\". The pilot has a diverse arsenal of abilities that allow you to jump and run on steep walls with the help of the \"jump pilot module\". These abilities can be used with each other to move through the game locations quickly.\r\n\r\nWith enough points, the player can call the Titan, landing from the sky. They are much slower than pilots but have more powerful weapons.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاکنون Titanfall 2 یک کمپین داستانی تمام عیار دارد. توطئه اصلی رویارویی شبه نظامیان مردمی علیه شرکت IMC است که به دنبال نابودی شورشیان مرزی است، منطقه ای از سیستم های ستاره ای که به آنها اجازه می دهد تا بر منابع خود کنترل داشته باشند.\r\n\r\nشما در نقش جک کوپر بازی می کنید، سربازی که رویای تبدیل شدن به یک خلبان نخبه با فناوری پیشرفته و یک تایتان شخصی - یک ماشین جنگی را دارد. کاپیتان تای لاستیموسا کوپر را آموزش داد و برای کاندیداتوری او آماده شد. در طول کار پیدا کردن سرگرد گمشده اندرسون که اطلاعاتی در مورد برنامه های IMC داشت. کل تیم کوپر، از جمله لاستیموسا، در حمله مزدوران IMC جان خود را از دست می دهند. کاپیتان تایتان خود را به کوپر می دهد.\r\n\r\nبه عنوان قسمت اول بازی، یک تیراندازی اول شخص است که در آن می توانید خلبان و اسکلت بیرونی «تیتان» را کنترل کنید. خلبان دارای زرادخانه متنوعی از توانایی ها است که به شما امکان می دهد با کمک \"ماژول خلبان پرش\" روی دیوارهای شیب دار بپرید و بدوید. این توانایی ها را می توان با یکدیگر برای حرکت سریع در مکان های بازی استفاده کرد.\r\n\r\nبا امتیاز کافی، بازیکن می تواند تایتان را صدا کند و از آسمان فرود آید. آنها بسیار کندتر از خلبانان هستند اما سلاح های قوی تری دارند."
+  },
+  {
+    "id": 3209,
+    "name": "Until Dawn",
+    "background_image": "https://media.rawg.io/media/games/d64/d6443375f9971152866ea76bff97d6d6.jpg",
+    "rating": 4.1,
+    "metacritic": 79,
+    "released": "2015-08-25",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 14,
+    "developers": "Supermassive Games",
+    "steam_link": "https://store.steampowered.com/app/2172010/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/192/192cc281317e6e6f05e2c25b9c1adf89.jpg",
+      "https://media.rawg.io/media/screenshots/6a6/6a6fd1929619c1d8041a9218bd7f1422.jpg",
+      "https://media.rawg.io/media/screenshots/bd4/bd4bb34e0a0c2cf08cd1046122f18add.jpg",
+      "https://media.rawg.io/media/screenshots/d55/d55f030eac579171ef44989826834f10.jpg",
+      "https://media.rawg.io/media/screenshots/7c0/7c058dc4910d2073df0f942c675bd30a.jpg",
+      "https://media.rawg.io/media/screenshots/c80/c80c38ef71014b5c4bd175a8e4649c7c.jpg",
+      "https://media.rawg.io/media/games/d64/d6443375f9971152866ea76bff97d6d6.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Ten young people spend time in a cottage on a mountain. Around the cottage, there is a forest and something supernatural. First, they joke with each other, then unknown and deadly participants appear in the game.\nSome people will die in any case, the lives of others will depend on the player. There will also be helpers - one of them will tell you that the mountain is inhabited by Wendigo - supernatural beings who were once human beings, but after eating people’s flesh they became obsessed with evil spirits and turned into bloodthirsty monsters.\nWendigo will be settled in some of the dead characters - and they will come to life and will get superpowers that help win even the Wendigo.\nThe plot is ramified so that you will have to go through the game several times to familiarise with all the options.\nThe player has to make decisions quickly, conduct investigations, collect and take into account numerous clues. Actually, this is the gameplay.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nده جوان وقت خود را در کلبه ای در کوه می گذرانند. در اطراف کلبه، یک جنگل و چیزی ماوراء طبیعی وجود دارد. ابتدا با یکدیگر شوخی می کنند سپس شرکت کنندگان ناشناس و کشنده در بازی ظاهر می شوند.\nدر هر صورت عده ای خواهند مرد، زندگی برخی دیگر به بازیکن بستگی دارد. کمک‌کنندگانی نیز وجود خواهند داشت - یکی از آنها به شما می‌گوید که کوه توسط Wendigo زندگی می‌کند - موجودات ماوراء طبیعی که زمانی انسان بودند، اما پس از خوردن گوشت مردم، گرفتار ارواح شیطانی شدند و به هیولاهای تشنه به خون تبدیل شدند.\nوندیگو در برخی از شخصیت‌های مرده مستقر می‌شود - و آنها زنده می‌شوند و قدرت‌های فوق‌العاده‌ای به دست خواهند آورد که به پیروزی حتی وندیگو کمک می‌کنند.\nداستان به گونه ای منشعب شده است که برای آشنایی با تمامی گزینه ها باید چندین بار بازی را مرور کنید.\nبازیکن باید سریع تصمیم بگیرد، تحقیقات انجام دهد، سرنخ های متعددی را جمع آوری و در نظر بگیرد. در واقع گیم پلی بازی همین است."
   }
 ]
