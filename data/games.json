@@ -9499,5 +9499,46 @@
     },
     "description_en": "Clementine, now a fierce and capable survivor, has reached the final chapter in her journey. After years on the road facing threats both living and dead, a secluded school might finally be her chance for a home. But protecting it will mean sacrifice. Clem must build a life and become a leader while still watching over AJ, an orphaned boy and the closest thing to family she has left. In this gripping and emotional final season, you will define your relationships, fight the undead, and determine how Clementine’s story ends.\n● Emotional, Gut-Wrenching Story - See Clementine’s journey through to the end. As she builds a new life, you will have to grapple with new types of choices and live with the consequences as AJ looks on, learning from your every move.\n● More Control, More Tension - A new over-the-shoulder camera system, greater freedom to explore detailed environments, and scenes of unscripted combat capture the fear of living in a world overrun by the undead. All this creates the most engaging The Walking Dead game yet.\n● Striking New Visual Style - The all-new Graphic Black art style rips the ink from the pages of the Eisner Award-winning comic book series and brings the world of The Walking Dead to life like never before.\nIncludes access to all 4 episodes (Episode 1 available at launch, Episodes 2-4 coming soon).",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nکلمنتین که اکنون یک بازمانده خشن و توانا است، به آخرین فصل سفر خود رسیده است. پس از سال‌ها سفر در جاده‌ای که با تهدیدهایی هم زنده و هم مرده مواجه بود، یک مدرسه منزوی ممکن است سرانجام فرصتی برای او برای خانه باشد. اما حفاظت از آن به معنای فداکاری خواهد بود. کلم باید زندگی بسازد و رهبر شود در حالی که هنوز مراقب ای جی، یک پسر یتیم و نزدیکترین چیزی که به خانواده اش باقی مانده است. در این فصل پایانی جذاب و احساسی، شما روابط خود را مشخص خواهید کرد، با مردگان مردگان مبارزه خواهید کرد و تعیین خواهید کرد که داستان کلمنتین چگونه به پایان می رسد.\n● داستان احساسی و دلخراش - سفر کلمنتاین را تا پایان ببینید. همانطور که او یک زندگی جدید می سازد، شما باید با انواع جدیدی از انتخاب ها دست و پنجه نرم کنید و با عواقب آن زندگی کنید، همانطور که AJ به نظر می رسد و از هر حرکت شما درس می گیرد.\n● کنترل بیشتر، تنش بیشتر - یک سیستم دوربین جدید روی شانه، آزادی بیشتر برای کاوش در محیط‌های دقیق، و صحنه‌های نبرد بدون فیلمنامه ترس از زندگی در دنیایی که توسط مردگان تحت سلطه است را به تصویر می‌کشد. همه اینها جذاب ترین بازی The Walking Dead را ایجاد می کند.\n● سبک بصری جدید - سبک کاملاً جدید Graphic Black جوهر را از صفحات مجموعه کتاب های مصور برنده جایزه Eisner جدا می کند و دنیای The Walking Dead را مانند قبل زنده می کند.\nشامل دسترسی به تمام 4 قسمت (قسمت 1 در زمان راه اندازی در دسترس است، قسمت 2-4 به زودی)."
+  },
+  {
+    "id": 15834,
+    "name": "The Walking Dead: Season 2",
+    "background_image": "https://media.rawg.io/media/games/471/4712c9ac591f556f553556b864a7e92b.jpg",
+    "rating": 4.06,
+    "metacritic": 80,
+    "released": "2013-12-16",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 10,
+    "developers": "Telltale Games",
+    "steam_link": "https://store.steampowered.com/app/261030/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/7ab/7aba51da717fa66fde86dc4c3c3829db.jpg",
+      "https://media.rawg.io/media/screenshots/ca8/ca89bae35dc80143303c5ad8ad696687.jpg",
+      "https://media.rawg.io/media/screenshots/d3e/d3e69d829750e1546da8abf2fe9c156e.jpg",
+      "https://media.rawg.io/media/screenshots/553/553d79a98aa4626d70bcafbec97575a7.jpg",
+      "https://media.rawg.io/media/screenshots/427/42724d0000342606ebc3fe5f1e6e26cb.jpg",
+      "https://media.rawg.io/media/screenshots/816/816b12f2f5b4e0bd4d2ffbc4d9da7c9a.jpg",
+      "https://media.rawg.io/media/games/471/4712c9ac591f556f553556b864a7e92b.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows XP Service Pack 3\nProcessor: Core 2 Duo 2GHz or equivalent\nMemory: 3 GB RAM\nGraphics: ATI or NVidia card w/ 512 MB RAM\nDirectX: Version 9.0c\nStorage: 2 GB available space\nSound Card: Direct X 9.0c sound device\nAdditional Notes: Not recommended for Intel integrated graphics",
+      "recommended": "OS: Windows 7\nProcessor: Core 2 Duo 2.3 Ghz or equivalent\nMemory: 4 GB RAM\nGraphics: ATI or NVidia card w/ 1024 MB RAM\nDirectX: Version 9.0c\nStorage: 2 GB available space\nSound Card: Direct X 9.0c sound device\nAdditional Notes: Not recommended for Intel integrated graphics"
+    },
+    "description_en": "The Walking Dead: Season 2 is an episodic adventure game based on eponymous comic book series. As it is a sequel to the previous game in the Walking Dead series, the further story progress depends on the events of the first part. The game is set in the world inhabited by walkers, as the story takes place after the zombie apocalypse. In the second season, players are offered to assume the role of Clementine, a young member of a group of survivors leaving Georgia and heading towards a large survivor camp in Michigan. The girl’s moves are controlled in a point-and-click way. The story progresses through short scenes including dialogues with other characters, which can impact upcoming events by selecting certain dialogue options, or short-term action events like defending the camp from walkers. The gameplay also features some sort of exploration and interaction with the environment that can give extra information or various collectible items. On the way through the game players are going to face dramatic turns of the plot caused by their own tough choice.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Walking Dead: Season 2 یک بازی ماجراجویی اپیزودیک بر اساس مجموعه کتاب های مصور همنام است. از آنجایی که این بازی دنباله‌ای بر بازی قبلی در سری Walking Dead است، پیشرفت بیشتر داستان به رویدادهای قسمت اول بستگی دارد. داستان بازی در دنیایی است که واکرها در آن زندگی می کنند، زیرا داستان پس از آخرالزمان زامبی ها اتفاق می افتد. در فصل دوم، به بازیکنان پیشنهاد می‌شود که نقش کلمنتاین، عضو جوان گروهی از بازماندگان را که جورجیا را ترک می‌کنند و به سمت یک کمپ بزرگ در میشیگان می‌روند، بر عهده بگیرند. حرکات دختر به روش اشاره و کلیک کنترل می شود. داستان از طریق صحنه‌های کوتاه از جمله دیالوگ‌ها با شخصیت‌های دیگر پیش می‌رود، که می‌تواند با انتخاب گزینه‌های خاص دیالوگ بر روی رویدادهای آینده تأثیر بگذارد، یا رویدادهای اکشن کوتاه‌مدت مانند دفاع از اردوگاه در برابر واکرها. گیم پلی بازی همچنین دارای نوعی کاوش و تعامل با محیط است که می تواند اطلاعات اضافی یا آیتم های مختلف کلکسیونی را به شما بدهد. در مسیر بازی، بازیکنان با چرخش های دراماتیک داستان مواجه می شوند که ناشی از انتخاب سخت خودشان است."
   }
 ]
