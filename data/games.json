@@ -9540,5 +9540,46 @@
     },
     "description_en": "The Walking Dead: Season 2 is an episodic adventure game based on eponymous comic book series. As it is a sequel to the previous game in the Walking Dead series, the further story progress depends on the events of the first part. The game is set in the world inhabited by walkers, as the story takes place after the zombie apocalypse. In the second season, players are offered to assume the role of Clementine, a young member of a group of survivors leaving Georgia and heading towards a large survivor camp in Michigan. The girl’s moves are controlled in a point-and-click way. The story progresses through short scenes including dialogues with other characters, which can impact upcoming events by selecting certain dialogue options, or short-term action events like defending the camp from walkers. The gameplay also features some sort of exploration and interaction with the environment that can give extra information or various collectible items. On the way through the game players are going to face dramatic turns of the plot caused by their own tough choice.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nThe Walking Dead: Season 2 یک بازی ماجراجویی اپیزودیک بر اساس مجموعه کتاب های مصور همنام است. از آنجایی که این بازی دنباله‌ای بر بازی قبلی در سری Walking Dead است، پیشرفت بیشتر داستان به رویدادهای قسمت اول بستگی دارد. داستان بازی در دنیایی است که واکرها در آن زندگی می کنند، زیرا داستان پس از آخرالزمان زامبی ها اتفاق می افتد. در فصل دوم، به بازیکنان پیشنهاد می‌شود که نقش کلمنتاین، عضو جوان گروهی از بازماندگان را که جورجیا را ترک می‌کنند و به سمت یک کمپ بزرگ در میشیگان می‌روند، بر عهده بگیرند. حرکات دختر به روش اشاره و کلیک کنترل می شود. داستان از طریق صحنه‌های کوتاه از جمله دیالوگ‌ها با شخصیت‌های دیگر پیش می‌رود، که می‌تواند با انتخاب گزینه‌های خاص دیالوگ بر روی رویدادهای آینده تأثیر بگذارد، یا رویدادهای اکشن کوتاه‌مدت مانند دفاع از اردوگاه در برابر واکرها. گیم پلی بازی همچنین دارای نوعی کاوش و تعامل با محیط است که می تواند اطلاعات اضافی یا آیتم های مختلف کلکسیونی را به شما بدهد. در مسیر بازی، بازیکنان با چرخش های دراماتیک داستان مواجه می شوند که ناشی از انتخاب سخت خودشان است."
+  },
+  {
+    "id": 923,
+    "name": "Titanfall 2",
+    "background_image": "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg",
+    "rating": 4.31,
+    "metacritic": 87,
+    "released": "2016-10-28",
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "Respawn Entertainment",
+    "steam_link": "https://store.steampowered.com/app/1237970/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/84e/84e29493c294e80fb0311c8381001f77.jpg",
+      "https://media.rawg.io/media/screenshots/6b5/6b5e173d4ed40f90aa40e685f11288ef.jpg",
+      "https://media.rawg.io/media/screenshots/9f4/9f44676b8807fd78f44711fa842ec685.jpg",
+      "https://media.rawg.io/media/screenshots/ac0/ac00a4d622919baafe096060e5c5f838.jpg",
+      "https://media.rawg.io/media/screenshots/3cf/3cf20e1cc6f9dfa47b44bd9398dc026f.jpg",
+      "https://media.rawg.io/media/screenshots/677/677d773bd606dd7a386bdd1930658ba7.jpg",
+      "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Win 7/8/8.1/10 64bit\nProcessor: Intel Core i3-6300t or equivalent [4 or more hardware threads]\nMemory: 8 GB RAM\nGraphics: NVIDIA Geforce GTX 660 2GB or AMD Radeon HD 7850 2GB\nDirectX: Version 11\nStorage: 45 GB available space",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Win 7/8/8.1/10 64bit\nProcessor: Intel Core i5-6600 or equivalent\nMemory: 16 GB RAM\nGraphics: NVIDIA Geforce GTX 1060 6GB or AMD Radeon RX 480 8GB\nDirectX: Version 11\nStorage: 45 GB available space"
+    },
+    "description_en": "Now Titanfall 2 has a full-scale story campaign. The main plot is the confrontation of the people's Militia against the IMC Corporation, which seeks to destroy the rebels of the Frontier, a region of star systems that will allow them to get control over their resources.\r\n\r\nYou play as Jack Cooper, a soldier who dreams of becoming an elite pilot with advanced technology and a personal Titan - a fighting machine. Captain Tai Lastimosa trained Cooper and prepared for his candidacy. During the task of finding the missing Major Anderson, who had the information about the plans of the IMC. The entire squad of Cooper, including Lastimosa, dies in the attack of IMC mercenaries. The Captain gives his Titan to Cooper.\r\n\r\nAs the first part of the game, it is a first-person shooter in which you can control the pilot and exoskeleton \"Titan\". The pilot has a diverse arsenal of abilities that allow you to jump and run on steep walls with the help of the \"jump pilot module\". These abilities can be used with each other to move through the game locations quickly.\r\n\r\nWith enough points, the player can call the Titan, landing from the sky. They are much slower than pilots but have more powerful weapons.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاکنون Titanfall 2 یک کمپین داستانی تمام عیار دارد. توطئه اصلی رویارویی شبه نظامیان مردمی علیه شرکت IMC است که به دنبال نابودی شورشیان مرزی است، منطقه ای از سیستم های ستاره ای که به آنها اجازه می دهد تا بر منابع خود کنترل داشته باشند.\r\n\r\nشما در نقش جک کوپر بازی می کنید، سربازی که رویای تبدیل شدن به یک خلبان نخبه با فناوری پیشرفته و یک تایتان شخصی - یک ماشین جنگی را دارد. کاپیتان تای لاستیموسا کوپر را آموزش داد و برای کاندیداتوری او آماده شد. در طول کار پیدا کردن سرگرد گمشده اندرسون که اطلاعاتی در مورد برنامه های IMC داشت. کل تیم کوپر، از جمله لاستیموسا، در حمله مزدوران IMC جان خود را از دست می دهند. کاپیتان تایتان خود را به کوپر می دهد.\r\n\r\nبه عنوان قسمت اول بازی، یک تیراندازی اول شخص است که در آن می توانید خلبان و اسکلت بیرونی «تیتان» را کنترل کنید. خلبان دارای زرادخانه متنوعی از توانایی ها است که به شما امکان می دهد با کمک \"ماژول خلبان پرش\" روی دیوارهای شیب دار بپرید و بدوید. این توانایی ها را می توان با یکدیگر برای حرکت سریع در مکان های بازی استفاده کرد.\r\n\r\nبا امتیاز کافی، بازیکن می تواند تایتان را صدا کند و از آسمان فرود آید. آنها بسیار کندتر از خلبانان هستند اما سلاح های قوی تری دارند."
   }
 ]
