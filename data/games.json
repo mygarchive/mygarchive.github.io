@@ -9675,5 +9675,48 @@
     },
     "description_en": "╔════════════════════════════════════════════════════════════╗\nBefore buying, please keep this in mind: Steam Early Access is for people who are willing to try an incomplete and unpolished game to help developers with feedback. If you're looking for a complete experience, please wait until the full release. You won't gain any advantage by buying early - Early Access doesn't provide an advantage in character progression, nor is it cheaper than the full game. All characters start with a clean slate with the full release, and there will be plenty of sales after release if you'd like a discount.\n╚════════════════════════════════════════════════════════════╝\nEnter the Chaos-infested Caligari Sector and purge the unclean with the most powerful agents of the Imperium of Man.\nWarhammer 40,000: Inquisitor – Martyr is a grim Action-RPG featuring multiple classes of the Inquisition who will carry out the will of the Emperor even in the darkest reaches of the Imperium!THE NEXT MILESTONE IN THE EVOLUTION OF ARPGS\nThe first Action-RPG set in the grim future of the 41st Millennium takes the genre to its next level: an open-world sandbox game with a persistent universe with a huge variety of missions, tactical, brutal combat encounters in destructible environments and a storyline influenced by the community of players. Use the cover system for tactical advantage, shoot off limbs and perform executions in epic boss battles and become a Protector of any solar systems with your glorious actions",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n╔═══════════════════════════════ ═══════════════════════════════╗\nقبل از خرید، لطفاً این را در نظر داشته باشید: Steam Early Access برای افرادی است که می‌خواهند یک بازی ناقص و صیقل‌نشده را امتحان کنند تا با بازخورد به توسعه‌دهندگان کمک کنند. اگر به دنبال یک تجربه کامل هستید، لطفا تا انتشار کامل صبر کنید. با خرید زودهنگام هیچ مزیتی به دست نخواهید آورد - Early Access مزیتی در پیشرفت کاراکترها ایجاد نمی کند و از قیمت کامل بازی نیز ارزان تر نیست. همه شخصیت‌ها با انتشار کامل با یک لوح تمیز شروع می‌شوند، و اگر تخفیف می‌خواهید پس از انتشار، فروش زیادی خواهد داشت.\n╚═══════════════════════════════ ═══════════════════════════════╝\nوارد بخش کالیگاری آلوده به آشوب شوید و با قدرتمندترین عوامل Imperium of Man افراد ناپاک را پاکسازی کنید.\nWarhammer 40,000: Inquisitor – Martyr یک اکشن-RPG وحشتناک است که دارای چندین کلاس از تفتیش عقاید است که اراده امپراتور را حتی در تاریک ترین نقاط Imperium اجرا می کند. نقطه عطف بعدی در تکامل ARPGs\nاولین بازی اکشن-RPG که در آینده تلخ هزاره 41 اتفاق می‌افتد، این ژانر را به سطح بعدی خود می‌برد: یک بازی sandbox جهان باز با یک جهان پایدار با تنوع عظیمی از ماموریت‌ها، رویارویی‌های تاکتیکی، وحشیانه در محیط‌های تخریب‌پذیر و یک خط داستانی تحت تأثیر جامعه بازیکنان. از سیستم پوشش برای مزیت تاکتیکی استفاده کنید، اندام ها را شلیک کنید و در باس نبردهای حماسی اجرا کنید و با اقدامات باشکوه خود محافظ هر منظومه شمسی شوید."
+  },
+  {
+    "id": 10061,
+    "name": "Watch Dogs 2",
+    "background_image": "https://media.rawg.io/media/games/f52/f52cf6ba08089cd5f1a9c8f7fcc93d1f.jpg",
+    "rating": 3.84,
+    "metacritic": 79,
+    "released": "2016-11-28",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 17,
+    "developers": "Ubisoft Montreal",
+    "steam_link": "https://store.steampowered.com/app/447040/",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256673850/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256673850/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/90e/90edc66e2c32c0808d3d344e750b11d5.jpg",
+      "https://media.rawg.io/media/screenshots/7f6/7f631f852a2e85ec4bcaddfc65b587c2.jpg",
+      "https://media.rawg.io/media/screenshots/d71/d71d662d1c3dc61336cab6d25daa4815.jpg",
+      "https://media.rawg.io/media/screenshots/713/713688460802e5937eec631e5ee60bbd.jpg",
+      "https://media.rawg.io/media/screenshots/8e0/8e06d6982f789e6ac58a0a59119bd7ef.jpg",
+      "https://media.rawg.io/media/screenshots/acf/acfc10929189efe5a324040325cb5425.jpg",
+      "https://media.rawg.io/media/games/f52/f52cf6ba08089cd5f1a9c8f7fcc93d1f.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)\nProcessor: Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870, with 2 GB VRAM or better - See supported List*\nNetwork: Broadband Internet connection\nStorage: 27 GB available space\nSound Card: DirectX compatible using the latest drivers\nAdditional Notes: Minimum specs above for 720p , 30+ FPS, Low graphic settings // Periphericals: Microsoft Xbox One Controller, DUALSHOCK® 4 Controller, Windows-compatible keyboard, mouse, optional controller / Multiplayer: 256 kbps or faster broadband connection / Note: This product supports 64-bit operating systems only. Laptop versions of these cards may work, but are not officially supported. For the most up-to-date requirement listings, please visit the FAQ on our support website at support.ubi.com.  High speed internet access and a valid Ubisoft account are required to activate the game after installation, to authenticate your system and continue gameplay after any re-activation, access online features, play online or unlock exclusive content.",
+      "recommended": "OS: Windows 7 SP1, Windows 8.1, Windows 10 (64bit versions only)\nProcessor: Intel Core i5 3470 @ 3.2 GHz, AMD FX 8120 @ 3.9 GHz\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 780 | AMD Radeon R9 290, with 3GB VRAM or better - See supported List*\nNetwork: Broadband Internet connection\nStorage: 27 GB available space\nSound Card: DirectX-compatible using the latest drivers\nAdditional Notes: Recommended specs above for 1080p , 30+ FPS, High graphic settings // SUPPORTED VIDEO CARDS AT TIME OF RELEASE: • NVIDIA® GeForce® GTX600 Series: GTX660 or better / GeForce® GTX700 Series: GTX760 or better / GeForce® GTX900 Series: GTX950 or better / GeForce® GTX1000 Series: GTX1060 or better. • AMD Radeon™ HD 7000 series: Radeon™ HD7870 or better / Radeon™ 200 series: Radeon R9 270 or better / Radeon™ 300/Fury X series: Radeon™ R9 370 or better / Radeon 400 series: Radeon RX460 or better."
+    },
+    "description_en": "Watch Dogs 2 is an action-adventure open-world game developed by Ubisoft Montreal. It is the second installment in the series and continues the main idea of its predecessor - hacking and hacktivism in an open world.\n\nWelcome to San-Francisco. It is the second city in the United States to install the city-wide operating system named ctOS, which connects everything from your car to your smart home to a global network. Marcus Holloway is tagged by the system as a suspect for a crime he did not commit. Marcus decides to take action and gets together with the hacktivist group DedSec to expose ctOS and its creators.\n\nWD2 offers the player an immense open world which consists of San-Francisco, Oakland, Marin and Silicon Valley. It's the player's choice to navigate the world on foot or on a wide range of vehicles from cars to boats.\n\nIt is up to the player to choose whether to use a lethal or non-lethal approach on a mission as there is always a taser in your inventory and a billiard ball attached to a paracord that knocks enemies out. \n\nIt is possible to hack into any devices that are connected to ctOS. For instance, Marcus can control forklifts, buzz guards phones in order to distract them.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWatch Dogs 2 یک بازی اکشن و ماجراجویی جهان باز است که توسط Ubisoft Montreal ساخته شده است. این دومین قسمت از این مجموعه است و ایده اصلی نسخه قبلی خود - هک و هکتیویسم در یک جهان باز را ادامه می دهد.\n\nبه سانفرانسیسکو خوش آمدید. این دومین شهر در ایالات متحده است که سیستم عاملی به نام ctOS را در سطح شهر نصب می کند که همه چیز را از ماشین شما تا خانه هوشمند شما را به یک شبکه جهانی متصل می کند. مارکوس هالووی توسط سیستم به عنوان مظنون به جرمی که مرتکب نشده است برچسب گذاری شده است. مارکوس تصمیم می‌گیرد دست به اقدامی بزند و با گروه هکریست DedSec گرد هم می‌آید تا ctOS و سازندگان آن را افشا کند.\n\nWD2 یک جهان باز عظیم را به بازیکن ارائه می دهد که شامل سان فرانسیسکو، اوکلند، مارین و دره سیلیکون است. این انتخاب بازیکن است که با پای پیاده یا با طیف وسیعی از وسایل نقلیه از ماشین گرفته تا قایق در جهان حرکت کند.\n\nاین به بازیکن بستگی دارد که انتخاب کند در یک ماموریت از یک روش کشنده یا غیر کشنده استفاده کند، زیرا همیشه یک تیزر در موجودی شما و یک توپ بیلیارد به یک پاراکورد متصل است که دشمنان را از بین می برد. \n\nهک کردن هر دستگاهی که به ctOS متصل است امکان پذیر است. به عنوان مثال، مارکوس می‌تواند لیفتراک‌ها را کنترل کند، تلفن‌ها را به‌منظور پرت کردن حواس آن‌ها حفظ کند."
   }
 ]
