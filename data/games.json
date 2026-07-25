@@ -9622,5 +9622,58 @@
     },
     "description_en": "Ten young people spend time in a cottage on a mountain. Around the cottage, there is a forest and something supernatural. First, they joke with each other, then unknown and deadly participants appear in the game.\nSome people will die in any case, the lives of others will depend on the player. There will also be helpers - one of them will tell you that the mountain is inhabited by Wendigo - supernatural beings who were once human beings, but after eating people’s flesh they became obsessed with evil spirits and turned into bloodthirsty monsters.\nWendigo will be settled in some of the dead characters - and they will come to life and will get superpowers that help win even the Wendigo.\nThe plot is ramified so that you will have to go through the game several times to familiarise with all the options.\nThe player has to make decisions quickly, conduct investigations, collect and take into account numerous clues. Actually, this is the gameplay.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nده جوان وقت خود را در کلبه ای در کوه می گذرانند. در اطراف کلبه، یک جنگل و چیزی ماوراء طبیعی وجود دارد. ابتدا با یکدیگر شوخی می کنند سپس شرکت کنندگان ناشناس و کشنده در بازی ظاهر می شوند.\nدر هر صورت عده ای خواهند مرد، زندگی برخی دیگر به بازیکن بستگی دارد. کمک‌کنندگانی نیز وجود خواهند داشت - یکی از آنها به شما می‌گوید که کوه توسط Wendigo زندگی می‌کند - موجودات ماوراء طبیعی که زمانی انسان بودند، اما پس از خوردن گوشت مردم، گرفتار ارواح شیطانی شدند و به هیولاهای تشنه به خون تبدیل شدند.\nوندیگو در برخی از شخصیت‌های مرده مستقر می‌شود - و آنها زنده می‌شوند و قدرت‌های فوق‌العاده‌ای به دست خواهند آورد که به پیروزی حتی وندیگو کمک می‌کنند.\nداستان به گونه ای منشعب شده است که برای آشنایی با تمامی گزینه ها باید چندین بار بازی را مرور کنید.\nبازیکن باید سریع تصمیم بگیرد، تحقیقات انجام دهد، سرنخ های متعددی را جمع آوری و در نظر بگیرد. در واقع گیم پلی بازی همین است."
+  },
+  {
+    "id": 44741,
+    "name": "Warhammer 40,000: Inquisitor - Martyr",
+    "background_image": "https://media.rawg.io/media/games/2ac/2ac6a47029ea0e215ece015db1ff7722.jpg",
+    "rating": 3.35,
+    "metacritic": 67,
+    "released": "2018-06-06",
+    "genres": [
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "+17",
+    "playtime": 5,
+    "developers": "NeoCoreGames",
+    "steam_link": "https://store.steampowered.com/search/?term=Warhammer%2040%2C000%3A%20Inquisitor%20-%20Martyr",
+    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256690224/movie_max.mp4",
+    "youtube_videos": [
+      "https://steamcdn-a.akamaihd.net/steam/apps/256690224/movie_max.mp4"
+    ],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/0d3/0d3e8f054504cd1835c967d526f3e1fa.jpg",
+      "https://media.rawg.io/media/screenshots/b72/b72e0fd75543c75aea3332c93252716e.jpg",
+      "https://media.rawg.io/media/screenshots/89a/89a1b3f024c8ce75ae031cd33df116d1.jpg",
+      "https://media.rawg.io/media/screenshots/4a4/4a4421202439f9476fea2afff35300de.jpg",
+      "https://media.rawg.io/media/screenshots/6cd/6cd2f92976b94b2efb091878c6d923c8.jpg",
+      "https://media.rawg.io/media/screenshots/a3d/a3d4aa5c933a69eca0a1bb2751789978.jpg",
+      "https://media.rawg.io/media/games/2ac/2ac6a47029ea0e215ece015db1ff7722.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: 64-bit Windows 7+ (8 / 8.1 / 10)\nProcessor: Intel CPU Core i3-2120 (3.3 GHz) / AMD CPU FX-6300 (3.5 GHz)\nMemory: 4 GB RAM\nGraphics: Nvidia GeForce GTX 760 (2 GB) / AMD Radeon HD 7850 (2 GB)\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 30 GB available space\nAdditional Notes: Requirements are for the Early Access Build",
+      "recommended": "OS: 64-bit Windows 7+ (8 / 8.1 / 10)\nProcessor: Intel CPU Core i7-2600 (3.4 GHz) / AMD CPU FX-8320 (3.5 GHz)\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 1060 (3 GB) / AMD Radeon RX 480 (4 GB)\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 30 GB available space\nAdditional Notes: Requirements are for the Early Access Build"
+    },
+    "description_en": "╔════════════════════════════════════════════════════════════╗\nBefore buying, please keep this in mind: Steam Early Access is for people who are willing to try an incomplete and unpolished game to help developers with feedback. If you're looking for a complete experience, please wait until the full release. You won't gain any advantage by buying early - Early Access doesn't provide an advantage in character progression, nor is it cheaper than the full game. All characters start with a clean slate with the full release, and there will be plenty of sales after release if you'd like a discount.\n╚════════════════════════════════════════════════════════════╝\nEnter the Chaos-infested Caligari Sector and purge the unclean with the most powerful agents of the Imperium of Man.\nWarhammer 40,000: Inquisitor – Martyr is a grim Action-RPG featuring multiple classes of the Inquisition who will carry out the will of the Emperor even in the darkest reaches of the Imperium!THE NEXT MILESTONE IN THE EVOLUTION OF ARPGS\nThe first Action-RPG set in the grim future of the 41st Millennium takes the genre to its next level: an open-world sandbox game with a persistent universe with a huge variety of missions, tactical, brutal combat encounters in destructible environments and a storyline influenced by the community of players. Use the cover system for tactical advantage, shoot off limbs and perform executions in epic boss battles and become a Protector of any solar systems with your glorious actions",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n╔═══════════════════════════════ ═══════════════════════════════╗\nقبل از خرید، لطفاً این را در نظر داشته باشید: Steam Early Access برای افرادی است که می‌خواهند یک بازی ناقص و صیقل‌نشده را امتحان کنند تا با بازخورد به توسعه‌دهندگان کمک کنند. اگر به دنبال یک تجربه کامل هستید، لطفا تا انتشار کامل صبر کنید. با خرید زودهنگام هیچ مزیتی به دست نخواهید آورد - Early Access مزیتی در پیشرفت کاراکترها ایجاد نمی کند و از قیمت کامل بازی نیز ارزان تر نیست. همه شخصیت‌ها با انتشار کامل با یک لوح تمیز شروع می‌شوند، و اگر تخفیف می‌خواهید پس از انتشار، فروش زیادی خواهد داشت.\n╚═══════════════════════════════ ═══════════════════════════════╝\nوارد بخش کالیگاری آلوده به آشوب شوید و با قدرتمندترین عوامل Imperium of Man افراد ناپاک را پاکسازی کنید.\nWarhammer 40,000: Inquisitor – Martyr یک اکشن-RPG وحشتناک است که دارای چندین کلاس از تفتیش عقاید است که اراده امپراتور را حتی در تاریک ترین نقاط Imperium اجرا می کند. نقطه عطف بعدی در تکامل ARPGs\nاولین بازی اکشن-RPG که در آینده تلخ هزاره 41 اتفاق می‌افتد، این ژانر را به سطح بعدی خود می‌برد: یک بازی sandbox جهان باز با یک جهان پایدار با تنوع عظیمی از ماموریت‌ها، رویارویی‌های تاکتیکی، وحشیانه در محیط‌های تخریب‌پذیر و یک خط داستانی تحت تأثیر جامعه بازیکنان. از سیستم پوشش برای مزیت تاکتیکی استفاده کنید، اندام ها را شلیک کنید و در باس نبردهای حماسی اجرا کنید و با اقدامات باشکوه خود محافظ هر منظومه شمسی شوید."
   }
 ]
