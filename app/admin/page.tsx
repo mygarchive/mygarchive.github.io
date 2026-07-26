@@ -26,6 +26,17 @@ async function translateToPersian(text: string): Promise<string> {
 const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
+// 🧠 استخراج خودکار عدد حجم از متن سیستم مورد نیاز
+const extractSizeFromReqText = (reqText: string): number | null => {
+  if (!reqText) return null;
+  const match = reqText.match(/(?:storage|space|disk|hdd|ssd|حجم|حافظه)?\s*:?\s*(\d+(?:\.\d+)?)\s*(?:gb|giga|گیگابایت|گیگا)/i);
+  if (match && match[1]) {
+    const val = parseFloat(match[1]);
+    return isNaN(val) ? null : val;
+  }
+  return null;
+};
+
 export default function AdminPanel() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginError, setLoginError] = useState('');
@@ -49,7 +60,6 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // 🛠️ تعریف متد با استفاده از useCallback برای قرارگیری در دپندسی صف بدون رندر مداوم
   const getSteamIdFromSteam = useCallback(async (gameName: string): Promise<string | null> => {
     try {
       const searchUrl = `https://store.steampowered.com/api/storesearch/?term=${encodeURIComponent(gameName)}&l=english&cc=US`;
@@ -329,6 +339,9 @@ export default function AdminPanel() {
         }
         galleryFinal = galleryFinal.slice(0, 10);
 
+        // 🧠 استخراج خودکار حجم بر حسب گیگابایت در صورت نبود فیلد دستی
+        const autoExtractedGb = extractSizeFromReqText(minReq) || extractSizeFromReqText(recReq) || 0;
+
         const newGameObj = {
           id: game.id,
           name: game.name,
@@ -349,7 +362,12 @@ export default function AdminPanel() {
             recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
           },
           description_en: (details.description_raw || "No description available.").substring(0, 1500),
-          description_fa: descriptionFaWithLabel
+          description_fa: descriptionFaWithLabel,
+          // 🆕 فیلدهای جدید ادمین
+          size_gb: autoExtractedGb,
+          is_popular: false,
+          is_coop: false,
+          system_tier: 'unspecified'
         };
 
         const cleanList = currentGamesList.filter((g: any) => g.id !== game.id);
@@ -375,9 +393,18 @@ export default function AdminPanel() {
 
         const targetGameIdx = currentGamesList.findIndex((g: any) => g.id === game.id);
         if (targetGameIdx !== -1) {
+          // اگر حجم دستی وارد نشده باشد، تلاش برای استخراج هوشمند
+          let finalSizeGb = overrideData.size_gb;
+          if (finalSizeGb === null || finalSizeGb === undefined || finalSizeGb === '') {
+            finalSizeGb = extractSizeFromReqText(overrideData.requirements?.minimum || '') || extractSizeFromReqText(overrideData.requirements?.recommended || '') || 0;
+          } else {
+            finalSizeGb = parseFloat(finalSizeGb) || 0;
+          }
+
           currentGamesList[targetGameIdx] = {
             ...currentGamesList[targetGameIdx],
-            ...overrideData
+            ...overrideData,
+            size_gb: finalSizeGb
           };
 
           const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
@@ -423,7 +450,7 @@ export default function AdminPanel() {
       setQueue((prev) => prev.slice(1));
       setIsProcessingQueue(false);
     }
-  }, [githubToken, myGames, fileSha, queue, getSteamIdFromSteam]); // 🛠️ رفع ارور دپندسی useCallback
+  }, [githubToken, myGames, fileSha, queue, getSteamIdFromSteam]);
 
   useEffect(() => {
     if (queue.length > 0 && !isProcessingQueue) {
@@ -504,6 +531,62 @@ export default function AdminPanel() {
                 <div>
                   <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز متاتقد (Metacritic):</label>
                   <input type="number" value={editingGame.metacritic || ''} onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" dir="ltr" />
+                </div>
+
+                {/* 💾 حجم بازی، سطح سیستم، پرطرفدار و کوآپ */}
+                <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-t border-b border-slate-800/80 py-4 my-2">
+                  <div>
+                    <label className="block text-xs text-purple-400 font-bold mb-1.5">💾 حجم بازی (گیگابایت - دستی):</label>
+                    <input 
+                      type="number" 
+                      step="0.1" 
+                      value={editingGame.size_gb !== undefined && editingGame.size_gb !== null ? editingGame.size_gb : ''} 
+                      onChange={(e) => handleEditFieldChange('size_gb', e.target.value === '' ? null : parseFloat(e.target.value))} 
+                      className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold text-purple-300" 
+                      placeholder="اگر خالی بماند خودکار استخراج می‌شود"
+                      dir="ltr" 
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs text-blue-400 font-bold mb-1.5">⚡ سطح سیستم مورد نیاز:</label>
+                    <select 
+                      value={editingGame.system_tier || 'unspecified'} 
+                      onChange={(e) => handleEditFieldChange('system_tier', e.target.value)} 
+                      className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-slate-300 font-bold"
+                    >
+                      <option value="unspecified">نامشخص / خودکار</option>
+                      <option value="light">⚡ سبک (Light System)</option>
+                      <option value="normal">💻 معمولی (Normal System)</option>
+                      <option value="heavy">🐘 سنگین (Heavy System)</option>
+                    </select>
+                  </div>
+
+                  <div className="flex items-center gap-2 pt-6">
+                    <input 
+                      type="checkbox" 
+                      id="is_popular_checkbox" 
+                      checked={!!editingGame.is_popular} 
+                      onChange={(e) => handleEditFieldChange('is_popular', e.target.checked)} 
+                      className="w-4 h-4 accent-purple-600 rounded cursor-pointer"
+                    />
+                    <label htmlFor="is_popular_checkbox" className="text-xs font-bold text-amber-400 cursor-pointer select-none">
+                      🔥 بازی پرطرفدار (Popular)
+                    </label>
+                  </div>
+
+                  <div className="flex items-center gap-2 pt-6">
+                    <input 
+                      type="checkbox" 
+                      id="is_coop_checkbox" 
+                      checked={!!editingGame.is_coop} 
+                      onChange={(e) => handleEditFieldChange('is_coop', e.target.checked)} 
+                      className="w-4 h-4 accent-purple-600 rounded cursor-pointer"
+                    />
+                    <label htmlFor="is_coop_checkbox" className="text-xs font-bold text-emerald-400 cursor-pointer select-none">
+                      👥 چندنفره / کوآپ (Co-op)
+                    </label>
+                  </div>
                 </div>
 
                 {/* ⏱️ ویرایش دستی زمان اتمام بازی */}
@@ -677,18 +760,43 @@ export default function AdminPanel() {
             {displayedGames.map((game) => {
               const isAlreadyAdded = myGames.some((g) => g.id === game.id);
               const isTaskInQueue = queue.some((q) => q.game?.id === game.id || q.gameId === game.id);
+              const savedGameData = myGames.find((g) => g.id === game.id) || game;
               
               return (
-                <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
-                  <img 
-                    src={getOptimizedUrl(game.background_image, 400)} 
-                    alt={game.name} 
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
-                    }}
-                    className="w-full h-40 object-cover" 
-                  />
+                <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg relative">
+                  <div className="relative">
+                    <img 
+                      src={getOptimizedUrl(game.background_image, 400)} 
+                      alt={game.name} 
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
+                      }}
+                      className="w-full h-40 object-cover" 
+                    />
+                    
+                    {/* Badge های اطلاعات ادمین روی کارت */}
+                    {isAlreadyAdded && (
+                      <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+                        {savedGameData.size_gb ? (
+                          <span className="bg-purple-900/90 text-purple-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-500/50 backdrop-blur-sm">
+                            💾 {savedGameData.size_gb} GB
+                          </span>
+                        ) : null}
+                        {savedGameData.is_popular && (
+                          <span className="bg-amber-900/90 text-amber-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-500/50 backdrop-blur-sm">
+                            🔥 پرطرفدار
+                          </span>
+                        )}
+                        {savedGameData.is_coop && (
+                          <span className="bg-emerald-900/90 text-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-500/50 backdrop-blur-sm">
+                            👥 کوآپ
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
+
                   <div className="p-4 flex flex-col justify-between flex-1 space-y-4">
                     <h3 className="font-bold text-sm text-white text-left truncate" dir="ltr">{game.name}</h3>
                     
@@ -705,7 +813,6 @@ export default function AdminPanel() {
                         <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش کامل اطلاعات و مدیریت تصاویر</button>
                       </div>
                     ) : (
-                      // 🛠️ فیکس نهایی ارور کامپایل دکمه افزودن آرشیو:
                       <button onClick={() => handleAddGame(game)} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold">＋ افزودن به آرشیو</button>
                     )}
                   </div>
