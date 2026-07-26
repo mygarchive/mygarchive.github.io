@@ -5,6 +5,29 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import localGamesData from '../data/games.json';
 
+// 🌐 دیکشنری معادل‌های فارسی ژانرها
+const GENRE_PERSIAN_MAP: Record<string, string> = {
+  'Action': 'اکشن',
+  'Indie': 'مستقل',
+  'Adventure': 'ماجراجویی',
+  'RPG': 'نقش‌آفرینی',
+  'Strategy': 'استراتژیک',
+  'Shooter': 'شوتر (تیراندازی)',
+  'Casual': 'تفننی',
+  'Simulation': 'شبیه‌ساز',
+  'Puzzle': 'فکری و پازل',
+  'Arcade': 'آرکید',
+  'Platformer': 'سکوبازی (پلتفرمر)',
+  'Racing': 'مسابقه‌ای (رانندگی)',
+  'Sports': 'ورزشی',
+  'Fighting': 'مبارزه‌ای',
+  'Family': 'خانوادگی',
+  'Board Games': 'تخته‌ای',
+  'Educational': 'آموزشی',
+  'Card': 'کارتی',
+  'Massively Multiplayer': 'آنلاین چندنفره'
+};
+
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
   const [filteredGames, setFilteredGames] = useState<any[]>([]);
@@ -16,6 +39,17 @@ export default function Home() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [isFooterOpen, setIsFooterOpen] = useState(false);
+
+  // 🆕 فیلترهای جدید
+  const [sizeFilter, setSizeFilter] = useState<number>(200); // اسلایدر حجم (حداکثر ۲۰۰ گیگ)
+  const [systemTierFilter, setSystemTierFilter] = useState<string>('all');
+  const [onlyPopular, setOnlyPopular] = useState<boolean>(false);
+  const [onlyCoop, setOnlyCoop] = useState<boolean>(false);
+
+  // 🛒 سبد/لیست سفارش بازی‌ها
+  const [orderCart, setOrderCart] = useState<any[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+  const [copyToast, setCopyToast] = useState<boolean>(false);
 
   // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی
   const [visibleCount, setVisibleCount] = useState<number>(12);
@@ -43,14 +77,12 @@ export default function Home() {
       
       let fetchedData = null;
 
-      // 🚀 لایه اول: پروکسی اختصاصی
       try {
         const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
         const res = await fetch(proxyUrl, { cache: 'no-store' });
         if (res.ok) fetchedData = await res.json();
       } catch (e) { console.warn("لایه ۱ ناموفق بود."); }
 
-      // 🔄 لایه دوم پشتیبان: پروکسی CodeTabs
       if (!fetchedData) {
         try {
           const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
@@ -58,7 +90,6 @@ export default function Home() {
         } catch (e) { console.warn("لایه ۲ ناموفق بود."); }
       }
 
-      // 🔄 لایه سوم پشتیبان: پروکسی Corsproxy
       if (!fetchedData) {
         try {
           const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, { cache: 'no-store' });
@@ -66,7 +97,6 @@ export default function Home() {
         } catch (e) { console.warn("لایه ۳ ناموفق بود."); }
       }
 
-      // 🔄 لایه چهارم: درخواست مستقیم
       if (!fetchedData) {
         try {
           const res = await fetch(targetUrl, { cache: 'no-store' });
@@ -103,12 +133,10 @@ export default function Home() {
     initData();
   }, []);
 
-  // 📜 اصلاح هوشمند اسکرول بی‌نهایت
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
 
-      // اگر کاربر به فاصله ۸۰۰ پیکسلی از انتهای صفحه رسید، ۱۲ تای بعدی را لود کن
       if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 800) {
         setVisibleCount((prev) => {
           if (prev < filteredGames.length) {
@@ -123,7 +151,6 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [filteredGames.length]);
 
-  // 🔍 بررسی خودکار: اگر ارتفاع کارت‌ها از ارتفاع مانیتور کمتر بود، کارت‌های بیشتری لود کن تا اسکرول فعال شود
   useEffect(() => {
     if (!loading && filteredGames.length > visibleCount) {
       if (document.documentElement.scrollHeight <= window.innerHeight) {
@@ -132,6 +159,7 @@ export default function Home() {
     }
   }, [visibleCount, filteredGames.length, loading]);
 
+  // 🔍 فیلتر جامع داده‌ها
   useEffect(() => {
     let result = [...games];
 
@@ -141,6 +169,29 @@ export default function Home() {
 
     if (searchQuery.trim() !== '') {
       result = result.filter((game) => game.name?.toLowerCase().includes(searchQuery.toLowerCase()));
+    }
+
+    // 🆕 فیلتر حجم اسلایدر
+    if (sizeFilter < 200) {
+      result = result.filter((game) => {
+        const gSize = parseFloat(game.size_gb) || 0;
+        return gSize <= sizeFilter;
+      });
+    }
+
+    // 🆕 فیلتر سطح سیستم
+    if (systemTierFilter !== 'all') {
+      result = result.filter((game) => game.system_tier === systemTierFilter);
+    }
+
+    // 🆕 فیلتر پرطرفدار
+    if (onlyPopular) {
+      result = result.filter((game) => !!game.is_popular);
+    }
+
+    // 🆕 فیلتر کوآپ
+    if (onlyCoop) {
+      result = result.filter((game) => !!game.is_coop);
     }
 
     if (sortBy === 'alphabetical') {
@@ -157,7 +208,48 @@ export default function Home() {
 
     setFilteredGames(result);
     setVisibleCount(12);
-  }, [selectedGenre, searchQuery, sortBy, games]);
+  }, [selectedGenre, searchQuery, sortBy, sizeFilter, systemTierFilter, onlyPopular, onlyCoop, games]);
+
+  // 🛒 توابع مدیریت لیست سفارش
+  const addToOrderCart = (game: any, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!orderCart.some((g) => g.id === game.id)) {
+      setOrderCart((prev) => [...prev, game]);
+      setIsCartOpen(true);
+    }
+  };
+
+  const removeFromOrderCart = (gameId: number) => {
+    setOrderCart((prev) => prev.filter((g) => g.id !== gameId));
+  };
+
+  const clearOrderCart = () => {
+    setOrderCart([]);
+  };
+
+  const getTotalOrderSize = () => {
+    return orderCart.reduce((acc, item) => acc + (parseFloat(item.size_gb) || 0), 0).toFixed(1);
+  };
+
+  const generateOrderText = () => {
+    if (orderCart.length === 0) return '';
+    let text = `سلام، قصد سفارش جدید بازی‌های زیر را دارم:\n\n`;
+    orderCart.forEach((game, idx) => {
+      const sizeStr = game.size_gb ? `${game.size_gb} گیگابایت` : 'حجم نامشخص';
+      text += `${idx + 1}. ${game.name} — ${sizeStr}\n`;
+    });
+    text += `\n📊 مجموع حجم کل سفارش: ${getTotalOrderSize()} گیگابایت\n\n`;
+    text += `لطفاً قیمت دیتای این بازی‌ها و شرایط ثبت نهایی را برام بفرستید.`;
+    return text;
+  };
+
+  const copyOrderTextToClipboard = () => {
+    const text = generateOrderText();
+    navigator.clipboard.writeText(text);
+    setCopyToast(true);
+    setTimeout(() => setCopyToast(false), 3000);
+  };
 
   const getOptimizedUrl = (url: string, width = 400) => {
     if (!url) return '';
@@ -226,50 +318,128 @@ export default function Home() {
           </div>
         </header>
 
+        {/* 🎛️ پنل فیلترهای پیشرفته و هوشمند */}
         <div 
-          className="p-4 rounded-2xl mb-8 flex flex-col lg:flex-row gap-4 shadow-sm"
+          className="p-5 rounded-2xl mb-8 space-y-4 shadow-sm"
           style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
         >
-          <div className="flex-1">
-            <input 
-              type="text" 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="🔍 جستجو در بین بازی‌های آرشیو..." 
-              className="w-full p-3 rounded-xl text-sm outline-none text-left font-bold" 
-              style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.titleText }}
-              dir="ltr"
-            />
+          {/* سطر اول: جستجو و انتخاب ژانر / مرتب‌سازی */}
+          <div className="flex flex-col lg:flex-row gap-4">
+            <div className="flex-1">
+              <input 
+                type="text" 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="🔍 جستجو در بین بازی‌های آرشیو..." 
+                className="w-full p-3 rounded-xl text-sm outline-none text-left font-bold" 
+                style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.titleText }}
+                dir="ltr"
+              />
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-3">
+              {/* 🌐 ژانر دو زبانه */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>👁️ ژانر:</span>
+                <select 
+                  value={selectedGenre}
+                  onChange={(e) => setSelectedGenre(e.target.value)}
+                  className="p-2.5 rounded-xl text-xs font-bold outline-none cursor-pointer max-w-[200px]"
+                  style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+                >
+                  <option value="all">همه سبک‌ها (All)</option>
+                  {genres.map((genre) => {
+                    const faName = GENRE_PERSIAN_MAP[genre] || genre;
+                    return (
+                      <option key={genre} value={genre}>
+                        {faName} ({genre})
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+
+              {/* ⚡ سطح سیستم */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>💻 سیستم:</span>
+                <select 
+                  value={systemTierFilter}
+                  onChange={(e) => setSystemTierFilter(e.target.value)}
+                  className="p-2.5 rounded-xl text-xs font-bold outline-none cursor-pointer"
+                  style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+                >
+                  <option value="all">همه سیستم‌ها</option>
+                  <option value="light">⚡ سبک (Light)</option>
+                  <option value="normal">💻 معمولی (Normal)</option>
+                  <option value="heavy">🐘 سنگین (Heavy)</option>
+                </select>
+              </div>
+
+              {/* ↕️ مرتب‌سازی */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>↕️ ترتیب:</span>
+                <select 
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="p-2.5 rounded-xl text-xs font-bold outline-none cursor-pointer"
+                  style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
+                >
+                  <option value="alphabetical">🔤 الفبا (A-Z)</option>
+                  <option value="released">📅 جدیدترین</option>
+                  <option value="rating">⭐ امتیازی</option>
+                </select>
+              </div>
+            </div>
           </div>
-          
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>👁️ فیلتر سبک:</span>
-              <select 
-                value={selectedGenre}
-                onChange={(e) => setSelectedGenre(e.target.value)}
-                className="p-3 rounded-xl text-xs font-bold outline-none cursor-pointer"
-                style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
-              >
-                <option value="all">همه سبک‌ها (All)</option>
-                {genres.map((genre) => (
-                  <option key={genre} value={genre}>{genre}</option>
-                ))}
-              </select>
+
+          {/* سطر دوم: اسلایدر حجم + چک‌باکس‌های تگ پرطرفدار/کوآپ */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t pt-4" style={{ borderColor: themeStyles.border }}>
+            {/* 🎚️ اسلایدر حجم دقیق */}
+            <div className="w-full md:w-1/2 space-y-1">
+              <div className="flex justify-between text-xs font-bold" style={{ color: themeStyles.subText }}>
+                <span>💾 حد اکثر حجم بازی:</span>
+                <span className="text-purple-500 font-mono">{sizeFilter >= 200 ? 'همه حجم‌ها (بدون محدودیت)' : `حداکثر تا ${sizeFilter} گیگابایت`}</span>
+              </div>
+              <input 
+                type="range" 
+                min="5" 
+                max="200" 
+                step="5"
+                value={sizeFilter} 
+                onChange={(e) => setSizeFilter(parseInt(e.target.value))}
+                className="w-full accent-purple-600 h-2 bg-slate-800 rounded-lg cursor-pointer"
+              />
+              <div className="flex justify-between text-[10px] font-mono opacity-60" style={{ color: themeStyles.subText }}>
+                <button onClick={() => setSizeFilter(5)} className="hover:underline">5GB</button>
+                <button onClick={() => setSizeFilter(10)} className="hover:underline">10GB</button>
+                <button onClick={() => setSizeFilter(25)} className="hover:underline">25GB</button>
+                <button onClick={() => setSizeFilter(50)} className="hover:underline">50GB</button>
+                <button onClick={() => setSizeFilter(100)} className="hover:underline">100GB</button>
+                <button onClick={() => setSizeFilter(200)} className="hover:underline">همه</button>
+              </div>
             </div>
 
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold whitespace-nowrap" style={{ color: themeStyles.subText }}>↕️ مرتب‌سازی:</span>
-              <select 
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="p-3 rounded-xl text-xs font-bold outline-none cursor-pointer"
-                style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
-              >
-                <option value="alphabetical">🔤 حروف الفبا (A-Z)</option>
-                <option value="released">📅 سال انتشار (جدیدترین)</option>
-                <option value="rating">⭐ امتیاز منتقدین (بیشترین)</option>
-              </select>
+            {/* 🔥 Checkbox های تگ پرطرفدار و کوآپ */}
+            <div className="flex flex-wrap items-center gap-4">
+              <label className="flex items-center gap-2 cursor-pointer text-xs font-bold select-none">
+                <input 
+                  type="checkbox" 
+                  checked={onlyPopular} 
+                  onChange={(e) => setOnlyPopular(e.target.checked)} 
+                  className="w-4 h-4 accent-amber-500 rounded cursor-pointer"
+                />
+                <span className="text-amber-500">🔥 فقط بازی‌های پرطرفدار</span>
+              </label>
+
+              <label className="flex items-center gap-2 cursor-pointer text-xs font-bold select-none">
+                <input 
+                  type="checkbox" 
+                  checked={onlyCoop} 
+                  onChange={(e) => setOnlyCoop(e.target.checked)} 
+                  className="w-4 h-4 accent-emerald-500 rounded cursor-pointer"
+                />
+                <span className="text-emerald-500">👥 فقط کوآپ / چندنفره</span>
+              </label>
             </div>
           </div>
         </div>
@@ -278,48 +448,82 @@ export default function Home() {
           <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
-            {filteredGames.slice(0, visibleCount).map((game) => (
-              <a 
-                href={`./game?id=${game.id}`} 
-                key={game.id} 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer"
-                style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
-              >
-                <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
-                  <img 
-                    src={getOptimizedUrl(game.background_image, 400)} 
-                    alt={game.name} 
-                    loading="lazy"
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
-                    }}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
-                  />
-                </div>
-                <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
-                  <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
-                    {game.name}
-                  </h3>
-                  
-                  <div 
-                    className="flex justify-between items-center pt-2.5 text-[11px]"
-                    style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
-                  >
-                    <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
-                      ⭐ {game.rating || '---'}
-                    </span>
-                    <span className="font-mono">{game.released?.split('-')[0] || '---'}</span>
+            {filteredGames.slice(0, visibleCount).map((game) => {
+              const isInCart = orderCart.some((g) => g.id === game.id);
+
+              return (
+                <a 
+                  href={`./game?id=${game.id}`} 
+                  key={game.id} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-purple-500 transition duration-300 shadow-sm cursor-pointer relative"
+                  style={{ backgroundColor: themeStyles.cardBg, border: `1px solid ${themeStyles.border}` }}
+                >
+                  <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
+                    <img 
+                      src={getOptimizedUrl(game.background_image, 400)} 
+                      alt={game.name} 
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
+                      }}
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
+                    />
+
+                    {/* Badge‌های هوشمند روی تصویر */}
+                    <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+                      {game.size_gb ? (
+                        <span className="bg-slate-950/80 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-500/30 backdrop-blur-sm">
+                          💾 {game.size_gb} GB
+                        </span>
+                      ) : null}
+                      {game.is_popular && (
+                        <span className="bg-amber-950/80 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-500/30 backdrop-blur-sm">
+                          🔥 پرطرفدار
+                        </span>
+                      )}
+                      {game.is_coop && (
+                        <span className="bg-emerald-950/80 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-500/30 backdrop-blur-sm">
+                          👥 کوآپ
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </a>
-            ))}
+
+                  <div className="p-4 flex flex-col justify-between flex-1 space-y-3">
+                    <h3 className="font-bold text-sm text-left truncate group-hover:text-purple-500 transition" style={{ color: themeStyles.text }} dir="ltr">
+                      {game.name}
+                    </h3>
+                    
+                    <div 
+                      className="flex justify-between items-center pt-2.5 text-[11px]"
+                      style={{ borderTop: `1px solid ${darkMode ? '#020617' : '#f1f5f9'}`, color: themeStyles.subText }}
+                    >
+                      <span className="px-2 py-0.5 rounded font-bold text-purple-500 flex items-center gap-0.5" style={{ backgroundColor: themeStyles.inputBg }} dir="ltr">
+                        ⭐ {game.rating || '---'}
+                      </span>
+                      
+                      {/* دکمه افزودن به سبد سفارش */}
+                      <button
+                        onClick={(e) => addToOrderCart(game, e)}
+                        className={`px-3 py-1 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
+                          isInCart 
+                            ? 'bg-emerald-600 text-white' 
+                            : 'bg-purple-600 hover:bg-purple-500 text-white shadow-md'
+                        }`}
+                      >
+                        {isInCart ? '✔ افزوده شد' : '🛒 + افزودن به لیست'}
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         )}
 
-        {/* نمایش راهنمای بارگذاری بازی‌های بیشتر */}
         {visibleCount < filteredGames.length && (
           <div className="text-center py-8 text-xs font-bold" style={{ color: themeStyles.subText }}>
             در حال بارگذاری بازی‌های بیشتر با اسکرول...
@@ -328,6 +532,123 @@ export default function Home() {
 
       </div>
 
+      {/* 🛒 کشوی لیست سفارش زنده سمت چپ (Order List Drawer) */}
+      <div className={`fixed left-0 top-0 bottom-0 z-50 transition-all duration-300 flex ${isCartOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div 
+          className="w-80 sm:w-96 h-full p-5 flex flex-col justify-between shadow-2xl border-r border-slate-800"
+          style={{ backgroundColor: darkMode ? '#090d16' : '#ffffff', color: themeStyles.text }}
+        >
+          <div>
+            <div className="flex justify-between items-center pb-4 border-b border-slate-800">
+              <h3 className="text-sm font-black flex items-center gap-2">
+                🛒 لیست سفارش بازی‌ها ({orderCart.length})
+              </h3>
+              <button 
+                onClick={() => setIsCartOpen(false)}
+                className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-400 p-1.5 rounded-lg"
+              >
+                ✕ بستن
+              </button>
+            </div>
+
+            {/* لیست بازی‌های افزوده‌شده */}
+            <div className="mt-4 space-y-3 max-h-[calc(100vh-280px)] overflow-y-auto pr-1">
+              {orderCart.map((item) => (
+                <div 
+                  key={item.id} 
+                  className="p-2.5 rounded-xl border border-slate-800/80 flex justify-between items-center bg-slate-900/40"
+                >
+                  <div className="truncate max-w-[200px]">
+                    <p className="text-xs font-bold text-left truncate" dir="ltr">{item.name}</p>
+                    <p className="text-[10px] text-purple-400 font-mono">💾 {item.size_gb ? `${item.size_gb} GB` : 'حجم نامشخص'}</p>
+                  </div>
+                  <button 
+                    onClick={() => removeFromOrderCart(item.id)}
+                    className="text-red-400 hover:text-red-300 text-xs px-2 py-1 bg-red-950/40 hover:bg-red-900/60 rounded-lg"
+                    title="حذف از لیست"
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
+
+              {orderCart.length === 0 && (
+                <div className="text-center py-12 text-xs text-slate-500 font-medium">
+                  هنوز هیچ بازی به لیست سفارش اضافه نکرده‌اید. روی دکمه "🛒 + افزودن به لیست" کلیک کنید.
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* بخش محاسبات زنده و دکمه‌های ارسال */}
+          {orderCart.length > 0 && (
+            <div className="border-t border-slate-800 pt-4 space-y-3">
+              <div className="flex justify-between items-center text-xs font-bold">
+                <span>📊 مجموع حجم بازی‌ها:</span>
+                <span className="text-purple-400 font-mono text-sm">{getTotalOrderSize()} GB</span>
+              </div>
+
+              {copyToast && (
+                <div className="p-2 bg-green-500/20 text-green-400 border border-green-800 text-[11px] text-center font-bold rounded-xl animate-fadeIn">
+                  ✔ متن سفارش کپی شد! می‌توانید آن را بفرستید.
+                </div>
+              )}
+
+              <div className="grid grid-cols-1 gap-2 pt-1">
+                {/* دکمه ارسال مستقیم به تلگرام */}
+                <a 
+                  href={`https://t.me/HF273?text=${encodeURIComponent(generateOrderText())}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-md"
+                >
+                  ✈️ ارسال مستقیم به تلگرام (@HF273)
+                </a>
+
+                {/* دکمه ارسال به بله */}
+                <a 
+                  href={`https://ble.ir/share?text=${encodeURIComponent(generateOrderText())}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-md"
+                >
+                  🟢 ارسال به بله
+                </a>
+
+                {/* دکمه کپی متنی */}
+                <button 
+                  onClick={copyOrderTextToClipboard}
+                  className="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-bold text-center transition border border-slate-700"
+                >
+                  📋 کپی متن کامل سفارش
+                </button>
+
+                <button 
+                  onClick={clearOrderCart}
+                  className="w-full py-1.5 text-[11px] text-red-400 hover:text-red-300 text-center font-bold"
+                >
+                  🗑️ پاک کردن کل لیست سفارش
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* دکمه شناور باز کردن لیست سفارش روی صفحه */}
+      <button 
+        onClick={() => setIsCartOpen(!isCartOpen)}
+        className="fixed left-4 bottom-20 z-40 bg-purple-600 hover:bg-purple-500 text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition duration-300 transform hover:scale-105 active:scale-95"
+      >
+        <span className="text-base">🛒</span>
+        {orderCart.length > 0 && (
+          <span className="bg-amber-400 text-slate-950 text-xs font-extrabold px-2 py-0.5 rounded-full">
+            {orderCart.length}
+          </span>
+        )}
+      </button>
+
+      {/* 🔻 فوتر کشویی و جامع راهنمای سفارش و پشتیبانی */}
       <footer className="w-full mt-12 pb-6 flex flex-col items-center max-w-7xl mx-auto">
         <button
           onClick={() => setIsFooterOpen(!isFooterOpen)}
@@ -338,12 +659,12 @@ export default function Home() {
             border: `1px solid ${themeStyles.border}` 
           }}
         >
-          {isFooterOpen ? '🔼 Close Info' : '🔽 Contact & Disclaimer'}
+          {isFooterOpen ? '🔼 بستن توضیحات و راهنما' : '🔽 راهنمای سفارش، پشتیبانی و اطلاعات حقوقی'}
         </button>
 
         <div
           className={`w-full mt-4 rounded-2xl overflow-hidden transition-all duration-500 ease-in-out ${
-            isFooterOpen ? 'max-h-[600px] opacity-100 p-6 border' : 'max-h-0 opacity-0 p-0 border-none'
+            isFooterOpen ? 'max-h-[900px] opacity-100 p-6 border' : 'max-h-0 opacity-0 p-0 border-none'
           }`}
           style={{ 
             backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.3)' : 'rgba(255, 255, 255, 0.6)', 
@@ -351,43 +672,56 @@ export default function Home() {
             borderColor: themeStyles.border 
           }}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8" dir="rtl">
-            <div className="flex-1 text-right space-y-4">
-              <h4 className="text-xs font-black text-purple-500 mb-1">⚖️ Disclaimer & Source / اطلاعات حقوقی</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8" dir="rtl">
+            {/* 📖 راهنمای ثبت سفارش */}
+            <div className="space-y-3">
+              <h4 className="text-xs font-black text-purple-500 flex items-center gap-1.5">
+                📖 راهنمای ثبت سفارش بازی
+              </h4>
               <p className="text-[12px] leading-6" style={{ color: themeStyles.subText }}>
-                این وب‌سایت یک آرشیو شخصی برای معرفی بازی‌های ویدیویی است. اطلاعات و تصاویر این آرشیو از منابع شخص ثالث مانند{' '}
-                <a 
-                  href="https://rawg.io/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-purple-500 hover:underline font-mono font-bold"
-                >
-                  RAWG
-                </a>{' '}
-                به صورت کاملاً خودکار جمع‌آوری و دریافت می‌شوند. تمامی حقوق مربوط به بازی‌ها، تصاویر، لوگوها و علائم تجاری متعلق به سازندگان و ناشران اصلی بازی می‌باشد. 
-                در صورت وجود هرگونه درخواست حذف یا اصلاح محتوا، لطفاً از طریق راه‌های ارتباطی سایت اطلاع دهید.
-              </p>
-              <p className="text-[11px] leading-5 text-left font-mono opacity-75 pt-2 border-t border-dashed" style={{ color: themeStyles.subText, borderColor: themeStyles.border }} dir="ltr">
-                This website is a personal archive for video game presentation. All data and media are automatically fetched and collected from third-party platforms like{' '}
-                <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline font-bold">RAWG</a>. 
-                All rights, logos, and trademarks belong to their respective owners and publishers. 
-                For any content removal or correction requests, please reach out via contact links.
+                1️⃣ بازی‌های مورد نظر خود را از لیست آرشیو انتخاب کرده و روی گزینه <b>"🛒 + افزودن به لیست"</b> کلیک کنید.<br />
+                2️⃣ دکمه شناور سبد خریدا ک باز کنید تا لیست تمام بازی‌های انتخابی و <b>حجم کلی</b> آن‌ها را مشاهده کنید.<br />
+                3️⃣ پس از نهایی شدن، دکمه <b>"ارسال به تلگرام"</b> یا <b>"ارسال به بله"</b> را بزنید تا متن سفارش برای پشتیبانی ارسال شود و قیمت نهایی خدمت شما اعلام گردد.
               </p>
             </div>
 
-            <div className="flex flex-col items-center md:items-end gap-2 min-w-[150px]">
-              <h4 className="text-xs font-black text-purple-500 mb-1 font-mono" dir="ltr">📬 Contact Me</h4>
-              <div className="flex gap-3 mt-1">
+            {/* 📞 ارتباط با پشتیبانی */}
+            <div className="space-y-3">
+              <h4 className="text-xs font-black text-purple-500 flex items-center gap-1.5">
+                📞 راهنمای ارتباط با پشتیبانی
+              </h4>
+              <p className="text-[12px] leading-6" style={{ color: themeStyles.subText }}>
+                جهت هرگونه سوال، استعلام قیمت، درخواست بازی‌های جدید خارج از لیست یا پیگیری سفارش با راه‌های زیر در ارتباط باشید:
+              </p>
+              <div className="flex flex-col gap-2 pt-1">
                 <a
-                  href=""
+                  href="https://t.me/HF273"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-2 rounded-xl text-xs font-bold font-mono transition hover:bg-sky-500 hover:text-white"
+                  className="px-3 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 hover:bg-sky-600 hover:text-white"
                   style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
                 >
-                  Telegram
+                  ✈️ آیدی تلگرام: <span className="font-mono text-purple-400">@HF273</span>
                 </a>
+                <div 
+                  className="px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-2 opacity-80"
+                  style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
+                >
+                  🟢 پشتیبانی بله / اینستاگرام: (به‌زودی اضافه می‌شود)
+                </div>
               </div>
+            </div>
+
+            {/* ⚖️ اطلاعات حقوقی و دیسکلایمر */}
+            <div className="space-y-3">
+              <h4 className="text-xs font-black text-purple-500 flex items-center gap-1.5">
+                ⚖️ اطلاعات حقوقی (Disclaimer)
+              </h4>
+              <p className="text-[12px] leading-6" style={{ color: themeStyles.subText }}>
+                این وب‌سایت یک آرشیو شخصی برای معرفی بازی‌های ویدیویی است. اطلاعات و تصاویر این آرشیو از منابع شخص ثالث مانند{' '}
+                <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:underline font-mono font-bold">RAWG</a>{' '}
+                دریافت می‌شوند. تمامی حقوق متعلق به سازندگان اصلی بازی‌ها می‌باشد.
+              </p>
             </div>
           </div>
         
@@ -396,12 +730,7 @@ export default function Home() {
             style={{ borderTop: `1px dashed ${themeStyles.border}`, color: themeStyles.subText }}
           >
             Developed with <span className="text-purple-500 animate-pulse">💜</span> by{' '}
-            <a 
-              href="https://gemini.google.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-purple-500 font-bold hover:underline"
-            >
+            <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" className="text-purple-500 font-bold hover:underline">
               Gemini
             </a>
           </div>
