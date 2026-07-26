@@ -35,7 +35,9 @@
     "description_en": "Alan Wake 2 is a survival horror game with an intense atmosphere and a twisted, layered, psychological story - it is the long awaited sequel to Remedy Entertainment's award-winning 2010 psychological thriller, Alan Wake, and 2021's Alan Wake Remastered.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAlan Wake 2 یک بازی ترسناک بقا با فضایی شدید و داستانی پیچیده، لایه‌ای و روان‌شناختی است - این بازی دنباله‌ای است که مدت‌ها انتظارش را می‌کشیدیم تا فیلم هیجان‌انگیز روان‌شناختی 2010 Remedy Entertainment، Alan Wake، و Alan Wake Remastered در سال 2021 برنده جایزه شود.",
     "size_gb": 90,
-    "system_tier": "heavy"
+    "system_tier": "heavy",
+    "is_popular": true,
+    "is_coop": true
   },
   {
     "id": 2123,
