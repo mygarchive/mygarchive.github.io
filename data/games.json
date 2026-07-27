@@ -29,8 +29,8 @@
       "https://media.rawg.io/media/games/5b9/5b963d7633cd640fa2dbc4069d1c6377.jpg"
     ],
     "requirements": {
-      "minimum": "OS:        Windows 10/11 64-bit\nCPU:       Intel Core i5-7600K\n           AMD equivalent\nRAM:       16 GB\nGPU:       GeForce GTX 1070\n           Radeon RX 5600 XT\nStorage:   90 GB SSD\nمناسب برای اجرای پایه در 1080p / 30 FPS / Low.",
-      "recommended": "OS:        Windows 10/11 64-bit\nCPU:       AMD Ryzen 7 3700X\n           Intel equivalent\nRAM:       16 GB\nGPU:       GeForce RTX 3070\n           Radeon RX 6700 XT\nStorage:   90 GB SSD\nبرای 1080p / 60 FPS روی تنظیمات متوسط، سیستم پیشنهادی جدید به کارت گرافیکی قوی‌تری نیاز دارد."
+      "minimum": "OS:        Windows 10/11 64-bit\nCPU:       Intel Core i5-7600K / AMD equivalent\nRAM:       16 GB\nGPU:       NVIDIA GeForce GTX 1070 / AMD Radeon RX 5600 XT\nStorage:   90 GB SSD\nمناسب برای اجرای پایه در 1080p / 30 FPS / Low.",
+      "recommended": "OS:        Windows 10/11 64-bit\nCPU:       AMD Ryzen 7 3700X / Intel equivalent\nRAM:       16 GB\nGPU:       NVIDIA GeForce RTX 3060 / AMD Radeon RX 6600 XT\nStorage:   90 GB SSD\nبرای 1080p / 60 FPS روی تنظیمات متوسط، سیستم پیشنهادی جدید به کارت گرافیکی قوی‌تری نیاز دارد."
     },
     "description_en": "Alan Wake 2 is a survival horror game with an intense atmosphere and a twisted, layered, psychological story - it is the long awaited sequel to Remedy Entertainment's award-winning 2010 psychological thriller, Alan Wake, and 2021's Alan Wake Remastered.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAlan Wake 2 یک بازی ترسناک بقا با فضایی شدید و داستانی پیچیده، لایه‌ای و روان‌شناختی است - این بازی دنباله‌ای است که مدت‌ها انتظارش را می‌کشیدیم تا فیلم هیجان‌انگیز روان‌شناختی 2010 Remedy Entertainment، Alan Wake، و Alan Wake Remastered در سال 2021 برنده جایزه شود.",
