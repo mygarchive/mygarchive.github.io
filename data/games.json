@@ -9771,57 +9771,5 @@
     "is_popular": false,
     "is_coop": false,
     "system_tier": "unspecified"
-  },
-  {
-    "id": 50576,
-    "name": "Atomic Heart",
-    "background_image": "https://media.rawg.io/media/games/6ee/6ee5cbe30c6b6c299a3288337d40a0f3.jpg",
-    "rating": 3.85,
-    "metacritic": 73,
-    "released": "2023-02-21",
-    "genres": [
-      {
-        "id": 2,
-        "name": "Shooter",
-        "slug": "shooter"
-      },
-      {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure"
-      },
-      {
-        "id": 4,
-        "name": "Action",
-        "slug": "action"
-      }
-    ],
-    "esrb_rating": "+17",
-    "playtime": 12,
-    "developers": "Mundfish",
-    "steam_link": "https://store.steampowered.com/app/668580/",
-    "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256690860/movie_max.mp4",
-    "youtube_videos": [
-      "https://steamcdn-a.akamaihd.net/steam/apps/256690860/movie_max.mp4"
-    ],
-    "gallery": [
-      "https://media.rawg.io/media/screenshots/f59/f59298bdce2cd51d28c2a46aeddd9a9f.jpg",
-      "https://media.rawg.io/media/screenshots/52a/52a0f657a5fbf3e220b22739404cecd4.jpg",
-      "https://media.rawg.io/media/screenshots/12b/12b33cfc01c780da30287b65aec62d53.jpg",
-      "https://media.rawg.io/media/screenshots/d50/d500c240afcdee44a7c3ec2a35489c91.jpg",
-      "https://media.rawg.io/media/screenshots/d89/d8962f1e7adedff4949092aaa30dee95.jpg",
-      "https://media.rawg.io/media/screenshots/134/134679b2092b40a761e44dfc4eb4bb03.jpg",
-      "https://media.rawg.io/media/games/6ee/6ee5cbe30c6b6c299a3288337d40a0f3.jpg"
-    ],
-    "requirements": {
-      "minimum": "OS: WINDOWS® 7, 8, 8.1, 10 (64-BIT Required)\nProcessor: Intel® Core™ i5-4460, 2.70GHz or AMD FX™-6300 or better\nMemory: 6 GB RAM\nGraphics: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM\nStorage: 22 GB available space",
-      "recommended": "OS: WINDOWS® 7, 8, 8.1, 10 (64-BIT Required)\nProcessor: Intel® Core™ i7 3770 3.4GHz or AMD equivalent or better\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1060 with 3GB VRAM\nStorage: 22 GB available space"
-    },
-    "description_en": "Atomic Heart is an adventure first-person shooter, events of which unfolds in an alternate universe during the high noon of the Soviet Union. The principal character of the game is a special agent P-3, who after an unsuccessful landing on enterprise \"3826\" is trying to figure out what went wrong and to clear up a factory from went mad robots.\nAs of the game P-3 will receive a lot of weapon in his armory, there will be several quests, and he will learn to destroy one robot after another silently in order to clear his way to the event hall, where he will meet a main enemy - a huge robot with tentacles.\nA crazy Soviet setting, a hurricane action and a terrific story will not let you sleep even if you were born in the USSR. Restore peace and order and show us the best you can!",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nخطا در ارتباط با سرور ترجمه.",
-    "size_gb": 6,
-    "is_popular": false,
-    "is_coop": false,
-    "system_tier": "unspecified"
   }
 ]
