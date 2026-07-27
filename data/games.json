@@ -10093,5 +10093,49 @@
     "is_popular": false,
     "is_coop": false,
     "system_tier": "unspecified"
+  },
+  {
+    "id": 14348,
+    "name": "Dying Light: The Following - Enhanced Edition",
+    "background_image": "https://media.rawg.io/media/games/c11/c11a0b92b4c28f2e0db489f430142653.jpg",
+    "metacritic": 87,
+    "released": "2015-01-26",
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 17,
+    "developers": "Techland",
+    "steam_link": "https://store.steampowered.com/search/?term=Dying%20Light%3A%20The%20Following%20-%20Enhanced%20Edition",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/495/495dd54b0ac4609d0f3dcdfc8f661f70.jpg",
+      "https://media.rawg.io/media/screenshots/a34/a34bbb07f19db3ad25004d3baf15b251.jpg",
+      "https://media.rawg.io/media/screenshots/eb3/eb35310e06697e3140870d528926adbe.jpg",
+      "https://media.rawg.io/media/screenshots/b17/b17fe0339b64e2d690bab6eec3224fdc.jpg",
+      "https://media.rawg.io/media/screenshots/a83/a83e7481c29f38c14bb63df7f134c818.jpg",
+      "https://media.rawg.io/media/screenshots/937/93756e2340aa27eefa317e4260b6900d.jpg",
+      "https://media.rawg.io/media/games/c11/c11a0b92b4c28f2e0db489f430142653.jpg"
+    ],
+    "requirements": {
+      "minimum": "OS: Windows® 7 64-bit / Windows® 8 64-bit / Windows® 8.1 64-bit\nProcessor: Intel® Core™ i5-2500 @3.3 GHz / AMD FX-8320 @3.5 GHz\nMemory: 4 GB RAM DDR3\nHard Drive: 40 GB free space\nGraphics: NVIDIA® GeForce® GTX 560 / AMD Radeon™ HD 6870 (1GB VRAM)\n        DirectX®: Version 11\n        Sound: DirectX® compatible\n        Additional Notes: Laptop versions of graphics cards may work but are NOT officially supported.\n\nWindows-compatible keyboard, mouse, optional controller (Xbox 360 Controller for Windows recommended)",
+      "recommended": "OS: Windows® 7 64-bit / Windows® 8 64-bit / Windows® 8.1 64-bit\nProcessor: Intel® Core™ i5-4670K @3.4 GHz / AMD FX-8350 @4.0 GHz \nMemory: 8 GB RAM DDR3\nHard Drive: 40 GB free space\nGraphics: NVIDIA® GeForce® GTX 780 / AMD Radeon™ R9 290 (2GB VRAM)\n        DirectX®: Version 11\n        Sound: DirectX® compatible\n        Additional Notes: Laptop versions of graphics cards may work but are NOT officially supported.\n\nWindows-compatible keyboard, mouse, optional controller (Xbox 360 Controller for Windows recommended)"
+    },
+    "description_en": "Dying Light series introduces a world that was hit by a zombie virus outbreak. Under the daylight, zombies are weak and slow, but after the sunset, they become fast, strong and hungry for human flesh. You play as Kyle Crane, a special operative sent to the Harran city, which became a quarantined zone after the outbreak. In the expansion pack The Following, he learns about a cure for the plague, supposedly invented by a sect, and sets off to find out more about it. Crane will travel the countryside open world that is twice the size of the original game’s map. To fight off zombies, Crane will use not only a variety of weapons but also parkour movements, which are the definitive feature in Dying Light gameplay.\nThe Following introduces new weapons, several new game modes, such as bounty hunting which gives the player a new mission every day. The expansion allows the player to drive a buggy to run zombies over. There is a four-person multiplayer mode, and also the “Be the Zombie” mode, in which players can assume the role of a huge, powerful zombie. The Enhanced Edition includes the original game, the expansion pack, and all the available DLCs, such as Cuisine & Cargo and The Bozak Horde.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسری Dying Light دنیایی را معرفی می کند که با شیوع ویروس زامبی آسیب دیده است. در زیر نور روز، زامبی ها ضعیف و کند هستند، اما پس از غروب آفتاب، سریع، قوی و تشنه گوشت انسان می شوند. شما در نقش کایل کرین بازی می کنید، یک مامور ویژه که به شهر هاران فرستاده شده است، که پس از شیوع بیماری به یک منطقه قرنطینه تبدیل شد. در بسته الحاقی The Following، او در مورد درمانی برای طاعون که ظاهراً توسط یک فرقه اختراع شده است، می‌آموزد و به دنبال یافتن اطلاعات بیشتر در مورد آن می‌شود. کرین به دنیای باز حومه شهر سفر خواهد کرد که دو برابر نقشه بازی اصلی است. برای مبارزه با زامبی ها، کرین نه تنها از انواع سلاح ها بلکه از حرکات پارکور نیز استفاده می کند که ویژگی قطعی گیم پلی Dying Light است.\nدر ادامه اسلحه‌های جدید، چندین حالت بازی جدید، مانند Bounty Hunting که به بازیکن هر روز یک ماموریت جدید می‌دهد، معرفی می‌شود. گسترش به بازیکن اجازه می دهد تا باگی را براند تا زامبی ها را اجرا کند. یک حالت چند نفره چهار نفره و همچنین حالت “Be the Zombie” وجود دارد که در آن بازیکنان می توانند نقش یک زامبی بزرگ و قدرتمند را بر عهده بگیرند. نسخه پیشرفته شامل بازی اصلی، بسته الحاقی و تمام DLC های موجود مانند Cuisine & Cargo و The Bozak Horde است.",
+    "size_gb": 40,
+    "is_popular": false,
+    "is_coop": false,
+    "system_tier": "unspecified"
   }
 ]
