@@ -3,13 +3,30 @@
 import localGamesData from '../../data/games.json';
 
 export default function CatalogPDF() {
-  // مرتب‌سازی خودکار بازی‌ها بر اساس حروف الفبا (شامل بازی‌های جدید و ویرایش‌شده)
+  // مرتب‌سازی خودکار بازی‌ها بر اساس حروف الفبا
   const sortedGames = [...localGamesData].sort((a: any, b: any) => 
     a.name.localeCompare(b.name, 'en', { sensitivity: 'accent' })
   );
 
   return (
     <div className="min-h-screen bg-white text-black p-6" dir="rtl">
+      {/* 🛑 استایل اختصاصی برای جلوگیری از برش متن و سه نقطه در خروجی PDF */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media print {
+          body {
+            background-color: white !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          h2 {
+            white-space: normal !important;
+            overflow: visible !important;
+            text-overflow: unset !important;
+            display: block !important;
+          }
+        }
+      `}} />
+
       {/* هدر کاتالوگ */}
       <div className="text-center mb-6 pb-4 border-b-2 border-gray-800">
         <h1 className="text-3xl font-black mb-1">لیست دیتای بازی‌های کامپیوتری</h1>
@@ -35,7 +52,7 @@ export default function CatalogPDF() {
               />
             </div>
             
-            {/* اسم بازی (بدون محدودیت خط، تا نام‌های طولانی کاملاً و بدون ... نمایش داده شوند) */}
+            {/* اسم بازی (بدون برش و بدون سه نقطه در پرینت) */}
             <h2 
               className="text-[11px] font-black text-center w-full leading-tight mb-3" 
               dir="ltr"
