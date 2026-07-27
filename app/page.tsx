@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import localGamesData from '../data/games.json';
 
 // 🌐 دیکشنری معادل‌های فارسی ژانرها
@@ -56,6 +56,7 @@ export default function Home() {
 
   // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی
   const [visibleCount, setVisibleCount] = useState<number>(12);
+  const loaderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -75,14 +76,12 @@ export default function Home() {
   const initData = async () => {
     try {
       let data: any[] = Array.isArray(localGamesData) ? localGamesData : [];
-      // حذف cacheBuster برای استفاده از کش مرورگر و افزایش سرعت لود اولیه
       const targetUrl = `https://raw.githubusercontent.com/mygarchive/mygarchive.github.io/main/data/games.json`;
       
       let fetchedData = null;
 
       try {
         const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-        // برداشتن no-store برای لایه اول تا اطلاعات کش شوند
         const res = await fetch(proxyUrl);
         if (res.ok) fetchedData = await res.json();
       } catch (e) { console.warn("لایه ۱ ناموفق بود."); }
@@ -98,7 +97,6 @@ export default function Home() {
         data = fetchedData;
       }
 
-      // هرس داده‌های اولیه
       setGames(data);
       setFilteredGames(data);
 
@@ -124,33 +122,38 @@ export default function Home() {
     initData();
   }, []);
 
+  // دکمه بازگشت به بالا و مدیریت اسکرول معمولی صفحه
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
-
-      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 800) {
-        setVisibleCount((prev) => {
-          if (prev < filteredGames.length) {
-            return prev + 12;
-          }
-          return prev;
-        });
-      }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // 🚀 سیستم لود تدریجی هوشمند با Intersection Observer (بارگذاری ۲ ردیف جدید با رسیدن به انتها)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) => Math.min(prev + 12, filteredGames.length));
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (loaderRef.current) {
+      observer.observe(loaderRef.current);
+    }
+
+    return () => {
+      if (loaderRef.current) {
+        observer.unobserve(loaderRef.current);
+      }
+    };
   }, [filteredGames.length]);
 
-  useEffect(() => {
-    if (!loading && filteredGames.length > visibleCount) {
-      if (document.documentElement.scrollHeight <= window.innerHeight) {
-        setVisibleCount((prev) => prev + 12);
-      }
-    }
-  }, [visibleCount, filteredGames.length, loading]);
-
-  // 🔍 فیلتر جامع داده‌ها
+  // 🔍 فیلتر جامع داده‌ها و ریست شدن شمارنده نمایشی به ۱۲ عدد
   useEffect(() => {
     let result = [...games];
 
@@ -162,7 +165,6 @@ export default function Home() {
       result = result.filter((game) => game.name?.toLowerCase().includes(searchQuery.toLowerCase()));
     }
 
-    // اعمال فیلتر حجم پله‌ای
     const selectedSizeLimit = SIZE_STEPS[sizeIndex];
     if (selectedSizeLimit < 200) {
       result = result.filter((game) => {
@@ -192,7 +194,6 @@ export default function Home() {
         return dateB - dateA;
       });
     } else if (sortBy === 'rating') {
-      // استفاده از نمره منتقدین (metacritic) به جای نمره سایت منبع
       result.sort((a, b) => (parseFloat(b.metacritic) || 0) - (parseFloat(a.metacritic) || 0));
     }
 
@@ -263,6 +264,9 @@ export default function Home() {
     inputBg: darkMode ? '#020617' : 'rgba(255, 255, 255, 0.6)',
     footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'
   };
+
+  // برش زدن لیست بازی‌ها بر اساس مقدار visibleCount برای جلوگیری از کندی DOM
+  const visibleGames = filteredGames.slice(0, visibleCount);
 
   if (loading) {
     return (
@@ -439,7 +443,7 @@ export default function Home() {
           <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
-            {filteredGames.slice(0, visibleCount).map((game) => {
+            {visibleGames.map((game) => {
               const isInCart = orderCart.some((g) => g.id === game.id);
 
               return (
@@ -463,14 +467,13 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
                     />
 
-<div className="absolute top-2 right-2 flex flex-wrap gap-1">
+                    <div className="absolute top-2 right-2 flex flex-wrap gap-1">
                       {game.size_gb ? (
                         <span className="bg-slate-950/80 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-500/30 backdrop-blur-sm">
                           💾 {game.size_gb} GB
                         </span>
                       ) : null}
                       
-                      {/* 📅 تگ سال ساخت روی کاور */}
                       {game.released && (
                         <span className="bg-slate-950/80 text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-slate-600/30 backdrop-blur-sm">
                           📅 {game.released.split('-')[0]}
@@ -521,9 +524,10 @@ export default function Home() {
           </div>
         )}
 
+        {/* 🔻 عنصر ناظر (Intersection Observer Target) برای لود تدریجی با اسکرول */}
         {visibleCount < filteredGames.length && (
-          <div className="text-center py-8 text-xs font-bold" style={{ color: themeStyles.subText }}>
-            در حال بارگذاری بازی‌های بیشتر با اسکرول...
+          <div ref={loaderRef} className="text-center py-10 text-xs font-bold" style={{ color: themeStyles.subText }}>
+            در حال بارگذاری بازی‌های بیشتر...
           </div>
         )}
 
@@ -531,7 +535,6 @@ export default function Home() {
 
       {/* 🛒 کشوی لیست سفارش (Mobile Optimized Backdrop) */}
       <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isCartOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        {/* هاله تاریک کلیک‌خوار برای بستن منو در موبایل */}
         <div 
           className="absolute inset-0 bg-black/60 backdrop-blur-sm" 
           onClick={() => setIsCartOpen(false)}
