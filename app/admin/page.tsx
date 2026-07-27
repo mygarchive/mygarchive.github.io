@@ -26,14 +26,28 @@ async function translateToPersian(text: string): Promise<string> {
 const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
-// 🧠 استخراج خودکار عدد حجم از متن سیستم مورد نیاز
+// 🧠 استخراج خودکار عدد حجم از متن سیستم مورد نیاز (نسخه اصلاح‌شده و دقیق)
 const extractSizeFromReqText = (reqText: string): number | null => {
   if (!reqText) return null;
-  const match = reqText.match(/(?:storage|space|disk|hdd|ssd|حجم|حافظه)?\s*:?\s*(\d+(?:\.\d+)?)\s*(?:gb|giga|گیگابایت|گیگا)/i);
-  if (match && match[1]) {
-    const val = parseFloat(match[1]);
-    return isNaN(val) ? null : val;
+  
+  // کلمات مربوط به هارد (الزامی) + نادیده گرفتن کلمات اضافه وسط + استخراج عدد و واحد
+  const match = reqText.match(/(?:storage|space|disk|hdd|ssd|حجم|حافظه)[\s\S]*?(\d+(?:\.\d+)?)\s*(gb|mb|giga|گیگابایت|گیگا|مگابایت|مگا)/i);
+  
+  if (match && match[1] && match[2]) {
+    const amount = parseFloat(match[1]);
+    if (isNaN(amount)) return null;
+
+    const unit = match[2].toLowerCase();
+    
+    // اگر واحد مگابایت بود، آن را به گیگابایت تبدیل می‌کنیم
+    if (unit === 'mb' || unit === 'مگابایت' || unit === 'مگا') {
+      return parseFloat((amount / 1024).toFixed(2));
+    }
+    
+    // در غیر این صورت همان مقدار گیگابایت برمی‌گردد
+    return amount;
   }
+  
   return null;
 };
 
