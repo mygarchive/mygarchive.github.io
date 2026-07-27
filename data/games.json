@@ -718,7 +718,9 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10\nProcessor: Intel™ Core i7-3770 or AMD Ryzen™ 5 1600\nMemory: 8 GB RAM\nGraphics: GeForce GTX 1060 6 GB or AMD Radeon™ RX 590\nDirectX: Version 12\nStorage: 80 GB available space\nSound Card: DirectX compatible\nAdditional Notes: AVX instruction set required"
     },
     "description_en": "Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the stranded remnants of the future in his hands, Sam embarks on a journey to reunite the shattered world one step at a time. What is the mystery of the Death Stranding? What will Sam discover on the road ahead? A genre defining gameplay experience holds these answers and more.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسم بریجز باید در دنیایی که کاملاً توسط Death Stranding دگرگون شده است، شجاعت کند. سام با حمل بقایای سرگردان آینده در دستان خود، سفری را آغاز می کند تا جهان از هم پاشیده را یک قدم در یک زمان دوباره متحد کند. رمز و راز Death Stranding چیست؟ سام در جاده پیش رو چه چیزی را کشف خواهد کرد؟ تجربه گیم پلی تعیین کننده ژانر این پاسخ ها و موارد دیگر را در اختیار دارد."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسم بریجز باید در دنیایی که کاملاً توسط Death Stranding دگرگون شده است، شجاعت کند. سام با حمل بقایای سرگردان آینده در دستان خود، سفری را آغاز می کند تا جهان از هم پاشیده را یک قدم در یک زمان دوباره متحد کند. رمز و راز Death Stranding چیست؟ سام در جاده پیش رو چه چیزی را کشف خواهد کرد؟ تجربه گیم پلی تعیین کننده ژانر این پاسخ ها و موارد دیگر را در اختیار دارد.",
+    "system_tier": "normal",
+    "size_gb": 80
   },
   {
     "id": 891532,
