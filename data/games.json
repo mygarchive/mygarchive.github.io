@@ -6366,7 +6366,7 @@
     "name": "Dragon Age: The Veilguard",
     "background_image": "https://media.rawg.io/media/games/4c5/4c5a391237b78ea96aeff8206f63d3f5.jpg",
     "rating": 2.79,
-    "metacritic": null,
+    "metacritic": 80,
     "released": "2024-10-31",
     "genres": [
       {
@@ -6375,8 +6375,8 @@
         "slug": "role-playing-games-rpg"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 0,
+    "esrb_rating": "+17",
+    "playtime": 50,
     "developers": "BioWare",
     "steam_link": "https://store.steampowered.com/app/1845910/",
     "trailer_url": "",
@@ -6389,11 +6389,14 @@
       "https://media.rawg.io/media/games/4c5/4c5a391237b78ea96aeff8206f63d3f5.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 10 / 11 64-bit\n\nCPU:       Intel Core i5-8400\n           AMD Ryzen 3 3300X\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce GTX 970\n           NVIDIA GeForce GTX 1650\n           AMD Radeon R9 290X\n\nDirectX:   Version 12\n\nStorage:   100 GB\n\nAdditional:\nSSD Preferred\nHDD Supported",
+      "recommended": "OS:        Windows 10 / 11 64-bit\n\nCPU:       Intel Core i9-9900K\n           AMD Ryzen 7 3700X\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce RTX 2070\n           AMD Radeon RX 5700 XT\n\nDirectX:   Version 12\n\nStorage:   100 GB SSD"
     },
     "description_en": "The Dread Wolf Rises\nI suspect you have questions.\n\nThe world of Dragon Age needs a new hero – someone who can take on the evil forces threatening Thedas. Get a first look at some of the new locations you’ll discover and the factions fighting by your side in the next chapter of Dragon Age.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nگرگ ترسناک برمی خیزد\nمن گمان می کنم که شما سوالاتی دارید.\n\nدنیای Dragon Age به یک قهرمان جدید نیاز دارد - کسی که بتواند با نیروهای شیطانی تهدید کننده Thedas مقابله کند. در فصل بعدی Dragon Age ابتدا به برخی از مکان‌های جدیدی که کشف خواهید کرد و گروه‌هایی که در کنار شما می‌جنگند، نگاه کنید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nگرگ ترسناک برمی خیزد\nمن گمان می کنم که شما سوالاتی دارید.\n\nدنیای Dragon Age به یک قهرمان جدید نیاز دارد - کسی که بتواند با نیروهای شیطانی تهدید کننده Thedas مقابله کند. در فصل بعدی Dragon Age ابتدا به برخی از مکان‌های جدیدی که کشف خواهید کرد و گروه‌هایی که در کنار شما می‌جنگند، نگاه کنید.",
+    "is_popular": true,
+    "system_tier": "normal",
+    "size_gb": 100
   },
   {
     "id": 987516,
