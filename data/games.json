@@ -285,7 +285,7 @@
     "name": "Brothers: A Tale of Two Sons Remake",
     "background_image": "https://media.rawg.io/media/games/dae/dae322f5d859b49835f4259d0ea764b7.jpg",
     "rating": 3.76,
-    "metacritic": null,
+    "metacritic": 78,
     "released": "2024-02-27",
     "genres": [
       {
@@ -299,8 +299,8 @@
         "slug": "adventure"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 4,
+    "esrb_rating": "+10",
+    "playtime": 7,
     "developers": "Avantgarden",
     "steam_link": "https://store.steampowered.com/app/2153350/",
     "trailer_url": "",
@@ -320,7 +320,9 @@
     },
     "description_en": "Guide two brothers on an epic fairy tale filled with discovery, loss, adventure, and mystery.\nWith their father suffering from a deadly illness, two brothers must bravely set out to find the “Water of Life,” the one cure that can save him. With no option for failure the brothers must rely on each other using their individual skills to protect one another and overcome the obstacles ahead in this unforgettable journey.\nA TIMELESS CLASSIC REMADE\nHailed by critics when it was originally released, Brothers: A Tale of Two Sons is back! Faithful to the gameplay and touching story from 2013, Brothers: A Tale of Two Sons Remake features rebuilt characters and landscapes based on the original and has been updated to the latest generation of graphics, performance, and gameplay. Paired with a re-recorded soundtrack with a live orchestra, prepare for an emotional experience that will take your adventure to all new heights.\nEMBARK ON A FANTASTICAL EPIC\nSolve puzzles, discover hidden stories, traverse dangerous locations, and fight deadly bosses. In single-player mode, navigate this story as both brothers in tandem or play in local co-op with a friend, each controlling one of the brothers as you play together.\nGET IMMERSED IN THE EMOTIONAL WORLD OF BROTHERS\nBrothers: A Tale of Two Sons is full of hidden details that reward those who seek them out. In addition to the original hidden treats and rich storyline, the remake has added new secrets to be discovered.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدو برادر را در یک افسانه حماسی پر از کشف، از دست دادن، ماجراجویی و رمز و راز راهنمایی کنید.\nدر حالی که پدرشان از یک بیماری کشنده رنج می برد، دو برادر باید شجاعانه به دنبال «آب زندگی» بروند، درمانی که می تواند او را نجات دهد. بدون هیچ گزینه ای برای شکست، برادران باید با استفاده از مهارت های فردی خود به یکدیگر اعتماد کنند تا از یکدیگر محافظت کنند و بر موانع پیش رو در این سفر فراموش نشدنی غلبه کنند.\nیک بازسازی کلاسیک بی انتها\nBrothers: A Tale of Two Sons در زمان انتشار اولیه مورد استقبال منتقدان قرار گرفت! وفادار به گیم پلی و داستان تاثیرگذار از سال 2013، Brothers: A Tale of Two Sons Remake دارای شخصیت ها و مناظر بازسازی شده بر اساس نسخه اصلی است و به آخرین نسل گرافیک، عملکرد و گیم پلی به روز شده است. همراه با یک موسیقی متن دوباره ضبط شده با یک ارکستر زنده، برای یک تجربه احساسی آماده شوید که ماجراجویی شما را به ارتفاعات جدید خواهد برد.\nوارد یک حماسه خارق العاده شوید\nپازل ها را حل کنید، داستان های پنهان را کشف کنید، از مکان های خطرناک عبور کنید و با رئیس های مرگبار مبارزه کنید. در حالت تک‌نفره، این داستان را به‌عنوان هر دو برادر در پشت سر هم هدایت کنید یا به صورت محلی با یک دوست بازی کنید و هر کدام یکی از برادران را در حین بازی کنترل می‌کنند.\nدر دنیای عاطفی برادران غوطه ور شوید\nBrothers: A Tale of Two Sons پر از جزئیات پنهان است که به کسانی که به دنبال آنها هستند پاداش می دهد. علاوه بر غذاهای مخفی اصلی و داستان غنی، بازسازی اسرار جدیدی برای کشف اضافه کرده است.",
-    "size_gb": 17
+    "size_gb": 17,
+    "system_tier": "heavy",
+    "is_coop": true
   },
   {
     "id": 52215,
