@@ -26,33 +26,46 @@ async function translateToPersian(text: string): Promise<string> {
 const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
-// 🧠 استخراج قطعی عدد حجم با تکنیک برش متن (قیچی کردن رم)
+// 🧠 استخراج ۱۰۰٪ دقیق حجم هارد از مشخصات انگلیسی
 const extractSizeFromReqText = (reqText: string): number | null => {
   if (!reqText) return null;
-  const lowerText = reqText.toLowerCase();
 
-  // پیدا کردن ایندکس (موقعیت) کلماتی که مربوط به فضای ذخیره‌سازی هستند
-  const storageIndex = lowerText.search(/(storage|hard drive|disk space|hdd|ssd|حجم|فضای مورد نیاز)/);
+  // متن را خط به خط جدا می‌کنیم
+  const lines = reqText.split('\n');
 
-  if (storageIndex !== -1) {
-    // بریدن متن از قسمت هارد به بعد (حذف کامل اطلاعات رم و گرافیک)
-    const storageText = lowerText.substring(storageIndex);
-    
-    // پیدا کردن اولین عدد و واحد (گیگابایت/مگابایت) در متنِ قیچی شده
-    const match = storageText.match(/(\d+(?:\.\d+)?)\s*(gb|mb|giga|گیگابایت|مگابایت)/);
+  for (const line of lines) {
+    const lowerLine = line.toLowerCase();
 
-    if (match && match[1] && match[2]) {
-      const amount = parseFloat(match[1]);
-      if (isNaN(amount)) return null;
-      
-      const unit = match[2];
-      // اگر واحد مگابایت بود، تبدیل به گیگابایت شود
-      if (unit.startsWith('mb') || unit.startsWith('مگا')) {
-        return parseFloat((amount / 1024).toFixed(2));
+    // بررسی خطوط مربوط به فضای ذخیره‌سازی
+    const isStorageLine = 
+      lowerLine.includes('storage') || 
+      lowerLine.includes('hard drive') || 
+      lowerLine.includes('disk') || 
+      lowerLine.includes('hdd') || 
+      lowerLine.includes('ssd') || 
+      lowerLine.includes('space');
+
+    // بررسی اینکه خط مربوط به رم یا مموری نباشد
+    const isMemoryLine = 
+      lowerLine.includes('memory') || 
+      lowerLine.includes('ram');
+
+    // اگر خط شامل هارد بود و کلمات رم را نداشت
+    if (isStorageLine && !isMemoryLine) {
+      const match = line.match(/(\d+(?:\.\d+)?)\s*(gb|mb|giga)/i);
+      if (match && match[1]) {
+        const amount = parseFloat(match[1]);
+        const unit = (match[2] || '').toLowerCase();
+        if (!isNaN(amount)) {
+          if (unit.startsWith('mb')) {
+            return parseFloat((amount / 1024).toFixed(2));
+          }
+          return amount;
+        }
       }
-      return amount;
     }
   }
+
   return null;
 };
 
