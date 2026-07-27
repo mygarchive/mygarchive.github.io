@@ -1,6 +1,6 @@
 'use client';
 
-import localGamesData from '../../data/games.json'; // مسیر فایل جیسون را در صورت نیاز اصلاح کنید
+import localGamesData from '../../data/games.json';
 
 export default function CatalogPDF() {
   return (
@@ -15,11 +15,11 @@ export default function CatalogPDF() {
 
       {/* چیدمان شبکه‌ای بازی‌ها برای کاغذ A4 */}
       <div className="grid grid-cols-4 sm:grid-cols-5 gap-4">
-        {localGamesData.map((game, index) => (
+        {localGamesData.map((game: any, index: number) => (
           <div 
             key={index} 
             className="border border-gray-300 rounded-lg p-2 flex flex-col items-center bg-gray-50"
-            style={{ pageBreakInside: 'avoid' }} // جلوگیری از نصف شدن کارت بین دو صفحه
+            style={{ pageBreakInside: 'avoid' }}
           >
             {/* کاور بازی */}
             <div className="w-full aspect-video mb-2 bg-gray-200 rounded overflow-hidden">
@@ -30,18 +30,62 @@ export default function CatalogPDF() {
               />
             </div>
             
-            {/* اسم بازی */}
+            {/* اسم بازی (سایز بزرگتر) */}
             <h2 
-              className="text-[11px] font-black text-center w-full leading-tight mb-2" 
+              className="text-sm font-black text-center w-full leading-tight mb-2" 
               dir="ltr"
             >
               {game.name}
             </h2>
+
+            {/* تگ‌های وضعیت (سال ساخت، کوآپ، پرطرفدار، سیستم) */}
+            <div className="flex flex-wrap justify-center gap-1 mb-3">
+              {/* استخراج و نمایش سال ساخت */}
+              {game.released && (
+                <span className="text-[9px] font-bold bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded border border-slate-300">
+                  📅 {game.released.split('-')[0]}
+                </span>
+              )}
+              
+              {game.is_popular && (
+                <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded border border-amber-300">
+                  🔥 پرطرفدار
+                </span>
+              )}
+              {game.is_coop && (
+                <span className="text-[9px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded border border-emerald-300">
+                  👥 کوآپ
+                </span>
+              )}
+              
+              {/* فیلتر قدرت سیستم */}
+              {game.system_tier === 'light' && (
+                <span className="text-[9px] font-bold bg-green-100 text-green-800 px-1.5 py-0.5 rounded border border-green-300">
+                  سیستم ضعیف
+                </span>
+              )}
+              {game.system_tier === 'normal' && (
+                <span className="text-[9px] font-bold bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded border border-blue-300">
+                  سیستم معمولی
+                </span>
+              )}
+              {game.system_tier === 'heavy' && (
+                <span className="text-[9px] font-bold bg-red-100 text-red-800 px-1.5 py-0.5 rounded border border-red-300">
+                  سیستم قوی
+                </span>
+              )}
+            </div>
             
-            {/* حجم بازی */}
-            <div className="mt-auto w-full text-center border-t border-gray-200 pt-1">
-              <p className="text-[10px] font-bold text-purple-700">
-                💾 {game.size_gb ? `${game.size_gb} گیگابایت` : 'نامشخص'}
+            {/* اطلاعات پایانی (حجم و نمره) */}
+            <div className="mt-auto w-full flex justify-between items-center border-t border-gray-300 pt-2 px-1">
+              {/* نمره منتقدین */}
+              <span className="text-[11px] font-black text-gray-700" dir="ltr">
+                ⭐ {game.metacritic || '--'}
+              </span>
+              
+              {/* حجم بازی (سایز بزرگتر) */}
+              <p className="text-[12px] font-black text-purple-700" dir="ltr">
+                {game.size_gb ? `${game.size_gb} GB` : 'نامشخص'} 💾
               </p>
             </div>
           </div>
