@@ -6616,7 +6616,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 19,
+    "playtime": 25,
     "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Toronto, Ubisoft Shanghai, Ubisoft Kiev, Red Storm",
     "steam_link": "https://store.steampowered.com/app/552520/",
     "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686149/movie_max.mp4",
@@ -6633,11 +6633,14 @@
       "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 7 SP1 / 8.1 / 10 (64-bit)\n\nCPU:       Intel Core i5-2400\n           AMD FX-6300\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 670\n           AMD Radeon R9 270\n\nDirectX:   Version 11\n\nStorage:   40 GB",
+      "recommended": "OS:        Windows 10 (64-bit)\n\nCPU:       Intel Core i7-4770\n           AMD Ryzen 5 1600\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 970\n           AMD Radeon R9 290X\n\nDirectX:   Version 11\n\nStorage:   40 GB"
     },
     "description_en": "Far Cry 5 is an open-world adventure first-person shooter developed by Ubisoft Montreal. It is the fifth main installment in the series.\n\nWelcome to Hope County, Montana, where a violent religious doomsday cult appeared. You play as a junior deputy sheriff who gets trapped in the Hope County as all the ways out the county are now patrolled with cultists and all external communication is cut off. It is your job to free the county of cultists.\n\nFor the first time in the series, the game features a character creation screen. A wide range of weaponry which varies from pistols to grenade launchers is available to the player. Various vehicles are also at your exposal: cars, planes, helicopters, and so on. \n\nThe game puts a strong emphasis on building the resistance to the cultists. Players have to recruit the locals in order to have more fighters and gain reputation.\n\nA welcome addition to the game is the so-called Guns For Hire system. It allows the players to choose one of the comrades that will follow them anywhere. For example, hiring a sniper will help the player spot enemy targets in the distance.\n\nThe whole game can be played in both singleplayer and co-op modes.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 5 یک بازی تیراندازی اول شخص ماجراجویی جهان باز است که توسط Ubisoft Montreal توسعه یافته است. این پنجمین قسمت اصلی این مجموعه است.\n\nبه شهرستان هوپ، مونتانا، جایی که یک فرقه مذهبی خشونت آمیز روز رستاخیز ظاهر شد، خوش آمدید. شما به عنوان یک معاون کلانتر بازی می کنید که در Hope County گرفتار می شود، زیرا همه راه های خروج از این شهرستان با فرقه ها در حال گشت زنی است و تمام ارتباطات خارجی قطع شده است. این وظیفه شماست که شهرستان را از وجود فرقه ها آزاد کنید.\n\nبرای اولین بار در این سری، بازی دارای صفحه نمایش شخصیت پردازی است. طیف وسیعی از تسلیحات که از تپانچه تا نارنجک انداز متفاوت است در دسترس بازیکن است. وسایل نقلیه مختلفی نیز در معرض دید شما هستند: اتومبیل، هواپیما، هلیکوپتر و غیره. \n\nاین بازی تاکید زیادی بر ایجاد مقاومت در برابر فرقه‌ها دارد. بازیکنان برای داشتن مبارزان بیشتر و کسب شهرت باید افراد محلی را به خدمت بگیرند.\n\nیکی از مواردی که به بازی اضافه شده، سیستم موسوم به Guns For Hire است. به بازیکنان این امکان را می دهد که یکی از رفقای خود را انتخاب کنند که آنها را در هر کجا دنبال می کند. به عنوان مثال، استخدام یک تک تیرانداز به بازیکن کمک می کند تا اهداف دشمن را در دوردست تشخیص دهد.\n\nکل بازی را می توان در دو حالت تک نفره و کوآپ بازی کرد."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nFar Cry 5 یک بازی تیراندازی اول شخص ماجراجویی جهان باز است که توسط Ubisoft Montreal توسعه یافته است. این پنجمین قسمت اصلی این مجموعه است.\n\nبه شهرستان هوپ، مونتانا، جایی که یک فرقه مذهبی خشونت آمیز روز رستاخیز ظاهر شد، خوش آمدید. شما به عنوان یک معاون کلانتر بازی می کنید که در Hope County گرفتار می شود، زیرا همه راه های خروج از این شهرستان با فرقه ها در حال گشت زنی است و تمام ارتباطات خارجی قطع شده است. این وظیفه شماست که شهرستان را از وجود فرقه ها آزاد کنید.\n\nبرای اولین بار در این سری، بازی دارای صفحه نمایش شخصیت پردازی است. طیف وسیعی از تسلیحات که از تپانچه تا نارنجک انداز متفاوت است در دسترس بازیکن است. وسایل نقلیه مختلفی نیز در معرض دید شما هستند: اتومبیل، هواپیما، هلیکوپتر و غیره. \n\nاین بازی تاکید زیادی بر ایجاد مقاومت در برابر فرقه‌ها دارد. بازیکنان برای داشتن مبارزان بیشتر و کسب شهرت باید افراد محلی را به خدمت بگیرند.\n\nیکی از مواردی که به بازی اضافه شده، سیستم موسوم به Guns For Hire است. به بازیکنان این امکان را می دهد که یکی از رفقای خود را انتخاب کنند که آنها را در هر کجا دنبال می کند. به عنوان مثال، استخدام یک تک تیرانداز به بازیکن کمک می کند تا اهداف دشمن را در دوردست تشخیص دهد.\n\nکل بازی را می توان در دو حالت تک نفره و کوآپ بازی کرد.",
+    "system_tier": "normal",
+    "is_popular": true,
+    "size_gb": 40
   },
   {
     "id": 463723,
