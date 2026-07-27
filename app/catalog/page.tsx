@@ -14,15 +14,15 @@ export default function CatalogPDF() {
       </div>
 
       {/* چیدمان شبکه‌ای بازی‌ها برای کاغذ A4 */}
-      <div className="grid grid-cols-4 sm:grid-cols-5 gap-4">
+      <div className="grid grid-cols-4 sm:grid-cols-5 gap-3">
         {localGamesData.map((game: any, index: number) => (
           <div 
             key={index} 
             className="border border-gray-300 rounded-lg p-2 flex flex-col items-center bg-gray-50"
             style={{ pageBreakInside: 'avoid' }}
           >
-            {/* کاور بازی */}
-            <div className="w-full aspect-video mb-2 bg-gray-200 rounded overflow-hidden">
+            {/* کاور بازی با ارتفاع ثابت و بزرگ‌تر (بدون کوچک شدن) */}
+            <div className="w-full h-32 mb-2 bg-gray-200 rounded overflow-hidden flex-shrink-0">
               <img
                 src={game.background_image}
                 alt={game.name}
@@ -30,17 +30,17 @@ export default function CatalogPDF() {
               />
             </div>
             
-            {/* اسم بازی (سایز بزرگتر) */}
+            {/* اسم بازی */}
             <h2 
-              className="text-sm font-black text-center w-full leading-tight mb-2" 
+              className="text-xs sm:text-sm font-black text-center w-full leading-tight mb-2 line-clamp-2" 
               dir="ltr"
             >
               {game.name}
             </h2>
 
             {/* تگ‌های وضعیت (سال ساخت، کوآپ، پرطرفدار، سیستم) */}
-            <div className="flex flex-wrap justify-center gap-1 mb-3">
-              {/* استخراج و نمایش سال ساخت */}
+            <div className="flex flex-wrap justify-center gap-1 mb-2">
+              {/* سال ساخت */}
               {game.released && (
                 <span className="text-[9px] font-bold bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded border border-slate-300">
                   📅 {game.released.split('-')[0]}
@@ -61,17 +61,17 @@ export default function CatalogPDF() {
               {/* فیلتر قدرت سیستم */}
               {game.system_tier === 'light' && (
                 <span className="text-[9px] font-bold bg-green-100 text-green-800 px-1.5 py-0.5 rounded border border-green-300">
-                  سیستم ضعیف
+                  ضعیف
                 </span>
               )}
               {game.system_tier === 'normal' && (
                 <span className="text-[9px] font-bold bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded border border-blue-300">
-                  سیستم معمولی
+                  معمولی
                 </span>
               )}
               {game.system_tier === 'heavy' && (
                 <span className="text-[9px] font-bold bg-red-100 text-red-800 px-1.5 py-0.5 rounded border border-red-300">
-                  سیستم قوی
+                  قوی
                 </span>
               )}
             </div>
@@ -79,12 +79,12 @@ export default function CatalogPDF() {
             {/* اطلاعات پایانی (حجم و نمره) */}
             <div className="mt-auto w-full flex justify-between items-center border-t border-gray-300 pt-2 px-1">
               {/* نمره منتقدین */}
-              <span className="text-[11px] font-black text-gray-700" dir="ltr">
+              <span className="text-[10px] sm:text-[11px] font-black text-gray-700" dir="ltr">
                 ⭐ {game.metacritic || '--'}
               </span>
               
-              {/* حجم بازی (سایز بزرگتر) */}
-              <p className="text-[12px] font-black text-purple-700" dir="ltr">
+              {/* حجم بازی */}
+              <p className="text-[11px] sm:text-[12px] font-black text-purple-700" dir="ltr">
                 {game.size_gb ? `${game.size_gb} GB` : 'نامشخص'} 💾
               </p>
             </div>
