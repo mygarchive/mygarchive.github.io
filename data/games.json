@@ -5165,7 +5165,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 19,
+    "playtime": 40,
     "developers": "Rocksteady Studios",
     "steam_link": "https://store.steampowered.com/app/208650/",
     "trailer_url": "",
@@ -5184,7 +5184,10 @@
       "recommended": "OS: Win 7 SP1, Win 8.1 (64-bit Operating System Required)\nProcessor: Intel Core i7-3770, 3.4 GHz | AMD FX-8350, 4.0 GHz\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 760 - 3 GB Memory Recommended | AMD Radeon HD 7950 - 3 GB Memory Recommended\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 55 GB available space"
     },
     "description_en": "Batman: Arkham Knight is the final instalment for the Arkham series by now. Joining forces with Bruce Wayne for the last time, we have to oppose Scarecrow and other iconic villains such as The Riddler, Harleen Quinzel a.k.a. Harley Quinn, Penguin and others.\n\nThe story continued after events in Arkham City when Joker died due to infection in his blood. Now, Scarecrow tries to release a new fear toxin, meanwhile new mysterious Arkham Knight plots against Batman as well. Still having consequences after being poisoned by the Joker and seeing visions with him, Bruce has to prevail the death of Gotham City.\n\nThe gameplay mechanics stays the same to the Arkham series. Melee combat system, use of the detective skills to find clues and gadgets still play a major role in Batman's fight against evil. Although now you can travel around not only by your grappling hook but a legendary Batmobile as well. Iconic voices of the characters, Kevin Conroy and Mark Hammil once again return to give their voices for the last game in Arkham series.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: Arkham Knight آخرین قسمت سری Arkham است. با پیوستن به نیروهای بروس وین برای آخرین بار، باید با Scarecrow و دیگر شخصیت های شرور مانند The Riddler، Harleen Quinzel با نام مستعار Harley Quinn، Penguin و دیگران مقابله کنیم.\n\nداستان پس از اتفاقاتی در شهر Arkham ادامه یافت که جوکر به دلیل عفونت در خون خود درگذشت. اکنون، Scarecrow سعی می کند یک سم ترس جدید را آزاد کند، در همین حال، شوالیه اسرارآمیز جدید Arkham نیز علیه بتمن نقشه می کشد. بروس که پس از مسموم شدن توسط جوکر و دیدن رویاهایی با او عواقبی دارد، باید بر مرگ شهر گاتهام پیروز شود.\n\nمکانیک گیم پلی بازی در سری Arkham یکسان است. سیستم مبارزه با غوغا، استفاده از مهارت های کارآگاهی برای یافتن سرنخ ها و ابزارها هنوز نقش مهمی در مبارزه بتمن با شر دارد. اگرچه اکنون می توانید نه تنها با قلاب گیر خود بلکه با یک Batmobile افسانه ای به اطراف سفر کنید. صداهای نمادین شخصیت ها، کوین کانروی و مارک همیل بار دیگر بازگشته اند تا صدای خود را برای آخرین بازی در سری Arkham ارائه دهند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBatman: Arkham Knight آخرین قسمت سری Arkham است. با پیوستن به نیروهای بروس وین برای آخرین بار، باید با Scarecrow و دیگر شخصیت های شرور مانند The Riddler، Harleen Quinzel با نام مستعار Harley Quinn، Penguin و دیگران مقابله کنیم.\n\nداستان پس از اتفاقاتی در شهر Arkham ادامه یافت که جوکر به دلیل عفونت در خون خود درگذشت. اکنون، Scarecrow سعی می کند یک سم ترس جدید را آزاد کند، در همین حال، شوالیه اسرارآمیز جدید Arkham نیز علیه بتمن نقشه می کشد. بروس که پس از مسموم شدن توسط جوکر و دیدن رویاهایی با او عواقبی دارد، باید بر مرگ شهر گاتهام پیروز شود.\n\nمکانیک گیم پلی بازی در سری Arkham یکسان است. سیستم مبارزه با غوغا، استفاده از مهارت های کارآگاهی برای یافتن سرنخ ها و ابزارها هنوز نقش مهمی در مبارزه بتمن با شر دارد. اگرچه اکنون می توانید نه تنها با قلاب گیر خود بلکه با یک Batmobile افسانه ای به اطراف سفر کنید. صداهای نمادین شخصیت ها، کوین کانروی و مارک همیل بار دیگر بازگشته اند تا صدای خود را برای آخرین بازی در سری Arkham ارائه دهند.",
+    "system_tier": "normal",
+    "is_popular": true,
+    "size_gb": 45
   },
   {
     "id": 2235,
