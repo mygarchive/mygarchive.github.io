@@ -5542,7 +5542,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 5,
+    "playtime": 10,
     "developers": "Treyarch",
     "steam_link": "https://store.steampowered.com/app/202970/",
     "trailer_url": "",
@@ -5558,10 +5558,13 @@
     ],
     "requirements": {
       "minimum": "OS: Windows Vista SP2 or Windows 7.  Windows XP is not supported\nProcessor: Intel Core2 Duo E8200 2.66 GHz or AMD Phenom X3 8750 2.4 GHz\nMemory: 2 GB for 32-bit OS or 4 GB for 64-bit OS\nGraphics: Nvidia GeForce 8800GT 512 MB or ATI Radeon HD 3870 512 MB\nDirectX: Version 9.0c\nHard Drive: 16 GB\nSound: DirectX 11.0c compatible\nAdditional: Broadband connection required for activation and multiplayer gameplay\nNote: Windows XP Operating System is not supported\nFurther information: Available here",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "recommended": "OS:        Windows 7\n\nCPU:       Intel Core 2 Duo E8200\n           AMD Phenom X3 8750 or better\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce GTX 560\n           AMD Radeon HD 6950\n\nVRAM:      1 GB\n\nDirectX:   Version 11\n\nStorage:   16 GB"
     },
     "description_en": "Call of Duty: Black Ops II is a first-person shooter, a direct sequel to Call of Duty: Black Ops that features its protagonists. The story is divided into two time periods. It starts in 1986 with Alex Mason that has to return to work after his retirement to catch Raul Menendez, responsible for multiple crimes. The second storyline takes place in 2025; you play as David, Mason’s son, who also needs to find Menendez who sparks the second Cold War. The game has several endings depending on your actions in both storylines.\nThe campaign mode in Black Ops II is also selected in two parts. There are story missions, where you can make decisions that will affect the future of the characters. Additionally, Strike Force missions, available in 2025, feature permanent death - if the character is killed, you can’t return to the checkpoint, and have to continue the game without them.\nLike two previous games in the series, Black Ops II has the Zombies mode with a completely new story. It starts with nuclear experiments in 2025 Nevada that cause the appearance of zombies.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops II یک بازی تیراندازی اول شخص است که دنباله ای مستقیم برای Call of Duty: Black Ops است که شخصیت های اصلی آن را به نمایش می گذارد. داستان به دو دوره زمانی تقسیم می شود. در سال 1986 با الکس میسون شروع می شود که باید پس از بازنشستگی به سر کار بازگردد تا رائول منندز را که مسئول چندین جنایت است دستگیر کند. داستان دوم در سال 2025 اتفاق می افتد. شما در نقش دیوید، پسر میسون بازی می کنید، او همچنین باید منندز را که جرقه جنگ سرد دوم را آغاز می کند، پیدا کند. بسته به اقدامات شما در هر دو خط داستانی، بازی دارای چندین پایان است.\nحالت کمپین در Black Ops II نیز در دو قسمت انتخاب شده است. ماموریت های داستانی وجود دارد که در آن می توانید تصمیماتی بگیرید که آینده شخصیت ها را تحت تاثیر قرار می دهد. علاوه بر این، ماموریت‌های Strike Force که در سال 2025 در دسترس هستند، دارای مرگ دائمی هستند - اگر شخصیت کشته شود، نمی‌توانید به ایست بازرسی برگردید و باید بدون آن‌ها بازی را ادامه دهید.\nمانند دو بازی قبلی این سری، Black Ops II دارای حالت زامبی با داستانی کاملاً جدید است. با آزمایش های هسته ای در سال 2025 نوادا شروع می شود که باعث ظاهر شدن زامبی ها می شود."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops II یک بازی تیراندازی اول شخص است که دنباله ای مستقیم برای Call of Duty: Black Ops است که شخصیت های اصلی آن را به نمایش می گذارد. داستان به دو دوره زمانی تقسیم می شود. در سال 1986 با الکس میسون شروع می شود که باید پس از بازنشستگی به سر کار بازگردد تا رائول منندز را که مسئول چندین جنایت است دستگیر کند. داستان دوم در سال 2025 اتفاق می افتد. شما در نقش دیوید، پسر میسون بازی می کنید، او همچنین باید منندز را که جرقه جنگ سرد دوم را آغاز می کند، پیدا کند. بسته به اقدامات شما در هر دو خط داستانی، بازی دارای چندین پایان است.\nحالت کمپین در Black Ops II نیز در دو قسمت انتخاب شده است. ماموریت های داستانی وجود دارد که در آن می توانید تصمیماتی بگیرید که آینده شخصیت ها را تحت تاثیر قرار می دهد. علاوه بر این، ماموریت‌های Strike Force که در سال 2025 در دسترس هستند، دارای مرگ دائمی هستند - اگر شخصیت کشته شود، نمی‌توانید به ایست بازرسی برگردید و باید بدون آن‌ها بازی را ادامه دهید.\nمانند دو بازی قبلی این سری، Black Ops II دارای حالت زامبی با داستانی کاملاً جدید است. با آزمایش های هسته ای در سال 2025 نوادا شروع می شود که باعث ظاهر شدن زامبی ها می شود.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 16
   },
   {
     "id": 14331,
