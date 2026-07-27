@@ -4411,7 +4411,7 @@
     "name": "A Plague Tale: Requiem",
     "background_image": "https://media.rawg.io/media/games/cd0/cd074f3f6045297cda9ad077273c09b6.jpg",
     "rating": 4.28,
-    "metacritic": null,
+    "metacritic": 82,
     "released": "2022-10-17",
     "genres": [
       {
@@ -4426,7 +4426,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 5,
+    "playtime": 19,
     "developers": "Asobo Studio",
     "steam_link": "https://store.steampowered.com/app/1182900/",
     "trailer_url": "",
@@ -4445,7 +4445,10 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 64 bits)\nProcessor: Intel Core i7-8700K (3.7 GHz) / AMD Ryzen 5 3600 (3.6 GHz)\nMemory: 16 GB RAM\nGraphics: 8 GB, GeForce RTX 3070/Radeon RX 6800 XT\nDirectX: Version 12\nStorage: 55 GB available space\nAdditional Notes: 60 FPS, 1920x1080 in ultra. SSD storage is recommended."
     },
     "description_en": "Far across the sea, an island calls…\nEmbark on a heartrending journey into a brutal, breathtaking world twisted by supernatural forces.\n\nAfter escaping their devastated homeland, Amicia and Hugo travel far south, to new regions and vibrant cities. There, they attempt to start a new life and control Hugo’s curse.\n\nBut, when Hugo’s powers reawaken, death and destruction return in a flood of devouring rats. Forced to flee once more, the siblings place their hopes in a prophesized island that may hold the key to saving Hugo.\n\nDiscover the cost of saving those you love in a desperate struggle for survival. Strike from the shadows or unleash hell, overcoming foes and challenges with a variety of weapons, tools and unearthly powers.\n\n● Sequel to the award-winning adventure A Plague Tale: Innocence\n● A spectacular grounded tale twisted by supernatural forces\n● Use a variety of tools, sneak, fight, or unleash hell and rats\n● Stunning visuals combine with an enthralling score",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر آن سوی دریا، جزیره ای صدا می کند…\nسفری دلخراش را به دنیایی بی رحمانه و نفس گیر که توسط نیروهای ماوراء طبیعی پیچیده شده است، آغاز کنید.\n\nآمیسیا و هوگو پس از فرار از سرزمین ویران شده خود، به مناطق جنوبی و شهرهای پر جنب و جوش سفر می کنند. در آنجا، آنها سعی می کنند زندگی جدیدی را شروع کنند و نفرین هوگو را کنترل کنند.\n\nاما وقتی قدرت هوگو دوباره بیدار می شود، مرگ و ویرانی در سیل موش های بلعنده بازمی گردد. خواهران و برادران مجبور به فرار یک بار دیگر، امید خود را به جزیره ای پیشگویی می کنند که ممکن است کلید نجات هوگو را داشته باشد.\n\nهزینه نجات کسانی که دوستشان دارید را در یک مبارزه ناامیدکننده برای بقا کشف کنید. از سایه ها ضربه بزنید یا جهنم را آزاد کنید، با انواع سلاح ها، ابزارها و قدرت های غیرزمینی بر دشمنان و چالش ها غلبه کنید.\n\n● دنباله ماجراجویی برنده جایزه A Plague Tale: Innocence\n● یک داستان زمینی دیدنی که توسط نیروهای ماوراء طبیعی پیچ خورده است\n● از ابزارهای مختلف استفاده کنید، دزدکی حرکت کنید، بجنگید یا جهنم و موش ها را آزاد کنید\n● تصاویری خیره کننده با یک امتیاز جذاب ترکیب می شود"
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر آن سوی دریا، جزیره ای صدا می کند…\nسفری دلخراش را به دنیایی بی رحمانه و نفس گیر که توسط نیروهای ماوراء طبیعی پیچیده شده است، آغاز کنید.\n\nآمیسیا و هوگو پس از فرار از سرزمین ویران شده خود، به مناطق جنوبی و شهرهای پر جنب و جوش سفر می کنند. در آنجا، آنها سعی می کنند زندگی جدیدی را شروع کنند و نفرین هوگو را کنترل کنند.\n\nاما وقتی قدرت هوگو دوباره بیدار می شود، مرگ و ویرانی در سیل موش های بلعنده بازمی گردد. خواهران و برادران مجبور به فرار یک بار دیگر، امید خود را به جزیره ای پیشگویی می کنند که ممکن است کلید نجات هوگو را داشته باشد.\n\nهزینه نجات کسانی که دوستشان دارید را در یک مبارزه ناامیدکننده برای بقا کشف کنید. از سایه ها ضربه بزنید یا جهنم را آزاد کنید، با انواع سلاح ها، ابزارها و قدرت های غیرزمینی بر دشمنان و چالش ها غلبه کنید.\n\n● دنباله ماجراجویی برنده جایزه A Plague Tale: Innocence\n● یک داستان زمینی دیدنی که توسط نیروهای ماوراء طبیعی پیچ خورده است\n● از ابزارهای مختلف استفاده کنید، دزدکی حرکت کنید، بجنگید یا جهنم و موش ها را آزاد کنید\n● تصاویری خیره کننده با یک امتیاز جذاب ترکیب می شود",
+    "system_tier": "heavy",
+    "is_popular": true,
+    "size_gb": 55
   },
   {
     "id": 989330,
