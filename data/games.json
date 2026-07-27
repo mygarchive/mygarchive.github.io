@@ -4972,7 +4972,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 22,
+    "playtime": 30,
     "developers": "Ubisoft Montreal, Ubisoft Quebec, Ubisoft Singapore",
     "steam_link": "https://store.steampowered.com/app/368500/",
     "trailer_url": "",
@@ -4987,11 +4987,14 @@
       "https://media.rawg.io/media/games/9f1/9f189c639f70f91166df415811a8b525.jpg"
     ],
     "requirements": {
-      "minimum": "OS: Windows 7 SP1 or Windows 8.1 or Windows 10 (64bit versions)\nProcessor: Intel Core i5 2400s @ 2.5 GHz / AMD FX 6350 @ 3.9 GHz\nMemory: 6 GB RAM\nGraphics: NVIDIA GeForce GTX 660 / AMD Radeon R9 270 (2GB VRAM with Shader Model 5.0)\nSound Card: DirectX Compatible Sound Card with latest drivers",
-      "recommended": "OS: Windows 7 SP1 or Windows 8.1 or Windows 10 (64bit versions)\nProcessor: Intel Core i7 3770 @ 3.5 GHz / AMD FX 8350 @ 4.0 GHz\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 760 (4GB) or the newer GTX 970 (4GB) / AMD Radeon R9 280X (3GB of VRAM) or better\nSound Card: DirectX Compatible Sound Card with latest drivers\nAdditional Notes: *Technical Notice from the developer: For a recommended experience, the game requires a video card with at least 3GB of VRAM when playing at a full HD resolution. While we encourage you to fiddle with the advanced options to fully customize your gaming experience, please keep an eye out for the VRAM meter usage when you adjust these settings."
+      "minimum": "OS:        Windows 7 SP1 / Windows 8.1 / Windows 10\n           64-bit versions only\n\nCPU:       Intel Core i5-2400S @ 2.5 GHz\n           AMD FX-6350 @ 3.9 GHz\n\nRAM:       6 GB\n\nGPU:       NVIDIA GeForce GTX 660\n           AMD Radeon R9 270\n\nVRAM:      2 GB\n\nDirectX:   Version 11\n\nStorage:   50 GB",
+      "recommended": "OS:        Windows 7 SP1 / Windows 8.1 / Windows 10\n           64-bit versions only\n\nCPU:       Intel Core i7-3770 @ 3.5 GHz\n           AMD FX-8350 @ 4.0 GHz\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 760\n           AMD Radeon R9 280X\n\nVRAM:      4 GB\n\nDirectX:   Version 11\n\nStorage:   50 GB"
     },
     "description_en": "In 2015, the characters Shaun and Rebecca penetrate into one of the offices of \"Abstergo industries\", which is located in London, where they install bugs. There they find information that Abstergo looks through the life of British Assassins Jacob and Evie Frye, hoping to find a Piece of Eden hidden in London.\n\nIn the centre of the story of the past are the twin assassins Jacob and Evie Frye. They go to London to put their orders there and at the same time to find a Piece of Eden.\n\nHowever, a more exciting innovation in the mechanics of Syndicate was the harpoon. It is actively used during a secretive passage - harpoon allows you to change position and save time instantly.\n\nAnother important aspect of the game is the gang. You can spend money and resources not only on yourself but also on your allies. By investing in the development of Rooks, you will help them to sabotage the Gallows. Outside the story, the campaign begins classic Assassin's Creed: towers, the liberation of territories and a lot of third-party jobs.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر سال 2015، شخصیت‌های Shaun و Rebecca به یکی از دفاتر \"صنایع آبسترگو\" که در لندن قرار دارد، نفوذ می‌کنند و در آنجا باگ‌ها را نصب می‌کنند. در آنجا اطلاعاتی پیدا می‌کنند که Abstergo به زندگی آدمکش‌های بریتانیایی جیکوب و ایوی فرای نگاه می‌کند، به این امید که قطعه‌ای از عدن را در لندن پنهان کند.\n\nدر مرکز داستان گذشته، دو قاتل جاکوب و ایوی فرای قرار دارند. آنها به لندن می روند تا سفارشات خود را در آنجا بگذارند و در همان زمان قطعه ای از عدن را پیدا کنند.\n\nبا این حال، یک نوآوری هیجان انگیزتر در مکانیک Syndicate، هارپون بود. این به طور فعال در طول یک عبور مخفیانه استفاده می شود - هارپون به شما امکان می دهد موقعیت خود را تغییر دهید و فورا در زمان صرفه جویی کنید.\n\nیکی دیگر از جنبه های مهم بازی گروه است. شما می توانید پول و منابع را نه تنها برای خود، بلکه برای متحدان خود نیز خرج کنید. با سرمایه گذاری در توسعه Rooks، به آنها کمک می کنید تا Gallows را خراب کنند. خارج از داستان، کمپین Assassin's Creed کلاسیک را آغاز می کند: برج ها، آزادسازی مناطق و بسیاری از مشاغل شخص ثالث."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nدر سال 2015، شخصیت‌های Shaun و Rebecca به یکی از دفاتر \"صنایع آبسترگو\" که در لندن قرار دارد، نفوذ می‌کنند و در آنجا باگ‌ها را نصب می‌کنند. در آنجا اطلاعاتی پیدا می‌کنند که Abstergo به زندگی آدمکش‌های بریتانیایی جیکوب و ایوی فرای نگاه می‌کند، به این امید که قطعه‌ای از عدن را در لندن پنهان کند.\n\nدر مرکز داستان گذشته، دو قاتل جاکوب و ایوی فرای قرار دارند. آنها به لندن می روند تا سفارشات خود را در آنجا بگذارند و در همان زمان قطعه ای از عدن را پیدا کنند.\n\nبا این حال، یک نوآوری هیجان انگیزتر در مکانیک Syndicate، هارپون بود. این به طور فعال در طول یک عبور مخفیانه استفاده می شود - هارپون به شما امکان می دهد موقعیت خود را تغییر دهید و فورا در زمان صرفه جویی کنید.\n\nیکی دیگر از جنبه های مهم بازی گروه است. شما می توانید پول و منابع را نه تنها برای خود، بلکه برای متحدان خود نیز خرج کنید. با سرمایه گذاری در توسعه Rooks، به آنها کمک می کنید تا Gallows را خراب کنند. خارج از داستان، کمپین Assassin's Creed کلاسیک را آغاز می کند: برج ها، آزادسازی مناطق و بسیاری از مشاغل شخص ثالث.",
+    "is_popular": true,
+    "system_tier": "normal",
+    "size_gb": 50
   },
   {
     "id": 8146,
