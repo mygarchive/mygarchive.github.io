@@ -18,7 +18,7 @@ export default function CatalogPDF() {
         </p>
       </div>
 
-      {/* چیدمان ۴ بازی در هر ردیف (فضای کافی و استاندارد برای چاپ PDF و سایت) */}
+      {/* چیدمان ۴ بازی در هر ردیف */}
       <div className="grid grid-cols-4 gap-4">
         {sortedGames.map((game: any, index: number) => (
           <div 
@@ -26,7 +26,7 @@ export default function CatalogPDF() {
             className="border border-gray-300 rounded-xl p-3 flex flex-col bg-gray-50 shadow-sm"
             style={{ pageBreakInside: 'avoid' }}
           >
-            {/* کاور بازی (بدون نوار مشکی، فیت و کامل با نسبت 16:9) */}
+            {/* کاور بازی */}
             <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
               <img
                 src={game.background_image}
@@ -35,9 +35,9 @@ export default function CatalogPDF() {
               />
             </div>
             
-            {/* اسم بازی */}
+            {/* اسم بازی (بدون محدودیت خط، تا نام‌های طولانی کاملاً و بدون ... نمایش داده شوند) */}
             <h2 
-              className="text-xs sm:text-sm font-black text-center w-full leading-tight mb-3 line-clamp-2" 
+              className="text-[11px] font-black text-center w-full leading-tight mb-3" 
               dir="ltr"
             >
               {game.name}
