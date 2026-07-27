@@ -388,7 +388,7 @@
       }
     ],
     "esrb_rating": "+10",
-    "playtime": 6,
+    "playtime": 15,
     "developers": "Matt Makes Games, Extremely OK Games, Noel",
     "steam_link": "https://store.steampowered.com/app/504230/",
     "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256682991/movie_max.mp4",
@@ -406,10 +406,13 @@
     ],
     "requirements": {
       "minimum": "OS: Windows 7 or newer\nProcessor: Intel Core i3 M380\nMemory: 2 GB RAM\nGraphics: Intel HD 4000\nDirectX: Version 10\nStorage: 400 MB available space",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "recommended": "OS:        Windows 7 or later\n\nCPU:       Intel Core i5 or equivalent\n\nRAM:       4 GB\n\nGPU:       Dedicated graphics card\n           with DirectX 10 support\n\nDirectX:   Version 10\n\nStorage:   1.2 GB"
     },
     "description_en": "Celeste is a platformer about climbing a mountain, from the creators of TowerFall.\nExplore a sprawling mountain with over 500 levels bursting with secrets, across 8 unique areas. Unlock a hardcore Remix for each area, with completely new levels that will push your climbing skills to the limit.\nMadeline can air-dash and climb any surface to gain ground. Controls are simple and accessible, but super tight and expressive with layers of depth to master. Deaths are sudden and respawns are fast. You'll die a lot, but you'll learn something every time.\nMeet peculiar characters and climb through a personal story of breaking through your self-doubt to find yourself, set in the present-day Pacific Northwest. Uncover the mystery of the mountain's power and outrun your reflection on your journey to reach the top.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCeleste یک پلتفرمر در مورد بالا رفتن از یک کوه، از سازندگان TowerFall است.\nکوهی وسیع با بیش از 500 سطح پر از اسرار را در 8 منطقه منحصر به فرد کاوش کنید. یک ریمیکس هاردکور را برای هر منطقه باز کنید، با سطوح کاملاً جدید که مهارت‌های کوهنوردی شما را به حداکثر می‌رساند.\nMadeline می‌تواند برای به دست آوردن زمین از هر سطحی بالا برود. کنترل‌ها ساده و در دسترس هستند، اما بسیار محکم و گویا با لایه‌هایی از عمق برای تسلط. مرگ ها ناگهانی و بازپخش سریع هستند. شما خیلی خواهید مرد، اما هر بار چیزی یاد خواهید گرفت.\nبا شخصیت‌های عجیب و غریب آشنا شوید و از طریق داستان شخصی شکستن شک و تردید خود بالا بروید تا خودتان را پیدا کنید، واقع در شمال غربی اقیانوس آرام امروزی. رمز و راز قدرت کوه را کشف کنید و از بازتاب خود در سفر خود برای رسیدن به قله پیشی بگیرید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCeleste یک پلتفرمر در مورد بالا رفتن از یک کوه، از سازندگان TowerFall است.\nکوهی وسیع با بیش از 500 سطح پر از اسرار را در 8 منطقه منحصر به فرد کاوش کنید. یک ریمیکس هاردکور را برای هر منطقه باز کنید، با سطوح کاملاً جدید که مهارت‌های کوهنوردی شما را به حداکثر می‌رساند.\nMadeline می‌تواند برای به دست آوردن زمین از هر سطحی بالا برود. کنترل‌ها ساده و در دسترس هستند، اما بسیار محکم و گویا با لایه‌هایی از عمق برای تسلط. مرگ ها ناگهانی و بازپخش سریع هستند. شما خیلی خواهید مرد، اما هر بار چیزی یاد خواهید گرفت.\nبا شخصیت‌های عجیب و غریب آشنا شوید و از طریق داستان شخصی شکستن شک و تردید خود بالا بروید تا خودتان را پیدا کنید، واقع در شمال غربی اقیانوس آرام امروزی. رمز و راز قدرت کوه را کشف کنید و از بازتاب خود در سفر خود برای رسیدن به قله پیشی بگیرید.",
+    "system_tier": "light",
+    "is_popular": true,
+    "size_gb": 0.39
   },
   {
     "id": 14211,
