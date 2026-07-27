@@ -892,7 +892,7 @@
     "name": "Dredge",
     "background_image": "https://media.rawg.io/media/games/c2c/c2c9f1c026b6c1be5bc2160baf7224ea.jpg",
     "rating": 4.27,
-    "metacritic": null,
+    "metacritic": 84,
     "released": "2023-03-29",
     "genres": [
       {
@@ -906,8 +906,8 @@
         "slug": "role-playing-games-rpg"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 8,
+    "esrb_rating": "+13",
+    "playtime": 17,
     "developers": "Black Salt Games",
     "steam_link": "https://store.steampowered.com/app/1562430/",
     "trailer_url": "",
@@ -924,7 +924,9 @@
       "recommended": "OS: Windows 10\nProcessor: Intel Core i5-2550K | AMD FX-8370\nMemory: 6 GB RAM\nGraphics: Nvidia GTS 450 1GB | Radeon HD 5770 1GB\nDirectX: Version 11\nStorage: 2 GB available space\nAdditional Notes: 1080p @ 60 FPS"
     },
     "description_en": "An unusual fishing RPG with a sinister undercurrent. Catch more than 125 deep sea denizens and pack them into your cargo hold for maximum profit. Dredge the seabed for valuables and relics. Get acquainted with the locals of Greater Marrow, just one of dozens of islands in the archipelago.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک RPG ماهیگیری غیرمعمول با یک جریان زیرزمینی شوم. بیش از 125 ساکن در اعماق دریا را بگیرید و برای حداکثر سود در انبار بار خود بسته بندی کنید. بستر دریا را برای اشیاء قیمتی و آثار باستانی لایروبی کنید. با مردم محلی مرو بزرگ، تنها یکی از ده ها جزیره در مجمع الجزایر، آشنا شوید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک RPG ماهیگیری غیرمعمول با یک جریان زیرزمینی شوم. بیش از 125 ساکن در اعماق دریا را بگیرید و برای حداکثر سود در انبار بار خود بسته بندی کنید. بستر دریا را برای اشیاء قیمتی و آثار باستانی لایروبی کنید. با مردم محلی مرو بزرگ، تنها یکی از ده ها جزیره در مجمع الجزایر، آشنا شوید.",
+    "system_tier": "light",
+    "size_gb": 2
   },
   {
     "id": 9609,
