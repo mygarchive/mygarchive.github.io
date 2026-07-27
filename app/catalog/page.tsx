@@ -3,6 +3,16 @@
 import localGamesData from '../../data/games.json';
 
 export default function CatalogPDF() {
+  // تابع هوشمند برای کوچک کردن حجم عکس‌های RAWG مستقیماً از طریق لینک URL
+  const getOptimizedImageUrl = (url: string) => {
+    if (!url) return '';
+    // اگر لینک مربوط به سرور RAWG باشد، دستور crop را برای دریافت نسخه سبک‌تر اضافه می‌کنیم
+    if (url.includes('media.rawg.io/media/')) {
+      return url.replace('media.rawg.io/media/', 'media.rawg.io/media/crop/600/400/');
+    }
+    return url;
+  };
+
   // مرتب‌سازی خودکار بازی‌ها بر اساس حروف الفبا
   const sortedGames = [...localGamesData].sort((a: any, b: any) => 
     a.name.localeCompare(b.name, 'en', { sensitivity: 'accent' })
@@ -10,7 +20,7 @@ export default function CatalogPDF() {
 
   return (
     <div className="min-h-screen bg-white text-black p-6" dir="rtl">
-      {/* 🛑 بهینه‌سازی حرفه‌ای برای چاپ: جلوگیری از حجم سنگین، کرش پرینتر و برش متن */}
+      {/* استایل پرینت برای جلوگیری از کرش و بهینه‌سازی ابعاد */}
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
           body {
@@ -24,7 +34,6 @@ export default function CatalogPDF() {
             text-overflow: unset !important;
             display: block !important;
           }
-          /* سبک‌سازی و محدود کردن ابعاد عکس در پرینت برای جلوگیری از فایل 144 مگابایتی و خطای 0 بایت */
           div.aspect-video {
             height: 90px !important;
             max-height: 90px !important;
@@ -53,16 +62,17 @@ export default function CatalogPDF() {
             className="border border-gray-300 rounded-xl p-3 flex flex-col bg-gray-50 shadow-sm"
             style={{ pageBreakInside: 'avoid' }}
           >
-            {/* کاور بازی */}
+            {/* کاور بازی با لینک بهینه‌شده و سبک‌شده توسط سرور */}
             <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
               <img
-                src={game.background_image}
+                src={getOptimizedImageUrl(game.background_image)}
                 alt={game.name}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             
-            {/* اسم بازی (بدون برش و بدون سه نقطه در پرینت) */}
+            {/* اسم بازی */}
             <h2 
               className="text-[11px] font-black text-center w-full leading-tight mb-3" 
               dir="ltr"
@@ -70,7 +80,7 @@ export default function CatalogPDF() {
               {game.name}
             </h2>
 
-            {/* کادر پایینی شامل: سال ساخت، تگ‌ها، امتیاز و حجم */}
+            {/* کادر پایینی شامل اطلاعات */}
             <div className="mt-auto w-full border-t border-gray-200 pt-2 flex flex-col gap-2">
               
               {/* تگ‌ها و سال ساخت */}
@@ -109,14 +119,12 @@ export default function CatalogPDF() {
                 )}
               </div>
 
-              {/* خط زیر تگ‌ها و نمایش امتیاز منتقدین و حجم بازی */}
+              {/* امتیاز منتقدین و حجم بازی */}
               <div className="flex justify-between items-center border-t border-gray-200 pt-1.5 px-1">
-                {/* نمره منتقدین */}
                 <span className="text-[11px] font-black text-gray-700" dir="ltr">
                   ⭐ {game.metacritic || '--'}
                 </span>
                 
-                {/* حجم بازی */}
                 <p className="text-[12px] font-black text-purple-700" dir="ltr">
                   {game.size_gb ? `${game.size_gb} GB` : 'نامشخص'} 💾
                 </p>
