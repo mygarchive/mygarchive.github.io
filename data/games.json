@@ -6240,7 +6240,7 @@
     "name": "Doom: The Dark Ages",
     "background_image": "https://media.rawg.io/media/games/018/01897340a06b9ed8e92ed1cc1b1eecb9.jpg",
     "rating": 4.31,
-    "metacritic": null,
+    "metacritic": 82,
     "released": "2025-05-15",
     "genres": [
       {
@@ -6250,7 +6250,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 16,
+    "playtime": 30,
     "developers": "id Software",
     "steam_link": "https://store.steampowered.com/app/3017860/",
     "trailer_url": "",
@@ -6268,8 +6268,11 @@
       "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-Bit / Windows 11 64-Bit\nProcessor: AMD Zen 2 or Intel 10th Generation CPU @3.2Ghz with 8 cores / 16 threads or better (examples: AMD Ryzen 7 3700X or better, or Intel Core i7 10700K or better)\nMemory: 16 GB RAM\nGraphics: NVIDIA or AMD hardware Raytracing-capable GPU with 8GB dedicated VRAM or better  (examples: NVIDIA RTX 2060 SUPER or better, AMD RX 6600 or better)\nStorage: 100 GB available space\nAdditional Notes: 1080p / 60 FPS / Low Quality Settings, NVME SSD storage required",
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-Bit / Windows 11 64-Bit\nProcessor: AMD Zen 3 or Intel 12th Generation CPU @3.2Ghz with 8 cores / 16 threads or better (examples: AMD Ryzen 7 5700X or better, or Intel Core i7 12700K or better)\nMemory: 32 GB RAM\nGraphics: NVIDIA or AMD hardware Raytracing-capable GPU with 10GB dedicated VRAM or better (examples: NVIDIA RTX 3080 or better, AMD RX 6800 or better)\nStorage: 100 GB available space\nAdditional Notes: 1440p / 60 FPS / High Quality Settings, NVME SSD storage required"
     },
-    "description_en": "YOU ARE THE SUPER WEAPON IN A MEDIEVAL WAR AGAINST HELL",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nشما سلاح فوق العاده در جنگ قرون وسطایی علیه جهنم هستید"
+    "description_en": "DOOM: The Dark Ages is a brutal first-person action shooter set in the dark medieval world of the DOOM universe. The game explores the origins of the DOOM Slayer, combining heavy weapons, fast-paced combat, and dark fantasy elements to deliver a unique experience compared to the previous modern entries in the series.",
+    "description_fa": "DOOM: The Dark Ages یک شوتر اول‌شخص اکشن و خشن است که بازیکن را به دنیای تاریک و قرون‌وسطایی مجموعه‌ی DOOM می‌برد. این بازی داستان گذشته‌ی DOOM Slayer را روایت می‌کند و با ترکیب سلاح‌های سنگین، مبارزات سریع و المان‌های فانتزی تاریک، تجربه‌ای متفاوت از نسخه‌های مدرن این مجموعه ارائه می‌دهد.",
+    "is_popular": true,
+    "system_tier": "heavy",
+    "size_gb": 100
   },
   {
     "id": 2454,
