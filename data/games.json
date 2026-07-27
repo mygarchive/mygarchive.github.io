@@ -9726,5 +9726,50 @@
     },
     "description_en": "Watch Dogs 2 is an action-adventure open-world game developed by Ubisoft Montreal. It is the second installment in the series and continues the main idea of its predecessor - hacking and hacktivism in an open world.\n\nWelcome to San-Francisco. It is the second city in the United States to install the city-wide operating system named ctOS, which connects everything from your car to your smart home to a global network. Marcus Holloway is tagged by the system as a suspect for a crime he did not commit. Marcus decides to take action and gets together with the hacktivist group DedSec to expose ctOS and its creators.\n\nWD2 offers the player an immense open world which consists of San-Francisco, Oakland, Marin and Silicon Valley. It's the player's choice to navigate the world on foot or on a wide range of vehicles from cars to boats.\n\nIt is up to the player to choose whether to use a lethal or non-lethal approach on a mission as there is always a taser in your inventory and a billiard ball attached to a paracord that knocks enemies out. \n\nIt is possible to hack into any devices that are connected to ctOS. For instance, Marcus can control forklifts, buzz guards phones in order to distract them.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nWatch Dogs 2 یک بازی اکشن و ماجراجویی جهان باز است که توسط Ubisoft Montreal ساخته شده است. این دومین قسمت از این مجموعه است و ایده اصلی نسخه قبلی خود - هک و هکتیویسم در یک جهان باز را ادامه می دهد.\n\nبه سانفرانسیسکو خوش آمدید. این دومین شهر در ایالات متحده است که سیستم عاملی به نام ctOS را در سطح شهر نصب می کند که همه چیز را از ماشین شما تا خانه هوشمند شما را به یک شبکه جهانی متصل می کند. مارکوس هالووی توسط سیستم به عنوان مظنون به جرمی که مرتکب نشده است برچسب گذاری شده است. مارکوس تصمیم می‌گیرد دست به اقدامی بزند و با گروه هکریست DedSec گرد هم می‌آید تا ctOS و سازندگان آن را افشا کند.\n\nWD2 یک جهان باز عظیم را به بازیکن ارائه می دهد که شامل سان فرانسیسکو، اوکلند، مارین و دره سیلیکون است. این انتخاب بازیکن است که با پای پیاده یا با طیف وسیعی از وسایل نقلیه از ماشین گرفته تا قایق در جهان حرکت کند.\n\nاین به بازیکن بستگی دارد که انتخاب کند در یک ماموریت از یک روش کشنده یا غیر کشنده استفاده کند، زیرا همیشه یک تیزر در موجودی شما و یک توپ بیلیارد به یک پاراکورد متصل است که دشمنان را از بین می برد. \n\nهک کردن هر دستگاهی که به ctOS متصل است امکان پذیر است. به عنوان مثال، مارکوس می‌تواند لیفتراک‌ها را کنترل کند، تلفن‌ها را به‌منظور پرت کردن حواس آن‌ها حفظ کند."
+  },
+  {
+    "id": 981791,
+    "name": "Assassin's Creed Shadows",
+    "background_image": "https://media.rawg.io/media/games/526/526881e0f5f8c1550e51df3801f96ea3.jpg",
+    "rating": 3.21,
+    "metacritic": null,
+    "released": "2025-03-20",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "Ubisoft",
+    "steam_link": "https://store.steampowered.com/app/3159330/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/b9c/b9c6546ce1488f918e6373073d800fa7.jpg",
+      "https://media.rawg.io/media/screenshots/801/801c5b2489abedcddf4acd94da35daaf.jpg",
+      "https://media.rawg.io/media/screenshots/b9c/b9ce924c7bfdbdc45793554a56932f36.jpg",
+      "https://media.rawg.io/media/screenshots/0f7/0f7bb8958b46684d773c75d26008d800.jpg",
+      "https://media.rawg.io/media/screenshots/aeb/aeb5d332cea63b7037543bd30d6da14e.jpg",
+      "https://media.rawg.io/media/screenshots/80d/80d237e149c2c7cc96da096adb78292f.jpg",
+      "https://media.rawg.io/media/games/526/526881e0f5f8c1550e51df3801f96ea3.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "A new Creed rises over Japan. \n\nLive the intertwined stories of Naoe, an adept shinobi Assassin from Iga Province, and Yasuke, the powerful African samurai of historical legend. Against the backdrop of the turbulent late Sengoku period, this remarkable duo will discover their common destiny as they usher in a new era for Japan.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nکرید جدیدی بر فراز ژاپن برمی خیزد. \n\nداستان‌های درهم تنیده نائوئه، یک قاتل شینوبی ماهر از استان ایگا، و یاسوکه، سامورایی افسانه‌ای افسانه‌ای افریقایی قدرتمند را زندگی کنید. در پس‌زمینه دوره متلاطم اواخر سنگوکو، این دو قابل توجه سرنوشت مشترک خود را کشف می‌کنند، زیرا عصر جدیدی را برای ژاپن آغاز می‌کنند.",
+    "size_gb": 0,
+    "is_popular": false,
+    "is_coop": false,
+    "system_tier": "unspecified"
   }
 ]
