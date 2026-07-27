@@ -5125,8 +5125,8 @@
         "slug": "action"
       }
     ],
-    "esrb_rating": "+13",
-    "playtime": 20,
+    "esrb_rating": "+17",
+    "playtime": 35,
     "developers": "Rocksteady Studios",
     "steam_link": "https://store.steampowered.com/app/200260/",
     "trailer_url": "",
@@ -5141,11 +5141,14 @@
       "https://media.rawg.io/media/games/b5a/b5a1226bfd971284a735a4a0969086b3.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows XP / Vista / 7\n\nCPU:       Intel Core 2 Duo 2.4 GHz\n           AMD Athlon X2 4800+\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce 8800 GT\n           AMD Radeon HD 3870\n\nVRAM:      512 MB\n\nDirectX:   Version 9.0c\n\nStorage:   17 GB",
+      "recommended": "OS:        Windows 7\n\nCPU:       Intel Core 2 Duo 2.5 GHz\n           AMD Athlon II X2 250\n\nRAM:       4 GB\n\nGPU:       NVIDIA GeForce GTX 460\n           AMD Radeon HD 6850\n\nVRAM:      1 GB\n\nDirectX:   Version 11\n\nStorage:   17 GB"
     },
     "description_en": "The plot of Arkham City begins one and a half years after the events of Arkham Asylum. Quincy Sharp, former superintendent of the Arkham Psychiatric Hospital, became mayor of Gotham and created the prison \"Arkham City\". Prisoners of Arkham City are not controlled by anyone in its borders, they are only forbidden from running away ...\r\nThere are all the regular characters in the game - Joker, Two-Face, Catwoman, Ra's al Ghul, James Gordon and others. Each villain individually and all of them together give Batman difficult tasks that move the game forward.\r\nArkham City has an open world. All gadgets from Arkham Asylum are available to the player from the very beginning. Many of them are improved, there are also new ones. The game has a \"Detective mode\" - the skeletons of enemies are highlighted, it is possible to conduct various examinations, for example, tracking the flight of a sniper's bullet. There is also access to a database that tracks villains in the city.\r\nAt a certain point in the story, you can play as a Catwoman. She has an analogue of \"Detective Mode\" - \"Mode of the thief\".\r\nThe visual decision and soundtrack are very atmospheric, soft, but give a clear sense of gloom and horror, entirely in the spirit of the plot and characters.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان شهر آرکام یک سال و نیم پس از حوادث Arkham Asylum آغاز می شود. کوئینسی شارپ، سرپرست سابق بیمارستان روانی آرکام، شهردار گاتهام شد و زندان \"آرکهام سیتی\" را ایجاد کرد. زندانیان شهر آرکام در مرزهای آن توسط کسی کنترل نمی شوند، آنها فقط از فرار منع می شوند ...\r\nهمه شخصیت های معمولی در بازی وجود دارند - جوکر، دو چهره، زن گربه ای، راس الغول، جیمز گوردون و دیگران. هر شرور به صورت جداگانه و همه آنها با هم وظایف سختی را به بتمن می دهند که بازی را به جلو می برد.\r\nشهر آرکام یک دنیای باز دارد. تمامی گجت های Arkham Asylum از همان ابتدا در اختیار بازیکن قرار می گیرد. بسیاری از آنها بهبود یافته اند، موارد جدید نیز وجود دارد. بازی دارای \"حالت کارآگاه\" است - اسکلت های دشمنان برجسته شده است، امکان انجام آزمایشات مختلف، به عنوان مثال، ردیابی پرواز گلوله تک تیرانداز وجود دارد. همچنین دسترسی به پایگاه داده ای وجود دارد که افراد شرور را در شهر ردیابی می کند.\r\nدر یک نقطه خاص از داستان، شما می توانید به عنوان یک زن گربه ای بازی کنید. او یک آنالوگ از \"حالت کارآگاه\" - \"حالت دزد\" دارد.\r\nتصمیم بصری و موسیقی متن بسیار جوی، ملایم است، اما حس واضحی از تاریکی و وحشت را کاملاً مطابق با روح داستان و شخصیت ها ارائه می دهد."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nداستان شهر آرکام یک سال و نیم پس از حوادث Arkham Asylum آغاز می شود. کوئینسی شارپ، سرپرست سابق بیمارستان روانی آرکام، شهردار گاتهام شد و زندان \"آرکهام سیتی\" را ایجاد کرد. زندانیان شهر آرکام در مرزهای آن توسط کسی کنترل نمی شوند، آنها فقط از فرار منع می شوند ...\r\nهمه شخصیت های معمولی در بازی وجود دارند - جوکر، دو چهره، زن گربه ای، راس الغول، جیمز گوردون و دیگران. هر شرور به صورت جداگانه و همه آنها با هم وظایف سختی را به بتمن می دهند که بازی را به جلو می برد.\r\nشهر آرکام یک دنیای باز دارد. تمامی گجت های Arkham Asylum از همان ابتدا در اختیار بازیکن قرار می گیرد. بسیاری از آنها بهبود یافته اند، موارد جدید نیز وجود دارد. بازی دارای \"حالت کارآگاه\" است - اسکلت های دشمنان برجسته شده است، امکان انجام آزمایشات مختلف، به عنوان مثال، ردیابی پرواز گلوله تک تیرانداز وجود دارد. همچنین دسترسی به پایگاه داده ای وجود دارد که افراد شرور را در شهر ردیابی می کند.\r\nدر یک نقطه خاص از داستان، شما می توانید به عنوان یک زن گربه ای بازی کنید. او یک آنالوگ از \"حالت کارآگاه\" - \"حالت دزد\" دارد.\r\nتصمیم بصری و موسیقی متن بسیار جوی، ملایم است، اما حس واضحی از تاریکی و وحشت را کاملاً مطابق با روح داستان و شخصیت ها ارائه می دهد.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 17
   },
   {
     "id": 3287,
