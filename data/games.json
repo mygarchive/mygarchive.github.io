@@ -5487,7 +5487,7 @@
     "name": "Call of Duty: Modern Warfare Remastered",
     "background_image": "https://media.rawg.io/media/games/509/509c81a5da92a8d0645d9e160d155017.jpg",
     "rating": 3.98,
-    "metacritic": 86,
+    "metacritic": 81,
     "released": "2016-10-05",
     "genres": [
       {
@@ -5502,7 +5502,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 5,
+    "playtime": 9,
     "developers": "Raven Software, Activision, Beenox",
     "steam_link": "https://store.steampowered.com/app/393080/",
     "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256691384/movie_max.mp4",
@@ -5519,11 +5519,14 @@
       "https://media.rawg.io/media/games/509/509c81a5da92a8d0645d9e160d155017.jpg"
     ],
     "requirements": {
-      "minimum": "OS: Windows 7 64-Bit or later\nProcessor: Intel Core i3-3225 @ 3.30GHz or equivalent\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 660 2GB / AMD Radeon HD 7850 2GB\nDirectX: Version 11\nNetwork: Broadband Internet connection\nSound Card: DirectX 11 Compatible\nAdditional Notes: Disk space requirement may change over time.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 7 64-bit\n           Windows 8 64-bit\n           Windows 10 64-bit\n\nCPU:       Intel Core i3-4340\n           AMD FX-6300\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 670\n           AMD Radeon HD 7950\n\nVRAM:      2 GB\n\nDirectX:   Version 11\n\nStorage:   55 GB",
+      "recommended": "OS:        Windows 10 64-bit\n\nCPU:       Intel Core i5-2500K\n           AMD Ryzen 5 1600X\n\nRAM:       12 GB\n\nGPU:       NVIDIA GeForce GTX 970\n           AMD Radeon R9 390\n\nVRAM:      4 GB\n\nDirectX:   Version 11\n\nStorage:   55 GB"
     },
     "description_en": "###The restart\nReleased in 2016, the remastered version of one of the most revolutionary parts of the annual Call of Duty series. In 2007, the series moved from historical scenery to modern, got a new more advanced graphics thanks to the freshly-released consoles and presented to the players a hardcore fast-paced multiplayer. The latter is still wanted by hardcore fans, which gave the publisher Activision Blizzard a reason to remaster the game.\n\n###Key features\nIn the new version, developers from the Raven Software did their best to rebuild the experience (the original game was developed by Infinity Ward). The game is available for purchase, as a separate product, and as part of a bundle. Owners of the original version of the game can get Remastered for free - you need to have the original disk for this or digital purchase. The re-released game did not change the gameplay in any way: it is still a fast-paced first-person shooter. The story campaign, during which the player takes control of several characters, also has not changed. Most of the changes turned out to be cosmetic and allowed the new studio to add new technologies to the original game: for example, while prone and moving, the weapon touching the ground will vibrate the controller. Also in the single-player campaign, new cheat codes were added, such as exaggerated physics and the ability to replace heads on the shoulders of virtual people with watermelons.\n\n###The changes\nThe main changes lie in multiplayer, which ",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n###راه اندازی مجدد\nنسخه بازسازی شده یکی از انقلابی ترین قسمت های سری سالانه Call of Duty که در سال 2016 منتشر شد. در سال 2007، این سری از مناظر تاریخی به مدرن منتقل شد، به لطف کنسول های تازه منتشر شده، گرافیک پیشرفته تری دریافت کرد و یک بازی چند نفره سریع و هاردکور را به بازیکنان ارائه کرد. مورد دوم همچنان مورد توجه طرفداران هاردکور است و همین امر به ناشر Activision Blizzard دلیلی برای ریمستر بازی داد.\n\n###ویژگی های کلیدی\nدر نسخه جدید، توسعه دهندگان Raven Software تمام تلاش خود را برای بازسازی این تجربه انجام دادند (بازی اصلی توسط Infinity Ward ساخته شده است). این بازی به عنوان یک محصول جداگانه و به عنوان بخشی از یک بسته برای خرید در دسترس است. دارندگان نسخه اصلی بازی می توانند Remastered را به صورت رایگان دریافت کنند - برای این خرید یا خرید دیجیتال باید دیسک اصلی را داشته باشید. بازی منتشر شده به هیچ وجه تغییری در گیم پلی بازی ایجاد نکرد: هنوز هم یک بازی تیراندازی اول شخص سریع است. کمپین داستانی که طی آن بازیکن کنترل چندین شخصیت را به دست می‌گیرد نیز تغییری نکرده است. بیشتر تغییرات ظاهری زیبایی داشتند و به استودیوی جدید اجازه دادند تا فناوری های جدیدی را به بازی اصلی اضافه کند: برای مثال، در حالی که مستعد و در حال حرکت است، برخورد سلاح با زمین کنترل کننده را به لرزه در می آورد. همچنین در کمپین تک نفره، کدهای تقلب جدیدی مانند فیزیک اغراق آمیز و امکان جایگزینی سر بر روی شانه افراد مجازی با هندوانه اضافه شد.\n\n###تغییرات\nتغییرات اصلی در چند نفره نهفته است که"
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n###راه اندازی مجدد\nنسخه بازسازی شده یکی از انقلابی ترین قسمت های سری سالانه Call of Duty که در سال 2016 منتشر شد. در سال 2007، این سری از مناظر تاریخی به مدرن منتقل شد، به لطف کنسول های تازه منتشر شده، گرافیک پیشرفته تری دریافت کرد و یک بازی چند نفره سریع و هاردکور را به بازیکنان ارائه کرد. مورد دوم همچنان مورد توجه طرفداران هاردکور است و همین امر به ناشر Activision Blizzard دلیلی برای ریمستر بازی داد.\n\n###ویژگی های کلیدی\nدر نسخه جدید، توسعه دهندگان Raven Software تمام تلاش خود را برای بازسازی این تجربه انجام دادند (بازی اصلی توسط Infinity Ward ساخته شده است). این بازی به عنوان یک محصول جداگانه و به عنوان بخشی از یک بسته برای خرید در دسترس است. دارندگان نسخه اصلی بازی می توانند Remastered را به صورت رایگان دریافت کنند - برای این خرید یا خرید دیجیتال باید دیسک اصلی را داشته باشید. بازی منتشر شده به هیچ وجه تغییری در گیم پلی بازی ایجاد نکرد: هنوز هم یک بازی تیراندازی اول شخص سریع است. کمپین داستانی که طی آن بازیکن کنترل چندین شخصیت را به دست می‌گیرد نیز تغییری نکرده است. بیشتر تغییرات ظاهری زیبایی داشتند و به استودیوی جدید اجازه دادند تا فناوری های جدیدی را به بازی اصلی اضافه کند: برای مثال، در حالی که مستعد و در حال حرکت است، برخورد سلاح با زمین کنترل کننده را به لرزه در می آورد. همچنین در کمپین تک نفره، کدهای تقلب جدیدی مانند فیزیک اغراق آمیز و امکان جایگزینی سر بر روی شانه افراد مجازی با هندوانه اضافه شد.\n\n###تغییرات\nتغییرات اصلی در چند نفره نهفته است که",
+    "is_popular": true,
+    "system_tier": "normal",
+    "size_gb": 55
   },
   {
     "id": 14446,
