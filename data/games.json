@@ -5790,7 +5790,7 @@
     "name": "Call of Duty: Modern Warfare II",
     "background_image": "https://media.rawg.io/media/games/1af/1af8edc7491c6d9d0776fc423d93548d.jpg",
     "rating": 3.81,
-    "metacritic": null,
+    "metacritic": 86,
     "released": "2022-10-22",
     "genres": [
       {
@@ -5804,7 +5804,7 @@
         "slug": "action"
       }
     ],
-    "esrb_rating": "---",
+    "esrb_rating": "+17",
     "playtime": 10,
     "developers": "Raven Software, Treyarch, Infinity Ward, Beenox, Sledgehammer Games, High Moon Studios, Toys for Bob, Activision Shanghai, Demonware, Demonware Softwarehaus",
     "steam_link": "https://store.steampowered.com/app/3595230/",
@@ -5824,7 +5824,10 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64 Bit (latest update) or Windows® 11 64 Bit (latest update)\nProcessor: Intel® Core™ i5-6600K / Core™ i7-4770 or AMD Ryzen™ 5 1400\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 1060 or AMD Radeon™ RX 580 - DirectX 12.0 compatible system or Intel® Arc™ A770\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 125 GB available space"
     },
     "description_en": "Welcome to the new era of Call of Duty®.\r\n\r\nCall of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عصر جدید Call of Duty® خوش آمدید.\r\n\r\nCall of Duty®: Modern Warfare® II بازیکنان را وارد یک درگیری جهانی بی‌سابقه می‌کند که شامل بازگشت اپراتورهای نمادین Task Force 141 می‌شود. از عملیات‌های تاکتیکی نفوذی در مقیاس کوچک و مخاطرات بالا گرفته تا مأموریت‌های بسیار طبقه‌بندی شده، بازیکنان در کنار دوستان خود در یک تجربه واقعاً فراگیر مستقر خواهند شد."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه عصر جدید Call of Duty® خوش آمدید.\r\n\r\nCall of Duty®: Modern Warfare® II بازیکنان را وارد یک درگیری جهانی بی‌سابقه می‌کند که شامل بازگشت اپراتورهای نمادین Task Force 141 می‌شود. از عملیات‌های تاکتیکی نفوذی در مقیاس کوچک و مخاطرات بالا گرفته تا مأموریت‌های بسیار طبقه‌بندی شده، بازیکنان در کنار دوستان خود در یک تجربه واقعاً فراگیر مستقر خواهند شد.",
+    "is_popular": true,
+    "system_tier": "normal",
+    "size_gb": 125
   },
   {
     "id": 647552,
