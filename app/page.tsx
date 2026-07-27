@@ -463,12 +463,20 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95 group-hover:opacity-100" 
                     />
 
-                    <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+<div className="absolute top-2 right-2 flex flex-wrap gap-1">
                       {game.size_gb ? (
                         <span className="bg-slate-950/80 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-500/30 backdrop-blur-sm">
                           💾 {game.size_gb} GB
                         </span>
                       ) : null}
+                      
+                      {/* 📅 تگ سال ساخت روی کاور */}
+                      {game.released && (
+                        <span className="bg-slate-950/80 text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-slate-600/30 backdrop-blur-sm">
+                          📅 {game.released.split('-')[0]}
+                        </span>
+                      )}
+
                       {game.is_popular && (
                         <span className="bg-amber-950/80 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-500/30 backdrop-blur-sm">
                           🔥 پرطرفدار
