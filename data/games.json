@@ -6475,8 +6475,8 @@
         "slug": "role-playing-games-rpg"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 23,
+    "esrb_rating": "+17",
+    "playtime": 40,
     "developers": "Techland",
     "steam_link": "https://store.steampowered.com/app/534380/",
     "trailer_url": "",
@@ -6491,11 +6491,14 @@
       "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg"
     ],
     "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC"
+      "minimum": "OS:        Windows 10 64-bit\n\nCPU:       Intel Core i3-9100\n           AMD Ryzen 3 2300X\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 1050 Ti\n           AMD Radeon RX 570\n\nDirectX:   Version 12\n\nStorage:   60 GB SSD\n\nTarget:    1080p / 30 FPS / Low",
+      "recommended": "OS:        Windows 10 64-bit\n\nCPU:       Intel Core i5-8600K\n           AMD Ryzen 5 3600X\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce RTX 2060 6GB\n           AMD Radeon RX Vega 56 8GB\n\nDirectX:   Version 12\n\nStorage:   60 GB SSD\n\nTarget:    1080p / 60 FPS / High"
     },
     "description_en": "Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. \r\n\r\nIn this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDying Light 2 یک چشم انداز منحصر به فرد پسا آخرالزمانی از عصر تاریک مدرن را زنده می کند - یک واقعیت وحشیانه، تاریک و نابخشودنی که در آن به همان اندازه احتمال دارد که توسط افراد آلوده به دست یک انسان از بین برید. \r\n\r\nدر این دنیای خسته، تفکر سریع، توانایی‌های استثنایی پارکور و مهارت‌های جنگی وحشیانه تنها چیزهایی هستند که به شما اجازه می‌دهند در تاریکی شیرجه بزنید و زنده بیرون بیایید. از نظر اخلاقی تصمیمات خاکستری بگیرید و شاهد باشید که چگونه بر جهان در سطوح مختلف تأثیر می گذارد، تغییر شهر را شکل می دهد و در نهایت سرنوشت آن را تعیین می کند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDying Light 2 یک چشم انداز منحصر به فرد پسا آخرالزمانی از عصر تاریک مدرن را زنده می کند - یک واقعیت وحشیانه، تاریک و نابخشودنی که در آن به همان اندازه احتمال دارد که توسط افراد آلوده به دست یک انسان از بین برید. \r\n\r\nدر این دنیای خسته، تفکر سریع، توانایی‌های استثنایی پارکور و مهارت‌های جنگی وحشیانه تنها چیزهایی هستند که به شما اجازه می‌دهند در تاریکی شیرجه بزنید و زنده بیرون بیایید. از نظر اخلاقی تصمیمات خاکستری بگیرید و شاهد باشید که چگونه بر جهان در سطوح مختلف تأثیر می گذارد، تغییر شهر را شکل می دهد و در نهایت سرنوشت آن را تعیین می کند.",
+    "is_popular": true,
+    "system_tier": "heavy",
+    "size_gb": 60
   },
   {
     "id": 19560,
