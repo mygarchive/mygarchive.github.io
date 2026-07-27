@@ -6083,7 +6083,7 @@
       }
     ],
     "esrb_rating": "+13",
-    "playtime": 3,
+    "playtime": 24,
     "developers": "Electronic Arts, Electronic Arts Los Angeles",
     "steam_link": "https://store.steampowered.com/app/17480/",
     "trailer_url": "",
@@ -6098,11 +6098,14 @@
       "https://media.rawg.io/media/games/776/776e601c2c37f50bb11f9054f54c60da.jpg"
     ],
     "requirements": {
-      "minimum": "Supported OS: Microsoft Windows® XP SP2, Windows Vista (32-bit)                    \nProcessor: Any Intel Core Duo machine; XP: Intel Pentium 4 2.2 GHz or better, AMD Athlon XP 2100+ or better; Vista: Intel Pentium 4 2.6 GHz or better, AMD Athlon XP 2800+ or better                    \nMemory: 1 GB RAM                    \nGraphics: DirectX® 9.0c compatible video card, NVIDIA GeForce 6800 or better, ATI Radeon X800 or better                    \nHard Drive: At least 10 GB of free space                    \nSound: DirectX® 9.0c compatible sound card (Yamaha Xwave-512 is not supported)                    \nMultiplayer: 2 - 6 players with optional voice support, network or Internet connection required (Cable, DSL or faster connection).                    INTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. TO ACCESS ONLINE FEATURES, YOU MUST REGISTER ONLINE. ONLY ONE REGISTRATION IS AVAILABLE PER GAME.  EA ONLINE TERMS &amp; CONDITIONS AND FEATURE UPDATES CAN BE FOUND AT WWW.EA.COM. YOU MUST BE 13+ TO REGISTER WITH EA ONLINE.                     EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON WWW.EA.COM.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows XP / Vista / 7\n\nCPU:       Intel Pentium 4 2.2 GHz\n           AMD Athlon 64 3200+\n\nRAM:       1 GB\n\nGPU:       NVIDIA GeForce 6800\n           ATI Radeon X800\n\nVRAM:      256 MB\n\nDirectX:   Version 9.0c\n\nStorage:   10 GB",
+      "recommended": "OS:        Windows XP / Vista / 7\n\nCPU:       Intel Core 2 Duo 2.6 GHz\n           AMD Athlon 64 X2 5200+\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce 8800\n           ATI Radeon HD 3850\n\nVRAM:      512 MB\n\nDirectX:   Version 9.0c\n\nStorage:   10 GB"
     },
     "description_en": "Command & Conquer Red Alert 3 is a real-time strategy game set during an alternate scenario of World War II. In the game the United States confronted the USSR. To provide their victory, the Soviets went back in time and changed the future. As a result, the third power appears - the Empire of the Rising Sun, and all three forces get involved in a new war. All factions in the game are playable and provide different playstyles. While the Soviet army is suitable for a fast-paced expansion, the Japanese side focuses on technological progress. The US keep the medium position.\n\nIn Red Alert 3 you need to build a base and develop technology to create weapons. The main difference from other RTS is that the campaign in the game is fully cooperative, played either with a friend online or with an AI teammate. The game also features Naval Warfare mode with facilities built on water and various marine units. Additionally, each country has 15 unique abilities to use during battles.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Red Alert 3 یک بازی استراتژیک بلادرنگ است که در یک سناریوی جایگزین از جنگ جهانی دوم تنظیم شده است. در این بازی، ایالات متحده با اتحاد جماهیر شوروی روبرو شد. اتحاد جماهیر شوروی برای ارائه پیروزی خود، به گذشته بازگشت و آینده را تغییر داد. در نتیجه، قدرت سوم ظاهر می شود - امپراتوری خورشید در حال طلوع، و هر سه نیرو درگیر یک جنگ جدید می شوند. تمام گروه های بازی قابل بازی هستند و سبک های مختلف بازی را ارائه می دهند. در حالی که ارتش شوروی برای توسعه سریع مناسب است، طرف ژاپنی بر پیشرفت تکنولوژی تمرکز می کند. ایالات متحده جایگاه متوسط ​​را حفظ می کند.\n\nدر Red Alert 3 باید پایگاهی بسازید و فناوری ساخت سلاح را توسعه دهید. تفاوت اصلی با سایر RTS این است که کمپین در بازی کاملاً مشارکتی است، یا با یک دوست آنلاین یا با یک هم تیمی هوش مصنوعی بازی می شود. این بازی همچنین دارای حالت Naval Warfare با امکانات ساخته شده بر روی آب و واحدهای دریایی مختلف است. علاوه بر این، هر کشور دارای 15 توانایی منحصر به فرد برای استفاده در طول نبردها است."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Red Alert 3 یک بازی استراتژیک بلادرنگ است که در یک سناریوی جایگزین از جنگ جهانی دوم تنظیم شده است. در این بازی، ایالات متحده با اتحاد جماهیر شوروی روبرو شد. اتحاد جماهیر شوروی برای ارائه پیروزی خود، به گذشته بازگشت و آینده را تغییر داد. در نتیجه، قدرت سوم ظاهر می شود - امپراتوری خورشید در حال طلوع، و هر سه نیرو درگیر یک جنگ جدید می شوند. تمام گروه های بازی قابل بازی هستند و سبک های مختلف بازی را ارائه می دهند. در حالی که ارتش شوروی برای توسعه سریع مناسب است، طرف ژاپنی بر پیشرفت تکنولوژی تمرکز می کند. ایالات متحده جایگاه متوسط ​​را حفظ می کند.\n\nدر Red Alert 3 باید پایگاهی بسازید و فناوری ساخت سلاح را توسعه دهید. تفاوت اصلی با سایر RTS این است که کمپین در بازی کاملاً مشارکتی است، یا با یک دوست آنلاین یا با یک هم تیمی هوش مصنوعی بازی می شود. این بازی همچنین دارای حالت Naval Warfare با امکانات ساخته شده بر روی آب و واحدهای دریایی مختلف است. علاوه بر این، هر کشور دارای 15 توانایی منحصر به فرد برای استفاده در طول نبردها است.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 10
   },
   {
     "id": 978295,
