@@ -6109,7 +6109,7 @@
     "name": "Command & Conquer Generals Zero Hour",
     "background_image": "https://media.rawg.io/media/screenshots/cfd/cfdfdc3f6bf2753e3767d8731f947243.jpg",
     "rating": 4,
-    "metacritic": null,
+    "metacritic": 83,
     "released": "2024-03-07",
     "genres": [
       {
@@ -6123,7 +6123,7 @@
         "slug": "action"
       }
     ],
-    "esrb_rating": "---",
+    "esrb_rating": "+13",
     "playtime": 1,
     "developers": "Electronic Arts Los Angeles",
     "steam_link": "https://store.steampowered.com/app/2732960/",
@@ -6141,7 +6141,10 @@
       "recommended": "OS: Windows 10\nProcessor: 2.2 GHz Intel or AMD CPU\nMemory: 1 GB RAM\nGraphics: GeForce 4+/ Radeon 8500\nStorage: 3 GB available space"
     },
     "description_en": "Command & Conquer Generals Zero Hour brings you closer to the enemy than ever before. Engage opposing forces at hot spots around the globe as you match strategies and arsenals against the new masterminds of modern war.\nArsenal. Unleash the next generation of 3D new units and 20 new upgrades including China's ECM Tank, GLA's BattleBus and the USA's Spectre Gunship.\nMissions. Take on 15 new missions and make tomorrow's headlines. Root out a splinter cell in Cairo, steal deadly toxins from a U.S. lab and more.\nGenerals. Match strategies and arsenals against 9 enemy commanders with unpredictable personalities and tactics.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Generals Zero Hour شما را بیش از هر زمان دیگری به دشمن نزدیک می کند. نیروهای مخالف را در نقاط داغ در سراسر جهان درگیر کنید، زیرا استراتژی ها و زرادخانه ها را با مغز متفکران جدید جنگ مدرن مطابقت می دهید.\nآرسنال نسل بعدی واحدهای جدید سه بعدی و 20 ارتقای جدید از جمله تانک ECM چین، BattleBus GLA و Spectre Gunship ایالات متحده را آزاد کنید.\nماموریت ها 15 ماموریت جدید را انجام دهید و تیتر اخبار فردا شوید. یک سلول انشعابی را در قاهره ریشه کن کنید، سموم کشنده را از یک آزمایشگاه ایالات متحده بدزدید و موارد دیگر.\nژنرال ها استراتژی ها و زرادخانه ها را با 9 فرمانده دشمن با شخصیت ها و تاکتیک های غیرقابل پیش بینی مسابقه دهید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCommand & Conquer Generals Zero Hour شما را بیش از هر زمان دیگری به دشمن نزدیک می کند. نیروهای مخالف را در نقاط داغ در سراسر جهان درگیر کنید، زیرا استراتژی ها و زرادخانه ها را با مغز متفکران جدید جنگ مدرن مطابقت می دهید.\nآرسنال نسل بعدی واحدهای جدید سه بعدی و 20 ارتقای جدید از جمله تانک ECM چین، BattleBus GLA و Spectre Gunship ایالات متحده را آزاد کنید.\nماموریت ها 15 ماموریت جدید را انجام دهید و تیتر اخبار فردا شوید. یک سلول انشعابی را در قاهره ریشه کن کنید، سموم کشنده را از یک آزمایشگاه ایالات متحده بدزدید و موارد دیگر.\nژنرال ها استراتژی ها و زرادخانه ها را با 9 فرمانده دشمن با شخصیت ها و تاکتیک های غیرقابل پیش بینی مسابقه دهید.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 3
   },
   {
     "id": 326251,
