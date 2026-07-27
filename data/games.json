@@ -6666,8 +6666,8 @@
         "slug": "action"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 8,
+    "esrb_rating": "+17",
+    "playtime": 40,
     "developers": "Ubisoft, Ubisoft Montreal, Ubisoft Toronto, Ubisoft Shanghai, Ubisoft Kyiv, Ubisoft Berlin",
     "steam_link": "https://store.steampowered.com/app/2369390/",
     "trailer_url": "",
@@ -6686,7 +6686,10 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (20H1 version or newer, 64-bit versions)\nProcessor: AMD Ryzen 5 3600X @ 3.8 GHz or Intel Core i7-7700 @ 3.6 GHz (AVX, AVX2 and SSE 4.2 support required)\nMemory: 16 GB RAM\nGraphics: AMD RX Vega 64 (8 GB) or NVIDIA GeForce GTX 1080 (8 GB)\nDirectX: Version 12\nStorage: 170 GB available space\nAdditional Notes: Please note that the minimum requirement for running the HD Texture Pack for Far Cry 6 is 12GB of VRAM. For 4K configurations, you will need 16GB of VRAM.   If you download and run the HD Texture Pack with lower VRAM capabilities, you will encounter performance issues while playing."
     },
     "description_en": "Welcome to Yara, a tropical paradise frozen in time. As the dictator of Yara, Anton Castillo is intent on restoring his nation back to its former glory by any means, with his son, Diego, following in his bloody footsteps. Their oppressive rule has ignited a revolution.\n\nJOIN THE REVOLUTION\nPlay as Dani Rojas, a local Yaran, and become a guerrilla fighter to liberate your nation.\n\nYARA TORN APART\nFight against Anton's troops in the largest Far Cry playground to date across jungles, beaches, and Esperanza, the capital city of Yara.\n\nGUERRILLA FIREPOWER\nEmploy makeshift weapons, vehicles, and animal companions to burn Anton's ruthless regime to the ground.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه یارا خوش آمدید، بهشت ​​استوایی که در زمان یخ زده است. به عنوان دیکتاتور یارا، آنتون کاستیلو قصد دارد کشورش را به هر وسیله ای به شکوه سابق خود بازگرداند، با پسرش دیگو که ردپای خونین او را دنبال می کند. حکومت ظالمانه آنها شعله ور انقلاب شده است.\n\nبه انقلاب بپیوندید\nدر نقش Dani Rojas، یاران محلی بازی کنید و به یک مبارز چریکی تبدیل شوید تا ملت خود را آزاد کنید.\n\nیارا پاره شد\nدر بزرگترین زمین بازی Far Cry تا به امروز در جنگل‌ها، سواحل و اسپرانزا، پایتخت یارا، با نیروهای آنتون مبارزه کنید.\n\nنیروی آتش چریکی\nاز سلاح های موقت، وسایل نقلیه و همراهان حیوانات استفاده کنید تا رژیم بی رحم آنتون را به خاک بسپارید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه یارا خوش آمدید، بهشت ​​استوایی که در زمان یخ زده است. به عنوان دیکتاتور یارا، آنتون کاستیلو قصد دارد کشورش را به هر وسیله ای به شکوه سابق خود بازگرداند، با پسرش دیگو که ردپای خونین او را دنبال می کند. حکومت ظالمانه آنها شعله ور انقلاب شده است.\n\nبه انقلاب بپیوندید\nدر نقش Dani Rojas، یاران محلی بازی کنید و به یک مبارز چریکی تبدیل شوید تا ملت خود را آزاد کنید.\n\nیارا پاره شد\nدر بزرگترین زمین بازی Far Cry تا به امروز در جنگل‌ها، سواحل و اسپرانزا، پایتخت یارا، با نیروهای آنتون مبارزه کنید.\n\nنیروی آتش چریکی\nاز سلاح های موقت، وسایل نقلیه و همراهان حیوانات استفاده کنید تا رژیم بی رحم آنتون را به خاک بسپارید.",
+    "is_popular": true,
+    "system_tier": "heavy",
+    "size_gb": 170
   },
   {
     "id": 274767,
