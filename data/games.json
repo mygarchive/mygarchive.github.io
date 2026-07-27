@@ -5424,7 +5424,7 @@
         "slug": "shooter"
       }
     ],
-    "esrb_rating": "+18",
+    "esrb_rating": "+17",
     "playtime": 8,
     "developers": "Treyarch",
     "steam_link": "https://store.steampowered.com/app/10090/",
@@ -5441,10 +5441,13 @@
     ],
     "requirements": {
       "minimum": "Supported OS:  Windows XP/Vista/7                    \nProcessor: Pentium 4 @ 3 GHz/AMD 64 3200+                    \nMemory: 512 MB (1 GB for Vista)                    \nHard Drive: 8 GB Free                    \nDirectX version: DirectX 9.0c                    \nSound: on-board or better                      \nGraphics Card: 256 MB (nVidia GeForce 6600/ATI Radeon X1600)",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "recommended": "OS:        Windows XP / Vista\n\nCPU:       Intel Core 2 Duo 2.4 GHz\n           AMD Athlon 64 X2 4800+\n\nRAM:       1 GB (XP)\n           2 GB (Vista)\n\nGPU:       NVIDIA GeForce 7800GT\n           ATI Radeon X1800\n\nVRAM:      256 MB\n\nDirectX:   Version 9.0c\n\nStorage:   8 GB"
     },
     "description_en": "Call of Duty: World at War is a first-person shooter set during World War II and based on several historical battles. The action switches between three playable characters and covers the Pacific Theater and Eastern Front. The story begins with U.S. Marine Private C. Miller who is captured by the Japanese and waits for execution. Later it jumps over war theaters and the timeline, skipping entire months.\r\nThe battles in World at War are quite realistic, with the maximum of two weapons you can carry plus hand grenades. AI allies fight alongside to you, and there's also a cover system that helps to restore health and complete stealthy missions. The variety of levels includes PBY missions, sniper tasks, and sea battles. \r\nWorld at War is the first game of the franchise to introduce Nazi Zombies mode - a cooperative mini-game where 2 to 4 players fight endless hordes of zombies. While the area cover in this mode is quite small, it was expanded by the World at War map packs.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: World at War یک بازی تیراندازی اول شخص است که در طول جنگ جهانی دوم و بر اساس چندین نبرد تاریخی ساخته شده است. این اکشن بین سه شخصیت قابل بازی سوئیچ می‌کند و تئاتر اقیانوس آرام و جبهه شرقی را پوشش می‌دهد. داستان با سرباز آمریکایی سی میلر شروع می شود که توسط ژاپنی ها دستگیر می شود و منتظر اعدام است. بعداً از روی تئاترهای جنگ و جدول زمانی پرش می کند و ماه های کامل را رد می کند.\r\nنبردها در World at War کاملا واقع گرایانه هستند، با حداکثر دو سلاح که می توانید همراه با نارنجک های دستی داشته باشید. متحدان هوش مصنوعی در کنار شما می جنگند و همچنین یک سیستم پوششی وجود دارد که به بازیابی سلامت و تکمیل ماموریت های مخفیانه کمک می کند. سطوح مختلف شامل ماموریت های PBY، وظایف تک تیرانداز و نبردهای دریایی است. \r\nWorld at War اولین بازی از این فرنچایز است که حالت زامبی های نازی را معرفی می کند - یک مینی بازی همکاری که در آن 2 تا 4 بازیکن با انبوهی از زامبی ها مبارزه می کنند. در حالی که پوشش منطقه در این حالت بسیار کوچک است، توسط بسته های نقشه World at War گسترش یافته است."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: World at War یک بازی تیراندازی اول شخص است که در طول جنگ جهانی دوم و بر اساس چندین نبرد تاریخی ساخته شده است. این اکشن بین سه شخصیت قابل بازی سوئیچ می‌کند و تئاتر اقیانوس آرام و جبهه شرقی را پوشش می‌دهد. داستان با سرباز آمریکایی سی میلر شروع می شود که توسط ژاپنی ها دستگیر می شود و منتظر اعدام است. بعداً از روی تئاترهای جنگ و جدول زمانی پرش می کند و ماه های کامل را رد می کند.\r\nنبردها در World at War کاملا واقع گرایانه هستند، با حداکثر دو سلاح که می توانید همراه با نارنجک های دستی داشته باشید. متحدان هوش مصنوعی در کنار شما می جنگند و همچنین یک سیستم پوششی وجود دارد که به بازیابی سلامت و تکمیل ماموریت های مخفیانه کمک می کند. سطوح مختلف شامل ماموریت های PBY، وظایف تک تیرانداز و نبردهای دریایی است. \r\nWorld at War اولین بازی از این فرنچایز است که حالت زامبی های نازی را معرفی می کند - یک مینی بازی همکاری که در آن 2 تا 4 بازیکن با انبوهی از زامبی ها مبارزه می کنند. در حالی که پوشش منطقه در این حالت بسیار کوچک است، توسط بسته های نقشه World at War گسترش یافته است.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 8
   },
   {
     "id": 25064,
