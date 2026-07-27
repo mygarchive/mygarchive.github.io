@@ -9831,5 +9831,44 @@
     "is_popular": false,
     "is_coop": false,
     "system_tier": "unspecified"
+  },
+  {
+    "id": 681398,
+    "name": "Farming Simulator 22",
+    "background_image": "https://media.rawg.io/media/games/dd9/dd90964966f6bf9b0bd635be432fbf8a.jpg",
+    "metacritic": null,
+    "released": "2021-11-22",
+    "genres": [
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation"
+      }
+    ],
+    "esrb_rating": "همه سنین",
+    "playtime": 12,
+    "developers": "Giants Software",
+    "steam_link": "https://store.steampowered.com/app/1248130/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/38f/38fd5a7e40d0099c70bff22aabeb0daa.jpg",
+      "https://media.rawg.io/media/screenshots/baa/baa618afd34c53624d8767e535c027a9.jpg",
+      "https://media.rawg.io/media/screenshots/d44/d4460a6a65807acca6e6d041b38bc197.jpg",
+      "https://media.rawg.io/media/screenshots/3c8/3c8c286aa153e50f7db191c2a65b0312.jpg",
+      "https://media.rawg.io/media/screenshots/026/026d6cdd03f6997a437b9107fdb5995d.jpg",
+      "https://media.rawg.io/media/screenshots/199/1997298fb235da15374e023fbb37e86d.jpg",
+      "https://media.rawg.io/media/games/dd9/dd90964966f6bf9b0bd635be432fbf8a.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 Home (x64)\nProcessor: Intel Core i5-3330 or AMD FX-8320 or better\nMemory: 8 GB RAM\nGraphics: GeForce GTX 660 or AMD Radeon R7 265 or better (min 2GB VRAM)\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 35 GB available space\nSound Card: Sound card\nAdditional Notes: These system requirements can´t cover all possible system configurations so issues could occur that influence the functionality in some cases.",
+      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 Home (x64)\nProcessor: Intel Core i5-5675C or AMD Ryzen 5 1600 or better\nMemory: 8 GB RAM\nGraphics: GeForce GTX 1060 or Radeon RX 570 or better (min 6GB VRAM)\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 35 GB available space\nSound Card: Sound card\nAdditional Notes: These system requirements can´t cover all possible system configurations so issues could occur that influence the functionality in some cases."
+    },
+    "description_en": "Take on the role of a modern farmer and creatively build your farm in three diverse American and European environments. Farming Simulator 22 offers a huge variety of farming operations focusing on agriculture, animal husbandry and forestry - now with the exciting addition of seasonal cycles!\r\n\r\nMore than 400 machines and tools from over 100 real agricultural brands like John Deere, CLAAS, Case IH, New Holland, Fendt, Massey Ferguson, Valtra and many more are included to sow and harvest crops like wheat, corn, potatoes and cotton. New machine categories and crops will add new gameplay mechanics to the experience.\r\n\r\nEven run your farm cooperatively in multiplayer and extend the game by a multitude of free community-created modifications. Farming Simulator 22 offers more player freedom than ever before and challenges you to become a successful farmer - so start farming and let the good times grow!",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nنقش یک کشاورز مدرن را به عهده بگیرید و مزرعه خود را خلاقانه در سه محیط متنوع آمریکایی و اروپایی بسازید. Farming Simulator 22 طیف گسترده ای از عملیات کشاورزی را با تمرکز بر کشاورزی، دامداری و جنگلداری ارائه می دهد - اکنون با اضافه شدن چرخه های فصلی هیجان انگیز!\r\n\r\nبیش از 400 ماشین و ابزار از بیش از 100 برند کشاورزی واقعی مانند John Deere، CLAAS، Case IH، New Holland، Fendt، Massey Ferguson، Valtra و بسیاری دیگر برای کاشت و برداشت محصولاتی مانند گندم، ذرت، سیب زمینی و پنبه گنجانده شده است. دسته بندی ماشین ها و کراپ های جدید مکانیک های گیم پلی جدیدی را به تجربه اضافه می کند.\r\n\r\nحتی مزرعه خود را به صورت چند نفره اجرا کنید و بازی را با بسیاری از تغییرات رایگان ایجاد شده توسط جامعه گسترش دهید. Farming Simulator 22 آزادی بیشتری نسبت به قبل به بازیکن ارائه می دهد و شما را به چالش می کشد تا یک کشاورز موفق شوید - پس کشاورزی را شروع کنید و بگذارید روزهای خوب رشد کنند!",
+    "size_gb": 35,
+    "is_popular": false,
+    "is_coop": false,
+    "system_tier": "unspecified"
   }
 ]
