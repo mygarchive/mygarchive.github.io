@@ -26,28 +26,33 @@ async function translateToPersian(text: string): Promise<string> {
 const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
-// 🧠 استخراج خودکار عدد حجم از متن سیستم مورد نیاز (نسخه اصلاح‌شده و دقیق)
+// 🧠 استخراج قطعی عدد حجم با تکنیک برش متن (قیچی کردن رم)
 const extractSizeFromReqText = (reqText: string): number | null => {
   if (!reqText) return null;
-  
-  // کلمات مربوط به هارد (الزامی) + نادیده گرفتن کلمات اضافه وسط + استخراج عدد و واحد
-  const match = reqText.match(/(?:storage|space|disk|hdd|ssd|حجم|حافظه)[\s\S]*?(\d+(?:\.\d+)?)\s*(gb|mb|giga|گیگابایت|گیگا|مگابایت|مگا)/i);
-  
-  if (match && match[1] && match[2]) {
-    const amount = parseFloat(match[1]);
-    if (isNaN(amount)) return null;
+  const lowerText = reqText.toLowerCase();
 
-    const unit = match[2].toLowerCase();
+  // پیدا کردن ایندکس (موقعیت) کلماتی که مربوط به فضای ذخیره‌سازی هستند
+  const storageIndex = lowerText.search(/(storage|hard drive|disk space|hdd|ssd|حجم|فضای مورد نیاز)/);
+
+  if (storageIndex !== -1) {
+    // بریدن متن از قسمت هارد به بعد (حذف کامل اطلاعات رم و گرافیک)
+    const storageText = lowerText.substring(storageIndex);
     
-    // اگر واحد مگابایت بود، آن را به گیگابایت تبدیل می‌کنیم
-    if (unit === 'mb' || unit === 'مگابایت' || unit === 'مگا') {
-      return parseFloat((amount / 1024).toFixed(2));
+    // پیدا کردن اولین عدد و واحد (گیگابایت/مگابایت) در متنِ قیچی شده
+    const match = storageText.match(/(\d+(?:\.\d+)?)\s*(gb|mb|giga|گیگابایت|مگابایت)/);
+
+    if (match && match[1] && match[2]) {
+      const amount = parseFloat(match[1]);
+      if (isNaN(amount)) return null;
+      
+      const unit = match[2];
+      // اگر واحد مگابایت بود، تبدیل به گیگابایت شود
+      if (unit.startsWith('mb') || unit.startsWith('مگا')) {
+        return parseFloat((amount / 1024).toFixed(2));
+      }
+      return amount;
     }
-    
-    // در غیر این صورت همان مقدار گیگابایت برمی‌گردد
-    return amount;
   }
-  
   return null;
 };
 
@@ -360,7 +365,6 @@ export default function AdminPanel() {
           id: game.id,
           name: game.name,
           background_image: game.background_image,
-          rating: game.rating,
           metacritic: metacriticScore,
           released: game.released,
           genres: game.genres || [],
@@ -539,13 +543,15 @@ export default function AdminPanel() {
                   <input type="text" value={editingGame.name || ''} onChange={(e) => handleEditFieldChange('name', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold" dir="ltr" />
                 </div>
                 <div>
-                  <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز کاربران (Rating):</label>
-                  <input type="number" step="0.01" value={editingGame.rating || ''} onChange={(e) => handleEditFieldChange('rating', parseFloat(e.target.value))} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" dir="ltr" />
-                </div>
-                <div>
-                  <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز متاتقد (Metacritic):</label>
-                  <input type="number" value={editingGame.metacritic || ''} onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" dir="ltr" />
-                </div>
+  <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز منتقدین (Metacritic):</label>
+  <input 
+    type="number" 
+    value={editingGame.metacritic || ''} 
+    onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} 
+    className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" 
+    dir="ltr" 
+  />
+</div>
 
                 {/* 💾 حجم بازی، سطح سیستم، پرطرفدار و کوآپ */}
                 <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-t border-b border-slate-800/80 py-4 my-2">
