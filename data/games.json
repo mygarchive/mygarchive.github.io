@@ -5751,8 +5751,8 @@
         "slug": "action"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 11,
+    "esrb_rating": "+17",
+    "playtime": 10,
     "developers": "Raven Software, Treyarch, Beenox, Sledgehammer Games, High Moon Studios, Activision Shanghai",
     "steam_link": "https://store.steampowered.com/app/1985810/",
     "trailer_url": "",
@@ -5771,7 +5771,10 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows® 10 64-bit (latest update)\nProcessor: Intel® Core™ i5-2500K or AMD Ryzen™ R5 1600X Processor\nMemory: 12 GB RAM\nGraphics: NVIDIA® GeForce® GTX 970 / NVIDIA® GeForce® GTX 1660 Super or AMD Radeon™ R9 390 / AMD Radeon™ RX 580\nDirectX: Version 12\nNetwork: Broadband Internet connection\nStorage: 175 GB available space"
     },
     "description_en": "The iconic Black Ops series is back with Call of Duty®: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty®: Black Ops.\n\nBlack Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.\n\nAs elite operatives, you will follow the trail of a shadowy figure named Perseus who is on a mission to destabilize the global balance of power and change the course of history. Descend into the dark center of this global conspiracy alongside iconic characters Woods, Mason and Hudson and a new cast of operatives attempting to stop a plot decades in the making.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه نمادین Black Ops با Call of Duty®: Black Ops Cold War بازگشته است - دنباله مستقیم نسخه اصلی و مورد علاقه طرفداران Call of Duty®: Black Ops.\n\nBlack Ops Cold War طرفداران را به اعماق نبرد ژئوپلیتیک ناپایدار جنگ سرد در اوایل دهه 1980 می کشاند. در کمپین تک‌نفره جذاب، که در آن بازیکنان با شخصیت‌های تاریخی و حقایق سخت روبرو می‌شوند، هیچ‌چیز آنطور که به نظر می‌رسد نیست، زیرا در سراسر جهان از طریق مکان‌های نمادین مانند برلین شرقی، ویتنام، ترکیه، مقر KGB شوروی و غیره می‌جنگند.\n\nشما به عنوان عوامل نخبه، دنباله‌روی شخصیتی پنهان به نام پرسئوس را دنبال خواهید کرد که در ماموریت بی‌ثبات کردن تعادل جهانی قدرت و تغییر مسیر تاریخ است. به مرکز تاریک این توطئه جهانی در کنار شخصیت‌های نمادین وودز، میسون و هادسون و گروه جدیدی از عواملی که در تلاش برای متوقف کردن طرحی که دهه‌ها در حال ساخت است، فرود بیایید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nمجموعه نمادین Black Ops با Call of Duty®: Black Ops Cold War بازگشته است - دنباله مستقیم نسخه اصلی و مورد علاقه طرفداران Call of Duty®: Black Ops.\n\nBlack Ops Cold War طرفداران را به اعماق نبرد ژئوپلیتیک ناپایدار جنگ سرد در اوایل دهه 1980 می کشاند. در کمپین تک‌نفره جذاب، که در آن بازیکنان با شخصیت‌های تاریخی و حقایق سخت روبرو می‌شوند، هیچ‌چیز آنطور که به نظر می‌رسد نیست، زیرا در سراسر جهان از طریق مکان‌های نمادین مانند برلین شرقی، ویتنام، ترکیه، مقر KGB شوروی و غیره می‌جنگند.\n\nشما به عنوان عوامل نخبه، دنباله‌روی شخصیتی پنهان به نام پرسئوس را دنبال خواهید کرد که در ماموریت بی‌ثبات کردن تعادل جهانی قدرت و تغییر مسیر تاریخ است. به مرکز تاریک این توطئه جهانی در کنار شخصیت‌های نمادین وودز، میسون و هادسون و گروه جدیدی از عواملی که در تلاش برای متوقف کردن طرحی که دهه‌ها در حال ساخت است، فرود بیایید.",
+    "system_tier": "heavy",
+    "is_popular": true,
+    "size_gb": 175
   },
   {
     "id": 791636,
