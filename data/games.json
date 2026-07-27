@@ -699,7 +699,7 @@
     "name": "Death Stranding Director's Cut",
     "background_image": "https://media.rawg.io/media/games/b6f/b6fa0cde8a1204c7d6edc2ec3c753df9.jpg",
     "rating": 4.27,
-    "metacritic": null,
+    "metacritic": 85,
     "released": "2021-09-24",
     "genres": [
       {
@@ -714,7 +714,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 5,
+    "playtime": 60,
     "developers": "Kojima Productions",
     "steam_link": "https://store.steampowered.com/app/1850570/",
     "trailer_url": "",
@@ -735,7 +735,8 @@
     "description_en": "Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the stranded remnants of the future in his hands, Sam embarks on a journey to reunite the shattered world one step at a time. What is the mystery of the Death Stranding? What will Sam discover on the road ahead? A genre defining gameplay experience holds these answers and more.",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nسم بریجز باید در دنیایی که کاملاً توسط Death Stranding دگرگون شده است، شجاعت کند. سام با حمل بقایای سرگردان آینده در دستان خود، سفری را آغاز می کند تا جهان از هم پاشیده را یک قدم در یک زمان دوباره متحد کند. رمز و راز Death Stranding چیست؟ سام در جاده پیش رو چه چیزی را کشف خواهد کرد؟ تجربه گیم پلی تعیین کننده ژانر این پاسخ ها و موارد دیگر را در اختیار دارد.",
     "system_tier": "normal",
-    "size_gb": 80
+    "size_gb": 80,
+    "is_popular": true
   },
   {
     "id": 891532,
