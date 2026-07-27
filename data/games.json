@@ -9757,8 +9757,8 @@
         "slug": "role-playing-games-rpg"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 5,
+    "esrb_rating": "+17",
+    "playtime": 79,
     "developers": "Ubisoft Montreal",
     "steam_link": "https://store.steampowered.com/app/2208920/",
     "trailer_url": "",
@@ -9773,15 +9773,15 @@
       "https://media.rawg.io/media/games/934/9346092ae11bf7582c883869468171cc.jpg"
     ],
     "requirements": {
-      "minimum": "Requires a 64-bit processor and operating system\nOS: Windows 10 (versions 64 bits uniquement)\nProcessor: AMD Ryzen 3 1200 3.1 GHz / Intel Core i5-4460 3.2 GHz\nMemory: 8 GB RAM\nGraphics: AMD R9 380 /NVIDIA GeForce GTX 960\nDirectX: Version 12\nStorage: 160 GB available space",
-      "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 (versions 64 bits uniquement)\nProcessor: AMD Ryzen 5 1600 3.2 GHz / Intel Core i7-4790 3.6 GHz\nMemory: 8 GB RAM\nGraphics: AMD R9 380 /NVIDIA GeForce GTX 960\nDirectX: Version 12\nStorage: 160 GB available space"
+      "minimum": "OS:        Windows 10 64-bit\nCPU:       AMD Ryzen 3 1200 @ 3.1 GHz\n           Intel Core i5-4460 @ 3.2 GHz\n\nRAM:       8 GB (Dual-Channel)\n\nGPU:       AMD Radeon R9 380 (4 GB)\n           NVIDIA GeForce GTX 960 (4 GB)\n\nDirectX:   Version 12\n\nStorage:   160 GB HDD\n           SSD Recommended\n\nTarget:    1080p / 30 FPS / Low Preset",
+      "recommended": "OS:        Windows 10 64-bit\nCPU:       AMD Ryzen 5 1600 @ 3.2 GHz\n           Intel Core i7-4790 @ 3.6 GHz\n\nRAM:       8 GB (Dual-Channel)\n\nGPU:       AMD Radeon RX 570 (8 GB)\n           NVIDIA GeForce GTX 1060 (6 GB)\n\nDirectX:   Version 12\n\nStorage:   160 GB HDD\n           SSD Recommended\n\nTarget:    1080p / 30 FPS / High Preset"
     },
     "description_en": "Become Eivor, a mighty Viking raider and lead your clan from the harsh shores of Norway to a new home amid the lush farmlands of ninth-century England. Explore a beautiful, mysterious open world where you'll face brutal enemies, raid fortresses, build your clan's new settlement, and forge alliances to win glory and earn a place in Valhalla.\n\nEngland in the age of the Vikings is a fractured nation of petty lords and warring kingdoms. Beneath the chaos lies a rich and untamed land waiting for a new conqueror. Will it be you?",
     "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبه Eivor، یک مهاجم قدرتمند وایکینگ تبدیل شوید و قبیله خود را از سواحل خشن نروژ به یک خانه جدید در میان زمین‌های کشاورزی سرسبز انگلستان در قرن نهم هدایت کنید. دنیای باز زیبا و اسرارآمیز را کاوش کنید که در آن با دشمنان وحشیانه روبرو می شوید، به قلعه ها حمله می کنید، شهرک جدید قبیله خود را می سازید، و برای کسب شکوه و کسب جایگاهی در والهالا، اتحاد ایجاد می کنید.\n\nانگلستان در عصر وایکینگ ها ملتی از هم پاشیده از اربابان کوچک و پادشاهی های متخاصم است. در زیر هرج و مرج، سرزمینی غنی و رام نشده در انتظار یک فاتح جدید قرار دارد. آیا آن شما خواهید بود؟",
-    "size_gb": 8,
-    "is_popular": false,
+    "size_gb": 160,
+    "is_popular": true,
     "is_coop": false,
-    "system_tier": "unspecified"
+    "system_tier": "heavy"
   },
   {
     "id": 681398,
