@@ -1081,7 +1081,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 38,
+    "playtime": 50,
     "developers": "Bethesda Game Studios",
     "steam_link": "https://store.steampowered.com/app/377160/",
     "trailer_url": "",
@@ -1100,7 +1100,10 @@
       "recommended": "OS: Windows 7/8/10 (64-bit OS required)\nProcessor: Intel Core i7 4790 3.6 GHz/AMD FX-9590 4.7 GHz or equivalent\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 780 3GB/AMD Radeon R9 290X 4GB or equivalent\nStorage: 30 GB available space"
     },
     "description_en": "The fourth game in the post-apocalyptic action RPG series from Bethesda studious brings players back to the retro-future. After customizing the facial features of the character, players will be admitted to the Vault 111 with their family, and tricked into entering the cryogenic capsule. After the rude awakening after the unknown amount of time has passed, the child is separated from the parents and the loving partner is killed in front of them – the main quest is settled. Now there’s only the giant open world to explore. Fallout 4 introduces the mechanics of settlement building, where players can build their own little town. Gathering material for crafting and building brings more “survival” elements into the old formula. Within their own settlements, players will be able to build all needed utilities, from storage spaces to power armor stations. Visual upgrade from the previous game brings life to what used to be brown wastelands, now filled with details and color.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nچهارمین بازی از سری اکشن RPG پسا آخرالزمانی از Bethesda studious، بازیکنان را به آینده‌ای قدیمی بازمی‌گرداند. پس از شخصی سازی ویژگی های صورت شخصیت، بازیکنان به همراه خانواده خود در Vault 111 پذیرفته می شوند و با فریب وارد کپسول برودتی می شوند. پس از بیداری گستاخانه پس از گذشت مدت زمان نامعلوم، کودک از والدین جدا می شود و شریک عشق در مقابل آنها کشته می شود - تلاش اصلی حل می شود. اکنون فقط جهان باز غول پیکر برای کشف وجود دارد. Fallout 4 مکانیک های شهرک سازی را معرفی می کند، جایی که بازیکنان می توانند شهر کوچک خود را بسازند. جمع آوری مواد برای صنایع دستی و ساخت، عناصر \"بقا\" بیشتری را به فرمول قدیمی وارد می کند. در شهرک‌های خود، بازیکنان می‌توانند تمام ابزارهای مورد نیاز، از فضاهای ذخیره‌سازی گرفته تا ایستگاه‌های زرهی نیرو را بسازند. ارتقاء بصری بازی قبلی، زندگی را به زمین‌های بایر قهوه‌ای که اکنون پر از جزئیات و رنگ است، می‌بخشد."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nچهارمین بازی از سری اکشن RPG پسا آخرالزمانی از Bethesda studious، بازیکنان را به آینده‌ای قدیمی بازمی‌گرداند. پس از شخصی سازی ویژگی های صورت شخصیت، بازیکنان به همراه خانواده خود در Vault 111 پذیرفته می شوند و با فریب وارد کپسول برودتی می شوند. پس از بیداری گستاخانه پس از گذشت مدت زمان نامعلوم، کودک از والدین جدا می شود و شریک عشق در مقابل آنها کشته می شود - تلاش اصلی حل می شود. اکنون فقط جهان باز غول پیکر برای کشف وجود دارد. Fallout 4 مکانیک های شهرک سازی را معرفی می کند، جایی که بازیکنان می توانند شهر کوچک خود را بسازند. جمع آوری مواد برای صنایع دستی و ساخت، عناصر \"بقا\" بیشتری را به فرمول قدیمی وارد می کند. در شهرک‌های خود، بازیکنان می‌توانند تمام ابزارهای مورد نیاز، از فضاهای ذخیره‌سازی گرفته تا ایستگاه‌های زرهی نیرو را بسازند. ارتقاء بصری بازی قبلی، زندگی را به زمین‌های بایر قهوه‌ای که اکنون پر از جزئیات و رنگ است، می‌بخشد.",
+    "system_tier": "normal",
+    "is_popular": true,
+    "size_gb": 30
   },
   {
     "id": 1010949,
