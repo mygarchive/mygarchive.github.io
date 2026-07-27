@@ -8802,7 +8802,7 @@
     "name": "Dispatch",
     "background_image": "https://media.rawg.io/media/games/2f6/2f6c45362818859574ac0e37edf3d3c4.jpg",
     "rating": 4.46,
-    "metacritic": null,
+    "metacritic": 87,
     "released": "2025-10-22",
     "genres": [
       {
@@ -8832,7 +8832,7 @@
       }
     ],
     "esrb_rating": "+18",
-    "playtime": 0,
+    "playtime": 15,
     "developers": "AdHoc Studio",
     "steam_link": "https://store.steampowered.com/app/2592160/",
     "trailer_url": "",
@@ -8845,11 +8845,14 @@
       "https://media.rawg.io/media/games/2f6/2f6c45362818859574ac0e37edf3d3c4.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 10 (64-bit) or later\n\nCPU:       Intel Core i5-6402P\n           AMD Ryzen 5 1600\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce GTX 960\n           AMD Radeon RX 560\n\nDirectX:   Version 11\n\nStorage:   15 GB",
+      "recommended": "OS:        Windows 10 (64-bit) or later\n\nCPU:       Intel Core i5-7400\n           AMD Ryzen 5 2600\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce GTX 1050\n           AMD Radeon RX 580\n\nDirectX:   Version 11\n\nStorage:   15 GB"
     },
     "description_en": "Dispatch is a superhero workplace comedy where choices matter. Manage a dysfunctional team of misfit heroes and strategize who to send to emergencies around the city, all while balancing office politics, personal relationships, and your own quest to become a hero.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDispatch یک کمدی ابرقهرمانی در محل کار است که در آن انتخاب ها اهمیت دارند. یک تیم ناکارآمد از قهرمانان نامتناسب را مدیریت کنید و استراتژی بفرستید که چه کسانی را به مواقع اضطراری در سراسر شهر بفرستید، در حالی که بین سیاست اداری، روابط شخصی و تلاش خود برای تبدیل شدن به یک قهرمان تعادل برقرار کنید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nDispatch یک کمدی ابرقهرمانی در محل کار است که در آن انتخاب ها اهمیت دارند. یک تیم ناکارآمد از قهرمانان نامتناسب را مدیریت کنید و استراتژی بفرستید که چه کسانی را به مواقع اضطراری در سراسر شهر بفرستید، در حالی که بین سیاست اداری، روابط شخصی و تلاش خود برای تبدیل شدن به یک قهرمان تعادل برقرار کنید.",
+    "is_popular": true,
+    "system_tier": "normal",
+    "size_gb": 15
   },
   {
     "id": 906547,
