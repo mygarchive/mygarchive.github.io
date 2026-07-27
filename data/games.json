@@ -9874,5 +9874,49 @@
     "is_popular": false,
     "is_coop": false,
     "system_tier": "unspecified"
+  },
+  {
+    "id": 857,
+    "name": "Halo: The Master Chief Collection",
+    "background_image": "https://media.rawg.io/media/games/c24/c24f4434882ae9c2c8d9d38de82cb7a5.jpg",
+    "metacritic": 85,
+    "released": "2014-11-11",
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 7,
+    "developers": "Splash Damage, 343 Industries, Ruffian Games",
+    "steam_link": "https://store.steampowered.com/app/976730/",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d21/d2161a641d149f3f97f3b7b7fe78327a.jpg",
+      "https://media.rawg.io/media/screenshots/cc5/cc579e5d43df76d637d534f8c76937cc.jpg",
+      "https://media.rawg.io/media/screenshots/78c/78ce8a488acbf24e0c7dda8efda27a08.jpg",
+      "https://media.rawg.io/media/screenshots/547/5478b1f78a8b9d58e3e8088d1ba422dc.jpg",
+      "https://media.rawg.io/media/screenshots/e9a/e9aef40ab7bb3b1cf90e683288387e16.jpg",
+      "https://media.rawg.io/media/screenshots/4e4/4e4797f106fe04b7cb79a08e70cdfd44.jpg",
+      "https://media.rawg.io/media/games/c24/c24f4434882ae9c2c8d9d38de82cb7a5.jpg"
+    ],
+    "requirements": {
+      "minimum": "Requires a 64-bit processor and operating system\nOS: Microsoft Windows\nNetwork: Broadband Internet connection",
+      "recommended": "Requires a 64-bit processor and operating system"
+    },
+    "description_en": "Halo: The Master Chief Collection is a bundle of Halo remasters developed by Bungie and 343 industries.\r\n\r\nThe bundle features Halo: Combat Evolved Anniversary, Halo 2 Anniversary, Halo 3 and Halo 4. All four games are distributed on one disc and are accessible through a unified interface. It is possible to play any mission from all four games right from the beginning of the game. \r\n\r\nApart from the story in the games themselves, the bundle features two CG videos which reveal that Jameson Locke is going through Master Chief's combat record in an attempt of finding him after the events of Halo 4. \r\n\r\nFor every game in the collection, it is possible to turn on the campaign scoring system. Every mission has its own leaderboard which includes the overall score, playtime, and the enemy kill count. \r\n\r\nEvery game in the bundle features a cooperative mode that can be played either online or using split-screen. It is possible to play with 3 more players online while only two players can play on one screen. The original multiplayer is retained in the games. Every multiplayer map ever released for every game in the bundle is available for the players.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nHalo: The Master Chief Collection مجموعه ای از ریمسترهای Halo است که توسط Bungie و 343 صنعت توسعه یافته است.\r\n\r\nاین بسته دارای Halo: Combat Evolved Anniversary، Halo 2 Anniversary، Halo 3 و Halo 4 است. هر چهار بازی بر روی یک دیسک توزیع شده اند و از طریق یک رابط یکپارچه قابل دسترسی هستند. انجام هر ماموریتی از هر چهار بازی از همان ابتدای بازی امکان پذیر است. \r\n\r\nجدا از داستان خود بازی، این باندل دارای دو ویدیوی CG است که نشان می‌دهد جیمسون لاک در تلاش برای یافتن او پس از وقایع Halo 4، سابقه رزمی Master Chief را پشت سر می‌گذارد. \r\n\r\nبرای هر بازی در مجموعه، امکان روشن کردن سیستم امتیازدهی کمپین وجود دارد. هر ماموریت تابلوی امتیازات مخصوص به خود را دارد که شامل امتیاز کلی، زمان بازی و تعداد کشته های دشمن است. \r\n\r\nهر بازی در بسته نرم افزاری دارای یک حالت همکاری است که می تواند به صورت آنلاین یا با استفاده از صفحه نمایش تقسیم شود. امکان بازی با 3 بازیکن دیگر به صورت آنلاین وجود دارد در حالی که تنها دو بازیکن می توانند در یک صفحه بازی کنند. چند نفره اصلی در بازی ها حفظ می شود. هر نقشه چند نفره ای که برای هر بازی در بسته منتشر شده است برای بازیکنان در دسترس است.",
+    "size_gb": 0,
+    "is_popular": false,
+    "is_coop": false,
+    "system_tier": "unspecified"
   }
 ]
