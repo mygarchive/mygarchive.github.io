@@ -5882,7 +5882,7 @@
     "name": "Clair Obscur: Expedition 33",
     "background_image": "https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg",
     "rating": 4.46,
-    "metacritic": null,
+    "metacritic": 92,
     "released": "2025-04-24",
     "genres": [
       {
@@ -5891,8 +5891,8 @@
         "slug": "role-playing-games-rpg"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 26,
+    "esrb_rating": "+17",
+    "playtime": 54,
     "developers": "Sundial Interactive, Sandfall Interactive",
     "steam_link": "https://store.steampowered.com/app/1903340/",
     "trailer_url": "",
@@ -5907,11 +5907,14 @@
       "https://media.rawg.io/media/games/466/4667f17fdee9ebbcea2049e54f8e2b96.jpg"
     ],
     "requirements": {
-      "minimum": "Мінімальні:\nПотребує 64-бітних процесора та операційної системи\nОС: Windows 10\nПроцесор: Intel Core i7-8700K / AMD Ryzen 5 1600X\nОперативна пам’ять: 8 GB ОП\nВідеокарта: NVIDIA GeForce GTX 1060 6 GB / AMD Radeon RX 5600 XT 6 GB / Intel Arc A380 6 GB\nDirectX: версії 12\nМісце на диску: 55 GB доступного місця\nДодаткові примітки: SSD required. Minimum specs allow for 1080p 30FPS low settings gameplay.",
-      "recommended": "Рекомендовані:\nПотребує 64-бітних процесора та операційної системи\nОС: Windows 11\nПроцесор: Intel Core i7-12700K / AMD Ryzen 7 5800X\nОперативна пам’ять: 16 GB ОП\nВідеокарта: NVIDIA GeForce RTX 3060 Ti 8 GB / AMD Radeon RX 6800 XT 16 GB\nDirectX: версії 12\nМісце на диску: 55 GB доступного місця\nДодаткові примітки: SSD required. Recommended specs allow for 1080p 60FPS high settings gameplay."
+      "minimum": "OS:        Windows 10 64-bit\n\nCPU:       Intel Core i7-8700K\n           AMD Ryzen 5 1600X\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 1060 (6 GB)\n           AMD Radeon RX 5600 XT (6 GB)\n           Intel Arc A380 (6 GB)\n\nDirectX:   Version 12\n\nStorage:   55 GB SSD\n\nTarget:    1080p / 30 FPS / Low",
+      "recommended": "OS:        Windows 11 64-bit\n\nCPU:       Intel Core i7-12700K\n           AMD Ryzen 7 5800X\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce RTX 3060 Ti (8 GB)\n           AMD Radeon RX 6800 XT (16 GB)\n\nDirectX:   Version 12\n\nStorage:   55 GB SSD\n\nTarget:    1080p / 60 FPS / High"
     },
     "description_en": "Once a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone of that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow she’ll wake and paint “33.” And tomorrow we depart on our final mission - Destroy the Paintress, so she can never paint death again.\n\nWe are Expedition 33.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک بار در سال، نقاش از خواب بیدار می شود و روی یکپارچه خود نقاشی می کند. شماره نفرین شده اش را نقاشی می کند. و همه در آن سن به سیگار تبدیل می شوند و محو می شوند. سال به سال این عدد کاهش می یابد و تعداد بیشتری از ما پاک می شویم. فردا بیدار می شود و \"33\" را نقاشی می کند. و فردا ما به ماموریت نهایی خود می رویم - نقاش را نابود کنید، تا دیگر هرگز نتواند مرگ را نقاشی کند.\n\nما اکسپدیشن 33 هستیم."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nیک بار در سال، نقاش از خواب بیدار می شود و روی یکپارچه خود نقاشی می کند. شماره نفرین شده اش را نقاشی می کند. و همه در آن سن به سیگار تبدیل می شوند و محو می شوند. سال به سال این عدد کاهش می یابد و تعداد بیشتری از ما پاک می شویم. فردا بیدار می شود و \"33\" را نقاشی می کند. و فردا ما به ماموریت نهایی خود می رویم - نقاش را نابود کنید، تا دیگر هرگز نتواند مرگ را نقاشی کند.\n\nما اکسپدیشن 33 هستیم.",
+    "is_popular": true,
+    "system_tier": "heavy",
+    "size_gb": 55
   },
   {
     "id": 19669,
