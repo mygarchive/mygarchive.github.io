@@ -18,75 +18,78 @@ export default function CatalogPDF() {
         {localGamesData.map((game: any, index: number) => (
           <div 
             key={index} 
-            className="border border-gray-300 rounded-lg p-2 flex flex-col items-center bg-gray-50"
+            className="border border-gray-300 rounded-lg p-2 flex flex-col bg-gray-50"
             style={{ pageBreakInside: 'avoid' }}
           >
-            {/* کاور بازی با ارتفاع ثابت و بزرگ‌تر (بدون کوچک شدن) */}
-            <div className="w-full h-32 mb-2 bg-gray-200 rounded overflow-hidden flex-shrink-0">
+            {/* کاور بازی (بدون برش و کاملاً دست‌نخورده با object-contain) */}
+            <div className="w-full aspect-video mb-2 bg-black rounded overflow-hidden flex-shrink-0">
               <img
                 src={game.background_image}
                 alt={game.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             
             {/* اسم بازی */}
             <h2 
-              className="text-xs sm:text-sm font-black text-center w-full leading-tight mb-2 line-clamp-2" 
+              className="text-xs sm:text-sm font-black text-center w-full leading-tight mb-3 line-clamp-2" 
               dir="ltr"
             >
               {game.name}
             </h2>
 
-            {/* تگ‌های وضعیت (سال ساخت، کوآپ، پرطرفدار، سیستم) */}
-            <div className="flex flex-wrap justify-center gap-1 mb-2">
-              {/* سال ساخت */}
-              {game.released && (
-                <span className="text-[9px] font-bold bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded border border-slate-300">
-                  📅 {game.released.split('-')[0]}
-                </span>
-              )}
+            {/* کادر پایینی شامل: سال ساخت، تگ‌ها، امتیاز و حجم */}
+            <div className="mt-auto w-full border-t border-gray-300 pt-2 flex flex-col gap-2">
               
-              {game.is_popular && (
-                <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded border border-amber-300">
-                  🔥 پرطرفدار
+              {/* تگ‌ها و سال ساخت */}
+              <div className="flex flex-wrap justify-center gap-1">
+                {game.released && (
+                  <span className="text-[9px] font-bold bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded border border-slate-300">
+                    📅 {game.released.split('-')[0]}
+                  </span>
+                )}
+                
+                {game.is_popular && (
+                  <span className="text-[9px] font-bold bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded border border-amber-300">
+                    🔥 پرطرفدار
+                  </span>
+                )}
+                {game.is_coop && (
+                  <span className="text-[9px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded border border-emerald-300">
+                    👥 کوآپ
+                  </span>
+                )}
+                
+                {game.system_tier === 'light' && (
+                  <span className="text-[9px] font-bold bg-green-100 text-green-800 px-1.5 py-0.5 rounded border border-green-300">
+                    ضعیف
+                  </span>
+                )}
+                {game.system_tier === 'normal' && (
+                  <span className="text-[9px] font-bold bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded border border-blue-300">
+                    معمولی
+                  </span>
+                )}
+                {game.system_tier === 'heavy' && (
+                  <span className="text-[9px] font-bold bg-red-100 text-red-800 px-1.5 py-0.5 rounded border border-red-300">
+                    قوی
+                  </span>
+                )}
+              </div>
+
+              {/* خط زیر تگ‌ها و نمایش امتیاز منتقدین و حجم بازی */}
+              <div className="flex justify-between items-center border-t border-gray-200 pt-1.5 px-1">
+                {/* نمره منتقدین */}
+                <span className="text-[10px] sm:text-[11px] font-black text-gray-700" dir="ltr">
+                  ⭐ {game.metacritic || '--'}
                 </span>
-              )}
-              {game.is_coop && (
-                <span className="text-[9px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded border border-emerald-300">
-                  👥 کوآپ
-                </span>
-              )}
-              
-              {/* فیلتر قدرت سیستم */}
-              {game.system_tier === 'light' && (
-                <span className="text-[9px] font-bold bg-green-100 text-green-800 px-1.5 py-0.5 rounded border border-green-300">
-                  ضعیف
-                </span>
-              )}
-              {game.system_tier === 'normal' && (
-                <span className="text-[9px] font-bold bg-blue-100 text-blue-800 px-1.5 py-0.5 rounded border border-blue-300">
-                  معمولی
-                </span>
-              )}
-              {game.system_tier === 'heavy' && (
-                <span className="text-[9px] font-bold bg-red-100 text-red-800 px-1.5 py-0.5 rounded border border-red-300">
-                  قوی
-                </span>
-              )}
-            </div>
-            
-            {/* اطلاعات پایانی (حجم و نمره) */}
-            <div className="mt-auto w-full flex justify-between items-center border-t border-gray-300 pt-2 px-1">
-              {/* نمره منتقدین */}
-              <span className="text-[10px] sm:text-[11px] font-black text-gray-700" dir="ltr">
-                ⭐ {game.metacritic || '--'}
-              </span>
-              
-              {/* حجم بازی */}
-              <p className="text-[11px] sm:text-[12px] font-black text-purple-700" dir="ltr">
-                {game.size_gb ? `${game.size_gb} GB` : 'نامشخص'} 💾
-              </p>
+                
+                {/* حجم بازی */}
+                <p className="text-[11px] sm:text-[12px] font-black text-purple-700" dir="ltr">
+                  {game.size_gb ? `${game.size_gb} GB` : 'نامشخص'} 💾
+                </p>
+              </div>
+
             </div>
           </div>
         ))}
