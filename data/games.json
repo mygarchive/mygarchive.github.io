@@ -470,7 +470,7 @@
     "name": "Classified: France '44",
     "background_image": "https://media.rawg.io/media/screenshots/f61/f615dddf5e239b6a3f692070bf6ed90c.jpg",
     "rating": 0,
-    "metacritic": null,
+    "metacritic": 72,
     "released": "2024-03-05",
     "genres": [
       {
@@ -479,8 +479,8 @@
         "slug": "strategy"
       }
     ],
-    "esrb_rating": "---",
-    "playtime": 29,
+    "esrb_rating": "+17",
+    "playtime": 50,
     "developers": "Absolutely Games",
     "steam_link": "https://store.steampowered.com/app/2085370/",
     "trailer_url": "",
@@ -499,7 +499,8 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-10600K or AMD Ryzen 5 3600XT\nMemory: 8 GB RAM\nGraphics: NVIDIA GeForce GTX 970, 4 GB or AMD Radeon R9 290X, 4 GB or Intel Arc A750, 8 GB\nStorage: 40 GB available space\nAdditional Notes: High 1080p @ 60 FPS"
     },
     "description_en": "Classified: France '44 Editions\nClassified: France '44 Overlord EditionThe Overlord Edition of Classified: France '44 contains:\nClassified: France '44\nClassified: France '44 - Season Pass\nThe Season Pass Includes:\nAll content to be released in 2024.\nDLC 1 - Guerrilla Pack (Out Now)\nDLC 2 - Agent Pack (to be released)\nDLC 3 - Talon Pack (to be released)\nDLC 4 - Devils Pack (to be released)\nEach DLC contains:\nTwo new Special Ops missions\nTwo new weapons or weapon variants\nOne new clothing set\nClassified: France '44 Deluxe EditionThe Deluxe Edition of Classified: France '44 contains:\nClassified: France '44 Base Game\nGuerrilla Pack\nExpand your arsenal and take the fight to the enemy with new Spec Ops missions and a brand new map in the Guerrilla Pack\nThe Guerrilla Pack contains:\nNew Map – “Church”\nTwo new Special Ops missions:\n• Tomb Raiders\n• Time to Kill\nTwo new weapon variants\n• Bren “Ambush”\n• Thompson “Boa”\nNew Clothing Set\n• Female Resistance “Guerrilla”\nAbout the GameClassified: France ‘44 is a new turn-based strategy game, set in World War II during the desperate months leading up to the Allied invasion of France in June 1944.\n\nTake charge of a special-ops team of Allied commandos and French resistance fighters. Recruit elite operatives to build your squad, then engage in a sweeping campaign of sabotage and destruction. Deal with competing factions to build the resistance network and strike at German targets deep in occupied territory. However, the more chaos you cause, t",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nطبقه بندی شده: فرانسه '44 نسخه\nطبقه بندی شده: فرانسه '44 نسخه Overlord نسخه Overlord از طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: فرانسه 44\nطبقه بندی شده: فرانسه '44 - پاس فصل\nSeason Pass شامل:\nتمامی مطالب در سال 2024 منتشر خواهد شد.\nDLC 1 - Guerrilla Pack (اکنون منتشر شد)\nDLC 2 - Agent Pack (در حال انتشار)\nDLC 3 - Talon Pack (در حال انتشار)\nDLC 4 - Devils Pack (در حال انتشار)\nهر DLC شامل:\nدو ماموریت جدید عملیات ویژه\nدو نوع سلاح یا سلاح جدید\nیک ست لباس جدید\nطبقه بندی شده: نسخه لوکس فرانسه '44 نسخه لوکس طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: بازی پایه فرانسه '44\nبسته چریکی\nزرادخانه خود را گسترش دهید و با ماموریت های جدید Spec Ops و یک نقشه کاملاً جدید در بسته Guerrilla به نبرد با دشمن بپردازید.\nبسته چریکی شامل:\nنقشه جدید - \"کلیسا\"\nدو ماموریت عملیات ویژه جدید:\n• مهاجمان مقبره\n• زمان کشتن\nدو نوع سلاح جدید\n• برن «کمین»\n• تامپسون «بوآ»\nست لباس جدید\n• مقاومت زن \"چرریک\"\nدرباره GameClassified: France ‘44 یک بازی استراتژی نوبتی جدید است که در جنگ جهانی دوم در طول ماه‌های ناامید منتهی به تهاجم متفقین به فرانسه در ژوئن 1944 اتفاق می‌افتد.\n\nمسئولیت یک تیم عملیات ویژه متشکل از کماندوهای متفقین و مبارزان مقاومت فرانسوی را بر عهده بگیرید. ماموران نخبه را برای ایجاد گروه خود استخدام کنید، سپس در یک کمپین گسترده خرابکاری و تخریب شرکت کنید. برای ایجاد شبکه مقاومت و حمله به اهداف آلمانی در اعماق سرزمین های اشغالی با جناح های رقیب برخورد کنید. با این حال، هر چه آشفتگی بیشتری ایجاد کنید، t"
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nطبقه بندی شده: فرانسه '44 نسخه\nطبقه بندی شده: فرانسه '44 نسخه Overlord نسخه Overlord از طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: فرانسه 44\nطبقه بندی شده: فرانسه '44 - پاس فصل\nSeason Pass شامل:\nتمامی مطالب در سال 2024 منتشر خواهد شد.\nDLC 1 - Guerrilla Pack (اکنون منتشر شد)\nDLC 2 - Agent Pack (در حال انتشار)\nDLC 3 - Talon Pack (در حال انتشار)\nDLC 4 - Devils Pack (در حال انتشار)\nهر DLC شامل:\nدو ماموریت جدید عملیات ویژه\nدو نوع سلاح یا سلاح جدید\nیک ست لباس جدید\nطبقه بندی شده: نسخه لوکس فرانسه '44 نسخه لوکس طبقه بندی شده: فرانسه '44 شامل:\nطبقه بندی شده: بازی پایه فرانسه '44\nبسته چریکی\nزرادخانه خود را گسترش دهید و با ماموریت های جدید Spec Ops و یک نقشه کاملاً جدید در بسته Guerrilla به نبرد با دشمن بپردازید.\nبسته چریکی شامل:\nنقشه جدید - \"کلیسا\"\nدو ماموریت عملیات ویژه جدید:\n• مهاجمان مقبره\n• زمان کشتن\nدو نوع سلاح جدید\n• برن «کمین»\n• تامپسون «بوآ»\nست لباس جدید\n• مقاومت زن \"چرریک\"\nدرباره GameClassified: France ‘44 یک بازی استراتژی نوبتی جدید است که در جنگ جهانی دوم در طول ماه‌های ناامید منتهی به تهاجم متفقین به فرانسه در ژوئن 1944 اتفاق می‌افتد.\n\nمسئولیت یک تیم عملیات ویژه متشکل از کماندوهای متفقین و مبارزان مقاومت فرانسوی را بر عهده بگیرید. ماموران نخبه را برای ایجاد گروه خود استخدام کنید، سپس در یک کمپین گسترده خرابکاری و تخریب شرکت کنید. برای ایجاد شبکه مقاومت و حمله به اهداف آلمانی در اعماق سرزمین های اشغالی با جناح های رقیب برخورد کنید. با این حال، هر چه آشفتگی بیشتری ایجاد کنید، t",
+    "size_gb": 35
   },
   {
     "id": 986542,
