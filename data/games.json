@@ -4600,7 +4600,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 28,
+    "playtime": 60,
     "developers": "Ubisoft, Ubisoft Montreal",
     "steam_link": "https://store.steampowered.com/app/582160/",
     "trailer_url": "https://steamcdn-a.akamaihd.net/steam/apps/256686972/movie_max.mp4",
@@ -4617,11 +4617,14 @@
       "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 7 SP1 / Windows 8.1 / Windows 10\n           64-bit versions only\nCPU:       Intel Core i5-2400\n           AMD FX-6350\nRAM:       6 GB\nGPU:       NVIDIA GeForce GTX 660\n           AMD Radeon R9 270\nVRAM:      2 GB\nDirectX:   Version 11\nStorage:   42 GB\nTarget:    720p / Low Preset / 30 FPS",
+      "recommended": "OS:        Windows 7 SP1 / Windows 8.1 / Windows 10\n           64-bit versions only\nCPU:       Intel Core i7-3770\n           AMD FX-8350\nRAM:       8 GB\nGPU:       NVIDIA GeForce GTX 760\n           AMD Radeon R9 280X\nVRAM:      3 GB\nDirectX:   Version 11\nStorage:   42 GB\nTarget:    1080p / High Preset / 30 FPS"
     },
     "description_en": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate.\r\n\r\nThe story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control over humanity. Assassins plan to get the artifact back in their hands. Layla Hassan relieves the memories of two ancient Egyptians named Bayek and Aya who create the Assassins order.\r\n\r\nLevels are open-ended which allows both stealth or open combat approaches. Players are put in an open world in which they can complete quests in order to either progress through the story, level their character up or upgrade their equipment. The \"eagle vision\" mode was replaced by an eagle by the name of Senu. Players can use Senu to scout the area ahead and highlight enemies.\r\n\r\nThe game features a heavily revised combat system that relies on hit-box mechanics rather than pre-determined animations as it did in the previous titles. Origins focuses on introducing various types of enemies that the players will have to learn about in order to defeat them.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه با تجدید نظر شدید است که به جای انیمیشن های از پیش تعیین شده مانند عناوین قبلی، بر مکانیک های جعبه ضربه ای تکیه دارد. Origins بر معرفی انواع مختلفی از دشمنان تمرکز دارد که بازیکنان برای شکست دادن آنها باید درباره آنها بیاموزند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nAssassin's Creed Origins یک بازی اکشن جهان باز است که توسط یوبی سافت ساخته شده است. این مجموعه را بعد از Assassin's Creed Syndicate ادامه می دهد.\r\n\r\nداستان در دو مقطع زمانی به طور همزمان روایت می شود. در سال 2017، سفارش تمپلارها یک مصنوع باستانی را به دست آوردند که به آنها اجازه می دهد کنترل بر بشریت را در دست بگیرند. قاتلان قصد دارند این مصنوع را به دستان خود بازگردانند. لیلا حسن خاطرات دو مصری باستان به نام‌های بایک و آیا را که نظم Assassins را ایجاد می‌کنند، تسکین می‌دهد.\r\n\r\nسطوح با پایان باز هستند که به هر دو روش مبارزه مخفیانه یا باز اجازه می دهد. بازیکنان در یک دنیای باز قرار می‌گیرند که در آن می‌توانند کوئست‌ها را انجام دهند تا در طول داستان پیشرفت کنند، شخصیت خود را ارتقا دهند یا تجهیزات خود را ارتقا دهند. حالت \"دید عقاب\" با عقابی به نام Senu جایگزین شد. بازیکنان می توانند از Senu برای شناسایی منطقه پیش رو و برجسته کردن دشمنان استفاده کنند.\r\n\r\nاین بازی دارای یک سیستم مبارزه با تجدید نظر شدید است که به جای انیمیشن های از پیش تعیین شده مانند عناوین قبلی، بر مکانیک های جعبه ضربه ای تکیه دارد. Origins بر معرفی انواع مختلفی از دشمنان تمرکز دارد که بازیکنان برای شکست دادن آنها باید درباره آنها بیاموزند.",
+    "is_popular": true,
+    "system_tier": "heavy",
+    "size_gb": 42
   },
   {
     "id": 10064,
