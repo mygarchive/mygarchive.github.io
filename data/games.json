@@ -8570,7 +8570,7 @@
     "name": "007 First Light",
     "background_image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
     "rating": 4.45,
-    "metacritic": null,
+    "metacritic": 87,
     "released": "2026-05-27",
     "genres": [
       {
@@ -8580,7 +8580,7 @@
       }
     ],
     "esrb_rating": "+13",
-    "playtime": 0,
+    "playtime": 20,
     "developers": "IO Interactive",
     "steam_link": "https://store.steampowered.com/app/3768760/",
     "trailer_url": "",
@@ -8594,11 +8594,14 @@
       "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 10/11 64-bit\nCPU:       Intel Core i5-9500 / AMD Ryzen 5 3500\nRAM:       16 GB\nGPU:       NVIDIA GeForce GTX 1660 / AMD Radeon RX 5700\nStorage:   80 GB SSD",
+      "recommended": "OS:        Windows 10/11 64-bit\nCPU:       Intel Core i5-13500 / AMD Ryzen 5 7600\nRAM:       16 GB\nGPU:       NVIDIA GeForce RTX 3060 Ti / AMD Radeon RX 6700 XT\nStorage:   80 GB SSD"
     },
     "description_en": "007 First Light is a brand new James Bond video game developed and published by IO Interactive.\n\nFeaturing a wholly original Bond origin story, players will step into the shoes of the world's favorite Secret Agent to earn their 00 status.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n007 First Light یک بازی ویدیویی کاملاً جدید جیمز باند است که توسط IO Interactive توسعه و منتشر شده است.\n\nبا داشتن داستان کاملاً اصلی باند، بازیکنان به جای مامور مخفی مورد علاقه جهان قدم می گذارند تا وضعیت 00 خود را به دست آورند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n007 First Light یک بازی ویدیویی کاملاً جدید جیمز باند است که توسط IO Interactive توسعه و منتشر شده است.\n\nبا داشتن داستان کاملاً اصلی باند، بازیکنان به جای مامور مخفی مورد علاقه جهان قدم می گذارند تا وضعیت 00 خود را به دست آورند.",
+    "system_tier": "heavy",
+    "is_popular": true,
+    "size_gb": 80
   },
   {
     "id": 996213,
