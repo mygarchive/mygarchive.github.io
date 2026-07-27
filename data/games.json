@@ -8758,7 +8758,7 @@
     "name": "Devil May Cry HD Collection",
     "background_image": "https://media.rawg.io/media/games/13a/13a97b75b6e6b999901f6dd6fda47848.jpg",
     "rating": 4.22,
-    "metacritic": 70,
+    "metacritic": 77,
     "released": "2012-03-22",
     "genres": [
       {
@@ -8773,7 +8773,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 4,
+    "playtime": 35,
     "developers": "Capcom",
     "steam_link": "https://store.steampowered.com/app/631510/",
     "trailer_url": "",
@@ -8792,7 +8792,10 @@
       "recommended": "OS: WINDOWS®10  (64bit)\nProcessor: Intel® Core™ i7 3770 3.4GHz or AMD equivalent or better\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce® GTX 960\nDirectX: Version 11\nStorage: 12 GB available space\nSound Card: DirectSound (DirectX® 9.0c or better)\nAdditional Notes: *Recommended Controller\n Xbox 360 Controller (Windows®7/8/8.1)\n Xbox One Wireless Controller (Windows®10)\n\n *Internet connection required for game activation."
     },
     "description_en": "The popular stylish action games Devil May Cry, Devil May Cry 2, and Devil May Cry 3 Special Edition return in one collection! As Dante, the ultimate devil hunter, you'll join forces with appealing characters such as Trish, Lady, and Lucia and enjoy incredible action for the first time in blistering 60fps.\nDevil May Cry: The first appearance of Dante, the ultimate devil hunter! With the blood of a legendary demon warrior flowing through his veins, Dante takes on the king of the underworld, Mundus.\nDevil May Cry 2: Dance with the devil. Set decades after the first game, this sequel adds moves like the wall run and Rain Storm, bringing Dante's action to the next level of stylishness. The bonus mode Bloody Palace also makes its debut.\nDevil May Cry 3 Special Edition: This prequel to the first Devil May Cry introduces Vergil, Dante's twin brother. Customize your game style by selecting from various styles to level up and gain new moves and abilities.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی‌های اکشن شیک محبوب Devil May Cry، Devil May Cry 2 و Devil May Cry 3 Special Edition در یک مجموعه بازمی‌گردند! به عنوان دانته، شکارچی نهایی شیطان، با شخصیت‌های جذابی مانند تریش، لیدی و لوسیا به نیروها می‌پیوندید و برای اولین بار با سرعت 60 فریم در ثانیه از اکشن‌های باورنکردنی لذت خواهید برد.\nDevil May Cry: اولین حضور دانته، شکارچی نهایی شیطان! با جریان خون یک جنگجوی شیطان افسانه ای در رگ هایش، دانته با پادشاه جهان اموات، موندوس روبرو می شود.\nDevil May Cry 2: Dance with the devil. دهه‌ها پس از اولین بازی، این دنباله حرکاتی مانند اجرای دیوار و طوفان باران را اضافه می‌کند و اکشن دانته را به سطح بعدی شیک می‌رساند. حالت جایزه Bloody Palace نیز اولین خود را دارد.\nDevil May Cry 3 Special Edition: این پیش درآمد اولین Devil May Cry، Vergil، برادر دوقلوی دانته را معرفی می کند. سبک بازی خود را با انتخاب از سبک های مختلف برای ارتقاء سطح و به دست آوردن حرکات و توانایی های جدید سفارشی کنید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nبازی‌های اکشن شیک محبوب Devil May Cry، Devil May Cry 2 و Devil May Cry 3 Special Edition در یک مجموعه بازمی‌گردند! به عنوان دانته، شکارچی نهایی شیطان، با شخصیت‌های جذابی مانند تریش، لیدی و لوسیا به نیروها می‌پیوندید و برای اولین بار با سرعت 60 فریم در ثانیه از اکشن‌های باورنکردنی لذت خواهید برد.\nDevil May Cry: اولین حضور دانته، شکارچی نهایی شیطان! با جریان خون یک جنگجوی شیطان افسانه ای در رگ هایش، دانته با پادشاه جهان اموات، موندوس روبرو می شود.\nDevil May Cry 2: Dance with the devil. دهه‌ها پس از اولین بازی، این دنباله حرکاتی مانند اجرای دیوار و طوفان باران را اضافه می‌کند و اکشن دانته را به سطح بعدی شیک می‌رساند. حالت جایزه Bloody Palace نیز اولین خود را دارد.\nDevil May Cry 3 Special Edition: این پیش درآمد اولین Devil May Cry، Vergil، برادر دوقلوی دانته را معرفی می کند. سبک بازی خود را با انتخاب از سبک های مختلف برای ارتقاء سطح و به دست آوردن حرکات و توانایی های جدید سفارشی کنید.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 12
   },
   {
     "id": 337273,
