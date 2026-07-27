@@ -3,6 +3,11 @@
 import localGamesData from '../../data/games.json';
 
 export default function CatalogPDF() {
+  // مرتب‌سازی خودکار بازی‌ها بر اساس حروف الفبا نام بازی
+  const sortedGames = [...localGamesData].sort((a: any, b: any) => 
+    a.name.localeCompare(b.name, 'en', { sensitivity: 'accent' })
+  );
+
   return (
     <div className="min-h-screen bg-white text-black p-4" dir="rtl">
       {/* هدر کاتالوگ */}
@@ -15,7 +20,7 @@ export default function CatalogPDF() {
 
       {/* چیدمان شبکه‌ای بازی‌ها برای کاغذ A4 */}
       <div className="grid grid-cols-4 sm:grid-cols-5 gap-3">
-        {localGamesData.map((game: any, index: number) => (
+        {sortedGames.map((game: any, index: number) => (
           <div 
             key={index} 
             className="border border-gray-300 rounded-lg p-2 flex flex-col bg-gray-50"
