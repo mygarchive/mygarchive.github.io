@@ -1,21 +1,60 @@
 'use client';
 
+import { useState } from 'react';
 import localGamesData from '../../data/games.json';
 
-export default function CatalogPDF() {
-  // تابع هوشمند برای کوچک کردن حجم عکس‌های RAWG مستقیماً از طریق لینک URL
-  const getOptimizedImageUrl = (url: string) => {
+// 🌐 لیست ۴ پروکسی برای دور زدن فیلترینگ به ترتیب اولویت
+const IMAGE_PROXIES = [
+  "https://rawg-proxy.hossein-hf273.workers.dev/?url=",
+  "https://api.codetabs.com/v1/proxy?quest=",
+  "https://corsproxy.io/?",
+  ""
+];
+
+// 🖼️ کامپوننت هوشمند برای لود عکس با پروکسی و همزمان تغییر سایز (برای کاهش حجم PDF)
+const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
+  const [proxyIndex, setProxyIndex] = useState(0);
+
+  // همون ترفند برش عکس سرور RAWG تا فایل PDF پرینت سنگین نشه
+  const getOptimizedUrl = (url: string) => {
     if (!url) return '';
-    // اگر لینک مربوط به سرور RAWG باشد، دستور crop را برای دریافت نسخه سبک‌تر اضافه می‌کنیم
     if (url.includes('media.rawg.io/media/')) {
       return url.replace('media.rawg.io/media/', 'media.rawg.io/media/crop/600/400/');
     }
     return url;
   };
 
+  const optimizedSrc = getOptimizedUrl(src);
+  const [imgSrc, setImgSrc] = useState(optimizedSrc ? IMAGE_PROXIES[0] + encodeURIComponent(optimizedSrc) : '');
+
+  const handleError = () => {
+    if (proxyIndex < IMAGE_PROXIES.length - 1) {
+      const nextIndex = proxyIndex + 1;
+      setProxyIndex(nextIndex);
+      
+      if (IMAGE_PROXIES[nextIndex] === "") {
+        setImgSrc(optimizedSrc); // اولویت آخر: لینک خام
+      } else {
+        setImgSrc(IMAGE_PROXIES[nextIndex] + encodeURIComponent(optimizedSrc));
+      }
+    }
+  };
+
+  return (
+    <img 
+      src={imgSrc} 
+      alt={alt} 
+      className={className} 
+      onError={handleError} 
+      loading="lazy"
+    />
+  );
+};
+
+export default function CatalogPDF() {
   // مرتب‌سازی خودکار بازی‌ها بر اساس حروف الفبا
   const sortedGames = [...localGamesData].sort((a: any, b: any) => 
-    a.name.localeCompare(b.name, 'en', { sensitivity: 'accent' })
+    (a.name || "").localeCompare(b.name || "", 'en', { sensitivity: 'accent' })
   );
 
   return (
@@ -62,13 +101,12 @@ export default function CatalogPDF() {
             className="border border-gray-300 rounded-xl p-3 flex flex-col bg-gray-50 shadow-sm"
             style={{ pageBreakInside: 'avoid' }}
           >
-            {/* کاور بازی با لینک بهینه‌شده و سبک‌شده توسط سرور */}
+            {/* کاور بازی با کامپوننت پروکسی هوشمند */}
             <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
-              <img
-                src={getOptimizedImageUrl(game.background_image)}
+              <ProxyImage
+                src={game.background_image}
                 alt={game.name}
                 className="w-full h-full object-cover"
-                loading="lazy"
               />
             </div>
             
