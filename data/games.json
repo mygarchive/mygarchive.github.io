@@ -5342,7 +5342,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 9,
+    "playtime": 11,
     "developers": "Raven Software, Treyarch, n-Space",
     "steam_link": "https://store.steampowered.com/app/202970/",
     "trailer_url": "",
@@ -5357,11 +5357,14 @@
       "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg"
     ],
     "requirements": {
-      "minimum": "OS: Windows® Vista / XP / 7\n Processor: Intel® Core™2 Duo E6600 or AMD Phenom™ X3 8750 or better\n Memory: 2GB\n Graphics: Shader 3.0 or better 256MB NVIDIA® GeForce® 8600GT / ATI Radeon® X1950Pro or better\n   DirectX®: DirectX® 9.0c\n Hard Drive: 12GB*\n Sound: DirectX® 9.0c-compatible\n    *Call of Duty®: Black Ops requires an initial hard drive space of approximately 24GB to download and install the game via digital download (8GB of compressed files, 8GB of decompressed files and 8GB of installed files). Upon installing the game, 16GB (compressed and decompressed files) may be deleted from the hard drive. Please make note of where the compressed and decompressed files are being saved on your hard drive in order to later locate these temporary files for removal.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows XP / Vista / 7\n\nCPU:       Intel Core 2 Duo E6600\n           AMD Phenom X3 8750\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce 8600GT\n           ATI Radeon X1950 Pro\n\nVRAM:      256 MB\n\nDirectX:   Version 9.0c\n\nStorage:   12 GB",
+      "recommended": "OS:        Windows XP / Vista / 7\n\nCPU:       Intel Core 2 Duo E6600\n           AMD Phenom X3 8750 or better\n\nRAM:       2 GB\n\nGPU:       NVIDIA GeForce 8600GT\n           ATI Radeon X1950 Pro or better\n\nVRAM:      256 MB\n\nDirectX:   Version 9.0c\n\nStorage:   12 GB"
     },
     "description_en": "Call of Duty: Black Ops is a first-person shooter, a seventh installment in the series altogether and a sequel to Call of Duty: World at War. The game takes place during the Cold War and shows different historical periods of it.\r\nThe main character is a CIA agent, set out on different classified missions and tasked with eliminating enemies if needed. The story in the game is complicated, featuring characters from the previous games, and historical figures like JFK and Fidel Castro. Despite its emphasis on the scenario and real-world plausibility, Black Ops doesn’t lack in gameplay terms, as the combat system is, as established in series, extensive and realistic. The graphics are made for the player’s highest level of entertainment, with massive special effects and excellent quality of every detail.\r\nCall of Duty: Black Ops features a trademark multiplayer system, with different game modes, competitive play, and cooperative maps. The players can earn ranks for their performance, unlock new customizable weapons and different perks for use in the upcoming battles.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops یک بازی تیراندازی اول شخص، هفتمین قسمت از مجموعه و دنباله ای برای Call of Duty: World at War است. بازی در دوران جنگ سرد می گذرد و دوره های مختلف تاریخی آن را نشان می دهد.\r\nشخصیت اصلی یک مامور سیا است که در ماموریت های طبقه بندی شده مختلف قرار دارد و در صورت نیاز وظیفه دارد دشمنان را از بین ببرد. داستان بازی پیچیده است و شخصیت های بازی های قبلی و شخصیت های تاریخی مانند JFK و فیدل کاسترو را در خود جای داده است. علیرغم تاکید بر سناریو و قابل قبول بودن در دنیای واقعی، Black Ops از نظر گیم پلی کمبودی ندارد، زیرا سیستم مبارزه، همانطور که در سری ها ایجاد شده، گسترده و واقع گرایانه است. گرافیک برای بالاترین سطح سرگرمی بازیکن، با جلوه های ویژه عظیم و کیفیت عالی در هر جزئیات ساخته شده است.\r\nCall of Duty: Black Ops دارای یک سیستم چند نفره علامت تجاری با حالت های مختلف بازی، بازی رقابتی و نقشه های همکاری است. بازیکنان می توانند برای عملکرد خود رتبه کسب کنند، سلاح های قابل تنظیم جدید و امتیازات مختلف را برای استفاده در نبردهای آینده باز کنند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nCall of Duty: Black Ops یک بازی تیراندازی اول شخص، هفتمین قسمت از مجموعه و دنباله ای برای Call of Duty: World at War است. بازی در دوران جنگ سرد می گذرد و دوره های مختلف تاریخی آن را نشان می دهد.\r\nشخصیت اصلی یک مامور سیا است که در ماموریت های طبقه بندی شده مختلف قرار دارد و در صورت نیاز وظیفه دارد دشمنان را از بین ببرد. داستان بازی پیچیده است و شخصیت های بازی های قبلی و شخصیت های تاریخی مانند JFK و فیدل کاسترو را در خود جای داده است. علیرغم تاکید بر سناریو و قابل قبول بودن در دنیای واقعی، Black Ops از نظر گیم پلی کمبودی ندارد، زیرا سیستم مبارزه، همانطور که در سری ها ایجاد شده، گسترده و واقع گرایانه است. گرافیک برای بالاترین سطح سرگرمی بازیکن، با جلوه های ویژه عظیم و کیفیت عالی در هر جزئیات ساخته شده است.\r\nCall of Duty: Black Ops دارای یک سیستم چند نفره علامت تجاری با حالت های مختلف بازی، بازی رقابتی و نقشه های همکاری است. بازیکنان می توانند برای عملکرد خود رتبه کسب کنند، سلاح های قابل تنظیم جدید و امتیازات مختلف را برای استفاده در نبردهای آینده باز کنند.",
+    "is_popular": true,
+    "system_tier": "light",
+    "size_gb": 12
   },
   {
     "id": 11276,
