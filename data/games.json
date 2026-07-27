@@ -6721,7 +6721,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 12,
+    "playtime": 19,
     "developers": "Ubisoft, Ubisoft Montreal",
     "steam_link": "https://store.steampowered.com/app/939960/",
     "trailer_url": "",
@@ -6736,11 +6736,13 @@
       "https://media.rawg.io/media/games/6d2/6d27cf9c22f2b28cf3ae706464d138f9.jpg"
     ],
     "requirements": {
-      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "minimum": "OS:        Windows 7 SP1 / 8.1 / 10 (64-bit)\n\nCPU:       Intel Core i5-2400\n           AMD FX-6350\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 670\n           AMD Radeon R9 270\n\nDirectX:   Version 11\n\nStorage:   30 GB",
+      "recommended": "OS:        Windows 10 (64-bit)\n\nCPU:       Intel Core i7-4790\n           AMD Ryzen 5 1600\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 970\n           AMD Radeon R9 290X\n\nDirectX:   Version 11\n\nStorage:   30 GB"
     },
     "description_en": "Dive into a transformed vibrant post-apocalyptic Hope County, Montana, 17 years after a global nuclear catastrophe.\r\nJoin fellow survivors and lead the fight against the dangerous new threat the Highwaymen, and their ruthless leaders The Twins, as they seek to take over the last remaining resources. \r\n\r\nFIGHT FOR SURVIVAL IN A POST-APOCALYPTIC WORLD\r\n• Take up arms on your own or with a friend in two player co-op in an unpredictable and transformed world\r\n\r\nCOLLIDE AGAINST TWO ALL NEW VILLAINS\r\n• Recruit an eclectic cast of Guns and Fangs for Hire and form alliances to fight by your side against the Highwaymen's unruly leaders The Twins\r\n\r\nBUILD UP YOUR HOMEBASE AND THE SURVIVORS\r\n• Recruit Specialists to upgrade your homebase, who will help unlock all new features including crafting weapons, gear and more\r\n\r\nBATTLE FOR RESOURCES IN HOPE COUNTY AND BEYOND\r\n• Engage the Highwaymen in Turf Wars and venture on Expeditions to memorable locations across the USA",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n17 سال پس از یک فاجعه هسته‌ای جهانی، به یک منطقه پر جنب و جوش پسا آخرالزمانی هوپ کانتی، مونتانا، شیرجه بزنید.\r\nبه بازماندگان همکار بپیوندید و مبارزه با تهدید جدید خطرناک بزرگراه‌ها و رهبران بی‌رحم آنها دوقلوها را رهبری کنید، زیرا آنها به دنبال تصاحب آخرین منابع باقی مانده هستند. \r\n\r\nبرای بقا در دنیای پسا آخرالزمانی مبارزه کنید\r\n• در دنیایی غیرقابل پیش‌بینی و دگرگون شده، به تنهایی یا با یک دوست در همکاری دو نفره دست به اسلحه بردارید.\r\n\r\nبرخورد با دو شرور جدید\r\n• گروهی متشکل از اسلحه‌ها و نیش‌ها را استخدام کنید و اتحادهایی تشکیل دهید تا در کنارتان با رهبران سرکش بزرگراه، The Twins مبارزه کنید.\r\n\r\nخانه و بازماندگان خود را بسازید\r\n• متخصصانی را برای ارتقای پایگاه اصلی خود استخدام کنید، که به باز کردن همه ویژگی‌های جدید از جمله ساخت سلاح، تجهیزات و غیره کمک می‌کنند.\r\n\r\nنبرد برای منابع در منطقه امید و فراتر از آن\r\n• بزرگراه‌ها را در جنگ‌های چمن مشارکت دهید و در اکسپدیشن‌ها به مکان‌های به یاد ماندنی در سراسر ایالات متحده سفر کنید."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\n17 سال پس از یک فاجعه هسته‌ای جهانی، به یک منطقه پر جنب و جوش پسا آخرالزمانی هوپ کانتی، مونتانا، شیرجه بزنید.\r\nبه بازماندگان همکار بپیوندید و مبارزه با تهدید جدید خطرناک بزرگراه‌ها و رهبران بی‌رحم آنها دوقلوها را رهبری کنید، زیرا آنها به دنبال تصاحب آخرین منابع باقی مانده هستند. \r\n\r\nبرای بقا در دنیای پسا آخرالزمانی مبارزه کنید\r\n• در دنیایی غیرقابل پیش‌بینی و دگرگون شده، به تنهایی یا با یک دوست در همکاری دو نفره دست به اسلحه بردارید.\r\n\r\nبرخورد با دو شرور جدید\r\n• گروهی متشکل از اسلحه‌ها و نیش‌ها را استخدام کنید و اتحادهایی تشکیل دهید تا در کنارتان با رهبران سرکش بزرگراه، The Twins مبارزه کنید.\r\n\r\nخانه و بازماندگان خود را بسازید\r\n• متخصصانی را برای ارتقای پایگاه اصلی خود استخدام کنید، که به باز کردن همه ویژگی‌های جدید از جمله ساخت سلاح، تجهیزات و غیره کمک می‌کنند.\r\n\r\nنبرد برای منابع در منطقه امید و فراتر از آن\r\n• بزرگراه‌ها را در جنگ‌های چمن مشارکت دهید و در اکسپدیشن‌ها به مکان‌های به یاد ماندنی در سراسر ایالات متحده سفر کنید.",
+    "system_tier": "normal",
+    "size_gb": 30
   },
   {
     "id": 2767,
