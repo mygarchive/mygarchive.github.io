@@ -256,8 +256,8 @@
         "slug": "platformer"
       }
     ],
-    "esrb_rating": "+10",
-    "playtime": 2,
+    "esrb_rating": "همه سنین",
+    "playtime": 8,
     "developers": "Hothead Games, Number None",
     "steam_link": "https://store.steampowered.com/app/499180/",
     "trailer_url": "",
@@ -273,10 +273,12 @@
     ],
     "requirements": {
       "minimum": "Operating System: Microsoft® Windows® XP / Vista / 7                  \nProcessor: 1.4GHz or faster                    \nMemory: 768 MB or more                    \nHard Disk Space: 200 MB or more                    \nVideo Card: Pixel Shader 2.0                    \nDirectX® Version: DirectX® 9.0c                    \nController Support: Microsoft Xbox 360 Controller for Windows",
-      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+      "recommended": "OS:        Windows XP / Vista\n\nCPU:       2.0 GHz or better\n\nRAM:       2 GB\n\nGPU:       DirectX 9.0c-compatible\n           Shader Model 2.0 or better\n\nDirectX:   Version 9.0c\n\nStorage:   200 MB"
     },
     "description_en": "Braid is a traditional platform game with puzzle solving. The story follows the main character Tim on his way through twisted 2D levels. According to the storyline, Tim’s aim is to rescue the princess from a monster. In the course of the completion, players will be able to get some additional information about the protagonist’s relationship with the princess. Players control the protagonist as he climbs platforms, jumps on the enemies to defeat them and to collect keys to hidden quests and mosaic parts. Players have to lead Tim through 6 worlds, each based on an intriguing time mechanic, as Tim features the ability to rewind the original pace of time. For example, Time and Forgiveness world allows respawning Tim after his death by switching time back. To attend the last level, Tim must assemble the mosaic. The story ends in the world simply called “1”, where time flows in reverse and returns to the normal pace by rewinding. The last room of the final world contains Tim’s meeting with the princess, but, due to the time pace turned back, players face some unpredictable twists of the plot.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBraid یک بازی پلتفرم سنتی با حل پازل است. داستان شخصیت اصلی تیم را در مسیر خود در سطوح دوبعدی پیچ خورده دنبال می کند. طبق خط داستانی، هدف تیم نجات شاهزاده خانم از دست یک هیولا است. در طول تکمیل، بازیکنان می توانند اطلاعات بیشتری در مورد رابطه قهرمان داستان با شاهزاده خانم به دست آورند. بازیکنان هنگام بالا رفتن از سکوها، قهرمان داستان را کنترل می کنند، بر روی دشمنان می پرند تا آنها را شکست دهند و کلیدهای ماموریت های مخفی و قطعات موزاییک را جمع آوری کنند. بازیکنان باید تیم را در 6 جهان هدایت کنند، که هر کدام بر اساس مکانیک زمان جذاب است، زیرا تیم توانایی بازگرداندن سرعت اولیه زمان را دارد. به عنوان مثال، دنیای Time and Forgiveness اجازه می دهد تا تیم را پس از مرگش با تغییر زمان به عقب بازگرداند. برای حضور در آخرین سطح، تیم باید موزاییک را جمع کند. داستان در دنیایی به نام «1» به پایان می رسد، جایی که زمان برعکس جریان می یابد و با چرخش به عقب به سرعت عادی باز می گردد. آخرین اتاق دنیای آخر شامل ملاقات تیم با شاهزاده خانم است، اما به دلیل بازگشت سرعت زمان، بازیکنان با پیچش های غیرقابل پیش بینی داستان روبرو می شوند."
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nBraid یک بازی پلتفرم سنتی با حل پازل است. داستان شخصیت اصلی تیم را در مسیر خود در سطوح دوبعدی پیچ خورده دنبال می کند. طبق خط داستانی، هدف تیم نجات شاهزاده خانم از دست یک هیولا است. در طول تکمیل، بازیکنان می توانند اطلاعات بیشتری در مورد رابطه قهرمان داستان با شاهزاده خانم به دست آورند. بازیکنان هنگام بالا رفتن از سکوها، قهرمان داستان را کنترل می کنند، بر روی دشمنان می پرند تا آنها را شکست دهند و کلیدهای ماموریت های مخفی و قطعات موزاییک را جمع آوری کنند. بازیکنان باید تیم را در 6 جهان هدایت کنند، که هر کدام بر اساس مکانیک زمان جذاب است، زیرا تیم توانایی بازگرداندن سرعت اولیه زمان را دارد. به عنوان مثال، دنیای Time and Forgiveness اجازه می دهد تا تیم را پس از مرگش با تغییر زمان به عقب بازگرداند. برای حضور در آخرین سطح، تیم باید موزاییک را جمع کند. داستان در دنیایی به نام «1» به پایان می رسد، جایی که زمان برعکس جریان می یابد و با چرخش به عقب به سرعت عادی باز می گردد. آخرین اتاق دنیای آخر شامل ملاقات تیم با شاهزاده خانم است، اما به دلیل بازگشت سرعت زمان، بازیکنان با پیچش های غیرقابل پیش بینی داستان روبرو می شوند.",
+    "system_tier": "light",
+    "size_gb": 0.2
   },
   {
     "id": 973509,
