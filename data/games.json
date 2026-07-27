@@ -9918,5 +9918,51 @@
     "is_popular": false,
     "is_coop": false,
     "system_tier": "unspecified"
+  },
+  {
+    "id": 1013474,
+    "name": "Constance (2025)",
+    "background_image": "https://media.rawg.io/media/screenshots/592/592feaa2ff2a59c9859f084fb4c5d118.jpg",
+    "metacritic": null,
+    "released": "2025-11-24",
+    "genres": [
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "esrb_rating": "---",
+    "playtime": 0,
+    "developers": "btf",
+    "steam_link": "https://store.steampowered.com/search/?term=Constance%20(2025)",
+    "trailer_url": "",
+    "youtube_videos": [],
+    "gallery": [
+      "https://media.rawg.io/media/screenshots/d5e/d5ed1471743b3264d3c215c313452986.jpg",
+      "https://media.rawg.io/media/screenshots/1d1/1d147932e3e50c8a93380c699457f000.jpg",
+      "https://media.rawg.io/media/screenshots/482/4825a758f509744482befebe3fb4bf04.jpg",
+      "https://media.rawg.io/media/screenshots/592/592feaa2ff2a59c9859f084fb4c5d118.jpg"
+    ],
+    "requirements": {
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
+    },
+    "description_en": "Constance is a 2D hand-drawn action adventure featuring a paintbrush-wielding artist, striving to escape from a colorful but decaying inner-world, created by her declining mental health.",
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nکنستانس یک اکشن ماجراجویی دوبعدی است که با دست ترسیم شده است که در آن هنرمندی با قلم مو در حال تلاش برای فرار از دنیای درونی رنگارنگ اما رو به زوال است که به دلیل کاهش سلامت روانی او ایجاد شده است.",
+    "size_gb": 0,
+    "is_popular": false,
+    "is_coop": false,
+    "system_tier": "unspecified"
   }
 ]
