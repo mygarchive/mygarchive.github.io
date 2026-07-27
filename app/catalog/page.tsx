@@ -10,7 +10,7 @@ export default function CatalogPDF() {
 
   return (
     <div className="min-h-screen bg-white text-black p-6" dir="rtl">
-      {/* 🛑 استایل اختصاصی برای جلوگیری از برش متن و سه نقطه در خروجی PDF */}
+      {/* 🛑 بهینه‌سازی حرفه‌ای برای چاپ: جلوگیری از حجم سنگین، کرش پرینتر و برش متن */}
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
           body {
@@ -23,6 +23,16 @@ export default function CatalogPDF() {
             overflow: visible !important;
             text-overflow: unset !important;
             display: block !important;
+          }
+          /* سبک‌سازی و محدود کردن ابعاد عکس در پرینت برای جلوگیری از فایل 144 مگابایتی و خطای 0 بایت */
+          div.aspect-video {
+            height: 90px !important;
+            max-height: 90px !important;
+          }
+          img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
           }
         }
       `}} />
