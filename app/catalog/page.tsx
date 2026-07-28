@@ -7,16 +7,16 @@ import localGamesData from '../../data/games.json';
 const TELEGRAM_USERNAME = "YourTelegramID"; // آیدی تلگرام (بدون @)
 const BALE_USERNAME = "YourBaleID";         // آیدی بله (بدون @)
 
-// 🖼️ کامپوننت هوشمند برای لود عکس (بدون برش و بدون دستکاری ابعاد کاور)
+// 🖼️ کامپوننت هوشمند و فوق‌سریع برای لود عکس (بدون نیاز به VPN و با حجم فوق‌العاده کم)
 const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
   const [proxyIndex, setProxyIndex] = useState(0);
 
-  // استفاده مستقیم از آدرس اصلی بدون دستکاری و برش خوردگی
   const cleanUrl = src ? src.replace(/^https?:\/\//i, '') : '';
 
+  // ۱. اولویت اول: فشرده‌سازی WebP با عرض ۲۸0px و کیفیت ۵۰ (حجم زیر ۸ کیلوبایت + بدون فیلترشکن)
   const IMAGE_PROXIES = [
+    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=280&q=50&output=webp`,
     `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(src)}`,
-    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&q=85`,
     `https://api.allorigins.win/raw?url=${encodeURIComponent(src)}`,
     src
   ];
@@ -34,6 +34,7 @@ const ProxyImage = ({ src, alt, className }: { src: string, alt: string, classNa
       className={className} 
       onError={handleError} 
       loading="lazy"
+      decoding="async"
     />
   );
 };
@@ -108,40 +109,7 @@ export default function CatalogPDF() {
 
   return (
     <div className="min-h-screen bg-white text-black p-4 sm:p-6 pb-28" dir="rtl">
-      {/* استایل پرینت اصلاح شده برای چیدمان دقیقا ۴ تایی در هر ردیف */}
-      <style dangerouslySetInnerHTML={{ __html: `
-        @media print {
-          body {
-            background-color: white !important;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-          }
-          .print\\:hidden {
-            display: none !important;
-          }
-          .catalog-grid {
-            display: grid !important;
-            grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-            gap: 1rem !important;
-          }
-          h2 {
-            white-space: normal !important;
-            overflow: visible !important;
-            text-overflow: unset !important;
-            display: block !important;
-          }
-          div.aspect-video {
-            height: 90px !important;
-            max-height: 90px !important;
-          }
-          img {
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-          }
-        }
-      `}} />
-
+      
       {/* 🔴 هدر کاتالوگ */}
       <div className="text-center mb-6 pb-4 border-b-2 border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-right">
@@ -152,9 +120,9 @@ export default function CatalogPDF() {
         </div>
 
         {/* آمار زنده و راه‌های ارتباطی */}
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2 print:hidden">
           <div className="flex items-center gap-1.5 bg-purple-50 border border-purple-200 text-purple-900 px-3 py-1.5 rounded-full text-xs font-bold">
-            <span className="relative flex h-2 w-2 print:hidden">
+            <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-600"></span>
             </span>
@@ -184,7 +152,6 @@ export default function CatalogPDF() {
                   ? 'border-purple-600 bg-purple-50/50 shadow-md ring-2 ring-purple-400' 
                   : 'border-gray-300 bg-gray-50 shadow-sm'
               }`}
-              style={{ pageBreakInside: 'avoid' }}
             >
               {isSelected && (
                 <span className="absolute top-2 right-2 z-10 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full print:hidden shadow">
@@ -192,7 +159,7 @@ export default function CatalogPDF() {
                 </span>
               )}
 
-              {/* کاور اصلی بدون برش */}
+              {/* کاور اصلی */}
               <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
                 <ProxyImage
                   src={game.background_image}
@@ -380,7 +347,7 @@ export default function CatalogPDF() {
         </div>
       )}
 
-     {/* 🖨️ استایل پرینت مینیاتوری (کاهش مجدد سایز حجم و امتیاز) */}
+      {/* 🖨️ استایل تخصصی و دقیق برای پرینت A4 (هماهنگ با ساختار JSX) */}
       <style>{`
         @page {
           size: A4 portrait;
@@ -388,53 +355,49 @@ export default function CatalogPDF() {
         }
 
         @media print {
-          /* ۱. محاسبه دقیق عرض برای جلوگیری از بیرون زدگی */
+          /* ۱. صفر کردن حاشیه‌ها و جلوگیری از بیرون‌زدگی افقی */
           *, *:before, *:after {
             box-sizing: border-box !important;
           }
 
-          html, body, div, main, header {
+          html, body, div, main {
             width: 100% !important;
             max-width: 100% !important;
             margin: 0 !important;
             padding: 0 !important;
+            background: #ffffff !important;
+            color: #000000 !important;
             overflow: visible !important;
           }
 
-          /* ۲. مخفی کردن تمام عناصر غیرضروری */
+          /* ۲. مخفی‌سازی دکمه‌ها و عناصر غیرپرینتی */
           button,
           input,
           select,
           footer,
-          .no-print {
+          .print\\:hidden {
             display: none !important;
           }
 
-          /* ۳. هدر مینیاتوری و فوق‌العاده کوچک */
-          header {
-            padding: 0 0 2px 0 !important;
+          /* ۳. فشرده‌سازی هدر در حالت پرینت */
+          .border-b-2 {
+            border-bottom: 1px solid #cbd5e1 !important;
             margin-bottom: 4px !important;
-            border-bottom: 1px solid #e2e8f0 !important;
-            display: flex !important;
-            justify-content: space-between !important;
-            align-items: center !important;
+            padding-bottom: 2px !important;
           }
 
-          header h1 {
+          h1 {
             font-size: 10px !important;
-            font-weight: 800 !important;
             margin: 0 !important;
-            color: #0f172a !important;
           }
 
-          header p {
+          p {
             font-size: 7.5px !important;
             margin: 0 !important;
-            color: #64748b !important;
           }
 
-          /* ۴. شبکه‌بندی ۴ ستونه دقیق روی کاغذ */
-          .grid {
+          /* ۴. چیدمان شبکه ۴ ستونه در پرینت */
+          .catalog-grid {
             display: grid !important;
             grid-template-columns: repeat(4, 1fr) !important;
             gap: 5px !important;
@@ -443,100 +406,71 @@ export default function CatalogPDF() {
             padding: 0 !important;
           }
 
-          /* ۵. کارت بازی‌ها */
-          a[href*="game"] {
+          /* ۵. تنظیم دقیق هر کارت بازی */
+          .catalog-grid > div {
             page-break-inside: avoid !important;
             break-inside: avoid !important;
             border: 1px solid #cbd5e1 !important;
             border-radius: 4px !important;
             background: #ffffff !important;
             box-shadow: none !important;
+            padding: 3px !important;
+            margin: 0 !important;
             display: flex !important;
             flex-direction: column !important;
             width: 100% !important;
             overflow: hidden !important;
           }
 
-          /* ۶. بخش تصویر بازی (بزرگ و خوانا) */
-          a[href*="game"] .aspect-video {
-            height: 115px !important;
+          /* ۶. بزرگ‌تر ماندن ابعاد تصویر بازی در پرینت */
+          .catalog-grid > div .aspect-video {
+            height: 110px !important;
+            max-height: 110px !important;
             width: 100% !important;
-            position: relative !important;
+            margin-bottom: 2px !important;
+            border-radius: 3px !important;
           }
 
-          a[href*="game"] img {
+          .catalog-grid > div img {
             width: 100% !important;
             height: 100% !important;
             object-fit: cover !important;
             opacity: 1 !important;
           }
 
-          /* ۷. بج‌های روی تصویر (حجم فایل، سال و...) - بسیار ریز ۵.۵ پیکسل */
-          a[href*="game"] .absolute {
-            position: absolute !important;
-            top: 2px !important;
-            right: 2px !important;
-            left: auto !important;
-            display: flex !important;
-            flex-wrap: wrap !important;
-            gap: 1.5px !important;
-            justify-content: flex-end !important;
-            max-width: 95% !important;
-            z-index: 10 !important;
-          }
-
-          a[href*="game"] .absolute span {
-            font-size: 5.5px !important;
-            line-height: 1 !important;
-            padding: 0.5px 2px !important;
-            border-radius: 2px !important;
-            background: rgba(15, 23, 42, 0.85) !important;
-            color: #ffffff !important;
-            border: none !important;
-            white-space: nowrap !important;
-            font-weight: 600 !important;
-          }
-
-          /* ۸. فشرده‌سازی باکس متنی زیر عکس */
-          a[href*="game"] .p-4 {
-            padding: 2px 3px !important;
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
-            gap: 1px !important;
-          }
-
-          /* عنوان بازی */
-          a[href*="game"] h3 {
+          /* ۷. ریز و فشرده کردن عنوان بازی */
+          .catalog-grid > div h2 {
             font-size: 7.5px !important;
             line-height: 1.1 !important;
             font-weight: bold !important;
             color: #000000 !important;
-            margin: 1px 0 !important;
+            margin: 2px 0 !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
           }
 
-          /* بخش امتیاز بازی در پایین کارت - بسیار ریز ۵.۵ پیکسل */
-          a[href*="game"] .flex.justify-between {
-            display: flex !important;
-            flex-direction: row !important;
-            align-items: center !important;
-            justify-content: space-between !important;
-            margin-top: 1px !important;
-            padding-top: 1px !important;
-            border-top: 1px solid #f1f5f9 !important;
+          /* ۸. ریز کردن بج‌ها، تگ‌ها، حجم و امتیاز (۵.۵ پیکسل) */
+          .catalog-grid > div .flex-wrap {
+            gap: 2px !important;
           }
 
-          a[href*="game"] .flex.justify-between span {
+          .catalog-grid > div span {
             font-size: 5.5px !important;
-            padding: 0px 2px !important;
-            background: #f1f5f9 !important;
-            color: #0f172a !important;
-            border: 1px solid #e2e8f0 !important;
-            border-radius: 2px !important;
             line-height: 1 !important;
+            padding: 0.5px 2px !important;
+            border-radius: 2px !important;
+          }
+
+          .catalog-grid > div p {
+            font-size: 5.5px !important;
+            line-height: 1 !important;
+          }
+
+          .catalog-grid > div .border-t {
+            border-top: 1px solid #e2e8f0 !important;
+            padding-top: 1px !important;
+            margin-top: 1px !important;
           }
         }
       `}</style>
