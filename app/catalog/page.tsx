@@ -7,15 +7,15 @@ import localGamesData from '../../data/games.json';
 const TELEGRAM_USERNAME = "YourTelegramID"; // آیدی تلگرام (بدون @)
 const BALE_USERNAME = "YourBaleID";         // آیدی بله (بدون @)
 
-// 🖼️ کامپوننت هوشمند و فوق‌سریع برای لود عکس (بدون نیاز به VPN و با حجم فوق‌العاده کم)
+// 🖼️ کامپوننت هوشمند لود عکس (کیفیت ارتقا یافته + لود فوق‌سریع بدون VPN)
 const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
   const [proxyIndex, setProxyIndex] = useState(0);
 
   const cleanUrl = src ? src.replace(/^https?:\/\//i, '') : '';
 
-  // ۱. اولویت اول: فشرده‌سازی WebP با عرض ۲۸0px و کیفیت ۵۰ (حجم زیر ۸ کیلوبایت + بدون فیلترشکن)
+  // ارتقای کیفیت به w=400 و q=70 جهت شفافیت عالی و حجم کم (زیر ۱۵ کیلوبایت)
   const IMAGE_PROXIES = [
-    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=280&q=50&output=webp`,
+    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=400&q=70&output=webp`,
     `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(src)}`,
     `https://api.allorigins.win/raw?url=${encodeURIComponent(src)}`,
     src
@@ -139,8 +139,8 @@ export default function CatalogPDF() {
         </div>
       </div>
 
-      {/* 🎮 چیدمان دقیق ۴ بازی در هر ردیف (catalog-grid) */}
-      <div className="grid grid-cols-4 gap-4 catalog-grid">
+      {/* 🎮 چیدمان شبکه کارت‌های بازی (با قابلیت هماهنگی سایز تصویر هنگام زوم) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 catalog-grid">
         {sortedGames.map((game: any, index: number) => {
           const isSelected = selectedGames.some((g) => g.id === game.id);
 
@@ -159,16 +159,16 @@ export default function CatalogPDF() {
                 </span>
               )}
 
-              {/* کاور اصلی */}
-              <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
+              {/* کادر تصویر واکنش‌گرا و هماهنگ با زوم */}
+              <div className="w-full h-auto aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200 relative">
                 <ProxyImage
                   src={game.background_image}
                   alt={game.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover block"
                 />
               </div>
               
-              <h2 className="text-[11px] font-black text-center w-full leading-tight mb-3" dir="ltr">
+              <h2 className="text-[11px] sm:text-xs font-black text-center w-full leading-tight mb-3" dir="ltr">
                 {game.name}
               </h2>
 
@@ -347,7 +347,7 @@ export default function CatalogPDF() {
         </div>
       )}
 
-      {/* 🖨️ استایل تخصصی و دقیق برای پرینت A4 (هماهنگ با ساختار JSX) */}
+      {/* 🖨️ استایل اختصاصی پرینت A4 */}
       <style>{`
         @page {
           size: A4 portrait;
@@ -355,7 +355,6 @@ export default function CatalogPDF() {
         }
 
         @media print {
-          /* ۱. صفر کردن حاشیه‌ها و جلوگیری از بیرون‌زدگی افقی */
           *, *:before, *:after {
             box-sizing: border-box !important;
           }
@@ -370,7 +369,6 @@ export default function CatalogPDF() {
             overflow: visible !important;
           }
 
-          /* ۲. مخفی‌سازی دکمه‌ها و عناصر غیرپرینتی */
           button,
           input,
           select,
@@ -379,7 +377,6 @@ export default function CatalogPDF() {
             display: none !important;
           }
 
-          /* ۳. فشرده‌سازی هدر در حالت پرینت */
           .border-b-2 {
             border-bottom: 1px solid #cbd5e1 !important;
             margin-bottom: 4px !important;
@@ -396,7 +393,7 @@ export default function CatalogPDF() {
             margin: 0 !important;
           }
 
-          /* ۴. چیدمان شبکه ۴ ستونه در پرینت */
+          /* اجبار چیدمان دقیق ۴ ستونه فقط در زمان پرینت */
           .catalog-grid {
             display: grid !important;
             grid-template-columns: repeat(4, 1fr) !important;
@@ -406,7 +403,6 @@ export default function CatalogPDF() {
             padding: 0 !important;
           }
 
-          /* ۵. تنظیم دقیق هر کارت بازی */
           .catalog-grid > div {
             page-break-inside: avoid !important;
             break-inside: avoid !important;
@@ -422,7 +418,6 @@ export default function CatalogPDF() {
             overflow: hidden !important;
           }
 
-          /* ۶. بزرگ‌تر ماندن ابعاد تصویر بازی در پرینت */
           .catalog-grid > div .aspect-video {
             height: 110px !important;
             max-height: 110px !important;
@@ -438,7 +433,6 @@ export default function CatalogPDF() {
             opacity: 1 !important;
           }
 
-          /* ۷. ریز و فشرده کردن عنوان بازی */
           .catalog-grid > div h2 {
             font-size: 7.5px !important;
             line-height: 1.1 !important;
@@ -450,7 +444,6 @@ export default function CatalogPDF() {
             text-overflow: ellipsis !important;
           }
 
-          /* ۸. ریز کردن بج‌ها، تگ‌ها، حجم و امتیاز (۵.۵ پیکسل) */
           .catalog-grid > div .flex-wrap {
             gap: 2px !important;
           }
