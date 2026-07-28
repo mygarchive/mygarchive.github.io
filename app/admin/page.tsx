@@ -153,30 +153,39 @@ export default function AdminPanel() {
   };
 
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoginError('');
-    const trimmedToken = githubToken.trim();
-    if (!trimmedToken.startsWith('ghp_') && !trimmedToken.startsWith('github_pat_')) {
-      return setLoginError('لطفاً یک توکن معتبر گیت‌هاب وارد کنید.');
-    }
+  e.preventDefault();
+  setLoginError('');
+  const trimmedToken = githubToken.trim();
+  
+  if (!trimmedToken.startsWith('ghp_') && !trimmedToken.startsWith('github_pat_')) {
+    return setLoginError('لطفاً یک توکن معتبر گیت‌هاب وارد کنید.');
+  }
 
-    setLoading(true);
-    try {
-      const checkRes = await fetch('https://api.github.com/user', {
-        headers: { 'Authorization': `Bearer ${trimmedToken}` }
-      });
-      if (checkRes.status === 200) {
-        localStorage.setItem('isAdmin', 'true');
-        localStorage.setItem('gh_token', trimmedToken);
-        await fetchMyGames(trimmedToken);
-      } else {
-        setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
-      }
-    } catch {
-      setLoginError('خطا در ارتباط با گیت‌هاب.');
+  setLoading(true);
+  try {
+    // 👇 تغییر اصلی اینجاست: ریکوئست به API خودمان ارسال می‌شود
+    const checkRes = await fetch('/api/github', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: trimmedToken, action: 'checkUser' })
+    });
+    
+    // 👇 خواندن جواب از API خودمان
+    const data = await checkRes.json();
+
+    // 👇 چک کردن استتوس کدی که از بک‌اند برگشته
+    if (data.status === 200) {
+      localStorage.setItem('isAdmin', 'true');
+      localStorage.setItem('gh_token', trimmedToken);
+      await fetchMyGames(trimmedToken);
+    } else {
+      setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
     }
-    setLoading(false);
-  };
+  } catch {
+    setLoginError('خطا در ارتباط با سرور.'); // متن خطا تغییر کرد چون دیگر مستقیم به گیت‌هاب وصل نمی‌شویم
+  }
+  setLoading(false);
+};
 
   const handleLogout = () => {
     localStorage.removeItem('isAdmin');
