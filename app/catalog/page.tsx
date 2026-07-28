@@ -7,26 +7,18 @@ import localGamesData from '../../data/games.json';
 const TELEGRAM_USERNAME = "YourTelegramID"; // آیدی تلگرام (بدون @)
 const BALE_USERNAME = "YourBaleID";         // آیدی بله (بدون @)
 
-// 🖼️ کامپوننت هوشمند برای لود عکس با پروکسی نردبانی (جهت کاهش حجم و جلوگیری از فیلترینگ)
+// 🖼️ کامپوننت هوشمند برای لود عکس (بدون برش و بدون دستکاری ابعاد کاور)
 const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
   const [proxyIndex, setProxyIndex] = useState(0);
 
-  const getOptimizedUrl = (url: string) => {
-    if (!url) return '';
-    if (url.includes('media.rawg.io/media/')) {
-      return url.replace('media.rawg.io/media/', 'media.rawg.io/media/crop/600/400/');
-    }
-    return url;
-  };
-
-  const optimizedSrc = getOptimizedUrl(src);
-  const cleanUrl = optimizedSrc ? optimizedSrc.replace(/^https?:\/\//i, '') : '';
+  // استفاده مستقیم از آدرس اصلی بدون دستکاری و برش خوردگی
+  const cleanUrl = src ? src.replace(/^https?:\/\//i, '') : '';
 
   const IMAGE_PROXIES = [
-    `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(optimizedSrc)}`,
-    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&q=80`,
-    `https://api.allorigins.win/raw?url=${encodeURIComponent(optimizedSrc)}`,
-    optimizedSrc
+    `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(src)}`,
+    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&q=85`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(src)}`,
+    src
   ];
 
   const handleError = () => {
@@ -116,7 +108,7 @@ export default function CatalogPDF() {
 
   return (
     <div className="min-h-screen bg-white text-black p-4 sm:p-6 pb-28" dir="rtl">
-      {/* استایل پرینت برای خروجی PDF */}
+      {/* استایل پرینت اصلاح شده برای چیدمان دقیقا ۴ تایی در هر ردیف */}
       <style dangerouslySetInnerHTML={{ __html: `
         @media print {
           body {
@@ -126,6 +118,11 @@ export default function CatalogPDF() {
           }
           .print\\:hidden {
             display: none !important;
+          }
+          .catalog-grid {
+            display: grid !important;
+            grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+            gap: 1rem !important;
           }
           h2 {
             white-space: normal !important;
@@ -174,8 +171,8 @@ export default function CatalogPDF() {
         </div>
       </div>
 
-      {/* 🎮 کارت بازی‌ها (۴ عدد در هر ردیف) */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* 🎮 چیدمان دقیق ۴ بازی در هر ردیف (catalog-grid) */}
+      <div className="grid grid-cols-4 gap-4 catalog-grid">
         {sortedGames.map((game: any, index: number) => {
           const isSelected = selectedGames.some((g) => g.id === game.id);
 
@@ -195,6 +192,7 @@ export default function CatalogPDF() {
                 </span>
               )}
 
+              {/* کاور اصلی بدون برش */}
               <div className="w-full aspect-video mb-3 rounded-lg overflow-hidden flex-shrink-0 bg-gray-200">
                 <ProxyImage
                   src={game.background_image}
@@ -313,7 +311,7 @@ export default function CatalogPDF() {
               </button>
             </div>
 
-            {/* اصلاح چیدمان متنی و شماره‌گذاری LTR */}
+            {/* چیدمان متنی مرتب LTR */}
             <div className="flex-1 overflow-y-auto mb-4 space-y-2 pr-1">
               {selectedGames.map((g, i) => (
                 <div 
