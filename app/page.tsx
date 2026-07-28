@@ -5,6 +5,10 @@
 import { useEffect, useState, useRef } from 'react';
 import localGamesData from '../data/games.json';
 
+// ⚙️ آیدی‌های شبکه اجتماعی پشتیبانی
+const TELEGRAM_USERNAME = "HF273"; // آیدی تلگرام شما
+const BALE_USERNAME = "";          // آیدی بله (در صورت داشتن قرار دهید)
+
 // 🌐 دیکشنری معادل‌های فارسی ژانرها
 const GENRE_PERSIAN_MAP: Record<string, string> = {
   'Action': 'اکشن',
@@ -44,17 +48,17 @@ export default function Home() {
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
   // 🆕 فیلترهای جدید
-  const [sizeIndex, setSizeIndex] = useState<number>(5); // ایندکس 5 برابر 200 گیگ (همه)
+  const [sizeIndex, setSizeIndex] = useState<number>(5);
   const [systemTierFilter, setSystemTierFilter] = useState<string>('all');
   const [onlyPopular, setOnlyPopular] = useState<boolean>(false);
   const [onlyCoop, setOnlyCoop] = useState<boolean>(false);
 
-  // 🛒 سبد/لیست سفارش بازی‌ها
+  // 🛒 سبد / لیست سفارش جدید
   const [orderCart, setOrderCart] = useState<any[]>([]);
-  const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
-  const [copyToast, setCopyToast] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [copied, setCopied] = useState<boolean>(false);
 
-  // ⚡ کنترل تعداد کارت‌های قابل رندر برای رندر تدریجی
+  // ⚡ کنترل تعداد کارت‌های قابل رندر
   const [visibleCount, setVisibleCount] = useState<number>(12);
   const loaderRef = useRef<HTMLDivElement>(null);
 
@@ -122,7 +126,6 @@ export default function Home() {
     initData();
   }, []);
 
-  // دکمه بازگشت به بالا و مدیریت اسکرول معمولی صفحه
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -131,7 +134,7 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 🚀 سیستم لود تدریجی هوشمند با Intersection Observer (بارگذاری ۲ ردیف جدید با رسیدن به انتها)
+  // 🚀 لود تدریجی با Intersection Observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -153,7 +156,7 @@ export default function Home() {
     };
   }, [filteredGames.length]);
 
-  // 🔍 فیلتر جامع داده‌ها و ریست شدن شمارنده نمایشی به ۱۲ عدد
+  // 🔍 فیلتر جامع داده‌ها
   useEffect(() => {
     let result = [...games];
 
@@ -201,52 +204,53 @@ export default function Home() {
     setVisibleCount(12);
   }, [selectedGenre, searchQuery, sortBy, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, games]);
 
-  const addToOrderCart = (game: any, e: React.MouseEvent) => {
+  // 🛒 انتخاب یا حذف بازی (با تاییدیه هنگام حذف)
+  const toggleSelectGame = (game: any, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    if (!orderCart.some((g) => g.id === game.id)) {
+    const exists = orderCart.some((item) => item.id === game.id);
+    if (exists) {
+      if (window.confirm(`آیا از حذف بازی "${game.name}" از سبد سفارش اطمینان دارید؟`)) {
+        setOrderCart((prev) => prev.filter((item) => item.id !== game.id));
+      }
+    } else {
       setOrderCart((prev) => [...prev, game]);
-      setIsCartOpen(true);
     }
   };
 
-  const removeFromOrderCart = (gameId: number) => {
-    setOrderCart((prev) => prev.filter((g) => g.id !== gameId));
-  };
-
-  const clearOrderCart = () => {
-    if (window.confirm("آیا از پاک کردن کل لیست سفارش مطمئن هستید؟")) {
-      setOrderCart([]);
+  // حذف از داخل پاپ‌آپ
+  const handleRemoveFromModal = (game: any) => {
+    if (window.confirm(`بازی "${game.name}" از سبد سفارش حذف شود؟`)) {
+      setOrderCart((prev) => prev.filter((item) => item.id !== game.id));
     }
   };
 
-  const confirmSend = (e: React.MouseEvent) => {
-    if (!window.confirm("آیا سفارش شما نهایی شده و می‌خواهید آن را برای پشتیبانی ارسال کنید؟")) {
-      e.preventDefault();
-    }
-  };
-
+  // محاسبه مجموع حجم
   const getTotalOrderSize = () => {
     return orderCart.reduce((acc, item) => acc + (parseFloat(item.size_gb) || 0), 0).toFixed(1);
   };
 
+  // 📝 ساخت متن استاندارد و مرتب برای تلگرام / بله / کپی
   const generateOrderText = () => {
     if (orderCart.length === 0) return '';
-    let text = `سلام، قصد سفارش جدید بازی‌های زیر را دارم:\n\n`;
-    orderCart.forEach((game, idx) => {
-      const sizeStr = game.size_gb ? `${game.size_gb} گیگابایت` : 'حجم نامشخص';
-      text += `${idx + 1}. ${game.name} — ${sizeStr}\n`;
+    let text = `سلام 👋\nقصد سفارش دیتای بازی‌های زیر رو دارم:\n\n`;
+    orderCart.forEach((g, idx) => {
+      const sizeText = g.size_gb ? `${g.size_gb} GB` : 'حجم نامشخص';
+      text += `${idx + 1}. ${g.name} (${sizeText})\n`;
     });
-    text += `\n📊 مجموع حجم کل سفارش: ${getTotalOrderSize()} گیگابایت\n\n`;
-    text += `لطفاً قیمت دیتای این بازی‌ها و شرایط ثبت نهایی را برام بفرستید.`;
+    text += `\n-------------------------\n`;
+    text += `📊 *تعداد کل:* ${orderCart.length} عنوان\n`;
+    text += `💾 *مجموع حجم:* ${getTotalOrderSize()} گیگابایت\n\n`;
+    text += `لطفاً شرایط و نحوه ثبت نهایی سفارش رو بفرمایید. با تشکر!`;
     return text;
   };
 
+  // کپی متن سفارش
   const copyOrderTextToClipboard = () => {
     const text = generateOrderText();
     navigator.clipboard.writeText(text);
-    setCopyToast(true);
-    setTimeout(() => setCopyToast(false), 3000);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   const getOptimizedUrl = (url: string, width = 400) => {
@@ -265,7 +269,6 @@ export default function Home() {
     footerBg: darkMode ? '#0f172a' : 'rgba(255, 255, 255, 0.5)'
   };
 
-  // برش زدن لیست بازی‌ها بر اساس مقدار visibleCount برای جلوگیری از کندی DOM
   const visibleGames = filteredGames.slice(0, visibleCount);
 
   if (loading) {
@@ -319,7 +322,7 @@ export default function Home() {
           </div>
         </header>
 
-        {/* 🎛️ پنل فیلترهای پیشرفته و هوشمند */}
+        {/* 🎛️ پنل فیلترهای پیشرفته */}
         <div 
           className="p-5 rounded-2xl mb-8 space-y-4 shadow-sm"
           style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
@@ -392,7 +395,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t pt-4" style={{ borderColor: themeStyles.border }}>
             <div className="w-full md:w-1/2 space-y-1">
               <div className="flex justify-between text-xs font-bold" style={{ color: themeStyles.subText }}>
-                <span>💾 حد اکثر حجم بازی:</span>
+                <span>💾 حداکثر حجم بازی:</span>
                 <span className="text-purple-500 font-mono">
                   {SIZE_STEPS[sizeIndex] >= 200 ? 'همه حجم‌ها' : `حداکثر تا ${SIZE_STEPS[sizeIndex]} گیگابایت`}
                 </span>
@@ -506,15 +509,16 @@ export default function Home() {
                         ⭐ {game.metacritic || '---'}
                       </span>
                       
+                      {/* دکمه افزودن / حذف از سبد */}
                       <button
-                        onClick={(e) => addToOrderCart(game, e)}
-                        className={`px-3 py-1 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
+                        onClick={(e) => toggleSelectGame(game, e)}
+                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
                           isInCart 
-                            ? 'bg-emerald-600 text-white' 
+                            ? 'bg-red-500 hover:bg-red-600 text-white' 
                             : 'bg-purple-600 hover:bg-purple-500 text-white shadow-md'
                         }`}
                       >
-                        {isInCart ? '✔ افزوده شد' : '🛒 + افزودن به لیست'}
+                        {isInCart ? '❌ حذف از سبد' : '➕ افزودن به سبد'}
                       </button>
                     </div>
                   </div>
@@ -524,7 +528,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* 🔻 عنصر ناظر (Intersection Observer Target) برای لود تدریجی با اسکرول */}
+        {/* 🔻 عنصر ناظر (Intersection Observer Target) */}
         {visibleCount < filteredGames.length && (
           <div ref={loaderRef} className="text-center py-10 text-xs font-bold" style={{ color: themeStyles.subText }}>
             در حال بارگذاری بازی‌های بیشتر...
@@ -533,123 +537,132 @@ export default function Home() {
 
       </div>
 
-      {/* 🛒 کشوی لیست سفارش (Mobile Optimized Backdrop) */}
-      <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isCartOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-        <div 
-          className="absolute inset-0 bg-black/60 backdrop-blur-sm" 
-          onClick={() => setIsCartOpen(false)}
-        ></div>
-
-        <div 
-          className={`absolute left-0 top-0 bottom-0 w-[85%] max-w-md h-full p-5 flex flex-col justify-between shadow-2xl border-r border-slate-800 transition-transform duration-300 ${isCartOpen ? 'translate-x-0' : '-translate-x-full'}`}
-          style={{ backgroundColor: darkMode ? '#090d16' : '#ffffff', color: themeStyles.text }}
-        >
-          <div>
-            <div className="flex justify-between items-center pb-4 border-b border-slate-800">
-              <h3 className="text-sm font-black flex items-center gap-2">
-                🛒 لیست سفارش بازی‌ها ({orderCart.length})
-              </h3>
-              <button 
-                onClick={() => setIsCartOpen(false)}
-                className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-400 p-1.5 rounded-lg"
-              >
-                ✕ بستن
-              </button>
+      {/* 🛒 نوار شناور سبد سفارش در پایین صفحه */}
+      {orderCart.length > 0 && (
+        <div className="fixed bottom-14 left-4 right-4 z-40 bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-5">
+          <div className="flex items-center gap-4">
+            <div className="bg-purple-600 text-white px-3 py-2 rounded-xl text-center">
+              <span className="block text-xs text-purple-200">تعداد</span>
+              <span className="font-mono font-bold text-lg">{orderCart.length}</span>
             </div>
-
-            <div className="mt-4 space-y-3 max-h-[calc(100vh-280px)] overflow-y-auto pr-1">
-              {orderCart.map((item) => (
-                <div 
-                  key={item.id} 
-                  className="p-2.5 rounded-xl border border-slate-800/80 flex justify-between items-center bg-slate-900/40"
-                >
-                  <div className="truncate max-w-[180px]">
-                    <p className="text-xs font-bold text-left truncate" dir="ltr">{item.name}</p>
-                    <p className="text-[10px] text-purple-400 font-mono">💾 {item.size_gb ? `${item.size_gb} GB` : 'حجم نامشخص'}</p>
-                  </div>
-                  <button 
-                    onClick={() => removeFromOrderCart(item.id)}
-                    className="text-red-400 hover:text-red-300 text-xs px-2 py-1 bg-red-950/40 hover:bg-red-900/60 rounded-lg"
-                    title="حذف از لیست"
-                  >
-                    ✕
-                  </button>
-                </div>
-              ))}
-
-              {orderCart.length === 0 && (
-                <div className="text-center py-12 text-xs text-slate-500 font-medium">
-                  هنوز هیچ بازی به لیست سفارش اضافه نکرده‌اید.
-                </div>
-              )}
+            <div>
+              <p className="text-xs text-slate-400">مجموع حجم انتخابی:</p>
+              <p className="text-lg font-black text-emerald-400" dir="ltr">
+                {getTotalOrderSize()} GB 💾
+              </p>
             </div>
           </div>
 
-          {orderCart.length > 0 && (
-            <div className="border-t border-slate-800 pt-4 space-y-3">
-              <div className="flex justify-between items-center text-xs font-bold">
-                <span>📊 مجموع حجم بازی‌ها:</span>
-                <span className="text-purple-400 font-mono text-sm">{getTotalOrderSize()} GB</span>
-              </div>
-
-              {copyToast && (
-                <div className="p-2 bg-green-500/20 text-green-400 border border-green-800 text-[11px] text-center font-bold rounded-xl animate-fadeIn">
-                  ✔ متن سفارش کپی شد! می‌توانید آن را بفرستید.
-                </div>
-              )}
-
-              <div className="grid grid-cols-1 gap-2 pt-1">
-                <a 
-                  href={`https://t.me/HF273?text=${encodeURIComponent(generateOrderText())}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={confirmSend}
-                  className="w-full py-2.5 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-md"
-                >
-                  ✈️ ارسال مستقیم به تلگرام
-                </a>
-
-                <a 
-                  href={`https://ble.ir/share?text=${encodeURIComponent(generateOrderText())}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={confirmSend}
-                  className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold text-center transition flex items-center justify-center gap-1.5 shadow-md"
-                >
-                  🟢 ارسال به بله
-                </a>
-
-                <button 
-                  onClick={copyOrderTextToClipboard}
-                  className="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-xl text-xs font-bold text-center transition border border-slate-700"
-                >
-                  📋 کپی متن کامل سفارش
-                </button>
-
-                <button 
-                  onClick={clearOrderCart}
-                  className="w-full py-1.5 text-[11px] text-red-400 hover:text-red-300 text-center font-bold"
-                >
-                  🗑️ پاک کردن کل لیست سفارش
-                </button>
-              </div>
-            </div>
-          )}
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <button
+              onClick={() => {
+                if (window.confirm("آیا از پاکسازی کامل سبد سفارش اطمینان دارید؟")) {
+                  setOrderCart([]);
+                }
+              }}
+              className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition-colors"
+            >
+              پاکسازی
+            </button>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="flex-1 sm:flex-none px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-black text-sm transition-all shadow-lg shadow-purple-900/40"
+            >
+              تایید و ارسال سفارش ({orderCart.length})
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
-      <button 
-        onClick={() => setIsCartOpen(true)}
-        className="fixed left-4 bottom-24 z-40 bg-purple-600 hover:bg-purple-500 text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition duration-300 transform hover:scale-105 active:scale-95"
-      >
-        <span className="text-base">🛒</span>
-        {orderCart.length > 0 && (
-          <span className="bg-amber-400 text-slate-950 text-xs font-extrabold px-2 py-0.5 rounded-full">
-            {orderCart.length}
-          </span>
-        )}
-      </button>
+      {/* 📋 پاپ‌آپ پیش‌نمایش و تایید نهایی سفارش */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white text-slate-900 rounded-2xl p-6 max-w-lg w-full max-h-[90vh] flex flex-col shadow-2xl animate-in zoom-in-95">
+            
+            <div className="flex justify-between items-center border-b pb-3 mb-3">
+              <h3 className="text-lg font-black text-slate-800">پیش‌نمایش لیست سفارش</h3>
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-400 hover:text-gray-600 font-bold text-lg px-2"
+              >
+                ✕
+              </button>
+            </div>
 
+            {/* چیدمان متنی مرتب LTR */}
+            <div className="flex-1 overflow-y-auto mb-4 space-y-2 pr-1">
+              {orderCart.map((g, i) => (
+                <div 
+                  key={g.id || i} 
+                  className="flex items-center justify-between bg-slate-50 p-2.5 rounded-xl border border-slate-200 hover:bg-slate-100/80 transition-colors"
+                >
+                  <div className="flex items-center gap-2 overflow-hidden text-left" dir="ltr">
+                    <span className="text-xs font-bold text-purple-600 font-mono w-5 flex-shrink-0">
+                      {i + 1}.
+                    </span>
+                    <span className="text-xs font-bold text-slate-800 truncate max-w-[210px] sm:max-w-[260px]">
+                      {g.name}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3 flex-shrink-0">
+                    <span className="text-xs font-black text-purple-700 font-mono" dir="ltr">
+                      {g.size_gb ? `${g.size_gb} GB` : '---'}
+                    </span>
+                    <button
+                      onClick={() => handleRemoveFromModal(g)}
+                      className="text-red-500 hover:text-red-700 font-bold text-xs p-1 rounded hover:bg-red-50"
+                      title="حذف از سبد"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* خلاصه حجم */}
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-3 mb-4 flex justify-between items-center">
+              <span className="text-xs font-bold text-purple-900">حجم کل دیتای درخواستی:</span>
+              <span className="text-sm font-black text-purple-700 font-mono" dir="ltr">
+                {getTotalOrderSize()} GB
+              </span>
+            </div>
+
+            {/* دکمه‌های ارسال */}
+            <div className="flex flex-col gap-2">
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(generateOrderText())}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2.5 px-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center"
+                >
+                  ✈️ ارسال در تلگرام
+                </a>
+                <a
+                  href={`https://ble.ir/${BALE_USERNAME}?text=${encodeURIComponent(generateOrderText())}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center"
+                >
+                  🟢 ارسال در بله
+                </a>
+              </div>
+
+              <button
+                onClick={copyOrderTextToClipboard}
+                className="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5"
+              >
+                {copied ? '✅ متن سفارش کپی شد!' : '📋 کپی متن کامل لیست سفارش'}
+              </button>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {/* دکمه بازگشت به بالا */}
       <div className="fixed bottom-24 right-6 z-40">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -663,7 +676,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* 🔻 فوتر ثابت (Sticky Footer) در پایین صفحه */}
+      {/* 🔻 فوتر ثابت در پایین صفحه */}
       <footer 
         className="fixed bottom-0 left-0 right-0 z-30 w-full shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] transition-colors duration-300 flex flex-col items-center"
         style={{ backgroundColor: themeStyles.footerBg, backdropFilter: 'blur(16px)', borderTop: `1px solid ${themeStyles.border}` }}
@@ -679,9 +692,9 @@ export default function Home() {
                 📖 راهنمای ثبت سفارش بازی
               </h4>
               <p className="text-sm leading-6 font-medium" style={{ color: themeStyles.text }}>
-                1️⃣ بازی‌های مورد نظر خود را از لیست آرشیو انتخاب کرده و روی گزینه <b>&quot;🛒 + افزودن به لیست&quot;</b> کلیک کنید.<br />
-                2️⃣ دکمه شناور سبد خرید را باز کنید تا لیست تمام بازی‌های انتخابی و <b>حجم کلی</b> آن‌ها را مشاهده کنید.<br />
-                3️⃣ پس از نهایی شدن، دکمه ارسال را بزنید تا متن سفارش برای پشتیبانی ارسال شود و قیمت نهایی خدمت شما اعلام گردد.
+                1️⃣ بازی‌های مورد نظر خود را از لیست آرشیو انتخاب کرده و روی گزینه <b>&quot;➕ افزودن به سبد&quot;</b> کلیک کنید.<br />
+                2️⃣ دکمه <b>تایید و ارسال سفارش</b> را در نوار پایین صفحه بزنید تا پیش‌نمایش لیست انتخابی و حجم کلی را مشاهده کنید.<br />
+                3️⃣ دکمه ارسال به تلگرام یا بله را بزنید تا متن سفارش جهت ثبت نهایی ارسال شود.
               </p>
             </div>
 
@@ -694,13 +707,13 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-2 pt-1">
                 <a
-                  href="https://t.me/HF273"
+                  href={`https://t.me/${TELEGRAM_USERNAME}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2.5 rounded-xl text-sm font-bold transition flex items-center gap-2 hover:bg-sky-600 hover:text-white"
                   style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
                 >
-                  ✈️ آیدی تلگرام: <span className="font-mono text-purple-400">@HF273</span>
+                  ✈️ آیدی تلگرام: <span className="font-mono text-purple-400">@{TELEGRAM_USERNAME}</span>
                 </a>
               </div>
             </div>
@@ -720,7 +733,7 @@ export default function Home() {
 
         <button
           onClick={() => setIsFooterOpen(!isFooterOpen)}
-          className="w-full py-3 text-sm font-bold flex justify-center items-center gap-2 hover:bg-purple-500/10 transition-colors"
+          className="w-full py-2.5 text-xs font-bold flex justify-center items-center gap-2 hover:bg-purple-500/10 transition-colors"
           style={{ color: themeStyles.text }}
         >
           {isFooterOpen ? '🔼 بستن اطلاعات پشتیبانی' : '🔽 نمایش راهنمای سفارش و اطلاعات پشتیبانی'}
