@@ -380,10 +380,28 @@ export default function CatalogPDF() {
         </div>
       )}
 
-      {/* 🖨️ استایل اختصاصی برای پرینت (کوچک‌سازی هدر و متن‌ها + بزرگ‌تر شدن عکس‌ها) */}
+      {/* 🖨️ استایل پیشرفته و فوق‌العاده تمیز برای پرینت */}
       <style>{`
+        @page {
+          size: A4 portrait;
+          margin: 6mm; /* حاشیه بسیار کم برای حداکثر استفاده از فضای کاغذ */
+        }
+
         @media print {
-          /* ۱. مخفی کردن المان‌های اضافی مثل دکمه‌ها، نوار فیلتر و پاپ‌آپ‌ها */
+          /* ۱. محاسبه دقیق عرض برای جلوگیری از بیرون زدگی */
+          *, *:before, *:after {
+            box-sizing: border-box !important;
+          }
+
+          html, body, div, main, header {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible !important;
+          }
+
+          /* ۲. مخفی کردن تمام عناصر غیرضروری */
           button,
           input,
           select,
@@ -392,47 +410,58 @@ export default function CatalogPDF() {
             display: none !important;
           }
 
-          /* ۲. کوچک و فشرده کردن هدر اصلی */
+          /* ۳. فوق‌العاده کوچک و مینیاتوری کردن هدر سایت */
           header {
-            padding: 2px 0 !important;
-            margin-bottom: 6px !important;
-            border-bottom: 1px solid #cbd5e1 !important;
+            padding: 0 0 2px 0 !important;
+            margin-bottom: 4px !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
           }
 
           header h1 {
-            font-size: 13px !important;
+            font-size: 10px !important;
+            font-weight: 800 !important;
             margin: 0 !important;
-            color: #000 !important;
+            color: #0f172a !important;
           }
 
           header p {
-            font-size: 9px !important;
+            font-size: 7.5px !important;
             margin: 0 !important;
-            color: #444 !important;
+            color: #64748b !important;
           }
 
-          /* ۳. چیدمان ۴ ستونه مرتب در هر صفحه کاغذ */
+          /* ۴. شبکه‌بندی ۴ ستونه دقیق روی کاغذ */
           .grid {
             display: grid !important;
             grid-template-columns: repeat(4, 1fr) !important;
-            gap: 6px !important;
+            gap: 5px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
           }
 
-          /* ۴. تنظیم کارت بازی‌ها جهت چاپ تمیز */
+          /* ۵. کارت بازی‌ها */
           a[href*="game"] {
             page-break-inside: avoid !important;
             break-inside: avoid !important;
             border: 1px solid #cbd5e1 !important;
-            border-radius: 6px !important;
+            border-radius: 4px !important;
             background: #ffffff !important;
             box-shadow: none !important;
             display: flex !important;
             flex-direction: column !important;
+            width: 100% !important;
+            overflow: hidden !important;
           }
 
-          /* ۵. بزرگ‌تر ماندن بخش تصویر بازی */
+          /* ۶. بزرگ‌تر کردن بخش تصویر بازی */
           a[href*="game"] .aspect-video {
-            height: 110px !important;
+            height: 115px !important; /* ارتفاع بیشتر برای به چشم آمدن تصویر */
+            width: 100% !important;
+            position: relative !important;
           }
 
           a[href*="game"] img {
@@ -442,38 +471,72 @@ export default function CatalogPDF() {
             opacity: 1 !important;
           }
 
-          /* ۶. ریز کردن متن‌ها و پدینگ داخل کارت */
-          a[href*="game"] .p-4 {
-            padding: 2px 4px !important;
+          /* ۷. مرتب‌سازی تگ‌های روی تصویر (جلوگیری از نامنظمی) */
+          a[href*="game"] .absolute {
+            position: absolute !important;
+            top: 2px !important;
+            right: 2px !important;
+            left: auto !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 2px !important;
+            justify-content: flex-end !important;
+            max-width: 95% !important;
+            z-index: 10 !important;
           }
 
+          /* استایل ریز و مرتب بج‌ها/تگ‌های روی عکس */
+          a[href*="game"] .absolute span {
+            font-size: 6px !important;
+            line-height: 1 !important;
+            padding: 1px 3px !important;
+            border-radius: 2px !important;
+            background: rgba(15, 23, 42, 0.85) !important;
+            color: #ffffff !important;
+            border: none !important;
+            white-space: nowrap !important;
+            font-weight: 600 !important;
+          }
+
+          /* ۸. بسیار فشرده کردن باکس متنی زیر عکس */
+          a[href*="game"] .p-4 {
+            padding: 2px 4px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            gap: 1px !important;
+          }
+
+          /* عنوان بازی */
           a[href*="game"] h3 {
-            font-size: 8px !important;
+            font-size: 7.5px !important;
             line-height: 1.1 !important;
             font-weight: bold !important;
             color: #000000 !important;
-            margin: 2px 0 !important;
+            margin: 1px 0 !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
           }
 
-          /* ۷. ریز کردن بج‌های حجم و امتیاز */
-          a[href*="game"] span {
-            font-size: 7px !important;
-            padding: 0px 3px !important;
-            line-height: 1 !important;
-            color: #000 !important;
-            background: #f1f5f9 !important;
-            border-color: #cbd5e1 !important;
+          /* بخش امتیاز و بج‌های پایین */
+          a[href*="game"] .flex.justify-between {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            margin-top: 1px !important;
+            padding-top: 1px !important;
+            border-top: 1px solid #f1f5f9 !important;
           }
 
-          /* ۸. حذف فاصله‌های اضافی بدنه صفحه */
-          body {
-            background: #ffffff !important;
-            color: #000000 !important;
-            margin: 0 !important;
-            padding: 0 !important;
+          a[href*="game"] .flex.justify-between span {
+            font-size: 6.5px !important;
+            padding: 0px 2px !important;
+            background: #f1f5f9 !important;
+            color: #0f172a !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 2px !important;
           }
         }
       `}</style>
