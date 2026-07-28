@@ -198,8 +198,20 @@ export default function AdminPanel() {
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
-        const cleanContent = data.content ? data.content.replace(/\n/g, '') : '';
-const parsedGames = cleanContent ? JSON.parse(safeAtob(cleanContent)) : [];
+        
+        let parsedGames = [];
+        
+        // اگر حجم فایل بالا باشد، گیت‌هاب محتوا را خالی می‌فرستد اما لینک دانلود مستقیم می‌دهد.
+        // ما مستقیماً فایل خام (بدون رمزنگاری base64) را از لینک دانلود می‌گیریم:
+        if (data.download_url) {
+          const rawRes = await fetch(data.download_url, { cache: 'no-store' });
+          parsedGames = await rawRes.json();
+        } else if (data.content) {
+          // برای فایل‌های زیر ۱ مگابایت که هنوز base64 دارند
+          const cleanContent = data.content.replace(/\n/g, '');
+          parsedGames = JSON.parse(safeAtob(cleanContent));
+        }
+
         setMyGames(parsedGames);
         setIsLoggedIn(true);
         return { sha: data.sha, games: parsedGames };
