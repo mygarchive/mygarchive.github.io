@@ -420,7 +420,7 @@ export default function AdminPanel() {
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
           headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Auto Add ${game.name}`, content: safeBtoa(JSON.stringify(cleanList)), sha: currentSha })
+          body: JSON.stringify({ message: `Auto Add ${game.name}`, content: safeBtoa(JSON.stringify(cleanList, null, 0)), sha: currentSha })
         });
 
         if (res.status === 200 || res.status === 201) {
@@ -454,7 +454,7 @@ export default function AdminPanel() {
           const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
             method: 'PUT',
             headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-            body: JSON.stringify({ message: `CMS Manual Edit ${game.name}`, content: safeBtoa(JSON.stringify(currentGamesList)), sha: currentSha })
+            body: JSON.stringify({ message: `CMS Manual Edit ${game.name}`, content: safeBtoa(JSON.stringify(currentGamesList, null, 0)), sha: currentSha })
           });
 
           if (res.status === 200 || res.status === 201) {
@@ -475,7 +475,7 @@ export default function AdminPanel() {
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
           headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updated)), sha: currentSha })
+          body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updated, null, 0)), sha: currentSha })
         });
 
         if (res.status === 200 || res.status === 201) {
