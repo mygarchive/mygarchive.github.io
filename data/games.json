@@ -6921,7 +6921,7 @@
     "name": "Ghost of Tsushima Director's Cut",
     "background_image": "https://media.rawg.io/media/games/193/193c9fe23ca026914fdf41d551ff3df9.jpg",
     "rating": 4.58,
-    "metacritic": 87,
+    "metacritic": null,
     "released": "2021-08-20",
     "genres": [
       {
@@ -6941,7 +6941,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 35,
+    "playtime": 4,
     "developers": "Sucker Punch Productions",
     "steam_link": "https://store.steampowered.com/app/2215430/",
     "trailer_url": "",
@@ -6956,14 +6956,11 @@
       "https://media.rawg.io/media/games/193/193c9fe23ca026914fdf41d551ff3df9.jpg"
     ],
     "requirements": {
-      "minimum": "OS:        Windows 10 64-bit\n\nCPU:       Intel Core i3-7100\n           AMD Ryzen 3 1200\n\nRAM:       8 GB\n\nGPU:       NVIDIA GeForce GTX 960 (4 GB)\n           AMD Radeon RX 5500 XT (4 GB)\n\nDirectX:   Version 12\n\nStorage:   75 GB SSD",
-      "recommended": "OS:        Windows 10 / 11 64-bit\n\nCPU:       Intel Core i5-8600\n           AMD Ryzen 5 3600\n\nRAM:       16 GB\n\nGPU:       NVIDIA GeForce RTX 2060\n           AMD Radeon RX 5600 XT\n\nDirectX:   Version 12\n\nStorage:   75 GB SSD"
+      "minimum": "مشخصات حداقل سخت‌افزار ثبت نشده است.",
+      "recommended": "مشخصات سیستم پیشنهادی ثبت نشده است."
     },
     "description_en": "Explore the brand new Iki Island, plus PS5-specific enhancements like DualSense haptic feedback, Japanese lip sync, and more.",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجزیره جدید Iki، به‌علاوه پیشرفت‌های ویژه PS5 مانند بازخورد لمسی DualSense، همگام‌سازی لب ژاپنی، و موارد دیگر را کاوش کنید.",
-    "is_popular": true,
-    "system_tier": "heavy",
-    "size_gb": 75
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nجزیره جدید Iki، به‌علاوه پیشرفت‌های ویژه PS5 مانند بازخورد لمسی DualSense، همگام‌سازی لب ژاپنی، و موارد دیگر را کاوش کنید."
   },
   {
     "id": 494384,
@@ -7016,7 +7013,7 @@
       }
     ],
     "esrb_rating": "+17",
-    "playtime": 15,
+    "playtime": 30,
     "developers": "Santa Monica Studio",
     "steam_link": "https://store.steampowered.com/search/?term=God%20of%20War%20(2018)",
     "trailer_url": "",
@@ -7035,7 +7032,10 @@
       "recommended": "Requires a 64-bit processor and operating system\nOS: Windows 10 64-bit\nProcessor: Intel i5-6600k (4 core 3.5 GHz) or AMD Ryzen 5 2400 G (4 core 3.6 GHz)\nMemory: 8 GB RAM\nGraphics: NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)\nDirectX: Version 11\nStorage: 70 GB available space\nAdditional Notes: DirectX feature level 11_1 required"
     },
     "description_en": "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfill a deeply personal quest. \r\n\r\nHis vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… And teach his son to do the same. This startling reimagining of God of War deconstructs the core elements that defined the series—satisfying combat; breathtaking scale; and a powerful narrative—and fuses them anew. \r\n\r\nKratos is a father again. As mentor and protector to Atreus, a son determined to earn his respect, he is forced to deal with and control the rage that has long defined him while out in a very dangerous world with his son. \r\n\r\nFrom the marble and columns of ornate Olympus to the gritty forests, mountains, and caves of Pre-Viking Norse lore, this is a distinctly new realm with its own pantheon of creatures, monsters, and gods. With an added emphasis on discovery and exploration, the world will draw players in to explore every inch of God of War’s breathtakingly threatening landscape—by far the largest in the franchise. \r\n\r\nWith an over the shoulder free camera that brings the player closer to the action than ever before, fights in God of War mirror the pantheon of Norse creatures Kratos will face: grand, gritty, and grueling. A new main weapon and new abilities retain the defining ",
-    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین یک شروع جدید برای کریتوس است. او که به عنوان مردی خارج از سایه خدایان زندگی می‌کند، همراه با پسرش آترئوس وارد وحشی اسکاندیناوی می‌شود و برای انجام یک تلاش عمیقاً شخصی مبارزه می‌کند. \r\n\r\nکریتوس انتقامش از خدایان المپوس را سالها پشت سر گذاشت و اکنون به عنوان یک مرد در قلمرو خدایان نورس و هیولاها زندگی می کند. در این دنیای خشن و نابخشودنی است که او باید برای زنده ماندن بجنگد... و به پسرش بیاموزد که همین کار را انجام دهد. این بازسازی شگفت‌انگیز از God of War، عناصر اصلی را که سریال را تعریف می‌کردند، تجزیه می‌کند - نبرد رضایت‌بخش. مقیاس نفس گیر; و یک روایت قدرتمند - و آنها را از نو ترکیب می کند. \r\n\r\nکریتوس دوباره پدر شد. به عنوان مربی و محافظ آترئوس، پسری که مصمم است احترام خود را به دست آورد، او مجبور می شود با خشمی که مدت هاست او را تعریف کرده است کنار بیاید و آن را کنترل کند، در حالی که با پسرش در دنیای بسیار خطرناکی زندگی می کند. \r\n\r\nاز سنگ مرمر و ستون‌های المپ پرآذین گرفته تا جنگل‌های شنی، کوه‌ها، و غارهای افسانه‌های اسکاندیناوی پیش از وایکینگ‌ها، این یک قلمرو کاملاً جدید با موجودات، هیولاها و خدایان خاص خود است. با تأکید بیشتر بر اکتشاف و اکتشاف، جهان بازیکنان را برای کاوش در هر اینچ از مناظر خیره‌کننده God of War جذب می‌کند - تا حد زیادی بزرگترین در این فرنچایز. \r\n\r\nبا یک دوربین بدون روی شانه که بازیکن را بیش از هر زمان دیگری به اکشن نزدیک می کند، مبارزات در خدای جنگ آینه ای از پانتئون موجودات اسکاندیناوی کریتوس است: بزرگ، سنگدل و طاقت فرسا. یک سلاح اصلی جدید و توانایی‌های جدید تعیین کننده هستند"
+    "description_fa": "توضیحات بازی (ترجمه ماشینی و خودکار):\nاین یک شروع جدید برای کریتوس است. او که به عنوان مردی خارج از سایه خدایان زندگی می‌کند، همراه با پسرش آترئوس وارد وحشی اسکاندیناوی می‌شود و برای انجام یک تلاش عمیقاً شخصی مبارزه می‌کند. \r\n\r\nکریتوس انتقامش از خدایان المپوس را سالها پشت سر گذاشت و اکنون به عنوان یک مرد در قلمرو خدایان نورس و هیولاها زندگی می کند. در این دنیای خشن و نابخشودنی است که او باید برای زنده ماندن بجنگد... و به پسرش بیاموزد که همین کار را انجام دهد. این بازسازی شگفت‌انگیز از God of War، عناصر اصلی را که سریال را تعریف می‌کردند، تجزیه می‌کند - نبرد رضایت‌بخش. مقیاس نفس گیر; و یک روایت قدرتمند - و آنها را از نو ترکیب می کند. \r\n\r\nکریتوس دوباره پدر شد. به عنوان مربی و محافظ آترئوس، پسری که مصمم است احترام خود را به دست آورد، او مجبور می شود با خشمی که مدت هاست او را تعریف کرده است کنار بیاید و آن را کنترل کند، در حالی که با پسرش در دنیای بسیار خطرناکی زندگی می کند. \r\n\r\nاز سنگ مرمر و ستون‌های المپ پرآذین گرفته تا جنگل‌های شنی، کوه‌ها، و غارهای افسانه‌های اسکاندیناوی پیش از وایکینگ‌ها، این یک قلمرو کاملاً جدید با موجودات، هیولاها و خدایان خاص خود است. با تأکید بیشتر بر اکتشاف و اکتشاف، جهان بازیکنان را برای کاوش در هر اینچ از مناظر خیره‌کننده God of War جذب می‌کند - تا حد زیادی بزرگترین در این فرنچایز. \r\n\r\nبا یک دوربین بدون روی شانه که بازیکن را بیش از هر زمان دیگری به اکشن نزدیک می کند، مبارزات در خدای جنگ آینه ای از پانتئون موجودات اسکاندیناوی کریتوس است: بزرگ، سنگدل و طاقت فرسا. یک سلاح اصلی جدید و توانایی‌های جدید تعیین کننده هستند",
+    "system_tier": "normal",
+    "is_popular": true,
+    "size_gb": 70
   },
   {
     "id": 677164,
