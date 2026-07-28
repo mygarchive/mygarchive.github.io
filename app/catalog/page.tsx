@@ -380,6 +380,104 @@ export default function CatalogPDF() {
         </div>
       )}
 
+      {/* 🖨️ استایل اختصاصی برای پرینت (کوچک‌سازی هدر و متن‌ها + بزرگ‌تر شدن عکس‌ها) */}
+      <style>{`
+        @media print {
+          /* ۱. مخفی کردن المان‌های اضافی مثل دکمه‌ها، نوار فیلتر و پاپ‌آپ‌ها */
+          button,
+          input,
+          select,
+          footer,
+          .no-print {
+            display: none !important;
+          }
+
+          /* ۲. کوچک و فشرده کردن هدر اصلی */
+          header {
+            padding: 2px 0 !important;
+            margin-bottom: 6px !important;
+            border-bottom: 1px solid #cbd5e1 !important;
+          }
+
+          header h1 {
+            font-size: 13px !important;
+            margin: 0 !important;
+            color: #000 !important;
+          }
+
+          header p {
+            font-size: 9px !important;
+            margin: 0 !important;
+            color: #444 !important;
+          }
+
+          /* ۳. چیدمان ۴ ستونه مرتب در هر صفحه کاغذ */
+          .grid {
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr) !important;
+            gap: 6px !important;
+          }
+
+          /* ۴. تنظیم کارت بازی‌ها جهت چاپ تمیز */
+          a[href*="game"] {
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 6px !important;
+            background: #ffffff !important;
+            box-shadow: none !important;
+            display: flex !important;
+            flex-direction: column !important;
+          }
+
+          /* ۵. بزرگ‌تر ماندن بخش تصویر بازی */
+          a[href*="game"] .aspect-video {
+            height: 110px !important;
+          }
+
+          a[href*="game"] img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            opacity: 1 !important;
+          }
+
+          /* ۶. ریز کردن متن‌ها و پدینگ داخل کارت */
+          a[href*="game"] .p-4 {
+            padding: 2px 4px !important;
+          }
+
+          a[href*="game"] h3 {
+            font-size: 8px !important;
+            line-height: 1.1 !important;
+            font-weight: bold !important;
+            color: #000000 !important;
+            margin: 2px 0 !important;
+            white-space: nowrap !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+          }
+
+          /* ۷. ریز کردن بج‌های حجم و امتیاز */
+          a[href*="game"] span {
+            font-size: 7px !important;
+            padding: 0px 3px !important;
+            line-height: 1 !important;
+            color: #000 !important;
+            background: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+          }
+
+          /* ۸. حذف فاصله‌های اضافی بدنه صفحه */
+          body {
+            background: #ffffff !important;
+            color: #000000 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+        }
+      `}</style>
+
     </div>
   );
 }
