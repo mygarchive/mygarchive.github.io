@@ -291,9 +291,28 @@ export default function AdminPanel() {
     }
 
     try {
-      const latestRepoState = await fetchMyGames(githubToken);
-      let currentGamesList = latestRepoState ? RepoStateCleaner(latestRepoState.games) : [...myGames];
-      let currentSha = latestRepoState ? latestRepoState.sha : fileSha;
+      // 🚀 ترفند ضد کَش برای دریافت تازه‌ترین نسخه فایل و SHA دقیقاً قبل از عملیات
+      const latestRepoState = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`, { 
+        headers: { 
+          'Authorization': `Bearer ${githubToken}`,
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache'
+        } 
+      }).then(res => res.json());
+
+      let currentSha = latestRepoState.sha;
+      let parsedGames = [];
+
+      // خواندن دیتاهای جدید به صورت ایمن
+      if (latestRepoState.download_url) {
+        const rawRes = await fetch(`${latestRepoState.download_url}?timestamp=${Date.now()}`, { cache: 'no-store' });
+        parsedGames = await rawRes.json();
+      } else if (latestRepoState.content) {
+        const cleanContent = latestRepoState.content.replace(/\n/g, '');
+        parsedGames = JSON.parse(safeAtob(cleanContent));
+      }
+
+      let currentGamesList = RepoStateCleaner(parsedGames.length > 0 ? parsedGames : myGames);
 
       if (type === 'ADD') {
         setMessage({ text: `⏳ در حال استخراج اطلاعات از RAWG برای "${game.name}"...`, isError: false });
@@ -384,7 +403,6 @@ export default function AdminPanel() {
         }
         galleryFinal = galleryFinal.slice(0, 10);
 
-        // 🧠 استخراج خودکار حجم بر حسب گیگابایت در صورت نبود فیلد دستی
         const autoExtractedGb = extractSizeFromReqText(minReq) || extractSizeFromReqText(recReq) || 0;
 
         const newGameObj = {
@@ -407,7 +425,6 @@ export default function AdminPanel() {
           },
           description_en: (details.description_raw || "No description available.").substring(0, 1500),
           description_fa: descriptionFaWithLabel,
-          // 🆕 فیلدهای جدید ادمین
           size_gb: autoExtractedGb,
           is_popular: false,
           is_coop: false,
@@ -429,7 +446,7 @@ export default function AdminPanel() {
           setMyGames(cleanList);
           setMessage({ text: `✅ بازی "${game.name}" با موفقیت ثبت شد.`, isError: false });
         } else { 
-          setMessage({ text: '❌ خطا در ثبت روی گیت‌هاب.', isError: true }); 
+          setMessage({ text: `❌ خطا در ثبت روی گیت‌هاب (کد ارور: ${res.status})`, isError: true }); 
         }
 
       } else if (type === 'UPDATE') {
@@ -437,7 +454,6 @@ export default function AdminPanel() {
 
         const targetGameIdx = currentGamesList.findIndex((g: any) => g.id === game.id);
         if (targetGameIdx !== -1) {
-          // اگر حجم دستی وارد نشده باشد، تلاش برای استخراج هوشمند
           let finalSizeGb = overrideData.size_gb;
           if (finalSizeGb === null || finalSizeGb === undefined || finalSizeGb === '') {
             finalSizeGb = extractSizeFromReqText(overrideData.requirements?.minimum || '') || extractSizeFromReqText(overrideData.requirements?.recommended || '') || 0;
@@ -463,7 +479,7 @@ export default function AdminPanel() {
             setMyGames(currentGamesList);
             setMessage({ text: `✅ اصلاحات کامل بازی "${game.name}" با موفقیت روی گیت‌هاب اعمال شد.`, isError: false });
           } else {
-            setMessage({ text: '❌ خطا در اعمال اصلاحیه.', isError: true });
+            setMessage({ text: `❌ خطا در اعمال اصلاحیه (کد ارور: ${res.status})`, isError: true });
           }
         }
 
@@ -484,7 +500,7 @@ export default function AdminPanel() {
           setMyGames(updated);
           setMessage({ text: `✅ بازی "${gameName}" با موفقیت حذف گردید.`, isError: false });
         } else {
-          setMessage({ text: '❌ خطا در حذف بازی.', isError: true });
+          setMessage({ text: `❌ خطا در حذف بازی (کد ارور: ${res.status})`, isError: true });
         }
       }
     } catch (err) {
@@ -494,8 +510,7 @@ export default function AdminPanel() {
       setQueue((prev) => prev.slice(1));
       setIsProcessingQueue(false);
     }
-  }, [githubToken, myGames, fileSha, queue, getSteamIdFromSteam]);
-
+  }, [githubToken, myGames, queue, getSteamIdFromSteam]);
   useEffect(() => {
     if (queue.length > 0 && !isProcessingQueue) {
       processNextQueueTask();
