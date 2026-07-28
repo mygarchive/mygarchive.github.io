@@ -19,15 +19,60 @@ interface QueueTask {
   createdAt: number;
 }
 
-async function translateToPersian(text: string): Promise<string> {
+// ⚡ شبکه مقاوم با تایم‌آوت قابل تنظیم (برای شرایط شبکه ایران)
+const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 20000) => {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=fa&dt=t&q=${encodeURIComponent(text)}`);
-    return res.ok ? (await res.json())[0].map((item: any) => item[0]).join('') : 'ترجمه خودکار با خطا مواجه شد.';
-  } catch { return 'خطا در ارتباط با سرور ترجمه.'; }
+    const res = await fetch(url, { 
+      ...options, 
+      signal: controller.signal,
+      cache: 'no-store'
+    });
+    clearTimeout(id);
+    return res;
+  } catch (err) {
+    clearTimeout(id);
+    throw err;
+  }
+};
+
+// ⚡ ترجمه مقاوم در برابر Rate-Limit و تایم‌آوت
+async function translateToPersian(text: string): Promise<string> {
+  if (!text) return '';
+  try {
+    const res = await safeFetchWithTimeout(
+      `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=fa&dt=t&q=${encodeURIComponent(text)}`,
+      {},
+      6000
+    );
+    if (!res.ok) return 'توضیحات فارسی ثبت نشده است.';
+    const data = await res.json();
+    return data[0]?.map((item: any) => item[0]).join('') || 'توضیحات فارسی ثبت نشده است.';
+  } catch { 
+    return 'توضیحات فارسی ثبت نشده است.'; 
+  }
 }
 
-const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
-const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+// ⚡ کدگذاری ایمن UTF-8 به Base64 بدون سرریز حافظه در فایل‌های بزرگ
+const safeBtoa = (str: string) => {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  const len = bytes.byteLength;
+  for (let i = 0; i < len; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
+};
+
+const safeAtob = (str: string) => {
+  const binary = atob(str);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+  return new TextDecoder().decode(bytes);
+};
 
 const extractSizeFromReqText = (reqText: string): number | null => {
   if (!reqText) return null;
@@ -83,23 +128,27 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // ⚡ شبکه مقاوم با تایم‌آوت قابل تنظیم (۲۰ ثانیه برای ایران)
-  // ⚡ شبکه مقاوم بدون تداخل هدرهای CORS
-  const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 20000) => {
-    const controller = new AbortController();
-    const id = setTimeout(() => controller.abort(), timeoutMs);
+  const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
     try {
-      const res = await fetch(url, { 
-        ...options, 
-        signal: controller.signal,
-        cache: 'no-store' // کنترل کش به صورت استاندارد بدون خراب کردن CORS
-      });
-      clearTimeout(id);
-      return res;
-    } catch (err) {
-      clearTimeout(id);
-      throw err;
-    }
+      const myWorkerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+      const res = await safeFetchWithTimeout(myWorkerUrl, {}, 10000);
+      if (res.ok) return await res.json();
+    } catch (e) { console.warn("پروکسی اول ناموفق بود..."); }
+
+    try {
+      const res = await safeFetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, {}, 10000);
+      if (res.ok) return await res.json();
+    } catch (e) { console.warn("پروکسی دوم ناموفق بود..."); }
+
+    try {
+      const res = await safeFetchWithTimeout(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, {}, 10000);
+      if (res.ok) return await res.json();
+    } catch (e) { console.warn("پروکسی سوم ناموفق بود..."); }
+
+    // ⚡ اصلاح درخواست مستقیم همراه با تایم‌آوت ۱۰ ثانیه‌ای
+    const directRes = await safeFetchWithTimeout(targetUrl, {}, 10000);
+    if (directRes.ok) return await directRes.json();
+    throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
   };
 
   const getSteamIdFromSteam = useCallback(async (gameName: string): Promise<string | null> => {
@@ -138,7 +187,9 @@ export default function AdminPanel() {
     setMyGames(newGamesList);
     try {
       localStorage.setItem('admin_my_games_cache', JSON.stringify(newGamesList));
-    } catch (e) { console.error("LocalStorage quota exceeded", e); }
+    } catch (e) { 
+      console.error("LocalStorage quota exceeded", e); 
+    }
   };
 
   // 💾 ذخیره صف در LocalStorage
@@ -147,28 +198,6 @@ export default function AdminPanel() {
     try {
       localStorage.setItem('admin_game_queue', JSON.stringify(newQueue));
     } catch (e) { console.error("Error writing queue to LocalStorage", e); }
-  };
-
-  const fetchSmartRoute = async (targetUrl: string, parseAllOrigins = false) => {
-    try {
-      const myWorkerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-      const res = await safeFetchWithTimeout(myWorkerUrl, {}, 10000);
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn("پروکسی اول ناموفق بود..."); }
-
-    try {
-      const res = await safeFetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, {}, 10000);
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn("پروکسی دوم ناموفق بود..."); }
-
-    try {
-      const res = await safeFetchWithTimeout(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, {}, 10000);
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn("پروکسی سوم ناموفق بود..."); }
-
-    const directRes = await fetch(targetUrl);
-    if (directRes.ok) return await directRes.json();
-    throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
   };
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -240,7 +269,7 @@ export default function AdminPanel() {
       }
     } catch (err) { 
       console.error(err);
-      if (myGames.length > 0) setIsLoggedIn(true); // استفاده از اطلاعات کاش شده موقع قطعی
+      if (myGames.length > 0) setIsLoggedIn(true);
       setMessage({ text: '⚠️ عدم دریافت اطلاعات تازه از گیت‌هاب. نمایش آرشیو محلی.', isError: true });
     }
     return null;
@@ -300,15 +329,12 @@ export default function AdminPanel() {
     setEditingGame({ ...editingGame, gallery: updatedGallery });
   };
 
-  // ⚡ اعمال تغییرات به صورت Optimistic (آنی روی ظاهر سایت) + افزودن به صف
   const handleSaveFullEdit = () => {
     if (!editingGame) return;
 
-    // ۱. به‌روزرسانی فوری لیست محلی
     const updatedList = myGames.map(g => g.id === editingGame.id ? { ...g, ...editingGame } : g);
     updateMyGamesState(updatedList);
 
-    // ۲. اضافه کردن به صف ذخیره در LocalStorage
     pushTaskToQueue({ type: 'UPDATE', game: editingGame, overrideData: editingGame });
     
     setMessage({ text: `✅ تغییرات "${editingGame.name}" در مرورگر شما ذخیره شد و در صف ارسال پس‌زمینه قرار گرفت.`, isError: false });
@@ -318,11 +344,9 @@ export default function AdminPanel() {
   const handleRemoveGame = (gameId: number, gameName: string) => {
     if (!window.confirm(`آیا از حذف بازی "${gameName}" مطمئن هستید؟`)) return;
     
-    // ۱. حذف فوری از UI
     const updatedList = myGames.filter(g => g.id !== gameId);
     updateMyGamesState(updatedList);
 
-    // ۲. ثبت در صف
     pushTaskToQueue({ type: 'REMOVE', game: null, gameId, gameName });
     setMessage({ text: `⚡ درخواست حذف "${gameName}" در صف قرار گرفت.`, isError: false });
   };
@@ -344,7 +368,7 @@ export default function AdminPanel() {
       let currentSha = fileSha;
       let currentGamesList = safeCloneList(myGames);
 
-      // ⚡ ۱. گرفتن تازه ترین نسخه SHA از گیت‌هاب پیش از ثبت
+      // ⚡ ۱. گرفتن تازه‌ترین نسخه SHA از گیت‌هاب پیش از ثبت
       try {
         const repoRes = await safeFetchWithTimeout(
           `${WORKER_PROXY_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`,
@@ -567,10 +591,17 @@ export default function AdminPanel() {
         }
       }
 
-      // ⚡ ۴. اگر ارسال موفق بود، این آیتم را از صف LocalStorage پاک می‌کنیم
+      // ⚡ ۴. اصلاح باگ Race Condition: حذف ایمن آیتم پردازش‌شده با استفاده از Functional State Update
       if (uploadSuccess) {
-        const nextQueue = queue.slice(1);
-        updateQueueState(nextQueue);
+        setQueue((prevQueue) => {
+          const nextQueue = prevQueue.slice(1);
+          try {
+            localStorage.setItem('admin_game_queue', JSON.stringify(nextQueue));
+          } catch (e) {
+            console.error("Error writing queue to LocalStorage", e);
+          }
+          return nextQueue;
+        });
       }
 
     } catch (err: any) {
