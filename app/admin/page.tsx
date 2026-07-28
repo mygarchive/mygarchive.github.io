@@ -887,14 +887,19 @@ export default function AdminPanel() {
                 <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg relative">
                   <div className="relative">
                     <img 
-                      src={getOptimizedUrl(game.background_image, 400)} 
-                      alt={game.name} 
-                      onError={(e) => {
-                        e.currentTarget.onerror = null;
-                        e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
-                      }}
-                      className="w-full h-40 object-cover" 
-                    />
+  src={getOptimizedUrl(game.background_image, 400)} 
+  alt={game.name} 
+  onError={(e) => {
+    e.currentTarget.onerror = null;
+    if (game.background_image) {
+      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
+    } else {
+      // یک عکس پیش‌فرض برای بازی‌هایی که عکس ندارند قرار بده
+      e.currentTarget.src = '/placeholder.jpg'; 
+    }
+  }}
+  className="w-full h-40 object-cover" 
+/>
                     
                     {/* Badge های اطلاعات ادمین روی کارت */}
                     {isAlreadyAdded && (
