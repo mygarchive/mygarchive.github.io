@@ -7,6 +7,7 @@ import Link from 'next/link';
 const GITHUB_OWNER = 'mygarchive'; 
 const GITHUB_REPO = 'mygarchive.github.io'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
+const WORKER_PROXY_URL = 'https://small-limit-e3e4.hossein-hf273.workers.dev';
 
 interface QueueTask {
   type: 'ADD' | 'REMOVE' | 'UPDATE';
@@ -26,17 +27,14 @@ async function translateToPersian(text: string): Promise<string> {
 const safeBtoa = (str: string) => btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) => String.fromCharCode(parseInt(p1, 16))));
 const safeAtob = (str: string) => decodeURIComponent(atob(str).split('').map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
 
-// 🧠 استخراج ۱۰۰٪ دقیق حجم هارد از مشخصات انگلیسی
 const extractSizeFromReqText = (reqText: string): number | null => {
   if (!reqText) return null;
 
-  // متن را خط به خط جدا می‌کنیم
   const lines = reqText.split('\n');
 
   for (const line of lines) {
     const lowerLine = line.toLowerCase();
 
-    // بررسی خطوط مربوط به فضای ذخیره‌سازی
     const isStorageLine = 
       lowerLine.includes('storage') || 
       lowerLine.includes('hard drive') || 
@@ -45,12 +43,10 @@ const extractSizeFromReqText = (reqText: string): number | null => {
       lowerLine.includes('ssd') || 
       lowerLine.includes('space');
 
-    // بررسی اینکه خط مربوط به رم یا مموری نباشد
     const isMemoryLine = 
       lowerLine.includes('memory') || 
       lowerLine.includes('ram');
 
-    // اگر خط شامل هارد بود و کلمات رم را نداشت
     if (isStorageLine && !isMemoryLine) {
       const match = line.match(/(\d+(?:\.\d+)?)\s*(gb|mb|giga)/i);
       if (match && match[1]) {
@@ -152,40 +148,34 @@ export default function AdminPanel() {
     throw new Error("تمامی مسیرهای ارتباطی با سرور بازی‌ها با خطا مواجه شدند.");
   };
 
+  // ⚡ لاگین از طریق ورکر کلادفلر
   const handleLogin = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setLoginError('');
-  const trimmedToken = githubToken.trim();
-  
-  if (!trimmedToken.startsWith('ghp_') && !trimmedToken.startsWith('github_pat_')) {
-    return setLoginError('لطفاً یک توکن معتبر گیت‌هاب وارد کنید.');
-  }
-
-  setLoading(true);
-  try {
-    // 👇 تغییر اصلی اینجاست: ریکوئست به API خودمان ارسال می‌شود
-    const checkRes = await fetch('/api/github', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token: trimmedToken, action: 'checkUser' })
-    });
+    e.preventDefault();
+    setLoginError('');
+    const trimmedToken = githubToken.trim();
     
-    // 👇 خواندن جواب از API خودمان
-    const data = await checkRes.json();
-
-    // 👇 چک کردن استتوس کدی که از بک‌اند برگشته
-    if (data.status === 200) {
-      localStorage.setItem('isAdmin', 'true');
-      localStorage.setItem('gh_token', trimmedToken);
-      await fetchMyGames(trimmedToken);
-    } else {
-      setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
+    if (!trimmedToken.startsWith('ghp_') && !trimmedToken.startsWith('github_pat_')) {
+      return setLoginError('لطفاً یک توکن معتبر گیت‌هاب وارد کنید.');
     }
-  } catch {
-    setLoginError('خطا در ارتباط با سرور.'); // متن خطا تغییر کرد چون دیگر مستقیم به گیت‌هاب وصل نمی‌شویم
-  }
-  setLoading(false);
-};
+
+    setLoading(true);
+    try {
+      const checkRes = await fetch(`${WORKER_PROXY_URL}/user`, {
+        headers: { 'Authorization': `Bearer ${trimmedToken}` }
+      });
+      
+      if (checkRes.status === 200) {
+        localStorage.setItem('isAdmin', 'true');
+        localStorage.setItem('gh_token', trimmedToken);
+        await fetchMyGames(trimmedToken);
+      } else {
+        setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
+      }
+    } catch {
+      setLoginError('خطا در ارتباط با سرور ورکر.');
+    }
+    setLoading(false);
+  };
 
   const handleLogout = () => {
     localStorage.removeItem('isAdmin');
@@ -199,9 +189,10 @@ export default function AdminPanel() {
     setMessage({ text: 'با موفقیت از پنل خارج شدید.', isError: false });
   };
 
+  // ⚡ دریافت آرشیو از طریق ورکر کلادفلر
   const fetchMyGames = async (token: string) => {
     try {
-      const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
+      const res = await fetch(`${WORKER_PROXY_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
         headers: { 'Authorization': `Bearer ${token}` } 
       });
       if (res.status === 200) {
@@ -210,13 +201,10 @@ export default function AdminPanel() {
         
         let parsedGames = [];
         
-        // اگر حجم فایل بالا باشد، گیت‌هاب محتوا را خالی می‌فرستد اما لینک دانلود مستقیم می‌دهد.
-        // ما مستقیماً فایل خام (بدون رمزنگاری base64) را از لینک دانلود می‌گیریم:
         if (data.download_url) {
           const rawRes = await fetch(data.download_url, { cache: 'no-store' });
           parsedGames = await rawRes.json();
         } else if (data.content) {
-          // برای فایل‌های زیر ۱ مگابایت که هنوز base64 دارند
           const cleanContent = data.content.replace(/\n/g, '');
           parsedGames = JSON.parse(safeAtob(cleanContent));
         }
@@ -227,7 +215,7 @@ export default function AdminPanel() {
       }
     } catch (err) { 
       console.error(err);
-      setLoginError('خطا در واکشی اطلاعات آرشیو از گیت‌هاب.');
+      setLoginError('خطا در واکشی اطلاعات آرشیو از ورکر.');
     }
     return null;
   };
@@ -295,7 +283,6 @@ export default function AdminPanel() {
     const currentTask = queue[0];
     const { type, game, gameId, gameName, overrideData } = currentTask;
 
-    // تابع کمکی برای کپی عمیق و ایمن آرایه
     const safeCloneList = (list: any[]) => {
       if (!Array.isArray(list)) return [];
       try {
@@ -305,7 +292,6 @@ export default function AdminPanel() {
       }
     };
 
-    // تابع کمکی برای درخواست‌های شبکه با تایم‌آوت ایمن
     const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 5000) => {
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeoutMs);
@@ -323,10 +309,10 @@ export default function AdminPanel() {
       let currentSha = fileSha;
       let currentGamesList = safeCloneList(myGames);
 
-      // 🌐 step 1: تلاش ایمن برای گرفتن آخرین SHA و محتوا از گیت‌هاب
+      // ⚡ گرفتن آخرین SHA و محتوا از طریق ورکر کلادفلر
       try {
         const repoRes = await safeFetchWithTimeout(
-          `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
+          `${WORKER_PROXY_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
           { headers: { 'Authorization': `Bearer ${githubToken}` } },
           5000
         );
@@ -354,7 +340,6 @@ export default function AdminPanel() {
         console.warn("⚠️ عدم دریافت فایل آنلاین (تایم‌آوت/شبکه). استفاده از داده‌های حافظه محلی.", e);
       }
 
-      // 🟢 حالت ADD: افزودن بازی جدید
       if (type === 'ADD') {
         setMessage({ text: `⏳ در حال استخراج اطلاعات برای "${game?.name || 'بازی'}"...`, isError: false });
 
@@ -363,7 +348,6 @@ export default function AdminPanel() {
         const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
         const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
 
-        // استفاده از Promise.allSettled تا در صورت ارور دادن یک سرویس، کل فرایند متوقف نشود
         const results = await Promise.allSettled([
           fetchSmartRoute(detailsTarget, true),
           fetchSmartRoute(moviesTarget, true),
@@ -512,7 +496,7 @@ export default function AdminPanel() {
         currentGamesList = currentGamesList.filter((g: any) => g.id !== gameId);
       }
 
-      // 🔄 step 2: ارسال به گیت‌هاب با مکانیسم Retry خودکار در صورت ۴۰۹ Conflict
+      // ⚡ ارسال تغییرات و ثبت روی گیت‌هاب از طریق ورکر کلادفلر
       let uploadSuccess = false;
       let retries = 0;
       const maxRetries = 2;
@@ -522,7 +506,7 @@ export default function AdminPanel() {
           const encodedContent = safeBtoa(JSON.stringify(currentGamesList, null, 0));
 
           const res = await safeFetchWithTimeout(
-            `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`,
+            `${WORKER_PROXY_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`,
             {
               method: 'PUT',
               headers: {
@@ -546,13 +530,12 @@ export default function AdminPanel() {
             setMessage({ text: `✅ عملیات ${type} با موفقیت روی گیت‌هاب ثبت گردید.`, isError: false });
             uploadSuccess = true;
           } else if (res.status === 409 && retries < maxRetries) {
-            // تداخل SHA پیش آمده؛ ۱ ثانیه صبر می‌کنیم و SHA جدید می‌گیریم
             console.warn(`تداخل SHA (409). تلاش مجدد (${retries + 1}/${maxRetries})...`);
             retries++;
             await new Promise(r => setTimeout(r, 1000));
             
             const freshRepoRes = await safeFetchWithTimeout(
-              `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
+              `${WORKER_PROXY_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
               { headers: { 'Authorization': `Bearer ${githubToken}` } },
               4000
             );
@@ -575,11 +558,11 @@ export default function AdminPanel() {
       console.error("خطا در مهار صف:", err);
       setMessage({ text: `❌ خطا در انجام عملیات: ${err?.message || 'مشکل در ارتباط شبکه'}`, isError: true });
     } finally {
-      // پاک کردن آیتم از صف به صورت ایمن
       setQueue((prev) => (Array.isArray(prev) ? prev.slice(1) : []));
       setIsProcessingQueue(false);
     }
   }, [githubToken, myGames, fileSha, queue, getSteamIdFromSteam]);
+
   useEffect(() => {
     if (queue.length > 0 && !isProcessingQueue) {
       processNextQueueTask();
@@ -634,7 +617,6 @@ export default function AdminPanel() {
             <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2 rounded-xl">➔ صفحه اصلی سایت</Link>
           </header>
 
-          {/* 🛠️ بخش فرم ادیتور هوشمند و کامل بازی (CMS) */}
           {editingGame && (
             <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl mb-8 space-y-6 shadow-xl animate-fadeIn">
               <div className="flex justify-between items-center pb-3 border-b border-slate-800">
@@ -653,17 +635,16 @@ export default function AdminPanel() {
                   <input type="text" value={editingGame.name || ''} onChange={(e) => handleEditFieldChange('name', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold" dir="ltr" />
                 </div>
                 <div>
-  <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز منتقدین (Metacritic):</label>
-  <input 
-    type="number" 
-    value={editingGame.metacritic || ''} 
-    onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} 
-    className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" 
-    dir="ltr" 
-  />
-</div>
+                  <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز منتقدین (Metacritic):</label>
+                  <input 
+                    type="number" 
+                    value={editingGame.metacritic || ''} 
+                    onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} 
+                    className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" 
+                    dir="ltr" 
+                  />
+                </div>
 
-                {/* 💾 حجم بازی، سطح سیستم، پرطرفدار و کوآپ */}
                 <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-t border-b border-slate-800/80 py-4 my-2">
                   <div>
                     <label className="block text-xs text-purple-400 font-bold mb-1.5">💾 حجم بازی (گیگابایت - دستی):</label>
@@ -719,7 +700,6 @@ export default function AdminPanel() {
                   </div>
                 </div>
 
-                {/* ⏱️ ویرایش دستی زمان اتمام بازی */}
                 <div>
                   <label className="block text-xs text-yellow-400 font-bold mb-1.5">⏱️ زمان اتمام بازی (ساعت):</label>
                   <input 
@@ -732,7 +712,6 @@ export default function AdminPanel() {
                   />
                 </div>
 
-                {/* 🔞 ویرایش دستی رده سنی بازی */}
                 <div>
                   <label className="block text-xs text-red-400 font-bold mb-1.5">🔞 رده سنی (ESRB):</label>
                   <select 
@@ -759,7 +738,6 @@ export default function AdminPanel() {
                   <input type="text" value={editingGame.steam_link || ''} onChange={(e) => handleEditFieldChange('steam_link', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left text-blue-400 font-mono" dir="ltr" />
                 </div>
 
-                {/* 🎬 بخش مدیریت تریلر و ویدیوهای یوتیوب */}
                 <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-slate-800/60 pt-4">
                   <div>
                     <label className="block text-xs text-purple-400 font-bold mb-1.5">🎥 لینک تریلر مستقیم (فایل MP4 یا فرمت ویدیویی):</label>
@@ -785,7 +763,6 @@ export default function AdminPanel() {
                   </div>
                 </div>
 
-                {/* ⚙️ بخش فیلدهای سیستم مورد نیاز */}
                 <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-slate-800/60 pt-4">
                   <div>
                     <label className="block text-xs text-red-400 font-bold mb-1.5">⚙️ حداقل سیستم مورد نیاز (Minimum):</label>
@@ -826,7 +803,6 @@ export default function AdminPanel() {
                 </div>
               </div>
 
-              {/* 📸 مدیریت تصاویر گالری */}
               <div className="border-t border-slate-800 pt-4">
                 <label className="block text-xs text-purple-400 font-bold mb-3">📸 مدیریت گالری تصاویر آرشیو (کلیک روی ✕ جهت حذف):</label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3">
@@ -896,21 +872,19 @@ export default function AdminPanel() {
                 <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg relative">
                   <div className="relative">
                     <img 
-  src={getOptimizedUrl(game.background_image, 400)} 
-  alt={game.name} 
-  onError={(e) => {
-    e.currentTarget.onerror = null;
-    if (game.background_image) {
-      e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
-    } else {
-      // یک عکس پیش‌فرض برای بازی‌هایی که عکس ندارند قرار بده
-      e.currentTarget.src = '/placeholder.jpg'; 
-    }
-  }}
-  className="w-full h-40 object-cover" 
-/>
+                      src={getOptimizedUrl(game.background_image, 400)} 
+                      alt={game.name} 
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        if (game.background_image) {
+                          e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image)}`;
+                        } else {
+                          e.currentTarget.src = '/placeholder.jpg'; 
+                        }
+                      }}
+                      className="w-full h-40 object-cover" 
+                    />
                     
-                    {/* Badge های اطلاعات ادمین روی کارت */}
                     {isAlreadyAdded && (
                       <div className="absolute top-2 right-2 flex flex-wrap gap-1">
                         {savedGameData.size_gb ? (
