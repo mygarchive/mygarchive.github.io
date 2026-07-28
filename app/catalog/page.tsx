@@ -11,11 +11,11 @@ const IMAGE_PROXIES = [
   ""
 ];
 
-// 🖼️ کامپوننت هوشمند برای لود عکس با پروکسی و همزمان تغییر سایز (برای کاهش حجم PDF)
+// 🖼️ کامپوننت هوشمند برای لود عکس با پروکسی نردبانی و همزمان تغییر سایز (برای کاهش حجم PDF)
 const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
   const [proxyIndex, setProxyIndex] = useState(0);
 
-  // همون ترفند برش عکس سرور RAWG تا فایل PDF پرینت سنگین نشه
+  // ترفند برش عکس سرور RAWG تا فایل PDF پرینت سنگین نشه
   const getOptimizedUrl = (url: string) => {
     if (!url) return '';
     if (url.includes('media.rawg.io/media/')) {
@@ -25,24 +25,32 @@ const ProxyImage = ({ src, alt, className }: { src: string, alt: string, classNa
   };
 
   const optimizedSrc = getOptimizedUrl(src);
-  const [imgSrc, setImgSrc] = useState(optimizedSrc ? IMAGE_PROXIES[0] + encodeURIComponent(optimizedSrc) : '');
+  const cleanUrl = optimizedSrc ? optimizedSrc.replace(/^https?:\/\//i, '') : '';
+
+  // 🌐 زنجیره پروکسی‌های نردبانی مخصوص عکس (به ترتیب اولویت)
+  const IMAGE_PROXIES = [
+    // ۱. پروکسی اختصاصی کلادفلر شما
+    `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(optimizedSrc)}`,
+    
+    // ۲. سرویس قدرتمند weserv (فوق‌العاده سریع برای عکس و بدون نیاز به vpn)
+    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=600&q=80`,
+    
+    // ۳. سرویس کمکی AllOrigins
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(optimizedSrc)}`,
+    
+    // ۴. لینک مستقیم خام (اولویت آخر)
+    optimizedSrc
+  ];
 
   const handleError = () => {
     if (proxyIndex < IMAGE_PROXIES.length - 1) {
-      const nextIndex = proxyIndex + 1;
-      setProxyIndex(nextIndex);
-      
-      if (IMAGE_PROXIES[nextIndex] === "") {
-        setImgSrc(optimizedSrc); // اولویت آخر: لینک خام
-      } else {
-        setImgSrc(IMAGE_PROXIES[nextIndex] + encodeURIComponent(optimizedSrc));
-      }
+      setProxyIndex((prevIndex) => prevIndex + 1);
     }
   };
 
   return (
     <img 
-      src={imgSrc} 
+      src={IMAGE_PROXIES[proxyIndex]} 
       alt={alt} 
       className={className} 
       onError={handleError} 
