@@ -380,11 +380,11 @@ export default function CatalogPDF() {
         </div>
       )}
 
-      {/* 🖨️ استایل پیشرفته و فوق‌العاده تمیز برای پرینت */}
+     {/* 🖨️ استایل پرینت مینیاتوری (کاهش مجدد سایز حجم و امتیاز) */}
       <style>{`
         @page {
           size: A4 portrait;
-          margin: 6mm; /* حاشیه بسیار کم برای حداکثر استفاده از فضای کاغذ */
+          margin: 6mm;
         }
 
         @media print {
@@ -410,7 +410,7 @@ export default function CatalogPDF() {
             display: none !important;
           }
 
-          /* ۳. فوق‌العاده کوچک و مینیاتوری کردن هدر سایت */
+          /* ۳. هدر مینیاتوری و فوق‌العاده کوچک */
           header {
             padding: 0 0 2px 0 !important;
             margin-bottom: 4px !important;
@@ -457,9 +457,9 @@ export default function CatalogPDF() {
             overflow: hidden !important;
           }
 
-          /* ۶. بزرگ‌تر کردن بخش تصویر بازی */
+          /* ۶. بخش تصویر بازی (بزرگ و خوانا) */
           a[href*="game"] .aspect-video {
-            height: 115px !important; /* ارتفاع بیشتر برای به چشم آمدن تصویر */
+            height: 115px !important;
             width: 100% !important;
             position: relative !important;
           }
@@ -471,7 +471,7 @@ export default function CatalogPDF() {
             opacity: 1 !important;
           }
 
-          /* ۷. مرتب‌سازی تگ‌های روی تصویر (جلوگیری از نامنظمی) */
+          /* ۷. بج‌های روی تصویر (حجم فایل، سال و...) - بسیار ریز ۵.۵ پیکسل */
           a[href*="game"] .absolute {
             position: absolute !important;
             top: 2px !important;
@@ -479,17 +479,16 @@ export default function CatalogPDF() {
             left: auto !important;
             display: flex !important;
             flex-wrap: wrap !important;
-            gap: 2px !important;
+            gap: 1.5px !important;
             justify-content: flex-end !important;
             max-width: 95% !important;
             z-index: 10 !important;
           }
 
-          /* استایل ریز و مرتب بج‌ها/تگ‌های روی عکس */
           a[href*="game"] .absolute span {
-            font-size: 6px !important;
+            font-size: 5.5px !important;
             line-height: 1 !important;
-            padding: 1px 3px !important;
+            padding: 0.5px 2px !important;
             border-radius: 2px !important;
             background: rgba(15, 23, 42, 0.85) !important;
             color: #ffffff !important;
@@ -498,9 +497,9 @@ export default function CatalogPDF() {
             font-weight: 600 !important;
           }
 
-          /* ۸. بسیار فشرده کردن باکس متنی زیر عکس */
+          /* ۸. فشرده‌سازی باکس متنی زیر عکس */
           a[href*="game"] .p-4 {
-            padding: 2px 4px !important;
+            padding: 2px 3px !important;
             display: flex !important;
             flex-direction: column !important;
             justify-content: space-between !important;
@@ -519,7 +518,7 @@ export default function CatalogPDF() {
             text-overflow: ellipsis !important;
           }
 
-          /* بخش امتیاز و بج‌های پایین */
+          /* بخش امتیاز بازی در پایین کارت - بسیار ریز ۵.۵ پیکسل */
           a[href*="game"] .flex.justify-between {
             display: flex !important;
             flex-direction: row !important;
@@ -531,12 +530,13 @@ export default function CatalogPDF() {
           }
 
           a[href*="game"] .flex.justify-between span {
-            font-size: 6.5px !important;
+            font-size: 5.5px !important;
             padding: 0px 2px !important;
             background: #f1f5f9 !important;
             color: #0f172a !important;
-            border: 1px solid #cbd5e1 !important;
+            border: 1px solid #e2e8f0 !important;
             border-radius: 2px !important;
+            line-height: 1 !important;
           }
         }
       `}</style>
