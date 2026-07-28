@@ -163,7 +163,7 @@ export default function AdminPanel() {
     setLoading(true);
     try {
       const checkRes = await fetch('https://api.github.com/user', {
-        headers: { 'Authorization': `token ${trimmedToken}` }
+        headers: { 'Authorization': `Bearer ${trimmedToken}` }
       });
       if (checkRes.status === 200) {
         localStorage.setItem('isAdmin', 'true');
@@ -193,12 +193,13 @@ export default function AdminPanel() {
   const fetchMyGames = async (token: string) => {
     try {
       const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
-        headers: { 'Authorization': `token ${token}` } 
+        headers: { 'Authorization': `Bearer ${token}` } 
       });
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
-        const parsedGames = JSON.parse(safeAtob(data.content)) || [];
+        const cleanContent = data.content ? data.content.replace(/\n/g, '') : '';
+const parsedGames = cleanContent ? JSON.parse(safeAtob(cleanContent)) : [];
         setMyGames(parsedGames);
         setIsLoggedIn(true);
         return { sha: data.sha, games: parsedGames };
@@ -406,7 +407,7 @@ export default function AdminPanel() {
 
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
-          headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+          headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
           body: JSON.stringify({ message: `Auto Add ${game.name}`, content: safeBtoa(JSON.stringify(cleanList, null, 2)), sha: currentSha })
         });
 
@@ -440,7 +441,7 @@ export default function AdminPanel() {
 
           const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
             method: 'PUT',
-            headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+            headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
             body: JSON.stringify({ message: `CMS Manual Edit ${game.name}`, content: safeBtoa(JSON.stringify(currentGamesList, null, 2)), sha: currentSha })
           });
 
@@ -461,7 +462,7 @@ export default function AdminPanel() {
         
         const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
           method: 'PUT',
-          headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
+          headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
           body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updated, null, 2)), sha: currentSha })
         });
 
