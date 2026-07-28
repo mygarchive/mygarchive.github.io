@@ -291,12 +291,10 @@ export default function AdminPanel() {
     }
 
     try {
-      // 🚀 ترفند ضد کَش برای دریافت تازه‌ترین نسخه فایل و SHA دقیقاً قبل از عملیات
+      // 🚀 دریافت مستقیم آخرین SHA بدون هدرهای غیرمجاز CORS (با ترفند Timestamp)
       const latestRepoState = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`, { 
         headers: { 
-          'Authorization': `Bearer ${githubToken}`,
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache'
+          'Authorization': `Bearer ${githubToken}`
         } 
       }).then(res => res.json());
 
@@ -305,7 +303,7 @@ export default function AdminPanel() {
 
       // خواندن دیتاهای جدید به صورت ایمن
       if (latestRepoState.download_url) {
-        const rawRes = await fetch(`${latestRepoState.download_url}?timestamp=${Date.now()}`, { cache: 'no-store' });
+        const rawRes = await fetch(`${latestRepoState.download_url}?timestamp=${Date.now()}`);
         parsedGames = await rawRes.json();
       } else if (latestRepoState.content) {
         const cleanContent = latestRepoState.content.replace(/\n/g, '');
