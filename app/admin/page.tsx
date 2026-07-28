@@ -84,6 +84,7 @@ export default function AdminPanel() {
   };
 
   // ⚡ شبکه مقاوم با تایم‌آوت قابل تنظیم (۲۰ ثانیه برای ایران)
+  // ⚡ شبکه مقاوم بدون تداخل هدرهای CORS
   const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 20000) => {
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeoutMs);
@@ -91,11 +92,7 @@ export default function AdminPanel() {
       const res = await fetch(url, { 
         ...options, 
         signal: controller.signal,
-        headers: {
-          ...options.headers,
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache'
-        }
+        cache: 'no-store' // کنترل کش به صورت استاندارد بدون خراب کردن CORS
       });
       clearTimeout(id);
       return res;
