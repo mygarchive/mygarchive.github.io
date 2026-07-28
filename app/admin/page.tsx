@@ -286,63 +286,109 @@ export default function AdminPanel() {
     const currentTask = queue[0];
     const { type, game, gameId, gameName, overrideData } = currentTask;
 
-    function RepoStateCleaner(list: any[]) {
-      return list.map(g => ({ ...g }));
-    }
+    // تابع کمکی برای کپی عمیق و ایمن آرایه
+    const safeCloneList = (list: any[]) => {
+      if (!Array.isArray(list)) return [];
+      try {
+        return JSON.parse(JSON.stringify(list));
+      } catch {
+        return list.map(g => ({ ...g }));
+      }
+    };
+
+    // تابع کمکی برای درخواست‌های شبکه با تایم‌آوت ایمن
+    const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 5000) => {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        const res = await fetch(url, { ...options, signal: controller.signal });
+        clearTimeout(id);
+        return res;
+      } catch (err) {
+        clearTimeout(id);
+        throw err;
+      }
+    };
 
     try {
-      // 🚀 دریافت مستقیم آخرین SHA بدون هدرهای غیرمجاز CORS (با ترفند Timestamp)
-      const latestRepoState = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`, { 
-        headers: { 
-          'Authorization': `Bearer ${githubToken}`
-        } 
-      }).then(res => res.json());
+      let currentSha = fileSha;
+      let currentGamesList = safeCloneList(myGames);
 
-      let currentSha = latestRepoState.sha;
-      let parsedGames = [];
+      // 🌐 step 1: تلاش ایمن برای گرفتن آخرین SHA و محتوا از گیت‌هاب
+      try {
+        const repoRes = await safeFetchWithTimeout(
+          `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
+          { headers: { 'Authorization': `Bearer ${githubToken}` } },
+          5000
+        );
 
-      // خواندن دیتاهای جدید به صورت ایمن
-      if (latestRepoState.download_url) {
-        const rawRes = await fetch(`${latestRepoState.download_url}?timestamp=${Date.now()}`);
-        parsedGames = await rawRes.json();
-      } else if (latestRepoState.content) {
-        const cleanContent = latestRepoState.content.replace(/\n/g, '');
-        parsedGames = JSON.parse(safeAtob(cleanContent));
+        if (repoRes && repoRes.ok) {
+          const latestRepoState = await repoRes.json();
+          if (latestRepoState?.sha) {
+            currentSha = latestRepoState.sha;
+            let parsedGames = [];
+
+            if (latestRepoState.download_url) {
+              const rawRes = await safeFetchWithTimeout(`${latestRepoState.download_url}?timestamp=${Date.now()}`, {}, 5000);
+              if (rawRes.ok) parsedGames = await rawRes.json();
+            } else if (latestRepoState.content) {
+              const cleanContent = latestRepoState.content.replace(/\n/g, '');
+              parsedGames = JSON.parse(safeAtob(cleanContent));
+            }
+
+            if (Array.isArray(parsedGames) && parsedGames.length > 0) {
+              currentGamesList = safeCloneList(parsedGames);
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("⚠️ عدم دریافت فایل آنلاین (تایم‌آوت/شبکه). استفاده از داده‌های حافظه محلی.", e);
       }
 
-      let currentGamesList = RepoStateCleaner(parsedGames.length > 0 ? parsedGames : myGames);
-
+      // 🟢 حالت ADD: افزودن بازی جدید
       if (type === 'ADD') {
-        setMessage({ text: `⏳ در حال استخراج اطلاعات از RAWG برای "${game.name}"...`, isError: false });
+        setMessage({ text: `⏳ در حال استخراج اطلاعات برای "${game?.name || 'بازی'}"...`, isError: false });
 
         const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
         const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
         const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
         const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
 
-        const [details, movieData, screenshots, youtubeData] = await Promise.all([
+        // استفاده از Promise.allSettled تا در صورت ارور دادن یک سرویس، کل فرایند متوقف نشود
+        const results = await Promise.allSettled([
           fetchSmartRoute(detailsTarget, true),
           fetchSmartRoute(moviesTarget, true),
           fetchSmartRoute(screenshotsTarget, true),
-          fetchSmartRoute(youtubeTarget, true).catch(() => ({ results: [] }))
+          fetchSmartRoute(youtubeTarget, true)
         ]);
-        
-        const rawDescriptionFa = await translateToPersian((details.description_raw || "").substring(0, 1500));
-        const descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
-        
+
+        const details = results[0].status === 'fulfilled' ? results[0].value : {};
+        const movieData = results[1].status === 'fulfilled' ? results[1].value : { results: [] };
+        const screenshots = results[2].status === 'fulfilled' ? results[2].value : { results: [] };
+        const youtubeData = results[3].status === 'fulfilled' ? results[3].value : { results: [] };
+
+        let descriptionFaWithLabel = 'توضیحات فارسی ثبت نشده است.';
+        try {
+          const rawDescriptionFa = await translateToPersian((details?.description_raw || "").substring(0, 1500));
+          if (rawDescriptionFa) {
+            descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی و خودکار):\n${rawDescriptionFa}`;
+          }
+        } catch {
+          console.warn("خطا در ترجمه توضیحات");
+        }
+
         let minReq = '';
         let recReq = '';
-        
-        const pcPlatformData = details.platforms?.find((p: any) => p.platform.slug === 'pc');
+        const pcPlatformData = details?.platforms?.find((p: any) => p?.platform?.slug === 'pc');
         if (pcPlatformData?.requirements) {
-          if (pcPlatformData.requirements.minimum) minReq = pcPlatformData.requirements.minimum;
-          if (pcPlatformData.requirements.recommended) recReq = pcPlatformData.requirements.recommended;
+          minReq = pcPlatformData.requirements.minimum || '';
+          recReq = pcPlatformData.requirements.recommended || '';
         }
-        if (!minReq && pcPlatformData?.requirements_minimum) minReq = pcPlatformData.requirements_minimum;
-        if (!recReq && pcPlatformData?.requirements_recommended) recReq = pcPlatformData.requirements_recommended;
+        if (!minReq) minReq = pcPlatformData?.requirements_minimum || '';
+        if (!recReq) recReq = pcPlatformData?.requirements_recommended || '';
 
         const cleanReq = (text: string, fallback: string) => {
-          if (!text) return fallback;
+          if (!text || typeof text !== 'string') return fallback;
           return text
             .replace(/Minimum:|Recommended:|⚙️/gi, '')
             .replace(/<\/?b>/g, '')
@@ -352,51 +398,51 @@ export default function AdminPanel() {
         };
 
         let finalAge = '---';
-        const rawEsrb = details.esrb_rating?.slug || '';
+        const rawEsrb = details?.esrb_rating?.slug || '';
         if (rawEsrb === 'mature') finalAge = '+17';
         else if (rawEsrb === 'adults-only') finalAge = '+18';
         else if (rawEsrb === 'teen') finalAge = '+13';
         else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
         else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
 
-        const metacriticScore = details.metacritic || null;
-
         let steamUrl = '';
-        const steamId = await getSteamIdFromSteam(game.name);
-        
-        if (steamId) {
+        try {
+          const steamId = await getSteamIdFromSteam(game.name);
+          if (steamId) {
             steamUrl = `https://store.steampowered.com/app/${steamId}/`;
-        } else if (details.stores && details.stores.length > 0) {
+          }
+        } catch {
+          console.warn("خطا در دریافت Steam ID");
+        }
+
+        if (!steamUrl && details?.stores?.length > 0) {
           const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam' || s.store?.id === 1);
-          if (steamStore && steamStore.url) {
+          if (steamStore?.url) {
             const match = steamStore.url.match(/(?:app|sub)\/(\d+)/);
             steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : steamStore.url;
           }
         }
-        
-        if (!steamUrl && details.website && details.website.includes('steampowered.com')) {
-          const match = details.website.match(/(?:app|sub)\/(\d+)/);
-          steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : details.website;
-        }
-        
+
         if (!steamUrl) {
-           steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game.name)}`;
+          steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game?.name || '')}`;
         }
 
         const autoYoutube: string[] = [];
         if (youtubeData?.results?.length > 0) {
           youtubeData.results.slice(0, 5).forEach((vid: any) => {
-            if (vid.external_id) autoYoutube.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
+            if (vid?.external_id) autoYoutube.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
           });
         }
-        const trailer = movieData.results?.[0]?.data?.max || '';
+        const trailer = movieData?.results?.[0]?.data?.max || '';
         if (trailer && !autoYoutube.includes(trailer)) autoYoutube.unshift(trailer);
 
         let galleryFinal: string[] = [];
-        if (screenshots?.results?.length > 0) galleryFinal = screenshots.results.map((s: any) => s.image);
-        if (game.short_screenshots?.length > 0) {
+        if (screenshots?.results?.length > 0) {
+          galleryFinal = screenshots.results.map((s: any) => s.image).filter(Boolean);
+        }
+        if (game?.short_screenshots?.length > 0) {
           game.short_screenshots.forEach((s: any) => {
-            if (!galleryFinal.includes(s.image)) galleryFinal.push(s.image);
+            if (s?.image && !galleryFinal.includes(s.image)) galleryFinal.push(s.image);
           });
         }
         galleryFinal = galleryFinal.slice(0, 10);
@@ -405,110 +451,126 @@ export default function AdminPanel() {
 
         const newGameObj = {
           id: game.id,
-          name: game.name,
-          background_image: game.background_image,
-          metacritic: metacriticScore,
-          released: game.released,
-          genres: game.genres || [],
+          name: game.name || 'نامشخص',
+          background_image: game.background_image || '',
+          metacritic: typeof details?.metacritic === 'number' ? details.metacritic : null,
+          released: game.released || '---',
+          genres: Array.isArray(game.genres) ? game.genres : [],
           esrb_rating: finalAge,
-          playtime: details.playtime || 0,
-          developers: details.developers?.map((d: any) => d.name).join(', ') || '---',
-          steam_link: steamUrl, 
+          playtime: details?.playtime || 0,
+          developers: details?.developers?.map((d: any) => d.name).join(', ') || '---',
+          steam_link: steamUrl,
           trailer_url: trailer,
-          youtube_videos: autoYoutube, 
-          gallery: galleryFinal, 
-          requirements: { 
-            minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'), 
-            recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.') 
+          youtube_videos: autoYoutube,
+          gallery: galleryFinal,
+          requirements: {
+            minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'),
+            recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.')
           },
-          description_en: (details.description_raw || "No description available.").substring(0, 1500),
+          description_en: (details?.description_raw || "No description available.").substring(0, 1500),
           description_fa: descriptionFaWithLabel,
-          size_gb: autoExtractedGb,
+          size_gb: isNaN(autoExtractedGb) ? 0 : autoExtractedGb,
           is_popular: false,
           is_coop: false,
           system_tier: 'unspecified'
         };
 
-        const cleanList = currentGamesList.filter((g: any) => g.id !== game.id);
-        cleanList.push(newGameObj);
-
-        const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
-          method: 'PUT',
-          headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Auto Add ${game.name}`, content: safeBtoa(JSON.stringify(cleanList, null, 0)), sha: currentSha })
-        });
-
-        if (res.status === 200 || res.status === 201) {
-          const resData = await res.json();
-          setFileSha(resData.content.sha);
-          setMyGames(cleanList);
-          setMessage({ text: `✅ بازی "${game.name}" با موفقیت ثبت شد.`, isError: false });
-        } else { 
-          setMessage({ text: `❌ خطا در ثبت روی گیت‌هاب (کد ارور: ${res.status})`, isError: true }); 
-        }
+        currentGamesList = currentGamesList.filter((g: any) => g.id !== game.id);
+        currentGamesList.push(newGameObj);
 
       } else if (type === 'UPDATE') {
-        setMessage({ text: `⏳ در حال اعمال اصلاحیه جامع برای "${game.name}"...`, isError: false });
+        setMessage({ text: `⏳ در حال اعمال اصلاحیه برای "${game?.name || 'بازی'}"...`, isError: false });
 
         const targetGameIdx = currentGamesList.findIndex((g: any) => g.id === game.id);
         if (targetGameIdx !== -1) {
-          let finalSizeGb = overrideData.size_gb;
+          let finalSizeGb = overrideData?.size_gb;
           if (finalSizeGb === null || finalSizeGb === undefined || finalSizeGb === '') {
-            finalSizeGb = extractSizeFromReqText(overrideData.requirements?.minimum || '') || extractSizeFromReqText(overrideData.requirements?.recommended || '') || 0;
+            finalSizeGb = extractSizeFromReqText(overrideData?.requirements?.minimum || '') || extractSizeFromReqText(overrideData?.requirements?.recommended || '') || 0;
           } else {
-            finalSizeGb = parseFloat(finalSizeGb) || 0;
+            finalSizeGb = parseFloat(finalSizeGb);
+            if (isNaN(finalSizeGb)) finalSizeGb = 0;
           }
 
           currentGamesList[targetGameIdx] = {
             ...currentGamesList[targetGameIdx],
-            ...overrideData,
+            ...(overrideData || {}),
             size_gb: finalSizeGb
           };
+        }
 
-          const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
-            method: 'PUT',
-            headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-            body: JSON.stringify({ message: `CMS Manual Edit ${game.name}`, content: safeBtoa(JSON.stringify(currentGamesList, null, 0)), sha: currentSha })
-          });
+      } else if (type === 'REMOVE') {
+        setMessage({ text: `⏳ در حال حذف "${gameName || 'بازی'}"...`, isError: false });
+        currentGamesList = currentGamesList.filter((g: any) => g.id !== gameId);
+      }
+
+      // 🔄 step 2: ارسال به گیت‌هاب با مکانیسم Retry خودکار در صورت ۴۰۹ Conflict
+      let uploadSuccess = false;
+      let retries = 0;
+      const maxRetries = 2;
+
+      while (!uploadSuccess && retries <= maxRetries) {
+        try {
+          const encodedContent = safeBtoa(JSON.stringify(currentGamesList, null, 0));
+
+          const res = await safeFetchWithTimeout(
+            `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`,
+            {
+              method: 'PUT',
+              headers: {
+                'Authorization': `Bearer ${githubToken}`,
+                'Content-Type': 'application/json',
+                'Accept': 'application/vnd.github.v3+json'
+              },
+              body: JSON.stringify({
+                message: `CMS Action: ${type} ${game?.name || gameName || ''}`,
+                content: encodedContent,
+                sha: currentSha
+              })
+            },
+            8000
+          );
 
           if (res.status === 200 || res.status === 201) {
             const resData = await res.json();
             setFileSha(resData.content.sha);
             setMyGames(currentGamesList);
-            setMessage({ text: `✅ اصلاحات کامل بازی "${game.name}" با موفقیت روی گیت‌هاب اعمال شد.`, isError: false });
+            setMessage({ text: `✅ عملیات ${type} با موفقیت روی گیت‌هاب ثبت گردید.`, isError: false });
+            uploadSuccess = true;
+          } else if (res.status === 409 && retries < maxRetries) {
+            // تداخل SHA پیش آمده؛ ۱ ثانیه صبر می‌کنیم و SHA جدید می‌گیریم
+            console.warn(`تداخل SHA (409). تلاش مجدد (${retries + 1}/${maxRetries})...`);
+            retries++;
+            await new Promise(r => setTimeout(r, 1000));
+            
+            const freshRepoRes = await safeFetchWithTimeout(
+              `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?timestamp=${Date.now()}`,
+              { headers: { 'Authorization': `Bearer ${githubToken}` } },
+              4000
+            );
+            if (freshRepoRes.ok) {
+              const freshData = await freshRepoRes.json();
+              if (freshData?.sha) currentSha = freshData.sha;
+            }
           } else {
-            setMessage({ text: `❌ خطا در اعمال اصلاحیه (کد ارور: ${res.status})`, isError: true });
+            setMessage({ text: `❌ خطا در ذخیره‌سازی گیت‌هاب (کد ارور: ${res.status})`, isError: true });
+            break;
           }
-        }
-
-      } else if (type === 'REMOVE') {
-        setMessage({ text: `⏳ در حال حذف "${gameName}" از دیتابیس...`, isError: false });
-
-        const updated = currentGamesList.filter((g: any) => g.id !== gameId);
-        
-        const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`, {
-          method: 'PUT',
-          headers: { 'Authorization': `Bearer ${githubToken}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' },
-          body: JSON.stringify({ message: `Remove ${gameName}`, content: safeBtoa(JSON.stringify(updated, null, 0)), sha: currentSha })
-        });
-
-        if (res.status === 200 || res.status === 201) {
-          const resData = await res.json();
-          setFileSha(resData.content.sha);
-          setMyGames(updated);
-          setMessage({ text: `✅ بازی "${gameName}" با موفقیت حذف گردید.`, isError: false });
-        } else {
-          setMessage({ text: `❌ خطا در حذف بازی (کد ارور: ${res.status})`, isError: true });
+        } catch (retryErr) {
+          if (retries >= maxRetries) throw retryErr;
+          retries++;
+          await new Promise(r => setTimeout(r, 1000));
         }
       }
-    } catch (err) {
-      console.error("خطا در صف:", err);
-      setMessage({ text: '❌ خطا در ارتباط با سرورها.', isError: true });
+
+    } catch (err: any) {
+      console.error("خطا در مهار صف:", err);
+      setMessage({ text: `❌ خطا در انجام عملیات: ${err?.message || 'مشکل در ارتباط شبکه'}`, isError: true });
     } finally {
-      setQueue((prev) => prev.slice(1));
+      // پاک کردن آیتم از صف به صورت ایمن
+      setQueue((prev) => (Array.isArray(prev) ? prev.slice(1) : []));
       setIsProcessingQueue(false);
     }
-  }, [githubToken, myGames, queue, getSteamIdFromSteam]);
+  }, [githubToken, myGames, fileSha, queue, getSteamIdFromSteam]);
   useEffect(() => {
     if (queue.length > 0 && !isProcessingQueue) {
       processNextQueueTask();
