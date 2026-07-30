@@ -129,8 +129,15 @@ export default function CatalogPDF() {
       <div className="text-center mb-6 pb-4 border-b-2 border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-right">
           <h1 className="text-2xl sm:text-3xl font-black mb-1">لیست دیتای بازی‌های کامپیوتری</h1>
-          <p className="text-xs sm:text-sm font-bold text-gray-600">
+          
+          {/* 1️⃣ راهنمای مخصوص سایت آنلاین */}
+          <p className="text-xs sm:text-sm font-bold text-gray-600 print:hidden">
             برای سفارش آنلاین، بازی‌ها را به سبد اضافه کرده و دکمه ارسال را بزنید.
+          </p>
+
+          {/* 2️⃣ راهنمای اختصاصی مخصوص فایل PDF / پرینت */}
+          <p className="hidden print:block text-xs sm:text-sm font-bold text-gray-800">
+            📄 <b>راهنمای سفارش از روی نسخه PDF:</b> جهت ثبت سفارش، نام بازی‌های مورد نظر خود را یادداشت کرده و به آیدی تلگرام یا بله ارسال کنید.
           </p>
         </div>
 
@@ -340,131 +347,132 @@ export default function CatalogPDF() {
             </div>
 
             {/* دکمه‌های ارسال */}
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              onClick={(e) => {
-                if (selectedGames.length === 0) {
-                  alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
-                  return;
-                }
-                handleSendTelegram();
-              }}
-              className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
-                selectedGames.length === 0
-                  ? 'bg-gray-400 opacity-60 cursor-not-allowed'
-                  : 'bg-sky-500 hover:bg-sky-600'
-              }`}
-            >
-              ✈️ ارسال در تلگرام
-            </button>
+            <div className="flex flex-col gap-2">
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={(e) => {
+                    if (selectedGames.length === 0) {
+                      alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                      return;
+                    }
+                    handleSendTelegram();
+                  }}
+                  className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
+                    selectedGames.length === 0
+                      ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                      : 'bg-sky-500 hover:bg-sky-600'
+                  }`}
+                >
+                  ✈️ ارسال در تلگرام
+                </button>
 
-            <button
-              onClick={(e) => {
-                if (selectedGames.length === 0) {
-                  alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
-                  return;
-                }
-                handleSendBale();
-              }}
-              className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
-                selectedGames.length === 0
-                  ? 'bg-gray-400 opacity-60 cursor-not-allowed'
-                  : 'bg-emerald-600 hover:bg-emerald-700'
-              }`}
-            >
-              🟢 ارسال در بله
-            </button>
+                <button
+                  onClick={(e) => {
+                    if (selectedGames.length === 0) {
+                      alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                      return;
+                    }
+                    handleSendBale();
+                  }}
+                  className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
+                    selectedGames.length === 0
+                      ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                      : 'bg-emerald-600 hover:bg-emerald-700'
+                  }`}
+                >
+                  🟢 ارسال در بله
+                </button>
+              </div>
+
+              <button
+                onClick={(e) => {
+                  if (selectedGames.length === 0) {
+                    alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                    return;
+                  }
+                  handleCopyText();
+                }}
+                className={`w-full py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 ${
+                  selectedGames.length === 0
+                    ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                    : 'bg-slate-800 hover:bg-slate-900'
+                }`}
+              >
+                {copied ? '✅ متن سفارش کپی شد!' : '📋 کپی متن کامل لیست سفارش'}
+              </button>
+            </div>
+
           </div>
-
-          <button
-            onClick={(e) => {
-              if (selectedGames.length === 0) {
-                alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
-                return;
-              }
-              handleCopyText();
-            }}
-            className={`w-full py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 ${
-              selectedGames.length === 0
-                ? 'bg-gray-400 opacity-60 cursor-not-allowed'
-                : 'bg-slate-800 hover:bg-slate-900'
-            }`}
-          >
-            {copied ? '✅ متن سفارش کپی شد!' : '📋 کپی متن کامل لیست سفارش'}
-          </button>
         </div>
+      )}
 
-      </div>
-    </div>
-  )}
+      {/* 🔝 دکمه شناور رفتن به بالای صفحه کاتالوگ */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-6 left-6 z-50 p-3.5 bg-slate-800 text-white rounded-full shadow-2xl hover:bg-purple-600 transition-all duration-300 active:scale-90 border border-slate-700 print:hidden"
+        title="رفتن به بالای صفحه"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </button>
 
-  {/* 🔝 دکمه شناور رفتن به بالای صفحه کاتالوگ */}
-  <button
-    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-    className="fixed bottom-6 left-6 z-50 p-3.5 bg-slate-800 text-white rounded-full shadow-2xl hover:bg-purple-600 transition-all duration-300 active:scale-90 border border-slate-700 print:hidden"
-    title="رفتن به بالای صفحه"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-    </svg>
-  </button>
       {/* 🖨️ استایل اختصاصی و استاندارد پرینت A4 */}
-<style>{`
-  @page {
-    size: A4 portrait;
-    margin: 8mm;
-  }
+      <style>{`
+        @page {
+          size: A4 portrait;
+          margin: 8mm;
+        }
 
-  @media print {
-    /* ۱. مخفی کردن تمام المان‌های غیرضروری در فایل PDF */
-    header, 
-    footer, 
-    nav, 
-    button, 
-    [class*="print:hidden"],
-    .print\\:hidden {
-      display: none !important;
-    }
+        @media print {
+          /* ۱. مخفی کردن تمام المان‌های غیرضروری در فایل PDF */
+          header, 
+          footer, 
+          nav, 
+          button, 
+          [class*="print:hidden"],
+          .print\\:hidden {
+            display: none !important;
+          }
 
-    /* ۲. تنظیمات پایه و استاندارد صفحه */
-    html, body {
-      width: 100% !important;
-      height: auto !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      background: #ffffff !important;
-      color: #000000 !important;
-      -webkit-print-color-adjust: exact !important;
-      print-color-adjust: exact !important;
-    }
+          /* ۲. تنظیمات پایه و استاندارد صفحه */
+          html, body {
+            width: 100% !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #ffffff !important;
+            color: #000000 !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
 
-    /* ۳. آزاد کردن کانتینر اصلی کاتالوگ و حذف عرض‌های محدودکننده */
-    main, .max-w-7xl {
-      width: 100% !important;
-      max-width: 100% !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      box-shadow: none !important;
-    }
+          /* ۳. آزاد کردن کانتینر اصلی کاتالوگ و حذف عرض‌های محدودکننده */
+          main, .max-w-7xl {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+          }
 
-    /* ۴. اجبار چیدمان کارت‌ها به ۴ ستون کاملاً متوازن و منظم در PDF */
-    .grid {
-      display: grid !important;
-      grid-template-columns: repeat(4, 1fr) !important;
-      gap: 12px !important;
-    }
+          /* ۴. اجبار چیدمان کارت‌ها به ۴ ستون کاملاً متوازن و منظم در PDF */
+          .grid {
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr) !important;
+            gap: 12px !important;
+          }
 
-    /* ۵. جلوگیری قطعی از نصف شدن یا دو تکه شدن کارت‌های بازی بین دو صفحه */
-    tr, 
-    a, 
-    .grid > *, 
-    .break-inside-avoid {
-      break-inside: avoid !important;
-      page-break-inside: avoid !important;
-    }
-  }
-`}</style>
+          /* ۵. جلوگیری قطعی از نصف شدن یا دو تکه شدن کارت‌های بازی بین دو صفحه */
+          tr, 
+          a, 
+          .grid > *, 
+          .break-inside-avoid {
+            break-inside: avoid !important;
+            page-break-inside: avoid !important;
+          }
+        }
+      `}</style>
 
     </div>
   );
