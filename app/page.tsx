@@ -46,7 +46,6 @@ export default function Home() {
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
   // 🆕 فیلترها
-  const [sizeFilter, setSizeFilter] = useState<string>('all');
   const [systemTierFilter, setSystemTierFilter] = useState<string>('all');
   const [onlyPopular, setOnlyPopular] = useState<boolean>(false);
   const [onlyCoop, setOnlyCoop] = useState<boolean>(false);
@@ -177,15 +176,18 @@ export default function Home() {
     } else if (sortBy === 'rating') {
       result.sort((a, b) => (parseFloat(b.metacritic) || 0) - (parseFloat(a.metacritic) || 0));
     }
-
+// حجم: کم به زیاد
+      result.sort((a, b) => (parseFloat(a.size_gb) || 0) - (parseFloat(b.size_gb) || 0));
+    } else if (sortBy === 'size-desc') {
+      // حجم: زیاد به کم
+      result.sort((a, b) => (parseFloat(b.size_gb) || 0) - (parseFloat(a.size_gb) || 0));
+    }
     return result;
-  }, [games, selectedGenre, searchQuery, sizeFilter, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
-
+}, [games, selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
   // ریست تعداد کارت‌های قابل مشاهده در صورت تغییر فیلترها
   useEffect(() => {
     setVisibleCount(12);
-  }, [selectedGenre, searchQuery, sizeFilter, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
-
+}, [games, selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
   // 🚀 لود تدریجی با Intersection Observer
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -390,39 +392,18 @@ export default function Home() {
                   className="p-2.5 rounded-xl text-xs font-bold outline-none cursor-pointer"
                   style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
                 >
-                  <option value="alphabetical">🔤 حروف الفبا (الف تا ی)</option>
+                  <option value="alphabetical">🔤 حروف الفبا (a تا z)</option>
                   <option value="released">📅 جدیدترین بازی‌ها</option>
                   <option value="rating">⭐ بیشترین امتیاز منتقدین</option>
+                  <option value="size-asc">حجم: کم به زیاد ⬇️</option>
+  <option value="size-desc">حجم: زیاد به کم ⬆️</option>
                 </select>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t pt-4" style={{ borderColor: themeStyles.border }}>
-            <div className="w-full md:w-1/2 space-y-2">
-              <div className="text-xs font-bold" style={{ color: themeStyles.subText }}>💾 فیلتر حجم بازی:</div>
-              <div className="flex flex-wrap items-center gap-2">
-                {[
-                  { id: 'all', label: 'همه حجم‌ها' },
-                  { id: 'light', label: 'زیر ۵۰ گیگ' },
-                  { id: 'medium', label: '۵۰ تا ۱۰۰ گیگ' },
-                  { id: 'heavy', label: 'بالای ۱۰۰ گیگ' }
-                ].map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => setSizeFilter(item.id)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors ${
-                      sizeFilter === item.id 
-                        ? 'bg-purple-600 text-white shadow-md' 
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700'
-                    }`}
-                  >
-                    {item.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
+    
             <div className="flex flex-wrap items-center gap-4">
               <label className="flex items-center gap-2 cursor-pointer text-xs font-bold select-none">
                 <input 
@@ -640,21 +621,42 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href={`https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(generateOrderText())}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-2.5 px-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center"
-                >
-                  ✈️ ارسال در تلگرام
-                </a>
-                <a
-                  href={`https://ble.ir/${BALE_USERNAME}?text=${encodeURIComponent(generateOrderText())}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center"
-                >
-                  🟢 ارسال در بله
-                </a>
+  href={cart.length > 0 ? `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
+  onClick={(e) => {
+    if (cart.length === 0) {
+      e.preventDefault();
+      alert('سبد خرید شما خالی است! لطفاً ابتدا حداقل یک بازی انتخاب کنید.');
+    }
+  }}
+  target={cart.length > 0 ? "_blank" : "_self"}
+  rel="noopener noreferrer"
+  className={`py-2.5 px-4 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center ${
+    cart.length === 0
+      ? 'bg-gray-400 opacity-60 cursor-not-allowed text-white'
+      : 'bg-sky-500 hover:bg-sky-600 text-white'
+  }`}
+>
+  ✈️ ارسال در تلگرام
+</a>
+
+<a
+  href={cart.length > 0 ? `https://ble.ir/${BALE_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
+  onClick={(e) => {
+    if (cart.length === 0) {
+      e.preventDefault();
+      alert('سبد خرید شما خالی است! لطفاً ابتدا حداقل یک بازی انتخاب کنید.');
+    }
+  }}
+  target={cart.length > 0 ? "_blank" : "_self"}
+  rel="noopener noreferrer"
+  className={`py-2.5 px-4 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center ${
+    cart.length === 0
+      ? 'bg-gray-400 opacity-60 cursor-not-allowed text-white'
+      : 'bg-emerald-600 hover:bg-emerald-700 text-white'
+  }`}
+>
+  🟢 ارسال در بله
+</a>
               </div>
 
               <button
@@ -672,15 +674,12 @@ export default function Home() {
       {/* دکمه بازگشت به بالا */}
       <div className="fixed bottom-24 right-6 z-40">
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className={`p-3.5 bg-purple-600 hover:bg-purple-500 text-white rounded-full shadow-2xl transition-all duration-300 transform ${
-            showScrollTop ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'
-          }`}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-5 h-5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-          </svg>
-        </button>
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  className="fixed bottom-20 left-4 z-50 p-3 bg-purple-600 text-white rounded-full shadow-xl hover:bg-purple-700 transition-all duration-300 active:scale-95 flex items-center justify-center border border-purple-400/30"
+  aria-label="رفتن به بالای صفحه"
+>
+  <span className="text-lg">⬆️</span>
+</button>
       </div>
 
       {/* 🔻 فوتر ثابت در پایین صفحه */}
