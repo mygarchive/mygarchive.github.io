@@ -32,9 +32,6 @@ const GENRE_PERSIAN_MAP: Record<string, string> = {
   'Massively Multiplayer': 'آنلاین چندنفره'
 };
 
-// مقادیر دقیق پله‌های حجم بازی
-const SIZE_STEPS = [5, 15, 35, 60, 90, 200];
-
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
@@ -58,10 +55,6 @@ export default function Home() {
   // ⚡ کنترل تعداد کارت‌های قابل رندر
   const [visibleCount, setVisibleCount] = useState<number>(12);
   const loaderRef = useRef<HTMLDivElement>(null);
-  // 🔄 ریست شدن تعداد بازی‌های نمایشی با هر بار تغییر فیلترها
-useEffect(() => {
-  setVisibleCount(12); // اگر مقدار اولیه useState شما مثلاً 12 یا 20 است، همان عدد را بگذارید
-}, [selectedGenre, searchQuery, sortBy]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -136,7 +129,7 @@ useEffect(() => {
     return allGenres.sort();
   }, [games]);
 
-  // 🔍 فیلتر و مرتب‌سازی بهینه‌شده داده‌ها با useMemo (بدون Lag و Re-render اضافه)
+  // 🔍 فیلتر و مرتب‌سازی بهینه‌شده داده‌ها با useMemo
   const filteredGames = useMemo(() => {
     let result = [...games];
 
@@ -161,7 +154,7 @@ useEffect(() => {
       result = result.filter((game) => !!game.is_coop);
     }
 
-   if (sortBy === 'alphabetical') {
+    if (sortBy === 'alphabetical') {
       result.sort((a, b) => (a.name || "").toLowerCase().localeCompare((b.name || "").toLowerCase()));
     } else if (sortBy === 'released') {
       result.sort((a, b) => {
@@ -172,23 +165,23 @@ useEffect(() => {
     } else if (sortBy === 'rating') {
       result.sort((a, b) => (parseFloat(b.metacritic) || 0) - (parseFloat(a.metacritic) || 0));
     } else if (sortBy === 'size-asc') {
-      // حجم: کم به زیاد
       result.sort((a, b) => (parseFloat(a.size_gb) || 0) - (parseFloat(b.size_gb) || 0));
     } else if (sortBy === 'size-desc') {
-      // حجم: زیاد به کم
       result.sort((a, b) => (parseFloat(b.size_gb) || 0) - (parseFloat(a.size_gb) || 0));
     }
     return result;
-}, [games, selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
-  // ریست تعداد کارت‌های قابل مشاهده در صورت تغییر فیلترها
+  }, [games, selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+
+  // 🔄 گام ۱: ریست شدن تعداد کارت‌های قابل مشاهده با هر بار تغییر فیلترها
   useEffect(() => {
     setVisibleCount(12);
-}, [games, selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
-  // 🚀 لود تدریجی با Intersection Observer
+  }, [selectedGenre, searchQuery, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+
+  // 🚀 گام ۳: لود تدریجی هوشمند با Intersection Observer (بدون گیر کردن و خطا)
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
+        if (entries[0].isIntersecting && visibleCount < filteredGames.length) {
           setVisibleCount((prev) => Math.min(prev + 12, filteredGames.length));
         }
       },
@@ -205,9 +198,9 @@ useEffect(() => {
         observer.unobserve(currentLoader);
       }
     };
-  }, [filteredGames.length]);
+  }, [visibleCount, filteredGames.length]);
 
-  // 🛒 انتخاب یا حذف بازی (با تاییدیه هنگام حذف)
+  // 🛒 انتخاب یا حذف بازی
   const toggleSelectGame = (game: any, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -233,7 +226,7 @@ useEffect(() => {
     return orderCart.reduce((acc, item) => acc + (parseFloat(item.size_gb) || 0), 0).toFixed(1);
   }, [orderCart]);
 
-  // 📝 ساخت متن استاندارد و مرتب برای تلگرام / بله / کپی
+  // 📝 ساخت متن سفارش
   const generateOrderText = () => {
     if (orderCart.length === 0) return '';
     let text = `سلام 👋\nقصد سفارش دیتای بازی‌های زیر رو دارم:\n\n`;
@@ -256,7 +249,7 @@ useEffect(() => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  // آدرس پروکسی تصویر با شفافیت بالا و حجم بسیار پایین (w=480, q=78, webp)
+  // پروکسی تصاویر
   const getOptimizedUrl = (url: string) => {
     if (!url) return '';
     return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//i, ''))}&w=480&q=78&output=webp`;
@@ -326,7 +319,7 @@ useEffect(() => {
           </div>
         </header>
 
-        {/* 🎛️ پنل فیلترهای پیشرفته */}
+        {/* 🎛️ پنل فیلترها */}
         <div 
           className="p-5 rounded-2xl mb-8 space-y-4 shadow-sm"
           style={{ backgroundColor: darkMode ? 'rgba(15, 23, 42, 0.4)' : '#ffffff', border: `1px solid ${themeStyles.border}` }}
@@ -389,17 +382,16 @@ useEffect(() => {
                   style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
                 >
                   <option value="alphabetical">بر اساس نام (الفبا)</option>
-<option value="released">جدیدترین تاریخ انتشار</option>
-<option value="rating">بیشترین امتیاز (Metacritic)</option>
-<option value="size-asc">حجم: کم به زیاد ⬇️</option>
-<option value="size-desc">حجم: زیاد به کم ⬆️</option>
+                  <option value="released">جدیدترین تاریخ انتشار</option>
+                  <option value="rating">بیشترین امتیاز (Metacritic)</option>
+                  <option value="size-asc">حجم: کم به زیاد ⬇️</option>
+                  <option value="size-desc">حجم: زیاد به کم ⬆️</option>
                 </select>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t pt-4" style={{ borderColor: themeStyles.border }}>
-    
             <div className="flex flex-wrap items-center gap-4">
               <label className="flex items-center gap-2 cursor-pointer text-xs font-bold select-none">
                 <input 
@@ -424,9 +416,8 @@ useEffect(() => {
           </div>
         </div>
 
-        {filteredGames.length === 0 ? (
-          <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
-        ) : (
+        {/* 🎮 گرید نمایش کارت‌های بازی */}
+        {filteredGames.length > 0 && (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
             {visibleGames.map((game, index) => {
               const isInCart = orderCart.some((g) => g.id === game.id);
@@ -493,7 +484,6 @@ useEffect(() => {
                         ⭐ {game.metacritic || '---'}
                       </span>
                       
-                      {/* دکمه افزودن / حذف از سبد */}
                       <button
                         onClick={(e) => toggleSelectGame(game, e)}
                         className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
@@ -512,10 +502,25 @@ useEffect(() => {
           </div>
         )}
 
-        {/* 🔻 عنصر ناظر (Intersection Observer Target) */}
+        {/* ⏳ گام ۲: پیام در حال بارگذاری (فقط زمان وجود بازی‌های باقی‌مانده) */}
         {visibleCount < filteredGames.length && (
-          <div ref={loaderRef} className="text-center py-10 text-xs font-bold" style={{ color: themeStyles.subText }}>
-            در حال بارگذاری بازی‌های بیشتر...
+          <div ref={loaderRef} className="text-center py-10 text-xs font-bold animate-pulse flex items-center justify-center gap-2" style={{ color: themeStyles.subText }}>
+            <span>⏳</span>
+            <span>در حال بارگذاری بازی‌های بیشتر...</span>
+          </div>
+        )}
+
+        {/* 🏁 گام ۲: پیام پایان لیست (وقتی تمام بازی‌های این فیلتر نمایش داده شدند) */}
+        {filteredGames.length > 0 && visibleCount >= filteredGames.length && (
+          <div className="text-center py-8 text-xs font-bold border-t mt-8" style={{ color: themeStyles.subText, borderColor: themeStyles.border }}>
+            🏁 پایان لیست — تمام {filteredGames.length} بازی نمایش داده شدند.
+          </div>
+        )}
+
+        {/* ❌ گام ۲: پیام عدم یافتن هیچ بازی */}
+        {filteredGames.length === 0 && !loading && (
+          <div className="text-center py-16 text-sm font-bold" style={{ color: themeStyles.subText }}>
+            هیچ بازی با مشخصات فیلتر شده یافت نشد.
           </div>
         )}
 
@@ -558,7 +563,7 @@ useEffect(() => {
         </div>
       )}
 
-      {/* 📋 پاپ‌آپ پیش‌نمایش و تایید نهایی سفارش */}
+      {/* 📋 پاپ‌آپ پیش‌نمایش سفارش */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white text-slate-900 rounded-2xl p-6 max-w-lg w-full max-h-[90vh] flex flex-col shadow-2xl animate-in zoom-in-95">
@@ -573,7 +578,6 @@ useEffect(() => {
               </button>
             </div>
 
-            {/* چیدمان متنی مرتب LTR */}
             <div className="flex-1 overflow-y-auto mb-4 space-y-2 pr-1">
               {orderCart.map((g, i) => (
                 <div 
@@ -605,7 +609,6 @@ useEffect(() => {
               ))}
             </div>
 
-            {/* خلاصه حجم */}
             <div className="bg-purple-50 border border-purple-200 rounded-xl p-3 mb-4 flex justify-between items-center">
               <span className="text-xs font-bold text-purple-900">حجم کل دیتای درخواستی:</span>
               <span className="text-sm font-black text-purple-700 font-mono" dir="ltr">
@@ -613,7 +616,6 @@ useEffect(() => {
               </span>
             </div>
 
-            {/* دکمه‌های ارسال */}
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-2 gap-2">
                 <a
@@ -670,12 +672,12 @@ useEffect(() => {
       {/* دکمه بازگشت به بالا */}
       <div className="fixed bottom-24 right-6 z-40">
         <button
-  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-  className="fixed bottom-20 left-4 z-50 p-3 bg-purple-600 text-white rounded-full shadow-xl hover:bg-purple-700 transition-all duration-300 active:scale-95 flex items-center justify-center border border-purple-400/30"
-  aria-label="رفتن به بالای صفحه"
->
-  <span className="text-lg">⬆️</span>
-</button>
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-20 left-4 z-50 p-3 bg-purple-600 text-white rounded-full shadow-xl hover:bg-purple-700 transition-all duration-300 active:scale-95 flex items-center justify-center border border-purple-400/30"
+          aria-label="رفتن به بالای صفحه"
+        >
+          <span className="text-lg">⬆️</span>
+        </button>
       </div>
 
       {/* 🔻 فوتر ثابت در پایین صفحه */}
