@@ -145,14 +145,6 @@ export default function Home() {
       result = result.filter((game) => game.name?.toLowerCase().includes(q));
     }
 
-    if (sizeFilter === 'light') {
-      result = result.filter((game) => (parseFloat(game.size_gb) || 0) <= 50);
-    } else if (sizeFilter === 'medium') {
-      result = result.filter((game) => (parseFloat(game.size_gb) || 0) > 50 && (parseFloat(game.size_gb) || 0) <= 100);
-    } else if (sizeFilter === 'heavy') {
-      result = result.filter((game) => (parseFloat(game.size_gb) || 0) > 100);
-    }
-
     if (systemTierFilter !== 'all') {
       result = result.filter((game) => game.system_tier === systemTierFilter);
     }
