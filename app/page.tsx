@@ -165,7 +165,7 @@ export default function Home() {
       result = result.filter((game) => !!game.is_coop);
     }
 
-    if (sortBy === 'alphabetical') {
+   if (sortBy === 'alphabetical') {
       result.sort((a, b) => (a.name || "").toLowerCase().localeCompare((b.name || "").toLowerCase()));
     } else if (sortBy === 'released') {
       result.sort((a, b) => {
@@ -175,8 +175,8 @@ export default function Home() {
       });
     } else if (sortBy === 'rating') {
       result.sort((a, b) => (parseFloat(b.metacritic) || 0) - (parseFloat(a.metacritic) || 0));
-    }
-// حجم: کم به زیاد
+    } else if (sortBy === 'size-asc') {
+      // حجم: کم به زیاد
       result.sort((a, b) => (parseFloat(a.size_gb) || 0) - (parseFloat(b.size_gb) || 0));
     } else if (sortBy === 'size-desc') {
       // حجم: زیاد به کم
@@ -392,11 +392,11 @@ export default function Home() {
                   className="p-2.5 rounded-xl text-xs font-bold outline-none cursor-pointer"
                   style={{ backgroundColor: themeStyles.inputBg, border: `1px solid ${themeStyles.border}`, color: themeStyles.text }}
                 >
-                  <option value="alphabetical">🔤 حروف الفبا (a تا z)</option>
-                  <option value="released">📅 جدیدترین بازی‌ها</option>
-                  <option value="rating">⭐ بیشترین امتیاز منتقدین</option>
-                  <option value="size-asc">حجم: کم به زیاد ⬇️</option>
-  <option value="size-desc">حجم: زیاد به کم ⬆️</option>
+                  <option value="alphabetical">بر اساس نام (الفبا)</option>
+<option value="released">جدیدترین تاریخ انتشار</option>
+<option value="rating">بیشترین امتیاز (Metacritic)</option>
+<option value="size-asc">حجم: کم به زیاد ⬇️</option>
+<option value="size-desc">حجم: زیاد به کم ⬆️</option>
                 </select>
               </div>
             </div>
