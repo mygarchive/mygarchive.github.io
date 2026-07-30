@@ -409,123 +409,47 @@ export default function CatalogPDF() {
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
     </svg>
   </button>
-      {/* 🖨️ استایل اختصاصی پرینت A4 */}
+      {/* 🖨️ استایل اختصاصی و استاندارد پرینت A4 */}
       <style>{`
         @page {
           size: A4 portrait;
-          margin: 6mm;
+          margin: 8mm;
         }
 
         @media print {
-          *, *:before, *:after {
-            box-sizing: border-box !important;
-          }
-
-          html, body, div, main {
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: #ffffff !important;
-            color: #000000 !important;
-            overflow: visible !important;
-          }
-
-          button,
-          input,
-          select,
-          footer,
-          .print\\:hidden {
+          /* ۱. مخفی کردن تمام المان‌های غیرضروری در فایل PDF */
+          header, 
+          footer, 
+          nav, 
+          button, 
+          .print\:hidden {
             display: none !important;
           }
 
-          .border-b-2 {
-            border-bottom: 1px solid #cbd5e1 !important;
-            margin-bottom: 4px !important;
-            padding-bottom: 2px !important;
-          }
-
-          h1 {
-            font-size: 10px !important;
+          /* ۲. تنظیمات پایه و استاندارد صفحه */
+          html, body {
+            width: 100% !important;
+            height: auto !important;
             margin: 0 !important;
+            padding: 0 !important;
+            background: #ffffff !important;
+            color: #000000 !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
           }
 
-          p {
-            font-size: 7.5px !important;
-            margin: 0 !important;
-          }
-
-          /* اجبار چیدمان دقیق ۴ ستونه فقط در زمان پرینت */
-          .catalog-grid {
-            display: grid !important;
-            grid-template-columns: repeat(4, 1fr) !important;
-            gap: 5px !important;
+          /* ۳. آزاد کردن کانتینر اصلی کاتالوگ */
+          main {
             width: 100% !important;
             margin: 0 !important;
             padding: 0 !important;
-          }
-
-          .catalog-grid > div {
-            page-break-inside: avoid !important;
-            break-inside: avoid !important;
-            border: 1px solid #cbd5e1 !important;
-            border-radius: 4px !important;
-            background: #ffffff !important;
             box-shadow: none !important;
-            padding: 3px !important;
-            margin: 0 !important;
-            display: flex !important;
-            flex-direction: column !important;
-            width: 100% !important;
-            overflow: hidden !important;
           }
 
-          .catalog-grid > div .aspect-video {
-            height: 110px !important;
-            max-height: 110px !important;
-            width: 100% !important;
-            margin-bottom: 2px !important;
-            border-radius: 3px !important;
-          }
-
-          .catalog-grid > div img {
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-            opacity: 1 !important;
-          }
-
-          .catalog-grid > div h2 {
-            font-size: 7.5px !important;
-            line-height: 1.1 !important;
-            font-weight: bold !important;
-            color: #000000 !important;
-            margin: 2px 0 !important;
-            white-space: nowrap !important;
-            overflow: hidden !important;
-            text-overflow: ellipsis !important;
-          }
-
-          .catalog-grid > div .flex-wrap {
-            gap: 2px !important;
-          }
-
-          .catalog-grid > div span {
-            font-size: 5.5px !important;
-            line-height: 1 !important;
-            padding: 0.5px 2px !important;
-            border-radius: 2px !important;
-          }
-
-          .catalog-grid > div p {
-            font-size: 5.5px !important;
-            line-height: 1 !important;
-          }
-
-          .catalog-grid > div .border-t {
-            border-top: 1px solid #e2e8f0 !important;
-            padding-top: 1px !important;
-            margin-top: 1px !important;
+          /* ۴. جلوگیری از نصف شدن کارت‌ها یا سطور جدول بین دو صفحه */
+          tr, .break-inside-avoid {
+            break-inside: avoid !important;
+            page-break-inside: avoid !important;
           }
         }
       `}</style>
