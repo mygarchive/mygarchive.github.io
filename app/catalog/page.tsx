@@ -134,7 +134,7 @@ export default function CatalogPDF() {
           <div className="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-3 py-1.5 rounded-full border border-gray-300">
             <span>پشتیبانی:</span>
             <span className="text-sky-600" dir="ltr">@{TELEGRAM_USERNAME}</span>
-            {BALE_USERNAME && <span className="text-emerald-600" dir="ltr"> / BALE</span>}
+            {BALE_USERNAME && <span className="text-emerald-600" dir="ltr"> />@{BALE_USERNAME}</span>}
           </div>
         </div>
       </div>
