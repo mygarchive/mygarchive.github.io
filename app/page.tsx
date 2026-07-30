@@ -58,6 +58,10 @@ export default function Home() {
   // ⚡ کنترل تعداد کارت‌های قابل رندر
   const [visibleCount, setVisibleCount] = useState<number>(12);
   const loaderRef = useRef<HTMLDivElement>(null);
+  // 🔄 ریست شدن تعداد بازی‌های نمایشی با هر بار تغییر فیلترها
+useEffect(() => {
+  setVisibleCount(12); // اگر مقدار اولیه useState شما مثلاً 12 یا 20 است، همان عدد را بگذارید
+}, [selectedGenre, searchQuery, sortBy]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
