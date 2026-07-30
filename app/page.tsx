@@ -179,12 +179,12 @@ export default function Home() {
     }
 
     return result;
-  }, [games, selectedGenre, searchQuery, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+  }, [games, selectedGenre, searchQuery, sizeFilter, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
 
   // ریست تعداد کارت‌های قابل مشاهده در صورت تغییر فیلترها
   useEffect(() => {
     setVisibleCount(12);
-  }, [selectedGenre, searchQuery, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+  }, [selectedGenre, searchQuery, sizeFilter, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
 
   // 🚀 لود تدریجی با Intersection Observer
   useEffect(() => {
