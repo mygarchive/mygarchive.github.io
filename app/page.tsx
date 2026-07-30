@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import localGamesData from '../data/games.json';
 
 // ⚙️ آیدی‌های شبکه اجتماعی پشتیبانی
@@ -37,8 +37,6 @@ const SIZE_STEPS = [5, 15, 35, 60, 90, 200];
 
 export default function Home() {
   const [games, setGames] = useState<any[]>([]);
-  const [filteredGames, setFilteredGames] = useState<any[]>([]);
-  const [genres, setGenres] = useState<string[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('alphabetical');
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,13 +45,13 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
-  // 🆕 فیلترهای جدید
+  // 🆕 فیلترها
   const [sizeIndex, setSizeIndex] = useState<number>(5);
   const [systemTierFilter, setSystemTierFilter] = useState<string>('all');
   const [onlyPopular, setOnlyPopular] = useState<boolean>(false);
   const [onlyCoop, setOnlyCoop] = useState<boolean>(false);
 
-  // 🛒 سبد / لیست سفارش جدید
+  // 🛒 سبد / لیست سفارش
   const [orderCart, setOrderCart] = useState<any[]>([]);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
@@ -102,21 +100,11 @@ export default function Home() {
       }
 
       setGames(data);
-      setFilteredGames(data);
-
-      const allGenres: string[] = [];
-      data.forEach((game: any) => {
-        game.genres?.forEach((g: any) => {
-          if (g?.name && !allGenres.includes(g.name)) allGenres.push(g.name);
-        });
-      });
-      setGenres(allGenres.sort());
       setLoading(false);
     } catch (err) {
       console.error("خطا در دریافت داده‌ها:", err);
       if (Array.isArray(localGamesData)) {
         setGames(localGamesData);
-        setFilteredGames(localGamesData);
       }
       setLoading(false);
     }
@@ -130,34 +118,23 @@ export default function Home() {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 🚀 لود تدریجی با Intersection Observer
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisibleCount((prev) => Math.min(prev + 12, filteredGames.length));
-        }
-      },
-      { threshold: 0.1 }
-    );
+  // ⚡ استخراج فهرست ژانرها به صورت کش‌شده
+  const genres = useMemo(() => {
+    const allGenres: string[] = [];
+    games.forEach((game: any) => {
+      game.genres?.forEach((g: any) => {
+        if (g?.name && !allGenres.includes(g.name)) allGenres.push(g.name);
+      });
+    });
+    return allGenres.sort();
+  }, [games]);
 
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
-    }
-
-    return () => {
-      if (loaderRef.current) {
-        observer.unobserve(loaderRef.current);
-      }
-    };
-  }, [filteredGames.length]);
-
-  // 🔍 فیلتر جامع داده‌ها
-  useEffect(() => {
+  // 🔍 فیلتر و مرتب‌سازی بهینه‌شده داده‌ها با useMemo (بدون Lag و Re-render اضافه)
+  const filteredGames = useMemo(() => {
     let result = [...games];
 
     if (selectedGenre !== 'all') {
@@ -165,7 +142,8 @@ export default function Home() {
     }
 
     if (searchQuery.trim() !== '') {
-      result = result.filter((game) => game.name?.toLowerCase().includes(searchQuery.toLowerCase()));
+      const q = searchQuery.toLowerCase();
+      result = result.filter((game) => game.name?.toLowerCase().includes(q));
     }
 
     const selectedSizeLimit = SIZE_STEPS[sizeIndex];
@@ -200,9 +178,36 @@ export default function Home() {
       result.sort((a, b) => (parseFloat(b.metacritic) || 0) - (parseFloat(a.metacritic) || 0));
     }
 
-    setFilteredGames(result);
+    return result;
+  }, [games, selectedGenre, searchQuery, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+
+  // ریست تعداد کارت‌های قابل مشاهده در صورت تغییر فیلترها
+  useEffect(() => {
     setVisibleCount(12);
-  }, [selectedGenre, searchQuery, sortBy, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, games]);
+  }, [selectedGenre, searchQuery, sizeIndex, systemTierFilter, onlyPopular, onlyCoop, sortBy]);
+
+  // 🚀 لود تدریجی با Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) => Math.min(prev + 12, filteredGames.length));
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const currentLoader = loaderRef.current;
+    if (currentLoader) {
+      observer.observe(currentLoader);
+    }
+
+    return () => {
+      if (currentLoader) {
+        observer.unobserve(currentLoader);
+      }
+    };
+  }, [filteredGames.length]);
 
   // 🛒 انتخاب یا حذف بازی (با تاییدیه هنگام حذف)
   const toggleSelectGame = (game: any, e: React.MouseEvent) => {
@@ -226,9 +231,9 @@ export default function Home() {
   };
 
   // محاسبه مجموع حجم
-  const getTotalOrderSize = () => {
+  const getTotalOrderSize = useCallback(() => {
     return orderCart.reduce((acc, item) => acc + (parseFloat(item.size_gb) || 0), 0).toFixed(1);
-  };
+  }, [orderCart]);
 
   // 📝 ساخت متن استاندارد و مرتب برای تلگرام / بله / کپی
   const generateOrderText = () => {
@@ -253,9 +258,10 @@ export default function Home() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const getOptimizedUrl = (url: string, width = 400) => {
+  // آدرس پروکسی تصویر با شفافیت بالا و حجم بسیار پایین (w=480, q=78, webp)
+  const getOptimizedUrl = (url: string) => {
     if (!url) return '';
-    return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//i, ''))}&w=${width}&q=80`;
+    return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//i, ''))}&w=480&q=78&output=webp`;
   };
 
   const themeStyles = {
@@ -446,7 +452,7 @@ export default function Home() {
           <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
-            {visibleGames.map((game) => {
+            {visibleGames.map((game, index) => {
               const isInCart = orderCart.some((g) => g.id === game.id);
 
               return (
@@ -460,9 +466,11 @@ export default function Home() {
                 >
                   <div className="w-full aspect-video overflow-hidden relative" style={{ backgroundColor: themeStyles.inputBg }}>
                     <img 
-                      src={getOptimizedUrl(game.background_image, 400)} 
+                      src={getOptimizedUrl(game.background_image)} 
                       alt={game.name} 
-                      loading="lazy"
+                      loading={index < 4 ? "eager" : "lazy"}
+                      fetchPriority={index < 4 ? "high" : "auto"}
+                      decoding="async"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
                         e.currentTarget.src = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(game.background_image || '')}`;
