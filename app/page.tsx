@@ -7,7 +7,7 @@ import localGamesData from '../data/games.json';
 
 // ⚙️ آیدی‌های شبکه اجتماعی پشتیبانی
 const TELEGRAM_USERNAME = "HF273"; // آیدی تلگرام شما
-const BALE_USERNAME = "";          // آیدی بله (در صورت داشتن قرار دهید)
+const BALE_USERNAME = "HF273";          // آیدی بله (در صورت داشتن قرار دهید)
 
 // 🌐 دیکشنری معادل‌های فارسی ژانرها
 const GENRE_PERSIAN_MAP: Record<string, string> = {
@@ -46,7 +46,7 @@ export default function Home() {
   const [isFooterOpen, setIsFooterOpen] = useState(false);
 
   // 🆕 فیلترها
-  const [sizeIndex, setSizeIndex] = useState<number>(5);
+  const [sizeFilter, setSizeFilter] = useState<string>('all');
   const [systemTierFilter, setSystemTierFilter] = useState<string>('all');
   const [onlyPopular, setOnlyPopular] = useState<boolean>(false);
   const [onlyCoop, setOnlyCoop] = useState<boolean>(false);
@@ -146,12 +146,12 @@ export default function Home() {
       result = result.filter((game) => game.name?.toLowerCase().includes(q));
     }
 
-    const selectedSizeLimit = SIZE_STEPS[sizeIndex];
-    if (selectedSizeLimit < 200) {
-      result = result.filter((game) => {
-        const gSize = parseFloat(game.size_gb) || 0;
-        return gSize <= selectedSizeLimit;
-      });
+    if (sizeFilter === 'light') {
+      result = result.filter((game) => (parseFloat(game.size_gb) || 0) <= 50);
+    } else if (sizeFilter === 'medium') {
+      result = result.filter((game) => (parseFloat(game.size_gb) || 0) > 50 && (parseFloat(game.size_gb) || 0) <= 100);
+    } else if (sizeFilter === 'heavy') {
+      result = result.filter((game) => (parseFloat(game.size_gb) || 0) > 100);
     }
 
     if (systemTierFilter !== 'all') {
@@ -399,26 +399,25 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-t pt-4" style={{ borderColor: themeStyles.border }}>
-            <div className="w-full md:w-1/2 space-y-1">
-              <div className="flex justify-between text-xs font-bold" style={{ color: themeStyles.subText }}>
-                <span>💾 حداکثر حجم بازی:</span>
-                <span className="text-purple-500 font-mono">
-                  {SIZE_STEPS[sizeIndex] >= 200 ? 'همه حجم‌ها' : `حداکثر تا ${SIZE_STEPS[sizeIndex]} گیگابایت`}
-                </span>
-              </div>
-              <input 
-                type="range" 
-                min="0" 
-                max={SIZE_STEPS.length - 1}
-                step="1"
-                value={sizeIndex} 
-                onChange={(e) => setSizeIndex(parseInt(e.target.value))}
-                className="w-full accent-purple-600 h-2 bg-slate-800 rounded-lg cursor-pointer"
-              />
-              <div className="flex justify-between text-[10px] font-mono opacity-60 mt-1" style={{ color: themeStyles.subText }}>
-                {SIZE_STEPS.map((step, idx) => (
-                  <button key={step} onClick={() => setSizeIndex(idx)} className="hover:underline">
-                    {step >= 200 ? 'همه' : `${step}GB`}
+            <div className="w-full md:w-1/2 space-y-2">
+              <div className="text-xs font-bold" style={{ color: themeStyles.subText }}>💾 فیلتر حجم بازی:</div>
+              <div className="flex flex-wrap items-center gap-2">
+                {[
+                  { id: 'all', label: 'همه حجم‌ها' },
+                  { id: 'light', label: 'زیر ۵۰ گیگ' },
+                  { id: 'medium', label: '۵۰ تا ۱۰۰ گیگ' },
+                  { id: 'heavy', label: 'بالای ۱۰۰ گیگ' }
+                ].map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => setSizeFilter(item.id)}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors ${
+                      sizeFilter === item.id 
+                        ? 'bg-purple-600 text-white shadow-md' 
+                        : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700'
+                    }`}
+                  >
+                    {item.label}
                   </button>
                 ))}
               </div>
@@ -451,7 +450,7 @@ export default function Home() {
         {filteredGames.length === 0 ? (
           <div className="text-center py-12 text-sm" style={{ color: themeStyles.subText }}>هیچ بازی با مشخصات فیلتر شده یافت نشد.</div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
             {visibleGames.map((game, index) => {
               const isInCart = orderCart.some((g) => g.id === game.id);
 
@@ -691,7 +690,7 @@ export default function Home() {
       >
         <div
           className={`w-full max-w-7xl mx-auto overflow-hidden transition-all duration-500 ease-in-out ${
-            isFooterOpen ? 'max-h-[900px] opacity-100 p-6' : 'max-h-0 opacity-0 p-0'
+            isFooterOpen ? 'max-h-[900px] opacity-100 p-6 pb-28' : 'max-h-0 opacity-0 p-0'
           }`}
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8" dir="rtl">
@@ -718,10 +717,19 @@ export default function Home() {
                   href={`https://t.me/${TELEGRAM_USERNAME}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2.5 rounded-xl text-sm font-bold transition flex items-center gap-2 hover:bg-sky-600 hover:text-white"
+                  className="px-4 py-2.5 rounded-xl text-sm font-bold transition flex items-center gap-2 hover:bg-sky-600 hover:text-white border border-transparent"
                   style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
                 >
-                  ✈️ آیدی تلگرام: <span className="font-mono text-purple-400">@{TELEGRAM_USERNAME}</span>
+                  ✈️ تلگرام: <span className="font-mono text-sky-400" dir="ltr">@{TELEGRAM_USERNAME}</span>
+                </a>
+                <a
+                  href={`https://ble.ir/${BALE_USERNAME}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2.5 rounded-xl text-sm font-bold transition flex items-center gap-2 hover:bg-emerald-600 hover:text-white border border-transparent"
+                  style={{ backgroundColor: themeStyles.inputBg, color: themeStyles.text }}
+                >
+                  🟢 بله: <span className="font-mono text-emerald-400" dir="ltr">@{BALE_USERNAME}</span>
                 </a>
               </div>
             </div>
