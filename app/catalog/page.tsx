@@ -146,16 +146,21 @@ export default function CatalogPDF() {
             <span>عنوان</span>
           </div>
 
-          <div className="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-3 py-1.5 rounded-full border border-gray-300">
+          <div className="flex items-center gap-2 text-xs font-bold text-gray-700 bg-gray-100 px-3 py-1.5 rounded-full border border-gray-300">
             <span>پشتیبانی:</span>
-            <span className="text-sky-600" dir="ltr">@{TELEGRAM_USERNAME}</span>
-            {BALE_USERNAME && <span className="text-emerald-600" dir="ltr"> / @{BALE_USERNAME}</span>}
+            <a href={`https://t.me/${TELEGRAM_USERNAME}`} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline" dir="ltr">@{TELEGRAM_USERNAME}</a>
+            {BALE_USERNAME && (
+              <>
+                <span>/</span>
+                <a href={`https://ble.ir/${BALE_USERNAME}`} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline" dir="ltr">@{BALE_USERNAME}</a>
+              </>
+            )}
           </div>
         </div>
       </div>
 
       {/* 🎮 چیدمان شبکه کارت‌های بازی (با قابلیت هماهنگی سایز تصویر هنگام زوم) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 catalog-grid">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 catalog-grid">
         {sortedGames.map((game: any, index: number) => {
           const isSelected = selectedGames.some((g) => g.id === game.id);
 
