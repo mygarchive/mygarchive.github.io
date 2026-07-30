@@ -410,49 +410,61 @@ export default function CatalogPDF() {
     </svg>
   </button>
       {/* 🖨️ استایل اختصاصی و استاندارد پرینت A4 */}
-      <style>{`
-        @page {
-          size: A4 portrait;
-          margin: 8mm;
-        }
+<style>{`
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
 
-        @media print {
-          /* ۱. مخفی کردن تمام المان‌های غیرضروری در فایل PDF */
-          header, 
-          footer, 
-          nav, 
-          button, 
-          .print\:hidden {
-            display: none !important;
-          }
+  @media print {
+    /* ۱. مخفی کردن تمام المان‌های غیرضروری در فایل PDF */
+    header, 
+    footer, 
+    nav, 
+    button, 
+    [class*="print:hidden"],
+    .print\\:hidden {
+      display: none !important;
+    }
 
-          /* ۲. تنظیمات پایه و استاندارد صفحه */
-          html, body {
-            width: 100% !important;
-            height: auto !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: #ffffff !important;
-            color: #000000 !important;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-          }
+    /* ۲. تنظیمات پایه و استاندارد صفحه */
+    html, body {
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
 
-          /* ۳. آزاد کردن کانتینر اصلی کاتالوگ */
-          main {
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            box-shadow: none !important;
-          }
+    /* ۳. آزاد کردن کانتینر اصلی کاتالوگ و حذف عرض‌های محدودکننده */
+    main, .max-w-7xl {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
 
-          /* ۴. جلوگیری از نصف شدن کارت‌ها یا سطور جدول بین دو صفحه */
-          tr, .break-inside-avoid {
-            break-inside: avoid !important;
-            page-break-inside: avoid !important;
-          }
-        }
-      `}</style>
+    /* ۴. اجبار چیدمان کارت‌ها به ۴ ستون کاملاً متوازن و منظم در PDF */
+    .grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 12px !important;
+    }
+
+    /* ۵. جلوگیری قطعی از نصف شدن یا دو تکه شدن کارت‌های بازی بین دو صفحه */
+    tr, 
+    a, 
+    .grid > *, 
+    .break-inside-avoid {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+  }
+`}</style>
 
     </div>
   );
