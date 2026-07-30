@@ -613,17 +613,17 @@ export default function Home() {
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href={selectedGames.length > 0 ? `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
+                  href={games.some((g) => g.selected) ? `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
                   onClick={(e) => {
-                    if (selectedGames.length === 0) {
+                    if (!games.some((g) => g.selected)) {
                       e.preventDefault();
                       alert('سبد خرید شما خالی است! لطفاً ابتدا حداقل یک بازی انتخاب کنید.');
                     }
                   }}
-                  target={selectedGames.length > 0 ? "_blank" : "_self"}
+                  target={games.some((g) => g.selected) ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   className={`py-2.5 px-4 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center ${
-                    selectedGames.length === 0
+                    !games.some((g) => g.selected)
                       ? 'bg-gray-400 opacity-60 cursor-not-allowed text-white'
                       : 'bg-sky-500 hover:bg-sky-600 text-white'
                   }`}
@@ -632,17 +632,17 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={selectedGames.length > 0 ? `https://ble.ir/${BALE_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
+                  href={games.some((g) => g.selected) ? `https://ble.ir/${BALE_USERNAME}?text=${encodeURIComponent(generateOrderText())}` : '#'}
                   onClick={(e) => {
-                    if (selectedGames.length === 0) {
+                    if (!games.some((g) => g.selected)) {
                       e.preventDefault();
                       alert('سبد خرید شما خالی است! لطفاً ابتدا حداقل یک بازی انتخاب کنید.');
                     }
                   }}
-                  target={selectedGames.length > 0 ? "_blank" : "_self"}
+                  target={games.some((g) => g.selected) ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   className={`py-2.5 px-4 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm text-center ${
-                    selectedGames.length === 0
+                    !games.some((g) => g.selected)
                       ? 'bg-gray-400 opacity-60 cursor-not-allowed text-white'
                       : 'bg-emerald-600 hover:bg-emerald-700 text-white'
                   }`}
