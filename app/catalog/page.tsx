@@ -340,34 +340,75 @@ export default function CatalogPDF() {
             </div>
 
             {/* دکمه‌های ارسال */}
-            <div className="flex flex-col gap-2">
-              <div className="grid grid-cols-2 gap-2">
-                <button
-                  onClick={handleSendTelegram}
-                  className="py-2.5 px-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm"
-                >
-                  ✈️ ارسال در تلگرام
-                </button>
-                <button
-                  onClick={handleSendBale}
-                  className="py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm"
-                >
-                  🟢 ارسال در بله
-                </button>
-              </div>
+        <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              onClick={(e) => {
+                if (selectedGames.length === 0) {
+                  alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                  return;
+                }
+                handleSendTelegram();
+              }}
+              className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
+                selectedGames.length === 0
+                  ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                  : 'bg-sky-500 hover:bg-sky-600'
+              }`}
+            >
+              ✈️ ارسال در تلگرام
+            </button>
 
-              <button
-                onClick={handleCopyText}
-                className="w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5"
-              >
-                {copied ? '✅ متن سفارش کپی شد!' : '📋 کپی متن کامل لیست سفارش'}
-              </button>
-            </div>
-
+            <button
+              onClick={(e) => {
+                if (selectedGames.length === 0) {
+                  alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                  return;
+                }
+                handleSendBale();
+              }}
+              className={`py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-sm ${
+                selectedGames.length === 0
+                  ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                  : 'bg-emerald-600 hover:bg-emerald-700'
+              }`}
+            >
+              🟢 ارسال در بله
+            </button>
           </div>
-        </div>
-      )}
 
+          <button
+            onClick={(e) => {
+              if (selectedGames.length === 0) {
+                alert('لطفاً ابتدا حداقل یک بازی را از کاتالوگ انتخاب کنید.');
+                return;
+              }
+              handleCopyText();
+            }}
+            className={`w-full py-2.5 px-4 text-white rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5 ${
+              selectedGames.length === 0
+                ? 'bg-gray-400 opacity-60 cursor-not-allowed'
+                : 'bg-slate-800 hover:bg-slate-900'
+            }`}
+          >
+            {copied ? '✅ متن سفارش کپی شد!' : '📋 کپی متن کامل لیست سفارش'}
+          </button>
+        </div>
+
+      </div>
+    </div>
+  )}
+
+  {/* 🔝 دکمه شناور رفتن به بالای صفحه کاتالوگ */}
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    className="fixed bottom-6 left-6 z-50 p-3.5 bg-slate-800 text-white rounded-full shadow-2xl hover:bg-purple-600 transition-all duration-300 active:scale-90 border border-slate-700 print:hidden"
+    title="رفتن به بالای صفحه"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
       {/* 🖨️ استایل اختصاصی پرینت A4 */}
       <style>{`
         @page {
