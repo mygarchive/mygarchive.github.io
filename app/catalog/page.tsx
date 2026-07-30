@@ -1,25 +1,35 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import localGamesData from '../../data/games.json';
 
 // ⚙️ آیدی‌های شبکه اجتماعی پشتیبانی
 const TELEGRAM_USERNAME = "HF273"; // آیدی تلگرام (بدون @)
 const BALE_USERNAME = "HF273";         // آیدی بله (بدون @)
 
-// 🖼️ کامپوننت هوشمند لود عکس (کیفیت ارتقا یافته + لود فوق‌سریع بدون VPN)
-const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
+// 🖼️ کامپوننت هوشمند لود عکس (کیفیت شفاف + لود فوق‌سریع)
+const ProxyImage = ({ 
+  src, 
+  alt, 
+  className,
+  priority = false 
+}: { 
+  src: string, 
+  alt: string, 
+  className: string,
+  priority?: boolean 
+}) => {
   const [proxyIndex, setProxyIndex] = useState(0);
 
   const cleanUrl = src ? src.replace(/^https?:\/\//i, '') : '';
 
-  // ارتقای کیفیت به w=400 و q=70 جهت شفافیت عالی و حجم کم (زیر ۱۵ کیلوبایت)
-  const IMAGE_PROXIES = [
-    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=400&q=70&output=webp`,
+  // تنظیم کیفیت روی w=480 و q=78 با فرمت webp جهت شفافیت کاورها و حجم بسیار پایین (~۱۵ کیلوبایت)
+  const IMAGE_PROXIES = useMemo(() => [
+    `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=480&q=78&output=webp`,
     `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(src)}`,
     `https://api.allorigins.win/raw?url=${encodeURIComponent(src)}`,
     src
-  ];
+  ], [cleanUrl, src]);
 
   const handleError = () => {
     if (proxyIndex < IMAGE_PROXIES.length - 1) {
@@ -33,7 +43,8 @@ const ProxyImage = ({ src, alt, className }: { src: string, alt: string, classNa
       alt={alt} 
       className={className} 
       onError={handleError} 
-      loading="lazy"
+      loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "low"}
       decoding="async"
     />
   );
@@ -44,13 +55,17 @@ export default function CatalogPDF() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  // مرتب‌سازی الفبایی بازی‌ها
-  const sortedGames = [...localGamesData].sort((a: any, b: any) => 
-    (a.name || "").localeCompare(b.name || "", 'en', { sensitivity: 'accent' })
-  );
+  // مرتب‌سازی الفبایی بازی‌ها با کش متغیر جهت جلوگیری از محاسبات مجدد
+  const sortedGames = useMemo(() => {
+    return [...localGamesData].sort((a: any, b: any) => 
+      (a.name || "").localeCompare(b.name || "", 'en', { sensitivity: 'accent' })
+    );
+  }, []);
 
   // محاسبه مجموع حجم
-  const totalSizeGb = selectedGames.reduce((acc, g) => acc + (Number(g.size_gb) || 0), 0);
+  const totalSizeGb = useMemo(() => {
+    return selectedGames.reduce((acc, g) => acc + (Number(g.size_gb) || 0), 0);
+  }, [selectedGames]);
 
   // انتخاب یا حذف بازی (همراه با تاییدیه برای حذف)
   const toggleSelectGame = (game: any) => {
@@ -134,7 +149,7 @@ export default function CatalogPDF() {
           <div className="flex items-center gap-1 text-xs font-bold text-gray-700 bg-gray-100 px-3 py-1.5 rounded-full border border-gray-300">
             <span>پشتیبانی:</span>
             <span className="text-sky-600" dir="ltr">@{TELEGRAM_USERNAME}</span>
-            {BALE_USERNAME && <span className="text-emerald-600" dir="ltr"> />@{BALE_USERNAME}</span>}
+            {BALE_USERNAME && <span className="text-emerald-600" dir="ltr"> / @{BALE_USERNAME}</span>}
           </div>
         </div>
       </div>
@@ -165,6 +180,7 @@ export default function CatalogPDF() {
                   src={game.background_image}
                   alt={game.name}
                   className="w-full h-full object-cover block"
+                  priority={index < 8}
                 />
               </div>
               
