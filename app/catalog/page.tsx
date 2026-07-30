@@ -4,8 +4,8 @@ import { useState } from 'react';
 import localGamesData from '../../data/games.json';
 
 // ⚙️ آیدی‌های شبکه اجتماعی پشتیبانی
-const TELEGRAM_USERNAME = "YourTelegramID"; // آیدی تلگرام (بدون @)
-const BALE_USERNAME = "YourBaleID";         // آیدی بله (بدون @)
+const TELEGRAM_USERNAME = "HF273"; // آیدی تلگرام (بدون @)
+const BALE_USERNAME = "HF273";         // آیدی بله (بدون @)
 
 // 🖼️ کامپوننت هوشمند لود عکس (کیفیت ارتقا یافته + لود فوق‌سریع بدون VPN)
 const ProxyImage = ({ src, alt, className }: { src: string, alt: string, className: string }) => {
