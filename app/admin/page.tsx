@@ -7,10 +7,9 @@ import Link from 'next/link';
 const GITHUB_OWNER = 'mygarchive'; 
 const GITHUB_REPO = 'mygarchive.github.io'; 
 const RAWG_API_KEY = '8ceb3ebba03c4ddca51106af23868263';
-// ⚡ اتصال مستقیم به API گیت‌هاب بدون نیاز به ورکر و بدون وی‌پی‌ان
 const GITHUB_API_URL = 'https://api.github.com';
 
-// ⚡ شبکه مقاوم با تایم‌آوت قابل تنظیم
+// ⚡ تایم‌آوت ایمن برای درخواست‌ها
 const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, timeoutMs = 15000) => {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeoutMs);
@@ -26,6 +25,22 @@ const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, time
     clearTimeout(id);
     throw err;
   }
+};
+
+// 🛡️ تابع هوشمند برای ارتباط با گیت‌هاب (مستقیم + پروکسی ورکر در صورت مسدود بودن در ایران)
+const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 12000) => {
+  try {
+    const res = await safeFetchWithTimeout(url, options, 5000);
+    if (res.ok || res.status === 401 || res.status === 403 || res.status === 404) {
+      return res;
+    }
+  } catch (e) {
+    console.warn("ارتباط مستقیم با گیت‌هاب ناموفق بود. استفاده از پروکسی ورکر کلودفلر...");
+  }
+
+  // اگر ارتباط مستقیم با api.github.com تایم‌آوت شد، از ورکر کلودفلر عبور داده می‌شود (رفع نیاز به VPN)
+  const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
+  return await safeFetchWithTimeout(proxyUrl, options, timeoutMs);
 };
 
 // ⚡ ترجمه مقاوم در برابر Rate-Limit و تایم‌آوت
@@ -117,7 +132,7 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // ⚡ سرویس هوشمند هوک شده بدون معطلی ۱۰ ثانیه‌ای ورکر کلاودفلر
+  // ⚡ سرویس هوشمند هوک شده بدون معطلی
   const fetchSmartRoute = async (targetUrl: string) => {
     try {
       const res = await safeFetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, {}, 8000);
@@ -189,8 +204,8 @@ export default function AdminPanel() {
 
     setLoading(true);
     try {
-      // ⚡ اتصال مستقیم به API گیت‌هاب بدون ورکر
-      const checkRes = await safeFetchWithTimeout(`${GITHUB_API_URL}/user`, {
+      // ⚡ اتصال به API گیت‌هاب با پشتیبانی خودکار پروکسی
+      const checkRes = await githubFetch(`${GITHUB_API_URL}/user`, {
         headers: { 
           'Authorization': `Bearer ${trimmedToken}`,
           'Accept': 'application/vnd.github.v3+json'
@@ -205,7 +220,7 @@ export default function AdminPanel() {
         setLoginError('توکن وارد شده معتبر نیست یا دسترسی لازم را ندارد!');
       }
     } catch {
-      setLoginError('خطا در ارتباط مستقیم با گیت‌هاب. وضعیت اینترنت را بررسی کنید.');
+      setLoginError('خطا در برقراری ارتباط با گیت‌هاب. وضعیت اینترنت را بررسی کنید.');
     }
     setLoading(false);
   };
@@ -231,22 +246,21 @@ export default function AdminPanel() {
 
   const fetchMyGames = async (token: string) => {
     try {
-      const res = await safeFetchWithTimeout(`${GITHUB_API_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
+      const res = await githubFetch(`${GITHUB_API_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`, { 
         headers: { 
           'Authorization': `Bearer ${token}`,
           'Accept': 'application/vnd.github.v3+json'
         } 
-      }, 15000);
+      }, 12000);
 
       if (res.status === 200) {
         const data = await res.json();
         setFileSha(data.sha);
         
-        // اگر تغییرات محلی ذخیره‌نشده نداریم، داده‌های تازه گیت‌هاب را جایگزین کن
         if (!localStorage.getItem('admin_has_unsaved')) {
           let parsedGames = [];
           if (data.download_url) {
-            const rawRes = await safeFetchWithTimeout(`${data.download_url}?v=${Date.now()}`, {}, 15000);
+            const rawRes = await safeFetchWithTimeout(`${data.download_url}?v=${Date.now()}`, {}, 12000);
             parsedGames = await rawRes.json();
           } else if (data.content) {
             const cleanContent = data.content.replace(/\n/g, '');
@@ -284,126 +298,161 @@ export default function AdminPanel() {
     setLoading(false);
   };
 
-  // ⚡ افزودن بازی جدید به لیست محلی
+  // ⚡ استخراج اطلاعات کامل بازی از RAWG
+  const fetchFullGameFromRawg = async (game: any) => {
+    const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
+    const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
+    const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
+    const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
+
+    const results = await Promise.allSettled([
+      fetchSmartRoute(detailsTarget),
+      fetchSmartRoute(moviesTarget),
+      fetchSmartRoute(screenshotsTarget),
+      fetchSmartRoute(youtubeTarget)
+    ]);
+
+    const details = results[0].status === 'fulfilled' ? results[0].value : {};
+    const movieData = results[1].status === 'fulfilled' ? results[1].value : { results: [] };
+    const screenshots = results[2].status === 'fulfilled' ? results[2].value : { results: [] };
+    const youtubeData = results[3].status === 'fulfilled' ? results[3].value : { results: [] };
+
+    let descriptionFaWithLabel = 'توضیحات فارسی ثبت نشده است.';
+    try {
+      const rawDescriptionFa = await translateToPersian((details?.description_raw || "").substring(0, 1500));
+      if (rawDescriptionFa) descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی):\n${rawDescriptionFa}`;
+    } catch { console.warn("خطا در ترجمه"); }
+
+    let minReq = '';
+    let recReq = '';
+    const pcPlatformData = details?.platforms?.find((p: any) => p?.platform?.slug === 'pc');
+    if (pcPlatformData?.requirements) {
+      minReq = pcPlatformData.requirements.minimum || '';
+      recReq = pcPlatformData.requirements.recommended || '';
+    }
+
+    const cleanReq = (text: string, fallback: string) => {
+      if (!text || typeof text !== 'string') return fallback;
+      return text.replace(/Minimum:|Recommended:|⚙️/gi, '').replace(/<\/?b>/g, '').replace(/<\/?p>/g, '').replace(/<\/?br\s*\/?>/g, '\n').trim();
+    };
+
+    let finalAge = '---';
+    const rawEsrb = details?.esrb_rating?.slug || '';
+    if (rawEsrb === 'mature') finalAge = '+17';
+    else if (rawEsrb === 'adults-only') finalAge = '+18';
+    else if (rawEsrb === 'teen') finalAge = '+13';
+    else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
+    else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
+
+    let steamUrl = '';
+    try {
+      const steamId = await getSteamIdFromSteam(game.name);
+      if (steamId) steamUrl = `https://store.steampowered.com/app/${steamId}/`;
+    } catch { console.warn("خطا در Steam ID"); }
+
+    if (!steamUrl && details?.stores?.length > 0) {
+      const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam' || s.store?.id === 1);
+      if (steamStore?.url) {
+        const match = steamStore.url.match(/(?:app|sub)\/(\d+)/);
+        steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : steamStore.url;
+      }
+    }
+    if (!steamUrl) steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game?.name || '')}`;
+
+    const autoYoutube: string[] = [];
+    if (youtubeData?.results?.length > 0) {
+      youtubeData.results.slice(0, 5).forEach((vid: any) => {
+        if (vid?.external_id) autoYoutube.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
+      });
+    }
+    const trailer = movieData?.results?.[0]?.data?.max || '';
+    if (trailer && !autoYoutube.includes(trailer)) autoYoutube.unshift(trailer);
+
+    let galleryFinal: string[] = [];
+    if (screenshots?.results?.length > 0) galleryFinal = screenshots.results.map((s: any) => s.image).filter(Boolean);
+    if (game?.short_screenshots?.length > 0) {
+      game.short_screenshots.forEach((s: any) => {
+        if (s?.image && !galleryFinal.includes(s.image)) galleryFinal.push(s.image);
+      });
+    }
+    galleryFinal = galleryFinal.slice(0, 10);
+
+    const autoExtractedGb = extractSizeFromReqText(minReq) || extractSizeFromReqText(recReq) || 0;
+
+    return {
+      id: game.id,
+      name: game.name || 'نامشخص',
+      background_image: game.background_image || details?.background_image || '',
+      metacritic: typeof details?.metacritic === 'number' ? details.metacritic : null,
+      released: game.released || details?.released || '---',
+      genres: Array.isArray(game.genres) ? game.genres : details?.genres || [],
+      esrb_rating: finalAge,
+      playtime: details?.playtime || 0,
+      developers: details?.developers?.map((d: any) => d.name).join(', ') || '---',
+      steam_link: steamUrl,
+      trailer_url: trailer,
+      youtube_videos: autoYoutube,
+      gallery: galleryFinal,
+      requirements: {
+        minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'),
+        recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.')
+      },
+      description_en: (details?.description_raw || "No description available.").substring(0, 1500),
+      description_fa: descriptionFaWithLabel,
+      size_gb: isNaN(autoExtractedGb) ? 0 : autoExtractedGb,
+      is_popular: false,
+      is_coop: false,
+      system_tier: 'unspecified'
+    };
+  };
+
+  // ⚡ افزودن بازی جدید به آرشیو محلی
   const handleAddGame = async (game: any) => {
     setLoading(true);
     setMessage({ text: `⏳ در حال استخراج اطلاعات جامع "${game.name}"...`, isError: false });
 
     try {
-      const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
-      const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
-      const screenshotsTarget = `https://api.rawg.io/api/games/${game.id}/screenshots?key=${RAWG_API_KEY}`;
-      const youtubeTarget = `https://api.rawg.io/api/games/${game.id}/youtube?key=${RAWG_API_KEY}`;
-
-      const results = await Promise.allSettled([
-        fetchSmartRoute(detailsTarget),
-        fetchSmartRoute(moviesTarget),
-        fetchSmartRoute(screenshotsTarget),
-        fetchSmartRoute(youtubeTarget)
-      ]);
-
-      const details = results[0].status === 'fulfilled' ? results[0].value : {};
-      const movieData = results[1].status === 'fulfilled' ? results[1].value : { results: [] };
-      const screenshots = results[2].status === 'fulfilled' ? results[2].value : { results: [] };
-      const youtubeData = results[3].status === 'fulfilled' ? results[3].value : { results: [] };
-
-      let descriptionFaWithLabel = 'توضیحات فارسی ثبت نشده است.';
-      try {
-        const rawDescriptionFa = await translateToPersian((details?.description_raw || "").substring(0, 1500));
-        if (rawDescriptionFa) descriptionFaWithLabel = `توضیحات بازی (ترجمه ماشینی):\n${rawDescriptionFa}`;
-      } catch { console.warn("خطا در ترجمه"); }
-
-      let minReq = '';
-      let recReq = '';
-      const pcPlatformData = details?.platforms?.find((p: any) => p?.platform?.slug === 'pc');
-      if (pcPlatformData?.requirements) {
-        minReq = pcPlatformData.requirements.minimum || '';
-        recReq = pcPlatformData.requirements.recommended || '';
-      }
-
-      const cleanReq = (text: string, fallback: string) => {
-        if (!text || typeof text !== 'string') return fallback;
-        return text.replace(/Minimum:|Recommended:|⚙️/gi, '').replace(/<\/?b>/g, '').replace(/<\/?p>/g, '').replace(/<\/?br\s*\/?>/g, '\n').trim();
-      };
-
-      let finalAge = '---';
-      const rawEsrb = details?.esrb_rating?.slug || '';
-      if (rawEsrb === 'mature') finalAge = '+17';
-      else if (rawEsrb === 'adults-only') finalAge = '+18';
-      else if (rawEsrb === 'teen') finalAge = '+13';
-      else if (rawEsrb === 'everyone-10-plus') finalAge = '+10';
-      else if (rawEsrb === 'everyone') finalAge = 'همه سنین';
-
-      let steamUrl = '';
-      try {
-        const steamId = await getSteamIdFromSteam(game.name);
-        if (steamId) steamUrl = `https://store.steampowered.com/app/${steamId}/`;
-      } catch { console.warn("خطا در Steam ID"); }
-
-      if (!steamUrl && details?.stores?.length > 0) {
-        const steamStore = details.stores.find((s: any) => s.store?.slug === 'steam' || s.store?.id === 1);
-        if (steamStore?.url) {
-          const match = steamStore.url.match(/(?:app|sub)\/(\d+)/);
-          steamUrl = match && match[1] ? `https://store.steampowered.com/app/${match[1]}/` : steamStore.url;
-        }
-      }
-      if (!steamUrl) steamUrl = `https://store.steampowered.com/search/?term=${encodeURIComponent(game?.name || '')}`;
-
-      const autoYoutube: string[] = [];
-      if (youtubeData?.results?.length > 0) {
-        youtubeData.results.slice(0, 5).forEach((vid: any) => {
-          if (vid?.external_id) autoYoutube.push(`https://www.youtube.com/watch?v=${vid.external_id}`);
-        });
-      }
-      const trailer = movieData?.results?.[0]?.data?.max || '';
-      if (trailer && !autoYoutube.includes(trailer)) autoYoutube.unshift(trailer);
-
-      let galleryFinal: string[] = [];
-      if (screenshots?.results?.length > 0) galleryFinal = screenshots.results.map((s: any) => s.image).filter(Boolean);
-      if (game?.short_screenshots?.length > 0) {
-        game.short_screenshots.forEach((s: any) => {
-          if (s?.image && !galleryFinal.includes(s.image)) galleryFinal.push(s.image);
-        });
-      }
-      galleryFinal = galleryFinal.slice(0, 10);
-
-      const autoExtractedGb = extractSizeFromReqText(minReq) || extractSizeFromReqText(recReq) || 0;
-
-      const newGameObj = {
-        id: game.id,
-        name: game.name || 'نامشخص',
-        background_image: game.background_image || '',
-        metacritic: typeof details?.metacritic === 'number' ? details.metacritic : null,
-        released: game.released || '---',
-        genres: Array.isArray(game.genres) ? game.genres : [],
-        esrb_rating: finalAge,
-        playtime: details?.playtime || 0,
-        developers: details?.developers?.map((d: any) => d.name).join(', ') || '---',
-        steam_link: steamUrl,
-        trailer_url: trailer,
-        youtube_videos: autoYoutube,
-        gallery: galleryFinal,
-        requirements: {
-          minimum: cleanReq(minReq, 'مشخصات حداقل سخت‌افزار ثبت نشده است.'),
-          recommended: cleanReq(recReq, 'مشخصات سیستم پیشنهادی ثبت نشده است.')
-        },
-        description_en: (details?.description_raw || "No description available.").substring(0, 1500),
-        description_fa: descriptionFaWithLabel,
-        size_gb: isNaN(autoExtractedGb) ? 0 : autoExtractedGb,
-        is_popular: false,
-        is_coop: false,
-        system_tier: 'unspecified'
-      };
-
+      const newGameObj = await fetchFullGameFromRawg(game);
       const updatedList = myGames.filter((g: any) => g.id !== game.id);
       updatedList.push(newGameObj);
 
       updateMyGamesState(updatedList, true);
-      setMessage({ text: `⚡ بازی "${game.name}" به آرشیو محلی اضافه شد. آماده ارسال یک‌باره به گیت‌هاب.`, isError: false });
+      setMessage({ text: `⚡ بازی "${game.name}" به آرشیو محلی اضافه شد. آماده ارسال به گیت‌هاب.`, isError: false });
 
     } catch (e) {
       console.error(e);
       setMessage({ text: 'خطا در استخراج اطلاعات کامل بازی از RAWG.', isError: true });
+    }
+    setLoading(false);
+  };
+
+  // 🔄 ریسینک / دریافت مجدد اطلاعات بازی موجود از منبع RAWG
+  const handleResyncGame = async (game: any) => {
+    if (!window.confirm(`آیا از دریافت مجدد کامل اطلاعات "${game.name}" از RAWG و جایگزینی آن اطمینان دارید؟`)) return;
+
+    setLoading(true);
+    setMessage({ text: `⏳ در حال دریافت مجدد و بروزرسانی عکس‌ها و مشخصات "${game.name}"...`, isError: false });
+
+    try {
+      const freshData = await fetchFullGameFromRawg(game);
+      const existingGame = myGames.find((g) => g.id === game.id);
+
+      // حفظ تنظیمات دستی قبلی مانند سیستم پیشنهادی یا محبوبیت در صورت نیاز
+      const mergedGameObj = {
+        ...freshData,
+        is_popular: existingGame?.is_popular || false,
+        is_coop: existingGame?.is_coop || false,
+        system_tier: existingGame?.system_tier || 'unspecified',
+        size_gb: existingGame?.size_gb ? existingGame.size_gb : freshData.size_gb
+      };
+
+      const updatedList = myGames.map((g) => g.id === game.id ? mergedGameObj : g);
+      updateMyGamesState(updatedList, true);
+      setMessage({ text: `🔄 اطلاعات و تصاویر بازی "${game.name}" با موفقیت از RAWG بازخوانی و بروز شد.`, isError: false });
+
+    } catch (e) {
+      console.error(e);
+      setMessage({ text: 'خطا در بروزرسانی مجدد از RAWG.', isError: true });
     }
     setLoading(false);
   };
@@ -453,7 +502,7 @@ export default function AdminPanel() {
     setMessage({ text: `🗑️ بازی "${gameName}" از آرشیو محلی حذف شد.`, isError: false });
   };
 
-  // 🚀 ارسال تجمیعی و یک‌باره کل اطلاعات به گیت‌هاب (تنها یک درخواست PUT)
+  // 🚀 ارسال تجمیعی تغییرات محلی به گیت‌هاب (یک درخواست PUT)
   const syncAllChangesToGithub = async () => {
     if (!githubToken) return setMessage({ text: 'لطفاً توکن گیت‌هاب را بررسی کنید.', isError: true });
 
@@ -463,8 +512,7 @@ export default function AdminPanel() {
     try {
       let currentSha = fileSha;
 
-      // ۱. گرفتن آخرین SHA برای جلوگیری از تداخل 409
-      const repoRes = await safeFetchWithTimeout(
+      const repoRes = await githubFetch(
         `${GITHUB_API_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json?v=${Date.now()}`,
         { 
           headers: { 
@@ -480,10 +528,9 @@ export default function AdminPanel() {
         if (latestRepoState?.sha) currentSha = latestRepoState.sha;
       }
 
-      // ۲. کدگذاری کل فایل و ارسال یک‌باره (Batch PUT)
       const encodedContent = safeBtoa(JSON.stringify(myGames, null, 0));
 
-      const putRes = await safeFetchWithTimeout(
+      const putRes = await githubFetch(
         `${GITHUB_API_URL}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/games.json`,
         {
           method: 'PUT',
@@ -561,7 +608,6 @@ export default function AdminPanel() {
             </div>
 
             <div className="flex items-center gap-3">
-              {/* 🚀 دکمه ثبت تجمیعی تغییرات محلی روی گیت‌هاب */}
               <button 
                 onClick={syncAllChangesToGithub} 
                 disabled={isSyncing}
@@ -863,9 +909,25 @@ export default function AdminPanel() {
                     
                     {isAlreadyAdded ? (
                       <div className="flex flex-col gap-2 w-full">
-                        <div className="flex gap-2 w-full">
-                          <button onClick={() => handleRemoveGame(game.id, game.name)} className="w-full py-2 bg-red-950/40 border border-red-900 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold">❌ حذف از آرشیو</button>
+                        <div className="grid grid-cols-2 gap-2 w-full">
+                          <button 
+                            onClick={() => handleRemoveGame(game.id, game.name)} 
+                            className="w-full py-2 bg-red-950/40 border border-red-900/60 text-red-400 hover:bg-red-600 hover:text-white rounded-xl text-xs transition font-bold"
+                          >
+                            ❌ حذف
+                          </button>
+                          
+                          {/* 🔄 دکمه بازخوانی/ریسینک مجدد اطلاعات از RAWG */}
+                          <button 
+                            onClick={() => handleResyncGame(game)} 
+                            disabled={loading}
+                            className="w-full py-2 bg-blue-950/40 border border-blue-900/60 text-blue-400 hover:bg-blue-600 hover:text-white rounded-xl text-xs transition font-bold disabled:opacity-50"
+                            title="دریافت مجدد تمامی تصاویر و اطلاعات از RAWG"
+                          >
+                            🔄 ریسینک RAWG
+                          </button>
                         </div>
+
                         <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش کامل اطلاعات و مدیریت تصاویر</button>
                       </div>
                     ) : (
