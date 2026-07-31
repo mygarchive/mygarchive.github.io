@@ -29,16 +29,15 @@ const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, time
 
 // 🛡️ تابع هوشمند برای ارتباط با گیت‌هاب (مستقیم + پروکسی ورکر در صورت مسدود بودن در ایران)
 const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 12000) => {
+  // ۱. تلاش سریع برای ارتباط مستقیم (تایم‌آوت کاهش یافته به ۱۵۰۰ میلی‌ثانیه برای عدم معطلی)
   try {
-    const res = await safeFetchWithTimeout(url, options, 5000);
-    if (res.ok || res.status === 401 || res.status === 403 || res.status === 404) {
-      return res;
-    }
-  } catch (e) {
-    console.warn("ارتباط مستقیم با گیت‌هاب ناموفق بود. استفاده از پروکسی ورکر کلودفلر...");
+    const res = await safeFetchWithTimeout(url, options, 1500);
+    if (res.ok) return res;
+  } catch {
+    // در صورت مسدود بودن، بدون معطلی وارد مرحله بعد می‌شود
   }
 
-  // اگر ارتباط مستقیم با api.github.com تایم‌آوت شد، از ورکر کلودفلر عبور داده می‌شود (رفع نیاز به VPN)
+  // ۲. ارسال مستقیم از طریق پروکسی ورکر کلودفلر (بدون نیاز به VPN)
   const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
   return await safeFetchWithTimeout(proxyUrl, options, timeoutMs);
 };
