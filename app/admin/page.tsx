@@ -27,18 +27,25 @@ const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, time
   }
 };
 
-// 🛡️ تابع هوشمند برای ارتباط با گیت‌هاب (مستقیم + پروکسی ورکر در صورت مسدود بودن در ایران)
-const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 12000) => {
-  // ۱. تلاش سریع برای ارتباط مستقیم (تایم‌آوت کاهش یافته به ۱۵۰۰ میلی‌ثانیه برای عدم معطلی)
+// 🛡️ تابع هوشمند ارتباط با گیت‌هاب (پشتیبانی کامل از سینک سنگین PUT بدون AbortError)
+const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 25000) => {
+  const isWriteOperation = options.method === 'PUT' || options.method === 'POST';
+  const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
+
+  // ۱. برای ثبت و ذخیره‌سازی تغییرات (PUT)، مستقیم از ورکر با مهلت ۳۰ ثانیه‌ای استفاده کن
+  if (isWriteOperation) {
+    return await safeFetchWithTimeout(proxyUrl, options, 30000);
+  }
+
+  // ۲. برای دریافت اطلاعات معمولی (GET)، تست سریع ۱.۵ ثانیه‌ای ارتباط مستقیم
   try {
     const res = await safeFetchWithTimeout(url, options, 1500);
     if (res.ok) return res;
   } catch {
-    // در صورت مسدود بودن، بدون معطلی وارد مرحله بعد می‌شود
+    // سوئیچ به پروکسی در صورت مسدود بودن
   }
 
-  // ۲. ارسال مستقیم از طریق پروکسی ورکر کلودفلر (بدون نیاز به VPN)
-  const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
+  // ۳. ارسال از طریق پروکسی ورکر
   return await safeFetchWithTimeout(proxyUrl, options, timeoutMs);
 };
 
