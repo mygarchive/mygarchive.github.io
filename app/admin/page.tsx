@@ -138,20 +138,26 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // ⚡ سرویس هوشمند هوک شده بدون معطلی
+  // ⚡ سرویس هوشمند متصل به ورکر اختصاصی کلودفلر
   const fetchSmartRoute = async (targetUrl: string) => {
-    try {
-      const res = await safeFetchWithTimeout(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`, {}, 8000);
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn("پروکسی اول ناموفق بود..."); }
+    const workerProxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
 
+    // ۱. تلاش اول: ارسال درخواست از طریق ورکر کلودفلر خودت
     try {
-      const res = await safeFetchWithTimeout(`https://corsproxy.io/?${encodeURIComponent(targetUrl)}`, {}, 8000);
+      const res = await safeFetchWithTimeout(workerProxyUrl, {}, 10000);
       if (res.ok) return await res.json();
-    } catch (e) { console.warn("پروکسی دوم ناموفق بود..."); }
+    } catch (e) { 
+      console.warn("ارتباط با ورکر کلودفلر ناموفق بود، تست مستقیم..."); 
+    }
 
-    const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
-    if (directRes.ok) return await directRes.json();
+    // ۲. تلاش دوم: ارتباط مستقیم با RAWG (برای زمانی که VPN روشن است)
+    try {
+      const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
+      if (directRes.ok) return await directRes.json();
+    } catch (e) {
+      console.warn("ارتباط مستقیم هم ناموفق بود.");
+    }
+
     throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
   };
 
@@ -883,11 +889,13 @@ export default function AdminPanel() {
                 <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg relative">
                   <div className="relative">
                     <img 
-                      src={getOptimizedUrl(game.background_image, 400)} 
-                      alt={game.name} 
-                      onError={(e) => { e.currentTarget.src = '/placeholder.jpg'; }}
-                      className="w-full h-40 object-cover" 
-                    />
+  src={getOptimizedUrl(game.background_image, 400)} 
+  alt={game.name} 
+  onError={(e) => { 
+    e.currentTarget.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231f2937'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%239ca3af' font-size='12'>No Image</text></svg>"; 
+  }}
+  className="w-full h-40 object-cover" 
+/>
                     
                     {isAlreadyAdded && (
                       <div className="absolute top-2 right-2 flex flex-wrap gap-1">
