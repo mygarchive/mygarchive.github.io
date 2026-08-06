@@ -134,28 +134,37 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-// ⚡ سرویس هوشمند جستجوی RAWG با ۳ لایه پشتیبان (ورکر -> AllOrigins -> مستقیم)
+// ⚡ سرویس هوشمند جستجو با ۴ لایه پشتیبان (ورکر -> AllOrigins -> CorsProxy -> مستقیم)
 const fetchSmartRoute = async (targetUrl: string) => {
   const workerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
   const allOriginsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
+  const corsProxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
 
-  // اولویت ۱: ورکر اختصاصی کلادفلر (اصلاح‌شده)
+  // اولویت ۱: ورکر اختصاصی کلادفلر
   try {
-    const res = await safeFetchWithTimeout(workerUrl, {}, 10000);
+    const res = await safeFetchWithTimeout(workerUrl, {}, 8000);
     if (res.ok) return await res.json();
   } catch (e) {
-    console.warn("ورکر کلادفلر پاسخ نداد، سوئیچ به پروکسی کمکی AllOrigins...");
+    console.warn("ورکر کلادفلر پاسخ نداد، سوئیچ به AllOrigins...");
   }
 
-  // اولویت ۲: پروکسی کمکی AllOrigins (سوپاپ اطمینان بدون فیلتر)
+  // اولویت ۲: پروکسی عمومی AllOrigins
   try {
-    const res = await safeFetchWithTimeout(allOriginsUrl, {}, 10000);
+    const res = await safeFetchWithTimeout(allOriginsUrl, {}, 8000);
     if (res.ok) return await res.json();
   } catch (e) {
-    console.warn("پروکسی کمکی هم پاسخ نداد، تست ارتباط مستقیم...");
+    console.warn("AllOrigins پاسخ نداد، سوئیچ به CorsProxy...");
   }
 
-  // اولویت ۳: ارتباط مستقیم (برای زمان روشن بودن VPN)
+  // اولویت ۳: پروکسی عمومی CorsProxy
+  try {
+    const res = await safeFetchWithTimeout(corsProxyUrl, {}, 8000);
+    if (res.ok) return await res.json();
+  } catch (e) {
+    console.warn("CorsProxy هم پاسخ نداد، تست مستقیم...");
+  }
+
+  // اولویت ۴: ارتباط مستقیم (برای زمان روشن بودن VPN)
   const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
   if (directRes.ok) return await directRes.json();
 
