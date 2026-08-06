@@ -27,25 +27,21 @@ const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, time
   }
 };
 
-// 🛡️ تابع هوشمند ارتباط با گیت‌هاب (پشتیبانی کامل از سینک سنگین PUT بدون AbortError)
+// 🛡️ تابع هوشمند ارتباط با گیت‌هاب (ارسال مستقیم اولویت دارد تا مشکل PUT فایل سنگین حل شود)
 const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 25000) => {
-  const isWriteOperation = options.method === 'PUT' || options.method === 'POST';
   const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
 
-  // ۱. برای ثبت و ذخیره‌سازی تغییرات (PUT)، مستقیم از ورکر با مهلت ۳۰ ثانیه‌ای استفاده کن
-  if (isWriteOperation) {
-    return await safeFetchWithTimeout(proxyUrl, options, 30000);
-  }
-
-  // ۲. برای دریافت اطلاعات معمولی (GET)، تست سریع ۱.۵ ثانیه‌ای ارتباط مستقیم
+  // اولویت ۱: ارسال مستقیم به گیت‌هاب
   try {
-    const res = await safeFetchWithTimeout(url, options, 1500);
-    if (res.ok) return res;
-  } catch {
-    // سوئیچ به پروکسی در صورت مسدود بودن
+    const directRes = await safeFetchWithTimeout(url, options, timeoutMs);
+    if (directRes.ok || directRes.status === 404 || directRes.status === 401) {
+      return directRes;
+    }
+  } catch (err) {
+    console.warn("ارتباط مستقیم با گیت‌هاب پاسخ نداد، سوئیچ به ورکر...", err);
   }
 
-  // ۳. ارسال از طریق پروکسی ورکر
+  // اولویت ۲: ارسال از طریق ورکر کلادفلر (در صورت اختلال شبکه)
   return await safeFetchWithTimeout(proxyUrl, options, timeoutMs);
 };
 
@@ -138,28 +134,33 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-  // ⚡ سرویس هوشمند متصل به ورکر اختصاصی کلودفلر
-  const fetchSmartRoute = async (targetUrl: string) => {
-    const workerProxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+// ⚡ سرویس هوشمند جستجوی RAWG با ۳ لایه پشتیبان (ورکر -> AllOrigins -> مستقیم)
+const fetchSmartRoute = async (targetUrl: string) => {
+  const workerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+  const allOriginsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
 
-    // ۱. تلاش اول: ارسال درخواست از طریق ورکر کلودفلر خودت
-    try {
-      const res = await safeFetchWithTimeout(workerProxyUrl, {}, 10000);
-      if (res.ok) return await res.json();
-    } catch (e) { 
-      console.warn("ارتباط با ورکر کلودفلر ناموفق بود، تست مستقیم..."); 
-    }
+  // اولویت ۱: ورکر اختصاصی کلادفلر (اصلاح‌شده)
+  try {
+    const res = await safeFetchWithTimeout(workerUrl, {}, 10000);
+    if (res.ok) return await res.json();
+  } catch (e) {
+    console.warn("ورکر کلادفلر پاسخ نداد، سوئیچ به پروکسی کمکی AllOrigins...");
+  }
 
-    // ۲. تلاش دوم: ارتباط مستقیم با RAWG (برای زمانی که VPN روشن است)
-    try {
-      const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
-      if (directRes.ok) return await directRes.json();
-    } catch (e) {
-      console.warn("ارتباط مستقیم هم ناموفق بود.");
-    }
+  // اولویت ۲: پروکسی کمکی AllOrigins (سوپاپ اطمینان بدون فیلتر)
+  try {
+    const res = await safeFetchWithTimeout(allOriginsUrl, {}, 10000);
+    if (res.ok) return await res.json();
+  } catch (e) {
+    console.warn("پروکسی کمکی هم پاسخ نداد، تست ارتباط مستقیم...");
+  }
 
-    throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
-  };
+  // اولویت ۳: ارتباط مستقیم (برای زمان روشن بودن VPN)
+  const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
+  if (directRes.ok) return await directRes.json();
+
+  throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
+};
 
   const getSteamIdFromSteam = useCallback(async (gameName: string): Promise<string | null> => {
     try {
