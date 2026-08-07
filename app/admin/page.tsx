@@ -27,11 +27,10 @@ const safeFetchWithTimeout = async (url: string, options: RequestInit = {}, time
   }
 };
 
-// 🛡️ تابع هوشمند ارتباط با گیت‌هاب (ارسال مستقیم اولویت دارد تا مشکل PUT فایل سنگین حل شود)
+// 🛡️ تابع هوشمند ارتباط با گیت‌هاب
 const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 25000) => {
   const proxyUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(url)}`;
 
-  // اولویت ۱: ارسال مستقیم به گیت‌هاب
   try {
     const directRes = await safeFetchWithTimeout(url, options, timeoutMs);
     if (directRes.ok || directRes.status === 404 || directRes.status === 401) {
@@ -41,7 +40,6 @@ const githubFetch = async (url: string, options: RequestInit = {}, timeoutMs = 2
     console.warn("ارتباط مستقیم با گیت‌هاب پاسخ نداد، سوئیچ به ورکر...", err);
   }
 
-  // اولویت ۲: ارسال از طریق ورکر کلادفلر (در صورت اختلال شبکه)
   return await safeFetchWithTimeout(proxyUrl, options, timeoutMs);
 };
 
@@ -127,6 +125,7 @@ export default function AdminPanel() {
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
 
   const [editingGame, setEditingGame] = useState<any | null>(null);
+  const [newGalleryInput, setNewGalleryInput] = useState('');
 
   const getOptimizedUrl = (url: string, width = 400) => {
     if (!url) return '';
@@ -134,42 +133,33 @@ export default function AdminPanel() {
     return `https://images.weserv.nl/?url=${encodeURIComponent(cleanUrl)}&w=${width}&q=80`;
   };
 
-// ⚡ سرویس هوشمند جستجو با ۴ لایه پشتیبان (ورکر -> AllOrigins -> CorsProxy -> مستقیم)
-const fetchSmartRoute = async (targetUrl: string) => {
-  const workerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
-  const allOriginsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`;
-  const corsProxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
+  // ⚡ سرویس هوشمند جستجوی RAWG با تایم‌آوت بالا و پشتیبان‌گیری
+  const fetchSmartRoute = async (targetUrl: string) => {
+    const workerUrl = `https://rawg-proxy.hossein-hf273.workers.dev/?url=${encodeURIComponent(targetUrl)}`;
+    const codetabsUrl = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`;
 
-  // اولویت ۱: ورکر اختصاصی کلادفلر
-  try {
-    const res = await safeFetchWithTimeout(workerUrl, {}, 8000);
-    if (res.ok) return await res.json();
-  } catch (e) {
-    console.warn("ورکر کلادفلر پاسخ نداد، سوئیچ به AllOrigins...");
-  }
+    try {
+      const res = await safeFetchWithTimeout(workerUrl, {}, 18000);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && !data.error) return data;
+      }
+    } catch (e) {
+      console.warn("ورکر کلادفلر پاسخ نداد، سوئیچ به پروکسی کمکی...");
+    }
 
-  // اولویت ۲: پروکسی عمومی AllOrigins
-  try {
-    const res = await safeFetchWithTimeout(allOriginsUrl, {}, 8000);
-    if (res.ok) return await res.json();
-  } catch (e) {
-    console.warn("AllOrigins پاسخ نداد، سوئیچ به CorsProxy...");
-  }
+    try {
+      const res = await safeFetchWithTimeout(codetabsUrl, {}, 15000);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.warn("پروکسی کمکی پاسخ نداد، ارتباط مستقیم...");
+    }
 
-  // اولویت ۳: پروکسی عمومی CorsProxy
-  try {
-    const res = await safeFetchWithTimeout(corsProxyUrl, {}, 8000);
-    if (res.ok) return await res.json();
-  } catch (e) {
-    console.warn("CorsProxy هم پاسخ نداد، تست مستقیم...");
-  }
+    const directRes = await safeFetchWithTimeout(targetUrl, {}, 10000);
+    if (directRes.ok) return await directRes.json();
 
-  // اولویت ۴: ارتباط مستقیم (برای زمان روشن بودن VPN)
-  const directRes = await safeFetchWithTimeout(targetUrl, {}, 8000);
-  if (directRes.ok) return await directRes.json();
-
-  throw new Error("تمامی مسیرهای ارتباطی با خطا مواجه شدند.");
-};
+    throw new Error("RAWG_OFFLINE");
+  };
 
   const getSteamIdFromSteam = useCallback(async (gameName: string): Promise<string | null> => {
     try {
@@ -182,7 +172,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
     return null;
   }, []);
 
-  // 🔄 بارگذاری داده‌ها از LocalStorage
   useEffect(() => {
     const savedToken = localStorage.getItem('gh_token');
     const savedGames = localStorage.getItem('admin_my_games_cache');
@@ -201,7 +190,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
     }
   }, []);
 
-  // 💾 بروزرسانی استیت محلی و هشدارهای ذخیره‌نشده
   const updateMyGamesState = (newGamesList: any[], markUnsaved = true) => {
     setMyGames(newGamesList);
     try {
@@ -226,7 +214,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
     setLoading(true);
     try {
-      // ⚡ اتصال به API گیت‌هاب با پشتیبانی خودکار پروکسی
       const checkRes = await githubFetch(`${GITHUB_API_URL}/user`, {
         headers: { 
           'Authorization': `Bearer ${trimmedToken}`,
@@ -304,23 +291,57 @@ const fetchSmartRoute = async (targetUrl: string) => {
     return null;
   };
 
+  // 🔍 جستجوی هوشمند با اعلان قطعی RAWG
   const handleSearch = async () => {
     if (!searchQuery) return;
     setLoading(true);
     setViewMode('SEARCH');
     setEditingGame(null); 
+    setMessage({ text: '', isError: false });
+
     try {
       const targetUrl = `https://api.rawg.io/api/games?key=${RAWG_API_KEY}&search=${encodeURIComponent(searchQuery)}&page_size=24`;
       const data = await fetchSmartRoute(targetUrl);
       setSearchResults(data.results || []);
-    } catch (err) { 
+    } catch (err: any) { 
       console.error("خطای سیستم جستجو:", err); 
-      setMessage({ text: 'خطا در برقراری ارتباط با سرور RAWG.', isError: true });
+      setMessage({ 
+        text: '🚨 سرورهای RAWG از دسترس خارج هستند (خطای 522/شبکه). لطفاً از دکمه «افزودن دستی بازی» استفاده کنید.', 
+        isError: true 
+      });
     }
     setLoading(false);
   };
 
-  // ⚡ استخراج اطلاعات کامل بازی از RAWG
+  // ⚡ ایجاد ساختار خام برای بازی دستی از صفر
+  const handleCreateBlankGame = () => {
+    const blankGame = {
+      id: Date.now(), // شناسه یکتا زمان
+      name: '',
+      background_image: '',
+      metacritic: null,
+      released: new Date().toISOString().split('T')[0],
+      genres: [],
+      esrb_rating: '---',
+      playtime: 0,
+      developers: '',
+      steam_link: '',
+      trailer_url: '',
+      youtube_videos: [],
+      gallery: [],
+      requirements: { minimum: '', recommended: '' },
+      description_en: '',
+      description_fa: '',
+      size_gb: 0,
+      is_popular: false,
+      is_coop: false,
+      system_tier: 'unspecified',
+      is_manual: true
+    };
+    setEditingGame(blankGame);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const fetchFullGameFromRawg = async (game: any) => {
     const detailsTarget = `https://api.rawg.io/api/games/${game.id}?key=${RAWG_API_KEY}`;
     const moviesTarget = `https://api.rawg.io/api/games/${game.id}/movies?key=${RAWG_API_KEY}`;
@@ -407,7 +428,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
       background_image: game.background_image || details?.background_image || '',
       metacritic: typeof details?.metacritic === 'number' ? details.metacritic : null,
       released: game.released || details?.released || '---',
-      genres: Array.isArray(game.genres) ? game.genres : details?.genres || [],
+      genres: Array.isArray(game.genres) ? game.genres.map((g: any) => typeof g === 'string' ? g : g.name) : [],
       esrb_rating: finalAge,
       playtime: details?.playtime || 0,
       developers: details?.developers?.map((d: any) => d.name).join(', ') || '---',
@@ -424,11 +445,11 @@ const fetchSmartRoute = async (targetUrl: string) => {
       size_gb: isNaN(autoExtractedGb) ? 0 : autoExtractedGb,
       is_popular: false,
       is_coop: false,
-      system_tier: 'unspecified'
+      system_tier: 'unspecified',
+      is_manual: false
     };
   };
 
-  // ⚡ افزودن بازی جدید به آرشیو محلی
   const handleAddGame = async (game: any) => {
     setLoading(true);
     setMessage({ text: `⏳ در حال استخراج اطلاعات جامع "${game.name}"...`, isError: false });
@@ -443,13 +464,18 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
     } catch (e) {
       console.error(e);
-      setMessage({ text: 'خطا در استخراج اطلاعات کامل بازی از RAWG.', isError: true });
+      setMessage({ text: '🚨 سرورهای RAWG قطعی دارند. می‌توانید بازی را به صورت دستی اضافه کنید.', isError: true });
     }
     setLoading(false);
   };
 
-  // 🔄 ریسینک / دریافت مجدد اطلاعات بازی موجود از منبع RAWG
   const handleResyncGame = async (game: any) => {
+    // 🛡️ بررسی اگر بازی به صورت دستی ساخته شده باشد
+    if (game.is_manual || game.id > 10000000000) {
+      alert("⚠️ این بازی به صورت دستی ایجاد شده و در RAWG شناسه اختصاصی ندارد.");
+      return;
+    }
+
     if (!window.confirm(`آیا از دریافت مجدد کامل اطلاعات "${game.name}" از RAWG و جایگزینی آن اطمینان دارید؟`)) return;
 
     setLoading(true);
@@ -459,7 +485,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
       const freshData = await fetchFullGameFromRawg(game);
       const existingGame = myGames.find((g) => g.id === game.id);
 
-      // حفظ تنظیمات دستی قبلی مانند سیستم پیشنهادی یا محبوبیت در صورت نیاز
       const mergedGameObj = {
         ...freshData,
         is_popular: existingGame?.is_popular || false,
@@ -474,7 +499,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
     } catch (e) {
       console.error(e);
-      setMessage({ text: 'خطا در بروزرسانی مجدد از RAWG.', isError: true });
+      setMessage({ text: 'خطا در بروزرسانی مجدد از RAWG (احتمال قطع بودن سرور RAWG).', isError: true });
     }
     setLoading(false);
   };
@@ -490,14 +515,26 @@ const fetchSmartRoute = async (targetUrl: string) => {
     setEditingGame({ ...editingGame, [field]: value });
   };
 
+  const handleAddGalleryImage = () => {
+    if (!newGalleryInput.trim() || !editingGame) return;
+    const currentGallery = editingGame.gallery || [];
+    setEditingGame({ ...editingGame, gallery: [...currentGallery, newGalleryInput.trim()] });
+    setNewGalleryInput('');
+  };
+
   const handleRemoveGalleryImage = (imgUrl: string) => {
     if (!editingGame) return;
     const updatedGallery = (editingGame.gallery || []).filter((img: string) => img !== imgUrl);
     setEditingGame({ ...editingGame, gallery: updatedGallery });
   };
 
+  // 💾 ذخیره نهایی فرم جامع (چه ویرایشی چه جدید خام)
   const handleSaveFullEdit = () => {
     if (!editingGame) return;
+    if (!editingGame.name.trim()) {
+      alert("لطفاً نام بازی را وارد کنید.");
+      return;
+    }
 
     let finalSizeGb = editingGame.size_gb;
     if (finalSizeGb === null || finalSizeGb === undefined || finalSizeGb === '') {
@@ -508,11 +545,19 @@ const fetchSmartRoute = async (targetUrl: string) => {
     }
 
     const updatedGameObj = { ...editingGame, size_gb: finalSizeGb };
-    const updatedList = myGames.map(g => g.id === editingGame.id ? updatedGameObj : g);
+    
+    const existingIndex = myGames.findIndex((g) => g.id === editingGame.id);
+    let updatedList = [];
+    
+    if (existingIndex !== -1) {
+      updatedList = myGames.map((g) => g.id === editingGame.id ? updatedGameObj : g);
+    } else {
+      updatedList = [updatedGameObj, ...myGames]; // اضافه کردن بازی خام جدید
+    }
     
     updateMyGamesState(updatedList, true);
     
-    setMessage({ text: `✅ تغییرات "${editingGame.name}" در مرورگر ذخیره شد.`, isError: false });
+    setMessage({ text: `✅ بازی "${editingGame.name}" در مرورگر ذخیره شد.`, isError: false });
     setEditingGame(null);
   };
 
@@ -524,7 +569,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
     setMessage({ text: `🗑️ بازی "${gameName}" از آرشیو محلی حذف شد.`, isError: false });
   };
 
-  // 🚀 ارسال تجمیعی تغییرات محلی به گیت‌هاب (یک درخواست PUT)
   const syncAllChangesToGithub = async () => {
     if (!githubToken) return setMessage({ text: 'لطفاً توکن گیت‌هاب را بررسی کنید.', isError: true });
 
@@ -630,6 +674,14 @@ const fetchSmartRoute = async (targetUrl: string) => {
             </div>
 
             <div className="flex items-center gap-3">
+              {/* ➕ دکمه افزودن دستی بازی جدید */}
+              <button 
+                onClick={handleCreateBlankGame}
+                className="text-xs bg-green-600 hover:bg-green-500 text-white px-4 py-2.5 rounded-xl font-extrabold transition flex items-center gap-1 shadow-lg shadow-green-900/30"
+              >
+                ➕ افزودن دستی بازی جدید
+              </button>
+
               <button 
                 onClick={syncAllChangesToGithub} 
                 disabled={isSyncing}
@@ -639,17 +691,20 @@ const fetchSmartRoute = async (targetUrl: string) => {
                     : 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-emerald-900/20'
                 }`}
               >
-                {isSyncing ? '⏳ در حال همگام‌سازی...' : hasUnsavedChanges ? '⚠️ ثبت تغییرات ذخیره‌نشده در گیت‌هاب' : '✔ همگام با گیت‌هاب (ارسال مجدد)'}
+                {isSyncing ? '⏳ در حال همگام‌سازی...' : hasUnsavedChanges ? '⚠️ ثبت تغییرات در گیت‌هاب' : '✔ همگام با گیت‌هاب'}
               </button>
 
               <Link href="/" className="text-xs text-purple-400 bg-purple-950/40 border border-purple-900/60 px-4 py-2.5 rounded-xl font-bold">➔ صفحه اصلی</Link>
             </div>
           </header>
 
+          {/* 📝 فرم جامع ساخت/ویرایش بازی */}
           {editingGame && (
-            <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl mb-8 space-y-6 shadow-xl animate-fadeIn">
+            <div className="bg-slate-900 border border-purple-900/50 p-6 rounded-2xl mb-8 space-y-6 shadow-2xl animate-fadeIn">
               <div className="flex justify-between items-center pb-3 border-b border-slate-800">
-                <h3 className="text-sm font-black text-purple-400">📝 ویرایش کامل اطلاعات: {editingGame.name}</h3>
+                <h3 className="text-sm font-black text-purple-400">
+                  📝 {editingGame.name ? `ویرایش اطلاعات: ${editingGame.name}` : 'افزودن بازی جدید (فرم خام)'}
+                </h3>
                 <button 
                   onClick={() => setEditingGame(null)} 
                   className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-400 px-3 py-1.5 rounded-xl font-bold"
@@ -660,30 +715,77 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-xs text-slate-400 font-bold mb-1.5">نام بازی:</label>
-                  <input type="text" value={editingGame.name || ''} onChange={(e) => handleEditFieldChange('name', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold" dir="ltr" />
+                  <label className="block text-xs text-slate-400 font-bold mb-1.5">نام انگلیسی بازی (*):</label>
+                  <input type="text" value={editingGame.name || ''} onChange={(e) => handleEditFieldChange('name', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold" dir="ltr" placeholder="مثال: Cyberpunk 2077" />
                 </div>
+
                 <div>
                   <label className="block text-xs text-slate-400 font-bold mb-1.5">امتیاز منتقدین (Metacritic):</label>
                   <input 
                     type="number" 
                     value={editingGame.metacritic || ''} 
-                    onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || '')} 
+                    onChange={(e) => handleEditFieldChange('metacritic', parseInt(e.target.value) || null)} 
                     className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" 
+                    placeholder="مثال: 86"
+                    dir="ltr" 
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs text-slate-400 font-bold mb-1.5">تاریخ انتشار:</label>
+                  <input 
+                    type="text" 
+                    value={editingGame.released || ''} 
+                    onChange={(e) => handleEditFieldChange('released', e.target.value)} 
+                    className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-mono" 
+                    placeholder="YYYY-MM-DD"
+                    dir="ltr" 
+                  />
+                </div>
+
+                {/* 📸 بخش افزودن کاور و پس‌زمینه اصلی */}
+                <div className="md:col-span-3 bg-slate-950/60 p-4 border border-slate-800 rounded-xl space-y-3">
+                  <label className="block text-xs text-green-400 font-bold">🖼️ لینک مستقیم تصویر کاور/پوستر اصلی (*):</label>
+                  <div className="flex gap-2">
+                    <input 
+                      type="text" 
+                      value={editingGame.background_image || ''} 
+                      onChange={(e) => handleEditFieldChange('background_image', e.target.value)} 
+                      className="flex-1 p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left text-green-300 font-mono" 
+                      placeholder="https://cdn.akamai.steamstatic.com/...jpg"
+                      dir="ltr" 
+                    />
+                  </div>
+                  {editingGame.background_image && (
+                    <div className="w-full h-32 rounded-xl overflow-hidden border border-slate-800 relative bg-slate-900">
+                      <img src={getOptimizedUrl(editingGame.background_image, 400)} alt="پیش نمایش" className="w-full h-full object-cover" />
+                      <span className="absolute bottom-1 right-1 bg-black/70 text-[10px] px-2 py-0.5 rounded text-slate-300">پیش‌نمایش کاور اصلی</span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="md:col-span-3">
+                  <label className="block text-xs text-slate-400 font-bold mb-1.5">ژانرها / سبک‌ها (با کاما انگلیسی جدا کنید):</label>
+                  <input 
+                    type="text" 
+                    value={Array.isArray(editingGame.genres) ? editingGame.genres.join(', ') : editingGame.genres || ''} 
+                    onChange={(e) => handleEditFieldChange('genres', e.target.value.split(',').map((g: string) => g.trim()))} 
+                    className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left" 
+                    placeholder="Action, RPG, Open World"
                     dir="ltr" 
                   />
                 </div>
 
                 <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-t border-b border-slate-800/80 py-4 my-2">
                   <div>
-                    <label className="block text-xs text-purple-400 font-bold mb-1.5">💾 حجم بازی (گیگابایت - دستی):</label>
+                    <label className="block text-xs text-purple-400 font-bold mb-1.5">💾 حجم بازی (گیگابایت):</label>
                     <input 
                       type="number" 
                       step="0.1" 
                       value={editingGame.size_gb !== undefined && editingGame.size_gb !== null ? editingGame.size_gb : ''} 
                       onChange={(e) => handleEditFieldChange('size_gb', e.target.value === '' ? null : parseFloat(e.target.value))} 
                       className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left font-bold text-purple-300" 
-                      placeholder="اگر خالی بماند خودکار استخراج می‌شود"
+                      placeholder="مثلاً 65.5"
                       dir="ltr" 
                     />
                   </div>
@@ -764,7 +866,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
                 <div className="md:col-span-3">
                   <label className="block text-xs text-slate-400 font-bold mb-1.5">لینک استیم:</label>
-                  <input type="text" value={editingGame.steam_link || ''} onChange={(e) => handleEditFieldChange('steam_link', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left text-blue-400 font-mono" dir="ltr" />
+                  <input type="text" value={editingGame.steam_link || ''} onChange={(e) => handleEditFieldChange('steam_link', e.target.value)} className="w-full p-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left text-blue-400 font-mono" dir="ltr" placeholder="https://store.steampowered.com/app/..." />
                 </div>
 
                 <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-slate-800/60 pt-4">
@@ -832,8 +934,28 @@ const fetchSmartRoute = async (targetUrl: string) => {
                 </div>
               </div>
 
-              <div className="border-t border-slate-800 pt-4">
-                <label className="block text-xs text-purple-400 font-bold mb-3">📸 مدیریت گالری تصاویر آرشیو:</label>
+              {/* 📸 مدیریت و افزودن تصاویر جدید به گالری */}
+              <div className="border-t border-slate-800 pt-4 space-y-4">
+                <label className="block text-xs text-purple-400 font-bold">📸 مدیریت گالری تصاویر آرشیو:</label>
+                
+                <div className="flex gap-2">
+                  <input 
+                    type="text" 
+                    value={newGalleryInput} 
+                    onChange={(e) => setNewGalleryInput(e.target.value)} 
+                    className="flex-1 p-2 bg-slate-950 border border-slate-800 rounded-xl text-xs outline-none text-left text-slate-300 font-mono" 
+                    placeholder="لینک عکس جدید را اینجا وارد کنید..."
+                    dir="ltr" 
+                  />
+                  <button 
+                    type="button" 
+                    onClick={handleAddGalleryImage} 
+                    className="px-4 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-bold transition"
+                  >
+                    ➕ افزودن به گالری
+                  </button>
+                </div>
+
                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3">
                   {editingGame.gallery?.map((imgUrl: string, idx: number) => (
                     <div key={idx} className="relative aspect-video rounded-xl overflow-hidden group border border-slate-800 bg-slate-950">
@@ -853,7 +975,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
               <div className="flex justify-end gap-2 border-t border-slate-800 pt-4">
                 <button onClick={() => setEditingGame(null)} className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-bold transition">انصراف</button>
-                <button onClick={handleSaveFullEdit} className="px-5 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-purple-900/30">✔ ذخیره در مرورگر</button>
+                <button onClick={handleSaveFullEdit} className="px-5 py-2 bg-purple-600 hover:bg-purple-500 text-white rounded-xl text-xs font-bold transition shadow-lg shadow-purple-900/30">✔ ذخیره بازی در مرورگر</button>
               </div>
             </div>
           )}
@@ -863,7 +985,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
               onClick={() => setViewMode('SEARCH')}
               className={`flex-1 py-3 rounded-xl text-sm font-bold transition border ${viewMode === 'SEARCH' ? 'bg-purple-600 border-purple-500 text-white shadow-lg shadow-purple-900/20' : 'bg-slate-900 border-slate-800 text-slate-400 hover:bg-slate-800'}`}
             >
-              🔍 جستجوی بازی جدید
+              🔍 جستجوی خودکار در RAWG
             </button>
             <button 
               onClick={() => setViewMode('ARCHIVE')}
@@ -875,7 +997,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
 
           {viewMode === 'SEARCH' && (
             <div className="bg-slate-900/50 border border-slate-900 p-4 rounded-xl mb-6 flex gap-2">
-              <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام بازی..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
+              <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && handleSearch()} placeholder="نام انگلیسی بازی را تایپ کنید..." className="flex-1 p-3 bg-slate-950 border border-slate-800 rounded-xl text-sm outline-none text-left" dir="ltr" />
               <button onClick={handleSearch} disabled={loading} className="px-6 bg-purple-600 hover:bg-purple-700 rounded-xl text-sm font-bold disabled:opacity-50">
                 {loading ? '...' : 'جستجو'}
               </button>
@@ -899,13 +1021,13 @@ const fetchSmartRoute = async (targetUrl: string) => {
                 <div key={game.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg relative">
                   <div className="relative">
                     <img 
-  src={getOptimizedUrl(game.background_image, 400)} 
-  alt={game.name} 
-  onError={(e) => { 
-    e.currentTarget.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231f2937'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%239ca3af' font-size='12'>No Image</text></svg>"; 
-  }}
-  className="w-full h-40 object-cover" 
-/>
+                      src={getOptimizedUrl(game.background_image, 400)} 
+                      alt={game.name} 
+                      onError={(e) => { 
+                        e.currentTarget.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231f2937'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%239ca3af' font-size='12'>No Image</text></svg>"; 
+                      }}
+                      className="w-full h-40 object-cover" 
+                    />
                     
                     {isAlreadyAdded && (
                       <div className="absolute top-2 right-2 flex flex-wrap gap-1">
@@ -941,7 +1063,6 @@ const fetchSmartRoute = async (targetUrl: string) => {
                             ❌ حذف
                           </button>
                           
-                          {/* 🔄 دکمه بازخوانی/ریسینک مجدد اطلاعات از RAWG */}
                           <button 
                             onClick={() => handleResyncGame(game)} 
                             disabled={loading}
@@ -952,7 +1073,7 @@ const fetchSmartRoute = async (targetUrl: string) => {
                           </button>
                         </div>
 
-                        <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش کامل اطلاعات و مدیریت تصاویر</button>
+                        <button onClick={() => handleEditGame(game)} className="w-full py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl text-[11px] transition font-bold">✏️ ویرایش کامل اطلاعات و تصاویر</button>
                       </div>
                     ) : (
                       <button onClick={() => handleAddGame(game)} disabled={loading} className="w-full py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-xs transition font-bold disabled:opacity-50">＋ افزودن به آرشیو محلی</button>
